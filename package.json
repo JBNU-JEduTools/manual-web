@@ -3,21 +3,40 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "server": "http-server"
   },
   "dependencies": {
+    "@aksara-ui/icons": "1.0.1-canary.1",
+    "@aksara-ui/react": "1.0.1-canary.23",
+    "@svgr/webpack": "^6.1.2",
     "classnames": "2.2.6",
     "date-fns": "2.16.1",
     "gray-matter": "4.0.2",
+    "htmr": "^1.0.1",
+    "markdown-it": "^12.3.0",
+    "markdown-it-anchor": "^8.4.1",
+    "markdown-it-toc-done-right": "^4.2.0",
     "next": "latest",
-    "react": "^17.0.2",
+    "react": "latest",
     "react-dom": "^17.0.2",
-    "remark": "13.0.0",
-    "remark-html": "13.0.1"
+    "sass": "^1.45.2",
+    "string": "^3.3.3",
+    "styled-components": "^5.3.3",
+    "unified": "^10.1.1",
+    "utility-types": "^3.10.0"
   },
   "devDependencies": {
+    "@styled-system/should-forward-prop": "^5.1.5",
+    "@types/react": "^17.0.37",
+    "@types/styled-system__should-forward-prop": "^5.1.2",
     "autoprefixer": "^10.2.1",
+    "babel-plugin-styled-components": "^2.0.2",
+    "eslint": "^8.5.0",
+    "http-server": "^14.0.0",
     "postcss": "^8.2.4",
-    "tailwindcss": "^2.0.2"
+    "prettier": "^2.5.1",
+    "tailwindcss": "^2.0.2",
+    "typescript": "^4.5.3"
   }
 }
