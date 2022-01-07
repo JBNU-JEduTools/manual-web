@@ -9,11 +9,11 @@ body {
 a.header-anchor {
   color: #ffff;
   font-size: 20px;
+}
 
-  &:hover {
-    color: #2c2d33;
-    text-decoration: none;
-  }
+a.header-anchor:hover {
+  color: #2c2d33;
+  text-decoration: none;
 }
 
 .table-of-contents {
