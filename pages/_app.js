@@ -4,14 +4,14 @@ import { AksaraReset } from 'components/foundations';
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <AksaraProvider>
-      <AksaraReset>
+    <AksaraReset>
+      <AksaraProvider>
         <Component {...pageProps} />
         <style jsx>
           {styleJSX}
         </style>
-      </AksaraReset>
-    </AksaraProvider>
+      </AksaraProvider>
+    </AksaraReset>
   )
 
 }
