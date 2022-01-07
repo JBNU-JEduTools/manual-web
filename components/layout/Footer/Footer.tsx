@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { format } from 'date-fns';
-import Link from 'next/link';
 
 import { breakpoints, space } from 'utils/variables';
 import { SOCIALS as socialData } from 'utils/constants';
@@ -70,7 +69,7 @@ const SocialMediaLink = styled(UnstyledAnchor)`
   }
 `;
 
-const FooterSection = styled('section')`
+const FooterSection = styled('div')`
   line-height: 18px;
   @media (max-width: ${breakpoints.md - 1}px) {
     &:not(:first-child) {
@@ -87,10 +86,10 @@ const Footer: React.FC<FooterProps> = ({ version, siteLastUpdated }) => {
     <Wrapper>
       <Inner>
         <FooterSection>
-          <Text as="p" scale={200} fontSize={12} color="grey05">
+          <Text as="p" scale={200} fontSize={12} color={theme.colors.greymed04}>
             &copy; {format(date, 'yyyy')} Kata.ai. All rights reserved.
           </Text>
-          <Text as="p" scale={200} fontSize={12} color="grey05">
+          <Text as="p" scale={200} fontSize={12} color={theme.colors.greymed04}>
             Version {version}. Last updated {format(date, 'd MMMM yyyy')}.
           </Text>
         </FooterSection>

@@ -14,9 +14,15 @@ interface IIndex {
   tutorialPosts: any;
 }
 
+const LIMIT = [
+  6,
+  9,
+  12,
+]
+
 const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
   const [page, setPage] = React.useState(1);
-  const [limit, setLimit] = React.useState(10);
+  const [limit, setLimit] = React.useState(6);
 
   return (
     <Layout>
@@ -34,7 +40,7 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
         </Box>
         <Box px="20vw">
           <Cards>
-          {tutorialPosts?.slice(page - 1 * limit, limit).map((tutorial: any) => {
+          {tutorialPosts?.slice((page - 1) * limit, limit).map((tutorial: any) => {
             return (
               <Card key={tutorial.title}>
                 <img src={tutorial.imgSpot} />
@@ -44,7 +50,7 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
                     <Text fontSize={12} fontWeight={600} color={theme.colors.blue06}>Kata Platform</Text>
                   </ProductBadge>
                   <Box maxHeight={84} height={84}>
-                      <Heading fontWeight={700} fontSize={20}>{tutorial.title}</Heading>
+                    <Heading scale={700} fontSize={20}>{tutorial.title}</Heading>
                   </Box>
                   <Link href={`/tutorials/${tutorial.id}`}><Anchor>View Article <IconArrowRight width={14} /></Anchor></Link>
                 </Box>
@@ -55,10 +61,11 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
           <PaginationWithDetails
             current={page}
             setPage={setPage}
-            totalPage={1}
+            totalPage={tutorialPosts.length / limit + 1}
             limit={limit}
             setLimit={setLimit}
-            dataShown={tutorialPosts?.slice(page - 1 * limit, limit)}
+            limitList={LIMIT}
+            dataShown={tutorialPosts?.slice((page - 1) * limit, limit)}
             totalItems={tutorialPosts.length} />
           <Footer version={"v3.1.1"} siteLastUpdated={"23 December 2021"} />
         </Box>

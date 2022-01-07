@@ -6,6 +6,7 @@ import Head from 'next/head'
 import { Footer } from 'components/layout/Footer'
 import Tutorials from 'components/portal/tutorials'
 import { Box } from '@aksara-ui/react'
+import VideoTutorial from 'components/portal/videotutorial'
 
 interface IIndex {
   tutorialPosts: any;
@@ -21,6 +22,7 @@ const Index:React.FC<IIndex> = ({ tutorialPosts }) => {
         <Portal />
         <Box px="20vw">
           <Tutorials tutorials={tutorialPosts} />
+          <VideoTutorial />
           <Footer version={"v3.1.1"} siteLastUpdated={"23 December 2021"} />
         </Box>
       </Container>

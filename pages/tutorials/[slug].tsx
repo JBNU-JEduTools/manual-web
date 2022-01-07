@@ -11,7 +11,7 @@ import { DocsHeader } from 'components/docs/DocsHeader';
 import { FooterWrapper, Footer } from 'components/layout/Footer';
 import { TocWrapper } from 'components/docs/TableOfContents';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
-import { DocsContribution } from 'components/docs/DocsContribution'
+import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
 import { MarkdownContent } from 'components/page/Markdown';
 import renderAst from 'utils/renderAst';
@@ -61,7 +61,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post }) => 
             />
             <DocsHeader title={post.title} subtitle={post.description} />
             <MarkdownContent>{renderAst(post.content)}</MarkdownContent>
-            <DocsContribution />
+            <DocsHelpful />
             <FooterWrapper>
               <Footer version={"v3.1.1"} siteLastUpdated={"23 December 2021"} />
             </FooterWrapper>

@@ -14,10 +14,15 @@ const Tutorials: React.FC<TutorialsProps> = ({ tutorials }) => {
   return (
     <Box>
       <HeaderSegment>
-        <Heading scale={700} fontWeight={700}>
+        <Heading scale={700} fontSize={24}>
           Tutorials
         </Heading>
-        <UnstyledAnchor href="/tutorials" cursor="pointer" color={theme.colors.blue07} _hover={{'textDecoration': 'underline', 'color': theme.colors.blue09}} fontWeight={500}>
+        <UnstyledAnchor
+          fontSize={16}
+          href="/tutorials"
+          cursor="pointer" color={theme.colors.blue07}
+          _hover={{ 'textDecoration': 'underline', 'color': theme.colors.blue09, 'fontWeight': 500 }} fontWeight={500}
+        >
           See all
         </UnstyledAnchor>
       </HeaderSegment>
@@ -32,7 +37,7 @@ const Tutorials: React.FC<TutorialsProps> = ({ tutorials }) => {
                 <Text fontSize={12} fontWeight={600} color={theme.colors.blue06}>Kata Platform</Text>
               </ProductBadge>
               <Box maxHeight={84} height={84}>
-                  <Heading fontWeight={700} fontSize={20}>{tutorial.title}</Heading>
+                <Heading scale={700} fontSize={20}>{tutorial.title}</Heading>
               </Box>
               <Link href={`/tutorials/${tutorial.id}`}><Anchor>View Article <IconArrowRight width={14} /></Anchor></Link>
             </Box>

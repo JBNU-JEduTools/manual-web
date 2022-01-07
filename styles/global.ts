@@ -1,3 +1,6 @@
+import { css } from 'styled-components';
+
+export const styleJSX = css`
 html,
 body {
   scroll-behavior: smooth;
@@ -26,24 +29,25 @@ a.header-anchor {
     width: 0;
     background: transparent;
   }
+}
 
-  li {
-    font-size: 14px;
-    margin-top: 8px;
-    a {
-      padding: 8px 16px;
-    }
-  }
+.table-of-contents li {
+  font-size: 14px;
+  margin-top: 8px;
+}
 
-  ul {
-    list-style-type: none;
-  }
+.table-of-contents li a {
+  padding: 8px 16px;
+}
 
-  a {
-    color: #404145;
-  }
+.table-of-contents ul {
+  list-style-type: none;
+}
 
-  a:hover {
+.table-of-contents a {
+  color: #404145;
+
+  &:hover {
     color: #2d302e;
   }
 }
@@ -61,3 +65,4 @@ a.header-anchor {
 .table-of-contents ul > li > ul > li {
   font-weight: 400;
 }
+`;

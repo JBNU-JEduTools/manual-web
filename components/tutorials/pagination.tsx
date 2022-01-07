@@ -1,14 +1,14 @@
 import React from 'react';
 import { IconChevronDown } from '@aksara-ui/icons';
-import styled from 'styled-components';
 import {
   Box,
   Button,
   DropdownMenu,
+  DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuTrigerer,
   Pagination,
   Text,
-  UnstyledButton
 } from '@aksara-ui/react';
 
 interface PaginationDetailsProps {
@@ -18,19 +18,15 @@ interface PaginationDetailsProps {
   setLimit: Function;
   dataShown: any;
   setPage: (page: number) => void;
+  limitList: number[];
   limit: number;
 }
-
-const LIMIT = [
-  10,
-  20,
-  30,
-]
 
 export const PaginationWithDetails: React.FC<PaginationDetailsProps> = ({
   current,
   totalPage,
   limit,
+  limitList,
   totalItems,
   setLimit,
   dataShown,
@@ -38,32 +34,34 @@ export const PaginationWithDetails: React.FC<PaginationDetailsProps> = ({
 }) => {
   return (
     <Box display="flex" flexDirection="row" justifyContent="space-between" pb={24}>
-      {/* <PaginationDetail page={current} limit={limit} total={totalItems} length={limit} /> */}
       {`Showing ${current * limit - limit + 1}-${dataShown.length < current * limit ? dataShown.length : current * limit} of ${
-        dataShown.length
+        totalItems
       } data`}
       <Pagination onSelect={setPage} current={current} total={totalPage} />
       <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
         <Text scale={300} mr={10}>
           Show rows
         </Text>
-        <Button variant="outline" size={"sm"} icon={IconChevronDown} iconPosition="right">
-          {limit}
-        </Button>
-        {/* <DropdownMenu>
-          {LIMIT.map(item => {
-            return (
-              <UnstyledButton onClick={() => setLimit(item)} display="flex" p={0} border={"0px"}>
+        <DropdownMenu>
+          <DropdownMenuTrigerer>
+            <Button variant="secondary" size="md" icon={IconChevronDown} iconPosition="right">
+              {limit}
+            </Button>
+          </DropdownMenuTrigerer>
+          <DropdownMenuContent align="start" side="top">
+            {limitList.map(item => {
+              return (
                 <DropdownMenuItem
                   key={item}
                   isActive={item === limit}
+                  onClick={() => setLimit(item)}
                 >
                   {item}
                 </DropdownMenuItem>
-              </UnstyledButton>
-            );
-          })}
-        </DropdownMenu> */}
+              );
+            })}
+          </DropdownMenuContent>
+        </DropdownMenu>
       </Box>
     </Box>
   )

@@ -59,7 +59,7 @@ const SearchResultLink = styled(Link)`
     }
 
     ${SearchResult} {
-      background-color: ${theme.colors.grey01};
+      background-color: ${theme.colors.grey05};
     }
   }
 `;
@@ -90,7 +90,7 @@ const SearchResultsMobile = css`
 
 const SearchResults = styled('div')<SearchPageProps>`
   padding: 0;
-  border: 1px solid ${theme.colors.grey02};
+  border: 1px solid ${theme.colors.greylight05};
   background-color: ${theme.colors.white};
 
   ${(props) => props.layout === 'desktop' && SearchResultsDesktop}
@@ -99,9 +99,17 @@ const SearchResults = styled('div')<SearchPageProps>`
 
 const SearchInputText = styled(InputText)`
  input {
+  color: ${theme.colors.grey05};
   border-radius: 32px;
-  border: 1px solid ${theme.colors.grey04};
+  border: 1px solid ${theme.colors.greylight05};
  }
+  ::-webkit-input-placeholder {
+    color: ${theme.colors.grey05};
+  }
+  ::placeholder {
+    color: ${theme.colors.grey05};
+    opacity: 1;
+  }
 `;
 
 const RootDesktop = css`

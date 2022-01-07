@@ -10,7 +10,7 @@ interface DocsHeaderProps {
 
 const DocsHeader: React.FC<DocsHeaderProps> = ({ title, subtitle, margin }) => {
   return (
-    <Box as="header" mb={'xxl'}>
+    <Box as="header" mb={'xxl'} mt={'xxl'}>
       <Heading as="h1" fontSize={36} fontWeight={700} color="grey09">
         {title}
       </Heading>
