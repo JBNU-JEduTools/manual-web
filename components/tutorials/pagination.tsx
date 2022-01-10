@@ -10,6 +10,7 @@ import {
   Pagination,
   Text,
 } from '@aksara-ui/react';
+import styled from 'styled-components';
 
 interface PaginationDetailsProps {
   current: number;
@@ -33,7 +34,7 @@ export const PaginationWithDetails: React.FC<PaginationDetailsProps> = ({
   setPage
 }) => {
   return (
-    <Box display="flex" flexDirection="row" justifyContent="space-between" pb={24}>
+    <PaginationWrapper alignItems="center" justifyContent="space-between" pb={24}>
       {`Showing ${current * limit - limit + 1}-${dataShown.length < current * limit ? dataShown.length : current * limit} of ${
         totalItems
       } data`}
@@ -63,6 +64,15 @@ export const PaginationWithDetails: React.FC<PaginationDetailsProps> = ({
           </DropdownMenuContent>
         </DropdownMenu>
       </Box>
-    </Box>
+    </PaginationWrapper>
   )
 }
+
+const PaginationWrapper = styled(Box)`
+  display: flex;
+  flex-direction: row;
+  @media only screen and (max-width: 1024px) {
+    line-height: 64px;
+    flex-direction: column;
+  };
+`

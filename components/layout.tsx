@@ -3,11 +3,12 @@ import { breakpoints } from 'utils/variables';
 import { Header, HeaderInner, HeaderLogo, HeaderRight } from './layout/Header'
 import MainLogo from 'public/assets/images/logo-docs.svg';
 import styled from 'styled-components';
-import Meta from './meta'
 import Link from 'next/link';
 import React from 'react';
 import SearchBox from './search/SearchBox';
 import SearchIcon from './layout/Header/SearchIcon';
+import Head from 'next/head';
+import { NavButton } from './layout/Navigation';
 
 const StyledLayoutRoot = styled('div')`
   display: flex;
@@ -57,26 +58,49 @@ interface ILayout {
 
 const Layout:React.FC<ILayout> = ({ children }) => {
   const [logo, setLogo] = React.useState(MainLogo);
+  const [isSearchOpen, setIsSearchOpen] = React.useState(false);
 
   return (
     <StyledLayoutRoot>
+      <Head>
+        {/* <title>{siteMetadata.title}</title>
+        <meta name="description" content={siteMetadata.description} />
+        <meta name="keywords" content={siteMetadata.keywords} /> */}
+        <meta property="og:type" content="website" />
+        {/* <meta property="og:site_name" content={siteMetadata.title} />
+        <meta property="og:description" content={siteMetadata.description} />
+        <meta property="og:url" content={`${siteMetadata.siteUrl}${location ? location.pathname : '/'}`} /> */}
+      </Head>
       <Header fixed>
         <HeaderInner>
           <HeaderLogo>
-            <HomepageLink href="/">
-            <UnstyledAnchor cursor="pointer"><MainLogo /></UnstyledAnchor>
-            </HomepageLink>
+            <Link href="/">
+              <UnstyledAnchor>
+                <MainLogo />
+              </UnstyledAnchor>
+            </Link>
           </HeaderLogo>
           <HeaderRight hideOnDesktop>
+            <NavButton
+              icon="hamburger"
+              fill={theme.colors.grey05}
+            >
+              Toggle Drawer
+            </NavButton>
             <LogoWrapper>
-              <HomepageLink href="/">
-                <UnstyledAnchor cursor="pointer"><MainLogo /></UnstyledAnchor>
-              </HomepageLink>
+              <Link href="/">
+                <UnstyledAnchor>
+                  <MainLogo />
+                </UnstyledAnchor>
+              </Link>
             </LogoWrapper>
-            <SearchBox layout="mobile" />
-            <UnstyledSearchButton>
-              <SearchIcon />
-            </UnstyledSearchButton>
+            {isSearchOpen ? (
+              <SearchBox layout="mobile" onSearchClear={() => setIsSearchOpen(false)} />
+            ) : (
+              <UnstyledSearchButton onClick={() => setIsSearchOpen(!isSearchOpen)}>
+                <SearchIcon />
+              </UnstyledSearchButton>
+            )}
           </HeaderRight>
           <HeaderRight contents="flex-end" hideOnMobile>
             <DesktopHeaderRight>
@@ -85,10 +109,9 @@ const Layout:React.FC<ILayout> = ({ children }) => {
           </HeaderRight>
         </HeaderInner>
       </Header>
-      <Meta />
       {children}
     </StyledLayoutRoot>
-  )
-}
+  );
+};
 
 export default Layout;

@@ -58,7 +58,8 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post }) => 
               { url: '/tutorials', urlDisplay: 'All Tutorials' },
               { url: '#', urlDisplay: post.title }
               ]}
-            />
+                />
+            <div id="toc-aksara" />
             <DocsHeader title={post.title} subtitle={post.description} />
             <MarkdownContent>{renderAst(post.content)}</MarkdownContent>
             <DocsHelpful />

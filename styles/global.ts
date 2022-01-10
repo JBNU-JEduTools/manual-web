@@ -3,6 +3,7 @@ import { css } from 'styled-components';
 export const styleJSX = css`
 html,
 body {
+  font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -20,9 +21,11 @@ a.header-anchor:hover {
   position: fixed;
   border-right: 1px solid #eff2f5;
   left: 0;
-  top: 120px;
-  width: 20%;
-  height: 500px;
+  top: 64px;
+  margin-bottom: 64px;
+  padding-right: 24px;
+  width: 25%;
+  height: -webkit-fill-available;
   overflow-y: auto;
 
   ::-webkit-scrollbar {

@@ -13,6 +13,7 @@ const md = require('markdown-it')({
   slugify: legacySlugify,
 }).use(require("markdown-it-toc-done-right"), {
   listType: 'ul',
+  containerId: 'toc',
   slugify: legacySlugify
 }).use(anchor, {
   permalink: anchor.permalink.ariaHidden({

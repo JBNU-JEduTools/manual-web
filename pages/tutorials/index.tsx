@@ -4,14 +4,14 @@ import Layout from '../../components/layout'
 import { getAllPosts } from '../../utils/api'
 import Head from 'next/head'
 import { Footer } from 'components/layout/Footer'
-import { Box, Heading, theme, Text, Pagination } from '@aksara-ui/react'
-import { Anchor, Card, Cards, ProductBadge } from 'components/tutorials/components'
-import { IconArrowRight } from '@aksara-ui/icons'
-import Link from 'next/link'
+import { Box, Heading, Text } from '@aksara-ui/react'
+import { Cards } from 'components/tutorials/components'
 import { PaginationWithDetails } from 'components/tutorials/pagination'
+import { MarkdownContent } from 'interfaces/next'
+import { TutorialCard } from 'components/tutorials/TutorialCard'
 
 interface IIndex {
-  tutorialPosts: any;
+  tutorialPosts: MarkdownContent[];
 }
 
 const LIMIT = [
@@ -40,21 +40,9 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
         </Box>
         <Box px="20vw">
           <Cards>
-          {tutorialPosts?.slice((page - 1) * limit, limit).map((tutorial: any) => {
+          {tutorialPosts?.slice((page - 1) * limit, limit).map((tutorial: MarkdownContent) => {
             return (
-              <Card key={tutorial.title}>
-                <img src={tutorial.imgSpot} />
-                <Box p={32}>
-                  <ProductBadge>
-                    <img src="/assets/images/products/icon/kata-platform-icon.svg" />
-                    <Text fontSize={12} fontWeight={600} color={theme.colors.blue06}>Kata Platform</Text>
-                  </ProductBadge>
-                  <Box maxHeight={84} height={84}>
-                    <Heading scale={700} fontSize={20}>{tutorial.title}</Heading>
-                  </Box>
-                  <Link href={`/tutorials/${tutorial.id}`}><Anchor>View Article <IconArrowRight width={14} /></Anchor></Link>
-                </Box>
-              </Card>
+              <TutorialCard tutorial={tutorial} />
               )
             })}
           </Cards>

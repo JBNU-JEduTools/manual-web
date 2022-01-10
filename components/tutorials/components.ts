@@ -7,6 +7,29 @@ export const Cards = styled('div')`
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 32px;
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+    iframe {
+      width: 100% !important;
+      height: 300px !important;
+      margin-top: 24px;
+    }
+  }
+
+  @media only screen and (max-width: 1440px) {
+    iframe {
+      width: 400px;
+      height: 250px;
+    }
+  }
+
+  @media only screen and (min-width: 1920px) {
+    iframe {
+      width: 550px;
+      height: 300px;
+    }
+  }
 `
 
 export const ProductBadge = styled('div')`
@@ -53,6 +76,11 @@ export const Card = styled(CardAksara)`
   border-radius: 8px;
   border: 1px solid ${theme.colors.grey03};
   cursor: default;
-  max-width: 344px;
+  @media only screen and (max-width: 1024px) {
+    max-width: 100% !important;
+  }
+  @media only screen and (min-width: 1440px) {
+    max-width: 355px;
+  }
   margin-top: 12px;
 `

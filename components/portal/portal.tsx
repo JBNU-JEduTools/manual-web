@@ -1,16 +1,15 @@
-import { Box, Heading, theme, Text, UnstyledAnchor } from '@aksara-ui/react'
+import { Box, Heading, theme, Text } from '@aksara-ui/react'
 import PortalHero from 'public/assets/images/portal-hero.svg'
-import styled from 'styled-components'
 import { PRODUCTS as productList } from 'utils/constants'
 import { layerIndexes } from 'utils/variables'
-import { DocsCard } from './components'
+import { Anchor, DocsCard, HeroWrapper } from './components'
 
 export default function Portal() {
   return (
     <Box backgroundColor={theme.colors.blue07} mb={96} display="flex" paddingBottom={48}>
-      <Box position="absolute">
+      <HeroWrapper>
         <PortalHero />
-      </Box>
+      </HeroWrapper>
       <Box display="flex" width="100%" flexDirection="column" alignItems="center" justifyContent="center" zIndex={layerIndexes.flat}>
         <Box display="flex" flexDirection="column" alignItems="center" mt={48} color={theme.colors.white}>
           <Heading fontWeight={700} fontSize={36} color={theme.colors.white}>
@@ -35,15 +34,3 @@ export default function Portal() {
     </Box>
   )
 }
-
-const Anchor = styled(UnstyledAnchor)`
-  font-size: 16px;
-  font-weight: 700;
-  color: ${theme.colors.grey08};
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    color: ${theme.colors.grey08};
-  }
-`

@@ -45,8 +45,7 @@ const reboot = css`
 
   body {
     margin: 0;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -73,6 +72,20 @@ const reboot = css`
   h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
+  }
+
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    display: block;
+    content: " ";
+    visibility: hidden;
+    pointer-events: none;
+    height: 64px;
+    margin-top: -64px;
   }
 
   p {
@@ -343,10 +356,6 @@ const reboot = css`
 
   [hidden] {
     display: none !important;
-  }
-
-  .table-of-contents .active {
-    color: ${theme.colors.blue07};
   }
 `;
 
