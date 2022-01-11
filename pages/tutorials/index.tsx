@@ -42,7 +42,7 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
           <Cards>
           {tutorialPosts?.slice((page - 1) * limit, limit).map((tutorial: MarkdownContent) => {
             return (
-              <TutorialCard tutorial={tutorial} />
+              <TutorialCard key={tutorial.id} tutorial={tutorial} />
               )
             })}
           </Cards>

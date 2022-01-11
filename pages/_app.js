@@ -5,7 +5,7 @@ import { AksaraReset } from 'components/foundations';
 export default function MyApp({ Component, pageProps }) {
   return (
     <AksaraReset>
-      <AksaraProvider>
+      <AksaraProvider disableInjection>
         <Component {...pageProps} />
         <style jsx>
           {styleJSX}

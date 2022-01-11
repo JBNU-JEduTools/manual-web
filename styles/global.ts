@@ -1,6 +1,13 @@
 import { css } from 'styled-components';
 
+
 export const styleJSX = css`
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter.woff') format('woff');
+}
+
 html,
 body {
   font-family: 'Inter', sans-serif;
