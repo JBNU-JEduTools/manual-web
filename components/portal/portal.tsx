@@ -20,7 +20,7 @@ export default function Portal() {
         </HeaderPortal>
         <DocsCardWrapper>
           {productList.map((product, idx) => (
-            <DocsCard key={`${idx}-${product.name}`} >
+            <DocsCard key={`${idx}-${product.name}`}>
               <Anchor href={product.extendedUrl} target={product.extendedUrl && "_blank"}>
                 <Box display="flex" alignItems="center">
                   <img src={product.imgPath} /> {product.name}

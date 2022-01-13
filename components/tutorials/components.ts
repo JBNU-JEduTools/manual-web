@@ -95,4 +95,9 @@ export const Card = styled(CardAksara)`
     width: 30%;
   }
   margin-top: 12px;
+
+  &:hover {
+
+  box-shadow: 0px 8px 16px 0px #89949F52;
+  }
 `

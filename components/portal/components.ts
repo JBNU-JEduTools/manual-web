@@ -22,6 +22,9 @@ export const DocsCard = styled(Card)`
   img {
     margin-right: 24px;
   }
+  &:hover {
+    box-shadow: 0px 8px 16px 0px ${theme.colors.greydark01};
+  }
 `
 
 export const HeaderPortal = styled(Box)`

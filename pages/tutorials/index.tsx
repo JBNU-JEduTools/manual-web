@@ -40,7 +40,7 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
         </Box>
         <CardsWrapper>
           <Cards>
-          {tutorialPosts?.slice((page - 1) * limit, limit).map((tutorial: MarkdownContent) => {
+          {tutorialPosts?.slice((page - 1) * limit, limit + (page - 1)).map((tutorial: MarkdownContent) => {
             return (
               <TutorialCard key={tutorial.frontMatter.id} tutorial={tutorial} />
               )
@@ -53,7 +53,6 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
             limit={limit}
             setLimit={setLimit}
             limitList={LIMIT}
-            dataShown={tutorialPosts?.slice((page - 1) * limit, limit)}
             totalItems={tutorialPosts.length} />
           <Footer version={"v3.1.1"} siteLastUpdated={"23 December 2021"} />
         </CardsWrapper>

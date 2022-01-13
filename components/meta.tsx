@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from 'utils/constants'
 
 export default function Meta() {
   return (
@@ -34,9 +33,9 @@ export default function Meta() {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
+        content={`Kata Product Documentations made in Next.js.`}
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <meta property="og:image" content="/favicons/android-chrome-512x512.png" />
     </Head>
   )
 }

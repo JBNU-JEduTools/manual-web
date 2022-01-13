@@ -47,7 +47,7 @@ section nav {
 
 .table-of-contents li {
   font-size: 14px;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .table-of-contents li a {
