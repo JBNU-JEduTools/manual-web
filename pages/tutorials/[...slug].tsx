@@ -53,7 +53,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
         <DocsWrapper hasToc={toc}>
           {toc && (
             <div className='table-of-contents'>
-              <TocWrapper tree={toc} arrayToc={listToc} />
+              <TocWrapper tree={toc} />
             </div>
           )}
           <DocsContainer>
