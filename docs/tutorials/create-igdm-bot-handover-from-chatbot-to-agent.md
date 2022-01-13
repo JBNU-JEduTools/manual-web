@@ -8,15 +8,13 @@ next: create-simple-bot-handover-from-chatbot-to-agent
 date: '2018-10-10T07:00:00+07:00'
 ---
 
-[[toc]]
-
 Kata Platform <a href="https://platform.kata.ai" target="_blank">https://platform.kata.ai</a> is a platform to create chatbots and train them with Natural Language Processing (NLP). You can create any chatbots for any use-cases, such as FAQ, campaign, customer service, handover to human agents, and more.
 
 Currently, we’ve launched Instagram chatbot with various features, such as End-users can receive automated replies by creating an Instagram story that mentioned brand, receive automated replies by replying to brand Instagram story, receive bot responses in image, text, quick reply, ice breaker (for first-time users only) and generic template (similar with a carousel in other messaging platforms). Learn more about [Instagram DM Automation](/channels/instagram-messaging/).
 
 In this tutorial, we will create an Instagram chatbot that is able to send conversations to human agents, also known as "Agent Handover''. We will use the Kata Omnichat dashboard to connect chatbots with human agents. Learn more about [Omnichat](/kata-omnichat).
 
-<iframe width="600" height="300" src="https://www.youtube.com/embed/dAHnoTX4BUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="300" src="https://www.youtube.com/embed/dAHnoTX4BUE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
 
 # Chatbot Flow
 
@@ -1349,7 +1347,7 @@ We provide video tutorials and interaction demo for Instagram chatbot features. 
 
 -   Create Instagram bot handover video tutorial
 
-<iframe width="600" height="300" src="https://www.youtube.com/embed/dAHnoTX4BUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="300" src="https://www.youtube.com/embed/dAHnoTX4BUE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
 
 -   Ice Breaker interaction with end-users
 

@@ -263,16 +263,20 @@ export const space = {
 
 /** Breakpoint values (in px) mapped by size designators */
 export const breakpoints = {
-  /** 0px to 319px */
+  /** 0px */
   xs: 0,
-  /** 320px to 767px */
+  /** 320px */
   sm: 320,
-  /** 768px to 1023px */
+  /** 768px*/
   md: 768,
-  /** 1024px to 1439px */
+  /** 1024px */
   lg: 1024,
-  /** 1440px and above */
-  xl: 1440
+  /** 1440px */
+  xl: 1440,
+  /** 1920px*/
+  xxl: 1920,
+  /** 2048px*/
+  xxxl: 2048,
 };
 
 export const layerIndexes = {

@@ -4,6 +4,7 @@ import { MarkdownContent } from 'interfaces/next';
 import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
+import { breakpoints } from 'utils/variables';
 import { Anchor, Card, ProductBadge } from './components';
 
 interface TutorialCardProps {
@@ -11,18 +12,19 @@ interface TutorialCardProps {
 }
 
 export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial }) => {
+  const frontMatter = tutorial.frontMatter;
   return (
-    <Card key={tutorial.title}>
-      <img src={tutorial.imgSpot} />
-      <CardContent p={32}>
+    <Card key={frontMatter.title}>
+      <img src={frontMatter.imgSpot} />
+      <CardContent>
         <ProductBadge>
           <img src="/assets/images/products/icon/kata-platform-icon.svg" />
           <Text fontSize={12} fontWeight={600} color={theme.colors.blue06}>Kata Platform</Text>
         </ProductBadge>
         <CardTitle>
-          <Heading scale={700} fontSize={20} overflow="hidden">{tutorial.title}</Heading>
+          <Heading scale={700} fontSize={20} overflow="hidden">{frontMatter.title}</Heading>
         </CardTitle>
-        <Link href={`/tutorials/${tutorial.id}`}><Anchor>View Article <IconArrowRight width={14} /></Anchor></Link>
+        <Link href={`/tutorials/${frontMatter.id}`}><Anchor>View Article <IconArrowRight width={14} /></Anchor></Link>
       </CardContent>
     </Card>
   )
@@ -30,13 +32,17 @@ export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial }) => {
 
 const CardContent = styled(Box)`
   height: 285px;
+  padding: 32px;
+  @media only screen and (max-width: ${`${breakpoints.xl}px`}) {
+    padding: 24px;
+  }
 `
 
 const CardTitle = styled(Box)`
   overflow: hidden;
   max-height: 125px;
   height: 125px;
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
     max-height: 125px;
   }
 `

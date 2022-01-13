@@ -24,6 +24,10 @@ a.header-anchor:hover {
   text-decoration: none;
 }
 
+section nav {
+  display: none;
+}
+
 .table-of-contents {
   position: fixed;
   border-right: 1px solid #eff2f5;
@@ -52,14 +56,6 @@ a.header-anchor:hover {
 
 .table-of-contents ul {
   list-style-type: none;
-}
-
-.table-of-contents a {
-  color: #404145;
-
-  &:hover {
-    color: #2d302e;
-  }
 }
 
 .table-of-contents ul > li {

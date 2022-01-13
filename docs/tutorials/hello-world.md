@@ -8,8 +8,6 @@ next: bot-studio-tutorial
 date: '2018-06-06T07:00:00+07:00'
 ---
 
-[[toc]]
-
 ## Create a Project
 
 First login/sign up to <a href="https://platform.kata.ai/login" target="_blank">https://platform.kata.ai/login</a>

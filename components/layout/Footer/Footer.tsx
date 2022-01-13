@@ -20,11 +20,12 @@ const Wrapper = styled('footer')`
 const Inner = styled('div')`
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
-  @media (min-width: ${breakpoints.md}px) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  @media (max-width: ${`${breakpoints.md}px`}) {
+    text-align: center;
+    flex-direction: column;
   }
 `;
 

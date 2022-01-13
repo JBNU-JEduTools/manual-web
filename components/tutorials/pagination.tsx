@@ -11,6 +11,7 @@ import {
   Text,
 } from '@aksara-ui/react';
 import styled from 'styled-components';
+import { breakpoints } from 'utils/variables';
 
 interface PaginationDetailsProps {
   current: number;
@@ -71,7 +72,7 @@ export const PaginationWithDetails: React.FC<PaginationDetailsProps> = ({
 const PaginationWrapper = styled(Box)`
   display: flex;
   flex-direction: row;
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
     line-height: 64px;
     flex-direction: column;
   };

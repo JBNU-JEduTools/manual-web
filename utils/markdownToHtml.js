@@ -14,6 +14,7 @@ const md = require('markdown-it')({
 }).use(require("markdown-it-toc-done-right"), {
   listType: 'ul',
   containerId: 'toc',
+  linkClass: 'toc-class',
   slugify: legacySlugify
 }).use(anchor, {
   permalink: anchor.permalink.ariaHidden({

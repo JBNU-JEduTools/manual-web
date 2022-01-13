@@ -1,0 +1,7 @@
+{
+  "tutorialPost": {
+    "contentPath": "docs/tutorials",
+    "sortBy": "date",
+    "sortOrder": "asc"
+  }
+}

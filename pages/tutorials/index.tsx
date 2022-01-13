@@ -1,14 +1,14 @@
 import React from 'react'
 import Container from '../../components/container'
 import Layout from '../../components/layout'
-import { getAllPosts } from '../../utils/api'
 import Head from 'next/head'
 import { Footer } from 'components/layout/Footer'
 import { Box, Heading, Text } from '@aksara-ui/react'
-import { Cards } from 'components/tutorials/components'
+import { Cards, CardsWrapper } from 'components/tutorials/components'
 import { PaginationWithDetails } from 'components/tutorials/pagination'
 import { MarkdownContent } from 'interfaces/next'
 import { TutorialCard } from 'components/tutorials/TutorialCard'
+import { getAllNodes } from 'next-mdx/server'
 
 interface IIndex {
   tutorialPosts: MarkdownContent[];
@@ -38,11 +38,11 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
             Find the tutorials for our products
           </Text>
         </Box>
-        <Box px="20vw">
+        <CardsWrapper>
           <Cards>
           {tutorialPosts?.slice((page - 1) * limit, limit).map((tutorial: MarkdownContent) => {
             return (
-              <TutorialCard key={tutorial.id} tutorial={tutorial} />
+              <TutorialCard key={tutorial.frontMatter.id} tutorial={tutorial} />
               )
             })}
           </Cards>
@@ -56,22 +56,25 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
             dataShown={tutorialPosts?.slice((page - 1) * limit, limit)}
             totalItems={tutorialPosts.length} />
           <Footer version={"v3.1.1"} siteLastUpdated={"23 December 2021"} />
-        </Box>
+        </CardsWrapper>
       </Container>
     </Layout>
   )
 }
 
 export async function getStaticProps() {
-  const tutorialPosts = getAllPosts([
-    'title',
-    'id',
-    'imgSpot',
-    'date'
-  ], 'tutorials')
+  const post = await getAllNodes("tutorialPost")
+
+  if (!post) {
+    return {
+      notFound: true,
+    }
+  }
 
   return {
-    props: { tutorialPosts },
+    props: {
+      tutorialPosts: post,
+    },
   }
 }
 

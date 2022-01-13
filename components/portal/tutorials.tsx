@@ -28,7 +28,7 @@ const Tutorials: React.FC<TutorialsProps> = ({ tutorials }) => {
       <Cards>
         {tutorials?.slice(0, 6).map((tutorial) => {
           return (
-            <TutorialCard key={tutorial.id} tutorial={tutorial}/>
+            <TutorialCard key={tutorial.frontMatter.id} tutorial={tutorial}/>
           )
         })}
       </Cards>

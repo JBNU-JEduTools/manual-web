@@ -7,8 +7,6 @@ prev: integration-chatbot-with-nl-studio
 next: create-igdm-bot-handover-from-chatbot-to-agent
 ---
 
-[[toc]]
-
 ## Introduction
 
 CMS Studio allows you to build a dashboard for your chatbot. This dashboard lets your clients to add, edit, or remove certain contents of your bot.

@@ -1,7 +1,6 @@
 import { theme, UnstyledAnchor } from '@aksara-ui/react'
 import { breakpoints } from 'utils/variables';
 import { Header, HeaderInner, HeaderLogo, HeaderRight } from './layout/Header'
-import MainLogo from 'public/assets/images/logo-docs.svg';
 import styled from 'styled-components';
 import Link from 'next/link';
 import React from 'react';
@@ -57,7 +56,6 @@ interface ILayout {
 }
 
 const Layout:React.FC<ILayout> = ({ children }) => {
-  const [logo, setLogo] = React.useState(MainLogo);
   const [isSearchOpen, setIsSearchOpen] = React.useState(false);
 
   return (
@@ -76,7 +74,7 @@ const Layout:React.FC<ILayout> = ({ children }) => {
           <HeaderLogo>
             <Link href="/">
               <UnstyledAnchor>
-                <MainLogo />
+                <img src="/assets/images/logo-docs.svg" />
               </UnstyledAnchor>
             </Link>
           </HeaderLogo>
@@ -90,7 +88,7 @@ const Layout:React.FC<ILayout> = ({ children }) => {
             <LogoWrapper>
               <Link href="/">
                 <UnstyledAnchor>
-                  <MainLogo />
+                  <img src="/assets/images/logo-docs.svg" />
                 </UnstyledAnchor>
               </Link>
             </LogoWrapper>

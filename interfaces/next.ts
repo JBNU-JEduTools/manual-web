@@ -1,14 +1,28 @@
 type Product = ['Platform', 'Business Dashboard', 'Qios', 'CLI', 'Omnichat'];
 
 export interface MarkdownContent {
-  title: string;
-  id: string;
-  imgSpot: string;
+  frontMatter: {
+    title: string;
+    description: string;
+    id: string;
+    layout: string;
+    imgSpot: string;
+    content: string;
+    product: Product;
+    next?: string;
+    prev?: string;
+    date: string;
+  };
   content: string;
-  product: Product;
-  next?: string;
-  prev?: string;
-  date: string;
+  hash: string;
+  filepath: string;
+  mdx: {
+    compiledSource: string;
+    renderOutput: string;
+  };
+  relationships: any;
+  slug: string;
+  url: string;
 }
 
 export interface BreadcrumbContent {

@@ -1,5 +1,6 @@
-import { Card as CardAksara, theme, UnstyledAnchor } from '@aksara-ui/react'
+import { Box, Card as CardAksara, theme, UnstyledAnchor } from '@aksara-ui/react'
 import styled from 'styled-components'
+import { breakpoints } from 'utils/variables'
 
 export const Cards = styled('div')`
   display: flex;
@@ -8,26 +9,26 @@ export const Cards = styled('div')`
   justify-content: space-between;
   margin-bottom: 32px;
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
     flex-direction: column;
     iframe {
       width: 100% !important;
-      height: 300px !important;
+      height: 35vh !important;
       margin-top: 24px;
     }
   }
 
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: ${`${breakpoints.xl}px`}) {
     iframe {
-      width: 400px;
-      height: 250px;
+      width: 25vw;
+      height: 30vh;
     }
   }
 
-  @media only screen and (min-width: 1920px) {
+  @media only screen and (min-width: ${`${breakpoints.xxl}px`}) {
     iframe {
-      width: 550px;
-      height: 300px;
+      width: 27vw;
+      height: 25vh;
     }
   }
 `
@@ -72,15 +73,26 @@ export const Anchor = styled(UnstyledAnchor)`
   }
 `
 
+export const CardsWrapper = styled(Box)`
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+`
+
 export const Card = styled(CardAksara)`
   border-radius: 8px;
   border: 1px solid ${theme.colors.grey03};
   cursor: default;
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
     max-width: 100% !important;
   }
-  @media only screen and (min-width: 1440px) {
-    max-width: 355px;
+  @media only screen and (min-width: ${`${breakpoints.xl}px`}) {
+    width: 30%;
   }
   margin-top: 12px;
 `

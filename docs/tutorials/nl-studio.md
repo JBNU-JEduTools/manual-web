@@ -8,8 +8,6 @@ next: integration-chatbot-with-nl-studio
 date: '2018-08-08T07:00:00+07:00'
 ---
 
-[[toc]]
-
 ## Introduction
 
 In [Bot studio tutorial](/tutorials/bot-studio/), we learned how to make keyword-based chatbot to order pizza. However, keyword-based chatbot is not so smart. In this tutorial we will learn how to enhance the chatbot using NL Studio.

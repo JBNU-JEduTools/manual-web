@@ -8,8 +8,6 @@ next: nl-studio-tutorial
 date: '2018-07-07T07:00:00+07:00'
 ---
 
-[[toc]]
-
 ## Introduction
 
 Building a chatbot on Kata | Platform is quick and easy, even with a lack of programming knowledge. In this tutorial, we will learn how to create a simple bot on LINE Messenger to order a pizza. We will also learn how to train your bot with NL Studio.

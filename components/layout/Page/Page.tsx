@@ -7,6 +7,7 @@ interface PageProps {
 
 const Page = styled('div')<PageProps>`
   display: flex;
+  height: 100vh;
   flex-direction: column;
   flex: 1 1 auto;
   position: relative;

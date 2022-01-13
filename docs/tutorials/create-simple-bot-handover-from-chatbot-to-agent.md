@@ -7,13 +7,11 @@ prev: create-igdm-bot-handover-from-chatbot-to-agent
 date: '2018-11-11T07:00:00+07:00'
 ---
 
-[[toc]]
-
 Kata Platform ([platform.kata.ai](www.platform.kata.ai)) is a platform to create chatbots and train them with Natural Language Processing (NLP). You can create any chatbots for any use-cases, such as FAQ, campaign, customer service, handover to human agents, and more.
 
 In this tutorial, we will create a chatbot that is able to handoff conversations to human agents, also known as "Agent Handover''. We will use the Kata Omnichat dashboard to connect chatbots with human agents. Check this [documentation](/kata-omnichat) for Kata Omnichat explanation.
 
-<iframe width="600" height="300" src="https://www.youtube.com/embed/dAHnoTX4BUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="300" src="https://www.youtube.com/embed/dAHnoTX4BUE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
 
 # Simple Chatbot Flow
 
@@ -420,6 +418,6 @@ We provide video tutorials and interaction demos for agent bot Omnichat features
 
 -   Create simple bot handover video tutorial
 
-<iframe width="600" height="300" src="https://www.youtube.com/embed/pbqou7Wr4Tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="300" src="https://www.youtube.com/embed/pbqou7Wr4Tc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
 
 -   Chatbot interaction with end-user and handover to human agent

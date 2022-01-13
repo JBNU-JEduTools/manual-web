@@ -3,13 +3,13 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 import { Page, NotFoundWrapper } from 'components/layout/Page';
-import { Heading, Text } from '@aksara-ui/react';
+import { Heading, Text } from 'components/foundations';
 import styled from 'styled-components';
 
 const NotFoundPage: React.FC = () => (
   <Page>
     <Head>
-      <title>404: Page not found. &middot;</title>
+      <title>404: Page Not Found</title>
     </Head>
     <NotFoundWrapper>
       <Inner>
