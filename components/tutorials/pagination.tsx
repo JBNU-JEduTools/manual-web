@@ -1,16 +1,9 @@
 import React from 'react';
-import { IconChevronDown } from '@aksara-ui/icons';
 import {
   Box,
-  Button,
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigerer,
   Pagination,
   PaginationDetail,
   PaginationFilter,
-  Text,
 } from '@aksara-ui/react';
 import styled from 'styled-components';
 import { breakpoints } from 'utils/variables';
