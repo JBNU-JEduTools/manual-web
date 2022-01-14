@@ -1,3 +1,4 @@
+import { theme } from '@aksara-ui/react';
 import { css } from 'styled-components';
 import { colors, paragraphSizes, textSizes } from 'utils/variables';
 
@@ -151,16 +152,17 @@ const code = css`
 
   blockquote {
     display: flex;
+    margin-top: -30px;
     flex-direction: row;
     align-items: flex-start;
     padding: 16px;
-    background: #F5F6F8;
-    border-radius: 8px;
+    background: ${theme.colors.greylight03};
+    border: 1px solid ${theme.colors.greylight04}
   }
 
   blockquote > p {
     font-size: 14px !important;
-    color: #6A7A8A !important;
+    color: #19191B !important;
   }
 
   /* overrides color-values for the Line Numbers plugin

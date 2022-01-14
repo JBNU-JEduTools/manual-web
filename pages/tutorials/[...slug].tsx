@@ -21,6 +21,7 @@ import Layout from 'components/layout';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import { GetStaticPropsContext, PreviewData } from 'next';
 import { getTableOfContents } from 'next-mdx-toc';
+import dynamic from 'next/dynamic';
 
 interface TutorialPageTemplateProps {
   post: any;
@@ -37,7 +38,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
   }
 
   return (
-    <Page docsPage>
+    <Page suppressHydrationWarning={true} docsPage>
       <Head>
         <title>
           {frontMatter.title} &middot; Kata Platform Documentation

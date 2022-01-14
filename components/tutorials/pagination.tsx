@@ -31,7 +31,7 @@ export const PaginationWithDetails: React.FC<PaginationDetailsProps> = ({
     <PaginationWrapper alignItems="center" justifyContent="space-between" pb={24}>
       <PaginationDetail page={current} limit={limit} length={totalItems} />
       <Pagination onSelect={setPage} current={current} total={totalPage} />
-      <PaginationFilter selectedItem={limit} items={limitList} onChange={changes => { setLimit(changes) }} />
+      <PaginationFilter selectedItem={limit} items={limitList} onChange={changes => { setLimit(changes); setPage(1); }} />
     </PaginationWrapper>
   )
 }

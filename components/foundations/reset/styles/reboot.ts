@@ -16,7 +16,7 @@ const reboot = css`
   }
 
   html {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -202,6 +202,7 @@ const reboot = css`
   section img {
     margin-top: 24px;
     margin-bottom: 24px;
+    border: 1px solid ${theme.colors.greylight04}
   }
 
   img {

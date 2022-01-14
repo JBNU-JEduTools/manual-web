@@ -9,7 +9,7 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="assets/fonts/Inter.woff"
+            href="/assets/fonts/Inter.woff"
             as="font"
           />
         </Head>

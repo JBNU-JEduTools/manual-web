@@ -1,4 +1,5 @@
 import { css } from 'styled-components';
+import { theme } from '@aksara-ui/react';
 import { textSizes, colors } from 'utils/variables';
 
 const base = css`
