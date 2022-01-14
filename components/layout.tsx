@@ -1,6 +1,6 @@
-import { theme, UnstyledAnchor } from '@aksara-ui/react'
+import { theme, UnstyledAnchor } from '@aksara-ui/react';
 import { breakpoints } from 'utils/variables';
-import { Header, HeaderInner, HeaderLogo, HeaderRight } from './layout/Header'
+import { Header, HeaderInner, HeaderLogo, HeaderRight } from './layout/Header';
 import styled from 'styled-components';
 import Link from 'next/link';
 import React from 'react';
@@ -12,7 +12,7 @@ import { NavButton } from './layout/Navigation';
 const StyledLayoutRoot = styled('div')`
   display: flex;
   flex-direction: column;
-  margin-top: 64px;
+  padding-top: 64px;
   min-height: 100vh;
 
   @media (min-width: ${breakpoints.md}px) {
@@ -55,7 +55,7 @@ interface ILayout {
   children: React.ReactNode;
 }
 
-const Layout:React.FC<ILayout> = ({ children }) => {
+const Layout: React.FC<ILayout> = ({ children }) => {
   const [isSearchOpen, setIsSearchOpen] = React.useState(false);
 
   return (
@@ -79,10 +79,7 @@ const Layout:React.FC<ILayout> = ({ children }) => {
             </Link>
           </HeaderLogo>
           <HeaderRight hideOnDesktop>
-            <NavButton
-              icon="hamburger"
-              fill={theme.colors.grey05}
-            >
+            <NavButton icon="hamburger" fill={theme.colors.grey05}>
               Toggle Drawer
             </NavButton>
             <LogoWrapper>
