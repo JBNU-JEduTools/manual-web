@@ -16,7 +16,6 @@ const reboot = css`
   }
 
   html {
-    font-family: 'Inter', sans-serif !important;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -45,7 +44,7 @@ const reboot = css`
 
   body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;

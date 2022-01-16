@@ -49,7 +49,7 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
           <PaginationWithDetails
             current={page}
             setPage={setPage}
-            totalPage={tutorialPosts.length / limit + 1}
+            totalPage={Math.floor(tutorialPosts.length / limit + 1)}
             limit={limit}
             setLimit={setLimit}
             limitList={LIMIT}

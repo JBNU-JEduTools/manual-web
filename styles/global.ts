@@ -4,14 +4,31 @@ import { css } from 'styled-components';
 export const styleJSX = css`
 
 @font-face {
+  -webkit-font-smoothing: antialiased;
   font-family: 'Inter';
-  src: url('assets/fonts/Inter.woff') format('woff');
+  src: url('assets/fonts/Inter.ttf') format('woff');
+}
+
+@font-face {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter-bold';
+  src: url('assets/fonts/Inter.ttf') format('woff');
+  font-weight: 700;
 }
 
 html,
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', 'Inter-bold', sans-serif;
   scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter-bold';
 }
 
 a.header-anchor {
@@ -59,7 +76,7 @@ section nav {
 }
 
 .table-of-contents ul > li {
-  font-weight: 700;
+  font-family: 'Inter-bold';
 }
 
 .table-of-contents ul > li > ul {
@@ -69,6 +86,6 @@ section nav {
 }
 
 .table-of-contents ul > li > ul > li {
-  font-weight: 400;
+  font-family: 'Inter';
 }
 `;

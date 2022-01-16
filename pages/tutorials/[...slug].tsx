@@ -21,7 +21,6 @@ import Layout from 'components/layout';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import { GetStaticPropsContext, PreviewData } from 'next';
 import { getTableOfContents } from 'next-mdx-toc';
-import dynamic from 'next/dynamic';
 
 interface TutorialPageTemplateProps {
   post: any;
