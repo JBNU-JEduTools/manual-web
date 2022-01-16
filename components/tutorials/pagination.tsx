@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  Box,
-  Pagination,
-  PaginationDetail,
-  PaginationFilter,
-} from '@aksara-ui/react';
+import { Box, Pagination, PaginationDetail, PaginationFilter } from '@aksara-ui/react';
 import styled from 'styled-components';
 import { breakpoints } from 'utils/variables';
 
@@ -25,16 +20,25 @@ export const PaginationWithDetails: React.FC<PaginationDetailsProps> = ({
   limitList,
   totalItems,
   setLimit,
-  setPage
+  setPage,
 }) => {
   return (
     <PaginationWrapper alignItems="center" justifyContent="space-between" pb={24}>
-      <PaginationDetail page={current} limit={limit} length={totalItems} />
+      <PaginationDetailWrapper>
+        <PaginationDetail page={current} limit={limit} length={totalItems} />
+      </PaginationDetailWrapper>
       <Pagination onSelect={setPage} current={current} total={totalPage} />
-      <PaginationFilter selectedItem={limit} items={limitList} onChange={changes => { setLimit(changes); setPage(1); }} />
+      <PaginationFilter
+        selectedItem={limit}
+        items={limitList}
+        onChange={(changes) => {
+          setLimit(changes);
+          setPage(1);
+        }}
+      />
     </PaginationWrapper>
-  )
-}
+  );
+};
 
 const PaginationWrapper = styled(Box)`
   display: flex;
@@ -42,5 +46,11 @@ const PaginationWrapper = styled(Box)`
   @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
     line-height: 64px;
     flex-direction: column;
-  };
-`
+  } ;
+`;
+
+const PaginationDetailWrapper = styled(Box)`
+  @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
+    margin-bottom: 8x;
+  }
+`;

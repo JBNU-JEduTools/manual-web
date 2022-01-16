@@ -1,20 +1,12 @@
 import { breakpoints } from 'utils/variables';
 import styled from 'styled-components';
 
-interface DocsWrapperProps {
-  hasToc?: boolean;
-}
-
-const DocsWrapper = styled('article')<DocsWrapperProps>`
+const DocsWrapper = styled('article')`
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   position: relative;
   padding: 32px;
-
-  @media (min-width: ${breakpoints.lg}px) {
-    flex-direction: ${(props) => props.hasToc && 'row'};
-  }
 
   @media (max-width: ${breakpoints.lg - 1}px) {
     overflow-x: auto;

@@ -10,7 +10,7 @@ type NavButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 const Root = styled('button')`
-  display: inline-block;
+  display: 'inline-block';
   margin: 0;
   padding: 0;
   height: 100%;
@@ -88,7 +88,7 @@ NavButton.defaultProps = {
   height: 24,
   width: 24,
   fill: colors.grey05,
-  icon: 'hamburger'
+  icon: 'hamburger',
 };
 
 export default NavButton;

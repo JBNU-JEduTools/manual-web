@@ -148,7 +148,7 @@ interface NavigationProps {
   navHidden?: boolean;
 }
 
-const NodeLink: React.FC<{node: HeaderMenuItem}> = ({ node }) => {
+const NodeLink: React.FC<{ node: HeaderMenuItem }> = ({ node }) => {
   if (node.external) {
     return (
       <a key={node.id} className="menu-link" href={node.href} target="_blank" rel="noopener noreferrer">
@@ -162,7 +162,7 @@ const NodeLink: React.FC<{node: HeaderMenuItem}> = ({ node }) => {
       {node.label}
     </Link>
   );
-}
+};
 
 function Navigation({ navigation, headerMenus, navHidden }: NavigationProps) {
   const { state, dispatch } = React.useContext(NavigationContext);
@@ -188,7 +188,7 @@ function Navigation({ navigation, headerMenus, navHidden }: NavigationProps) {
           <DocumentationMenu>
             {headerMenus &&
               headerMenus.map(({ node }) => {
-                return ( <NodeLink node={node} /> )
+                return <NodeLink node={node} />;
               })}
           </DocumentationMenu>
         </WrapperInner>
@@ -197,7 +197,7 @@ function Navigation({ navigation, headerMenus, navHidden }: NavigationProps) {
           <DocumentationMenu>
             {headerMenus &&
               headerMenus.map(({ node }) => {
-                return ( <NodeLink node={node} /> )
+                return <NodeLink node={node} />;
               })}
           </DocumentationMenu>
         </WrapperInner>
