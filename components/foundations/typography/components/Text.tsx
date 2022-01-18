@@ -36,7 +36,7 @@ export const Text: React.FC<TextProps> = ({ children, as, size, ...rest }) => (
 
 Text.defaultProps = {
   as: 'span',
-  fontFamily: 'inter',
+  fontFamily: 'Inter',
   marginBottom: '6px',
   marginTop: '6px',
   size: 300

@@ -1,15 +1,33 @@
 import { css } from 'styled-components';
+import { breakpoints } from 'utils/variables';
 
 export const styleJSX = css`
   @font-face {
+    -webkit-font-smoothing: antialiased;
     font-family: 'Inter';
-    src: url('assets/fonts/Inter.woff') format('woff');
+    src: url('assets/fonts/Inter.ttf') format('woff');
+  }
+
+  @font-face {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Inter-bold';
+    src: url('assets/fonts/Inter.ttf') format('woff');
+    font-weight: 700;
   }
 
   html,
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Inter-bold', sans-serif;
     scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Inter-bold';
   }
 
   a.header-anchor {
@@ -36,10 +54,11 @@ export const styleJSX = css`
     width: 25%;
     height: -webkit-fill-available;
     overflow-y: auto;
+  }
 
-    ::-webkit-scrollbar {
-      width: 0;
-      background: transparent;
+  @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
+    .table-of-contents {
+      display: none;
     }
   }
 
@@ -57,7 +76,7 @@ export const styleJSX = css`
   }
 
   .table-of-contents ul > li {
-    font-weight: 700;
+    font-family: 'Inter-bold';
   }
 
   .table-of-contents ul > li > ul {
@@ -67,6 +86,6 @@ export const styleJSX = css`
   }
 
   .table-of-contents ul > li > ul > li {
-    font-weight: 400;
+    font-family: 'Inter';
   }
 `;

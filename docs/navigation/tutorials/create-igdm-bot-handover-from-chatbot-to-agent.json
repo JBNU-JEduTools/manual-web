@@ -1,0 +1,526 @@
+[
+  {
+    "url": "#chatbot-flow",
+    "title": "Chatbot Flow",
+    "items": [{ "url": "#conversation-flow-table", "title": "Conversation Flow Table" }]
+  },
+  {
+    "url": "#create-project",
+    "title": "Create Project",
+    "items": [
+      {
+        "url": "#objective-register-your-new-account-and-login-to-the-platform",
+        "title": "Objective: Register your new account and login to the Platform"
+      },
+      {
+        "url": "#objective-create-new-chatbot-project",
+        "title": "Objective: Create new chatbot project",
+        "items": [
+          {
+            "url": "#login-to-kata-platform-and-create-a-project",
+            "title": "Login to Kata Platform and create a project"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "#create-handover-flow",
+    "title": "Create Handover Flow",
+    "items": [
+      {
+        "url": "#objective-define-a-flow",
+        "title": "Objective: Define a flow",
+        "items": [
+          {
+            "url": "#create-a-flow-name-handover-we-will-use-1-flow-for-this-simple-bot",
+            "title": "Create a flow name \"handover\". We will use 1 flow for this simple bot"
+          },
+          { "url": "#create-init-state", "title": "Create \"init\" state" }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "#create-greetings-state-to-respond-end-users-who-greet-bot-via-direct-message",
+    "title": "Create Greetings State to Respond End-User’s who Greet Bot via Direct Message",
+    "items": [
+      {
+        "url": "#objective-create-greetings-state-to-define-how-to-respond",
+        "title": "Objective: Create greetings state to define how to respond",
+        "items": [
+          {
+            "url": "#create-greetingsstate-as-bot-response-to-show-keywords-menu",
+            "title": "Create \"greetingsState\" as bot response to show keywords menu"
+          },
+          { "url": "#set-the-state-into-self-transition", "title": "Set the state into self-transition" }
+        ]
+      },
+      {
+        "url": "#objective-catch-end-users-messages-when-greeting-the-bot",
+        "title": "Objective: Catch end-users messages when greeting the bot",
+        "items": [
+          {
+            "url": "#create-greetings-keywords-to-build-understanding-in-chatbots-when-end-users-greet-the-bot-we-will-use-the-nlus-feature-to-create-the-keywords",
+            "title": "Create \"greetings\" keywords to build understanding in chatbots when end-users greet the bot. We will use the NLUs feature to create the keywords."
+          },
+          {
+            "url": "#create-greetingsintent-intent-to-catch-users-input",
+            "title": "Create \"greetingsIntent\" intent to catch user’s input"
+          }
+        ]
+      },
+      {
+        "url": "#objective-connect-init-and-greetingsstate-states-by-creating-a-transition",
+        "title": "Objective: Connect \"init\" and “greetingsState” states by creating a transition",
+        "items": [
+          {
+            "url": "#create-a-transition-to-connect-init-and-greetingsstate-states-the-transition-will-define-in-which-condition-the-greetings-state-including-the-actions-state-will-be-executed",
+            "title": "Create a transition to connect \"init\" and “greetingsState” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "#create-greetings-state-to-respond-end-users-who-greet-bot-via-instagram-story-mention",
+    "title": "Create Greetings State to Respond End-User’s who Greet Bot via Instagram Story Mention",
+    "items": [
+      {
+        "url": "#objective-catch-end-users-who-mentioned-the-brands-in-the-end-users-instagram-story",
+        "title": "Objective: Catch end-users who mentioned the brand’s in the end-users Instagram Story",
+        "items": [
+          {
+            "url": "#create-igmentionedintent-intent-to-catch-users-input",
+            "title": "Create \"igMentionedIntent\" intent to catch user’s input"
+          }
+        ]
+      },
+      {
+        "url": "#objective-create-greetings-state-to-define-how-to-respond-1",
+        "title": "Objective: Create greetings state to define how to respond",
+        "items": [
+          {
+            "url": "#create-igmentionedstate-as-bot-response-to-show-keywords-menu",
+            "title": "Create \"igMentionedState\" as bot response to show keywords menu"
+          },
+          { "url": "#set-the-state-into-self-transition-1", "title": "Set the state into self-transition" }
+        ]
+      },
+      {
+        "url": "#objective-connect-init-and-igmentionedstate-states-by-creating-a-transition",
+        "title": "Objective: Connect \"init\" and “igMentionedState” states by creating a transition",
+        "items": [
+          {
+            "url": "#create-a-transition-to-connect-init-and-igmentionedstate-states-the-transition-will-define-in-which-condition-the-greetings-state-including-the-actions-state-will-be-executed",
+            "title": "Create a transition to connect \"init\" and “igMentionedState” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "#create-greetings-state-to-respond-end-users-who-greet-bot-via-instagram-story-reply",
+    "title": "Create Greetings State to Respond End-User’s who Greet Bot via Instagram Story Reply",
+    "items": [
+      {
+        "url": "#objective-catch-end-users-who-reply-to-the-brands-instagram-story",
+        "title": "Objective: Catch end-users who reply to the brand’s Instagram Story",
+        "items": [
+          {
+            "url": "#create-replystoryintent-intent-to-catch-users-input",
+            "title": "Create \"replyStoryIntent\" intent to catch user’s input"
+          }
+        ]
+      },
+      {
+        "url": "#objective-create-greetings-state-to-define-how-to-respond-2",
+        "title": "Objective: Create greetings state to define how to respond",
+        "items": [
+          {
+            "url": "#create-igstoryreplystate-as-bot-response-to-show-keywords-menu",
+            "title": "Create \"igStoryReplyState\" as bot response to show keywords menu"
+          },
+          { "url": "#set-the-state-into-self-transition-2", "title": "Set the state into self-transition" }
+        ]
+      },
+      {
+        "url": "#objective-connect-init-and-igstoryreplystate-states-by-creating-a-transition",
+        "title": "Objective: Connect \"init\" and “igStoryReplyState” states by creating a transition",
+        "items": [
+          {
+            "url": "#create-a-transition-to-connect-init-and-igstoryreplystate-states-the-transition-will-define-in-which-condition-the-greetings-state-including-the-actions-state-will-be-executed",
+            "title": "Create a transition to connect \"init\" and “igStoryReplyState” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "#create-quick-replies",
+    "title": "Create Quick Replies",
+    "items": [
+      {
+        "url": "#objective-show-available-faq-topics-to-end-user",
+        "title": "Objective: Show available FAQ topics to end-user",
+        "items": [
+          { "url": "#create-faqstate-state", "title": "Create \"faqState\" state" },
+          { "url": "#create-quick-reply-response-type", "title": "Create quick reply response type" },
+          { "url": "#set-the-state-into-self-transition-3", "title": "Set the state into self-transition" }
+        ]
+      },
+      {
+        "url": "#objective-connect-all-greetings-states-to-faq-state",
+        "title": "Objective: Connect all greetings states to FAQ state",
+        "items": [
+          {
+            "url": "#connect-greetings-via-direct-message-to-faq-state",
+            "title": "Connect greetings via direct message to FAQ state"
+          },
+          {
+            "url": "#connect-greetings-via-instagram-story-mention-to-faq-state",
+            "title": "Connect greetings via Instagram story mention to FAQ state"
+          },
+          {
+            "url": "#connect-greetings-via-instagram-story-reply-to-faq-state",
+            "title": "Connect greetings via Instagram story reply to FAQ state"
+          }
+        ]
+      },
+      {
+        "url": "#objective-show-bot-response-after-end-user-choose-daftar-rekening-baru",
+        "title": "Objective: Show bot response after end-user choose \"Daftar rekening baru\"",
+        "items": [
+          { "url": "#create-rekeningbarustate-state", "title": "Create \"rekeningBaruState\" state" },
+          { "url": "#create-bot-response", "title": "Create bot response" },
+          {
+            "url": "#create-bot-action-command-to-trigger-next-state-to-be-executed",
+            "title": "Create bot action command to trigger next state to be executed"
+          }
+        ]
+      },
+      {
+        "url": "#objective-show-bot-response-after-end-user-choose-daftar-kartu-kredit",
+        "title": "Objective: Show bot response after end-user choose \"Daftar kartu kredit\"",
+        "items": [
+          { "url": "#create-kartukreditstate-state", "title": "Create \"kartuKreditState\" state" },
+          { "url": "#create-bot-response-1", "title": "Create bot response" },
+          {
+            "url": "#create-bot-action-command-to-trigger-next-state-to-be-executed-1",
+            "title": "Create bot action command to trigger next state to be executed"
+          }
+        ]
+      },
+      {
+        "url": "#objective-connect-faq-menu-response-to-quick-reply-options",
+        "title": "Objective: Connect FAQ menu response to quick reply options",
+        "items": [
+          {
+            "url": "#create-transition-to-connect-from-faqstate-to-rekeningbarustate",
+            "title": "Create transition to connect from faqState to rekeningBaruState"
+          },
+          {
+            "url": "#create-transition-to-connect-from-faqstate-to-kartukreditstate",
+            "title": "Create transition to connect from faqState to kartuKreditState"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "#create-generic-template-carousel",
+    "title": "Create Generic Template (Carousel)",
+    "items": [
+      {
+        "url": "#objective-show-bot-response-of-generic-template-carousel-to-end-users",
+        "title": "Objective: Show bot response of generic template (\"carousel\") to end-users",
+        "items": [
+          { "url": "#create-carousel", "title": "Create carousel" },
+          {
+            "url": "#create-bot-response-for-the-first-carousel-buy-1-get-1",
+            "title": "Create bot response for the first carousel: Buy 1 Get 1"
+          },
+          {
+            "url": "#create-bot-response-for-the-second-carousel-diskon-10",
+            "title": "Create bot response for the second carousel: Diskon 10%"
+          },
+          { "url": "#set-the-state-into-self-transition-4", "title": "Set the state into self-transition" }
+        ]
+      },
+      {
+        "url": "#objective-connect-all-greetings-states-to-carouselstate",
+        "title": "Objective: Connect all greetings states to carouselState",
+        "items": [
+          {
+            "url": "#connect-greetings-via-direct-message-to-carousel-state",
+            "title": "Connect greetings via direct message to carousel state"
+          },
+          {
+            "url": "#connect-greetings-via-instagram-story-mention-to-carousel-state",
+            "title": "Connect greetings via Instagram story mention to carousel state"
+          },
+          {
+            "url": "#connect-greetings-via-instagram-story-reply-to-carousel-state",
+            "title": "Connect greetings via Instagram story reply to carousel state"
+          }
+        ]
+      },
+      {
+        "url": "#objective-show-bot-response-after-end-users-choose-buy-1-get-1",
+        "title": "Objective: Show bot response after end-users choose \"Buy 1 Get 1\"",
+        "items": [
+          { "url": "#create-b1g1state-state", "title": "Create \"b1g1State\" state" },
+          { "url": "#create-bot-response-2", "title": "Create bot response" },
+          {
+            "url": "#create-bot-action-command-to-trigger-next-state-to-be-executed-2",
+            "title": "Create bot action command to trigger next state to be executed"
+          }
+        ]
+      },
+      {
+        "url": "#objective-show-bot-response-after-end-users-choose-disc-10",
+        "title": "Objective: Show bot response after end-users choose \"Disc 10%\"",
+        "items": [
+          { "url": "#create-discstate-state", "title": "Create \"discState\" state" },
+          { "url": "#create-bot-response-3", "title": "Create bot response" },
+          {
+            "url": "#create-bot-action-command-to-trigger-next-state-to-be-executed-3",
+            "title": "Create bot action command to trigger next state to be executed"
+          }
+        ]
+      },
+      {
+        "url": "#objective-connect-carousel-menu-response-to-postback-options",
+        "title": "Objective: Connect carousel menu response to postback options",
+        "items": [
+          {
+            "url": "#create-transition-to-connect-from-carouselstate-to-b1g1state",
+            "title": "Create transition to connect from carouselState to b1g1State"
+          },
+          {
+            "url": "#create-transition-to-connect-from-faqstate-to-kartukreditstate-1",
+            "title": "Create transition to connect from faqState to kartuKreditState"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "#create-text-response",
+    "title": "Create Text Response",
+    "items": [
+      {
+        "url": "#objective-show-bot-response-in-the-text-to-end-users",
+        "title": "Objective: Show bot response in the text to end-users",
+        "items": [
+          { "url": "#create-text", "title": "Create text" },
+          {
+            "url": "#create-bot-action-command-to-trigger-next-state-to-be-executed-4",
+            "title": "Create bot action command to trigger next state to be executed"
+          }
+        ]
+      },
+      {
+        "url": "#objective-connect-all-greetings-states-to-locationstate",
+        "title": "Objective: Connect all greetings states to locationState",
+        "items": [
+          {
+            "url": "#connect-greetings-via-direct-message-to-location-state",
+            "title": "Connect greetings via direct message to location state"
+          },
+          {
+            "url": "#connect-greetings-via-instagram-story-mention-to-carousel-state-1",
+            "title": "Connect greetings via Instagram story mention to carousel state"
+          },
+          {
+            "url": "#connect-greetings-via-instagram-story-reply-to-carousel-state-1",
+            "title": "Connect greetings via Instagram story reply to carousel state"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "#create-handover-to-human-agent-flow",
+    "title": "Create Handover to Human Agent Flow",
+    "items": [
+      {
+        "url": "#objective-create-a-flow-that-end-user-can-request-handover-to-human-agents-by-using-handover-api",
+        "title": "Objective: Create a flow that end-user can request handover to human agents by using Handover API",
+        "items": [
+          { "url": "#create-handover-state", "title": "Create handover state" },
+          {
+            "url": "#create-bot-response-to-inform-end-user-that-the-handover-request-has-been-received-and-waiting-for-agents-to-reply",
+            "title": "Create bot response to inform end-user that the handover request has been received and waiting for agents to reply"
+          },
+          {
+            "url": "#use-handover-api-to-send-handover-request-to-omnichat",
+            "title": "Use Handover API to send handover request to Omnichat"
+          }
+        ]
+      },
+      {
+        "url": "#objective-connect-all-greetings-states-to-handoverstate",
+        "title": "Objective: Connect all greetings states to handoverState",
+        "items": [
+          {
+            "url": "#connect-greetings-via-direct-message-to-handover-state",
+            "title": "Connect greetings via direct message to handover state"
+          },
+          {
+            "url": "#connect-greetings-via-instagram-story-mention-to-handover-state",
+            "title": "Connect greetings via Instagram story mention to handover state"
+          },
+          {
+            "url": "#connect-greetings-via-instagram-story-reply-to-handover-state",
+            "title": "Connect greetings via Instagram story reply to handover state"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "#create-confirmation-state",
+    "title": "Create Confirmation State",
+    "items": [
+      {
+        "url": "#objective-create-a-state-that-end-user-will-be-asked-to-restart-for-showing-all-menu-or-end-conversation",
+        "title": "Objective: Create a state that end-user will be asked to restart for showing all menu or end conversation",
+        "items": [
+          { "url": "#create-confirmstate", "title": "Create \"confirmState\"" },
+          { "url": "#set-the-state-into-self-transition-5", "title": "Set the state into self-transition" }
+        ]
+      },
+      {
+        "url": "#objective-create-an-intent-to-catch-command-for-executing-next-state",
+        "title": "Objective: Create an intent to catch command for executing next state"
+      },
+      {
+        "url": "#objective-connect-all-bot-responses-states-to-confirmstate",
+        "title": "Objective: Connect all bot responses states to confirmState",
+        "items": [
+          {
+            "url": "#connect-quick-replies-responses-states-to-confirmation-state",
+            "title": "Connect quick replies responses states to confirmation state"
+          },
+          {
+            "url": "#connect-carousel-responses-to-confirmation-state",
+            "title": "Connect carousel responses to confirmation state"
+          },
+          { "url": "#connect-locationstate-to-confirmstate", "title": "Connect \"locationState\" to “confirmState”" }
+        ]
+      },
+      {
+        "url": "#objective-create-state-to-restart-menu",
+        "title": "Objective: Create state to restart menu",
+        "items": [
+          {
+            "url": "#create-a-backtomenu-state-to-restart-menu",
+            "title": "Create a \"backToMenu\" state to restart menu"
+          },
+          { "url": "#create-tomenuintent-intent", "title": "Create \"toMenuIntent\" intent" },
+          {
+            "url": "#update-transition-condition-from-init-to-greetingsstate",
+            "title": "Update transition condition from \"init\" to “greetingsState”"
+          }
+        ]
+      },
+      {
+        "url": "#objective-create-state-to-end-conversation",
+        "title": "Objective: Create state to end conversation",
+        "items": [
+          {
+            "url": "#create-a-bye-state-to-end-conversation-and-show-thank-you-response",
+            "title": "Create a \"bye\" state to end conversation and show thank you response"
+          }
+        ]
+      },
+      {
+        "url": "#objective-connect-transition-between-confirmstate-to-backtomenu-and-bye-state",
+        "title": "Objective: Connect transition between confirmState to backToMenu and bye state"
+      }
+    ]
+  },
+  { "url": "#create-fallback-intent", "title": "Create Fallback Intent" },
+  {
+    "url": "#finalize-your-new-bot",
+    "title": "Finalize Your New Bot",
+    "items": [
+      {
+        "url": "#objective-publish-your-bot-to-save-the-chatbot-flow",
+        "title": "Objective: Publish your bot to save the chatbot flow"
+      },
+      { "url": "#objective-testing-your-bot-in-emulator", "title": "Objective: Testing your bot in emulator" },
+      {
+        "url": "#objective-deploy-your-bot",
+        "title": "Objective: Deploy your bot",
+        "items": [
+          { "url": "#create-new-deployment", "title": "Create new deployment" },
+          {
+            "url": "#create-a-new-environment-as-prerequisites-to-deploy-the-bot-to-channel",
+            "title": "Create a new environment as prerequisites to deploy the bot to channel"
+          }
+        ]
+      }
+    ]
+  },
+  { "url": "#create-inbox-in-omnichat", "title": "Create Inbox in Omnichat" },
+  {
+    "url": "#create-agent-bot-in-omnichat",
+    "title": "Create Agent Bot in Omnichat",
+    "items": [
+      { "url": "#connect-bot-to-omnichat", "title": "Connect Bot to Omnichat" },
+      { "url": "#finalize-agent-bot-in-omnichat", "title": "Finalize Agent Bot in Omnichat" }
+    ]
+  },
+  {
+    "url": "#update-instagram-bot-to-use-ice-breaker",
+    "title": "Update Instagram Bot to Use Ice Breaker",
+    "items": [
+      {
+        "url": "#objective-create-ice-breaker-in-your-instagram-inbox",
+        "title": "Objective: Create Ice Breaker in your Instagram inbox"
+      },
+      {
+        "url": "#objective-create-intent-to-trigger-bot-response-if-end-users-click-all-ice-breaker",
+        "title": "Objective: Create intent to trigger bot response if end-users click all Ice Breaker",
+        "items": [
+          { "url": "#create-intent-for-faq-menu", "title": "Create intent for FAQ menu" },
+          { "url": "#create-intent-for-promo-menu", "title": "Create intent for Promo menu" },
+          { "url": "#create-intent-for-lokasi-menu", "title": "Create intent for \"Lokasi\" menu" },
+          {
+            "url": "#create-intent-for-berbicara-dengan-cs-menu",
+            "title": "Create intent for \"Berbicara dengan CS\" menu"
+          }
+        ]
+      },
+      {
+        "url": "#objective-create-transition-for-mapping-bot-responses-after-end-users-clicked-the-ice-breaker",
+        "title": "Objective: Create transition for mapping bot responses after end-users clicked the Ice Breaker",
+        "items": [
+          {
+            "url": "#connect-init-to-faqstate-to-trigger-faq-response-after-end-users-clicked-faq-in-ice-breaker",
+            "title": "Connect \"init\" to “faqState” to trigger FAQ response after end-users clicked “FAQ” in Ice Breaker"
+          },
+          {
+            "url": "#connect-init-to-carouselstate-to-trigger-generic-template-carousel-response-after-end-users-clicked-promo-in-ice-breaker",
+            "title": "Connect \"init\" to “carouselState” to trigger generic template (“carousel”) response after end-users clicked “Promo” in Ice Breaker"
+          },
+          {
+            "url": "#connect-init-to-carouselstate-to-trigger-text-response-after-end-users-clicked-lokasi-in-ice-breaker",
+            "title": "Connect \"init\" to “carouselState” to trigger text response after end-users clicked “Lokasi” in Ice Breaker"
+          },
+          {
+            "url": "#connect-init-to-handoverstate-to-trigger-handover-to-human-agents-after-end-users-clicked-berbicara-dengan-cs-in-ice-breaker",
+            "title": "Connect \"init\" to “handoverState” to trigger handover to human agents after end-users clicked “Berbicara dengan CS” in Ice Breaker"
+          }
+        ]
+      },
+      {
+        "url": "#objective-publish-updated-bot-and-deploy-to-omnichat-again",
+        "title": "Objective: Publish updated bot and deploy to Omnichat again"
+      }
+    ]
+  },
+  { "url": "#final-demo", "title": "Final Demo" }
+]

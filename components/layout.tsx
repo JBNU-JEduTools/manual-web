@@ -1,6 +1,6 @@
-import { theme, UnstyledAnchor } from '@aksara-ui/react'
+import { theme, UnstyledAnchor } from '@aksara-ui/react';
 import { breakpoints } from 'utils/variables';
-import { Header, HeaderInner, HeaderLogo, HeaderRight } from './layout/Header'
+import { Header, HeaderInner, HeaderLogo, HeaderRight } from './layout/Header';
 import styled from 'styled-components';
 import Link from 'next/link';
 import React from 'react';
@@ -8,11 +8,13 @@ import SearchBox from './search/SearchBox';
 import SearchIcon from './layout/Header/SearchIcon';
 import Head from 'next/head';
 import { NavButton } from './layout/Navigation';
+import { useRouter } from 'next/router';
+import { NavigationActionTypes, NavigationContext } from './layout/Navigation/NavigationContext';
 
 const StyledLayoutRoot = styled('div')`
   display: flex;
   flex-direction: column;
-  margin-top: 64px;
+  padding-top: 64px;
   min-height: 100vh;
 
   @media (min-width: ${breakpoints.md}px) {
@@ -20,10 +22,10 @@ const StyledLayoutRoot = styled('div')`
   }
 `;
 
-const LogoWrapper = styled('div')`
+const LogoWrapper = styled('div')<{ isPost?: boolean }>`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: ${(props) => (props.isPost ? 'center' : 'flex-start')};
+  justify-content: ${(props) => (props.isPost ? 'center' : 'flex-start')};
   flex: 1;
   margin: 0 24px;
 `;
@@ -51,11 +53,20 @@ const DesktopHeaderRight = styled('div')`
   align-items: center;
 `;
 
+const isPost = () => {
+  const route = useRouter();
+  if (route.query.slug) {
+    return true;
+  }
+  return false;
+};
+
 interface ILayout {
   children: React.ReactNode;
 }
 
-const Layout:React.FC<ILayout> = ({ children }) => {
+const Layout: React.FC<ILayout> = ({ children }) => {
+  const { dispatch } = React.useContext(NavigationContext);
   const [isSearchOpen, setIsSearchOpen] = React.useState(false);
 
   return (
@@ -79,13 +90,16 @@ const Layout:React.FC<ILayout> = ({ children }) => {
             </Link>
           </HeaderLogo>
           <HeaderRight hideOnDesktop>
-            <NavButton
-              icon="hamburger"
-              fill={theme.colors.grey05}
-            >
-              Toggle Drawer
-            </NavButton>
-            <LogoWrapper>
+            {isPost() && (
+              <NavButton
+                icon="hamburger"
+                fill={theme.colors.grey05}
+                onClick={() => dispatch({ type: NavigationActionTypes.TOGGLE_DRAWER })}
+              >
+                Toggle Drawer
+              </NavButton>
+            )}
+            <LogoWrapper isPost={isPost()}>
               <Link href="/">
                 <UnstyledAnchor>
                   <img src="/assets/images/logo-docs.svg" />

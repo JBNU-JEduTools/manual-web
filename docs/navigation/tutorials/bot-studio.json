@@ -1,0 +1,107 @@
+[
+  { "url": "#introduction", "title": "Introduction" },
+  { "url": "#sign-up-to-kata--platform", "title": "Sign up to Kata | Platform" },
+  {
+    "url": "#create-a-project",
+    "title": "Create a Project",
+    "items": [
+      { "url": "#login-to-kata--platform", "title": "Login to Kata | Platform" },
+      { "url": "#create-a-project-1", "title": "Create a project" }
+    ]
+  },
+  {
+    "url": "#create-fallback-flow",
+    "title": "Create Fallback Flow",
+    "items": [
+      { "url": "#create-fallback-flow-1", "title": "Create fallback flow" },
+      { "url": "#create-fallback-intent", "title": "Create fallback intent" },
+      { "url": "#create-state-init", "title": "Create State init" },
+      { "url": "#create-action-text-in-state-init", "title": "Create Action Text in State init" },
+      { "url": "#create-self-transition-in-state-init", "title": "Create Self Transition in State Init" }
+    ]
+  },
+  {
+    "url": "#create-order-flow",
+    "title": "Create Order Flow",
+    "items": [
+      { "url": "#create-flow-order", "title": "Create Flow Order" },
+      { "url": "#create-keyword-nlus-for-order", "title": "Create Keyword NLUs for 'Order'" },
+      { "url": "#create-intent-for-order", "title": "Create Intent for Order" },
+      { "url": "#create-a-state-named-init", "title": "Create a State Named init" }
+    ]
+  },
+  {
+    "url": "#create-action-for-pizza-menu",
+    "title": "Create Action for Pizza Menu",
+    "items": [
+      {
+        "url": "#create-a-state-to-show-pizza-type-in-text-action-type",
+        "title": "Create a State to Show Pizza type in Text Action Type"
+      },
+      {
+        "url": "#update-showpizza-state-into-show-pizza-menu-in-carousel-action-type",
+        "title": "Update showPizza state Into Show Pizza Menu in Carousel Action Type"
+      },
+      { "url": "#create-intent-to-choose-a-pizza", "title": "Create Intent to Choose A Pizza" },
+      {
+        "url": "#create-transition-between-init-and-showpizza",
+        "title": "Create Transition between init and showPizza"
+      },
+      { "url": "#create-reenter-intent", "title": "Create 'reenter' intent" }
+    ]
+  },
+  {
+    "url": "#create-action-for-asking-pizza-quantity",
+    "title": "Create Action for Asking Pizza Quantity",
+    "items": [
+      { "url": "#create-pizzaquantity-state", "title": "Create pizzaQuantity state" },
+      { "url": "#create-nlus-quantity", "title": "Create NLUs quantity" },
+      { "url": "#create-intent-quantity", "title": "Create Intent quantity" },
+      {
+        "url": "#create-transition-between-showpizza-and-pizzaquantity",
+        "title": "Create Transition between showPizza and pizzaQuantity"
+      }
+    ]
+  },
+  {
+    "url": "#create-confirmation-action",
+    "title": "Create Confirmation Action",
+    "items": [
+      { "url": "#create-yesno-keyword-nlus", "title": "Create “YESNO” keyword NLUs" },
+      { "url": "#create-confirmpizza-state", "title": "Create confirmPizza state" }
+    ]
+  },
+  {
+    "url": "#add-mapping-in-ontransit-tab",
+    "title": "Add mapping in onTransit tab",
+    "items": [
+      {
+        "url": "#create-a-transition-from-pizzaquantity-to-confirmpizza",
+        "title": "Create a transition from pizzaQuantity to confirmPizza"
+      },
+      { "url": "#create-intent-yesno", "title": "Create intent yesno" },
+      { "url": "#create-done-state", "title": "Create done state" },
+      {
+        "url": "#create-a-transition-from-confirmpizza-to-done",
+        "title": "Create a transition from confirmPizza to done"
+      }
+    ]
+  },
+  { "url": "#publish-your-bot", "title": "Publish Your Bot" },
+  { "url": "#testing-your-chatbot", "title": "Testing Your Chatbot" },
+  {
+    "url": "#deploy-your-chatbot",
+    "title": "Deploy Your Chatbot",
+    "items": [
+      { "url": "#create-deployment", "title": "Create deployment" },
+      { "url": "#create-environment", "title": "Create Environment" },
+      { "url": "#registration-to-line-developer-console", "title": "Registration to LINE Developer console" },
+      { "url": "#setup-channel-for-line-integration", "title": "Setup Channel for LINE Integration" },
+      {
+        "url": "#integration-line-and-your-chatbot",
+        "title": "Integration LINE and Your Chatbot",
+        "items": [{ "url": "#fill-in-channel-access-token-field", "title": "Fill in Channel Access Token field" }]
+      }
+    ]
+  }
+]

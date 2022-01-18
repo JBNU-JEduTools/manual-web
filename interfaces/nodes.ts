@@ -7,15 +7,10 @@ export interface HeaderMenuItem {
   external: boolean;
 }
 
-export interface TocItem {
-  id: string;
-  slug: string;
-  title: string;
-}
-
 export interface MenuNode {
   title: string;
-  items: TocItem[];
+  url?: string;
+  items?: MenuNode[];
 }
 
 export interface Edge<T> {
