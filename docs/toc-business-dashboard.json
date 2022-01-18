@@ -1,0 +1,180 @@
+{
+  "items": [
+    {
+      "title": "Introduction",
+      "items": [
+        {
+          "id": "introduction",
+          "url": "/business-dashboard/introduction",
+          "title": "About Business Dashboard"
+        }
+      ]
+    },
+    {
+      "title": "How To",
+      "items": [
+        {
+          "id": "get-started",
+          "url": "/business-dashboard/get-started",
+          "title": "Get Started with WhatsApp Business Dashboard",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "get-started#sign-up-for-whatsapp-business-dashboard",
+              "url": "/business-dashboard/get-started#sign-up-for-whatsapp-business-dashboard",
+              "title": "Sign Up for WhatsApp Business Dashboard"
+            },
+            {
+              "id": "get-started#log-in-to-whatsapp-business-dashboard",
+              "url": "/business-dashboard/get-started#log-in-to-whatsapp-business-dashboard",
+              "title": "Log in to WhatsApp Business Dashboard"
+            },
+            {
+              "id": "get-started#register-your-whatsapp-business-account",
+              "url": "/business-dashboard/get-started#register-your-whatsapp-business-account",
+              "title": "Register Your WhatsApp Business Account"
+            }
+          ]
+        },
+        {
+          "id": "how-to-use-trial",
+          "url": "/business-dashboard/how-to-use-trial",
+          "title": "How to Use Trial Experience",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "how-to-use-trial#how-to-use-trial-experience",
+              "url": "/business-dashboard/how-to-use-trial#how-to-use-trial-experience",
+              "title": "How to Use Trial Experience"
+            }
+          ]
+        },
+        {
+          "id": "how-to-register",
+          "url": "/business-dashboard/how-to-register",
+          "title": "How to Register a New WhatsApp Number",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "how-to-register#whatsapp-number-status",
+              "url": "/business-dashboard/how-to-register#whatsapp-number-status",
+              "title": "WhatsApp Number Status"
+            }
+          ]
+        },
+        {
+          "id": "manage-wa-credit",
+          "url": "/business-dashboard/manage-wa-credit",
+          "title": "Manage Your Broadcast Credit",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "manage-wa-credit#top-up-whatsapp-credit",
+              "url": "/business-dashboard/manage-wa-credit#top-up-whatsapp-credit",
+              "title": "Top Up WhatsApp Credit"
+            },
+            {
+              "id": "manage-wa-credit#whatsapp-credit-history",
+              "url": "/business-dashboard/manage-wa-credit#whatsapp-credit-history",
+              "title": "WhatsApp Credit History"
+            }
+          ]
+        },
+        {
+          "id": "manage-your-whatsapp-message-templates",
+          "url": "/business-dashboard/whatsapp-message-templates",
+          "title": "Manage Your WhatsApp Message Templates",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "manage-your-whatsapp-message-templates#what-is-a-message-template",
+              "url": "/business-dashboard/whatsapp-message-templates#what-is-a-message-template",
+              "title": "What is a Message Template?"
+            },
+            {
+              "id": "manage-your-whatsapp-message-templates#whatsapp-promotional-message",
+              "url": "/business-dashboard/whatsapp-message-templates#whatsapp-promotional-message",
+              "title": "WhatsApp Promotional Message"
+            },
+            {
+              "id": "manage-your-whatsapp-message-templates#create-a-new-whatsapp-message-template",
+              "url": "/business-dashboard/whatsapp-message-templates#create-a-new-whatsapp-message-template",
+              "title": "Create a New WhatsApp Message Template"
+            },
+            {
+              "id": "manage-your-whatsapp-message-templates#message-template-content-structure",
+              "url": "/business-dashboard/whatsapp-message-templates#message-template-content-structure",
+              "title": "Message Template Content Structure"
+            },
+            {
+              "id": "manage-your-whatsapp-message-templates#message-template-best-practices",
+              "url": "/business-dashboard/whatsapp-message-templates#message-template-best-practices",
+              "title": "Message Template Best Practices"
+            }
+          ]
+        },
+        {
+          "id": "manage-broadcast",
+          "url": "/business-dashboard/manage-broadcast",
+          "title": "Manage Your Broadcast",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "manage-broadcast#how-to-brodcast-a-template-message",
+              "url": "/business-dashboard/manage-broadcast#how-to-brodcast-a-template-message",
+              "title": "How to Broadcast a Template Message"
+            },
+            {
+              "id": "manage-broadcast#view-your-broadcast",
+              "url": "/business-dashboard/manage-broadcast#view-your-broadcast",
+              "title": "View Your Broadcast"
+            },
+            {
+              "id": "manage-broadcast#helpful-tips-on-broadcast",
+              "url": "/business-dashboard/manage-broadcast#helpful-tips-on-broadcast",
+              "title": "Helpful Tips on Broadcast"
+            }
+          ]
+        },
+        {
+          "id": "how-to-use-analytics",
+          "url": "/business-dashboard/use-analytics",
+          "title": "How to Use Analytics"
+        },
+        {
+          "id": "conversation-based-pricing",
+          "url": "/business-dashboard/conversation-based-pricing",
+          "title": "Conversation-Based Pricing",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "conversation-based-pricing#terms-&-definitions",
+              "url": "/business-dashboard/conversation-based-pricing#terms-&-definitions",
+              "title": "Terms & Definitions"
+            },
+            {
+              "id": "conversation-based-pricing#how-it-works",
+              "url": "/business-dashboard/conversation-based-pricing#how-it-works",
+              "title": "How It Works"
+            },
+            {
+              "id": "conversation-based-pricing#credit-carry-over-policy",
+              "url": "/business-dashboard/conversation-based-pricing#credit-carry-over-policy",
+              "title": "Credit Carry Over Policy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Release Note",
+      "items": [
+        {
+          "id": "release-note-version",
+          "url": "/business-dashboard/release-note",
+          "title": "Version"
+        }
+      ]
+    }
+  ]
+}
