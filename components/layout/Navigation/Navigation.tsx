@@ -8,6 +8,7 @@ import { colors, layerIndexes, breakpoints, dimensions } from 'utils/variables';
 
 import { NavigationContext, NavigationActionTypes } from './NavigationContext';
 import NavButton from './NavButton';
+import NavigationMenu from './NavigationMenu';
 
 interface ToggleableProps {
   isOpen?: boolean;
@@ -119,52 +120,18 @@ const HeaderInner = styled('div')<HeaderInnerProps>`
   ${(props) => props.hideOnDesktop && HideOnDesktop}
 `;
 
-const DocumentationMenu = styled('div')`
+const DocumentationNav = styled('div')`
   display: flex;
   flex-direction: column;
-  padding: 16px 24px;
-  border-bottom: 1px solid ${colors.grey02};
-
-  & .menu-link {
-    display: flex;
-    padding: 8px 0;
-    color: ${colors.grey07};
-
-    &:hover,
-    &:focus,
-    &.active {
-      color: ${colors.blue07};
-      text-decoration: none;
-      outline: none;
-    }
-  }
-
-  ${HideOnDesktop}
+  padding: 24px;
 `;
 
 interface NavigationProps {
-  navigation?: Edge<MenuNode>[];
-  headerMenus?: Edge<HeaderMenuItem>[];
+  navigation?: MenuNode[];
   navHidden?: boolean;
 }
 
-const NodeLink: React.FC<{ node: HeaderMenuItem }> = ({ node }) => {
-  if (node.external) {
-    return (
-      <a key={node.id} className="menu-link" href={node.href} target="_blank" rel="noopener noreferrer">
-        {node.label}
-      </a>
-    );
-  }
-
-  return (
-    <Link key={node.id} href={node.href}>
-      {node.label}
-    </Link>
-  );
-};
-
-function Navigation({ navigation, headerMenus, navHidden }: NavigationProps) {
+function Navigation({ navigation, navHidden }: NavigationProps) {
   const { state, dispatch } = React.useContext(NavigationContext);
 
   return (
@@ -183,25 +150,11 @@ function Navigation({ navigation, headerMenus, navHidden }: NavigationProps) {
           </NavButton>
         </HeaderInner>
       </Header>
-      {navHidden ? (
-        <WrapperInner hideOnDesktop>
-          <DocumentationMenu>
-            {headerMenus &&
-              headerMenus.map(({ node }) => {
-                return <NodeLink node={node} />;
-              })}
-          </DocumentationMenu>
-        </WrapperInner>
-      ) : (
-        <WrapperInner>
-          <DocumentationMenu>
-            {headerMenus &&
-              headerMenus.map(({ node }) => {
-                return <NodeLink node={node} />;
-              })}
-          </DocumentationMenu>
-        </WrapperInner>
-      )}
+      <WrapperInner hideOnDesktop={navHidden}>
+        <DocumentationNav onClick={() => dispatch({ type: NavigationActionTypes.TOGGLE_DRAWER })}>
+          {navigation && navigation.map((nav) => <NavigationMenu key={nav.title} node={nav} />)}
+        </DocumentationNav>
+      </WrapperInner>
     </Wrapper>
   );
 }

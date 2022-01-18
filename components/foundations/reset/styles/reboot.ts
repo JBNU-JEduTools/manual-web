@@ -73,12 +73,12 @@ const reboot = css`
     margin-bottom: 0.5rem;
   }
 
-  h1::before,
-  h2::before,
-  h3::before,
-  h4::before,
-  h5::before,
-  h6::before {
+  article h1::before,
+  article h2::before,
+  article h3::before,
+  article h4::before,
+  article h5::before,
+  article h6::before {
     display: block;
     content: " ";
     visibility: hidden;

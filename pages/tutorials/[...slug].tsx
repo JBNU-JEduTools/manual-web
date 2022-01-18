@@ -82,7 +82,7 @@ export default TutorialPageTemplate;
 function getTocItems(toc: any, array: string[] = []) {
   const arrTmp: string[] = array;
 
-  toc.items?.map((tocItem) => {
+  toc.items?.map((tocItem: { url: string; items: any }) => {
     arrTmp.push(tocItem.url.split('#')[1]);
     tocItem.items ? arrTmp.concat(getTocItems(tocItem, arrTmp)) : null;
   });

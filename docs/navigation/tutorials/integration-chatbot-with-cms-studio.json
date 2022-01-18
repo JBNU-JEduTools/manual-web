@@ -1,0 +1,36 @@
+[
+  { "url": "#introduction", "title": "Introduction" },
+  {
+    "url": "#set-up-cms-studio",
+    "title": "Set up CMS Studio",
+    "items": [
+      { "url": "#create-environment", "title": "Create Environment" },
+      { "url": "#create-cms-pages-and-forms", "title": "Create CMS Pages and Forms" },
+      { "url": "#introduction-to-text-box-element", "title": "Introduction to Text Box Element" },
+      { "url": "#add-asking-confirmation-text-to-form", "title": "Add Asking Confirmation Text to Form" },
+      { "url": "#add-fallback-text-to-form", "title": "Add Fallback Text to Form" },
+      { "url": "#publish-cms", "title": "Publish CMS" }
+    ]
+  },
+  { "url": "#invite-user-to-cms-client", "title": "Invite User to CMS Client" },
+  {
+    "url": "#integrate-elements-to-bot",
+    "title": "Integrate Elements to Bot",
+    "items": [
+      { "url": "#change-value-in-confirmpizza-state", "title": "Change Value in confirmPizza State" },
+      { "url": "#change-value-in-fallback-state", "title": "Change Value in Fallback State" },
+      { "url": "#publish-your-bot", "title": "Publish Your Bot" }
+    ]
+  },
+  { "url": "#deploy-cms--bot-revision", "title": "Deploy CMS & Bot Revision" },
+  {
+    "url": "#customize-content-in-cms-client",
+    "title": "Customize Content in CMS Client",
+    "items": [
+      { "url": "#enter-cms-using-e-mail", "title": "Enter CMS using E-mail" },
+      { "url": "#enter-cms-using-link", "title": "Enter CMS using Link" },
+      { "url": "#edit-content-in-cms-client", "title": "Edit Content in CMS Client" }
+    ]
+  },
+  { "url": "#show-changes-in-line", "title": "Show Changes in LINE" }
+]

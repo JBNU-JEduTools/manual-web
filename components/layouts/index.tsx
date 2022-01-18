@@ -3,6 +3,7 @@ import Head from 'next/head';
 
 import { AksaraReset } from 'components/foundations';
 import Layout from '../layout';
+import { useRouter } from 'next/router';
 import { Navigation } from 'components/layout/Navigation';
 import { Overlay } from 'components/layout/Overlay';
 
@@ -13,27 +14,27 @@ interface IndexLayoutProps {
 }
 
 const IndexLayout: React.FC<IndexLayoutProps> = ({ children, navHidden }) => {
-  // React.useEffect(() => {
-  //   if (window) {
-  //     const pathname = window.location.pathname;
-  //     if (pathname.includes('kata-omnichat')) {
-  //       setSection(omnichatNavigationMenus.edges);
-  //     } else if (pathname.includes('business-dashboard')) {
-  //       setSection(businessDashboardMenus.edges);
-  //     } else if (pathname.includes('qios')) {
-  //       setSection(qiosMenus.edges);
-  //     } else {
-  //       setSection(navigationMenus.edges);
-  //     }
-  //   }
-  // }, [section]);
+  const [navigation, setNavigation] = React.useState();
+  const router = useRouter();
+  const isTutorial = router.route.split('/')[1] === 'tutorials';
+  const isKataPlatform = router.route.split('/')[1] === 'kata-platform';
+  const isKataOmnichat = router.route.split('/')[1] === 'kata-omnichat';
+  const isBusinessDashboard = router.route.split('/')[1] === 'business-dashboard';
+  const isQios = router.route.split('/')[1] === 'qios';
+
+  React.useEffect(() => {
+    if (isTutorial) {
+      const jsonNavigation = require(`docs/navigation/tutorials/${router.query.slug[0]}.json`);
+      setNavigation(jsonNavigation);
+    }
+  }, [router, navigation, setNavigation]);
 
   return (
     <NavigationContextProvider>
       <AksaraReset>
         <Layout>
           <Overlay />
-          <Navigation navHidden={navHidden} />
+          <Navigation navigation={navigation} navHidden={navHidden} />
           {children}
         </Layout>
       </AksaraReset>
@@ -42,3 +43,5 @@ const IndexLayout: React.FC<IndexLayoutProps> = ({ children, navHidden }) => {
 };
 
 export default IndexLayout;
+
+export async function getStaticProps() {}

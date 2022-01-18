@@ -6,11 +6,11 @@ const Container = styled('div')`
   margin-right: auto;
   width: 100%;
   max-width: 704px;
-  @media only screen and (min-width: ${breakpoints.lg}px) {
+  @media only screen and (min-width: ${breakpoints.lg + 1}px) {
     margin-left: 35%;
   }
-  @media only screen and (max-width: ${breakpoints.lg}px) {
-    margin-left: 25%;
+  @media only screen and (width: ${breakpoints.lg}px) {
+    margin-left: 10%;
   }
 `;
 
