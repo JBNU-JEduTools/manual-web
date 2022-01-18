@@ -23,7 +23,7 @@ const IndexLayout: React.FC<IndexLayoutProps> = ({ children, navHidden }) => {
   const isQios = router.route.split('/')[1] === 'qios';
 
   React.useEffect(() => {
-    if (isTutorial) {
+    if (isTutorial && router.query.slug) {
       const jsonNavigation = require(`docs/navigation/tutorials/${router.query.slug[0]}.json`);
       setNavigation(jsonNavigation);
     }

@@ -11,13 +11,13 @@ interface HeaderRightProps {
 }
 
 const HideOnMobile = css`
-  @media (max-width: ${breakpoints.lg - 1}px) {
+  @media (max-width: ${breakpoints.lg}px) {
     display: none;
   }
 `;
 
 const HideOnDesktop = css`
-  @media (min-width: ${breakpoints.lg}px) {
+  @media (min-width: ${breakpoints.lg + 1}px) {
     display: none;
   }
 `;
@@ -44,7 +44,7 @@ const HeaderRight: React.FC<HeaderRightProps> = ({ children, className, contents
 
 HeaderRight.defaultProps = {
   className: undefined,
-  contents: 'space-between'
+  contents: 'space-between',
 };
 
 export default HeaderRight;

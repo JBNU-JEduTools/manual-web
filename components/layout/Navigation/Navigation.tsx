@@ -30,7 +30,7 @@ const Wrapper = styled('aside')<ToggleableProps>`
     border-bottom: none;
   }
 
-  @media (max-width: ${breakpoints.lg - 1}px) {
+  @media (max-width: ${breakpoints.lg}px) {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -59,13 +59,13 @@ interface WrapperInnerProps {
 }
 
 const HideOnMobile = css`
-  @media (max-width: ${breakpoints.lg - 1}px) {
+  @media (max-width: ${breakpoints.lg}px) {
     display: none;
   }
 `;
 
 const HideOnDesktop = css`
-  @media (min-width: ${breakpoints.lg}px) {
+  @media (min-width: ${breakpoints.lg + 1}px) {
     display: none;
   }
 `;
@@ -75,7 +75,7 @@ const WrapperInner = styled('nav')<WrapperInnerProps>`
   height: calc(100vh - ${dimensions.heights.header}px);
   overflow-y: auto;
 
-  @media (min-width: ${breakpoints.lg}px) {
+  @media (min-width: ${breakpoints.lg + 1}px) {
     width: 200px;
     flex: 1 1 auto;
     z-index: 2;
@@ -99,7 +99,7 @@ const Header = styled('section')`
   border-bottom: 1px solid ${colors.grey02};
   z-index: ${layerIndexes.stickyNav};
 
-  @media (min-width: ${breakpoints.lg}px) {
+  @media (min-width: ${breakpoints.lg + 1}px) {
     display: none;
   }
 `;
