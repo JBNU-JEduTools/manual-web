@@ -1,3 +1,4 @@
+import { theme } from '@aksara-ui/react';
 import { css } from 'styled-components';
 import { breakpoints } from 'utils/variables';
 
@@ -5,13 +6,13 @@ export const styleJSX = css`
   @font-face {
     -webkit-font-smoothing: antialiased;
     font-family: 'Inter';
-    src: url('assets/fonts/Inter.ttf') format('woff');
+    src: url('assets/fonts/Inter.woff') format('woff');
   }
 
   @font-face {
     -webkit-font-smoothing: antialiased;
     font-family: 'Inter-bold';
-    src: url('assets/fonts/Inter.ttf') format('woff');
+    src: url('assets/fonts/Inter-Bold.woff') format('woff');
     font-weight: 700;
   }
 
@@ -51,7 +52,7 @@ export const styleJSX = css`
     top: 64px;
     margin-bottom: 64px;
     padding-right: 24px;
-    width: 25%;
+    width: 23%;
     height: -webkit-fill-available;
     overflow-y: auto;
   }
@@ -64,11 +65,17 @@ export const styleJSX = css`
 
   .table-of-contents li {
     font-size: 14px;
-    margin-top: 16px;
+    margin-top: 24px;
   }
 
   .table-of-contents li a {
     padding: 8px 16px;
+  }
+
+  .isActive {
+    border-radius: 12px;
+    background-color: ${theme.colors.blue01};
+    color: ${theme.colors.blue07} !important;
   }
 
   .table-of-contents ul {
