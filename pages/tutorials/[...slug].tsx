@@ -1,14 +1,14 @@
 import React from 'react';
 import Head from 'next/head';
 import { getMdxNode, getMdxPaths } from 'next-mdx/server';
-import { Text } from '@aksara-ui/react';
+import { Accordion, Text } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
 import { DocsWrapper } from 'components/docs/DocsWrapper';
 import { DocsHeader } from 'components/docs/DocsHeader';
 
 import { FooterWrapper, Footer } from 'components/layout/Footer';
-import { TocWrapper } from 'components/docs/TableOfContents';
+import { TocJsonWrapper } from 'components/docs/TableOfContents';
 import remarkSlug from 'remark-slug';
 import rehypeAutolinkHeadings from 'remark-autolink-headings';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
@@ -51,7 +51,9 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
           <DocsWrapper>
             {toc && (
               <div className="table-of-contents">
-                <TocWrapper tree={toc} />
+                <Accordion type="multiple">
+                  <TocJsonWrapper tree={toc} />
+                </Accordion>
               </div>
             )}
             <DocsContainer>
@@ -104,7 +106,7 @@ export async function getStaticProps(context: string | GetStaticPropsContext<Nod
     },
   });
 
-  const toc = await getTableOfContents(post);
+  const toc = await require(`docs/navigation/tutorials/${context.params?.slug[0]}.json`);
 
   if (!post) {
     return {

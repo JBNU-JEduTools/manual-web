@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import Link from 'next/link';
 
-import { MenuNode, Edge, HeaderMenuItem } from 'interfaces/nodes';
+import { MenuNode, Edge } from 'interfaces/nodes';
 import { Heading } from 'components/foundations';
 import { colors, layerIndexes, breakpoints, dimensions } from 'utils/variables';
 
@@ -127,7 +127,7 @@ const DocumentationNav = styled('div')`
 `;
 
 interface NavigationProps {
-  navigation?: MenuNode[];
+  navigation?: Edge<MenuNode>;
   navHidden?: boolean;
 }
 
@@ -152,7 +152,7 @@ function Navigation({ navigation, navHidden }: NavigationProps) {
       </Header>
       <WrapperInner hideOnDesktop={navHidden}>
         <DocumentationNav onClick={() => dispatch({ type: NavigationActionTypes.TOGGLE_DRAWER })}>
-          {navigation && navigation.map((nav) => <NavigationMenu key={nav.title} node={nav} />)}
+          {navigation && navigation.items.map((nav) => <NavigationMenu key={nav.title} node={nav} />)}
         </DocumentationNav>
       </WrapperInner>
     </Wrapper>

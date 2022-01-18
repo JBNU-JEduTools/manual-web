@@ -14,5 +14,5 @@ export interface MenuNode {
 }
 
 export interface Edge<T> {
-  node: T;
+  items: T[];
 }

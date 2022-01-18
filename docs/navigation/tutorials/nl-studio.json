@@ -1,26 +1,30 @@
-[
-  { "url": "#introduction", "title": "Introduction" },
-  {
-    "url": "#creating-a-nl-model-with-nl-studio",
-    "title": "Creating a NL Model with NL Studio",
-    "items": [
-      { "url": "#login-to-kata--platform", "title": "Login to Kata | platform" },
-      { "url": "#create-entity-label", "title": "Create Entity Label" },
-      { "url": "#create-entity-type", "title": "Create Entity Type" },
-      { "url": "#create-entity-size", "title": "Create Entity Size" },
-      { "url": "#create-entity-crust", "title": "Create Entity Crust" },
-      { "url": "#create-entity-qty", "title": "Create Entity Qty" },
-      { "url": "#training-your-model", "title": "Training Your Model" },
-      { "url": "#testing-nlu-in-prediction-console", "title": "Testing NLU in Prediction Console" }
-    ]
-  },
-  {
-    "url": "#adjusting-the-dataset",
-    "title": "Adjusting the Dataset",
-    "items": [
-      { "url": "#enter-log-menu", "title": "Enter Log Menu" },
-      { "url": "#fix-the-prediction", "title": "Fix The Prediction" },
-      { "url": "#test-nlu-with-data-that-has-been-fixed", "title": "Test NLU with data that has been fixed" }
-    ]
-  }
-]
+{
+  "items": [
+    { "url": "#introduction", "title": "Introduction" },
+    {
+      "url": "#creating-a-nl-model-with-nl-studio",
+      "title": "Creating a NL Model with NL Studio",
+      "useAccordion": true,
+      "items": [
+        { "url": "#login-to-kata--platform", "title": "Login to Kata | platform" },
+        { "url": "#create-entity-label", "title": "Create Entity Label" },
+        { "url": "#create-entity-type", "title": "Create Entity Type" },
+        { "url": "#create-entity-size", "title": "Create Entity Size" },
+        { "url": "#create-entity-crust", "title": "Create Entity Crust" },
+        { "url": "#create-entity-qty", "title": "Create Entity Qty" },
+        { "url": "#training-your-model", "title": "Training Your Model" },
+        { "url": "#testing-nlu-in-prediction-console", "title": "Testing NLU in Prediction Console" }
+      ]
+    },
+    {
+      "url": "#adjusting-the-dataset",
+      "title": "Adjusting the Dataset",
+      "useAccordion": true,
+      "items": [
+        { "url": "#enter-log-menu", "title": "Enter Log Menu" },
+        { "url": "#fix-the-prediction", "title": "Fix The Prediction" },
+        { "url": "#test-nlu-with-data-that-has-been-fixed", "title": "Test NLU with data that has been fixed" }
+      ]
+    }
+  ]
+}

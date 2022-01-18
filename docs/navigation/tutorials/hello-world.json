@@ -1,21 +1,30 @@
-[
-  { "url": "#create-a-project", "title": "Create a Project", "items": [{ "url": "#noted", "title": "Noted" }] },
-  {
-    "url": "#create-a-hello-flow",
-    "title": "Create a Hello Flow",
-    "items": [
-      { "url": "#create-flow", "title": "Create Flow" },
-      { "url": "#create-keyword-nlu-for-helloflow", "title": "Create keyword NLU for helloFlow" },
-      { "url": "#create-intent", "title": "Create Intent" }
-    ]
-  },
-  {
-    "url": "#create-action-for-showing-hello-world",
-    "title": "Create action for showing Hello World",
-    "items": [
-      { "url": "#create-state", "title": "Create State" },
-      { "url": "#create-transation", "title": "Create Transation" }
-    ]
-  },
-  { "url": "#testing", "title": "Testing" }
-]
+{
+  "items": [
+    {
+      "url": "#create-a-project",
+      "title": "Create a Project",
+      "useAccordion": true,
+      "items": [{ "url": "#noted", "title": "Noted" }]
+    },
+    {
+      "url": "#create-a-hello-flow",
+      "title": "Create a Hello Flow",
+      "useAccordion": true,
+      "items": [
+        { "url": "#create-flow", "title": "Create Flow" },
+        { "url": "#create-keyword-nlu-for-helloflow", "title": "Create keyword NLU for helloFlow" },
+        { "url": "#create-intent", "title": "Create Intent" }
+      ]
+    },
+    {
+      "url": "#create-action-for-showing-hello-world",
+      "title": "Create action for showing Hello World",
+      "useAccordion": true,
+      "items": [
+        { "url": "#create-state", "title": "Create State" },
+        { "url": "#create-transation", "title": "Create Transation" }
+      ]
+    },
+    { "url": "#testing", "title": "Testing" }
+  ]
+}
