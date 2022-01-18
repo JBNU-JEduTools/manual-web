@@ -60,7 +60,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
               <Breadcrumb
                 items={[
                   { url: '/', urlDisplay: 'Home' },
-                  { url: '/tutorials', urlDisplay: 'All Tutorials' },
+                  { url: '/qios', urlDisplay: 'Qios' },
                   { url: '#', urlDisplay: frontMatter.title },
                 ]}
               />
