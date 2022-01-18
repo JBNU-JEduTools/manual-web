@@ -9,6 +9,7 @@
   "dependencies": {
     "@aksara-ui/icons": "1.0.1-canary.1",
     "@aksara-ui/react": "1.0.1-canary.25",
+    "@reach/router": "^1.3.4",
     "@svgr/webpack": "^6.1.2",
     "classnames": "2.2.6",
     "date-fns": "2.16.1",
