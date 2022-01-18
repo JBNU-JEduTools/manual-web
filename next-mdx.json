@@ -3,5 +3,15 @@
     "contentPath": "docs/tutorials",
     "sortBy": "date",
     "sortOrder": "asc"
+  },
+  "businessDashboard": {
+    "contentPath": "docs/business-dashboard",
+    "sortBy": "date",
+    "sortOrder": "asc"
+  },
+  "qios": {
+    "contentPath": "docs/qios",
+    "sortBy": "date",
+    "sortOrder": "asc"
   }
 }
