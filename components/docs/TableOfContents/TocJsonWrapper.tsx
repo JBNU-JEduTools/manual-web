@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, AccordionContent, AccordionHeader, AccordionItem, Box } from '@aksara-ui/react';
+import { AccordionContent, AccordionHeader, AccordionItem, Box, theme } from '@aksara-ui/react';
 
 import { TocAnchor, TocHeader, TocText } from './styled';
 
@@ -19,15 +19,30 @@ function TocJsonWrapper({ tree }: { tree: TableOfContents }) {
         // if using accordion
         if (item.useAccordion) {
           return item.items.length ? (
-            <AccordionItem key={item.title} value={item.title}>
+            <AccordionItem
+              style={{
+                marginLeft: '-8px',
+              }}
+              mt={12}
+              key={item.title}
+              value={item.title}
+            >
               <AccordionHeader size="lg">
                 <TocText>{item.title}</TocText>
               </AccordionHeader>
-              {item.items.map((itemChildern) => {
+              {item.items.map((itemChildren) => {
                 return (
-                  <AccordionContent key={itemChildern.title}>
-                    <TocAnchor href={itemChildern.url}>{itemChildern.title}</TocAnchor>
-                    {itemChildern.items?.length ? <TocJsonWrapper tree={itemChildern} /> : null}
+                  <AccordionContent
+                    style={{
+                      display: 'flex',
+                      marginLeft: '24px',
+                      padding: '8px 16px',
+                      borderLeft: `1px solid ${theme.colors.greylight03}`,
+                    }}
+                    key={itemChildren.title}
+                  >
+                    <TocAnchor href={itemChildren.url}>{itemChildren.title}</TocAnchor>
+                    {itemChildren.items?.length ? <TocJsonWrapper tree={itemChildren} /> : null}
                   </AccordionContent>
                 );
               })}

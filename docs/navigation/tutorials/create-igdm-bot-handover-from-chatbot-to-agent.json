@@ -18,6 +18,7 @@
         {
           "url": "#objective-create-new-chatbot-project",
           "title": "Objective: Create new chatbot project",
+          "useAccordion": true,
           "items": [
             {
               "url": "#login-to-kata-platform-and-create-a-project",
@@ -35,6 +36,7 @@
         {
           "url": "#objective-define-a-flow",
           "title": "Objective: Define a flow",
+          "useAccordion": true,
           "items": [
             {
               "url": "#create-a-flow-name-handover-we-will-use-1-flow-for-this-simple-bot",
