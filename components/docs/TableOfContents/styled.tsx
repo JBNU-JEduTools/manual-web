@@ -2,6 +2,7 @@ import { UnstyledAnchor, theme, Text } from '@aksara-ui/react';
 import styled from 'styled-components';
 
 export const TocAnchor = styled(UnstyledAnchor)`
+  display: flex;
   width: inherit;
   color: ${theme.colors.grey09};
   font-family: Inter;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { getMdxNode, getMdxPaths } from 'next-mdx/server';
-import { Accordion, Text } from '@aksara-ui/react';
+import { Text } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
 import { DocsWrapper } from 'components/docs/DocsWrapper';
@@ -18,8 +18,6 @@ import { MarkdownContent } from 'components/page/Markdown';
 import renderAst from 'utils/renderAst';
 import { DocsContainer } from 'components/layout/Container';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
-import { GetStaticPropsContext, PreviewData } from 'next';
-import { getTableOfContents } from 'next-mdx-toc';
 import IndexLayout from 'components/layouts';
 
 interface TutorialPageTemplateProps {
@@ -51,9 +49,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
           <DocsWrapper>
             {toc && (
               <div className="table-of-contents">
-                <Accordion type="multiple">
-                  <TocJsonWrapper tree={toc} />
-                </Accordion>
+                <TocJsonWrapper tree={toc} />
               </div>
             )}
             <DocsContainer>

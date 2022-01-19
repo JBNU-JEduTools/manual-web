@@ -52,6 +52,7 @@ export const styleJSX = css`
     top: 64px;
     margin-bottom: 64px;
     padding-right: 24px;
+    padding-left: 24px;
     width: 23%;
     height: -webkit-fill-available;
     overflow-y: auto;

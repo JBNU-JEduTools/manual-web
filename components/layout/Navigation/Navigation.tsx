@@ -125,7 +125,8 @@ const HeaderInner = styled('div')<HeaderInnerProps>`
 const DocumentationNav = styled('div')`
   display: flex;
   flex-direction: column;
-  list-style-type: none;
+  padding-left: 24px;
+  padding-right: 24px;
 `;
 
 interface NavigationProps {

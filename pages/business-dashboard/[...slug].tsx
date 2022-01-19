@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { getMdxNode, getMdxPaths } from 'next-mdx/server';
-import { Text, Accordion } from '@aksara-ui/react';
+import { Text } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
 import { DocsWrapper } from 'components/docs/DocsWrapper';
@@ -51,9 +51,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
           <DocsWrapper>
             {toc && (
               <div className="table-of-contents">
-                <Accordion type="multiple">
-                  <TocJsonWrapper tree={toc} />
-                </Accordion>
+                <TocJsonWrapper tree={toc} />
               </div>
             )}
             <DocsContainer>
