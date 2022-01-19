@@ -11,6 +11,7 @@ export interface MenuNode {
   title: string;
   url?: string;
   items?: MenuNode[];
+  useAccordion?: boolean;
 }
 
 export interface Edge<T> {

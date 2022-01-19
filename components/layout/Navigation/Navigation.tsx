@@ -9,6 +9,8 @@ import { colors, layerIndexes, breakpoints, dimensions } from 'utils/variables';
 import { NavigationContext, NavigationActionTypes } from './NavigationContext';
 import NavButton from './NavButton';
 import NavigationMenu from './NavigationMenu';
+import { Accordion } from '@aksara-ui/react';
+import TocJsonWrapper from 'components/docs/TableOfContents/TocJsonWrapper';
 
 interface ToggleableProps {
   isOpen?: boolean;
@@ -23,7 +25,7 @@ const Wrapper = styled('aside')<ToggleableProps>`
   z-index: ${layerIndexes.dialog};
   overflow-y: hidden;
 
-  @media (min-width: ${breakpoints.md}px) and (max-width: ${breakpoints.lg - 1}px) {
+  @media (min-width: ${breakpoints.md}px) and (max-width: ${breakpoints.lg}px) {
     width: ${dimensions.widths.sidebar.sm}px;
     margin-top: 0;
     box-shadow: none;
@@ -123,7 +125,7 @@ const HeaderInner = styled('div')<HeaderInnerProps>`
 const DocumentationNav = styled('div')`
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  list-style-type: none;
 `;
 
 interface NavigationProps {
@@ -152,7 +154,16 @@ function Navigation({ navigation, navHidden }: NavigationProps) {
       </Header>
       <WrapperInner hideOnDesktop={navHidden}>
         <DocumentationNav onClick={() => dispatch({ type: NavigationActionTypes.TOGGLE_DRAWER })}>
-          {navigation && navigation.items.map((nav) => <NavigationMenu key={nav.title} node={nav} />)}
+          {navigation && (
+            <Accordion
+              style={{
+                listStyleType: 'none',
+              }}
+              type="multiple"
+            >
+              <TocJsonWrapper tree={navigation} />
+            </Accordion>
+          )}
         </DocumentationNav>
       </WrapperInner>
     </Wrapper>

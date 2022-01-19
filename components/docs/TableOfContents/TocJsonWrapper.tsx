@@ -2,19 +2,13 @@ import React from 'react';
 import { AccordionContent, AccordionHeader, AccordionItem, Box, theme } from '@aksara-ui/react';
 
 import { TocAnchor, TocHeader, TocText } from './styled';
+import { Edge, MenuNode } from 'interfaces/nodes';
+import styled from 'styled-components';
+import { breakpoints } from 'utils/variables';
 
-interface Items {
-  title: string;
-  url?: string;
-  items?: Items[];
-  useAccordion?: boolean;
-}
-
-interface TableOfContents extends Items {}
-
-function TocJsonWrapper({ tree }: { tree: TableOfContents }) {
+function TocJsonWrapper({ tree }: { tree: Edge<MenuNode> | MenuNode }) {
   return tree?.items.length ? (
-    <ul>
+    <UnorderedList>
       {tree.items.map((item) => {
         // if using accordion
         if (item.useAccordion) {
@@ -22,8 +16,8 @@ function TocJsonWrapper({ tree }: { tree: TableOfContents }) {
             <AccordionItem
               style={{
                 marginLeft: '-8px',
+                marginTop: '12px',
               }}
-              mt={12}
               key={item.title}
               value={item.title}
             >
@@ -68,8 +62,16 @@ function TocJsonWrapper({ tree }: { tree: TableOfContents }) {
           </li>
         );
       })}
-    </ul>
+    </UnorderedList>
   ) : null;
 }
 
 export default TocJsonWrapper;
+
+const UnorderedList = styled('ul')`
+  list-style-type: none;
+  @media only screen and (max-width: ${breakpoints.lg}px) {
+    padding-inline-start: 10px !important;
+    padding-inline-end: 10px !important;
+  }
+`;

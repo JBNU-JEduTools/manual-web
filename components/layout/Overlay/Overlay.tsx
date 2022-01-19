@@ -9,7 +9,7 @@ interface OverlayProps {
 }
 
 const Visible = css`
-  @media (max-width: ${breakpoints.lg - 1}px) {
+  @media (max-width: ${breakpoints.lg}px) {
     opacity: 1;
     visibility: visible;
   }

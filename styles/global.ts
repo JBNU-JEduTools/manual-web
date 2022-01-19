@@ -78,10 +78,6 @@ export const styleJSX = css`
     color: ${theme.colors.blue07} !important;
   }
 
-  .table-of-contents ul {
-    list-style-type: none;
-  }
-
   .table-of-contents ul > li {
     font-family: 'Inter-bold';
   }
