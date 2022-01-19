@@ -1,5 +1,5 @@
 import React from 'react';
-import { AccordionContent, AccordionHeader, AccordionItem, Box, theme } from '@aksara-ui/react';
+import { AccordionContent, AccordionHeader, AccordionItem, theme } from '@aksara-ui/react';
 
 import { TocAnchor, TocHeader, TocText } from './styled';
 import { Edge, MenuNode } from 'interfaces/nodes';
@@ -21,7 +21,7 @@ function TocJsonWrapper({ tree }: { tree: Edge<MenuNode> | MenuNode }) {
               key={item.title}
               value={item.title}
             >
-              <AccordionHeader size="lg">
+              <AccordionHeader style={{ fontSize: '14px' }} size="lg">
                 <TocText>{item.title}</TocText>
               </AccordionHeader>
               {item.items.map((itemChildren) => {

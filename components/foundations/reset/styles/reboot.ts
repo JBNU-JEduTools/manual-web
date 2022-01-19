@@ -235,15 +235,6 @@ const reboot = css`
     margin-bottom: 0.5rem;
   }
 
-  button {
-    border-radius: 0;
-  }
-
-  button:focus {
-    outline: 1px dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-  }
-
   input,
   button,
   select,

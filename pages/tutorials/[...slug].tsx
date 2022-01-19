@@ -99,7 +99,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps(context: string | GetStaticPropsContext<NodeJS.Dict<string[]>, PreviewData>) {
+export async function getStaticProps(context: any) {
   const post = await getMdxNode('tutorialPost', context, {
     mdxOptions: {
       remarkPlugins: [remarkSlug, rehypeAutolinkHeadings],
