@@ -48,7 +48,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
         {router.isFallback ? (
           <Text>Loading…</Text>
         ) : (
-          <DocsWrapper hasToc={toc}>
+          <DocsWrapper>
             {toc && (
               <div className="table-of-contents">
                 <Accordion type="multiple">
