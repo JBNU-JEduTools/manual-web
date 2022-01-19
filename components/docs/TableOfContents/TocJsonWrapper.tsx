@@ -6,7 +6,12 @@ import { Edge, MenuNode } from 'interfaces/nodes';
 import styled from 'styled-components';
 import { breakpoints } from 'utils/variables';
 
-function TocJsonWrapper({ tree }: { tree: Edge<MenuNode> | MenuNode }) {
+interface TocJsonWrapperProps {
+  tree: Edge<MenuNode> | MenuNode;
+  onClick?: Function;
+}
+
+function TocJsonWrapper({ tree, onClick }: TocJsonWrapperProps) {
   return tree?.items.length ? (
     <UnorderedList>
       {tree.items.map((item) => {
@@ -35,7 +40,9 @@ function TocJsonWrapper({ tree }: { tree: Edge<MenuNode> | MenuNode }) {
                     }}
                     key={itemChildren.title}
                   >
-                    <TocAnchor href={itemChildren.url}>{itemChildren.title}</TocAnchor>
+                    <TocAnchor onClick={() => onClick()} href={itemChildren.url}>
+                      {itemChildren.title}
+                    </TocAnchor>
                     {itemChildren.items?.length ? <TocJsonWrapper tree={itemChildren} /> : null}
                   </AccordionContent>
                 );
@@ -57,7 +64,9 @@ function TocJsonWrapper({ tree }: { tree: Edge<MenuNode> | MenuNode }) {
         // Item with url
         return (
           <li key={item.title}>
-            <TocAnchor href={item.url}>{item.title}</TocAnchor>
+            <TocAnchor onClick={() => onClick()} href={item.url}>
+              {item.title}
+            </TocAnchor>
             {item.items?.length ? <TocJsonWrapper tree={item} /> : null}
           </li>
         );

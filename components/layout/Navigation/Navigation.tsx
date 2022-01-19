@@ -153,7 +153,7 @@ function Navigation({ navigation, navHidden }: NavigationProps) {
         </HeaderInner>
       </Header>
       <WrapperInner hideOnDesktop={navHidden}>
-        <DocumentationNav onClick={() => dispatch({ type: NavigationActionTypes.TOGGLE_DRAWER })}>
+        <DocumentationNav>
           {navigation && (
             <Accordion
               style={{
@@ -161,7 +161,10 @@ function Navigation({ navigation, navHidden }: NavigationProps) {
               }}
               type="multiple"
             >
-              <TocJsonWrapper tree={navigation} />
+              <TocJsonWrapper
+                onClick={() => dispatch({ type: NavigationActionTypes.TOGGLE_DRAWER })}
+                tree={navigation}
+              />
             </Accordion>
           )}
         </DocumentationNav>
