@@ -1,0 +1,151 @@
+{
+  "items": [
+    {
+      "title": "Introduction",
+      "items": [
+        {
+          "id": "about",
+          "url": "/kata-platform/introduction/about/",
+          "title": "What is Kata Platform"
+        },
+        {
+          "id": "benefits-with-kata-platform",
+          "url": "/kata-platform/introduction/benefits-with-kata-platform/",
+          "title": "Benefits with Kata Platform"
+        },
+        {
+          "id": "kata-platform-features",
+          "url": "/kata-platform/introduction/kata-platform-features/",
+          "title": "Kata Platform Features"
+        }
+      ]
+    },
+    {
+      "title": "Use Case",
+      "items": [
+        {
+          "id": "all-use-cases",
+          "url": "/kata-platform/use-case/all-use-cases/",
+          "title": "All Use Cases"
+        }
+      ]
+    },
+    {
+      "title": "Documentation Content",
+      "items": [
+        {
+          "id": "designing-conversation",
+          "title": "Designing Conversation",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "what-is-conversation-design",
+              "url": "/kata-platform/designing-conversation/what-is-conversation-design",
+              "title": "What is Conversation Design"
+            },
+            {
+              "id": "how-to-start-designing-conversation",
+              "url": "/kata-platform/designing-conversation/how-to-start-designing-conversation",
+              "title": "How to Start Designing the Conversation"
+            },
+            {
+              "id": "managing-expectations",
+              "url": "/kata-platform/designing-conversation/managing-expectations",
+              "title": "Menaging Expectations"
+            }
+          ]
+        },
+        {
+          "id": "start-your-first-chatbot",
+          "title": "Start Your First Chatbot",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "registration-login",
+              "url": "/kata-platform/start-your-first-chatbot/registration-login",
+              "title": "Registration and Login"
+            },
+            {
+              "id": "create-project",
+              "url": "/kata-platform/start-your-first-chatbot/create-project",
+              "title": "Create a Project"
+            },
+            {
+              "id": "create-flow",
+              "url": "/kata-platform/start-your-first-chatbot/create-flow",
+              "title": "Create a Flow"
+            },
+            {
+              "id": "create-state",
+              "url": "/kata-platform/start-your-first-chatbot/create-state",
+              "title": "Create a State"
+            },
+            {
+              "id": "create-action",
+              "url": "/kata-platform/start-your-first-chatbot/create-action",
+              "title": "Create an Action"
+            },
+            {
+              "id": "create-intent",
+              "url": "/kata-platform/start-your-first-chatbot/create-intent",
+              "title": "Create an Intent"
+            },
+            {
+              "id": "create-transition",
+              "url": "/kata-platform/start-your-first-chatbot/create-transition",
+              "title": "Create an Transition"
+            },
+            {
+              "id": "publish-your-bot",
+              "url": "/kata-platform/start-your-first-chatbot/publish-your-bot",
+              "title": "Publish Your Bot"
+            },
+            {
+              "id": "testing-your-bot",
+              "url": "/kata-platform/start-your-first-chatbot/testing-your-bot",
+              "title": "Testing Your Bot"
+            },
+            {
+              "id": "create-deployment",
+              "url": "/kata-platform/start-your-first-chatbot/create-deployment",
+              "title": "Create a Deployment"
+            },
+            {
+              "id": "create-environment",
+              "url": "/kata-platform/start-your-first-chatbot/create-environment",
+              "title": "Create an Environment"
+            },
+            {
+              "id": "integration-to-channel",
+              "title": "Integration to a Channel",
+              "useAccordion": true,
+              "items": [
+                {
+                  "id": "create-channel",
+                  "url": "/kata-platform/start-your-first-chatbot/create-channel",
+                  "title": "Create a Channel"
+                },
+                {
+                  "id": "connect-chatbot-to-telegram",
+                  "url": "/kata-platform/start-your-first-chatbot/connect-chatbot-to-telegram",
+                  "title": "Connect Chatbot to Telegram"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "analyze-your-bot-conversations",
+          "title": "Analyze Your Bot Conversations",
+          "items": [
+            {
+              "id": "introduction",
+              "url": "/kata-platform/analyze-your-bot-conversations/introduction",
+              "title": "Introduction"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
