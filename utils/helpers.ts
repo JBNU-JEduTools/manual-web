@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-// import { LinkGetProps, WindowLocation } from '@reach/router';
 import { Color, themeProps, Space } from '../components/Theme';
 
 export const getColor = (colorKey: Color) => themeProps.colors[colorKey];
@@ -21,14 +20,12 @@ function isDocsPath(location: any) {
 }
 
 /** Workaround for activeClassName: https://github.com/gatsbyjs/gatsby/issues/7737 */
-export const isActive = (exact = false, additionalClassnames?: string) => ({
-  isPartiallyCurrent,
-  isCurrent,
-  location
-}: any) => {
-  if (exact) {
-    return isCurrent || isDocsPath(location) ? { className: clsx(additionalClassnames, 'active') } : {};
-  }
+export const isActive =
+  (exact = false, additionalClassnames?: string) =>
+  ({ isPartiallyCurrent, isCurrent, location }: any) => {
+    if (exact) {
+      return isCurrent || isDocsPath(location) ? { className: clsx(additionalClassnames, 'active') } : {};
+    }
 
-  return isPartiallyCurrent ? { className: clsx(additionalClassnames, 'active') } : {};
-};
+    return isPartiallyCurrent ? { className: clsx(additionalClassnames, 'active') } : {};
+  };

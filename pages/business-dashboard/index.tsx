@@ -1,9 +1,10 @@
 import React from 'react';
-import { navigate } from '@reach/router';
+import { useRouter } from 'next/router';
 
 const Index: React.FC = () => {
+  const router = useRouter();
   React.useEffect(() => {
-    navigate('/business-dashboard/introduction');
+    router.push('/business-dashboard/introduction');
   });
   return null;
 };
