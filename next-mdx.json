@@ -13,5 +13,10 @@
     "contentPath": "docs/qios",
     "sortBy": "date",
     "sortOrder": "asc"
+  },
+  "kata-platform": {
+    "contentPath": "docs/kata-platform",
+    "sortBy": "date",
+    "sortOrder": "asc"
   }
 }

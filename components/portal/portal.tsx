@@ -1,7 +1,7 @@
-import { Box, Heading, theme, Text } from '@aksara-ui/react'
-import { PRODUCTS as productList } from 'utils/constants'
-import { layerIndexes } from 'utils/variables'
-import { Anchor, DocsCard, DocsCardWrapper, HeaderPortal, HeroWrapper, } from './components'
+import { Box, Heading, theme, Text } from '@aksara-ui/react';
+import { PRODUCTS as productList } from 'utils/constants';
+import { layerIndexes } from 'utils/variables';
+import { Anchor, DocsCard, DocsCardWrapper, HeaderPortal, HeroWrapper } from './components';
 
 export default function Portal() {
   return (
@@ -9,7 +9,14 @@ export default function Portal() {
       <HeroWrapper>
         <img src="assets/images/portal-hero.svg" />
       </HeroWrapper>
-      <Box display="flex" width="100%" flexDirection="column" alignItems="center" justifyContent="center" zIndex={layerIndexes.flat}>
+      <Box
+        display="flex"
+        width="100%"
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+        zIndex={layerIndexes.flat}
+      >
         <HeaderPortal>
           <Heading fontWeight={700} fontSize={36} color={theme.colors.white}>
             Kata Product Documentations 👋
@@ -21,7 +28,7 @@ export default function Portal() {
         <DocsCardWrapper>
           {productList.map((product, idx) => (
             <DocsCard key={`${idx}-${product.name}`}>
-              <Anchor href={product.extendedUrl} target={product.extendedUrl && "_blank"}>
+              <Anchor href={product.url} target={product.externalUrl && '_blank'}>
                 <Box display="flex" alignItems="center">
                   <img src={product.imgPath} /> {product.name}
                 </Box>
@@ -31,5 +38,5 @@ export default function Portal() {
         </DocsCardWrapper>
       </Box>
     </Box>
-  )
+  );
 }
