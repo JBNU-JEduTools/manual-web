@@ -139,7 +139,15 @@
         {
           "id": "how-to-use-analytics",
           "url": "/business-dashboard/use-analytics",
-          "title": "How to Use Analytics"
+          "title": "How to Use Analytics",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "how-to-use-analytics#",
+              "url": "/business-dashboard/use-analytics#",
+              "title": "How to Use Analytics"
+            }
+          ]
         },
         {
           "id": "conversation-based-pricing",
