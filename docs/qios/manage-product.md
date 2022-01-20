@@ -7,7 +7,7 @@ next: manage-store
 
 ## Add Product
 
-<iframe width="600" height="300" src="https://www.youtube.com/embed/B3JUihKdwX4?list=PLy86Ve1I7c3iZrOzmqE16D0ZVIjoDFRQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="300" src="https://www.youtube.com/embed/B3JUihKdwX4?list=PLy86Ve1I7c3iZrOzmqE16D0ZVIjoDFRQw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 1. Click **“Produk”** and choose **“Tambah secara manual”** or **“Upload CSV”**.
 

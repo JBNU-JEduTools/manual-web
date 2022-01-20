@@ -8,6 +8,7 @@ export interface HeaderMenuItem {
 }
 
 export interface MenuNode {
+  id?: string;
   title: string;
   url?: string;
   items?: MenuNode[];

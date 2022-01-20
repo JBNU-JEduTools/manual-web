@@ -6,7 +6,7 @@ title: Get Started with WhatsApp Business Dashboard
 
 Watch the video tutorial below on how to sign up and log in to your Business Dashboard, as well as on how to register your WhatsApp Business Account.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jNTAPD5cou0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jNTAPD5cou0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 ### Sign Up for WhatsApp Business Dashboard
 

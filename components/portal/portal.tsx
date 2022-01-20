@@ -28,7 +28,7 @@ export default function Portal() {
         <DocsCardWrapper>
           {productList.map((product, idx) => (
             <DocsCard key={`${idx}-${product.name}`}>
-              <Anchor href={product.url} target={product.externalUrl && '_blank'}>
+              <Anchor href={product.url} target={product.externalUrl ? '_blank' : ''}>
                 <Box display="flex" alignItems="center">
                   <img src={product.imgPath} /> {product.name}
                 </Box>

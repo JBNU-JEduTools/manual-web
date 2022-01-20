@@ -2,6 +2,8 @@ import { breakpoints } from 'utils/variables';
 import styled from 'styled-components';
 
 const DocsWrapper = styled('article')`
+  font-family: 'Inter';
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;

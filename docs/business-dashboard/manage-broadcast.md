@@ -9,7 +9,7 @@ Once you have an approved message template, you can use it to send messages to y
 
 You can watch our video tutorial below to learn how to broadcast a template message.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/smbHZW5qsIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/smbHZW5qsIk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 ### How to Broadcast a Template Message
 
@@ -35,7 +35,7 @@ To create the CSV from example above, make columns with the following names in e
 
 ![table-1](./images/manage-broadcast/table-1.png)
 
-The example content above has two variables in the body content. In the excel, make columns body1_type and body1_text to input the content for variable {{1}} and columns body2_type and body3_text to input the content for variable {{2}}. There will be more body#_type and body#_text columns following the number of variables in the body section.
+The example content above has two variables in the body content. In the excel, make columns body1_type and body1_text to input the content for variable {{1}} and columns body2_type and body3_text to input the content for variable {{2}}. There will be more body#\_type and body#\_text columns following the number of variables in the body section.
 
 After making the column names, fill in the contents for each column like the example below:
 
@@ -67,7 +67,6 @@ If your CSV upload returns a warning, you can’t proceed to send a broadcast. L
   </tr>
 </tbody>
 </table>
-
 
 ### View Your Broadcast
 
@@ -109,7 +108,6 @@ You can find the information on a broadcast message under the **"Broadcast detai
     </td>
   </tr>
 </table>
-
 
 #### Delete Broadcast
 

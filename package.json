@@ -10,6 +10,7 @@
     "@aksara-ui/icons": "1.0.1-canary.1",
     "@aksara-ui/react": "1.0.1-canary.26",
     "@svgr/webpack": "^6.1.2",
+    "babel-preset-next": "^1.4.0",
     "classnames": "2.2.6",
     "date-fns": "2.16.1",
     "gray-matter": "4.0.2",

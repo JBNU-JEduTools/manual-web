@@ -30,7 +30,7 @@ The example use cases for promotional messages include:
 
 Watch the video tutorial below to learn how to create a message template.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fXY57qj5tlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fXY57qj5tlk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 1. Go to the **Message Template** page by clicking from the left side navigation, and click **+New Message** Template on the top right of the page.
 2. Choose a category of your message template. For a non-promotional WhatsApp template message, you can choose any category based on your business needs and objectives. For promotional content, you have to set the category as **Account Update**.
