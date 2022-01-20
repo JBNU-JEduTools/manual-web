@@ -23,12 +23,15 @@ export const SOCIALS = [
 export const PRODUCTS = [
   {
     name: 'Kata Platform',
+    url: '/kata-platform',
+    externalUrl: false,
     imgPath: 'assets/images/products/icon/kata-platform-icon.svg',
   },
   {
     name: 'Kata CLI',
     imgPath: 'assets/images/products/icon/kata-cli-icon.svg',
-    extendedUrl: 'https://github.com/kata-ai/kata-cli',
+    url: 'https://github.com/kata-ai/kata-cli',
+    externalUrl: true,
   },
   {
     name: 'Kata Omnichat',
@@ -37,11 +40,13 @@ export const PRODUCTS = [
   {
     name: 'Business Dashboard',
     imgPath: 'assets/images/products/icon/business-dashboard-icon.svg',
-    extendedUrl: '/business-dashboard',
+    url: '/business-dashboard',
+    externalUrl: false,
   },
   {
     name: 'Qios',
     imgPath: 'assets/images/products/icon/qios-icon.svg',
-    extendedUrl: '/qios',
+    url: '/qios',
+    externalUrl: false,
   },
 ];
