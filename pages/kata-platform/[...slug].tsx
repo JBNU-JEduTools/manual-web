@@ -17,18 +17,23 @@ import { useRouter } from 'next/router';
 import { MarkdownContent } from 'components/page/Markdown';
 import renderAst from 'utils/renderAst';
 import { DocsContainer } from 'components/layout/Container';
-import Layout from 'components/layout';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import { GetStaticPropsContext, PreviewData } from 'next';
+import IndexLayout from 'components/layouts';
+import { PaginationDocs } from 'components/docs/Pagination';
+import { getPageUrl } from 'utils/helpers';
+import { MarkdownContent as IMarkdownContent } from 'interfaces/next';
 
 interface TutorialPageTemplateProps {
-  post: any;
+  post: IMarkdownContent;
   toc: any;
   listToc: string[];
 }
 
 const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }) => {
   const frontMatter = post.frontMatter;
+  const prevPage = getPageUrl(post.frontMatter.prev, 'kata-platform');
+  const nextPage = getPageUrl(post.frontMatter.next, 'kata-platform');
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
@@ -42,20 +47,18 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
 
   const isActiveItem = React.useCallback(
     (url: string): boolean => {
-      console.log(url === router.asPath);
       return url === router.asPath;
     },
     [router]
   );
+
   return (
     <Page docsPage>
       <Head>
         <title>{frontMatter.title} &middot; Kata Platform Documentation</title>
-        <meta name="description" content={post.excerpt} />
         <meta property="og:title" content={frontMatter.title} />
-        <meta property="og:description" content={post.excerpt} />
       </Head>
-      <Layout>
+      <IndexLayout navHidden>
         {router.isFallback ? (
           <Text>Loading…</Text>
         ) : (
@@ -75,6 +78,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
               />
               {frontMatter.id !== 'about' && <DocsHeader title={frontMatter.title} />}
               <MarkdownContent>{renderAst(post.mdx.renderedOutput)}</MarkdownContent>
+              {(prevPage || nextPage) && <PaginationDocs prevPage={prevPage} nextPage={nextPage} />}
               <DocsHelpful />
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
@@ -83,7 +87,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
             <BackToTopButton href="#" />
           </DocsWrapper>
         )}
-      </Layout>
+      </IndexLayout>
     </Page>
   );
 };

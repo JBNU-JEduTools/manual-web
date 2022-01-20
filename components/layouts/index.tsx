@@ -23,8 +23,18 @@ const IndexLayout: React.FC<IndexLayoutProps> = ({ children, navHidden }) => {
   const isQios = router.route.split('/')[1] === 'qios';
 
   React.useEffect(() => {
+    let jsonNavigation;
     if (isTutorial && router.query.slug) {
-      const jsonNavigation = require(`docs/navigation/tutorials/${router.query.slug[0]}.json`);
+      jsonNavigation = require(`docs/navigation/tutorials/${router.query.slug[0]}.json`);
+      setNavigation(jsonNavigation);
+    } else if (isKataPlatform) {
+      jsonNavigation = require(`docs/toc-kata-platform.json`);
+      setNavigation(jsonNavigation);
+    } else if (isQios) {
+      jsonNavigation = require(`docs/toc-qios.json`);
+      setNavigation(jsonNavigation);
+    } else if (isBusinessDashboard) {
+      jsonNavigation = require(`docs/toc-business-dashboard.json`);
       setNavigation(jsonNavigation);
     }
   }, [router, navigation, setNavigation]);

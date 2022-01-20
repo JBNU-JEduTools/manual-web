@@ -8,9 +8,9 @@ import { colors, layerIndexes, breakpoints, dimensions } from 'utils/variables';
 
 import { NavigationContext, NavigationActionTypes } from './NavigationContext';
 import NavButton from './NavButton';
-import NavigationMenu from './NavigationMenu';
 import { Accordion } from '@aksara-ui/react';
 import TocJsonWrapper from 'components/docs/TableOfContents/TocJsonWrapper';
+import { useRouter } from 'next/router';
 
 interface ToggleableProps {
   isOpen?: boolean;
@@ -136,6 +136,14 @@ interface NavigationProps {
 
 function Navigation({ navigation, navHidden }: NavigationProps) {
   const { state, dispatch } = React.useContext(NavigationContext);
+  const router = useRouter();
+
+  const isActiveItem = React.useCallback(
+    (url: string): boolean => {
+      return url === router.asPath;
+    },
+    [router]
+  );
 
   return (
     <Wrapper isOpen={state.isOpen}>
@@ -163,8 +171,12 @@ function Navigation({ navigation, navHidden }: NavigationProps) {
               type="multiple"
             >
               <TocJsonWrapper
-                onClick={() => dispatch({ type: NavigationActionTypes.TOGGLE_DRAWER })}
+                onClick={(e, url) => {
+                  dispatch({ type: NavigationActionTypes.TOGGLE_DRAWER });
+                  router.push(url);
+                }}
                 tree={navigation}
+                isActiveItem={isActiveItem}
               />
             </Accordion>
           )}
