@@ -133,8 +133,8 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
         // This is section title without url
         else if (!item.url) {
           return (
-            <Box mt={12}>
-              <AccordionItem value={item.title} key={item.title}>
+            <Box mt={12} key={item.title}>
+              <AccordionItem value={item.title}>
                 <TocHeader>{item.title}</TocHeader>
                 {item.items?.length ? (
                   <TocJsonWrapper tree={item} onClick={onClick} isActiveItem={isActiveItem} />
@@ -146,7 +146,7 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
 
         // Item with url
         return (
-          <Box mt={12}>
+          <Box mt={12} key={item.title}>
             <AccordionItem value={item.title} key={item.title}>
               <ActionListItem
                 onClick={(e) => {
