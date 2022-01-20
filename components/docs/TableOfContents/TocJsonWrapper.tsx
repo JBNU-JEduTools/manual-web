@@ -64,7 +64,7 @@ function NestedTocJsonWrapper({
                       onClick(e, itemChildren.url);
                     }
                   }}
-                  isActive={isActiveItem(itemChildren.url)}
+                  isActive={isActiveItem && isActiveItem(itemChildren.url)}
                 >
                   {itemChildren.title}
                 </ActionListItem>
@@ -118,7 +118,7 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                             onClick(e, itemChildren.url);
                           }
                         }}
-                        isActive={isActiveItem(itemChildren.url)}
+                        isActive={isActiveItem && isActiveItem(itemChildren.url)}
                       >
                         {itemChildren.title}
                       </ActionListItem>
@@ -154,7 +154,7 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                     onClick(e, item.url);
                   }
                 }}
-                isActive={isActiveItem(item.url)}
+                isActive={isActiveItem && isActiveItem(item.url)}
               >
                 {item.title}
               </ActionListItem>
