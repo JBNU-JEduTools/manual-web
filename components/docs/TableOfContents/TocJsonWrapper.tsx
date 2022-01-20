@@ -4,20 +4,30 @@ import {
   AccordionContent,
   AccordionHeader,
   AccordionItem as AccordionItemAksara,
+  ActionListItem,
   Box,
   theme,
 } from '@aksara-ui/react';
 
-import { TocAnchor, TocHeader, TocText } from './styled';
+import { TocHeader, TocText } from './styled';
 import { Edge, MenuNode } from 'interfaces/nodes';
 import styled from 'styled-components';
 
 interface TocJsonWrapperProps {
   tree: Edge<MenuNode> | MenuNode;
-  onClick?: Function;
+  onClick: (e: any, url: string) => void;
+  isActiveItem: (url: string) => boolean;
 }
 
-function NestedTocJsonWrapper({ item, onClick }: { item: MenuNode; onClick: Function }) {
+function NestedTocJsonWrapper({
+  item,
+  onClick,
+  isActiveItem,
+}: {
+  item: MenuNode;
+  onClick: (e: any, url: string) => void;
+  isActiveItem: (url: string) => boolean;
+}) {
   return (
     <Accordion type="multiple">
       <AccordionItem
@@ -45,12 +55,19 @@ function NestedTocJsonWrapper({ item, onClick }: { item: MenuNode; onClick: Func
             >
               {itemChildren.items?.length ? (
                 <>
-                  <NestedTocJsonWrapper item={itemChildren} onClick={onClick} />
+                  <NestedTocJsonWrapper item={itemChildren} onClick={onClick} isActiveItem={isActiveItem} />
                 </>
               ) : (
-                <TocAnchor onClick={onClick ? () => onClick() : null} href={itemChildren.url}>
+                <ActionListItem
+                  onClick={(e) => {
+                    if (onClick) {
+                      onClick(e, itemChildren.url);
+                    }
+                  }}
+                  isActive={isActiveItem(itemChildren.url)}
+                >
                   {itemChildren.title}
-                </TocAnchor>
+                </ActionListItem>
               )}
             </AccordionContent>
           );
@@ -60,7 +77,7 @@ function NestedTocJsonWrapper({ item, onClick }: { item: MenuNode; onClick: Func
   );
 }
 
-function TocJsonWrapper({ tree, onClick }: TocJsonWrapperProps) {
+function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
   return tree?.items.length ? (
     <Accordion type="multiple">
       {tree.items.map((item) => {
@@ -92,12 +109,19 @@ function TocJsonWrapper({ tree, onClick }: TocJsonWrapperProps) {
                   >
                     {itemChildren.items?.length ? (
                       <>
-                        <NestedTocJsonWrapper item={itemChildren} onClick={onClick} />
+                        <NestedTocJsonWrapper item={itemChildren} onClick={onClick} isActiveItem={isActiveItem} />
                       </>
                     ) : (
-                      <TocAnchor onClick={onClick ? () => onClick() : null} href={itemChildren.url}>
+                      <ActionListItem
+                        onClick={(e) => {
+                          if (onClick) {
+                            onClick(e, itemChildren.url);
+                          }
+                        }}
+                        isActive={isActiveItem(itemChildren.url)}
+                      >
                         {itemChildren.title}
-                      </TocAnchor>
+                      </ActionListItem>
                     )}
                   </AccordionContent>
                 );
@@ -112,7 +136,9 @@ function TocJsonWrapper({ tree, onClick }: TocJsonWrapperProps) {
             <Box mt={12}>
               <AccordionItem value={item.title} key={item.title}>
                 <TocHeader>{item.title}</TocHeader>
-                {item.items?.length ? <TocJsonWrapper tree={item} /> : null}
+                {item.items?.length ? (
+                  <TocJsonWrapper tree={item} onClick={onClick} isActiveItem={isActiveItem} />
+                ) : null}
               </AccordionItem>
             </Box>
           );
@@ -122,10 +148,17 @@ function TocJsonWrapper({ tree, onClick }: TocJsonWrapperProps) {
         return (
           <Box mt={12}>
             <AccordionItem value={item.title} key={item.title}>
-              <TocAnchor onClick={onClick ? () => onClick() : null} href={item.url}>
+              <ActionListItem
+                onClick={(e) => {
+                  if (onClick) {
+                    onClick(e, item.url);
+                  }
+                }}
+                isActive={isActiveItem(item.url)}
+              >
                 {item.title}
-              </TocAnchor>
-              {item.items?.length ? <TocJsonWrapper tree={item} /> : null}
+              </ActionListItem>
+              {item.items?.length ? <TocJsonWrapper tree={item} onClick={onClick} isActiveItem={isActiveItem} /> : null}
             </AccordionItem>
           </Box>
         );

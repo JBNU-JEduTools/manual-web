@@ -29,12 +29,23 @@ interface TutorialPageTemplateProps {
 
 const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }) => {
   const frontMatter = post.frontMatter;
-  console.log(toc);
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     router.push('/404');
   }
+
+  const onTocSidebarClick = React.useCallback((e: any, url: string) => {
+    e.preventDefault();
+    router.push(url);
+  }, []);
+
+  const isActiveItem = React.useCallback(
+    (url: string): boolean => {
+      return url === router.asPath;
+    },
+    [router]
+  );
 
   return (
     <Page docsPage>
@@ -51,7 +62,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
           <DocsWrapper>
             {toc && (
               <div className="table-of-contents">
-                <TocJsonWrapper tree={toc} />
+                <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isActiveItem={isActiveItem} />
               </div>
             )}
             <DocsContainer>

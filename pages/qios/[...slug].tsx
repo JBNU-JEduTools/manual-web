@@ -36,6 +36,17 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
     router.push('/404');
   }
 
+  const onTocSidebarClick = React.useCallback((e: any, url: string) => {
+    e.preventDefault();
+    router.push(url);
+  }, []);
+
+  const isActiveItem = React.useCallback(
+    (url: string): boolean => {
+      return url === router.asPath;
+    },
+    [router]
+  );
   return (
     <Page docsPage>
       <Head>
@@ -51,7 +62,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
           <DocsWrapper>
             {toc && (
               <div className="table-of-contents">
-                <TocJsonWrapper tree={toc} />
+                <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isActiveItem={isActiveItem} />
               </div>
             )}
             <DocsContainer>
