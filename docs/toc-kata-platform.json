@@ -5,17 +5,17 @@
       "items": [
         {
           "id": "about",
-          "url": "/kata-platform/introduction/about/",
+          "url": "/kata-platform/introduction/about",
           "title": "What is Kata Platform"
         },
         {
           "id": "benefits-with-kata-platform",
-          "url": "/kata-platform/introduction/benefits-with-kata-platform/",
+          "url": "/kata-platform/introduction/benefits-with-kata-platform",
           "title": "Benefits with Kata Platform"
         },
         {
           "id": "kata-platform-features",
-          "url": "/kata-platform/introduction/kata-platform-features/",
+          "url": "/kata-platform/introduction/kata-platform-features",
           "title": "Kata Platform Features"
         }
       ]
@@ -25,7 +25,7 @@
       "items": [
         {
           "id": "all-use-cases",
-          "url": "/kata-platform/use-case/all-use-cases/",
+          "url": "/kata-platform/use-case/all-use-cases",
           "title": "All Use Cases"
         }
       ]

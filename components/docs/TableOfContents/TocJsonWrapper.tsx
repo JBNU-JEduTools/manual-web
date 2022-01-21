@@ -170,4 +170,5 @@ const actionListStyle = {
   display: 'block',
   padding: '8px 0 8px 16px',
   margin: '2px 0',
+  borderRadius: '12px',
 };
