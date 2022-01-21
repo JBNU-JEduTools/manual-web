@@ -30,7 +30,7 @@ export const styleJSX = css`
   h4,
   h5,
   h6 {
-    font-family: 'Inter-bold';
+    font-family: 'Inter-bold', sans-serif;
   }
 
   a.header-anchor {

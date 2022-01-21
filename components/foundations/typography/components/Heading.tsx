@@ -44,7 +44,6 @@ Heading.defaultProps = {
   as: 'h2',
   marginBottom: '12px',
   color: 'grey09',
-  fontFamily: 'Inter-bold !important',
   size: 800,
 };
 
