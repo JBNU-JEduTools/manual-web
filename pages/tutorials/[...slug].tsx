@@ -40,8 +40,9 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
   }, []);
 
   const isActiveItem = React.useCallback(
-    (url: string): boolean => {
-      return url === router.asPath;
+    (tag: string): boolean => {
+      // because toc based on one file only, the comparison is after # tag only
+      return router.asPath.indexOf(tag) !== -1;
     },
     [router]
   );
