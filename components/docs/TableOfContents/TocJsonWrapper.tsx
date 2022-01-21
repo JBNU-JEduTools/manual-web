@@ -30,29 +30,13 @@ function NestedTocJsonWrapper({
 }) {
   return (
     <Accordion type="multiple">
-      <AccordionItem
-        style={{
-          marginLeft: '-8px',
-          marginTop: '8px',
-          marginBottom: '-16px !important',
-        }}
-        key={item.title}
-        value={item.title}
-      >
-        <AccordionHeader style={{ fontSize: '14px' }} size="lg">
+      <AccordionItem style={accordionItemStyle} key={item.title} value={item.title}>
+        <AccordionHeader style={accordionHeaderStyle} size="lg">
           <TocText>{item.title}</TocText>
         </AccordionHeader>
         {item.items.map((itemChildren) => {
           return (
-            <AccordionContent
-              style={{
-                display: 'flex',
-                marginLeft: '24px',
-                padding: '8px 16px',
-                borderLeft: `1px solid ${theme.colors.greylight03}`,
-              }}
-              key={itemChildren.title}
-            >
+            <AccordionContent style={accordionContentStyle} key={itemChildren.title}>
               {itemChildren.items?.length ? (
                 <>
                   <NestedTocJsonWrapper item={itemChildren} onClick={onClick} isActiveItem={isActiveItem} />
@@ -65,6 +49,8 @@ function NestedTocJsonWrapper({
                     }
                   }}
                   isActive={isActiveItem && isActiveItem(itemChildren.url)}
+                  // indicator={false}
+                  style={actionListStyle}
                 >
                   {itemChildren.title}
                 </ActionListItem>
@@ -84,29 +70,13 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
         // if using accordion
         if (item.useAccordion) {
           return item.items.length ? (
-            <AccordionItem
-              style={{
-                marginLeft: '-8px',
-                marginTop: '8px',
-                marginBottom: '-16px !important',
-              }}
-              key={item.title}
-              value={item.title}
-            >
-              <AccordionHeader style={{ fontSize: '14px' }} size="lg">
+            <AccordionItem style={accordionItemStyle} key={item.title} value={item.title}>
+              <AccordionHeader style={accordionHeaderStyle} size="lg">
                 <TocText>{item.title}</TocText>
               </AccordionHeader>
               {item.items.map((itemChildren) => {
                 return (
-                  <AccordionContent
-                    style={{
-                      display: 'flex',
-                      marginLeft: '24px',
-                      padding: '8px 16px',
-                      borderLeft: `1px solid ${theme.colors.greylight03}`,
-                    }}
-                    key={itemChildren.title}
-                  >
+                  <AccordionContent style={accordionContentStyle} key={itemChildren.title}>
                     {itemChildren.items?.length ? (
                       <>
                         <NestedTocJsonWrapper item={itemChildren} onClick={onClick} isActiveItem={isActiveItem} />
@@ -119,6 +89,8 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                           }
                         }}
                         isActive={isActiveItem && isActiveItem(itemChildren.url)}
+                        // indicator={false}
+                        style={actionListStyle}
                       >
                         {itemChildren.title}
                       </ActionListItem>
@@ -155,6 +127,8 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                   }
                 }}
                 isActive={isActiveItem && isActiveItem(item.url)}
+                // indicator={false}
+                style={actionListStyle}
               >
                 {item.title}
               </ActionListItem>
@@ -174,3 +148,26 @@ const AccordionItem = styled(AccordionItemAksara)`
     display: flex;
   }
 `;
+
+const accordionItemStyle = {
+  marginLeft: '-8px',
+  marginTop: '8px',
+};
+
+const accordionHeaderStyle = {
+  fontSize: '14px',
+  marginBottom: '8px',
+};
+
+const accordionContentStyle = {
+  display: 'flex',
+  marginLeft: '24px',
+  borderLeft: `1px solid ${theme.colors.greylight03}`,
+};
+
+const actionListStyle = {
+  width: '100%',
+  display: 'block',
+  padding: '8px 0 8px 16px',
+  margin: '2px 0',
+};
