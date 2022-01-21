@@ -7,7 +7,7 @@ title: How To Set Up Bank Account
 
 ## Set Up Bank Account Information
 
-![Qios illustration](./images/image13.png)
+![Qios illustration](/assets/images/products/qios/image13.png)
 
 > Set Up Bank Account
 

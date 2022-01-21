@@ -72,9 +72,9 @@ answer questions or send important updates via message.
 
 #### 1. User-Initiated Conversation (UIC)
 
-![based-pricing-table-1.png](./images/based-pricing/table-1.png)
+![based-pricing-table-1.png](/assets/images/products/business-dashboard/based-pricing/table-1.png)
 
-<div style={{textAlign: 'center'}}>1.a. Illustrated Scenario 1</div>
+> 1.a. Illustrated Scenario 1
 
 **Scenario 1: User/customer service or general support questions in one 24-hour conversation session.**
 
@@ -92,9 +92,9 @@ answer questions or send important updates via message.
 
 Cost: **IDR 320**, for 1 UIC
 
-![based-pricing-table-2.png](./images/based-pricing/table-2.png)
+![based-pricing-table-2.png](/assets/images/products/business-dashboard/based-pricing/table-2.png)
 
-<div style={{textAlign: 'center'}}>1.b. Illustrated Scenario 2</div>
+> 1.b. Illustrated Scenario 2
 
 **Scenario 2: A user/customer-initiated conversation that leads to two conversations with a Message Template.**
 
@@ -106,9 +106,9 @@ Cost: **IDR 320**, for 1 UIC
 
 #### 2. Business-Initiated Conversation (UIC)
 
-![based-pricing-table-3.png](./images/based-pricing/table-3.png)
+![based-pricing-table-3.png](/assets/images/products/business-dashboard/based-pricing/table-3.png)
 
-<div style={{textAlign: 'center'}}>2.a. Illustrated Scenario 3</div>
+> 2.a. Illustrated Scenario 3
 
 **Scenario 3: Business initiates sending notification messages using Message Templates.**
 
@@ -118,9 +118,9 @@ Cost: **IDR 320**, for 1 UIC
    Commercial Air will charge for one business-initiated conversation for sending these two message templates to Anne in a 24-hour conversation session.
    Cost: **IDR 500**, for 1 BIC
 
-![based-pricing-table-4.png](./images/based-pricing/table-4.png)
+![based-pricing-table-4.png](/assets/images/products/business-dashboard/based-pricing/table-4.png)
 
-<div style={{textAlign: 'center'}}>2.b. Illustrated Scenario 4</div>
+> 2.b. Illustrated Scenario 4
 
 **Scenario 4: The business initiates a conversation that leads to a two-way conversation with the user/customer.**
 

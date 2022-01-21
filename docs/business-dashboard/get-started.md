@@ -6,11 +6,11 @@ title: Get Started with WhatsApp Business Dashboard
 
 Watch the video tutorial below on how to sign up and log in to your Business Dashboard, as well as on how to register your WhatsApp Business Account.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jNTAPD5cou0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+<iframe width="600" height="300" src="https://www.youtube.com/embed/jNTAPD5cou0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 ### Sign Up for WhatsApp Business Dashboard
 
-![Signup page](./images/image-get-started-1.png)
+![Signup page](/assets/images/products/business-dashboard/image-get-started-1.png)
 
 > Business Dashboard signup page
 
@@ -26,7 +26,7 @@ Create your account to start using WhatsApp Business Dashboard
 
 ### Log in to WhatsApp Business Dashboard
 
-![Login page with filled credential](./images/image-get-started-2.png)
+![Login page with filled credential](/assets/images/products/business-dashboard/image-get-started-2.png)
 
 > Business Dashboard login page
 
@@ -36,7 +36,7 @@ Create your account to start using WhatsApp Business Dashboard
 
 ### Register Your WhatsApp Business Account
 
-![Onboarding process 03-01](./images/image-get-started-3.png)
+![Onboarding process 03-01](/assets/images/products/business-dashboard/image-get-started-3.png)
 
 > Business Dashboard onboarding page
 
@@ -48,12 +48,12 @@ Create your account to start using WhatsApp Business Dashboard
 
 4. On the next page (step 3 of 3), click the **Create your WhatsApp channel** button and follow the registration steps from Facebook.
 
-![Embedded Sign Up 03-05-1](./images/image-get-started-4.png)
+![Embedded Sign Up 03-05-1](/assets/images/products/business-dashboard/image-get-started-4.png)
 
 > WhatsApp account registration step from Facebook
 
 5. Once you have completed the registration process, your request will be reviewed by Facebook for approval. Once your account is approved, you will be notified through your email and all of the WhatsApp Dashboard features will be unlocked. You can also start using the registered number to send messages after it is approved. <br/>While waiting for your account’s approval, you can send a trial message using our trial experience feature without requiring approval or payment.
 
-![Embedded Sign Up Status 04-01](./images/image-get-started-5.png)
+![Embedded Sign Up Status 04-01](/assets/images/products/business-dashboard/image-get-started-5.png)
 
 > WhatsApp account registration status

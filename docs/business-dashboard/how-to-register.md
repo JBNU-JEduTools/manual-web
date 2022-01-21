@@ -13,7 +13,7 @@ In WhatsApp Business Dashboard, you can connect multiple WhatsApp accounts to th
 
 3. Once you have completed the registration process, your request will be reviewed by Facebook for approval. You can only use the registered number to send messages after it is approved. You will be notified through your email once your account is approved. Alternatively, see the WhatsApp number status on the data table on the **WhatsApp Numbers** page.
 
-![WhatsApp number table that shows different statuses](./images/image-how-to-register-1.png)
+![WhatsApp number table that shows different statuses](/assets/images/products/business-dashboard/image-how-to-register-1.png)
 
 > WhatsApp Numbers page. You can add a new phone number and see the list of WhatsApp numbers that are registered to your Business Dashboard acount with the details.
 

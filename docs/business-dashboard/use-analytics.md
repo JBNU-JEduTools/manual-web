@@ -5,7 +5,7 @@ title: How to Use Analytics
 next: conversation-based-pricing
 ---
 
-![image-1](./images/analytics/image-1.jpg)
+![image-1](/assets/images/products/business-dashboard/analytics/image-1.jpg)
 
 > Analytics page
 

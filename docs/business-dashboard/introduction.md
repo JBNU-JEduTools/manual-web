@@ -3,7 +3,7 @@ id: introduction
 title: Introduction
 ---
 
-![Introduction](./images/image-introduction-1.png)
+![Introduction](/assets/images/products/business-dashboard/image-introduction-1.png)
 
 ## About WhatsApp Business Dashboard
 

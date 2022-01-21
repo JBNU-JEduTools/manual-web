@@ -8,7 +8,7 @@ next: manage-product
 
 ## Self-onboarding
 
-![Qios illustration](./images/image1.png)
+![Qios illustration](/assets/images/products/qios/image1.png)
 
 > Qios Sign Up Page
 
@@ -20,11 +20,11 @@ next: manage-product
 
 4. In the **Onboarding** page, you have to fill in the **Personal Information**, **Business Information**, **Create Store** and do some set up for your chatbot
 
-![Qios illustration](./images/image2.png)
+![Qios illustration](/assets/images/products/qios/image2.png)
 
 > Qios Self-Onboarding Step: Tentang Bisnis Kamu
 
-![Qios illustration](./images/image3.png)
+![Qios illustration](/assets/images/products/qios/image3.png)
 
 > Qios Self-Onboarding Step: Buat Toko Pertamamu
 
@@ -32,7 +32,7 @@ next: manage-product
 
 ## Home
 
-![Qios illustration](./images/image4.png)
+![Qios illustration](/assets/images/products/qios/image4.png)
 
 > Qios Home Page
 
@@ -44,7 +44,7 @@ next: manage-product
 
 ## Login
 
-![Qios illustration](./images/image5.png)
+![Qios illustration](/assets/images/products/qios/image5.png)
 
 > Login to Qios
 
