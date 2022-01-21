@@ -50,7 +50,7 @@ function NestedTocJsonWrapper({
                   }}
                   isActive={isActiveItem && isActiveItem(itemChildren.url)}
                   // indicator={false}
-                  style={actionListStyle}
+                  style={actionListStyle(isActiveItem && isActiveItem(itemChildren.url))}
                 >
                   {itemChildren.title}
                 </ActionListItem>
@@ -90,7 +90,7 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                         }}
                         isActive={isActiveItem && isActiveItem(itemChildren.url)}
                         // indicator={false}
-                        style={actionListStyle}
+                        style={actionListStyle(isActiveItem && isActiveItem(itemChildren.url))}
                       >
                         {itemChildren.title}
                       </ActionListItem>
@@ -128,7 +128,7 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                 }}
                 isActive={isActiveItem && isActiveItem(item.url)}
                 // indicator={false}
-                style={actionListStyle}
+                style={actionListStyle(isActiveItem && isActiveItem(item.url))}
               >
                 {item.title}
               </ActionListItem>
@@ -157,6 +157,7 @@ const accordionItemStyle = {
 const accordionHeaderStyle = {
   fontSize: '14px',
   marginBottom: '8px',
+  color: theme.colors.greymed05,
 };
 
 const accordionContentStyle = {
@@ -165,10 +166,14 @@ const accordionContentStyle = {
   borderLeft: `1px solid ${theme.colors.greylight03}`,
 };
 
-const actionListStyle = {
-  width: '100%',
-  display: 'block',
-  padding: '8px 0 8px 16px',
-  margin: '2px 0',
-  borderRadius: '12px',
+const actionListStyle = (isActive: boolean) => {
+  return {
+    width: '100%',
+    display: 'block',
+    padding: '8px 0 8px 16px',
+    margin: '2px 0',
+    borderRadius: '12px',
+    color: isActive ? theme.colors.blue07 : theme.colors.greymed05,
+    backgroundColor: isActive ? theme.colors.blue01 : theme.colors.white,
+  };
 };
