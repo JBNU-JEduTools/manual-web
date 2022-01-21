@@ -63,9 +63,10 @@ const isPost = () => {
 
 interface ILayout {
   children: React.ReactNode;
+  imageOrigin: string;
 }
 
-const Layout: React.FC<ILayout> = ({ children }) => {
+const Layout: React.FC<ILayout> = ({ children, imageOrigin }) => {
   const { dispatch } = React.useContext(NavigationContext);
   const [isSearchOpen, setIsSearchOpen] = React.useState(false);
 
@@ -85,7 +86,13 @@ const Layout: React.FC<ILayout> = ({ children }) => {
           <HeaderLogo>
             <Link href="/">
               <UnstyledAnchor>
-                <img src="/assets/images/logo-docs.svg" />
+                <img
+                  src={
+                    imageOrigin === 'docs'
+                      ? '/assets/images/logo-docs.svg'
+                      : `/assets/images/products/${imageOrigin}-logo-docs.svg`
+                  }
+                />
               </UnstyledAnchor>
             </Link>
           </HeaderLogo>
@@ -102,7 +109,13 @@ const Layout: React.FC<ILayout> = ({ children }) => {
             <LogoWrapper isPost={isPost()}>
               <Link href="/">
                 <UnstyledAnchor>
-                  <img src="/assets/images/logo-docs.svg" />
+                  <img
+                    src={
+                      imageOrigin === 'docs'
+                        ? '/assets/images/logo-docs.svg'
+                        : `/assets/images/products/${imageOrigin}-logo-docs.svg`
+                    }
+                  />
                 </UnstyledAnchor>
               </Link>
             </LogoWrapper>
