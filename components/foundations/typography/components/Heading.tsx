@@ -44,8 +44,7 @@ Heading.defaultProps = {
   as: 'h2',
   marginBottom: '12px',
   color: 'grey09',
-  fontFamily: 'Inter-bold',
-  size: 800
+  size: 800,
 };
 
 Heading.displayName = 'Heading';

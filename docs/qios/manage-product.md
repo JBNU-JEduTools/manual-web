@@ -11,7 +11,7 @@ next: manage-store
 
 1. Click **“Produk”** and choose **“Tambah secara manual”** or **“Upload CSV”**.
 
-![Qios illustration](./images/image6.png)
+![Qios illustration](/assets/images/products/qios/image6.png)
 
 > Add New Product
 
@@ -21,7 +21,7 @@ next: manage-store
 
 ## Modify Product (Edit, Delete, Change Availability)
 
-![Qios illustration](./images/image7.png)
+![Qios illustration](/assets/images/products/qios/image7.png)
 
 > Edit Product
 
@@ -31,7 +31,7 @@ next: manage-store
 
 ## Generate Catalogue for Chatbot
 
-![Qios illustration](./images/image8.png)
+![Qios illustration](/assets/images/products/qios/image8.png)
 
 > Product Catalogue
 

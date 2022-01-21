@@ -164,12 +164,7 @@ function Navigation({ navigation, navHidden }: NavigationProps) {
       <WrapperInner hideOnDesktop={navHidden}>
         <DocumentationNav>
           {navigation && (
-            <Accordion
-              style={{
-                listStyleType: 'none',
-              }}
-              type="multiple"
-            >
+            <Accordion type="multiple">
               <TocJsonWrapper
                 onClick={(e, url) => {
                   dispatch({ type: NavigationActionTypes.TOGGLE_DRAWER });

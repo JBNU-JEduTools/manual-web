@@ -17,7 +17,7 @@ import { useRouter } from 'next/router';
 import { MarkdownContent } from 'components/page/Markdown';
 import renderAst from 'utils/renderAst';
 import { DocsContainer } from 'components/layout/Container';
-import Layout from 'components/layout';
+import IndexLayout from 'components/layouts';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import { GetStaticPropsContext, PreviewData } from 'next';
 
@@ -29,7 +29,6 @@ interface TutorialPageTemplateProps {
 
 const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }) => {
   const frontMatter = post.frontMatter;
-  console.log(toc);
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
@@ -55,7 +54,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
         <meta property="og:title" content={frontMatter.title} />
         <meta property="og:description" content={post.excerpt} />
       </Head>
-      <Layout>
+      <IndexLayout navHidden>
         {router.isFallback ? (
           <Text>Loading…</Text>
         ) : (
@@ -83,7 +82,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
             <BackToTopButton href="#" />
           </DocsWrapper>
         )}
-      </Layout>
+      </IndexLayout>
     </Page>
   );
 };

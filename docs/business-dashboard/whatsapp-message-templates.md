@@ -30,7 +30,7 @@ The example use cases for promotional messages include:
 
 Watch the video tutorial below to learn how to create a message template.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fXY57qj5tlk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+<iframe width="600" height="300" src="https://www.youtube.com/embed/fXY57qj5tlk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 1. Go to the **Message Template** page by clicking from the left side navigation, and click **+New Message** Template on the top right of the page.
 2. Choose a category of your message template. For a non-promotional WhatsApp template message, you can choose any category based on your business needs and objectives. For promotional content, you have to set the category as **Account Update**.
@@ -40,25 +40,25 @@ Watch the video tutorial below to learn how to create a message template.
 
 ## Message Template Content Structure
 
-![image-1](./images/message-template/image-1.png)
+![image-1](/assets/images/products/business-dashboard/message-template/image-1.png)
 
 > Creating a message template
 
 #### Header (optional)
 
-![image-2](./images/message-template/image-2.png)
+![image-2](/assets/images/products/business-dashboard/message-template/image-2.png)
 
 A header can be a text or a media - image, video, or document. For a text header, the character limit is 60 characters and you can add a maximum of one variable (See variable section for more info).
 
 #### Body
 
-![image-3](./images/message-template/image-3.png)
+![image-3](/assets/images/products/business-dashboard/message-template/image-3.png)
 
 A body is where you add the content of your message. You can edit text formats, add emojis, and add variables (See variable section for more info). The character limit is 1.024 characters for the body section, with only letters, numbers, and emojis allowed. It shouldn’t have newlines, tabs, or more than four consecutive spaces.
 
 #### Footer (optional)
 
-![image-4](./images/message-template/image-4.png)
+![image-4](/assets/images/products/business-dashboard/message-template/image-4.png)
 
 A footer can be a closing sentence, or default info - such as an address, social media ID, email, etc. - about your company that you want to include in your message. For the footer section, the character limit is 60 characters.
 
@@ -66,7 +66,7 @@ A footer can be a closing sentence, or default info - such as an address, social
 
 When creating a message template, you can choose to include one of the available buttons, **Call-to-Actions** (CTA) or **Quick Replies**.
 
-![image-5](./images/message-template/image-5.png)
+![image-5](/assets/images/products/business-dashboard/message-template/image-5.png)
 
 > Call to action
 
@@ -74,7 +74,7 @@ A **call-to-action** button allows you to include your website URL and/or your b
 
 A quick reply button lets your audience quickly reply to your message. You can create up to three quick reply buttons in a message template. When using quick reply, you have to define the payload for every button you created to return the correct reply when customers tap the buttons.
 
-![image-6](./images/message-template/image-6.png)
+![image-6](/assets/images/products/business-dashboard/message-template/image-6.png)
 
 > Quick reply
 
@@ -84,13 +84,13 @@ Using variables in your message template is a way to personalize your message to
 
 Here is an example of using variables in a message:
 
-![image-7](./images/message-template/image-7.png)
+![image-7](/assets/images/products/business-dashboard//message-template/image-7.png)
 
 You can use variables for cases such as when you want to mention your customers’ names, information on price, promoted items, promotion dates, location, etc. The contents for the variables should be provided in the CSV format when creating a new broadcast using a certain message template.
 
 #### Sample Variable
 
-![image-8](./images/message-template/image-8.png)
+![image-8](/assets/images/products/business-dashboard/message-template/image-8.png)
 
 > Add content sample popup
 

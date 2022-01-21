@@ -30,7 +30,7 @@ export const styleJSX = css`
   h4,
   h5,
   h6 {
-    font-family: 'Inter-bold';
+    font-family: 'Inter-bold', sans-serif;
   }
 
   a.header-anchor {
@@ -66,32 +66,9 @@ export const styleJSX = css`
     }
   }
 
-  .table-of-contents li {
-    font-size: 14px;
-    margin-top: 24px;
-  }
-
-  .table-of-contents li a {
-    padding: 8px 16px;
-  }
-
   .isActive {
     border-radius: 12px;
     background-color: ${theme.colors.blue01};
     color: ${theme.colors.blue07} !important;
-  }
-
-  .table-of-contents ul > li {
-    font-family: 'Inter-bold';
-  }
-
-  .table-of-contents ul > li > ul {
-    padding-left: 16px;
-    margin-left: 16px;
-    border-left: 1px solid #eff2f5;
-  }
-
-  .table-of-contents ul > li > ul > li {
-    font-family: 'Inter';
   }
 `;

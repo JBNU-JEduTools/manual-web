@@ -16,6 +16,7 @@ interface IndexLayoutProps {
 const IndexLayout: React.FC<IndexLayoutProps> = ({ children, navHidden }) => {
   const [navigation, setNavigation] = React.useState();
   const router = useRouter();
+  const [imageUrl, setImageUrl] = React.useState('docs');
   const isTutorial = router.route.split('/')[1] === 'tutorials';
   const isKataPlatform = router.route.split('/')[1] === 'kata-platform';
   const isKataOmnichat = router.route.split('/')[1] === 'kata-omnichat';
@@ -29,12 +30,15 @@ const IndexLayout: React.FC<IndexLayoutProps> = ({ children, navHidden }) => {
       setNavigation(jsonNavigation);
     } else if (isKataPlatform) {
       jsonNavigation = require(`docs/toc-kata-platform.json`);
+      setImageUrl('kata-platform');
       setNavigation(jsonNavigation);
     } else if (isQios) {
       jsonNavigation = require(`docs/toc-qios.json`);
+      setImageUrl('qios');
       setNavigation(jsonNavigation);
     } else if (isBusinessDashboard) {
       jsonNavigation = require(`docs/toc-business-dashboard.json`);
+      setImageUrl('business-dashboard');
       setNavigation(jsonNavigation);
     }
   }, [router, navigation, setNavigation]);
@@ -42,7 +46,7 @@ const IndexLayout: React.FC<IndexLayoutProps> = ({ children, navHidden }) => {
   return (
     <NavigationContextProvider>
       <AksaraReset>
-        <Layout>
+        <Layout imageOrigin={imageUrl}>
           <Overlay />
           <Navigation navigation={navigation} navHidden={navHidden} />
           {children}
