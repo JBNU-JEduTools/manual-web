@@ -20,6 +20,8 @@ import { DocsContainer } from 'components/layout/Container';
 import IndexLayout from 'components/layouts';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import { GetStaticPropsContext, PreviewData } from 'next';
+import { getPageUrl } from 'utils/helpers';
+import { PaginationDocs } from 'components/docs/Pagination';
 
 interface TutorialPageTemplateProps {
   post: any;
@@ -29,6 +31,8 @@ interface TutorialPageTemplateProps {
 
 const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }) => {
   const frontMatter = post.frontMatter;
+  const prevPage = getPageUrl(post.frontMatter.prev, 'qios');
+  const nextPage = getPageUrl(post.frontMatter.next, 'qios');
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
@@ -74,6 +78,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
               />
               <DocsHeader title={frontMatter.title} />
               <MarkdownContent>{renderAst(post.mdx.renderedOutput)}</MarkdownContent>
+              {(prevPage || nextPage) && <PaginationDocs prevPage={prevPage} nextPage={nextPage} />}
               <DocsHelpful />
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
@@ -88,17 +93,6 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
 };
 
 export default TutorialPageTemplate;
-
-function getTocItems(toc: any, array: string[] = []) {
-  const arrTmp: string[] = array;
-
-  toc.items?.map((tocItem) => {
-    arrTmp.push(tocItem.url.split('#')[1]);
-    tocItem.items ? arrTmp.concat(getTocItems(tocItem, arrTmp)) : null;
-  });
-
-  return arrTmp;
-}
 
 export async function getStaticPaths() {
   return {

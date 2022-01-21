@@ -94,17 +94,6 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
 
 export default TutorialPageTemplate;
 
-function getTocItems(toc: any, array: string[] = []) {
-  const arrTmp: string[] = array;
-
-  toc.items?.map((tocItem) => {
-    arrTmp.push(tocItem.url.split('#')[1]);
-    tocItem.items ? arrTmp.concat(getTocItems(tocItem, arrTmp)) : null;
-  });
-
-  return arrTmp;
-}
-
 export async function getStaticPaths() {
   return {
     paths: await getMdxPaths('kata-platform'),
