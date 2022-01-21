@@ -42,7 +42,7 @@ Before we jump into the tutorial, let’s see the scenario for the conversation.
 
 ## Objective: Create new chatbot project
 
-### _Login to Kata Platform and create project_
+### Login to Kata Platform and create project
 
 1. Open your browser, then open the URL <a href="https://platform.kata.ai/login" target="_blank">https://platform.kata.ai/login</a> and enter your username & password.
 
@@ -54,7 +54,7 @@ Before we jump into the tutorial, let’s see the scenario for the conversation.
 
 ## Objective: Define a flow
 
-### _Create a flow name "Handover". We will use 1 flow for this simple bot_
+### Create a flow name "Handover". We will use 1 flow for this simple bot
 
 1. Click **"Create Flow"** button in current screen
 
@@ -62,13 +62,13 @@ Before we jump into the tutorial, let’s see the scenario for the conversation.
 
 ## Objective: Create greetings state to define how to respond
 
-### _Create "init" state_
+### Create "init" state
 
 1. Click "+" icon in bottom right to create new state
 
 2. Create state "init" and click toggle to turn on “Initial State” and other fields are left blank. Then, click Create.
 
-### _Create "greetings" as bot response to show keywords menu_
+### Create "greetings" as bot response to show keywords menu
 
 1. Create another state by clicking the **"+"** icon in the bottom right to create a new state named “greetings”
 
@@ -90,7 +90,7 @@ Halo, selamat datang di layanan CS Bank ABC 😊\n\n Apakah ingin dihubungkan ke
 
 ## Objective: Catch end-user’s message when greet the bot
 
-### _Create "greetings" keywords to build understanding in chatbots when end-user’s greet the bot. We will use the NLUs feature to create the keywords._
+### Create "greetings" keywords to build understanding in chatbots when end-user’s greet the bot. We will use the NLUs feature to create the keywords.
 
 1. Go to the menu **"NLUs"** which is placed under the “Conversation Flows” menu. Your screen will be switched to create NLUs
 
@@ -133,7 +133,7 @@ Main keyword: hi
 
 ## Objective: Connect "init" and “greetings” states by creating a transition
 
-### *Create a transition to connect "*init*" and “*greetings*” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed.*
+### Create a transition to connect "_init_" and “_greetings_” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed.
 
 1. Pull a line from the "init" state and drag it to the “greetings” state. If you succeed, then it will show a **Create Transition** drawer
 
@@ -344,7 +344,7 @@ Terima kasih sudah menghubungi Bank ABC 😊
 
 In this step, you will need an Omnichat <a href="https://kata-omnichat.kata.ai" target="_blank">https://omnichat.kata.ai</a> account and Omnichat inbox to deploy the bot. Let’s get started!
 
-# Create Inbox in Omnichat
+## Create Inbox in Omnichat
 
 Follow these tutorials in Omnichat to continue:
 
@@ -356,7 +356,7 @@ Follow these tutorials in Omnichat to continue:
 
     - For WA chatbot: Section **How to Set Up > Connect to Whatsapp Messaging**
 
-# Create Agent Bot in Omnichat
+## Create Agent Bot in Omnichat
 
 Follow the tutorial below in Omnichat to continue: Section **How to Set Up Agent Bot**
 
@@ -412,7 +412,7 @@ Follow the tutorial below in Omnichat to continue: Section **How to Set Up Agent
 
 > Activate agent bot and final step
 
-# Final Demo
+## Final Demo
 
 We provide video tutorials and interaction demos for agent bot Omnichat features. Check these out:
 

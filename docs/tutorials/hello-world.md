@@ -1,7 +1,7 @@
 ---
 layout: tutorial
 id: hello-world
-title: Creating a simple Hello World chatbot
+title: Creating a Simple Hello World Chatbot
 imgSpot: /assets/images/tutorial/spot-hello-world.png
 description: This is a quick start how to build a 'Hello World' chatbot
 next: bot-studio-tutorial

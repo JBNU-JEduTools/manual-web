@@ -1,191 +1,49 @@
 {
   "items": [
     {
-      "url": "#simple-chatbot-flow",
-      "title": "Simple Chatbot Flow",
-      "useAccordion": true,
-      "items": [{ "url": "#conversation-flow-table", "title": "Conversation Flow Table" }]
-    },
-    {
-      "url": "#create-project",
-      "title": "Create Project",
-      "useAccordion": true,
+      "title": "Tutorial",
       "items": [
         {
-          "url": "#objective-register-your-new-account-and-login-to-the-platform",
-          "title": "Objective: Register your new account and login to the Platform"
-        },
-        {
-          "url": "#objective-create-new-chatbot-project",
-          "title": "Objective: Create new chatbot project",
+          "title": "Create Simple Bot Handover from Chatbot to Agent Tutorial",
           "useAccordion": true,
           "items": [
             {
-              "url": "#login-to-kata-platform-and-create-project",
-              "title": "Login to Kata Platform and create project"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "url": "#create-greetings-flow",
-      "title": "Create Greetings Flow",
-      "useAccordion": true,
-      "items": [
-        {
-          "url": "#objective-define-a-flow",
-          "title": "Objective: Define a flow",
-          "useAccordion": true,
-          "items": [
-            {
-              "url": "#create-a-flow-name-handover-we-will-use-1-flow-for-this-simple-bot",
-              "title": "Create a flow name \"Handover\". We will use 1 flow for this simple bot"
-            }
-          ]
-        },
-        {
-          "url": "#objective-create-greetings-state-to-define-how-to-respond",
-          "title": "Objective: Create greetings state to define how to respond",
-          "useAccordion": true,
-          "items": [
-            { "url": "#create-init-state", "title": "Create \"init\" state" },
-            {
-              "url": "#create-greetings-as-bot-response-to-show-keywords-menu",
-              "title": "Create \"greetings\" as bot response to show keywords menu"
-            }
-          ]
-        },
-        {
-          "url": "#objective-catch-end-users-message-when-greet-the-bot",
-          "title": "Objective: Catch end-user’s message when greet the bot",
-          "useAccordion": true,
-          "items": [
-            {
-              "url": "#create-greetings-keywords-to-build-understanding-in-chatbots-when-end-users-greet-the-bot-we-will-use-the-nlus-feature-to-create-the-keywords",
-              "title": "Create \"greetings\" keywords to build understanding in chatbots when end-user’s greet the bot. We will use the NLUs feature to create the keywords."
+              "url": "#simple-chatbot-flow",
+              "title": "Simple Chatbot Flow"
             },
             {
-              "url": "#create-greetings-intent-to-catch-users-input",
-              "title": "Create \"greetings\" intent to catch user’s input"
-            }
-          ]
-        },
-        {
-          "url": "#objective-connect-init-and-greetings-states-by-creating-a-transition",
-          "title": "Objective: Connect \"init\" and “greetings” states by creating a transition",
-          "useAccordion": true,
-          "items": [
-            {
-              "url": "#create-a-transition-to-connect-init-and-greetings-states-the-transition-will-define-in-which-condition-the-greetings-state-including-the-actions-state-will-be-executed",
-              "title": "” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "url": "#catch-end-users-typing-when-choosing-menu",
-      "title": "Catch End-user’s Typing when Choosing Menu",
-      "useAccordion": true,
-      "items": [
-        {
-          "url": "#objective-catch-end-users-message-when-choosing-menu-by-typing-1-or-2",
-          "title": "Objective: Catch end-user’s message when choosing menu by typing \"1\" or “2”",
-          "useAccordion": true,
-          "items": [
-            { "url": "#create-menu-keywords", "title": "Create \"menu\" keywords" },
-            {
-              "url": "#create-an-intent-menu-to-catch-the-end-users-input",
-              "title": "Create an intent \"menu\" to catch the end-user's input"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "url": "#create-handover-to-human-agent-flow",
-      "title": "Create Handover to Human Agent Flow",
-      "useAccordion": true,
-      "items": [
-        {
-          "url": "#objective-create-a-flow-that-end-user-can-request-handover-to-human-agents-by-using-handover-api",
-          "title": "Objective: Create a flow that end-user can request handover to human agents by using Handover API",
-          "useAccordion": true,
-          "items": [
-            { "url": "#create-handover-state", "title": "Create handover state" },
-            {
-              "url": "#create-bot-response-to-inform-end-user-that-the-handover-request-has-been-received-and-waiting-for-agents-to-reply",
-              "title": "Create bot response to inform end-user that the handover request has been received and waiting for agents to reply"
+              "url": "#create-project",
+              "title": "Create Project"
             },
             {
-              "url": "#use-handover-api-to-send-handover-request-to-omnichat",
-              "title": "Use Handover API to send handover request to Omnichat"
+              "url": "#create-greetings-flow",
+              "title": "Create Greetings Flow"
             },
             {
-              "url": "#create-a-transition-to-connect-greetings-and-handover-states",
-              "title": "Create a transition to connect \"greetings\" and “handover” states"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "url": "#create-end-conversation-flow",
-      "title": "Create End Conversation Flow",
-      "useAccordion": true,
-      "items": [
-        {
-          "url": "#objective-create-a-flow-that-end-user-doesnt-want-to-handover-to-agent-and-end-the-conversation",
-          "title": "Objective: Create a flow that end-user doesn’t want to handover to agent and end the conversation",
-          "useAccordion": true,
-          "items": [
-            {
-              "url": "#create-end-state-to-cancel-handover-agent-and-finish-the-conversation",
-              "title": "Create \"end\" state to cancel handover agent and finish the conversation"
+              "url": "#catch-end-users-typing-when-choosing-menu",
+              "title": "Catch End-user's Typing when Choosing Menu"
             },
             {
-              "url": "#create-a-transition-to-connect-greetings-and-end-states",
-              "title": "Create a transition to connect \"greetings\" and “end” states"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "url": "#finalize-your-new-bot",
-      "title": "Finalize Your New Bot",
-      "useAccordion": true,
-      "items": [
-        {
-          "url": "#objective-publish-your-bot-to-save-the-chatbot-flow",
-          "title": "Objective: Publish your bot to save the chatbot flow"
-        },
-        { "url": "#objective-testing-your-bot-in-emulator", "title": "Objective: Testing your bot in emulator" },
-        {
-          "url": "#objective-deploy-your-bot",
-          "title": "Objective: Deploy your bot",
-          "useAccordion": true,
-          "items": [
-            { "url": "#create-new-deployment", "title": "Create new deployment" },
+              "url": "#create-handover-to-human-agent-flow",
+              "title": "Create Handover to Human Agent Flow"
+            },
             {
-              "url": "#create-new-environment-as-prerequisites-to-deploy-the-bot-to-channel",
-              "title": "Create new environment as prerequisites to deploy the bot to channel"
-            }
+              "url": "#create-end-conversation-flow",
+              "title": "Create End Conversation Flow"
+            },
+            {
+              "url": "#finalize-your-new-bot",
+              "title": "Finalize Your New Bot"
+            },
+            { "url": "#create-inbox-in-omnichat", "title": "Create Inbox in Omnichat" },
+            {
+              "url": "#create-agent-bot-in-omnichat",
+              "title": "Create Agent Bot in Omnichat"
+            },
+            { "url": "#final-demo", "title": "Final Demo" }
           ]
         }
       ]
-    },
-    { "url": "#create-inbox-in-omnichat", "title": "Create Inbox in Omnichat" },
-    {
-      "url": "#create-agent-bot-in-omnichat",
-      "title": "Create Agent Bot in Omnichat",
-      "useAccordion": true,
-      "items": [
-        { "url": "#connect-bot-to-omnichat", "title": "Connect Bot to Omnichat" },
-        { "url": "#finalize-agent-bot-in-omnichat", "title": "Finalize Agent Bot in Omnichat" }
-      ]
-    },
-    { "url": "#final-demo", "title": "Final Demo" }
+    }
   ]
 }

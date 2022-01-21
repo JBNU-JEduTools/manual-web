@@ -16,17 +16,17 @@ In this tutorial, we will create an Instagram chatbot that is able to send conve
 
 <iframe width="600" height="300" src="https://www.youtube.com/embed/dAHnoTX4BUE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
-# Chatbot Flow
+## Chatbot Flow
 
 Before we jump into the tutorial, let’s see the scenario for the conversation. We will create a chatbot using _keywords_.
 
-## Conversation Flow Table
+### Conversation Flow Table
 
 Conversation flow table details can be seen <a href="https://drive.google.com/file/d/1rh5XvmGvbNyXZetG6v-tjAr8LvXjU-aj/view" target="_blank">here</a>
 
-# Create Project
+## Create Project
 
-## Objective: Register your new account and login to the Platform
+### Objective: Register your new account and login to the Platform
 
 1. Go to <a href="https://platform.kata.ai" target="_blank">https://platform.kata.ai</a> and click **Sign Up** to create new account
 
@@ -38,9 +38,9 @@ Conversation flow table details can be seen <a href="https://drive.google.com/fi
 
 5. You will be redirected to the Login **Page**. Input your username and password to continue.
 
-## Objective: Create new chatbot project
+### Objective: Create new chatbot project
 
-### _Login to Kata Platform and create a project_
+#### Login to Kata Platform and create a project
 
 1. Open your browser, then open the URL <a href="https://platform.kata.ai/login" target="_blank">https://platform.kata.ai/login</a> and enter your username & password.
 
@@ -48,29 +48,29 @@ Conversation flow table details can be seen <a href="https://drive.google.com/fi
 
 3. Click on **"Create Project"** and fill in the form. Each project contains one bot design, one NL, and one CMS.
 
-# Create Handover Flow
+## Create Handover Flow
 
-## Objective: Define a flow
+### Objective: Define a flow
 
-### Create a flow name "handover". We will use 1 flow for this simple bot
+#### Create a flow name "handover". We will use 1 flow for this simple bot
 
 1. Click **"Create Flow"** button on the Conversation Flow screen
 
 2. Create flow "handover", other fields are left blank. Then, click **Create**.
 
-### Create "init" state
+#### Create "init" state
 
 1. Click **"+"** icon in the bottom right to create a new state
 
 2. Create state "init" and click the toggle to turn on “Initial State” and other fields are left blank. Then, click **Create**.
 
-# Create Greetings State to Respond End-User’s who Greet Bot via Direct Message
+## Create Greetings State to Respond End-User’s who Greet Bot via Direct Message
 
 In this part, we are going to create a greeting flow to respond to end-users who greet the brand's bot via direct message, **but** **not** via Ice Breaker. For example, the end-user says "hi" to the bot and does not want to choose via Ice Breaker. Learn more about [Ice Breaker](/channels/instagram-messaging).
 
-## Objective: Create greetings state to define how to respond
+### Objective: Create greetings state to define how to respond
 
-### _Create "greetingsState" as bot response to show keywords menu_
+#### Create "greetingsState" as bot response to show keywords menu
 
 1. Create another state by clicking the **"+"** icon in the bottom right to create a new state named “greetingsState”
 
@@ -88,7 +88,7 @@ Halo, selamat datang di layanan CS Bank ABC 😊 \n\nUntuk memulai, pilih menu y
 
 6. Click **Create Action**
 
-### Set the state into self-transition
+#### Set the state into self-transition
 
 The self-transition will make the actions under state will be repeatedly shown if end-users give an incorrect answer
 
@@ -98,9 +98,9 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 3. Then, click Create to finalize the state
 
-## Objective: Catch end-users messages when greeting the bot
+### Objective: Catch end-users messages when greeting the bot
 
-### _Create "greetings" keywords to build understanding in chatbots when end-users greet the bot. We will use the NLUs feature to create the keywords._
+#### Create "greetings" keywords to build understanding in chatbots when end-users greet the bot. We will use the NLUs feature to create the keywords.
 
 1. Go to the menu **"NLUs"** which is placed under the “Conversation Flows” menu. Your screen will be switched to create NLUs
 
@@ -127,7 +127,7 @@ Main keyword: greetings
 
 6. Click **"Create"** to save the NLUs
 
-### Create "greetingsIntent" intent to catch user’s input
+#### Create "greetingsIntent" intent to catch user’s input
 
 1. Click the Intent tab which is placed next to the Conversation Flows sidebar.
 
@@ -139,9 +139,9 @@ Main keyword: greetings
 
 > Create intent and create mapping with greetings keyword
 
-## Objective: Connect "init" and “greetingsState” states by creating a transition
+### Objective: Connect "init" and “greetingsState” states by creating a transition
 
-### Create a transition to connect "init" and “greetingsState” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed.
+#### Create a transition to connect "init" and “greetingsState” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed.
 
 1. Pull a line from the "init" state and drag it to the “greetingsState” state. If you succeed, then it will show a **Create Transition** drawer
 
@@ -153,13 +153,13 @@ intent == "greetingsIntent"
 
 3. Click **"Create Transition"**
 
-# Create Greetings State to Respond End-User’s who Greet Bot via Instagram Story Mention
+## Create Greetings State to Respond End-User’s who Greet Bot via Instagram Story Mention
 
 In this part, we are going to create a greeting flow to respond to end-users who mentioned the brand’s Instagram account in the end-users Instagram Stories. End-user will receive an automatic message in a direct message. Learn more about [Instagram Story Mention](/channels/instagram-messaging).
 
-## Objective: Catch end-users who mentioned the brand’s in the end-users Instagram Story
+### Objective: Catch end-users who mentioned the brand’s in the end-users Instagram Story
 
-### Create "igMentionedIntent" intent to catch user’s input
+#### Create "igMentionedIntent" intent to catch user’s input
 
 1. Click the Intent tab which is placed next to the Conversation Flows sidebar.
 
@@ -173,9 +173,9 @@ In this part, we are going to create a greeting flow to respond to end-users who
 
 4. Then, click **Create**.
 
-## Objective: Create greetings state to define how to respond
+### Objective: Create greetings state to define how to respond
 
-### Create "igMentionedState" as bot response to show keywords menu
+#### Create "igMentionedState" as bot response to show keywords menu
 
 1. Create another state by clicking the **"+"** icon in the bottom right to create a new state named “_igMentionedState_”
 
@@ -193,7 +193,7 @@ Halo, terima kasih telah menyapa Bank ABC di Instagram Story Anda 😊 \n\nUntuk
 
 6. Click **Create Action**
 
-### Set the state into self-transition
+#### Set the state into self-transition
 
 The self-transition will make the actions under state will be repeatedly shown if end-users give an incorrect answer
 
@@ -203,9 +203,9 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 3. Then, click Create to finalize the state
 
-## Objective: Connect "init" and “igMentionedState” states by creating a transition
+### Objective: Connect "init" and “igMentionedState” states by creating a transition
 
-### Create a transition to connect "init" and “igMentionedState” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed.
+#### Create a transition to connect "init" and “igMentionedState” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed.
 
 1. Pull a line from the "init" state and drag it to the “greetings” state. If you succeed, then it will show a **Create Transition** drawer
 
@@ -217,13 +217,13 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 3. Click **"Create Transition"**
 
-# Create Greetings State to Respond End-User’s who Greet Bot via Instagram Story Reply
+## Create Greetings State to Respond End-User’s who Greet Bot via Instagram Story Reply
 
 In this part, we are going to create a greeting flow to respond to end-users who reply to the brand's Instagram Story. Learn more about [Instagram Story Reply](/channels/instagram-messaging).
 
-## Objective: Catch end-users who reply to the brand’s Instagram Story
+### Objective: Catch end-users who reply to the brand’s Instagram Story
 
-### Create "replyStoryIntent" intent to catch user’s input
+#### Create "replyStoryIntent" intent to catch user’s input
 
 1. Click the Intent tab which is placed next to the Conversation Flows sidebar.
 
@@ -237,9 +237,9 @@ In this part, we are going to create a greeting flow to respond to end-users who
 
 5. Then, click **Create**.
 
-## Objective: Create greetings state to define how to respond
+### Objective: Create greetings state to define how to respond
 
-### Create "igStoryReplyState" as bot response to show keywords menu
+#### Create "igStoryReplyState" as bot response to show keywords menu
 
 1. Create another state by clicking the **"+"** icon in the bottom right to create a new state named “igStoryReplyState”
 
@@ -257,7 +257,7 @@ Halo, terima kasih telah menyapa Instagram Story Bank ABC 😊 \n\nUntuk memulai
 
 6. Click **Create Action**
 
-### Set the state into self-transition
+#### Set the state into self-transition
 
 The self-transition will make the actions under state will be repeatedly shown if end-users give an incorrect answer
 
@@ -267,9 +267,9 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 3. Then, click Create to finalize the state
 
-## Objective: Connect "init" and “igStoryReplyState” states by creating a transition
+### Objective: Connect "init" and “igStoryReplyState” states by creating a transition
 
-### Create a transition to connect "init" and “igStoryReplyState” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed.
+#### Create a transition to connect "init" and “igStoryReplyState” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed.
 
 1. Pull a line from the "init" state and drag it to the “igStoryReplyState” state. If you succeed, then it will show a **Create Transition** drawer
 
@@ -281,19 +281,19 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 3. Click **"Create Transition"**
 
-# Create Quick Replies
+## Create Quick Replies
 
 In this step, we will create bot responses named quick reply. Learn more about [Quick Reply for Instagram Messaging](/channels/instagram-messaging).
 
-## Objective: Show available FAQ topics to end-user
+### Objective: Show available FAQ topics to end-user
 
-### Create "faqState" state
+#### Create "faqState" state
 
 1. Click **"+"** icon in bottom right to create a new state
 
 2. Fill in the state name with "_faqState_"
 
-### Create quick reply response type
+#### Create quick reply response type
 
 1. Click **"+"** in action box to create a new action
 
@@ -317,7 +317,7 @@ Pilih topik yang kamu inginkan 😊
 
 7. Click button Create Action
 
-### Set the state into self-transition
+#### Set the state into self-transition
 
 The self-transition will make the actions under state will be repeatedly shown if end-users give an incorrect answer
 
@@ -327,9 +327,9 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 3. Then, click Create to finalize the state
 
-## Objective: Connect all greetings states to FAQ state
+### Objective: Connect all greetings states to FAQ state
 
-### Connect greetings via direct message to FAQ state
+#### Connect greetings via direct message to FAQ state
 
 1. Pull transition line which starts from "greetingState" to “faqState”
 
@@ -341,7 +341,7 @@ content == "1"
 
 3. Click Create
 
-### Connect greetings via Instagram story mention to FAQ state
+#### Connect greetings via Instagram story mention to FAQ state
 
 1. Pull transition line which starts from "igMentionedState" to “faqState”
 
@@ -353,7 +353,7 @@ content == "1"
 
 3. Click Create
 
-### Connect greetings via Instagram story reply to FAQ state
+#### Connect greetings via Instagram story reply to FAQ state
 
 1. Pull transition line which starts from "igStoryReplyState" to “faqState”
 
@@ -365,15 +365,15 @@ content == "1"
 
 3. Click Create
 
-## Objective: Show bot response after end-user choose "Daftar rekening baru"
+### Objective: Show bot response after end-user choose "Daftar rekening baru"
 
-### Create "rekeningBaruState" state
+#### Create "rekeningBaruState" state
 
 1. Click **"+"** icon in the bottom right to create a new state
 
 2. Fill in the state name with "rekeningBaruState"
 
-### Create bot response
+#### Create bot response
 
 1. Click **"+"** in action box to create a new action
 
@@ -389,7 +389,7 @@ Untuk mendaftar rekening baru, kamu harus menyiapkan KTP, KK asli dan foto diri
 
 5. Click button Create Action
 
-### Create bot action command to trigger next state to be executed
+#### Create bot action command to trigger next state to be executed
 
 In this section, the bot will send the "next" command whenever this state is executed. The “next” command will be caught later into an intent for executing another state to confirm end-users whether they want to restart and show the menu or end the conversation.
 
@@ -407,15 +407,15 @@ next
 
 6. Click button Create Action
 
-## Objective: Show bot response after end-user choose "Daftar kartu kredit"
+### Objective: Show bot response after end-user choose "Daftar kartu kredit"
 
-### Create "kartuKreditState" state
+#### Create "kartuKreditState" state
 
 1. Click **"+"** icon in the bottom right to create a new state
 
 2. Fill in the state name with "kartuKreditText"
 
-### Create bot response
+#### Create bot response
 
 3. Click **"+"** in action box to create a new action
 
@@ -431,7 +431,7 @@ Untuk mendaftar kartu kredit baru, kamu harus menyiapkan KTP, KK asli dan foto d
 
 7. Click the button Create Action
 
-### Create bot action command to trigger next state to be executed
+#### Create bot action command to trigger next state to be executed
 
 In this section, the bot will send the "next" command whenever this state is executed. The “next” command will be caught later into an intent for executing another state to confirm end-users whether they want to restart and show the menu or end the conversation. We already created this action in the previous step, so we will choose from available actions.
 
@@ -445,9 +445,9 @@ In this section, the bot will send the "next" command whenever this state is exe
 
 5. Click **Create** to finalize the state
 
-## Objective: Connect FAQ menu response to quick reply options
+### Objective: Connect FAQ menu response to quick reply options
 
-### Create transition to connect from faqState to rekeningBaruState
+#### Create transition to connect from faqState to rekeningBaruState
 
 1. Pull transition line which starts from "faqState" to “rekeningBaruState”
 
@@ -459,7 +459,7 @@ content == "Daftar rekening baru"
 
 3. Click Save
 
-### Create transition to connect from faqState to kartuKreditState
+#### Create transition to connect from faqState to kartuKreditState
 
 1. Pull transition line which starts from "faqState" to “kartuKreditState”
 
@@ -471,19 +471,19 @@ content == "Daftar kartu kredit"
 
 5. Click Save
 
-# Create Generic Template (Carousel)
+## Create Generic Template (Carousel)
 
 In this step, we will create bot responses named generic template. Learn more about [Generic Template for Instagram Messaging](/kata-omnichat).
 
-## Objective: Show bot response of generic template ("carousel") to end-users
+### Objective: Show bot response of generic template ("carousel") to end-users
 
-### Create carousel
+#### Create carousel
 
 1. Click **"+"** icon in the bottom right to create a new state
 
 2. Fill in the state name with "carouselState"
 
-### Create bot response for the first carousel: Buy 1 Get 1
+#### Create bot response for the first carousel: Buy 1 Get 1
 
 1. Click **"+"** in the action box to create a new action
 
@@ -518,7 +518,7 @@ URL
 https://docs.kata.ai
 ```
 
-### Create bot response for the second carousel: Diskon 10%
+#### Create bot response for the second carousel: Diskon 10%
 
 1. Next, click the **Add Carousel** button and fill in with the following fields:
 
@@ -551,7 +551,7 @@ https://docs.kata.ai
 
 11. To finalize the state creation, click **Create** in the state drawer
 
-### Set the state into self-transition
+#### Set the state into self-transition
 
 The self-transition will make the actions under state will be repeatedly shown if end-users give an incorrect answer
 
@@ -561,9 +561,9 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 3. Then, click Create to finalize the state
 
-## Objective: Connect all greetings states to carouselState
+### Objective: Connect all greetings states to carouselState
 
-### Connect greetings via direct message to carousel state
+#### Connect greetings via direct message to carousel state
 
 1. Pull transition line which starts from "greetingState" to “carouselState”
 
@@ -575,7 +575,7 @@ content == "2"
 
 3. Click Create
 
-### Connect greetings via Instagram story mention to carousel state
+#### Connect greetings via Instagram story mention to carousel state
 
 1. Pull transition line which start from "igMentionedState" to “carouselState”
 
@@ -587,7 +587,7 @@ content == "2"
 
 3. Click Create
 
-### Connect greetings via Instagram story reply to carousel state
+#### Connect greetings via Instagram story reply to carousel state
 
 1. Pull transition line which start from "igStoryReplyState" to “carouselState”
 
@@ -599,15 +599,15 @@ content == "2"
 
 3. Click Create
 
-## Objective: Show bot response after end-users choose "Buy 1 Get 1"
+### Objective: Show bot response after end-users choose "Buy 1 Get 1"
 
-### Create "b1g1State" state
+#### Create "b1g1State" state
 
 1. Click **"+"** icon in the bottom right to create a new state
 
 2. Fill in the state name with "b1g1State"
 
-### Create bot response
+#### Create bot response
 
 1. Click **"+"** in the action box to create a new action
 
@@ -623,7 +623,7 @@ Kamu telah memilih promo "Buy 1 Get 1" dari Bank ABC. Silahkan mengunjungi Kafe 
 
 5. Click button Create Action
 
-### Create bot action command to trigger next state to be executed
+#### Create bot action command to trigger next state to be executed
 
 In this section, the bot will send the "next" command whenever this state is executed. The “next” command will be caught later into an intent for executing another state to confirm end-users whether they want to restart and show the menu or end the conversation. We already created this action in the previous step, so we will choose from available actions.
 
@@ -635,15 +635,15 @@ In this section, the bot will send the "next" command whenever this state is exe
 
 4. Then, click Create Action button
 
-## Objective: Show bot response after end-users choose "Disc 10%"
+### Objective: Show bot response after end-users choose "Disc 10%"
 
-### Create "discState" state
+#### Create "discState" state
 
 1. Click **"+"** icon in the bottom right to create a new state
 
 2. Fill in the state name with "discState"
 
-### Create bot response
+#### Create bot response
 
 1. Click **"+"** in action box to create a new action
 
@@ -659,7 +659,7 @@ Kamu telah memilih promo "Diskon 10% di Mart ABC" dari Bank ABC. Silahkan mengun
 
 6. Click button Create Action
 
-### Create bot action command to trigger next state to be executed
+#### Create bot action command to trigger next state to be executed
 
 In this section, the bot will send the "next" command whenever this state is executed. The “next” command will be caught later into an intent for executing another state to confirm end-users whether they want to restart and show the menu or end the conversation. We already created this action in the previous step, so we will choose from available actions.
 
@@ -671,9 +671,9 @@ In this section, the bot will send the "next" command whenever this state is exe
 
 4. Then, click Create Action button
 
-## Objective: Connect carousel menu response to postback options
+### Objective: Connect carousel menu response to postback options
 
-### Create transition to connect from carouselState to b1g1State
+#### Create transition to connect from carouselState to b1g1State
 
 1. Pull transition line which starts from "carouselState" to “b1g1State”
 
@@ -685,7 +685,7 @@ content == "B1G1" || (intent == "carouselIntent" && payload.carousel == "b1g1")
 
 3. Click Save
 
-### Create transition to connect from faqState to kartuKreditState
+#### Create transition to connect from faqState to kartuKreditState
 
 1. Pull transition line which starts from "carouselState" to “discState”
 
@@ -697,11 +697,11 @@ content == "Diskon" || (intent == "carouselIntent" && payload.carousel == "disko
 
 3. Click Save
 
-# Create Text Response
+## Create Text Response
 
-## Objective: Show bot response in the text to end-users
+### Objective: Show bot response in the text to end-users
 
-### Create text
+#### Create text
 
 1. Click **"+"** icon in the bottom right to create a new state
 
@@ -721,7 +721,7 @@ Lokasi bank ABC terdapat di Jalan Haji Nawi, Jakarta Selatan. Lihat peta: https:
 
 8. Click Create Action
 
-### Create bot action command to trigger next state to be executed
+#### Create bot action command to trigger next state to be executed
 
 In this section, the bot will send the "next" command whenever this state is executed. The “next” command will be catched later into an intent for executing another state to confirm end-users whether they want to restart and show menu or end the conversation.
 
@@ -741,9 +741,9 @@ next
 
 6. Then, click Create to finalize the state
 
-## Objective: Connect all greetings states to locationState
+### Objective: Connect all greetings states to locationState
 
-### Connect greetings via direct message to location state
+#### Connect greetings via direct message to location state
 
 1. Pull transition line which start from "greetingState" to “locationState”
 
@@ -755,7 +755,7 @@ content == "3"
 
 3. Click Save
 
-### Connect greetings via Instagram story mention to carousel state
+#### Connect greetings via Instagram story mention to carousel state
 
 1. Pull transition line which start from "igMentionedState" to “locationState”
 
@@ -767,7 +767,7 @@ content == "3"
 
 3. Click Save
 
-### Connect greetings via Instagram story reply to carousel state
+#### Connect greetings via Instagram story reply to carousel state
 
 1. Pull transition line which start from "igStoryReplyState" to “locationState”
 
@@ -779,19 +779,19 @@ content == "3"
 
 3. Click Save
 
-# Create Handover to Human Agent Flow
+## Create Handover to Human Agent Flow
 
 Handover to human agent path is required to be implemented in Instagram Messaging and we will use Handover API template.
 
-## Objective: Create a flow that end-user can request handover to human agents by using Handover API
+### Objective: Create a flow that end-user can request handover to human agents by using Handover API
 
-### Create handover state
+#### Create handover state
 
 1. Click **"+"** icon in bottom right to create new state
 
 2. Fill in the state name with "handover" and activate toggle “End state”
 
-### Create bot response to inform end-user that the handover request has been received and waiting for agents to reply
+#### Create bot response to inform end-user that the handover request has been received and waiting for agents to reply
 
 1. Click **"+"** in action box to create new action
 
@@ -807,7 +807,7 @@ Mohon menunggu, ya. Sedang kami hubungkan ke CS Bank ABC yang tersedia! 😊
 
 5. Click **Create Action**
 
-### Use Handover API to send handover request to Omnichat
+#### Use Handover API to send handover request to Omnichat
 
 1. Create another action by clicking **"Add action"**
 
@@ -823,9 +823,9 @@ Mohon menunggu, ya. Sedang kami hubungkan ke CS Bank ABC yang tersedia! 😊
 
 7. To finalize this step when creating a new state, click the **Create** button in the state drawer
 
-## Objective: Connect all greetings states to handoverState
+### Objective: Connect all greetings states to handoverState
 
-### Connect greetings via direct message to handover state
+#### Connect greetings via direct message to handover state
 
 1. Pull transition line which start from "greetingState" to “handoverState”
 
@@ -837,7 +837,7 @@ content == "4"
 
 3. Click Save
 
-### Connect greetings via Instagram story mention to handover state
+#### Connect greetings via Instagram story mention to handover state
 
 1. Pull transition line which start from "igMentionedState" to “handoverState”
 
@@ -849,7 +849,7 @@ content == "4"
 
 3. Click Save
 
-### Connect greetings via Instagram story reply to handover state
+#### Connect greetings via Instagram story reply to handover state
 
 1. Pull transition line which start from "igStoryReplyState" to “handoverState”
 
@@ -861,11 +861,11 @@ content == "4"
 
 3. Click Save
 
-# Create Confirmation State
+## Create Confirmation State
 
-## Objective: Create a state that end-user will be asked to restart for showing all menu or end conversation
+### Objective: Create a state that end-user will be asked to restart for showing all menu or end conversation
 
-### Create "confirmState"
+#### Create "confirmState"
 
 1. Click **"+"** icon in bottom left to create new state
 
@@ -881,7 +881,7 @@ content == "4"
 Apakah ada yang ingin kamu tanyakan kembali? Pilih menu yang tersedia:\n\n1. Ketik "1" untuk melihat menu\n2. Ketik “2” untuk menyelesaikan pembicaraan
 ```
 
-### Set the state into self-transition
+#### Set the state into self-transition
 
 The self-transition will make the actions under state will be repeatedly shown if end-users give an incorrect answer
 
@@ -891,7 +891,7 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 3. Then, click Create to finalize the state
 
-## Objective: Create an intent to catch command for executing next state
+### Objective: Create an intent to catch command for executing next state
 
 1. Click the Intent tab which is placed next to the Conversation Flows sidebar.
 
@@ -905,9 +905,9 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 4. Click Create to finalize
 
-## Objective: Connect all bot responses states to confirmState
+### Objective: Connect all bot responses states to confirmState
 
-### Connect quick replies responses states to confirmation state
+#### Connect quick replies responses states to confirmation state
 
 1. Pull transition line which starts from "rekeningBaruState" to “confirmState”
 
@@ -929,7 +929,7 @@ intent == "nextIntent"
 
 6. Click Save
 
-### Connect carousel responses to confirmation state
+#### Connect carousel responses to confirmation state
 
 1. Pull transition line which starts from "b1g1State" to “confirmState”
 
@@ -951,7 +951,7 @@ intent == "nextIntent"
 
 6. Click Save
 
-### Connect "locationState" to “confirmState”
+#### Connect "locationState" to “confirmState”
 
 1. Pull transition line which start from "locationState" to “confirmState”
 
@@ -963,9 +963,9 @@ intent == "nextIntent"
 
 3. Click Save
 
-## Objective: Create state to restart menu
+### Objective: Create state to restart menu
 
-### Create a "backToMenu" state to restart menu
+#### Create a "backToMenu" state to restart menu
 
 1. Click **"+"** icon in bottom left to create a new state
 
@@ -985,7 +985,7 @@ toMenu
 
 7. Click Create to finalize
 
-### Create "toMenuIntent" intent
+#### Create "toMenuIntent" intent
 
 1. Click the Intent tab which is placed next to the Conversation Flows sidebar.
 
@@ -999,7 +999,7 @@ toMenu
 
 4. Then, click **Create**.
 
-### Update transition condition from "init" to “greetingsState”
+#### Update transition condition from "init" to “greetingsState”
 
 In this step, we will update transition condition and use toMenuIntent as one of the conditions. It is because this intent, if executed, will trigger a greeting response and showing the menu in bot.
 
@@ -1015,9 +1015,9 @@ intent == "greetingsIntent" || intent == "toMenuIntent"
 
 4. Click Save to update
 
-## Objective: Create state to end conversation
+### Objective: Create state to end conversation
 
-### Create a "bye" state to end conversation and show thank you response
+#### Create a "bye" state to end conversation and show thank you response
 
 1. Click **"+"** icon in bottom left to create a new state
 
@@ -1039,7 +1039,7 @@ Terima kasih sudah menghubungi Bank ABC 😊
 
 8. Click **Create** to finalize
 
-## Objective: Connect transition between confirmState to backToMenu and bye state
+### Objective: Connect transition between confirmState to backToMenu and bye state
 
 1. Pull transition line which starts from "confirmState" to “backToMenu”
 
@@ -1061,7 +1061,7 @@ content == "2"
 
 7. Click Save
 
-# Create Fallback Intent
+## Create Fallback Intent
 
 1. Click the Intent tab which is placed next to the Conversation Flows sidebar.
 
@@ -1075,9 +1075,9 @@ content == "2"
 
 4. Click Create to finalize
 
-# Finalize Your New Bot
+## Finalize Your New Bot
 
-## Objective: Publish your bot to save the chatbot flow
+### Objective: Publish your bot to save the chatbot flow
 
 1. Click on the **"Publish"** button which is placed on top right corner
 
@@ -1089,7 +1089,7 @@ content == "2"
 
 > Final conversation flow
 
-## Objective: Testing your bot in emulator
+### Objective: Testing your bot in emulator
 
 1. On the bottom of your right screen, there is a small button named **"Test Chatbot".** Click the **button** to start.
 
@@ -1105,9 +1105,9 @@ content == "2"
 
 3. If you want to **restart** the session, click refresh icon which is placed at the bottom
 
-## Objective: Deploy your bot
+### Objective: Deploy your bot
 
-### Create new deployment
+#### Create new deployment
 
 1. Go to the **"Deploy"** menu in the left sidebar
 
@@ -1121,7 +1121,7 @@ content == "2"
 
 4. Click **Submit** to finish the deployment
 
-### Create a new environment as prerequisites to deploy the bot to channel
+#### Create a new environment as prerequisites to deploy the bot to channel
 
 1. Go to the **Environment** menu which is placed under the current menu ("Overview"). If you successfully entered the Environment menu, you will see a page like this. These 3 environments represent that your chatbot will be tested in development or staging first before go live as in Production stage.
 
@@ -1141,7 +1141,7 @@ content == "2"
 
 In this step, you will need an Omnichat <a href="https://kata-omnichat.kata.ai" target="_blank">https://omnichat.kata.ai</a> account and an Omnichat inbox to deploy the bot. Let’s get started!
 
-# Create Inbox in Omnichat
+## Create Inbox in Omnichat
 
 Follow these tutorials in Omnichat to continue:
 
@@ -1153,11 +1153,11 @@ Follow these tutorials in Omnichat to continue:
 
     2. For WA chatbot: Section **How to Set Up > Connect to Whatsapp Messaging**
 
-# Create Agent Bot in Omnichat
+## Create Agent Bot in Omnichat
 
 Follow the tutorial in Omnichat to continue. Continue to [create agent bot](/kata-omnichat/setup-agent-bot).
 
-## Connect Bot to Omnichat
+### Connect Bot to Omnichat
 
 1. If you succeed to follow the above tutorials, you will see an access token generated in Omnichat that needs to be pasted into the Platform. The screenshot below
 
@@ -1187,7 +1187,7 @@ Follow the tutorial in Omnichat to continue. Continue to [create agent bot](/kat
 
 10. Few steps to the final ✨ A created channel will generate a webhook URL. Copy the webhook URL in the Platform to Omnichat.
 
-## Finalize Agent Bot in Omnichat
+### Finalize Agent Bot in Omnichat
 
 1. Go back to Omnichat <a href="https://kata-omnichat.kata.ai" target="_blank">https://omnichat.kata.ai</a> and do login
 
@@ -1205,7 +1205,7 @@ Follow the tutorial in Omnichat to continue. Continue to [create agent bot](/kat
 
 6. Lastly, turn on the toggle in Activate Agent Bot. Your chatbot is already connected to the Omnichat inbox and ready to use!
 
-# Update Instagram Bot to Use Ice Breaker
+## Update Instagram Bot to Use Ice Breaker
 
 Ice Breaker is useful for first-time users can understand the available menu or topics in your Instagram bot. To use Ice Breaker, we need to create an Instagram inbox as a prerequisite. Learn more about [Ice Breaker](/channels/instagram-messaging/#sending-ice-breaker-reply).
 
@@ -1217,13 +1217,13 @@ Before we jump to the tutorial, here is the general conversation flow for using 
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ----------------- |
 | First time end-users chat the brand's Instagram DM, then it will show Ice Breaker. Learn more about Ice Breaker). It will not show when using Instagram Story Mention or Instagram Story Reply. | Show ice breaker<br/>FAQ<br />Promo <br />Lokasi <br />Berbicara dengan CS |
 
-## Objective: Create Ice Breaker in your Instagram inbox
+### Objective: Create Ice Breaker in your Instagram inbox
 
 Follow the tutorial on [how to set up Ice Breaker in Instagram Inbox](/kata-omnichat/how-to-use/#inbox-management).
 
-## Objective: Create intent to trigger bot response if end-users click all Ice Breaker
+### Objective: Create intent to trigger bot response if end-users click all Ice Breaker
 
-### Create intent for FAQ menu
+#### Create intent for FAQ menu
 
 1. Click the Intent tab which is placed next to the Conversation Flows sidebar.
 
@@ -1237,7 +1237,7 @@ Follow the tutorial on [how to set up Ice Breaker in Instagram Inbox](/kata-omni
 
 4. Then, click **Create**.
 
-### Create intent for Promo menu
+#### Create intent for Promo menu
 
 1. Click the Intent tab which is placed next to the Conversation Flows sidebar.
 
@@ -1251,7 +1251,7 @@ Follow the tutorial on [how to set up Ice Breaker in Instagram Inbox](/kata-omni
 
 5. Then, click **Create**.
 
-### Create intent for "Lokasi" menu
+#### Create intent for "Lokasi" menu
 
 1. Click the Intent tab which is placed next to the Conversation Flows sidebar.
 
@@ -1265,7 +1265,7 @@ Follow the tutorial on [how to set up Ice Breaker in Instagram Inbox](/kata-omni
 
 4. Then, click **Create**.
 
-### Create intent for "Berbicara dengan CS" menu
+#### Create intent for "Berbicara dengan CS" menu
 
 1. Click the Intent tab which is placed next to the Conversation Flows sidebar.
 
@@ -1279,9 +1279,9 @@ Follow the tutorial on [how to set up Ice Breaker in Instagram Inbox](/kata-omni
 
 4. Then, click **Create**.
 
-## Objective: Create transition for mapping bot responses after end-users clicked the Ice Breaker
+### Objective: Create transition for mapping bot responses after end-users clicked the Ice Breaker
 
-### Connect "init" to “faqState” to trigger FAQ response after end-users clicked “FAQ” in Ice Breaker
+#### Connect "init" to “faqState” to trigger FAQ response after end-users clicked “FAQ” in Ice Breaker
 
 1. Pull transition line from "init" to “faqState”.
 
@@ -1295,7 +1295,7 @@ intent == "faqIceBreaker"
 
 4. Click Create
 
-### Connect "init" to “carouselState” to trigger generic template (“carousel”) response after end-users clicked “Promo” in Ice Breaker
+#### Connect "init" to “carouselState” to trigger generic template (“carousel”) response after end-users clicked “Promo” in Ice Breaker
 
 1. Pull transition line from "init" to “carouselState”.
 
@@ -1309,7 +1309,7 @@ intent == "promoIceBreaker"
 
 4. Click Create
 
-### Connect "init" to “carouselState” to trigger text response after end-users clicked “Lokasi” in Ice Breaker
+#### Connect "init" to “carouselState” to trigger text response after end-users clicked “Lokasi” in Ice Breaker
 
 1. Pull transition line from "init" to “locationState”.
 
@@ -1323,7 +1323,7 @@ intent == "locationIceBreaker"
 
 4. Click Create
 
-### Connect "init" to “handoverState” to trigger handover to human agents after end-users clicked “Berbicara dengan CS” in Ice Breaker
+#### Connect "init" to “handoverState” to trigger handover to human agents after end-users clicked “Berbicara dengan CS” in Ice Breaker
 
 1. Pull transition line from "init" to “handoverState”.
 
@@ -1337,11 +1337,11 @@ intent == "csIceBreaker"
 
 4. Click Create
 
-## Objective: Publish updated bot and deploy to Omnichat again
+### Objective: Publish updated bot and deploy to Omnichat again
 
 Follow the tutorial to [finalize your bot](/tutorial/create-igdm-bot-handover-from-chatbot-to-agent/#finalize-your-new-bot).
 
-# Final Demo
+## Final Demo
 
 We provide video tutorials and interaction demo for Instagram chatbot features. Check these out:
 
