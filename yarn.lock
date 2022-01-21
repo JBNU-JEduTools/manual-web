@@ -16,10 +16,10 @@
   dependencies:
     clsx "^1.1.1"
 
-"@aksara-ui/react@1.0.1-canary.26":
-  version "1.0.1-canary.26"
-  resolved "https://registry.yarnpkg.com/@aksara-ui/react/-/react-1.0.1-canary.26.tgz#88162d25bb79e5f58ae4705ff3681db31a9b706a"
-  integrity sha512-3vk4x2AoCXfU+g0T92opHIkCSIxqFcU0yGQ3boiC7dT+nrHQOP9Kep8xKtBVhvQJBZsA7VpC3cdkQ5hjh+jsiQ==
+"@aksara-ui/react@1.0.1-canary.27":
+  version "1.0.1-canary.27"
+  resolved "https://registry.yarnpkg.com/@aksara-ui/react/-/react-1.0.1-canary.27.tgz#3aaa5a77206ddc266be644e4de4d3b3ac3984b34"
+  integrity sha512-2QMiKfXCFOHF+LjL4iQfiKLUT7q5meAYEnXApWMvl6aA7U3PSYtJe1qoxBlW2EUa/TD2LfHj4OUs7H7jrAR3jQ==
   dependencies:
     "@aksara-ui/core" "^1.0.1-canary.3"
     "@radix-ui/react-accordion" "^0.1.5"
