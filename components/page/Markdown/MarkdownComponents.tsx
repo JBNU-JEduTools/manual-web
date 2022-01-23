@@ -21,46 +21,32 @@ const TableDefault = styled('table')`
   border-collapse: collapse;
 
   thead {
-    border-bottom: 2px solid ${colors.grey02};
+    border: 1px solid ${colors.grey02};
 
     th {
+      border: 1px solid ${colors.grey02};
       padding: ${space.xs}px ${space.sm}px;
       font-style: normal;
       font-stretch: normal;
       font-weight: 700;
       letter-spacing: -0.01em;
-      text-transform: uppercase;
       text-align: left;
       color: ${colors.grey09};
-
-      &:first-child {
-        padding-left: 0;
-      }
-
-      &:last-child {
-        padding-right: 0;
-      }
     }
   }
 
   tfoot {
     tr {
+      border: 1px solid ${colors.grey02};
       td {
         padding: ${space.xs}px ${space.sm}px;
+        border: 1px solid ${colors.grey02};
         vertical-align: top;
         font-style: normal;
         font-stretch: normal;
         font-weight: 700;
         letter-spacing: -0.01em;
         text-transform: uppercase;
-
-        &:first-child {
-          padding-left: 0;
-        }
-
-        &:last-child {
-          padding-right: 0;
-        }
       }
     }
   }
@@ -69,20 +55,13 @@ const TableDefault = styled('table')`
     tr {
       td {
         padding: ${space.xs}px ${space.sm}px;
+        border: 1px solid ${colors.grey02};
         min-width: 15vw;
         vertical-align: top;
         font-size: ${textSizes[400].fontSize}px;
         line-height: ${textSizes[400].lineHeight}px;
         color: ${colors.grey07};
         overflow-wrap: anywhere;
-
-        &:first-child {
-          padding-left: 0;
-        }
-
-        &:last-child {
-          padding-right: 0;
-        }
       }
     }
   }
@@ -121,7 +100,7 @@ const TableBordered = styled('table')`
         color: ${colors.grey12};
         overflow-wrap: anywhere;
       }
-      &:not(:last-child){
+      &:not(:last-child) {
         border-bottom: 1px solid ${colors.grey11};
       }
     }
@@ -131,10 +110,16 @@ const TableBordered = styled('table')`
 export const h1 = (props: JSX.IntrinsicAttributes) => (
   <Heading fontSize={36} fontWeight={700} as="h1" color="grey09" {...props} />
 );
-export const h2 = (props: JSX.IntrinsicAttributes) => <Heading fontSize={30} fontWeight={700} as="h2" mt="xl" color="grey09" {...props} />;
-export const h3 = (props: JSX.IntrinsicAttributes) => <Heading fontSize={24} fontWeight={700} as="h3" mt="xl" color="grey09" {...props} />;
+export const h2 = (props: JSX.IntrinsicAttributes) => (
+  <Heading fontSize={30} fontWeight={700} as="h2" mt="xl" color="grey09" {...props} />
+);
+export const h3 = (props: JSX.IntrinsicAttributes) => (
+  <Heading fontSize={24} fontWeight={700} as="h3" mt="xl" color="grey09" {...props} />
+);
 export const h4 = (props: JSX.IntrinsicAttributes) => <Heading size={400} as="h4" mt="xl" color="grey09" {...props} />;
-export const h5 = (props: JSX.IntrinsicAttributes) => <Heading fontSize={14} fontWeight={700} as="h5" mt="xl" color="grey09" {...props} />;
+export const h5 = (props: JSX.IntrinsicAttributes) => (
+  <Heading fontSize={14} fontWeight={700} as="h5" mt="xl" color="grey09" {...props} />
+);
 export const h6 = (props: JSX.IntrinsicAttributes) => <Heading size={400} as="h6" mt="xl" color="grey09" {...props} />;
 export const p = (props: JSX.IntrinsicAttributes) => <Paragraph size={400} mt="sm" color="grey07" {...props} />;
 export const hr = (props: JSX.IntrinsicAttributes) => <HorizontalRule {...props} />;
@@ -144,13 +129,13 @@ export const li = (props: JSX.IntrinsicAttributes) => (
   <Paragraph size={400} as="li" color="grey07" my="xxs" {...props} />
 );
 
-interface TableAttributes extends JSX.IntrinsicAttributes{
+interface TableAttributes extends JSX.IntrinsicAttributes {
   className?: string;
 }
 export const table = (props: TableAttributes) => {
   const { className, ...rest } = props;
-  if (className?.includes('bordered')){
-    return <TableBordered {...rest} />
+  if (className?.includes('bordered')) {
+    return <TableBordered {...rest} />;
   }
-  return <TableDefault {...rest} />
-}
+  return <TableDefault {...rest} />;
+};

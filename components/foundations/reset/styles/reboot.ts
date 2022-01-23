@@ -80,7 +80,7 @@ const reboot = css`
   article section h5::before,
   article section h6::before {
     display: block;
-    content: " ";
+    content: ' ';
     visibility: hidden;
     pointer-events: none;
     height: 64px;
@@ -201,7 +201,11 @@ const reboot = css`
   section img {
     margin-top: 24px;
     margin-bottom: 24px;
-    border: 1px solid ${theme.colors.greylight04}
+    border: 1px solid ${theme.colors.greylight04};
+  }
+
+  section img.docs-illustration {
+    border: none;
   }
 
   img {
