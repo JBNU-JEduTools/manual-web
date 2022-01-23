@@ -35,6 +35,8 @@
       "items": [
         {
           "title": "Designing Conversation",
+          "id": "designing-conversation",
+          "url": "/kata-platform/documentation-content/designing-conversation",
           "useAccordion": true,
           "items": [
             {
@@ -51,6 +53,8 @@
         },
         {
           "title": "Start Your First Chatbot",
+          "id": "start-your-first-chatbot",
+          "url": "/kata-platform/documentation-content/start-your-first-chatbot",
           "useAccordion": true,
           "items": [
             {
@@ -111,24 +115,14 @@
             {
               "id": "integration-to-channel",
               "title": "Integration to a Channel",
-              "useAccordion": true,
-              "items": [
-                {
-                  "id": "create-a-channel",
-                  "url": "/kata-platform/documentation-content/start-your-first-chatbot#create-a-channel",
-                  "title": "Create a Channel"
-                },
-                {
-                  "id": "connect-chatbot-to-telegram",
-                  "url": "/kata-platform/documentation-content/start-your-first-chatbot#connect-chatbot-to-telegram",
-                  "title": "Connect Chatbot to Telegram"
-                }
-              ]
+              "url": "/kata-platform/documentation-content/start-your-first-chatbot#integration-to-a-channel"
             }
           ]
         },
         {
+          "id": "analyze-your-bot-conversations",
           "title": "Analyze Your Bot Conversations",
+          "url": "/kata-platform/documentation-content/analyze-your-bot-conversations",
           "useAccordion": true,
           "items": [
             {
@@ -150,6 +144,41 @@
               "id": "transcripts",
               "url": "/kata-platform/documentation-content/analyze-your-bot-conversations#transcripts",
               "title": "Transcripts"
+            }
+          ]
+        },
+        {
+          "id": "error-log",
+          "title": "Error Log",
+          "url": "/kata-platform/documentation-content/error-log",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "error-log-introduction",
+              "url": "/kata-platform/documentation-content/error-log#introduction",
+              "title": "Introduction"
+            },
+            {
+              "id": "available-error-messages",
+              "url": "/kata-platform/documentation-content/error-log#available-error-messages",
+              "title": "Available Error Messages"
+            },
+            {
+              "id": "coming-soon",
+              "url": "/kata-platform/documentation-content/error-log#coming-soon",
+              "title": "Coming Soon"
+            }
+          ]
+        },
+        {
+          "title": "How-to Guides",
+          "items": [
+            {
+              "id": "how-to-improve-your-chatbot-intelligence-by-training-your-nlu",
+              "url": "/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu",
+              "title": "How to Improve Your Chatbot Intelligence by Training Your NLU",
+              "useAccordion": true,
+              "items": [{}]
             }
           ]
         }

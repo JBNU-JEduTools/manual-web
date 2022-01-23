@@ -1,7 +1,8 @@
 ---
 id: analyze-your-bot-conversations
 title: Analyze Your Bot Conversations
-prev: registration-and-login
+prev: start-your-first-chatbot
+next: error-log
 ---
 
 ## Introduction
@@ -22,7 +23,7 @@ The Users feature contains the data of your end-user. First is the filter option
 
 ### User Filter
 
-![Image 29 alt](/assets/images/products/kata-platform/image29.png)
+![Image 1 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image1.png)
 
 > **Figure 1**: Filter option in Users feature.
 
@@ -34,7 +35,7 @@ You can filter the analytics based on:
 
 ### Various User Analytics
 
-![Image 30 alt](/assets/images/products/kata-platform/image30.png)
+![Image 2 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image2.png)
 
 > **Figure 2**: Various user analytics data.
 
@@ -48,7 +49,7 @@ After selecting the filter, we can view specific data for your chatbot:
 
 ### User Activities
 
-![Image 31 alt](/assets/images/products/kata-platform/image31.png)
+![Image 3 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image3.png)
 
 > **Figure 3**: User Activities analytics.
 
@@ -56,18 +57,18 @@ In User Activities, you can see how many sessions, active users, messages, and n
 
 ### Peak Hours
 
-![Image 32 alt](/assets/images/products/kata-platform/image32.png)
+![Image 4 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image4.png)
 
 > **Figure 4**: Peak Hours analytics.
 
 In Peak Hour's analytics, you can analyze at what day and time the end-users are more engaged with your chatbot. The blue color indicates engagement. The darker the blue, the more engagement the end-user has with your chatbot on that specific day & time.
 
-Notice on Monday at 12PM, when you hover the block, there are 236 incoming messages with dark blue color, indicating on that day and time the end-user is more active. You can use this analysis to make a better decision as to when is the best time to engage with your user.
+Notice on Monday at 12PM, when you hover the block, there are 28 incoming messages with dark blue color, indicating on that day and time the end-user is more active. You can use this analysis to make a better decision as to when is the best time to engage with your user.
 
 ### Cohort
 
-![Image 33 alt](/assets/images/products/kata-platform/image33.png)
-![Image 34 alt](/assets/images/products/kata-platform/image34.png)
+![Image 5 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image5.png)
+![Image 6 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image6.png)
 
 > **Figure 5**: Cohort (simple & expanded) analytics - Daily.
 
@@ -97,7 +98,7 @@ The **Topics** option within the analytics dashboard contains information regard
 
 ### Topics Filter
 
-![Image 35 alt](/assets/images/products/kata-platform/image35.png)
+![Image 7 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image7.png)
 
 > **Figure 6**: Filter option in Topics feature.
 
@@ -109,7 +110,7 @@ You may adjust the filters based on the following parameters:
 
 ### Top Topics Analytics
 
-![Image 36 alt](/assets/images/products/kata-platform/image36.png)
+![Image 8 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image8.png)
 
 > **Figure 7**: Top Topics analytics.
 
@@ -124,7 +125,7 @@ All those pie charts are downloadable. The output files will be CSV.
 
 ### Word Cloud
 
-![Image 37 alt](/assets/images/products/kata-platform/image37.png)
+![Image 9 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image9.png)
 
 > **Figure 8**: Word Cloud analytics.
 
@@ -136,7 +137,7 @@ Transcripts feature provides the complete log of conversations between your user
 
 ### Transcript Filter
 
-![Image 38 alt](/assets/images/products/kata-platform/image38.png)
+![Image 10 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image10.png)
 
 > **Figure 9**: Filter option in Transcripts feature.
 
@@ -148,7 +149,7 @@ You may adjust the filters based on the following parameters:
 
 ### Transcript Log
 
-![Image 39 alt](/assets/images/products/kata-platform/image39.png)
+![Image 11 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image11.png)
 
 > **Figure 10**: Transcript Log.
 
@@ -164,8 +165,8 @@ After choosing the filter, you can view the transcript log, you can also search 
 
 You can also click on the transcript row to view the log of each row, for example:
 
-![Image 40 alt](/assets/images/products/kata-platform/image40.png)
+![Image 12 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image12.png)
 
-> **Figure 10**: Transcript Detail.
+> **Figure 11**: Transcript Detail.
 
 Here, you can view the log of conversations between your user & chatbot. We also include the state flow your user is in after each chat.

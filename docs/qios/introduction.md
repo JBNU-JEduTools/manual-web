@@ -4,7 +4,7 @@ title: About Qios
 next: general-setup
 ---
 
-![Qios illustration](/assets/images/products/qios/image0.png)
+<img className="docs-illustration" src="/assets/images/products/qios/image0.png" alt="Qios Illustration" />
 
 # Introduction
 

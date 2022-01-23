@@ -1,7 +1,7 @@
 ---
 id: designing-conversation
 title: Designing Conversation
-next: registration-and-login
+next: start-your-first-chatbot
 prev: all-use-cases
 ---
 
