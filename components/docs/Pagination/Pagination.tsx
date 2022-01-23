@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
-import { FrontMatter } from 'interfaces/next';
 import { Text, Heading } from 'components/foundations';
 import { space, breakpoints, colors } from 'utils/variables';
 import { MenuNode } from 'interfaces/nodes';
