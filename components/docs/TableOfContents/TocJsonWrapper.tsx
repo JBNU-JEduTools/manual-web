@@ -71,7 +71,15 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
         if (item.useAccordion) {
           return item.items.length ? (
             <AccordionItem style={accordionItemStyle} key={item.title} value={item.title}>
-              <AccordionHeader style={accordionHeaderStyle} size="lg">
+              <AccordionHeader
+                onClick={(e) => {
+                  if (onClick && item.url) {
+                    onClick(e, item.url);
+                  }
+                }}
+                style={accordionHeaderStyle}
+                size="lg"
+              >
                 <TocText>{item.title}</TocText>
               </AccordionHeader>
               {item.items.map((itemChildren) => {
