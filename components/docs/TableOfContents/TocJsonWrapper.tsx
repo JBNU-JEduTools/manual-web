@@ -49,7 +49,7 @@ function NestedTocJsonWrapper({
                     }
                   }}
                   isActive={isActiveItem && isActiveItem(itemChildren.url)}
-                  // indicator={false}
+                  indicator={false}
                   style={actionListStyle(isActiveItem && isActiveItem(itemChildren.url))}
                 >
                   {itemChildren.title}
@@ -97,7 +97,7 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                           }
                         }}
                         isActive={isActiveItem && isActiveItem(itemChildren.url)}
-                        // indicator={false}
+                        indicator={false}
                         style={actionListStyle(isActiveItem && isActiveItem(itemChildren.url))}
                       >
                         {itemChildren.title}
@@ -135,7 +135,7 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                   }
                 }}
                 isActive={isActiveItem && isActiveItem(item.url)}
-                // indicator={false}
+                indicator={false}
                 style={actionListStyle(isActiveItem && isActiveItem(item.url))}
               >
                 {item.title}

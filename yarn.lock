@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aksara-ui/core@^1.0.1-canary.3":
-  version "1.0.1-canary.3"
-  resolved "https://registry.yarnpkg.com/@aksara-ui/core/-/core-1.0.1-canary.3.tgz#bca58dafde600d4e722d19896860f9671f74b514"
-  integrity sha512-SKMPftyMv3FaRqcrMDd/kfjqSQo0nM2POK0W5A3UpIskvTrTTSwLfD8YXV7QYv5mrvUwD2qwEl7aj78daG2Y6Q==
+"@aksara-ui/core@^1.0.1-canary.4":
+  version "1.0.1-canary.4"
+  resolved "https://registry.yarnpkg.com/@aksara-ui/core/-/core-1.0.1-canary.4.tgz#603afbe03f70397461b1c41f637c548692f9e72b"
+  integrity sha512-VuGjphfS+TkGlvICiOBDrEaPhcGzar477qmztpn5fN3ZvFq3gg31XAl6lZaeSyoC0djp87h4KCe7zxV8rG8Zvw==
   dependencies:
     polished "^4.1.3"
 
@@ -16,12 +16,12 @@
   dependencies:
     clsx "^1.1.1"
 
-"@aksara-ui/react@1.0.1-canary.27":
-  version "1.0.1-canary.27"
-  resolved "https://registry.yarnpkg.com/@aksara-ui/react/-/react-1.0.1-canary.27.tgz#3aaa5a77206ddc266be644e4de4d3b3ac3984b34"
-  integrity sha512-2QMiKfXCFOHF+LjL4iQfiKLUT7q5meAYEnXApWMvl6aA7U3PSYtJe1qoxBlW2EUa/TD2LfHj4OUs7H7jrAR3jQ==
+"@aksara-ui/react@1.0.1-canary.31":
+  version "1.0.1-canary.31"
+  resolved "https://registry.yarnpkg.com/@aksara-ui/react/-/react-1.0.1-canary.31.tgz#e0f6938f82087fe3fe2097cdd0c3d2886e7e3ffd"
+  integrity sha512-6oHog5o4wsM7DVnGlvV1lQgDzrYBt5tG1gB9/oFgJh4eY7/oFYwW6a1ZDZ44obHVyI1mj70Zg0YJbNIjj2SzVg==
   dependencies:
-    "@aksara-ui/core" "^1.0.1-canary.3"
+    "@aksara-ui/core" "^1.0.1-canary.4"
     "@radix-ui/react-accordion" "^0.1.5"
     "@radix-ui/react-dropdown-menu" "^0.1.1"
     "@radix-ui/react-id" "^0.1.1"
