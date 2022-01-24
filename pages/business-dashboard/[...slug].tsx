@@ -54,7 +54,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
   return (
     <Page docsPage>
       <Head>
-        <title>{frontMatter.title} &middot; business-dashboard Documentation</title>
+        <title>{frontMatter.title} &middot; Business Dashboard Documentation</title>
         <meta name="description" content={post.excerpt} />
         <meta property="og:title" content={frontMatter.title} />
         <meta property="og:description" content={post.excerpt} />
