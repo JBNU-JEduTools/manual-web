@@ -3,7 +3,7 @@ id: introduction
 title: Introduction
 ---
 
-<img className="docs-illustration" src="/assets/images/products/business-dashboard/image-introduction-1.png" alt="Business-Dashboard Illustration" />
+<img className="borderless" src="/assets/images/products/business-dashboard/image-introduction-1.png" alt="Business-Dashboard Illustration" />
 
 ## About WhatsApp Business Dashboard
 

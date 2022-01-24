@@ -204,7 +204,7 @@ const reboot = css`
     border: 1px solid ${theme.colors.greylight04};
   }
 
-  section img.docs-illustration {
+  section img.borderless {
     border: none;
   }
 
@@ -351,6 +351,19 @@ const reboot = css`
 
   [hidden] {
     display: none !important;
+  }
+
+  .info {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 16px;
+    border-left: 1px solid ${theme.colors.blue07};
+    background-color: ${theme.colors.blue01};
+    p {
+      margin-left: 12px;
+    }
   }
 `;
 

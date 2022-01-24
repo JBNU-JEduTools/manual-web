@@ -4,7 +4,7 @@ title: What is Kata Platform
 next: benefits-with-kata-platform
 ---
 
-<img className="docs-illustration" src="/assets/images/products/kata-platform/image0.png" alt="Kata-Platform Illustration" />
+<img className="borderless" src="/assets/images/products/kata-platform/image0.png" alt="Kata-Platform Illustration" />
 
 # What is Kata Platform ?
 

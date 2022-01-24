@@ -174,11 +174,68 @@
           "title": "How-to Guides",
           "items": [
             {
-              "id": "how-to-improve-your-chatbot-intelligence-by-training-your-nlu",
-              "url": "/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu",
-              "title": "How to Improve Your Chatbot Intelligence by Training Your NLU",
+              "id": "how-to-deploy-your-chatbot-using-generic-channel",
+              "url": "/kata-platform/how-to/how-to-deploy-your-chatbot-using-generic-channel",
+              "title": "How to Deploy Your Chatbot Using Generic Channel",
               "useAccordion": true,
-              "items": [{}]
+              "items": [
+                {
+                  "id": "introduction",
+                  "url": "/kata-platform/how-to/how-to-deploy-your-chatbot-using-generic-channel#introduction",
+                  "title": "Introduction"
+                },
+                {
+                  "id": "deploy-your-chatbot-in-kata-platform",
+                  "url": "/kata-platform/how-to/how-to-deploy-your-chatbot-using-generic-channel#deploy-your-chatbot-in-kata-platform",
+                  "title": "Deploy Your Chatbot in Kata Platform"
+                },
+                {
+                  "id": "testing-generic-channel-with-postman-app",
+                  "url": "/kata-platform/how-to/how-to-deploy-your-chatbot-using-generic-channel#testing-generic-channel-with-postman-app",
+                  "title": "Testing Generic Channel With Postman App"
+                }
+              ]
+            },
+            {
+              "id": "how-to-use-nlu-threshold-to-enhance-customer-experience",
+              "url": "/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience",
+              "title": "How to Use NLU Threshold to Enhance Customer Experience",
+              "useAccordion": true,
+              "items": [
+                {
+                  "id": "introduction",
+                  "url": "/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience#introduction",
+                  "title": "Introduction"
+                },
+                {
+                  "id": "how-to-use",
+                  "url": "/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience#how-to-use",
+                  "title": "How to Use"
+                },
+                {
+                  "id": "test-your-chatbot",
+                  "url": "/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience#test-your-chatbot",
+                  "title": "Test Your Chatbot"
+                }
+              ]
+            },
+            {
+              "id": "how-to-use-super-model-to-improve-your-bot-intelligence",
+              "url": "/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence",
+              "title": "How to Use Super Model (“Kata Entity”) to Improve Your Bot Intelligence",
+              "useAccordion": true,
+              "items": [
+                {
+                  "id": "introduction",
+                  "url": "/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence#introduction",
+                  "title": "Introduction"
+                },
+                {
+                  "id": "how-to-use",
+                  "url": "/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence#how-to-use",
+                  "title": "How to Use"
+                }
+              ]
             }
           ]
         }
