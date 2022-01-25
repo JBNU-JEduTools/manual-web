@@ -25,13 +25,13 @@ import { getPageUrl } from 'utils/helpers';
 import Link from 'next/link';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 
-interface TutorialPageTemplateProps {
+interface BusinessDashboardPageTemplateProps {
   post: any;
   toc: any;
   listToc: string[];
 }
 
-const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }) => {
+const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps> = ({ post, toc }) => {
   const frontMatter = post.frontMatter;
   const prevPage = getPageUrl(post.frontMatter.prev, 'business-dashboard');
   const nextPage = getPageUrl(post.frontMatter.next, 'business-dashboard');
@@ -102,7 +102,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
   );
 };
 
-export default TutorialPageTemplate;
+export default BusinessDashboardPageTemplate;
 
 export async function getStaticPaths() {
   return {

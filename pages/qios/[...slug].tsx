@@ -25,13 +25,13 @@ import { PaginationDocs } from 'components/docs/Pagination';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 
-interface TutorialPageTemplateProps {
+interface QiosPageTemplateProps {
   post: any;
   toc: any;
   listToc: string[];
 }
 
-const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }) => {
+const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
   const frontMatter = post.frontMatter;
   const prevPage = getPageUrl(post.frontMatter.prev, 'qios');
   const nextPage = getPageUrl(post.frontMatter.next, 'qios');
@@ -101,7 +101,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
   );
 };
 
-export default TutorialPageTemplate;
+export default QiosPageTemplate;
 
 export async function getStaticPaths() {
   return {

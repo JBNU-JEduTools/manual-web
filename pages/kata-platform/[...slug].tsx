@@ -26,13 +26,13 @@ import { MarkdownContent as IMarkdownContent } from 'interfaces/next';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 
-interface TutorialPageTemplateProps {
+interface PlatformPageTemplateProps {
   post: IMarkdownContent;
   toc: any;
   listToc: string[];
 }
 
-const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }) => {
+const PlatformPageTemplate: React.FC<PlatformPageTemplateProps> = ({ post, toc }) => {
   const frontMatter = post.frontMatter;
   const prevPage = getPageUrl(post.frontMatter.prev, 'kata-platform');
   const nextPage = getPageUrl(post.frontMatter.next, 'kata-platform');
@@ -101,7 +101,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
   );
 };
 
-export default TutorialPageTemplate;
+export default PlatformPageTemplate;
 
 export async function getStaticPaths() {
   return {
