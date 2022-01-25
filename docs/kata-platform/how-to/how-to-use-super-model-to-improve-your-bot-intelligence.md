@@ -120,4 +120,4 @@ The next step is to use the intent as a condition in transition (most common). I
 intent==‘supermodNL’
 ```
 
-It is the end of the guidance. You can contact <a href="mailto:support@kata.ai">support@kata.ai</a> if you have any difficulties when implementing this.
+This is the end of the guidance. You can contact <a href="mailto:support@kata.ai">support@kata.ai</a> if you have any difficulties when implementing this.
