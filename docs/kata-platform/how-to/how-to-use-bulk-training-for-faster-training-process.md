@@ -208,8 +208,4 @@ If your internet connection was interrupted during the upload process, this erro
 
 This error message will be displayed if your data training file contains no entities or labels that matched your current entities on the project. Please check your NL project then go to the entities menu and create the entities or labels that you want to train with the Bulk Training feature.
 
-![Image 12 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image12.png)
-
-> **Figure 12**: Showing error that your script does not have any entities and/or labels.
-
 This is the end of the guidance. You can contact <a href="mailto:support@kata.ai">support@kata.ai</a> if you have any difficulties when implementing this.
