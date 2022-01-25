@@ -379,5 +379,6 @@ In this section, you can use <a href="https://www.postman.com/" target="_blank">
 
 > **Figure 4**: Testing your bot
 
-Finally, you will get a response from the chatbot to your app
-It is the end of the guidance. You can contact <a href="mailto:support@kata.ai">support@kata.ai</a> if you have any difficulties when implementing this.
+Finally, you will get a response from the chatbot to your app.
+
+This is the end of the guidance. You can contact <a href="mailto:support@kata.ai">support@kata.ai</a> if you have any difficulties when implementing this.

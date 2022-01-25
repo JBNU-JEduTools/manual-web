@@ -119,4 +119,4 @@ For outgoing messages or bot responses, here is how to read them.
 -   **“flow”** means executed flow name.
 -   **“intent”** means which intent recognized your message.
 
-It is the end of the guidance. You can contact <a href="mailto:support@kata.ai">support@kata.ai</a> if you have any difficulties when implementing this.
+This is the end of the guidance. You can contact <a href="mailto:support@kata.ai">support@kata.ai</a> if you have any difficulties when implementing this.
