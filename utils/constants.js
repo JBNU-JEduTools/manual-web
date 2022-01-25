@@ -35,7 +35,9 @@ export const PRODUCTS = [
   },
   {
     name: 'Kata Omnichat',
-    imgPath: 'assets/images/products/icon/omnichat-icon.svg',
+    imgPath: 'assets/images/products/icon/kata-omnichat-icon.svg',
+    url: '/kata-omnichat',
+    externalUrl: false,
   },
   {
     name: 'Business Dashboard',

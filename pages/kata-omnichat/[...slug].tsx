@@ -17,24 +17,25 @@ import { useRouter } from 'next/router';
 import { MarkdownContent } from 'components/page/Markdown';
 import renderAst from 'utils/renderAst';
 import { DocsContainer } from 'components/layout/Container';
-import IndexLayout from 'components/layouts';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import { GetStaticPropsContext, PreviewData } from 'next';
+import IndexLayout from 'components/layouts';
 import { PaginationDocs } from 'components/docs/Pagination';
 import { getPageUrl } from 'utils/helpers';
-import Link from 'next/link';
+import { MarkdownContent as IMarkdownContent } from 'interfaces/next';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
+import Link from 'next/link';
 
-interface BusinessDashboardPageTemplateProps {
-  post: any;
+interface OmnichatPageTemplateProps {
+  post: IMarkdownContent;
   toc: any;
   listToc: string[];
 }
 
-const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps> = ({ post, toc }) => {
+const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }) => {
   const frontMatter = post.frontMatter;
-  const prevPage = getPageUrl(post.frontMatter.prev, 'business-dashboard');
-  const nextPage = getPageUrl(post.frontMatter.next, 'business-dashboard');
+  const prevPage = getPageUrl(post.frontMatter.prev, 'kata-omnichat');
+  const nextPage = getPageUrl(post.frontMatter.next, 'kata-omnichat');
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
@@ -56,10 +57,8 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
   return (
     <Page docsPage>
       <Head>
-        <title>{frontMatter.title} &middot; Business Dashboard Documentation</title>
-        <meta name="description" content={post.excerpt} />
+        <title>{frontMatter.title} &middot; Kata Omnichat Documentation</title>
         <meta property="og:title" content={frontMatter.title} />
-        <meta property="og:description" content={post.excerpt} />
       </Head>
       <IndexLayout navHidden>
         {router.isFallback ? (
@@ -69,9 +68,9 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/business-dashboard">
+                  <Link href="/kata-omnichat">
                     <UnstyledAnchor>
-                      <img src="/assets/images/products/business-dashboard-logo-docs.svg" />
+                      <img src="/assets/images/products/kata-omnichat-logo-docs.svg" />
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>
@@ -82,11 +81,11 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
               <Breadcrumb
                 items={[
                   { url: '/', urlDisplay: 'Home' },
-                  { url: '/business-dashboard', urlDisplay: 'Business Dashboard' },
+                  { url: '/kata-omnichat', urlDisplay: 'Kata Omnichat' },
                   { url: '#', urlDisplay: frontMatter.title },
                 ]}
               />
-              <DocsHeader title={frontMatter.title} />
+              {frontMatter.id !== 'about' && <DocsHeader title={frontMatter.title} />}
               <MarkdownContent>{renderAst(post.mdx.renderedOutput)}</MarkdownContent>
               {(prevPage || nextPage) && <PaginationDocs prevPage={prevPage} nextPage={nextPage} />}
               <DocsHelpful />
@@ -102,23 +101,23 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
   );
 };
 
-export default BusinessDashboardPageTemplate;
+export default OmnichatPageTemplate;
 
 export async function getStaticPaths() {
   return {
-    paths: await getMdxPaths('business-dashboard'),
+    paths: await getMdxPaths('kata-omnichat'),
     fallback: false,
   };
 }
 
 export async function getStaticProps(context: string | GetStaticPropsContext<NodeJS.Dict<string[]>, PreviewData>) {
-  const post = await getMdxNode('business-dashboard', context, {
+  const post = await getMdxNode('kata-omnichat', context, {
     mdxOptions: {
       remarkPlugins: [remarkSlug, rehypeAutolinkHeadings],
     },
   });
 
-  const toc = await import('docs/toc-business-dashboard.json');
+  const toc = await import('docs/toc-kata-omnichat.json');
 
   if (!toc) {
     return {

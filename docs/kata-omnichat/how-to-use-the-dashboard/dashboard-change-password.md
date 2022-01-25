@@ -1,0 +1,17 @@
+## Change password
+
+Changing password is the feature where agents and administrators can change their passwords for the first time after being invited via email. Here are the steps to change the password after being invited.
+
+1.  Go to the email invitation, then click Verify Account, then you will be directed to Omnichat that has been logged in
+2.  Go to Profile Settings in the bottom left corner
+3.  Input current password that is stated in the email verification
+4.  Set your new password
+5.  Click the “Update Profile” button
+
+![](https://lh6.googleusercontent.com/7uOfb0b0jOX-5PyeeVhNRDx1bZ5PwrwTpIL0tAhjhWiwCPV_mtI4JCxZqrUZ10GSMK0RaqTXJ4ul7Dca10zrpYnGlPYdGVyDqz-Z3AA99XLCwksgQCnySRE0idB8VpAwnsdHXBAn)
+
+Figure 13. Change Password
+
+Changing passwords helps you to maintain your profile security by regularly changing your password. If you
+
+Note: Password must contain at least one uppercase character (A-Z), at least one numeric character (0..9), at least one special character (!@#$%^&\*()\_+-=[]{}|'"/\^.,`<>:;?~).
