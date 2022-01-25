@@ -83,19 +83,21 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin }) => {
       </Head>
       <Header fixed>
         <HeaderInner>
-          <HeaderLogo>
-            <Link href="/">
-              <UnstyledAnchor>
-                <img
-                  src={
-                    imageOrigin === 'docs'
-                      ? '/assets/images/logo-docs.svg'
-                      : `/assets/images/products/${imageOrigin}-logo-docs.svg`
-                  }
-                />
-              </UnstyledAnchor>
-            </Link>
-          </HeaderLogo>
+          {!isPost() && (
+            <HeaderLogo>
+              <Link href="/">
+                <UnstyledAnchor>
+                  <img
+                    src={
+                      imageOrigin === 'docs'
+                        ? '/assets/images/logo-docs.svg'
+                        : `/assets/images/products/${imageOrigin}-logo-docs.svg`
+                    }
+                  />
+                </UnstyledAnchor>
+              </Link>
+            </HeaderLogo>
+          )}
           <HeaderRight hideOnDesktop>
             {isPost() && (
               <NavButton

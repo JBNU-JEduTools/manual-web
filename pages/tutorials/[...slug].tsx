@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { getMdxNode, getMdxPaths } from 'next-mdx/server';
-import { Text } from '@aksara-ui/react';
+import { Text, UnstyledAnchor } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
 import { DocsWrapper } from 'components/docs/DocsWrapper';
@@ -19,6 +19,8 @@ import renderAst from 'utils/renderAst';
 import { DocsContainer } from 'components/layout/Container';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import IndexLayout from 'components/layouts';
+import { SidebarLogo } from 'components/docs/DocsSidebar';
+import Link from 'next/link';
 
 interface TutorialPageTemplateProps {
   post: any;
@@ -62,6 +64,13 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
           <DocsWrapper>
             {toc && (
               <div className="table-of-contents">
+                <SidebarLogo>
+                  <Link href="/tutorials">
+                    <UnstyledAnchor>
+                      <img src="/assets/images/logo-docs.svg" />
+                    </UnstyledAnchor>
+                  </Link>
+                </SidebarLogo>
                 <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isActiveItem={isActiveItem} />
               </div>
             )}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { getMdxNode, getMdxPaths } from 'next-mdx/server';
-import { Text } from '@aksara-ui/react';
+import { Text, UnstyledAnchor } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
 import { DocsWrapper } from 'components/docs/DocsWrapper';
@@ -23,6 +23,8 @@ import IndexLayout from 'components/layouts';
 import { PaginationDocs } from 'components/docs/Pagination';
 import { getPageUrl } from 'utils/helpers';
 import { MarkdownContent as IMarkdownContent } from 'interfaces/next';
+import { SidebarLogo } from 'components/docs/DocsSidebar';
+import Link from 'next/link';
 
 interface TutorialPageTemplateProps {
   post: IMarkdownContent;
@@ -65,6 +67,13 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
           <DocsWrapper>
             {toc && (
               <div className="table-of-contents">
+                <SidebarLogo>
+                  <Link href="/kata-platform">
+                    <UnstyledAnchor>
+                      <img src="/assets/images/products/kata-platform-logo-docs.svg" />
+                    </UnstyledAnchor>
+                  </Link>
+                </SidebarLogo>
                 <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isActiveItem={isActiveItem} />
               </div>
             )}

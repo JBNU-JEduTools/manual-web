@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { getMdxNode, getMdxPaths } from 'next-mdx/server';
-import { Text } from '@aksara-ui/react';
+import { Text, UnstyledAnchor } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
 import { DocsWrapper } from 'components/docs/DocsWrapper';
@@ -22,6 +22,8 @@ import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import { GetStaticPropsContext, PreviewData } from 'next';
 import { PaginationDocs } from 'components/docs/Pagination';
 import { getPageUrl } from 'utils/helpers';
+import Link from 'next/link';
+import { SidebarLogo } from 'components/docs/DocsSidebar';
 
 interface TutorialPageTemplateProps {
   post: any;
@@ -66,6 +68,13 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
           <DocsWrapper>
             {toc && (
               <div className="table-of-contents">
+                <SidebarLogo>
+                  <Link href="/business-dashboard">
+                    <UnstyledAnchor>
+                      <img src="/assets/images/products/business-dashboard-logo-docs.svg" />
+                    </UnstyledAnchor>
+                  </Link>
+                </SidebarLogo>
                 <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isActiveItem={isActiveItem} />
               </div>
             )}

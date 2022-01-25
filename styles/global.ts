@@ -51,13 +51,14 @@ export const styleJSX = css`
     position: fixed;
     border-right: 1px solid #eff2f5;
     left: 0;
-    top: 64px;
-    margin-bottom: 64px;
+    top: 0;
     padding-right: 24px;
     padding-left: 24px;
     width: 23%;
     height: -webkit-fill-available;
     overflow-y: auto;
+    z-index: 10;
+    background-color: #fff;
   }
 
   @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
