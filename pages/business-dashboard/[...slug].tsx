@@ -106,13 +106,13 @@ export default TutorialPageTemplate;
 
 export async function getStaticPaths() {
   return {
-    paths: await getMdxPaths('businessDashboard'),
+    paths: await getMdxPaths('business-dashboard'),
     fallback: false,
   };
 }
 
 export async function getStaticProps(context: string | GetStaticPropsContext<NodeJS.Dict<string[]>, PreviewData>) {
-  const post = await getMdxNode('businessDashboard', context, {
+  const post = await getMdxNode('business-dashboard', context, {
     mdxOptions: {
       remarkPlugins: [remarkSlug, rehypeAutolinkHeadings],
     },

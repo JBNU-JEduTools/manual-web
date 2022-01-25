@@ -4,7 +4,7 @@
     "sortBy": "date",
     "sortOrder": "asc"
   },
-  "businessDashboard": {
+  "business-dashboard": {
     "contentPath": "docs/business-dashboard",
     "sortBy": "date",
     "sortOrder": "asc"
@@ -16,6 +16,11 @@
   },
   "kata-platform": {
     "contentPath": "docs/kata-platform",
+    "sortBy": "date",
+    "sortOrder": "asc"
+  },
+  "kata-omnichat": {
+    "contentPath": "docs/kata-omnichat",
     "sortBy": "date",
     "sortOrder": "asc"
   }
