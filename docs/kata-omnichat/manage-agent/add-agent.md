@@ -41,7 +41,7 @@ When you are in step 3, you need to enter the agent information as shown below:
    <td>The role of the person you invited to.  You can choose the person that you assign as an agent or administrator
 <p>
 <strong>If Agent</strong>, Agents with this role can only access inboxes, reports, and conversations. They can assign conversations to other agents or themselves and resolve conversations
-<p>
+</p>
 <strong>If Administrator</strong>, Administrator will have access to all Kata Omnichat features enabled for your account, including settings, along with all of a normal agents' privileges
    </td>
   </tr>

@@ -55,9 +55,7 @@ Here are the field descriptions related to label management:
   <tr>
    <td>Show label on the sidebar
    </td>
-   <td>If you tick the label on the sidebar, the label will show up on your sidebar,
-<p>
-If you untick then the label will not show up on your sidebar
+   <td>If you tick the label on the sidebar, the label will show up on your sidebar,If you untick then the label will not show up on your sidebar
    </td>
   </tr>
 </table>
