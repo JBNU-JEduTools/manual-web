@@ -3,9 +3,9 @@ id: release-note-version
 title: Version
 ---
 
-# 1.5.6
+## 1.5.6
 
-## What’s New ⭐️
+### What’s New ⭐️
 
 The guidance about the WhatsApp Business Dashboard is currently at Kata Docs. It is easier and simpler for you to follow a step-by-step guide to join us and explore our features. Learn more about [WhatsApp Business Dashboard.](/business-dashboard/introduction)
 
