@@ -10,6 +10,7 @@ import { DocsHeader } from 'components/docs/DocsHeader';
 import { FooterWrapper, Footer } from 'components/layout/Footer';
 import { TocJsonWrapper } from 'components/docs/TableOfContents';
 import remarkSlug from 'remark-slug';
+import rehypePrism from '@mapbox/rehype-prism';
 import rehypeAutolinkHeadings from 'remark-autolink-headings';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
 import { DocsHelpful } from 'components/docs/DocsHelpful';
@@ -113,7 +114,8 @@ export async function getStaticPaths() {
 export async function getStaticProps(context: string | GetStaticPropsContext<NodeJS.Dict<string[]>, PreviewData>) {
   const post = await getMdxNode('kata-platform', context, {
     mdxOptions: {
-      remarkPlugins: [remarkSlug, rehypeAutolinkHeadings],
+      remarkPlugins: [remarkSlug],
+      rehypePlugins: [rehypeAutolinkHeadings, rehypePrism],
     },
   });
 

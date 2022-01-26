@@ -2,7 +2,7 @@ import { breakpoints } from 'utils/variables';
 import styled from 'styled-components';
 
 const DocsWrapper = styled('article')`
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   height: 100%;
   display: flex;
   flex-direction: column;

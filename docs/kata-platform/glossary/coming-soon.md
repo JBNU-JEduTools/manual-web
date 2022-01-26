@@ -1,0 +1,54 @@
+---
+id: glossary-coming-soon
+title: Coming Soon
+---
+
+-   Intent in Flow
+
+    -   Intent as Initial
+    -   Intent as Fallback
+    -   Intent Type
+    -   Text Intent
+    -   Data Intent
+    -   Command Intent
+    -   Condition
+    -   Classifiers
+    -   Attributes
+    -   Priority
+
+-   NLUs
+    -   Keyword
+    -   NL
+    -   Regex
+    -   Multiple Regex
+    -   Wit Intent
+    -   Wit Entity
+    -   Method
+-   Action
+-   Method
+    -   Simple Method
+    -   Advanced Method
+-   Error Logs
+-   Configurations
+-   Kata NL
+    -   What is Kata NL?
+    -   Entity
+        -   Entity: Trait
+        -   Dictionary Entity
+        -   Phrase Entity
+    -   Inherit
+    -   Root
+    -   Belongs to
+    -   Labels
+    -   Kata Entity (Supermodel)
+    -   Training
+    -   Test NLU
+    -   Prediction Logs
+    -   Token
+    -   NLU ID
+-   Kata CMS
+    -   What is Kata CMS?
+    -   Pages
+    -   Forms
+    -   Elements
+    -   Label
