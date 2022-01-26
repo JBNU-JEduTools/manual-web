@@ -325,6 +325,24 @@
                   "title": "How to Collect API Result"
                 }
               ]
+            },
+            {
+              "id": "how-to-change-error-messages-in-your-chatbot",
+              "url": "/kata-platform/how-to/how-to-change-error-messages-in-your-chatbot",
+              "title": "How to Change Error Messages in Your Chatbot to Match Them With Chatbot Persona",
+              "useAccordion": true,
+              "items": [
+                {
+                  "id": "change-default-error-message",
+                  "url": "/kata-platform/how-to/how-to-change-error-messages-in-your-chatbot#change-default-error-message",
+                  "title": "Change Default Error Message"
+                },
+                {
+                  "id": "change-default-timeout-message",
+                  "url": "/kata-platform/how-to/how-to-change-error-messages-in-your-chatbot#change-default-timeout-message",
+                  "title": "Change Default Timeout Message"
+                }
+              ]
             }
           ]
         }
