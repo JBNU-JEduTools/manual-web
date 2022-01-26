@@ -311,17 +311,17 @@
               "items": [
                 {
                   "id": "introduction",
-                  "url": "/kata-platform/how-to/how-to-use-bulk-training-for-faster-training-process#introduction",
+                  "url": "/kata-platform/how-to/using-custom-api-to-access-third-party-application#introduction",
                   "title": "Introduction"
                 },
                 {
                   "id": "how-to-use",
-                  "url": "/kata-platform/how-to/how-to-use-bulk-training-for-faster-training-process#how-to-use",
+                  "url": "/kata-platform/how-to/using-custom-api-to-access-third-party-application#how-to-use",
                   "title": "How to Use"
                 },
                 {
                   "id": "how-to-collect-api-result",
-                  "url": "/kata-platform/how-to/how-to-use-bulk-training-for-faster-training-process#how-to-collect-api-result",
+                  "url": "/kata-platform/how-to/using-custom-api-to-access-third-party-application#how-to-collect-api-result",
                   "title": "How to Collect API Result"
                 }
               ]
@@ -345,6 +345,56 @@
               ]
             }
           ]
+        },
+        {
+          "title": "FAQs",
+          "items": [
+            {
+              "id": "general-faqs",
+              "url": "/kata-platform/faqs/general-faqs",
+              "title": "General FAQs"
+            },
+            {
+              "id": "bot-development-faqs",
+              "url": "/kata-platform/faqs/bot-development-faqs",
+              "title": "Bot Development FAQs"
+            }
+          ]
+        },
+        {
+          "title": "Glossary",
+          "items": [
+            {
+              "id": "glossary-general",
+              "url": "/kata-platform/glossary/general",
+              "title": "General"
+            },
+            {
+              "id": "glossary-kata-platform",
+              "url": "/kata-platform/glossary/kata-platform",
+              "title": "Kata Platform"
+            },
+            {
+              "id": "glossary-inside-kata-flow",
+              "url": "/kata-platform/glossary/inside-kata-flow",
+              "title": "Inside Kata Flow"
+            },
+            {
+              "id": "glossary-coming-soon",
+              "url": "/kata-platform/glossary/coming-soon",
+              "title": "Coming Soon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Release Notes",
+      "items": [
+        {
+          "id": "release-notes-version",
+          "url": "/kata-platform/release-notes/version",
+          "title": "Version"
         }
       ]
     }
