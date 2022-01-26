@@ -40,6 +40,10 @@ const IndexLayout: React.FC<IndexLayoutProps> = ({ children, navHidden }) => {
       jsonNavigation = require(`docs/toc-business-dashboard.json`);
       setImageUrl('business-dashboard');
       setNavigation(jsonNavigation);
+    } else if (isKataOmnichat) {
+      jsonNavigation = require(`docs/toc-kata-omnichat.json`);
+      setImageUrl('kata-omnichat');
+      setNavigation(jsonNavigation);
     }
   }, [router, navigation, setNavigation]);
 
