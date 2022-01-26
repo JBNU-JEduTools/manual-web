@@ -3,6 +3,8 @@ id: release-note-version
 title: Version
 ---
 
+The latest news, updates, and changes on Business Dashboard
+
 ## 1.5.6
 
 ### What’s New ⭐️

@@ -3,6 +3,8 @@ id: release-note-version
 title: Version
 ---
 
+The latest news, updates, and changes on Kata Omnichat
+
 ## 2.5.5
 
 ### What’s New ⭐️
