@@ -100,12 +100,12 @@
       "items": [
         {
           "id": "inbox-add-inbox",
-          "url": "/kata-omnichat/manage-inbox/inbox-add-inbox",
+          "url": "/kata-omnichat/manage-inbox/add-inbox",
           "title": "Add inbox"
         },
         {
           "id": "inbox-add-agents",
-          "url": "/kata-omnichat/manage-inbox/inbox-add-agents",
+          "url": "/kata-omnichat/manage-inbox/add-agents",
           "title": "Add agents"
         }
       ]

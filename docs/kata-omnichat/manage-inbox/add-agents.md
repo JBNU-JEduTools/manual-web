@@ -9,6 +9,6 @@ The last step before completing the inbox is to add your agents. You can add age
 
 ![](https://lh3.googleusercontent.com/q-BcONZw5GUSN3RARheN4QqDuzAQrySp0IAdIkEYjCI9RCtZJM8sgVpIOFi4HSY9_ukt5qeIuhdDfNrRP3Nv8M7cvX_2e1CsCGwDfJgBZaKLZsxJEbvXVO5IgxSBLZRfzMReKYaI)
 
-Figure 20. Add Agents
+> **Figure 20.** Add Agents
 
-Lastly, your inbox has been created and you can check from the sidebar in the Inboxes submenu.
+Lastly, your inbox has been created and you can check from the sidebar in the **Inboxes** submenu.

@@ -14,6 +14,6 @@ To assign an agent or admin to a conversation, an admin/agent can select the ass
 
 ![](https://lh5.googleusercontent.com/MNFwNGzZiooc01ZYmyeAuqW1-PoeOtcL--nEb9zmtn8cxMaMlQCoVAbMvPNgbn133yOugLKK3yalpn28Bjn9pkVGBQA5KVLoMS4v0xvffvZ7bAFg_n5Hn5r6vOPo4f31DCn8XFr7)
 
-Figure 43. Agent Assignment
+> **Figure 43.** Agent Assignment
 
 Besides that, as an agent you can assign conversation to another agent or administration by following the same steps above.

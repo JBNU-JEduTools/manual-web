@@ -8,4 +8,4 @@ On this page, you can download the agent report by clicking the right upper corn
 
 ![](https://lh3.googleusercontent.com/eb6elCl1G6jOqxEo2rh4xVlzPMywL4jAs1OgQHvnRcvmkjBiQsO0Qe6uSpc1m_Zn1WdfkE82FFObps7bPvpSonDOi6olUR8Sfe_d9irpBGQSzYjEI7Zv7kLCMQwQeJTU8bqbdgeN)
 
-Figure 70. Download Report
+> **Figure 70.** Download Report

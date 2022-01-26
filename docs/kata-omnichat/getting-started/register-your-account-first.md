@@ -9,10 +9,10 @@ next: connect-your-instagram-messaging-inbox
 
 ## Register your account first
 
-[Embed Video link [https://youtu.be/VNgf-ciA-xA](https://youtu.be/VNgf-ciA-xA)]
+<iframe width="600" height="300" src="https://youtu.be/VNgf-ciA-xA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
-1.  Go to [https://omnichat.kata.ai/](https://omnichat.kata.ai/) and click “Create New Account”. After that, fill in your Work email and Password.
-2.  After clicking the Create account button, you’ll be directed to the Onboarding page. You have to fill in some information related to your business and your personal details.
-3.  After you’ve done the Onboarding process, you’ll be directed to the Getting Started page with an unverified account.
-4.  To verify your account, you have to check your email (the verification link is automatically sent to your email) or click the Verify account banner on top of your screen to resend an email verification.
-5.  After you click the verification button in email, you will go back to the Getting Started page with an activated account. You will also receive a product tutorial link in your email.
+1.  Go to [https://omnichat.kata.ai/](https://omnichat.kata.ai/) and click **“Create New Account”**. After that, fill in your **Work email** and **Password**.
+2.  After clicking the **Create account** button, you’ll be directed to the Onboarding page. You have to fill in some information related to your business and your personal details.
+3.  After you’ve done the **Onboarding** process, you’ll be directed to the **Getting Started** page with an unverified account.
+4.  To verify your account, you have to check your email (the verification link is automatically sent to your email) or click the **Verify account** banner on top of your screen to resend an email verification.
+5.  After you click the verification button in email, you will go back to the **Getting Started** page with an activated account. You will also receive a product tutorial link in your email.
