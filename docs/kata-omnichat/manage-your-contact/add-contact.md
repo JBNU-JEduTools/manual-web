@@ -1,4 +1,9 @@
-## Add contact
+---
+id: add-contact
+title: Add contact
+prev: view-contact
+next: add-label
+---
 
 Besides getting contact from interaction, you can add a contact by yourself.
 

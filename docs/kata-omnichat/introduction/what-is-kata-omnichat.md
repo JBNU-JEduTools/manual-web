@@ -1,7 +1,6 @@
 ---
 id: what-is-kata-omnichat
 title: What is Kata Omnichat
-prev: what-is-kata-omnichat
 next: benefits-with-kata-omnichat
 ---
 

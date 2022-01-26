@@ -1,4 +1,9 @@
-## Setup quick reply
+---
+id: set-up-quick-reply
+title: Setup quick reply
+prev: manage-agents-to-inbox
+next: set-up-business-hours
+---
 
 The quick replies is the feature that you can manage any Quick Reply that they want to show to their customers using a button-type reply. In one quick reply, you can input up to 13 quick answers. Follow these steps to set up your quick reply:
 

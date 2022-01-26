@@ -1,4 +1,9 @@
-## Conversation in Customer-side for Instagram Messaging (without bot)
+---
+id: conversation-in-customer-side-without-bot
+title: Conversation in Customer-side for Instagram Messaging (without bot)
+prev: conversation-in-customer-side-using-bot
+next: see-conversation-between-chatbot-and-customer
+---
 
 1.  Customers send messages to the Instagram account
 2.  Also, customers can reply to the brand's Instagram Story (Instagram Story Reply) or mention the brand's Instagram account in the customer's Instagram Story (Instagram Story Mention).

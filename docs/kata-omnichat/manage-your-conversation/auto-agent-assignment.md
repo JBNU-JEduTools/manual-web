@@ -1,4 +1,9 @@
-## Auto agent assignment
+---
+id: auto-agent-assignment
+title: Auto agent assignment
+prev: manual-agent-assignment
+next: resolve-conversation
+---
 
 Omnichat provides a round-robin auto-assignment system for conversations. The assignment follows the logic mentioned below.
 

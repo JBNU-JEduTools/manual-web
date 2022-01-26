@@ -1,4 +1,9 @@
-## How to use
+---
+id: audio-notification-how-to-use
+title: How to use
+prev: audio-notification-introduction
+next: change-your-status-introduction
+---
 
 To enable audio notifications, you need to follow these steps
 

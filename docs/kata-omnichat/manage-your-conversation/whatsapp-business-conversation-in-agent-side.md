@@ -1,4 +1,9 @@
-## Whatsapp Business API conversation in agent-side (with or without bot)
+---
+id: whatsapp-business-conversation-in-agent-side
+title: Whatsapp Business API conversation in agent-side (with or without bot)
+prev: whatsapp-business-conversation-using-bot
+next: conversation-in-customer-side-using-bot
+---
 
 1.  Customers started to chat to WABA number
 2.  Customers can send to and receive messages from agents using these types of messages: text, image, video, and document

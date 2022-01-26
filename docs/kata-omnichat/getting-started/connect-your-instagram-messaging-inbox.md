@@ -1,4 +1,9 @@
-## Connect your Instagram Messaging inbox
+---
+id: connect-your-instagram-messaging-inbox
+title: Connect your Instagram Messaging inbox
+prev: register-your-account-first
+next: connect-your-waba-inbox
+---
 
 1.  In the Getting Started page, you have to click the Connect button in Instagram Messaging. Or, you can go to Inboxes menu, click Add new inbox button and click Instagram channel.
 2.  You will see the Get Started page of Instagram Messaging and follow all the steps, including answering some integration questions and mini survey.

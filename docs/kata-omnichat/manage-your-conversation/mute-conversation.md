@@ -1,4 +1,9 @@
-## Mute conversation
+---
+id: mute-conversation
+title: Mute conversation
+prev: take-over-bot
+next: download-transcript
+---
 
 In Kata Omnichat, both admin and agents can manage the conversation to mute the conversation. The mute conversation is the feature when you can’t see the conversation for 6 hours.
 

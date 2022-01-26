@@ -1,4 +1,9 @@
-## How to use
+---
+id: access-token-how-to-use
+title: How to use
+prev: access-token-introduction
+next: audio-notification-introduction
+---
 
 1.  Login account
 2.  Click on 3 kebab menu icons in the left under the corner of your dashboard, besides your name

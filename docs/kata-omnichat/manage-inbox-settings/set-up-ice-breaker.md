@@ -1,4 +1,9 @@
-## Set Up Ice Breaker
+---
+id: set-up-ice-breaker
+title: Set Up Ice Breaker
+prev: set-up-business-hours
+next: add-agent
+---
 
 Ice Breakers section provides a way for very first time end-users to start a conversation with a business with a list of frequently asked questions. The steps to set up Ice breaker are shown as below:
 

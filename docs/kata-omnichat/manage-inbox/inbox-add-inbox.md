@@ -1,4 +1,9 @@
-# Manage inbox
+---
+id: inbox-add-inbox
+title: Manage inbox
+prev: configure-account-how-to-use
+next: inbox-add-agents
+---
 
 Inbox is the feature where you can connect your messaging channels to your Kata Omnichat account. Currently, Kata Omnichat provides 2 kinds of inboxes which are Whatsapp Business and Instagram Messaging.
 

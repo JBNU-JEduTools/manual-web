@@ -1,6 +1,9 @@
-# Manage your contact
-
-## View contact
+---
+id: view-contact
+title: View contact
+prev: download-transcript
+next: add-contact
+---
 
 The contacts section in Omnichat contains the details of end users/customers that you have interacted with. You can consider it as a Customer Database. Follow these steps to go to contact.
 

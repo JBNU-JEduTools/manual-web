@@ -1,4 +1,9 @@
-## Manual Agent Assignment
+---
+id: manual-agent-assignment
+title: Manual Agent Assignment
+prev: using-private-notes-in-conversations
+next: auto-agent-assignment
+---
 
 Every conversation in Omnichat can have an assignee. An assignee can be manually added to the conversation or the organizations can opt for a round-robin assignment system. A conversation can be manually assigned to 2 categories of users.
 

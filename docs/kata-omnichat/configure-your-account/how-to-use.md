@@ -1,4 +1,9 @@
-## How to use
+---
+id: configure-account-how-to-use
+title: How to use
+prev: configure-account-introduction
+next: inbox-add-inbox
+---
 
 To update your account setting, you can follow these steps:
 

@@ -1,4 +1,9 @@
-# Manage label
+---
+id: add-label
+title: Manage label
+prev: add-contact
+next: add-conversation-to-a-label
+---
 
 Labels help you to categorize conversations and prioritize them. You can assign a label to a conversation from the side panel. Labels are tied to the account and can be used to create custom workflows in your organization. You can assign custom colors to a label, it makes it easier to identify the label. You will be able to display the label on the sidebar to filter the conversations easily. Labels can be added by administrator only, while agents can participate in adding conversation into a label.
 

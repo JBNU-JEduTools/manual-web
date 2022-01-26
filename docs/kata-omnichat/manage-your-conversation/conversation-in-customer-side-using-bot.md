@@ -1,4 +1,9 @@
-## Conversation in Customer-side using bot
+---
+id: conversation-in-customer-side-using-bot
+title: Conversation in Customer-side using bot
+prev: whatsapp-business-conversation-in-agent-side
+next: conversation-in-customer-side-without-bot
+---
 
 1.  Customers send messages to the Instagram account
 2.  Also, customers can reply to the brand's Instagram Story (Instagram Story Reply) or mention the brand's Instagram account in the customer's Instagram Story (Instagram Story Mention).
