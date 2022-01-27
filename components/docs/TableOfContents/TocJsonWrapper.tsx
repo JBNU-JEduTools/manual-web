@@ -11,27 +11,30 @@ import {
 
 import { TocHeader, TocText } from './styled';
 import { Edge, MenuNode } from 'interfaces/nodes';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 interface TocJsonWrapperProps {
   tree: Edge<MenuNode> | MenuNode;
   onClick: (e: any, url: string) => void;
   isItemSelected: (url: string) => boolean;
+  isAccordionHeaderActive: (url: string) => boolean;
 }
 
 function NestedTocJsonWrapper({
   item,
   onClick,
   isItemSelected,
+  isAccordionHeaderActive,
 }: {
   item: MenuNode;
   onClick: (e: any, url: string) => void;
   isItemSelected: (url: string) => boolean;
+  isAccordionHeaderActive: (url: string) => boolean;
 }) {
   return (
     <Accordion type="multiple">
       <AccordionItem key={item.title} value={item.title}>
-        <AccordionHeader size="lg">
+        <AccordionHeader size="lg" isActive={isAccordionHeaderActive && isAccordionHeaderActive(item.url)}>
           <TocText>{item.title}</TocText>
         </AccordionHeader>
         {item.items.map((itemChildren) => {
@@ -62,7 +65,7 @@ function NestedTocJsonWrapper({
   );
 }
 
-function TocJsonWrapper({ tree, onClick, isItemSelected }: TocJsonWrapperProps) {
+function TocJsonWrapper({ tree, onClick, isItemSelected, isAccordionHeaderActive }: TocJsonWrapperProps) {
   return tree?.items.length ? (
     <Accordion type="multiple">
       {tree.items.map((item) => {
@@ -77,6 +80,7 @@ function TocJsonWrapper({ tree, onClick, isItemSelected }: TocJsonWrapperProps) 
                   }
                 }}
                 size="lg"
+                isActive={isAccordionHeaderActive && isAccordionHeaderActive(item.url)}
               >
                 <TocText>{item.title}</TocText>
               </AccordionHeader>
@@ -115,7 +119,12 @@ function TocJsonWrapper({ tree, onClick, isItemSelected }: TocJsonWrapperProps) 
                 <TocHeader>{item.title}</TocHeader>
                 {item.items?.length ? (
                   <Box my={12}>
-                    <TocJsonWrapper tree={item} onClick={onClick} isItemSelected={isItemSelected} />
+                    <TocJsonWrapper
+                      tree={item}
+                      onClick={onClick}
+                      isItemSelected={isItemSelected}
+                      isAccordionHeaderActive={isAccordionHeaderActive}
+                    />
                   </Box>
                 ) : null}
               </AccordionItem>
@@ -139,7 +148,12 @@ function TocJsonWrapper({ tree, onClick, isItemSelected }: TocJsonWrapperProps) 
                 {item.title}
               </ActionListItem>
               {item.items?.length ? (
-                <TocJsonWrapper tree={item} onClick={onClick} isItemSelected={isItemSelected} />
+                <TocJsonWrapper
+                  tree={item}
+                  onClick={onClick}
+                  isItemSelected={isItemSelected}
+                  isAccordionHeaderActive={isAccordionHeaderActive}
+                />
               ) : null}
             </AccordionItem>
           </Box>
@@ -159,16 +173,22 @@ const AccordionItem = styled(AccordionItemAksara)`
   }
 `;
 
-const AccordionHeader = styled(AccordionHeaderAksara)`
+const activeAccordionHeaderStyle = css`
+  span,
+  svg {
+    color: ${theme.colors.blue07};
+  }
+  svg > path {
+    fill: currentColor;
+  }
+`;
+
+const AccordionHeader = styled(AccordionHeaderAksara)<{ isActive: boolean }>`
   font-size: 14px;
   margin-bottom: 8px;
-  color: ${theme.colors.greymed05};
-
+  ${(props) => (props.isActive ? activeAccordionHeaderStyle : '')}
   button {
     padding: 8px;
-  }
-
-  button:focus {
   }
 `;
 

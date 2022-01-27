@@ -71,7 +71,12 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>
-                <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isItemSelected={isItemSelected} />
+                <TocJsonWrapper
+                  tree={toc}
+                  onClick={onTocSidebarClick}
+                  isItemSelected={isItemSelected}
+                  isAccordionHeaderActive={isItemSelected} // the logic is same because based on one file only
+                />
               </div>
             )}
             <DocsContainer>

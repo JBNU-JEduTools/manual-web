@@ -52,6 +52,12 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
     },
     [router]
   );
+  const isAccordionHeaderActive = React.useCallback(
+    (tag: string): boolean => {
+      return router.asPath.indexOf(tag) !== -1;
+    },
+    [router]
+  );
   return (
     <Page docsPage>
       <Head>
@@ -74,7 +80,12 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>
-                <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isItemSelected={isItemSelected} />
+                <TocJsonWrapper
+                  tree={toc}
+                  onClick={onTocSidebarClick}
+                  isItemSelected={isItemSelected}
+                  isAccordionHeaderActive={isAccordionHeaderActive}
+                />
               </div>
             )}
             <DocsContainer>
