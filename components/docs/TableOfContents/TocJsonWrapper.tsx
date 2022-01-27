@@ -1,10 +1,10 @@
 import React from 'react';
 import {
   Accordion,
-  AccordionContent,
-  AccordionHeader,
+  AccordionContent as AccordionContentAksara,
+  AccordionHeader as AccordionHeaderAksara,
   AccordionItem as AccordionItemAksara,
-  ActionListItem,
+  ActionListItem as ActionListItemAksara,
   Box,
   theme,
 } from '@aksara-ui/react';
@@ -30,13 +30,13 @@ function NestedTocJsonWrapper({
 }) {
   return (
     <Accordion type="multiple">
-      <AccordionItem style={accordionItemStyle} key={item.title} value={item.title}>
-        <AccordionHeader style={accordionHeaderStyle} size="lg">
+      <AccordionItem key={item.title} value={item.title}>
+        <AccordionHeader size="lg">
           <TocText>{item.title}</TocText>
         </AccordionHeader>
         {item.items.map((itemChildren) => {
           return (
-            <AccordionContent style={accordionContentStyle} key={itemChildren.title}>
+            <AccordionContent key={itemChildren.title}>
               {itemChildren.items?.length ? (
                 <>
                   <NestedTocJsonWrapper item={itemChildren} onClick={onClick} isActiveItem={isActiveItem} />
@@ -50,7 +50,6 @@ function NestedTocJsonWrapper({
                   }}
                   isActive={isActiveItem && isActiveItem(itemChildren.url)}
                   indicator={false}
-                  style={actionListStyle(isActiveItem && isActiveItem(itemChildren.url))}
                 >
                   {itemChildren.title}
                 </ActionListItem>
@@ -70,21 +69,20 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
         // if using accordion
         if (item.useAccordion) {
           return item.items.length ? (
-            <AccordionItem style={accordionItemStyle} key={item.title} value={item.title}>
+            <AccordionItem key={item.title} value={item.title}>
               <AccordionHeader
                 onClick={(e) => {
                   if (onClick && item.url) {
                     onClick(e, item.url);
                   }
                 }}
-                style={accordionHeaderStyle}
                 size="lg"
               >
                 <TocText>{item.title}</TocText>
               </AccordionHeader>
               {item.items.map((itemChildren) => {
                 return (
-                  <AccordionContent style={accordionContentStyle} key={itemChildren.title}>
+                  <AccordionContent key={itemChildren.title}>
                     {itemChildren.items?.length ? (
                       <>
                         <NestedTocJsonWrapper item={itemChildren} onClick={onClick} isActiveItem={isActiveItem} />
@@ -98,7 +96,6 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                         }}
                         isActive={isActiveItem && isActiveItem(itemChildren.url)}
                         indicator={false}
-                        style={actionListStyle(isActiveItem && isActiveItem(itemChildren.url))}
                       >
                         {itemChildren.title}
                       </ActionListItem>
@@ -113,11 +110,13 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
         // This is section title without url
         else if (!item.url) {
           return (
-            <Box mt={12} key={item.title}>
+            <Box key={item.title}>
               <AccordionItem value={item.title}>
                 <TocHeader>{item.title}</TocHeader>
                 {item.items?.length ? (
-                  <TocJsonWrapper tree={item} onClick={onClick} isActiveItem={isActiveItem} />
+                  <Box my={12}>
+                    <TocJsonWrapper tree={item} onClick={onClick} isActiveItem={isActiveItem} />
+                  </Box>
                 ) : null}
               </AccordionItem>
             </Box>
@@ -136,7 +135,6 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                 }}
                 isActive={isActiveItem && isActiveItem(item.url)}
                 indicator={false}
-                style={actionListStyle(isActiveItem && isActiveItem(item.url))}
               >
                 {item.title}
               </ActionListItem>
@@ -152,36 +150,37 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
 export default TocJsonWrapper;
 
 const AccordionItem = styled(AccordionItemAksara)`
+  margin-left: -8px;
+  margin-top: 8px;
   div {
     display: flex;
   }
 `;
 
-const accordionItemStyle = {
-  marginLeft: '-8px',
-  marginTop: '8px',
-};
+const AccordionHeader = styled(AccordionHeaderAksara)`
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: ${theme.colors.greymed05};
 
-const accordionHeaderStyle = {
-  fontSize: '14px',
-  marginBottom: '8px',
-  color: theme.colors.greymed05,
-};
+  button {
+    padding: 8px;
+  }
+`;
 
-const accordionContentStyle = {
-  display: 'flex',
-  marginLeft: '24px',
-  borderLeft: `1px solid ${theme.colors.greylight03}`,
-};
+const AccordionContent = styled(AccordionContentAksara)`
+  display: 'flex';
+  margin-left: 24px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-left: 1px solid ${theme.colors.greylight03};
+`;
 
-const actionListStyle = (isActive: boolean) => {
-  return {
-    width: '100%',
-    display: 'block',
-    padding: '8px 0 8px 16px',
-    margin: '2px 0',
-    borderRadius: '12px',
-    color: isActive ? theme.colors.blue07 : theme.colors.greymed05,
-    backgroundColor: isActive ? theme.colors.blue01 : theme.colors.white,
-  };
-};
+const ActionListItem = styled(ActionListItemAksara)`
+  width: 100%;
+  display: 'block';
+  padding: 4px 0 4px 8px;
+  margin: 2px 0;
+  border-radius: 12px;
+  color: ${(props) => (props.isActive ? theme.colors.blue07 : theme.colors.greymed05)};
+  background-color: ${(props) => (props.isActive ? theme.colors.blue01 : theme.colors.white)};
+`;
