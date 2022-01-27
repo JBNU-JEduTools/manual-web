@@ -34,7 +34,7 @@ function NestedTocJsonWrapper({
   return (
     <Accordion type="multiple">
       <AccordionItem key={item.title} value={item.title}>
-        <AccordionHeader size="lg" isActive={isAccordionHeaderActive && isAccordionHeaderActive(item.url)}>
+        <AccordionHeader size="md" isActive={isAccordionHeaderActive && isAccordionHeaderActive(item.url)}>
           <TocText>{item.title}</TocText>
         </AccordionHeader>
         {item.items.map((itemChildren) => {
@@ -84,7 +84,7 @@ function TocJsonWrapper({ tree, onClick, isItemSelected, isAccordionHeaderActive
                     onClick(e, item.url);
                   }
                 }}
-                size="lg"
+                size="md"
                 isActive={isAccordionHeaderActive && isAccordionHeaderActive(item.url)}
               >
                 <TocText>{item.title}</TocText>
@@ -197,9 +197,6 @@ const AccordionHeader = styled(AccordionHeaderAksara)<{ isActive: boolean }>`
   font-size: 14px;
   margin-bottom: 8px;
   ${(props) => (props.isActive ? activeAccordionHeaderStyle : '')}
-  button {
-    padding: 8px;
-  }
 `;
 
 const AccordionContent = styled(AccordionContentAksara)`
