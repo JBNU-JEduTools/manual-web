@@ -54,8 +54,9 @@ export const styleJSX = css`
     top: 0;
     padding-right: 24px;
     padding-left: 24px;
+    padding-bottom: 16px;
     width: 23%;
-    height: -webkit-fill-available;
+    height: 100%;
     overflow-y: auto;
     z-index: 10;
     background-color: #fff;
