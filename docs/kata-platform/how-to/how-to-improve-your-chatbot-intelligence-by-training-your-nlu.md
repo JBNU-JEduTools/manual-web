@@ -22,7 +22,7 @@ This guide will teach you how to integrate NLU into your chatbot to recognize sp
 2. Click **Create Entity** to set up a new entity. It will show a form on the right screen. Fill in the entity name.
 3. **Inherit** lets you copy an entity from any public NLU on the Kata Platform. To inherit an NLU, type the NLU ID with `[username]:[project name]`. Inherited entities will sync to the original entity, including the labels and training data. For example, in the [getting started chatbot](/kata-platform/documentation-content/start-your-first-chatbot) section, your NLU ID format is `muhfadhiilkata:test_simple_bot`.
 4. **Type** is intended for the entity type. We have 3 entity types in the Kata Platform:
-    - **Trait** is a text classifierclassifyings a sentence into particular labels. This type is suitable for making your bot recognize nuance in a sentence.
+    - **Trait** is a text classifier to classify a sentence into a particular labels. This type is suitable for making your bot recognize nuance in a sentence.
     - **Dictionary** is a word tagger which has keys and labels. It will form an array.
     - The **Phrase** is a word tagger.
 
