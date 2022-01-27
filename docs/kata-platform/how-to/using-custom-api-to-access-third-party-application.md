@@ -1,6 +1,8 @@
 ---
 id: using-custom-api-to-access-third-party-application
 title: Using Custom API to Access Third-Party Application
+prev: how-to-use-bulk-training-for-faster-training-process
+next: how-to-change-error-messages-in-your-chatbot
 ---
 
 In this guidance, you will be able to implement a bot that uses an action type API.

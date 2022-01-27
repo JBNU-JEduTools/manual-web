@@ -197,6 +197,39 @@
               ]
             },
             {
+              "id": "how-to-improve-your-chatbot-intelligence-by-training-your-nlu",
+              "url": "/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu",
+              "title": "How to Improve Your Chatbot Intelligence by Training Your NLU",
+              "useAccordion": true,
+              "items": [
+                {
+                  "id": "introduction",
+                  "url": "/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu#introduction",
+                  "title": "Introduction"
+                },
+                {
+                  "id": "how-to-use",
+                  "url": "/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu#how-to-use",
+                  "title": "How to Use"
+                },
+                {
+                  "id": "training-your-nlu",
+                  "url": "/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu#training-your-nlu",
+                  "title": "Training your NLU"
+                },
+                {
+                  "id": "test-your-nlu",
+                  "url": "/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu#test-your-nlu",
+                  "title": "Test Your NLU"
+                },
+                {
+                  "id": "advanced-guidelines-to-design-and-train-your-nlu",
+                  "url": "/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu#advanced-guidelines-to-design-and-train-your-nlu",
+                  "title": "Advanced guidelines to design and train your NLU"
+                }
+              ]
+            },
+            {
               "id": "how-to-use-nlu-threshold-to-enhance-customer-experience",
               "url": "/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience",
               "title": "How to Use NLU Threshold to Enhance Customer Experience",

@@ -1,6 +1,8 @@
 ---
 id: how-to-use-bulk-training-for-faster-training-process
 title: How to Use Bulk Training For Faster Training Process
+prev: how-to-use-training-data-generator-to-automate-generating-training-data
+next: using-custom-api-to-access-third-party-application
 ---
 
 ## What is Bulk Training

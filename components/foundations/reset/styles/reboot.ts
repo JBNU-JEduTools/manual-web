@@ -355,6 +355,7 @@ const reboot = css`
 
   .info {
     margin-top: 24px;
+    margin-bottom: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
