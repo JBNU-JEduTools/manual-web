@@ -13,9 +13,9 @@ Changing password is the feature where agents and administrators can change thei
 4. Set your new password
 5. Click the **“Update Profile”** button
 
-![](https://lh6.googleusercontent.com/7uOfb0b0jOX-5PyeeVhNRDx1bZ5PwrwTpIL0tAhjhWiwCPV_mtI4JCxZqrUZ10GSMK0RaqTXJ4ul7Dca10zrpYnGlPYdGVyDqz-Z3AA99XLCwksgQCnySRE0idB8VpAwnsdHXBAn)
+    ![Figure 13](/assets/images/products/kata-omnichat/image13.png)
 
-> **Figure 13:** Change Password
+    > **Figure 13:** Change Password
 
 Changing passwords helps you to maintain your profile security by regularly changing your password. If you
 

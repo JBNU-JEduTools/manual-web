@@ -14,7 +14,7 @@ When completing the conversation, you need to be notified that the conversation 
     Note: Make sure you change the agent name beside the resolve button to be none to make sure if there is any upcoming message from the same customer, they will not go to the same agent.
     ```
 
-    ![](https://lh3.googleusercontent.com/9nHuZnON7aa_lEvsQfclu7J8vlsaXVO19r4bUldkihyVUgroDMIV6QopZotaXbg09K_fOCPTGw43_ZJYC_SwPesltu_PkyKnE7aF6wk4zt92_jSyFxUzjm28p5LXsdTBWJZYtEa-)
+    ![Figure 45](/assets/images/products/kata-omnichat/image45.png)
 
     > **Figure 45.** Resolve Conversation
 

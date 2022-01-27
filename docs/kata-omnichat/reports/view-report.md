@@ -11,9 +11,9 @@ The report shows the activity of your conversation from all channels or inboxes.
 
 To view the report, you need to click reports on the sidebar, then you will be directed to the report. On the reports dashboard, you can see the metrics which are conversations count, incoming message count, outgoing message count, first response time, resolution time, and resolution count. You can also filter the report by period.
 
-    ![](https://lh6.googleusercontent.com/kjGmC5LhbRfHGp4Yf9delxAn0JlPVb_Tqg9blEeM1CjzZkpuKxA6fQBPLSyJXFSLfF0gJXhWRsjCbLeQLXZx_Eexjr39Ri7NfSYUJsgi2Fri02E5akolctGJ9TqrSCj_ti9k6tw5)
+![Figure 69](/assets/images/products/kata-omnichat/image69.png)
 
-    > **Figure 69.** Report View
+> **Figure 69.** Report View
 
 Please find the related metrics of the reports.
 

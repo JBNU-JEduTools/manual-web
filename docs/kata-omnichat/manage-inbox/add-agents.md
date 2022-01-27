@@ -7,7 +7,7 @@ next: manage-agents-to-inbox
 
 The last step before completing the inbox is to add your agents. You can add agents that have been invited and verified. Or, if you don’t have any agents yet, you can just add admin first and add another agent later.
 
-![](https://lh3.googleusercontent.com/q-BcONZw5GUSN3RARheN4QqDuzAQrySp0IAdIkEYjCI9RCtZJM8sgVpIOFi4HSY9_ukt5qeIuhdDfNrRP3Nv8M7cvX_2e1CsCGwDfJgBZaKLZsxJEbvXVO5IgxSBLZRfzMReKYaI)
+![Figure 20](/assets/images/products/kata-omnichat/image20.png)
 
 > **Figure 20.** Add Agents
 

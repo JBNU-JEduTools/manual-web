@@ -16,15 +16,15 @@ To set up your profile, you can follow these steps:
 3. Click **Profile Setting**
 4. You will be directed to the page where you can set up your profile
 
-![](https://lh5.googleusercontent.com/U-QKvgLoSljboR5nlathyF38yd3C0LSu_6US-IjuZMMd8ia0JqkAZZrSAe9FCVlObElVqvCPNA7zUMfBuL8pjLNScsjFYeHiP65KWO27l4wX1c3rVTR6dNo8NlbCrk8KLqHMo0LL)
+    ![Figure 11](/assets/images/products/kata-omnichat/image11.png)
 
-> **Figure 11:** Profile Setting
+    > **Figure 11:** Profile Setting
 
 ## Update profile
 
 On this page, Omnichat provides the place for the admin and agent to update the profile to make it easier to identify in the team.
 
-![](https://lh4.googleusercontent.com/Q8ZBbLC-l039xkpvoR8U2MO8-Qu5HyKrxQamZeXZlnX3afUo0-WmxoOz2wGyb0uXS55xldRwsYpqYPCt5r6-Fbzyfl2DctnpQJy8SJwM-fh7HxiWDjyS4xUYLONxR8puUBm3Xdar)
+![Figure 12](/assets/images/products/kata-omnichat/image12.png)
 
 > **Figure 12:** Update profile
 

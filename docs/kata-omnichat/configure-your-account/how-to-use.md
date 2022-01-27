@@ -14,13 +14,13 @@ To update your account setting, you can follow these steps:
 5. Click the **Update setting **button\*\* \*\*on the top corner of the page
 6. After you click the update setting, there will be a message _“Successfully updated account settings”_ if the update is successful
 
-![](https://lh4.googleusercontent.com/sDo-nW2ujdkrJg4gbFOD-f6IMJkCouuEna6n4jv0cdoG1B1zWbkAHQfBCw2aP-Z391nPrKcgnrWFvtiC8vIqG-Ys7kmbkFyQp-Z4F7JkV1LPYBlPtseAJRu-5liqwqR32UQx_fPc)
+    ![Figure 14](/assets/images/products/kata-omnichat/image14.png)
 
-> **Figure 14:** Setting Navigation bar
+    > **Figure 14:** Setting Navigation bar
 
-![](https://lh4.googleusercontent.com/QYippIhqPoSYP26n8dIFbNSsKK7PBLkdmR7DGEekIK-54GPLv-tKjTX1DCmPrkQqtLiZ22jy6RRNluf3DyOXDMt1ovKythbxPloXcihicT3xzvTE1j9vutIrUgnvRl_fiqYu6Is4)
+    ![Figure 15](/assets/images/products/kata-omnichat/image15.png)
 
-Figure 15. General Account setting
+    Figure 15. General Account setting
 
 The available setting will be shown as below:
 

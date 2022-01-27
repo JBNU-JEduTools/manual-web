@@ -8,17 +8,18 @@ next: edit-agent
 An agent is a member of your Customer Support team. Agents will be able to view and reply to messages from your users. Follow these steps to set up your agent:
 
 1. Go to Home, then click **Settings**
-2. Click **Agents, **then click **Add Agents** button to add a new agent
-   ![](https://lh3.googleusercontent.com/QgSmCSgPgXJbU_xq59aQ7Dyu8cbAlKDbWfrwhnfRwvUoOKYco840SWec9oyFgYFyC4dBu2WeNW0TQ5YMXKHFznQ3JvmOiYxt93hwsR58Le_yTm-zd0cXZ5xsy341s7ZMgWPufDbM)
+2. Click **Agents,** then click **Add Agents** button to add a new agent
+
+    ![Figure 29](/assets/images/products/kata-omnichat/image29.png)
 
     > **Figure 29.** Manage Agent
 
 3. Add **Agent Name**, **Email** and **Role,** then click **Add Agent** to send an invitation to your agent
 4. Once your agents accept the invitation by setting up the password, they can start to explore the dashboard
 
-    ![](https://lh6.googleusercontent.com/xUI3U2ShV917Loee5UYjslOxNPYWyx3mBuZ7YMQ1V61jk6C6xbTczu5tda4Z1emDj_bkqYUcmxT98z-VDMT4t-wJq1NxGphtB2HYBk3FpOT8vPqJ6aHh2PsAF09W1pH5uPcpAOsp)
+    ![Figure 30](/assets/images/products/kata-omnichat/image30.png)
 
-    > Figure 30. Add Agent via Email
+    > **Figure 30.** Add Agent via Email
 
 When you are in step 3, you need to enter the agent information as shown below:
 

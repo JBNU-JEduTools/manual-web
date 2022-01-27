@@ -9,6 +9,6 @@ As an agent, you will see the conversations that were assigned to you, both manu
 
 1. **Unassigned:** The first incoming message that is not assigned to you. This will help the agent to identify which conversation is not awarded by agents
 2. **Mine**: The incoming conversation that has already been assigned to me. This will help the admin to identify which chat needs to handle
-   ![](https://lh5.googleusercontent.com/jv5ORrfZTw9gWtF9DdENnyhhNjKsqIpuyKoUcGe0tuQh5Dalm9BN8h3vzgLoLfMm-ueglGWXaqOJdmtbxassKxqhr4RgXDwQOfRG4sAjxxQh8VsqI9vaSg21tMIfkxUktEWWJW76)
+   ![Figure 37](/assets/images/products/kata-omnichat/image37.png)
 
     > Figure 37. Agent View Conversation

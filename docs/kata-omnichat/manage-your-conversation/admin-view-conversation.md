@@ -15,12 +15,12 @@ In Kata Omnichat, There will be 3 kinds of conversations: **Open**, **resolve,**
 
 ## Admin view conversation
 
-As admin, you will see all incoming conversations to your inboxes. In the conversation box, you will see 3 options in the tab: **Mine, Unassigned, **and** All**. Learn more about these as below:
+As admin, you will see all incoming conversations to your inboxes. In the conversation box, you will see 3 options in the tab: **Mine, Unassigned,** and **All**. Learn more about these as below:
 
 1. **Unassigned:** The first incoming message will go to **unassigned conversation**. This will help admin to identify which conversation needs to be assigned. Admin needs to assign an online agent to move the conversation from unassigned. Learn more to assign to your agent [here](/kata-omnichat/manage-your-conversation/manual-agent-assignment)
 2. **Mine**: The incoming conversation that has already been assigned to me as an agent. This will help the admin to identify which chat needs to handle
 3. **All:** All conversations will be recorded in the All tab, both assigned or unassigned
 
-![](https://lh5.googleusercontent.com/RP0HxuKhAtZxEIH2a4vxAhd6FkQwyo65u2x7VPABmTk-oLv9IR2w509nqNigtkkBuLvCbpF_FY7iv6w7YAHbhn0V1QQMdErQYXLxEnp3VrDn-KQyL9VQHYZTCQuH3rQfxo5kP9WE)
+    ![Figure 36](/assets/images/products/kata-omnichat/image36.png)
 
-> **Figure 36.** Admin View Conversation
+    > **Figure 36.** Admin View Conversation
