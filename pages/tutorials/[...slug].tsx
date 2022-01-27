@@ -41,7 +41,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
     router.push(url);
   }, []);
 
-  const isActiveItem = React.useCallback(
+  const isItemSelected = React.useCallback(
     (tag: string): boolean => {
       // because toc based on one file only, the comparison is after # tag only
       return router.asPath.indexOf(tag) !== -1;
@@ -71,7 +71,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>
-                <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isActiveItem={isActiveItem} />
+                <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isItemSelected={isItemSelected} />
               </div>
             )}
             <DocsContainer>

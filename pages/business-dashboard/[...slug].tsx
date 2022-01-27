@@ -46,7 +46,7 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
     router.push(url);
   }, []);
 
-  const isActiveItem = React.useCallback(
+  const isItemSelected = React.useCallback(
     (url: string): boolean => {
       return url === router.asPath;
     },
@@ -75,7 +75,7 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>
-                <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isActiveItem={isActiveItem} />
+                <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isItemSelected={isItemSelected} />
               </div>
             )}
             <DocsContainer>

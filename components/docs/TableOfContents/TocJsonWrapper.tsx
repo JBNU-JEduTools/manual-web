@@ -16,17 +16,17 @@ import styled from 'styled-components';
 interface TocJsonWrapperProps {
   tree: Edge<MenuNode> | MenuNode;
   onClick: (e: any, url: string) => void;
-  isActiveItem: (url: string) => boolean;
+  isItemSelected: (url: string) => boolean;
 }
 
 function NestedTocJsonWrapper({
   item,
   onClick,
-  isActiveItem,
+  isItemSelected,
 }: {
   item: MenuNode;
   onClick: (e: any, url: string) => void;
-  isActiveItem: (url: string) => boolean;
+  isItemSelected: (url: string) => boolean;
 }) {
   return (
     <Accordion type="multiple">
@@ -39,7 +39,7 @@ function NestedTocJsonWrapper({
             <AccordionContent key={itemChildren.title}>
               {itemChildren.items?.length ? (
                 <>
-                  <NestedTocJsonWrapper item={itemChildren} onClick={onClick} isActiveItem={isActiveItem} />
+                  <NestedTocJsonWrapper item={itemChildren} onClick={onClick} isItemSelected={isItemSelected} />
                 </>
               ) : (
                 <ActionListItem
@@ -48,7 +48,7 @@ function NestedTocJsonWrapper({
                       onClick(e, itemChildren.url);
                     }
                   }}
-                  isActive={isActiveItem && isActiveItem(itemChildren.url)}
+                  isActive={isItemSelected && isItemSelected(itemChildren.url)}
                   indicator={false}
                 >
                   {itemChildren.title}
@@ -62,7 +62,7 @@ function NestedTocJsonWrapper({
   );
 }
 
-function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
+function TocJsonWrapper({ tree, onClick, isItemSelected }: TocJsonWrapperProps) {
   return tree?.items.length ? (
     <Accordion type="multiple">
       {tree.items.map((item) => {
@@ -85,7 +85,7 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                   <AccordionContent key={itemChildren.title}>
                     {itemChildren.items?.length ? (
                       <>
-                        <NestedTocJsonWrapper item={itemChildren} onClick={onClick} isActiveItem={isActiveItem} />
+                        <NestedTocJsonWrapper item={itemChildren} onClick={onClick} isItemSelected={isItemSelected} />
                       </>
                     ) : (
                       <ActionListItem
@@ -94,7 +94,7 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                             onClick(e, itemChildren.url);
                           }
                         }}
-                        isActive={isActiveItem && isActiveItem(itemChildren.url)}
+                        isActive={isItemSelected && isItemSelected(itemChildren.url)}
                         indicator={false}
                       >
                         {itemChildren.title}
@@ -115,7 +115,7 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                 <TocHeader>{item.title}</TocHeader>
                 {item.items?.length ? (
                   <Box my={12}>
-                    <TocJsonWrapper tree={item} onClick={onClick} isActiveItem={isActiveItem} />
+                    <TocJsonWrapper tree={item} onClick={onClick} isItemSelected={isItemSelected} />
                   </Box>
                 ) : null}
               </AccordionItem>
@@ -133,12 +133,14 @@ function TocJsonWrapper({ tree, onClick, isActiveItem }: TocJsonWrapperProps) {
                     onClick(e, item.url);
                   }
                 }}
-                isActive={isActiveItem && isActiveItem(item.url)}
+                isActive={isItemSelected && isItemSelected(item.url)}
                 indicator={false}
               >
                 {item.title}
               </ActionListItem>
-              {item.items?.length ? <TocJsonWrapper tree={item} onClick={onClick} isActiveItem={isActiveItem} /> : null}
+              {item.items?.length ? (
+                <TocJsonWrapper tree={item} onClick={onClick} isItemSelected={isItemSelected} />
+              ) : null}
             </AccordionItem>
           </Box>
         );
@@ -164,6 +166,9 @@ const AccordionHeader = styled(AccordionHeaderAksara)`
 
   button {
     padding: 8px;
+  }
+
+  button:focus {
   }
 `;
 

@@ -47,7 +47,7 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }
     router.push(url);
   }, []);
 
-  const isActiveItem = React.useCallback(
+  const isItemSelected = React.useCallback(
     (url: string): boolean => {
       return url === router.asPath;
     },
@@ -74,7 +74,7 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>
-                <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isActiveItem={isActiveItem} />
+                <TocJsonWrapper tree={toc} onClick={onTocSidebarClick} isItemSelected={isItemSelected} />
               </div>
             )}
             <DocsContainer>
