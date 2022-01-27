@@ -52,9 +52,11 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
     },
     [router]
   );
+
   const isAccordionHeaderActive = React.useCallback(
-    (tag: string): boolean => {
-      return router.asPath.indexOf(tag) !== -1;
+    (url: string): boolean => {
+      const [baseUrl] = router.asPath.split('#');
+      return url === baseUrl;
     },
     [router]
   );

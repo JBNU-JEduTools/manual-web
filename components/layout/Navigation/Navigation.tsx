@@ -138,13 +138,20 @@ function Navigation({ navigation, navHidden }: NavigationProps) {
   const { state, dispatch } = React.useContext(NavigationContext);
   const router = useRouter();
 
-  const isActiveItem = React.useCallback(
+  const isItemSelected = React.useCallback(
     (url: string): boolean => {
       return url === router.asPath;
     },
     [router]
   );
 
+  const isAccordionHeaderActive = React.useCallback(
+    (url: string): boolean => {
+      const [baseUrl] = router.asPath.split('#');
+      return url === baseUrl;
+    },
+    [router]
+  );
   return (
     <Wrapper isOpen={state.isOpen}>
       <Header>
@@ -171,7 +178,8 @@ function Navigation({ navigation, navHidden }: NavigationProps) {
                   router.push(url);
                 }}
                 tree={navigation}
-                isActiveItem={isActiveItem}
+                isItemSelected={isItemSelected}
+                isAccordionHeaderActive={isAccordionHeaderActive}
               />
             </Accordion>
           )}

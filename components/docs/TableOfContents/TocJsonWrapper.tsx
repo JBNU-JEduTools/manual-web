@@ -42,7 +42,12 @@ function NestedTocJsonWrapper({
             <AccordionContent key={itemChildren.title}>
               {itemChildren.items?.length ? (
                 <>
-                  <NestedTocJsonWrapper item={itemChildren} onClick={onClick} isItemSelected={isItemSelected} />
+                  <NestedTocJsonWrapper
+                    item={itemChildren}
+                    onClick={onClick}
+                    isItemSelected={isItemSelected}
+                    isAccordionHeaderActive={isAccordionHeaderActive}
+                  />
                 </>
               ) : (
                 <ActionListItem
@@ -89,7 +94,12 @@ function TocJsonWrapper({ tree, onClick, isItemSelected, isAccordionHeaderActive
                   <AccordionContent key={itemChildren.title}>
                     {itemChildren.items?.length ? (
                       <>
-                        <NestedTocJsonWrapper item={itemChildren} onClick={onClick} isItemSelected={isItemSelected} />
+                        <NestedTocJsonWrapper
+                          item={itemChildren}
+                          onClick={onClick}
+                          isItemSelected={isItemSelected}
+                          isAccordionHeaderActive={isAccordionHeaderActive}
+                        />
                       </>
                     ) : (
                       <ActionListItem
