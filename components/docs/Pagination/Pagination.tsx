@@ -50,16 +50,11 @@ const PaginationButton = styled('div')`
   }
 `;
 
-const THRESHOLD_TEXT_LENGTH = 55;
-
-const PaginationTitle = styled(Heading)<{ textLength?: number }>`
+const PaginationTitle = styled(Heading)`
   overflow: hidden;
-  text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  text-align: ${(props) => (props.textLength && props.textLength >= THRESHOLD_TEXT_LENGTH ? 'justify' : 'inherit')};
-  line-height: 28px;
 `;
 
 const PaginationHeading = styled(Text)``;
@@ -204,9 +199,7 @@ const Pagination: React.FC<PaginationProps> = ({ prevPage, nextPage }) => (
                 <PaginationHeading size={200} color="grey04" display="block">
                   Next
                 </PaginationHeading>
-                <PaginationTitle size={400} textLength={nextPage.title.length}>
-                  {nextPage.title}
-                </PaginationTitle>
+                <PaginationTitle size={400}>{nextPage.title}</PaginationTitle>
               </PaginationBlock>
               <PaginationButton>
                 <svg width="24" height="24" viewBox="0 0 24 24">
