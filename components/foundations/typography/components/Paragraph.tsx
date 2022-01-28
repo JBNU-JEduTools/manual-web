@@ -40,7 +40,7 @@ Paragraph.defaultProps = {
   marginBottom: '6px',
   color: 'grey07',
   fontFamily: 'inter',
-  size: 300
+  size: 300,
 };
 
 Paragraph.displayName = 'Paragraph';

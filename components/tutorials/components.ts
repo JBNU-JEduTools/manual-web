@@ -21,7 +21,7 @@ export const Cards = styled('div')`
   @media only screen and (min-width: ${`${breakpoints.lg + 1}px`}) {
     iframe {
       width: 29vw;
-      height: 30vh;
+      height: 35vh;
     }
   }
 `;
@@ -85,7 +85,7 @@ export const Card = styled(CardAksara)`
     max-width: 100% !important;
   }
   @media only screen and (min-width: ${`${breakpoints.xl}px`}) {
-    width: 30%;
+    width: 32%;
   }
   margin-top: 12px;
 
