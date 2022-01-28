@@ -28,6 +28,6 @@ export interface FrontMatter {
 }
 
 export interface BreadcrumbContent {
-  url: string;
+  url?: string;
   urlDisplay: string;
 }

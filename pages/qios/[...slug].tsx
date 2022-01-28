@@ -95,7 +95,7 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
                 items={[
                   { url: '/', urlDisplay: 'Home' },
                   { url: '/qios', urlDisplay: 'Qios' },
-                  { url: '#', urlDisplay: frontMatter.title },
+                  { urlDisplay: frontMatter.title },
                 ]}
               />
               <DocsHeader title={frontMatter.title} />
