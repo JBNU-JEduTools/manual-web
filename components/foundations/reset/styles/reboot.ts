@@ -88,6 +88,7 @@ const reboot = css`
   }
 
   p {
+    font-family: 'Inter', sans-serif !important;
     margin-top: 0;
     margin-bottom: 1rem;
   }

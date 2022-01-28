@@ -56,6 +56,7 @@ export const styleJSX = css`
     padding-left: 24px;
     padding-bottom: 16px;
     width: 23%;
+    max-width: 320px;
     height: 100%;
     overflow-y: auto;
     z-index: 10;

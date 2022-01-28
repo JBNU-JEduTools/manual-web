@@ -1,6 +1,6 @@
-import { Box, Card as CardAksara, theme, UnstyledAnchor } from '@aksara-ui/react'
-import styled from 'styled-components'
-import { breakpoints } from 'utils/variables'
+import { Box, Card as CardAksara, theme, UnstyledAnchor } from '@aksara-ui/react';
+import styled from 'styled-components';
+import { breakpoints } from 'utils/variables';
 
 export const Cards = styled('div')`
   display: flex;
@@ -18,20 +18,13 @@ export const Cards = styled('div')`
     }
   }
 
-  @media only screen and (max-width: ${`${breakpoints.xl}px`}) {
+  @media only screen and (min-width: ${`${breakpoints.lg + 1}px`}) {
     iframe {
-      width: 25vw;
-      height: 30vh;
+      width: 29vw;
+      height: 35vh;
     }
   }
-
-  @media only screen and (min-width: ${`${breakpoints.xxl}px`}) {
-    iframe {
-      width: 27vw;
-      height: 25vh;
-    }
-  }
-`
+`;
 
 export const ProductBadge = styled('div')`
   display: flex;
@@ -49,7 +42,7 @@ export const ProductBadge = styled('div')`
     height: 16px;
     margin-right: 8px;
   }
-`
+`;
 export const Anchor = styled(UnstyledAnchor)`
   display: flex;
   margin-top: 20px;
@@ -71,7 +64,7 @@ export const Anchor = styled(UnstyledAnchor)`
     }
     fill: ${theme.colors.blue06};
   }
-`
+`;
 
 export const CardsWrapper = styled(Box)`
   @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
@@ -82,7 +75,7 @@ export const CardsWrapper = styled(Box)`
     padding-left: 10vw;
     padding-right: 10vw;
   }
-`
+`;
 
 export const Card = styled(CardAksara)`
   border-radius: 8px;
@@ -92,12 +85,11 @@ export const Card = styled(CardAksara)`
     max-width: 100% !important;
   }
   @media only screen and (min-width: ${`${breakpoints.xl}px`}) {
-    width: 30%;
+    width: 32%;
   }
   margin-top: 12px;
 
   &:hover {
-
-  box-shadow: 0px 8px 16px 0px #89949F52;
+    box-shadow: 0px 8px 16px 0px #89949f52;
   }
-`
+`;

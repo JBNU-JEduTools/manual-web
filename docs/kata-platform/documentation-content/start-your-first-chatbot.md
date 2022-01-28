@@ -17,7 +17,7 @@ You can watch the tutorial to start your first chatbot or follow the steps in th
 
 <iframe width="600" height="300" src="https://www.youtube.com/embed/H83sXg3Wvas" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
-1. Open your browser and enter the URL <a href="htpps://platform.kata.ai" target="_blank">https://platform.kata.ai/</a>.
+1. Open your browser and enter the URL <a href="htpps://platform.kata.ai" target="_blank"><span>http</span>s://platform.kata.ai/</a>.
 2. Register your data in the Kata Platform by filling in the required fields.
 
 ![Image 1 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image1.png)
