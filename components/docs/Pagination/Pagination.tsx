@@ -17,6 +17,7 @@ const Wrapper = styled('aside')`
 const WrapperInner = styled('div')`
   display: flex;
   flex-direction: column;
+  height: 128px;
 
   @media (min-width: ${breakpoints.md}px) {
     flex-direction: row;
@@ -108,7 +109,6 @@ const PaginationItem = styled('div')`
   position: relative;
   flex: 1 0 auto;
   align-items: center;
-  height: 96px;
   padding: 0 ${space.md}px;
   overflow: hidden;
   background-color: ${colors.grey01};
