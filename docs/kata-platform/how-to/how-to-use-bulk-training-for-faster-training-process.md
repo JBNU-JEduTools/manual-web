@@ -9,7 +9,7 @@ next: using-custom-api-to-access-third-party-application
 
 Great NL models are a fundamental part of making a great chatbot and approximately 70% of all chatbot projects use NL models instead of a keyword-based approach, based on our Kata.ai projects data.
 
-Previously, the bulk training process was very technical because developers needed to use KataCLI and view the results on the Platform GUI (<a href="https://platform.kata.ai" target="_blank">https://platform.kata.ai</a>). This back and forth switching of tools was required to do training.
+Previously, the bulk training process was very technical because developers needed to use KataCLI and view the results on the Platform GUI (<a href="https://platform.kata.ai" target="_blank"><span>http</span>s://platform.kata.ai</a>). This back and forth switching of tools was required to do training.
 
 Now, you can use the new Bulk Training on the Platform GUI itself to train more than 200 sentences/training data at once. These are the screenshots of our newest feature.
 
