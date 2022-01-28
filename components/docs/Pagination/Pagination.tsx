@@ -50,7 +50,17 @@ const PaginationButton = styled('div')`
   }
 `;
 
-const PaginationTitle = styled(Heading)``;
+const THRESHOLD_TEXT_LENGTH = 55;
+
+const PaginationTitle = styled(Heading)<{ textLength?: number }>`
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-align: ${(props) => (props.textLength && props.textLength >= THRESHOLD_TEXT_LENGTH ? 'justify' : 'inherit')};
+  line-height: 28px;
+`;
 
 const PaginationHeading = styled(Text)``;
 
@@ -179,9 +189,7 @@ const Pagination: React.FC<PaginationProps> = ({ prevPage, nextPage }) => (
                 <PaginationHeading size={200} color="grey04" display="block">
                   Previous
                 </PaginationHeading>
-                <PaginationTitle size={400} display="inline-block" lineHeight="32px">
-                  {prevPage.title}
-                </PaginationTitle>
+                <PaginationTitle size={400}>{prevPage.title}</PaginationTitle>
               </PaginationBlock>
             </Box>
           </PaginationLink>
@@ -196,7 +204,7 @@ const Pagination: React.FC<PaginationProps> = ({ prevPage, nextPage }) => (
                 <PaginationHeading size={200} color="grey04" display="block">
                   Next
                 </PaginationHeading>
-                <PaginationTitle size={400} display="inline-block" lineHeight="32px">
+                <PaginationTitle size={400} textLength={nextPage.title.length}>
                   {nextPage.title}
                 </PaginationTitle>
               </PaginationBlock>
