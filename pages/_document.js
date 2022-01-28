@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 import Meta from '../components/meta';
 
 export default class MyDocument extends Document {
@@ -7,17 +7,14 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Meta />
         <Head>
-          <link
-            rel="preload"
-            href="/assets/fonts/Inter.ttf"
-            as="font"
-          />
+          <link rel="stylesheet preload" href="assets/fonts/Inter.woff" as="font" crossOrigin />
+          <link rel="stylesheet preload" href="assets/fonts/Inter-Bold.woff" as="font" crossOrigin />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
