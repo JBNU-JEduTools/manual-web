@@ -10,7 +10,7 @@ To build a great conversational experience for end-users, you must create a bot 
 
 Kata Platform will show these error messages in 3 ways:
 
-1. When you publish a chatbot in Kata Platform (<a href="https://platform.kata.ai" target="_blank">https://platform.kata.ai</a>).
+1. When you publish a chatbot in Kata Platform (<a href="https://platform.kata.ai" target="_blank"><span>http</span>s://platform.kata.ai</a>).
 2. When you execute a command `kata push` in Kata CLI.
 3. When end-users receive the error message **“Maaf terjadi kesalahan pada sistem”**. FYI, you can change the error copy by following this guide. Kata Platform will log it into the Error Log feature. This feature is available in the menu: **Flow > Error Log**.
 
