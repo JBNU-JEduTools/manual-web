@@ -175,11 +175,11 @@
       ]
     },
     {
-      "title": "Release Note",
+      "title": "Release Notes",
       "items": [
         {
-          "id": "release-note-version",
-          "url": "/business-dashboard/release-note",
+          "id": "release-notes-version",
+          "url": "/business-dashboard/release-notes/version",
           "title": "Version"
         }
       ]

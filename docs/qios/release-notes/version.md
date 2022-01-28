@@ -1,11 +1,13 @@
 ---
-id: release-note-version
+id: release-notes-version
 title: Version
 ---
 
 The latest news, updates, and changes on Qios
 
 ## 2.0.0
+
+![Qios Illustration](/assets/images/products/qios/release-notes/qios-illustration.png)
 
 ### What’s New ⭐️
 

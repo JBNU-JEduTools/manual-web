@@ -361,11 +361,11 @@
       ]
     },
     {
-      "title": "Release Note",
+      "title": "Release Notes",
       "items": [
         {
-          "id": "release-note-version",
-          "url": "/kata-omnichat/release-note",
+          "id": "release-notes-version",
+          "url": "/kata-omnichat/release-notes/version",
           "title": "Version"
         }
       ]

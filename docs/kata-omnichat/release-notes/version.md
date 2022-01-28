@@ -1,11 +1,13 @@
 ---
-id: release-note-version
+id: release-notes-version
 title: Version
 ---
 
 The latest news, updates, and changes on Kata Omnichat
 
 ## 2.5.5
+
+![Kata Omnichat Illustration](/assets/images/products/kata-omnichat/release-notes/kata-omnichat-illustration.png)
 
 ### What’s New ⭐️
 

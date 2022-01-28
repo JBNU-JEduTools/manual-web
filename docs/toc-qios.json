@@ -129,11 +129,11 @@
       ]
     },
     {
-      "title": "Release Note",
+      "title": "Release Notes",
       "items": [
         {
-          "id": "release-note-version",
-          "url": "/qios/release-note",
+          "id": "release-notes-version",
+          "url": "/qios/release-notes/version",
           "title": "Version"
         }
       ]
