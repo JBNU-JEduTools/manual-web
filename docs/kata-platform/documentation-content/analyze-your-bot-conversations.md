@@ -72,9 +72,10 @@ Notice on Monday at 12PM, when you hover the block, there are 28 incoming messag
 
 > **Figure 5**: Cohort (simple & expanded) analytics - Daily.
 
-```
-Important note: The cohort data is standalone analytics, which means the data is shown not filtered by date range.
-```
+<div className="info">
+    <img className="borderless" src="/assets/images/icon-info.svg" />
+    <p>Important note: The cohort data is standalone analytics, which means the data is shown not filtered by date range.</p>
+</div>
 
 Cohort analysis allows us to see end-user retention which shows the engagement level of end-users to the bot. For example, it counts **active users** who interact with our bot on month 0 and return on the following month (month 1), and return after the next following month (month 2), the higher the percentage of users that returned on month 1, 2, and 3 showing that our bot has a high **retention level**.
 
@@ -170,3 +171,7 @@ You can also click on the transcript row to view the log of each row, for exampl
 > **Figure 11**: Transcript Detail.
 
 Here, you can view the log of conversations between your user & chatbot. We also include the state flow your user is in after each chat.
+
+```
+
+```

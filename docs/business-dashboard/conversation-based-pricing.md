@@ -61,7 +61,12 @@ business using the call-to-action button on an Ad that clicks into WhatsApp or a
 
 ## Scenarios
 
-_Disclaimer: This scenario is based on The Official Facebook documentation. The complete scenario can be found [here](https://developers.facebook.com/docs/whatsapp/pricing/conversationpricing)._
+<div className="info">
+    <img className="borderless" src="/assets/images/icon-info.svg" />
+    <p>
+    Disclaimer: This scenario is based on The Official Facebook documentation. The complete scenario can be found [here](https://developers.facebook.com/docs/whatsapp/pricing/conversationpricing)
+    </p>
+</div>
 
 For the following scenarios, we will use a user named Anne Budianto, a Commercial Air (airline) customer, and Kicks (an
 online shoe retailer).

@@ -8,9 +8,12 @@ next: conversation-in-customer-side-without-bot
 1. Customers send messages to the Instagram account
 2. Also, customers can reply to the brand's Instagram Story (**Instagram Story Reply**) or mention the brand's Instagram account in the customer's Instagram Story (**Instagram Story Mention**).
 
-    ```
-    Disclaimer: Customers' Instagram account must be public if they want to send Instagram Story Reply and Instagram Story Mention to a brand, otherwise it cannot be replied by bot. If customers' accounts are private, then the brand must request to follow the customers first
-    ```
+    <div className="info">
+        <img className="borderless" src="/assets/images/icon-info.svg" />
+        <p>
+        Disclaimer: Customers' Instagram account must be public if they want to send Instagram Story Reply and Instagram Story Mention to a brand, otherwise it cannot be replied by bot. If customers' accounts are private, then the brand must request to follow the customers first
+        </p>
+    </div>
 
     ![Figure 40](/assets/images/products/kata-omnichat/image40.png)
 

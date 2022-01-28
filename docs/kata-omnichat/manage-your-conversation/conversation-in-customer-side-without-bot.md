@@ -8,9 +8,12 @@ next: see-conversation-between-chatbot-and-customer
 1. Customers send messages to the Instagram account
 2. Also, customers can reply to the brand's Instagram Story (**Instagram Story Reply**) or mention the brand's Instagram account in the customer's Instagram Story (**Instagram Story Mention**).
 
-    ```
-    Disclaimer: Customers' Instagram accounts must be public if they want to send Instagram Story Reply and Instagram Story Mention to a brand, otherwise it cannot be replied by bot. If customers' accounts are private, then the brand must request to follow the customers first
-    ```
+ <div className="info">
+     <img className="borderless" src="/assets/images/icon-info.svg" />
+     <p>
+     Disclaimer: Customers' Instagram accounts must be public if they want to send Instagram Story Reply and Instagram Story Mention to a brand, otherwise it cannot be replied by bot. If customers' accounts are private, then the brand must request to follow the customers first
+     </p>
+ </div>
 
 3. If it’s a new conversation and you’ve already set up the Ice Breaker, customers will see the conversation topics
 4. If the conversation isn’t new or you haven’t set up the Ice Breaker, customers can directly send any messages
