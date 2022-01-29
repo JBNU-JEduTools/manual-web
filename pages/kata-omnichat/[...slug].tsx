@@ -94,7 +94,7 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }
                 items={[
                   { url: '/', urlDisplay: 'Home' },
                   { url: '/kata-omnichat', urlDisplay: 'Kata Omnichat' },
-                  { url: '#', urlDisplay: frontMatter.title },
+                  { urlDisplay: frontMatter.title },
                 ]}
               />
               {frontMatter.id !== 'about' && <DocsHeader title={frontMatter.title} />}

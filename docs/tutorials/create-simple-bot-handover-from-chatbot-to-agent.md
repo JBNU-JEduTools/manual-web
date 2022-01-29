@@ -13,11 +13,11 @@ In this tutorial, we will create a chatbot that is able to handoff conversations
 
 <iframe width="600" height="300" src="https://www.youtube.com/embed/dAHnoTX4BUE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
-# Simple Chatbot Flow
+## Simple Chatbot Flow
 
 Before we jump into the tutorial, let’s see the scenario for the conversation. We will create a chatbot using _keywords_ which when customers enter "1" to end the conversation or “2” to do the handover.
 
-## Conversation Flow Table
+### Conversation Flow Table
 
 | Scenario Flow                                             | Details <br />(Each row represents 1 bubble message)                                                                                                                                                                        |
 | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -26,9 +26,9 @@ Before we jump into the tutorial, let’s see the scenario for the conversation.
 | Customer typing “1” and chatbot request handover to agent | Mohon menunggu, ya. Sedang kami hubungkan ke CS Bank ABC yang tersedia! 😊                                                                                                                                                  |
 | End session after handover done                           | Terima kasih sudah menghubungi Bank ABC 😊                                                                                                                                                                                  |
 
-# Create Project
+## Create Project
 
-## Objective: Register your new account and login to the Platform
+### Objective: Register your new account and login to the Platform
 
 1. Go to <a href="https://platform.kata.ai" target="_blank">https://platform.kata.ai</a> and click **Sign Up** to create new account
 
@@ -40,9 +40,9 @@ Before we jump into the tutorial, let’s see the scenario for the conversation.
 
 5. You will be redirected to the Login **Page**. Input your username and password to continue.
 
-## Objective: Create new chatbot project
+### Objective: Create new chatbot project
 
-### Login to Kata Platform and create project
+#### Login to Kata Platform and create project
 
 1. Open your browser, then open the URL <a href="https://platform.kata.ai/login" target="_blank">https://platform.kata.ai/login</a> and enter your username & password.
 
@@ -52,23 +52,23 @@ Before we jump into the tutorial, let’s see the scenario for the conversation.
 
 # Create Greetings Flow
 
-## Objective: Define a flow
+### Objective: Define a flow
 
-### Create a flow name "Handover". We will use 1 flow for this simple bot
+#### Create a flow name "Handover". We will use 1 flow for this simple bot
 
 1. Click **"Create Flow"** button in current screen
 
 2. Create flow "Handover", other fields are left blank. Then, click **Create**.
 
-## Objective: Create greetings state to define how to respond
+### Objective: Create greetings state to define how to respond
 
-### Create "init" state
+#### Create "init" state
 
 1. Click "+" icon in bottom right to create new state
 
 2. Create state "init" and click toggle to turn on “Initial State” and other fields are left blank. Then, click Create.
 
-### Create "greetings" as bot response to show keywords menu
+#### Create "greetings" as bot response to show keywords menu
 
 1. Create another state by clicking the **"+"** icon in the bottom right to create a new state named “greetings”
 
@@ -88,9 +88,9 @@ Halo, selamat datang di layanan CS Bank ABC 😊\n\n Apakah ingin dihubungkan ke
 
 7. To finalize the state creation, click **Create** in state drawer
 
-## Objective: Catch end-user’s message when greet the bot
+### Objective: Catch end-user’s message when greet the bot
 
-### Create "greetings" keywords to build understanding in chatbots when end-user’s greet the bot. We will use the NLUs feature to create the keywords.
+#### Create "greetings" keywords to build understanding in chatbots when end-user’s greet the bot. We will use the NLUs feature to create the keywords.
 
 1. Go to the menu **"NLUs"** which is placed under the “Conversation Flows” menu. Your screen will be switched to create NLUs
 
@@ -117,7 +117,7 @@ Main keyword: hi
 
 6. Click **"Create"** to save the NLUs
 
-### Create "greetings" intent to catch user’s input
+#### Create "greetings" intent to catch user’s input
 
 1. Click the Intent tab which is placed next to the Conversation Flows sidebar.
 
@@ -131,9 +131,9 @@ Main keyword: hi
 
 4. Then, click **Create**.
 
-## Objective: Connect "init" and “greetings” states by creating a transition
+### Objective: Connect "init" and “greetings” states by creating a transition
 
-### Create a transition to connect "_init_" and “_greetings_” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed.
+#### Create a transition to connect "_init_" and “_greetings_” states. The transition will define in which condition the greetings state, including the actions’ state, will be executed.
 
 1. Pull a line from the "init" state and drag it to the “greetings” state. If you succeed, then it will show a **Create Transition** drawer
 
@@ -145,11 +145,11 @@ Main keyword: hi
 
 3. Click **"Create Transition"**
 
-# Catch End-user’s Typing when Choosing Menu
+## Catch End-user’s Typing when Choosing Menu
 
-## Objective: Catch end-user’s message when choosing menu by typing "1" or “2”
+### Objective: Catch end-user’s message when choosing menu by typing "1" or “2”
 
-### Create "menu" keywords
+#### Create "menu" keywords
 
 1. Go to the menu **"NLUs"** which is placed under the “Conversation Flows” menu. Your screen will be switched to create NLUs
 
@@ -176,7 +176,7 @@ Main keyword: satu
 
 6. Click **"Create"** to save the NLUs
 
-### Create an intent "menu" to catch the end-user's input
+#### Create an intent "menu" to catch the end-user's input
 
 1. Click the Intent tab which is placed next to the Conversation Flows sidebar.
 
@@ -190,17 +190,17 @@ Main keyword: satu
 
 4. Then, click **Create**.
 
-# Create Handover to Human Agent Flow
+## Create Handover to Human Agent Flow
 
-## Objective: Create a flow that end-user can request handover to human agents by using Handover API
+### Objective: Create a flow that end-user can request handover to human agents by using Handover API
 
-### Create handover state
+#### Create handover state
 
 1. Click **"+"** icon in bottom right to create new state
 
 2. Fill in the state name with "handover" and activate toggle “End state”
 
-### Create bot response to inform end-user that the handover request has been received and waiting for agents to reply
+#### Create bot response to inform end-user that the handover request has been received and waiting for agents to reply
 
 1. Click **"+"** in action box to create new action
 
@@ -216,7 +216,7 @@ Mohon menunggu, ya. Sedang kami hubungkan ke CS Bank ABC yang tersedia! 😊
 
 5. Click **Create Action**
 
-### Use Handover API to send handover request to Omnichat
+#### Use Handover API to send handover request to Omnichat
 
 1. Create another action by clicking **"Add action"**
 
@@ -232,7 +232,7 @@ Mohon menunggu, ya. Sedang kami hubungkan ke CS Bank ABC yang tersedia! 😊
 
 7. To finalize this step when creating a new state, click the **Create** button in the state drawer
 
-### Create a transition to connect "greetings" and “handover” states
+#### Create a transition to connect "greetings" and “handover” states
 
 1. Pull a line from the "greetings" state and drag it to the “handover” state. If you succeed, then it will show a **Create Transitio**n drawer
 
@@ -244,11 +244,11 @@ Mohon menunggu, ya. Sedang kami hubungkan ke CS Bank ABC yang tersedia! 😊
 
 3. Click **Create**
 
-# Create End Conversation Flow
+## Create End Conversation Flow
 
-## Objective: Create a flow that end-user doesn’t want to handover to agent and end the conversation
+### Objective: Create a flow that end-user doesn’t want to handover to agent and end the conversation
 
-### Create "end" state to cancel handover agent and finish the conversation
+#### Create "end" state to cancel handover agent and finish the conversation
 
 1. Click **"+"** icon in bottom left to create new state
 
@@ -266,7 +266,7 @@ Terima kasih sudah menghubungi Bank ABC 😊
 
 6. Click **Create** to finalize
 
-### Create a transition to connect "greetings" and “end” states
+#### Create a transition to connect "greetings" and “end” states
 
 1. Pull a line from the "greetings" state and drag it to the “end” state. If you succeed, then it will show a Create Transition drawer
 
@@ -278,9 +278,9 @@ Terima kasih sudah menghubungi Bank ABC 😊
 
 3. Click **Create**
 
-# Finalize Your New Bot
+## Finalize Your New Bot
 
-## Objective: Publish your bot to save the chatbot flow
+### Objective: Publish your bot to save the chatbot flow
 
 1. Click on the **"Publish"** button which is placed on top right corner
 
@@ -292,7 +292,7 @@ Terima kasih sudah menghubungi Bank ABC 😊
 
 > Final conversation flow
 
-## Objective: Testing your bot in emulator
+### Objective: Testing your bot in emulator
 
 1. On the bottom of your right screen, there is a small button named **"Test NLU".** Click the **button** to start.
 
@@ -308,9 +308,9 @@ Terima kasih sudah menghubungi Bank ABC 😊
 
 3. If you want to **restart** the session, click refresh icon which is placed at the bottom
 
-## Objective: Deploy your bot
+### Objective: Deploy your bot
 
-### Create new deployment
+#### Create new deployment
 
 1. Go to the **"Deploy"** menu in the left sidebar
 
@@ -324,7 +324,7 @@ Terima kasih sudah menghubungi Bank ABC 😊
 
 4. Click **Submit** to finish the deployment
 
-### Create new environment as prerequisites to deploy the bot to channel
+#### Create new environment as prerequisites to deploy the bot to channel
 
 1. Go to the **Environment** menu which is placed under the current menu ("Overview"). If you successfully entered the Environment menu, you will see a page like this. These 3 environments represent that your chatbot will be tested in development or staging first, before go live as in Production stage
 
