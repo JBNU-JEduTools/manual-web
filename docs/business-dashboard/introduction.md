@@ -1,6 +1,7 @@
 ---
 id: introduction
 title: About WhatsApp Business Dashboard
+next: get-started
 ---
 
 <img className="borderless" src="/assets/images/products/business-dashboard/image-introduction-1.png" alt="Business-Dashboard Illustration" />
@@ -20,5 +21,3 @@ Send an approved template message to a large number of audiences in a single tim
 #### Analytics
 
 See the performance of each of your broadcasts. View the data and learn from your past broadcast activities and credit usage to make future marketing decisions.
-
-[Get Started with WhatsApp Business Dashboard &#8594;](get-started)
