@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { MenuNode } from 'interfaces/nodes';
 import { Heading, Box } from 'components/foundations';
 import { colors, space } from 'utils/variables';
-import { isActive } from 'utils/helpers';
 import { UnstyledAnchor } from '@aksara-ui/react';
 
 interface NavigationMenuProps {
