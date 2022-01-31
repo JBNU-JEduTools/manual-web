@@ -20,13 +20,11 @@ Kata Platform will show these error messages in 3 ways:
 
 ## Available Error Messages
 
-### `Error Code 1002: Message shall be either of type 'command', 'text' or 'data'`
+| Error code                                                                  | Explanation                                                                                                                                                               |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1002-Message shall be either of type 'command', 'text' or 'data' | This error message commonly happens if you push your bot using Kata CLI. It means your defined intent is not included in the 3 available options: command, text, or data. |
 
-#### Explanation
-
-This error message commonly happens if you push your bot using Kata CLI. It means your defined intent is not included in the 3 available options: command, text, or data.
-
-#### Solution
+**Solution**
 
 Define one of the intent types correctly:
 
@@ -37,11 +35,12 @@ intents:
 
 ```
 
-### `Error Code 1003: Cannot find action type: ${desc.type}`
+| Error code                                                                                                                                                              | Explanation |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| Error Code 1003-Cannot find action type: `${desc.type}`                                                                                                                 |
+| This error message commonly happens if you push your bot via Kata CLI. It means the action type is not supported or has a typo on the action type description on KataML |
 
-#### Explanation
-
-This error message commonly happens if you push your bot via Kata CLI. It means the action type is not supported or has a typo on the action type description on KataML. For example you have a case as follows.
+For example, you have the following case.
 
 ![Image 2 alt](/assets/images/products/kata-platform/error-log/image2.png)
 
@@ -49,7 +48,7 @@ This error message commonly happens if you push your bot via Kata CLI. It means 
 
 It means your bot cannot find the action type `txt`.
 
-#### Solution
+**Solution**
 
 If your case is choosing not supported action type, then you must define one of correct action types:
 
@@ -71,11 +70,10 @@ myAction:
 
 If the above solution still has issues, then compare the defined actions you have with action inside a state.
 
-### `Error Code 1004: Invalid method head`
+| Error code                          | Explanation                                                                                                                                                                |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1004-Invalid method head | This error message commonly happens if you push your bot via Kata CLI or publish via Platform. The bot has an invalid method in the header or a typo in method definition. |
 
-#### Explanation
-
-This error message commonly happens if you push your bot via Kata CLI or publish via Platform. The bot has an invalid method in the header or a typo in method definition.
 For example you have a case as follows.
 
 ![Image 3 alt](/assets/images/products/kata-platform/error-log/image3.png)
@@ -84,7 +82,7 @@ For example you have a case as follows.
 
 It means your method named `mappingAksBrand` head is not found.
 
-#### Solution
+**Solution**
 
 You must check your available bot method name, then it should be in these formats for the header:
 
@@ -98,11 +96,11 @@ or
 method(methodParam, methodParam2, ...)
 ```
 
-### `Error Code 1005: Cannot create methe thod ${head}: ${message}`
+| Error code                                                    | Explanation                                                                                                                                                                                   |
+| ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1005-Cannot create methe thod `${head}: {message}` | This error message will show if you push-ing your bot via Kata CLI. It means there is an error when creating the method. In this error message, you will find a specific error in the method. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means there is an error when creating the method. In this error message, you will find a specific error in the method. For example you have a case as follows.
+For example you have a case as follows.
 
 ![Image 4 alt](/assets/images/products/kata-platform/error-log/image4.png)
 
@@ -110,15 +108,15 @@ This error message will show if you push-ing your bot via Kata CLI. It means the
 
 It means your method named mappingTitle has an error or incomplete method where `)` symbol is located.
 
-#### Solution
+**Solution**
 
 Check the method name function syntax if there are any typos.
 
-### `Error Code 1006: Error executing method ${method}: ${e.message}`
+| Error code                                                        | Explanation                                                                                                                      |
+| ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1006-Error executing method `${method}: ${e.message} ` | This error message will show if your bot already deployed to any channels. It means there is a failure when executing method(s). |
 
-#### Explanation
-
-This error message will show if your bot already deployed to any channels. It means there is a failure when executing method(s). For example you have a case as follows.
+For example you have a case as follows.
 
 ![Image 5 alt](/assets/images/products/kata-platform/error-log/image5.png)
 
@@ -126,217 +124,187 @@ This error message will show if your bot already deployed to any channels. It me
 
 It means there is an error when executing `deleteSoon` method.
 
-#### Solution
+**Solution**
 
 Check the method function syntax if there are any typos.
 
-### `Error Code 1007: Method ${name} is not defined`
+| Error code                                      | Explanation                                                                                                                                  |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1007-Method `${name}` is not defined | This error message will show if you push your bot via Kata CLI. It means you create an action using a method, but not yet defined in KataML. |
 
-#### Explanation
-
-This error message will show if you push your bot via Kata CLI. It means you create an action using a method, but not yet defined in KataML.
-
-#### Solution
+**Solution**
 
 You must check the method name from the error message and write code for the method.
 
-### `Error Code 1010: Failed creating mapping ${i}:${map[i]}`
+| Error code                                               | Explanation                                                                                                                               |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1010-Failed creating mapping `${i}:${map[i]}` | This error message will show if you push your bot via Kata CLI or publish via Platform. It means an error in doing mapping in transition. |
 
-#### Explanation
-
-This error message will show if you push your bot via Kata CLI or publish via Platform. It means an error in doing mapping in transition. For example you have a case as Figure 6. It means your key mapping named tryTransit has an typo or incorrectly mapped with tryValue value.
+For example you have a case as Figure 6. It means your key mapping named `tryTransit` has an typo or incorrectly mapped with `tryValue` value.
 
 ![Image 6 alt](/assets/images/products/kata-platform/error-log/image6.png)
 
 > **Figure 6**: Error message example.
 
-#### Solution
+**Solution**
 
 You must check the mapping inside the transition, then fix any possible typos in expression syntax.
 
-### `Error Code 1016: Error in flow ${this.id} while updating state: ${e && e.message}`
-
-#### Explanation
-
-This error message will show if you are push-ing your bot via Kata CLI or publishing via Platform. It means there is a state error inside a flow. There are several error messages inside this error code:
+| Error code                                                                           | Explanation                                                                                                                                                                                                |
+| ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1016-Error in flow `${this.id}` while updating state: `${e && e.message}` | This error message will show if you are push-ing your bot via Kata CLI or publishing via Platform. It means there is a state error inside a flow. There are several error messages inside this error code: |
 
 1. If the error message shows, for example `Error in flow greetingFlow while updating state: null, details: No next state found from state init`. It means in `greetingFlow` flow is no next state found.
 
-2.If the error message shows, for example: `Error in flow greetingFlow while updating state: null, details: Next state ‘greeting’ from ‘init’ doesn’t exist`. It means in `greetingFlow` flow, there is a state name `greeting` that is not defined yet.
+2.If the error message shows, for example: `Error in flow greetingFlow while updating state: null, details: Next state ‘greeting’ from ‘init’ doesn’t exist`. It means in `greetingFlow` flow, there is a state name `greeting` that is not defined yet. |
 
-#### Solution
+**Solution**
 
 Check the flow name, then check inside the state if any possible typos.
 
-### `Error Code 1019: No flow selected.`
+| Error code                        | Explanation                                                                                                                                     |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1019-No flow selected. | This error message will show if you push-ing your bot via Kata CLI or publish via Platform. It means conversation does not match with any flow. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI or publish via Platform. It means conversation does not match with any flow.
-
-#### Solution
+**Solution**
 
 Check whether you have any flow definition or fallback flow, also checking possible typos in flow name.
 
-### `Error Code 1020: Cannot create Nlu from method: no method ${desc.method} found`
+| Error code                                                                      | Explanation                                                                                                                                                  |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Error Code 1020-Cannot create Nlu from method: no method `${desc.method}` found | This error message will show if you push-ing your bot via Kata CLI. It means bot can not create NLU from a method, because method definition does not exist. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means bot can not create NLU from a method, because method definition does not exist.
-
-#### Solution
+**Solution**
 
 Check definition in the method name.
 
-### `Error Code 1022: Cannot find nlu: ${desc.nlu} on [creating classifier or creating intent attributes]`
+| Error code                                                                                            | Explanation                                                                                                                                                                   |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1022-Cannot find nlu: `${desc.nlu}` on [creating classifier or creating intent attributes] | This error message will show if you push-ing your bot via Kata CLI. It means bot can not find NLU with specific name on creating intent **or** on creating intent attributes. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means bot can not find NLU with specific name on creating intent **or** on creating intent attributes. Here is the error example.
+Here is the error example.
 
 ![Image 7 alt](/assets/images/products/kata-platform/error-log/image7.png)
 
 > **Figure 7**: Cannot find NLU named `misccc` in NLUs mapping.
 
-#### Solution
+**Solution**
 
 Check the NLU definitions in labels.
 
-### `Error Code 1023: Error during post-processing Nlu ${this.id}, details: ${e.message}`
+| Error code                                                                             | Explanation                                                                                                                  |
+| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1023-Error during post-processing Nlu `${this.id}`, details: `${e.message}` | This error message will show if you push-ing your bot via Kata CLI. It means it has a failure when executing NLU processors. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means it has a failure when executing NLU processors. Here is the error example:
+Here is the error example:
 
 ![Image 8 alt](/assets/images/products/kata-platform/error-log/image8.png)
 
 > **Figure 8**: Cannot execute similar NLU with different expressions and processor.
 
-#### Solution
+**Solution**
 
 Check method definition on your bot code.
 
-### `Error Code 1028: No Initial State defined`
+| Error code                               | Explanation                                                                                                                                |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Error Code 1028-No Initial State defined | This error message will show if you push-ing your bot via Kata CLI and publish in Kata Platform.. It means the initial state is not found. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI and publish in Kata Platform.. It means the initial state is not found. Here is the error example:
+Here is the error example:
 
 ![Image 9 alt](/assets/images/products/kata-platform/error-log/image9.png)
 
 > **Figure 9**: Cannot publish because no state is found.
 
-#### Solution
+**Solution**
 
 Add the initial state at least in a flow.
 
-### `Error Code 1029: Cannot get state '${state}'`
+| Error code                                  | Explanation                                                                                                                                      |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Error Code 1029-Cannot get state '${state}' | This error message will show if you push-ing your bot via Kata CLI. It means there is no state with a certain name, or no initial state defined. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means there is no state with a certain name, or no initial state defined.
-
-#### Solution
+**Solution**
 
 Check if any possible typos or incorrect definition inside the state name.
 
-### `Error Code 1030: Invalid action in state ${i}`
+| Error code                                     | Explanation                                                                                                                                     |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1030-Invalid action in state `${i}` | This error message will show if you push-ing your bot via Kata CLI. It means there is no action defined with a certain name in a certain state. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means there is no action defined with a certain name in a certain state.
-
-#### Solution
+**Solution**
 
 Checking action definition or possible typos in action name, inside the state name.
 
-### `Error Code 1031: Next state '${state}' from '${prevState}' doesn't exist`
+| Error code                                                              | Explanation                                                                                                  |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Error Code 1031-Next state '${state}' from '${prevState}' doesn't exist | This error message will show if you push-ing your bot via Kata CLI. It means there is no next state defined. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means there is no next state defined.
-
-#### Solution
+**Solution**
 
 Check to the next state name whether it has typos or undefined yet.
 
-### `Error Code 1032: No next state found from state ${meta.state}`
+| Error code                                                     | Explanation                                                                                                              |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Error Code 1032-No next state found from state `${meta.state}` | This error message will show if you push-ing your bot via Kata CLI. It means there is no next state from the state name. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means there is no next state from the state name.
-
-#### Solution
+**Solution**
 
 Check to the next state name whether it has typos or undefined yet.
 
-### `Error Code 1033: Cannot execute enter mapper in state ${this.id}: ${e.message}`
+| Error code                                                                      | Explanation                                                                                                                   |
+| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1033-Cannot execute enter mapper in state `${this.id}: ${e.message}` | This error message will show if you push-ing your bot via Kata CLI. It means in `onEnter` mapping, there is incorrect syntax. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means in `onEnter` mapping, there is incorrect syntax.
-
-#### Solution
+**Solution**
 
 Check the mapping expression in `onEnter`.
 
-### `Error Code 1036: Cannot find method ${name} for process`
+| Error code                                             | Explanation                                                                                                                 |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1036-Cannot find method ${name} for process | This error message will show if you push-ing your bot via Kata CLI. It means you cannot find methods defined as processors. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means you cannot find methods defined as processors.
-
-#### Solution
+**Solution**
 
 Check method definition on your bot code.
 
-### `Error Code 1037: Cannot parse condition: "${cond}"`
+| Error code                                        | Explanation                                                                                                                        |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1037-Cannot parse condition: `${cond}` | This error message will show if you push-ing your bot via Kata CLI. It means there is an error on parsing conditional expressions. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means there is an error on parsing conditional expressions.
-
-#### Solution
+**Solution**
 
 Check for typos in actions, intents, and NLUs definitions.
 
-### `Error Code 1038: Cannot recognize condition with type:${ast.type} and op:${ast.operator}`
+| Error code                                                                                | Explanation                                                                                                         |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1038-Cannot recognize condition with type:${ast.type} and `op:${ast.operator}` | This error message will show if you push-ing your bot via Kata CLI. It means the condition expression is not found. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means the condition expression is not found.
-
-#### Solution
+**Solution**
 
 Check your condition expression if there is any typos or incorrect syntax. Furthermore, you can check this operator list <a href="https://www.w3schools.com/js/js_comparisons.asp">here</a>.
 
-### `Error Code 1040: Error in flow ${this.id} while classifying, details ${e && e.message}`
+| Error code                                                                            | Explanation                                                                                                             |
+| ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1040-Error in flow ${this.id} while classifying, details ${e && e.message} | This error message will show if you push-ing your bot via Kata CLI. It means there is an error when classifying intent. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means there is an error when classifying intent.
-
-#### Solution
+**Solution**
 
 See the message details for more info.
 
-### `Error Code 1041: Error classifying intent ${this.id} with classifier ${`
+| Error code                                                                 | Explanation                                                                                                             |
+| -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1041-Error classifying intent `${this.id}` with classifier `${` | This error message will show if you push-ing your bot via Kata CLI. It means there is an error when classifying intent. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means there is an error when classifying intent.
-
-#### Solution
+**Solution**
 
 Check the message details for more info.
 
-### `Error Code 1047: Invalid nlu`
+| Error code                  | Explanation                                                                                                      |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Error Code 1047-Invalid nlu | This error message will show if you push-ing your bot via Kata CLI. It means nluID is not recognized by the bot. |
 
-#### Explanation
-
-This error message will show if you push-ing your bot via Kata CLI. It means nluID is not recognized by the bot.
-
-#### Solution
+**Solution**
 
 Check again with `nluID` if any possible typos.
 
@@ -345,7 +313,7 @@ Check again with `nluID` if any possible typos.
 We try our best to provide detailed error messages and solutions. So, we will provide these error messages details with the solution soon.
 
 -   `Error Code 1001: Error processing action ${this.id}, details ${e && e.message}`
--   `0Error Code 1008: Cannot handle expression, because no expr is defined`
+-   `Error Code 1008: Cannot handle expression, because no expr is defined`
 -   `Error Code 1009: No handler found for type:${ast.type} and op:${ast.operator}`
 -   `Error Code 1011: Max Recursion of ${maxRecursion} is reached.\n\n ${JSON.stringify({`
 -   `Error Code 1012: No command handler for '${message.content}'`
