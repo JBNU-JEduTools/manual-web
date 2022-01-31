@@ -41,6 +41,12 @@ const Section = styled('section')`
   iframe {
     margin-top: 24px;
     margin-bottom: 24px;
+    width: 100%;
+    height: 250px;
+
+    @media only screen and (min-width: ${breakpoints.md}px) {
+      height: 400px;
+    }
   }
 
   .lead {
