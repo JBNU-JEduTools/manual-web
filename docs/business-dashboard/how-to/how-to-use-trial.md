@@ -5,7 +5,11 @@ next: how-to-register
 title: How to Use Trial Experience
 ---
 
+### Introduction
+
 Before sending real messages to your audiences, you can send a trial message with the **Trial Experience** feature for free and without requiring approval. This trial is available only for first-time registration with a WhatsApp Business account. Any additional phone number needs to wait until the business is verified.
+
+### How to Use
 
 1. Go to the **Trial Experience** page by clicking from the left-side navigation.
 

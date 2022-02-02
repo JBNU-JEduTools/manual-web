@@ -1,5 +1,5 @@
 ---
-id: introduction
+id: introduction-about
 title: About WhatsApp Business Dashboard
 next: get-started
 ---

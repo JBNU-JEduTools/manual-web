@@ -5,7 +5,11 @@ next: manage-wa-credit
 title: How to Register a New WhatsApp Number
 ---
 
+### Introduction
+
 In WhatsApp Business Dashboard, you can connect multiple WhatsApp accounts to the dashboard.
+
+### How to use
 
 1. To connect a new phone number, Go to the **WhatsApp Numbers** page by clicking from the left side navigation.
 
