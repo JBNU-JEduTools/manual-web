@@ -16,7 +16,7 @@ Facebook Messenger (commonly known as Messenger) is a messaging app and platform
 
     ![](https://lh6.googleusercontent.com/pirqaBIBV5pgDCwlh0meA62oISQC-fpKylZtwIswegWd_H0WafUzhYAULwFgativywXNyx9Qyg-JcvqePHjl7Od-PJDrT5p1yDPD5O4jLIHD1ju7GGWFwbs6PuuEqnqyrCXgYsPc)
 
-    > **Figure 1::** Create a new deployment
+    > **Figure 1:** Create a new deployment
 
 4. Click **Submit** to finish the deployment.
 
