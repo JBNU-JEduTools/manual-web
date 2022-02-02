@@ -1,6 +1,8 @@
 ---
 title: How to use Freshchat for your chatbot
 id: how-to-use-freshchat-for-your-chatbot
+imgSpot: /assets/images/tutorial/spot-ig-handover.png
+date: '2021-08-26T07:00:00+07:00'
 ---
 
 Freshchat’s live chat software is the fastest way for you to engage with your website visitors, provide assistance, and convert leads to happy customers. In this section, we will learn to connect our bot with Freshchat. Let’s get started.
@@ -23,7 +25,7 @@ If you already have an environment created, skip these steps.
 
 ![Alt Image 2](https://lh3.googleusercontent.com/wRHYa5fPbW012q3q7JqosoR9qq5R72aafskrbpILMMs2akEXy50LRF5uTJ2XjYBou26sv8s3K6p0K-Zy1oySuvP5k1F6wGwJrXJGjRuZmHvrJFIny_jjED9ZxrVvBZU06yHbaF2A)
 
-> **Figure 2**: Set up environment, then set up WhatsApp channel
+> **Figure 2**: Set up environment, then set up Freshchat channel
 
 2. Click the **Create Environment** button in any environment. You will see a drawer to create a new environment.
 3. Choose the **development version** you want (in this tutorial, we use the 1.0.0 version)

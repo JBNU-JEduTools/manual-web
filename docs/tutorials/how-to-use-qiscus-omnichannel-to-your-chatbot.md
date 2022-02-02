@@ -25,7 +25,7 @@ If you already have an environment created, skip these steps.
 
 ![Alt Image 2](https://lh3.googleusercontent.com/88Pxs5L8JuAmTCQNe8dxJwgPOFZVY72AJ3Vk_rdZqz7xKMnuMGT4En5cMB5kuNEl15BewuIbI54BwOcvpoIvx2f4rf1PfYba_XWGxxglpUGdGwvoWjwGEVmiFlZbrP8lwqUkp3v1)
 
-> **Figure 2**: Set up the environment, then set up the WhatsApp channel.
+> **Figure 2**: Set up the environment, then set up the Qiscus channel.
 
 2. Click the **Create Environment** button in any environment. You will see a drawer to create a new environment.
 3. Choose the **development version** you want (in this tutorial, we use the 1.0.0 version)
@@ -37,7 +37,7 @@ Continue to choose Freshchat as a chatbot channel.
 
 1. Click the **Create Channel** button to start adding channels to the environment. It will open up the Channel menu within the environment.
 2. Click the ”**+ Create Channel**” button in the channel table list. It will show a menu to set up the channel.
-3. Choose **Freshchat** in Channel Type.
+3. Choose **Qiscus** in Channel Type.
 
 ![Alt Image 3](https://lh4.googleusercontent.com/ls0ZhBnaEqJbd0EzEF33lttilhDqJwqauIK-FNc8Qrqzdl1J7I0KyMlODc9YoIhi8cdTlWdVLynndKfSJSQyOFxJJK3rFXiNPqVdHvxNDBNrmzH62U4Eh3hms8puCFVqT8AOTrm9)
 
