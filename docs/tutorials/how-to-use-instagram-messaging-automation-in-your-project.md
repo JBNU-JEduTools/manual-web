@@ -69,7 +69,7 @@ Primary chatbot responses that show text to end-users.
 
 1. Go to the Kata Platform and select your project.
 2. Click to **Flow > Conversation Flow > State > Action List**.
-3. Choose **Text. **FYI, the Text limitation for Instagram automation is **1,000 characters** and allows for **emoji**.
+3. Choose **Text.** FYI, the Text limitation for Instagram automation is **1,000 characters** and allows for **emoji**.
 4. Click **Create Action** to finalize your action
 
 #### Sending Images Reply
@@ -80,7 +80,7 @@ Primary chatbot response to send an image to end-users
 
 1. Go to the Kata Platform and select your project.
 2. Click to **Flow > Conversation Flow > State > Action List**.
-3. Choose **Text. **FYI, the Text limitation for Instagram automation is **1,000 characters** and allows for **emoji**.
+3. Choose **Text.** FYI, the Text limitation for Instagram automation is **1,000 characters** and allows for **emoji**.
 4. Click **Create Action** to finalize your action
 
 #### Sending Quick Replies Reply
@@ -98,9 +98,9 @@ You can use this feature to show menu options to end-users and a good user exper
 3. Choose **Quick Reply. **The Quick Reply limitations are (1) Max. 13 quick replies, (2) Each quick reply only allowed 20 char before being truncated.
 4. Mapping for Quick Reply with an accurate view to end-user can be seen as follows.
 
-![](https://lh5.googleusercontent.com/Lb3BrI0k8186fHdCu_38TfV5ndNmPqNIZJXt5F2gHxlZH5I0r3Rge0kljj-i-EhtFIDQ_iKuJFzJp5qlY7Yy7b765DKOJ4QD8sAVd-tHzNozkrRkhtfGh1bXMN3UZiUkBUa-WWGG)
+    ![](https://lh5.googleusercontent.com/Lb3BrI0k8186fHdCu_38TfV5ndNmPqNIZJXt5F2gHxlZH5I0r3Rge0kljj-i-EhtFIDQ_iKuJFzJp5qlY7Yy7b765DKOJ4QD8sAVd-tHzNozkrRkhtfGh1bXMN3UZiUkBUa-WWGG)
 
-> **Figure 2:** Quick replies components.
+    > **Figure 2:** Quick replies components.
 
 5. Click **Create Action** to finalize your action
 
