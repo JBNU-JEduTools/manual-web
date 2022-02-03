@@ -66,7 +66,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/tutorials">
+                  <Link href="/">
                     <UnstyledAnchor>
                       <img src="/assets/images/logo-docs.svg" />
                     </UnstyledAnchor>

@@ -76,7 +76,7 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/qios">
+                  <Link href="/">
                     <UnstyledAnchor>
                       <img src="/assets/images/products/qios-logo-docs.svg" />
                     </UnstyledAnchor>

@@ -75,7 +75,7 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/kata-omnichat">
+                  <Link href="/">
                     <UnstyledAnchor>
                       <img src="/assets/images/products/kata-omnichat-logo-docs.svg" />
                     </UnstyledAnchor>

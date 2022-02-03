@@ -76,7 +76,7 @@ const PlatformPageTemplate: React.FC<PlatformPageTemplateProps> = ({ post, toc }
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/kata-platform">
+                  <Link href="/">
                     <UnstyledAnchor>
                       <img src="/assets/images/products/kata-platform-logo-docs.svg" />
                     </UnstyledAnchor>

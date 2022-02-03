@@ -76,7 +76,7 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/business-dashboard">
+                  <Link href="/">
                     <UnstyledAnchor>
                       <img src="/assets/images/products/business-dashboard-logo-docs.svg" />
                     </UnstyledAnchor>
