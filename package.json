@@ -2,9 +2,16 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "yarn run md2json:all && next build",
     "start": "next start",
-    "server": "http-server"
+    "server": "http-server",
+    "md2json:global": "markdown-json -c ./markdown-to-json/settings/global.json",
+    "md2json:qios": "markdown-json -c ./markdown-to-json/settings/qios.json",
+    "md2json:kata-omnichat": "markdown-json -c ./markdown-to-json/settings/kata-omnichat.json",
+    "md2json:kata-platform": "markdown-json -c ./markdown-to-json/settings/kata-platform.json",
+    "md2json:business-dashboard": "markdown-json -c ./markdown-to-json/settings/business-dashboard.json",
+    "md2json:tutorials": "markdown-json -c ./markdown-to-json/settings/tutorials.json",
+    "md2json:all": "yarn run md2json:global && yarn run md2json:qios && yarn run md2json:kata-omnichat && yarn run md2json:kata-platform && yarn run md2json:business-dashboard && yarn run md2json:tutorials"
   },
   "dependencies": {
     "@aksara-ui/icons": "1.0.1-canary.1",
@@ -14,6 +21,7 @@
     "babel-preset-next": "^1.4.0",
     "classnames": "2.2.6",
     "date-fns": "2.16.1",
+    "fuse.js": "^6.5.3",
     "gray-matter": "4.0.2",
     "htmr": "^1.0.1",
     "next": "latest",
@@ -42,6 +50,7 @@
     "babel-plugin-styled-components": "^2.0.2",
     "eslint": "^8.5.0",
     "http-server": "^14.0.0",
+    "markdown-json": "^1.6.1",
     "postcss": "^8.2.4",
     "prettier": "^2.5.1",
     "tailwindcss": "^2.0.2",
