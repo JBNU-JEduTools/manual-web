@@ -11,13 +11,13 @@ interface HeaderRightProps {
 }
 
 const HideOnMobile = css`
-  @media (max-width: ${breakpoints.lg}px) {
+  @media (max-width: ${breakpoints.lg - 1}px) {
     display: none;
   }
 `;
 
 const HideOnDesktop = css`
-  @media (min-width: ${breakpoints.lg + 1}px) {
+  @media (min-width: ${breakpoints.lg}px) {
     display: none;
   }
 `;

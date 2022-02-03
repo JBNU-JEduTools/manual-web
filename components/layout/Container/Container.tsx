@@ -10,6 +10,9 @@ const Container = styled('div')`
     margin-left: 35%;
   }
   @media only screen and (width: ${breakpoints.lg}px) {
+    margin-left: 25%;
+  }
+  @media only screen and (width: ${breakpoints.lg - 1}px) {
     margin-left: 10%;
   }
 `;

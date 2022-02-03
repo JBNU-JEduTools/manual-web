@@ -19,16 +19,24 @@ export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial }) => {
       <CardContent>
         <ProductBadge>
           <img src="/assets/images/products/icon/kata-platform-icon.svg" />
-          <Text fontSize={12} fontWeight={600} color={theme.colors.blue06}>Kata Platform</Text>
+          <Text fontSize={12} fontWeight={600} color={theme.colors.blue06}>
+            Kata Platform
+          </Text>
         </ProductBadge>
         <CardTitle>
-          <Heading scale={700} fontSize={20} overflow="hidden">{frontMatter.title}</Heading>
+          <Heading scale={700} fontSize={20} overflow="hidden">
+            {frontMatter.title}
+          </Heading>
         </CardTitle>
-        <Link href={`/tutorials/${frontMatter.id}`}><Anchor>View Article <IconArrowRight width={14} /></Anchor></Link>
+        <Link href={`/tutorials/${frontMatter.id}`}>
+          <Anchor>
+            View Article <IconArrowRight width={14} />
+          </Anchor>
+        </Link>
       </CardContent>
     </Card>
-  )
-}
+  );
+};
 
 const CardContent = styled(Box)`
   height: 285px;
@@ -36,7 +44,7 @@ const CardContent = styled(Box)`
   @media only screen and (max-width: ${`${breakpoints.xl}px`}) {
     padding: 24px;
   }
-`
+`;
 
 const CardTitle = styled(Box)`
   overflow: hidden;
@@ -45,4 +53,4 @@ const CardTitle = styled(Box)`
   @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
     max-height: 125px;
   }
-`
+`;
