@@ -207,7 +207,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
     }
     const { searchData } = this.props;
     const fuse = new Fuse(searchData.data, options);
-    return fuse.search(query);
+    return fuse.search(query, { limit: 5 });
   }
 
   search = (event: React.ChangeEvent<HTMLInputElement>) => {
