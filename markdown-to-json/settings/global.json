@@ -1,0 +1,10 @@
+{
+  "name": "global",
+  "cwd": "./",
+  "src": "./docs",
+  "filePattern": "**/*.md",
+  "ignore": "*(icon|input|table)*",
+  "dist": "./markdown-to-json/outputs/global.json",
+  "metadata": true,
+  "deterministicOrder": false
+}

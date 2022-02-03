@@ -1,0 +1,32 @@
+{
+  "app": {
+    "config": "./markdown-to-json/settings/qios.json",
+    "cwd": "./",
+    "deterministicOrder": false,
+    "display": true,
+    "dist": "./markdown-to-json/outputs/qios.json",
+    "filePattern": "**/*.md",
+    "ignore": "*(icon|input|table)*",
+    "port": 3001,
+    "server": false,
+    "src": "./docs/qios",
+    "name": "qios",
+    "metadata": true,
+    "version": "1.6.1"
+  },
+  "data": [
+    {
+      "id": "release-notes-version",
+      "contents": "<p>The latest news, updates, and changes on Qios</p>\n<h2 id=\"200\">2.0.0</h2>\n<p><img src=\"/assets/images/products/qios/release-notes/qios-illustration.png\" alt=\"Qios Illustration\"></p>\n<h3 id=\"whats-new-⭐️\">What’s New ⭐️</h3>\n<p>Having a robust online presence has never become more important for a business than today, a substantial part of that is online chat transactions - chat commerce.</p>\n<p>For businesses who are tired of handling chat transactions manually, this is for you! We finally released a full fledged merchant business dashboard which allows you to conduct your business via chat faster and cater to your customers’ needs better. Unleash the potential of your business and employee, spend more time doing more meaningful things and let us take our the tedious, repetitive process of selling your products on chat apps.</p>\n<p>This will entirely replace the previous dashboard experience with a centralized solution. <strong>We always strive to serve you better.</strong> Kindly let us know if you have any questions or feedback.</p>\n<ul>\n<li><p><strong>Multi-store management</strong></p>\n<p>Manage multiple stores with one credential.</p>\n</li>\n<li><p><strong>Inventory or product management</strong></p>\n<p>Upload, Edit, Delete your products seamlessly.</p>\n</li>\n<li><p><strong>Order management</strong></p>\n<p>Accept and decline customer orders automatically by setting up the product availability details, proceed into delivery and monitor delivery status at your fingertips.</p>\n</li>\n<li><p><strong>Role management</strong></p>\n<p>Manage the roles within your dashboard. You can allocate a user as an admin or a store employee.</p>\n</li>\n<li><p><strong>Notification</strong></p>\n<p>Receive notifications on incoming orders on the dashboard.</p>\n</li>\n<li><p><strong>Catalog generator.</strong></p>\n<p>All products added can be converted into a catalogue automatically, send it to your customer via agent or automatically with a chatbot.</p>\n</li>\n<li><p><strong>Bot setup</strong></p>\n<p>We added a way for you to add the Bot function seamlessly through Kata Omnichat integration.</p>\n</li>\n<li><p><strong>Payment</strong></p>\n<p>Customers can now complete payment within the chat apps with our solution, your agents can then manage it via Qios dashboard. Currently we only accommodate GoPay payments, kindly reach out to us if you need further payment options.</p>\n</li>\n<li><p><strong>Shipping</strong></p>\n<p>We also integrate shipping solutions for your customers and let you manage it via Qios dashboard. Currently we accommodate the following shipping methods: GoSend Instant, GrabExpress Instant, Lalamove and Mr. Speedy.</p>\n</li>\n<li><p><strong>Reports</strong></p>\n<p>Qios covers basic reports such as best seller products, summary of transactions etc. For further details of analytics, you can request access to our Qios data studio.</p>\n</li>\n<li><p><strong>Customer database</strong></p>\n<p>Manage and get to know your customer more by understanding their interest and needs.</p>\n</li>\n</ul>\n",
+      "title": "Version",
+      "excerpt": "<p>The latest news, updates, and changes on Qios</p>",
+      "meta": {
+        "relativePath": "release-notes\\version.html",
+        "createdAt": "2022-01-28T07:16:05.938Z",
+        "lastModified": "2022-01-28T07:16:05.938Z",
+        "size": 2749,
+        "formattedSize": "2.7 KB"
+      }
+    }
+  ]
+}
