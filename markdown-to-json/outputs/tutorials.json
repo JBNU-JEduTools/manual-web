@@ -1,0 +1,18 @@
+{
+  "app": {
+    "config": "./markdown-to-json/settings/tutorials.json",
+    "cwd": "./",
+    "deterministicOrder": false,
+    "display": true,
+    "dist": "./markdown-to-json/outputs/tutorials.json",
+    "filePattern": "**/*.md",
+    "ignore": "*(icon|input|table)*",
+    "port": 3001,
+    "server": false,
+    "src": "./docs/tutorials",
+    "name": "tutorials",
+    "metadata": true,
+    "version": "1.6.1"
+  },
+  "data": []
+}

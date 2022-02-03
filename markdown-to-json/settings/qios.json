@@ -1,0 +1,10 @@
+{
+  "name": "qios",
+  "cwd": "./",
+  "src": "./docs/qios",
+  "filePattern": "**/*.md",
+  "ignore": "*(icon|input|table)*",
+  "dist": "./markdown-to-json/outputs/qios.json",
+  "metadata": true,
+  "deterministicOrder": false
+}

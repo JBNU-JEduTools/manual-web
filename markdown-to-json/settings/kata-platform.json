@@ -1,0 +1,10 @@
+{
+  "name": "kata-platform",
+  "cwd": "./",
+  "src": "./docs/kata-platform",
+  "filePattern": "**/*.md",
+  "ignore": "*(icon|input|table)*",
+  "dist": "./markdown-to-json/outputs/kata-platform.json",
+  "metadata": true,
+  "deterministicOrder": false
+}

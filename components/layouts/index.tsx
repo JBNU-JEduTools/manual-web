@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 
 import { AksaraReset } from 'components/foundations';
 import Layout from '../layout';
@@ -15,6 +14,7 @@ interface IndexLayoutProps {
 
 const IndexLayout: React.FC<IndexLayoutProps> = ({ children, navHidden }) => {
   const [navigation, setNavigation] = React.useState();
+  const [searchData, setSearchData] = React.useState();
   const router = useRouter();
   const [imageUrl, setImageUrl] = React.useState('docs');
   const isTutorial = router.route.split('/')[1] === 'tutorials';
@@ -24,39 +24,50 @@ const IndexLayout: React.FC<IndexLayoutProps> = ({ children, navHidden }) => {
   const isQios = router.route.split('/')[1] === 'qios';
 
   React.useEffect(() => {
-    let jsonNavigation;
+    let jsonNavigation, jsonSearchData;
     if (isTutorial && router.query.slug) {
       jsonNavigation = require(`docs/navigation/tutorials/${router.query.slug[0]}.json`);
+      jsonSearchData = require('markdown-to-json/outputs/tutorials.json');
       setNavigation(jsonNavigation);
+      setSearchData(jsonSearchData);
     } else if (isKataPlatform) {
       jsonNavigation = require(`docs/toc-kata-platform.json`);
       setImageUrl('kata-platform');
+      jsonSearchData = require('markdown-to-json/outputs/kata-platform.json');
       setNavigation(jsonNavigation);
+      setSearchData(jsonSearchData);
     } else if (isQios) {
       jsonNavigation = require(`docs/toc-qios.json`);
       setImageUrl('qios');
+      jsonSearchData = require('markdown-to-json/outputs/qios.json');
       setNavigation(jsonNavigation);
+      setSearchData(jsonSearchData);
     } else if (isBusinessDashboard) {
       jsonNavigation = require(`docs/toc-business-dashboard.json`);
       setImageUrl('business-dashboard');
+      jsonSearchData = require('markdown-to-json/outputs/business-dashboard.json');
       setNavigation(jsonNavigation);
+      setSearchData(jsonSearchData);
     } else if (isKataOmnichat) {
       jsonNavigation = require(`docs/toc-kata-omnichat.json`);
       setImageUrl('kata-omnichat');
+      jsonSearchData = require('markdown-to-json/outputs/kata-omnichat.json');
       setNavigation(jsonNavigation);
+      setSearchData(jsonSearchData);
+    } else {
+      jsonSearchData = require('markdown-to-json/outputs/global.json');
+      setSearchData(jsonSearchData);
     }
-  }, [router, navigation, setNavigation]);
+  }, [router]);
 
   return (
     <NavigationContextProvider>
       <AksaraReset>
-        <div id="#">
-          <Layout imageOrigin={imageUrl}>
-            <Overlay />
-            <Navigation navigation={navigation} navHidden={navHidden} />
-            {children}
-          </Layout>
-        </div>
+        <Layout imageOrigin={imageUrl} searchData={searchData}>
+          <Overlay />
+          <Navigation navigation={navigation} navHidden={navHidden} />
+          {children}
+        </Layout>
       </AksaraReset>
     </NavigationContextProvider>
   );

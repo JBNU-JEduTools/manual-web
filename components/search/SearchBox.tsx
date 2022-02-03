@@ -5,10 +5,12 @@ import styled, { css } from 'styled-components';
 import { space } from 'utils/variables';
 import { theme } from '@aksara-ui/react';
 import InputText from '../InputText';
+import Fuse from 'fuse.js';
 
 interface SearchPageProps {
   lng?: string;
   layout?: string;
+  searchData?: { app: any; data: any[] };
   onSearchClear?: () => void;
 }
 
@@ -98,11 +100,11 @@ const SearchResults = styled('div')<SearchPageProps>`
 `;
 
 const SearchInputText = styled(InputText)`
- input {
-  color: ${theme.colors.grey05};
-  border-radius: 32px;
-  border: 1px solid ${theme.colors.greylight05};
- }
+  input {
+    color: ${theme.colors.grey05};
+    border-radius: 32px;
+    border: 1px solid ${theme.colors.greylight05};
+  }
   ::-webkit-input-placeholder {
     color: ${theme.colors.grey05};
   }
@@ -147,23 +149,35 @@ const Root = styled('div')<SearchPageProps>`
   ${(props) => props.layout === 'mobile' && RootMobile}
 `;
 
-declare global {
-  interface Window {
-      __LUNR__:any;
-  }
-}
+const options = {
+  // isCaseSensitive: false,
+  // includeScore: false,
+  shouldSort: true,
+  // includeMatches: false,
+  // findAllMatches: false,
+  // minMatchCharLength: 1,
+  // location: 0,
+  threshold: 0.6,
+  // distance: 100,
+  // useExtendedSearch: false,
+  // ignoreLocation: false,
+  // ignoreFieldNorm: false,
+  // fieldNormWeight: 1,
+  keys: ['title', 'content'],
+};
 
 export default class SearchBox extends React.Component<SearchPageProps, SearchPageState> {
   static defaultProps = {
     lng: 'en',
-    layout: 'default'
+    layout: 'default',
   };
 
   constructor(props: SearchPageProps) {
     super(props);
+
     this.state = {
       query: '',
-      results: []
+      results: [],
     };
 
     this.onEscKeypress = this.onEscKeypress.bind(this);
@@ -188,13 +202,12 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
   }
 
   getSearchResults(query?: string) {
-    const { lng } = this.props;
-    if (!query || !window.__LUNR__) {
+    if (!query) {
       return [];
     }
-    const lunrIndex = window.__LUNR__[lng || 'en'];
-    const results = lunrIndex.index.search(query);
-    return results.map(({ ref }: any) => lunrIndex.store[ref]);
+    const { searchData } = this.props;
+    const fuse = new Fuse(searchData.data, options);
+    return fuse.search(query, { limit: 5 });
   }
 
   search = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -212,7 +225,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
   };
 
   render() {
-    const { layout, onSearchClear } = this.props;
+    const { layout, onSearchClear, searchData } = this.props;
     const { query, results } = this.state;
     const ref = React.createRef<HTMLInputElement>();
 
@@ -241,14 +254,23 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
         </div>
         {results && results.length !== 0 && (
           <SearchResults layout={layout}>
-            {results.map((page) => (
-              <SearchResultLink href={page.url}>
-                <SearchResult>
-                  <ResultTitle>{page.title}</ResultTitle>
-                  {page.excerpt && <ResultExcerpt>{page.excerpt}</ResultExcerpt>}
-                </SearchResult>
-              </SearchResultLink>
-            ))}
+            {results.map(({ item: page }) => {
+              let url = page.meta.relativePath.replace('.html', '').replaceAll('\\', '/');
+              if (searchData && searchData.app.name === 'global') {
+                url = `/${url}`;
+              } else {
+                // path for products
+                url = `/${searchData.app.name}/${url}`;
+              }
+              return (
+                <SearchResultLink href={url}>
+                  <SearchResult>
+                    <ResultTitle>{page.title}</ResultTitle>
+                    {page.excerpt && <ResultExcerpt dangerouslySetInnerHTML={{ __html: page.excerpt }}></ResultExcerpt>}
+                  </SearchResult>
+                </SearchResultLink>
+              );
+            })}
           </SearchResults>
         )}
       </Root>

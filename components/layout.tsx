@@ -64,9 +64,10 @@ const isPost = () => {
 interface ILayout {
   children: React.ReactNode;
   imageOrigin: string;
+  searchData: { app: any; data: any[] };
 }
 
-const Layout: React.FC<ILayout> = ({ children, imageOrigin }) => {
+const Layout: React.FC<ILayout> = ({ children, imageOrigin, searchData }) => {
   const { dispatch } = React.useContext(NavigationContext);
   const [isSearchOpen, setIsSearchOpen] = React.useState(false);
 
@@ -122,7 +123,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin }) => {
               </Link>
             </LogoWrapper>
             {isSearchOpen ? (
-              <SearchBox layout="mobile" onSearchClear={() => setIsSearchOpen(false)} />
+              <SearchBox layout="mobile" onSearchClear={() => setIsSearchOpen(false)} searchData={searchData} />
             ) : (
               <UnstyledSearchButton onClick={() => setIsSearchOpen(!isSearchOpen)}>
                 <SearchIcon />
@@ -131,7 +132,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin }) => {
           </HeaderRight>
           <HeaderRight contents="flex-end" hideOnMobile>
             <DesktopHeaderRight>
-              <SearchBox layout="desktop" />
+              <SearchBox layout="desktop" searchData={searchData} />
             </DesktopHeaderRight>
           </HeaderRight>
         </HeaderInner>

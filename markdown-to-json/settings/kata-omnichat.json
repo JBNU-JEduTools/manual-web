@@ -1,0 +1,10 @@
+{
+  "name": "kata-omnichat",
+  "cwd": "./",
+  "src": "./docs/kata-omnichat",
+  "filePattern": "**/*.md",
+  "ignore": "*(icon|input|table)*",
+  "dist": "./markdown-to-json/outputs/kata-omnichat.json",
+  "metadata": true,
+  "deterministicOrder": false
+}
