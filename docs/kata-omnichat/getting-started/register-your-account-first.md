@@ -5,10 +5,6 @@ prev: prepare-your-waba-account
 next: connect-your-instagram-messaging-inbox
 ---
 
-# Getting started
-
-## Register your account first
-
 <iframe width="600" height="300" src="https://youtu.be/VNgf-ciA-xA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 1.  Go to [https://omnichat.kata.ai/](https://omnichat.kata.ai/) and click **“Create New Account”**. After that, fill in your **Work email** and **Password**.
