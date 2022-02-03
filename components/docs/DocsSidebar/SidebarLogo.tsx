@@ -27,7 +27,7 @@ const SidebarLogo = styled('div')<SidebarLogoProps>`
 
   ${(props) => (props.navHidden ? hasNoSidebar : hasSidebar)}
 
-  @media (max-width: ${breakpoints.lg}px) {
+  @media (max-width: ${breakpoints.lg - 1}px) {
     display: none;
   }
 `;

@@ -43,14 +43,14 @@ export const PaginationWithDetails: React.FC<PaginationDetailsProps> = ({
 const PaginationWrapper = styled(Box)`
   display: flex;
   flex-direction: row;
-  @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     line-height: 64px;
     flex-direction: column;
   } ;
 `;
 
 const PaginationDetailWrapper = styled(Box)`
-  @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     margin-bottom: 8x;
   }
 `;

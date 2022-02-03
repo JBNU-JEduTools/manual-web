@@ -63,7 +63,7 @@ export const styleJSX = css`
     background-color: #fff;
   }
 
-  @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     .table-of-contents {
       display: none;
     }

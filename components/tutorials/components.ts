@@ -9,7 +9,7 @@ export const Cards = styled('div')`
   justify-content: space-between;
   margin-bottom: 32px;
 
-  @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     flex-direction: column;
     iframe {
       width: 100% !important;
@@ -18,7 +18,14 @@ export const Cards = styled('div')`
     }
   }
 
-  @media only screen and (min-width: ${`${breakpoints.lg + 1}px`}) {
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
+    iframe {
+      width: 39vw;
+      height: 35vh;
+    }
+  }
+
+  @media only screen and (min-width: ${`${breakpoints.xl}px`}) {
     iframe {
       width: 29vw;
       height: 35vh;
@@ -81,10 +88,10 @@ export const Card = styled(CardAksara)`
   border-radius: 8px;
   border: 1px solid ${theme.colors.grey03};
   cursor: default;
-  @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     max-width: 100% !important;
   }
-  @media only screen and (min-width: ${`${breakpoints.xl}px`}) {
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
     width: 32%;
   }
   margin-top: 12px;
