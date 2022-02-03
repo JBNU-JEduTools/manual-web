@@ -195,7 +195,15 @@
         {
           "id": "release-notes-version",
           "url": "/business-dashboard/release-notes/version",
-          "title": "Version"
+          "title": "Version",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "version-156",
+              "url": "/business-dashboard/release-notes/version#156",
+              "title": "1.5.6"
+            }
+          ]
         }
       ]
     }

@@ -134,7 +134,15 @@
         {
           "id": "release-notes-version",
           "url": "/qios/release-notes/version",
-          "title": "Version"
+          "title": "Version",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "version-200",
+              "url": "/qios/release-notes/version#200",
+              "title": "2.0.0"
+            }
+          ]
         }
       ]
     }

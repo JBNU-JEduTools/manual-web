@@ -366,7 +366,15 @@
         {
           "id": "release-notes-version",
           "url": "/kata-omnichat/release-notes/version",
-          "title": "Version"
+          "title": "Version",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "version-255",
+              "url": "/kata-omnichat/release-notes/version#255",
+              "title": "2.5.5"
+            }
+          ]
         }
       ]
     }
