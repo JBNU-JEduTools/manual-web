@@ -1,6 +1,7 @@
 ---
 id: benefits-with-kata-omnichat
 title: Benefits with Kata Omnichat
+prev: what-is-kata-omnichat
 next: prepare-your-instagram-business-account
 ---
 
