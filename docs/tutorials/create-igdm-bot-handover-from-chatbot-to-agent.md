@@ -3,6 +3,7 @@ layout: tutorial
 id: create-igdm-bot-handover-from-chatbot-to-agent
 title: Create Instagram Bot Handover from Chatbot to Agent Tutorial
 imgSpot: /assets/images/tutorial/spot-ig-handover.png
+product: kata-platform
 prev: integration-chatbot-with-cms-studio
 next: create-simple-bot-handover-from-chatbot-to-agent
 date: '2018-10-10T07:00:00+07:00'

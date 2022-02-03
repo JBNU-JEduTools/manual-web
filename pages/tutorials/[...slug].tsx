@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { getMdxNode, getMdxPaths } from 'next-mdx/server';
-import { Text, UnstyledAnchor } from '@aksara-ui/react';
+import { AksaraProvider, Text, UnstyledAnchor } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
 import { DocsWrapper } from 'components/docs/DocsWrapper';
@@ -21,6 +21,7 @@ import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import IndexLayout from 'components/layouts';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
+import { PRODUCTS_DICT } from 'utils/constants';
 
 interface TutorialPageTemplateProps {
   post: any;
@@ -80,13 +81,17 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
               </div>
             )}
             <DocsContainer>
-              <Breadcrumb
-                items={[
-                  { url: '/', urlDisplay: 'Home' },
-                  { url: '/tutorials', urlDisplay: 'All Tutorials' },
-                  { url: '#', urlDisplay: frontMatter.title },
-                ]}
-              />
+              {/* Because AksaraReset in IndexLayout broke Breadcrumb css */}
+              <AksaraProvider disableInjection>
+                <Breadcrumb
+                  items={[
+                    { url: '/', urlDisplay: 'Home' },
+                    { url: '/tutorials', urlDisplay: 'All Tutorials' },
+                    { url: `/${frontMatter.product}`, urlDisplay: PRODUCTS_DICT[frontMatter.product] },
+                    { urlDisplay: 'Tutorial' },
+                  ]}
+                />
+              </AksaraProvider>
               <DocsHeader title={frontMatter.title} />
               <MarkdownContent>{renderAst(post.mdx.renderedOutput)}</MarkdownContent>
               <DocsHelpful />

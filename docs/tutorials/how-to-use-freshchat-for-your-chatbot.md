@@ -2,6 +2,7 @@
 title: How to use Freshchat for your chatbot
 id: how-to-use-freshchat-for-your-chatbot
 imgSpot: /assets/images/tutorial/spot-ig-handover.png
+product: kata-platform
 date: '2021-08-26T07:00:00+07:00'
 ---
 

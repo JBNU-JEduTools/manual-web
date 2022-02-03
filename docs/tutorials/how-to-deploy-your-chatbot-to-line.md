@@ -2,6 +2,7 @@
 layout: tutorial
 id: how-to-deploy-your-chatbot-to-line
 imgSpot: /assets/images/tutorial/spot-ig-handover.png
+product: kata-platform
 title: How to deploy your chatbot to LINE
 date: '2022-01-17T07:00:00+07:00'
 ---

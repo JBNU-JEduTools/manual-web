@@ -2,6 +2,7 @@
 layout: tutorial
 id: how-to-use-facebook-messenger-for-your-chatbot
 imgSpot: /assets/images/tutorial/spot-ig-handover.png
+product: kata-platform
 title: How to use Telegram as your chatbot messaging platform
 date: '2021-08-26T07:00:00+07:00'
 ---

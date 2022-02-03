@@ -3,6 +3,7 @@ layout: tutorial
 id: integration-chatbot-with-nl-studio
 title: Integration Chatbot with NL Studio Tutorial
 imgSpot: /assets/images/tutorial/spot-nl-studio-integration.png
+product: kata-platform
 prev: nl-studio-tutorial
 next: integration-chatbot-with-cms-studio
 date: '2018-09-09T07:00:00+07:00'

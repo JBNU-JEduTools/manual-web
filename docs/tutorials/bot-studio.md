@@ -3,6 +3,7 @@ layout: tutorial
 id: bot-studio
 title: Bot Studio Tutorial
 imgSpot: /assets/images/tutorial/spot-cms.png
+product: kata-platform
 prev: hello-world-tutorial
 next: nl-studio-tutorial
 date: '2018-07-07T07:00:00+07:00'

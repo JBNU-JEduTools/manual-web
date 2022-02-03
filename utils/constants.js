@@ -52,3 +52,10 @@ export const PRODUCTS = [
     externalUrl: false,
   },
 ];
+
+export const PRODUCTS_DICT = {
+  'kata-platform': 'Kata Platform',
+  'kata-omnichat': 'Kata Omnichat',
+  'business-dashboard': 'Business Dashboard',
+  qios: 'Qios',
+};

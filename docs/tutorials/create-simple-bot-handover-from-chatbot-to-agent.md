@@ -3,6 +3,7 @@ layout: tutorial
 id: create-simple-bot-handover-from-chatbot-to-agent
 imgSpot: /assets/images/tutorial/spot-simple-handover.png
 title: Create Simple Bot Handover from Chatbot to Agent Tutorial
+product: kata-platform
 prev: create-igdm-bot-handover-from-chatbot-to-agent
 date: '2018-11-11T07:00:00+07:00'
 ---

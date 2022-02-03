@@ -3,6 +3,7 @@ layout: tutorial
 id: nl-studio
 title: NL Studio Tutorial
 imgSpot: /assets/images/tutorial/spot-nl-studio.png
+product: kata-platform
 prev: bot-studio-tutorial
 next: integration-chatbot-with-nl-studio
 date: '2018-08-08T07:00:00+07:00'

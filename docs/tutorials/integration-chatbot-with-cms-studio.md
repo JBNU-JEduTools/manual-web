@@ -2,6 +2,7 @@
 layout: tutorial
 imgSpot: /assets/images/tutorial/spot-cms-integration.png
 id: integration-chatbot-with-cms-studio
+product: kata-platform
 title: Integration Chatbot with Kata CMS
 prev: integration-chatbot-with-nl-studio
 next: create-igdm-bot-handover-from-chatbot-to-agent

@@ -3,6 +3,7 @@ layout: tutorial
 id: hello-world
 title: Creating a Simple Hello World Chatbot
 imgSpot: /assets/images/tutorial/spot-hello-world.png
+product: kata-platform
 description: This is a quick start how to build a 'Hello World' chatbot
 next: bot-studio-tutorial
 date: '2018-06-06T07:00:00+07:00'
