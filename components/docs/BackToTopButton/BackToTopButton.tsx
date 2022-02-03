@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from '@aksara-ui/react';
 import { layerIndexes, breakpoints } from 'utils/variables';
+import { useRouter } from 'next/router';
 
 const Wrapper = styled('a')`
   display: inline-block;
@@ -46,10 +47,9 @@ interface BackToTopButtonProps {
 }
 
 const BackToTopButton: React.FC<BackToTopButtonProps> = ({ className, href }) => {
+  const router = useRouter();
   const handleBackToTop = () => {
-    if (typeof window !== 'undefined') {
-      window.scrollTo(0, 0);
-    }
+    router.push('#');
   };
 
   return (
