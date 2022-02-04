@@ -432,7 +432,100 @@
         {
           "id": "release-notes-version",
           "url": "/kata-platform/release-notes/version",
-          "title": "Version"
+          "title": "Version",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "version-3231",
+              "url": "/kata-platform/release-notes/version#3231",
+              "title": "3.23.1"
+            },
+            {
+              "id": "version-3230",
+              "url": "/kata-platform/release-notes/version#3230",
+              "title": "3.23.0"
+            },
+            {
+              "id": "version-3220",
+              "url": "/kata-platform/release-notes/version#3220",
+              "title": "3.22.0"
+            },
+            {
+              "id": "version-3210",
+              "url": "/kata-platform/release-notes/version#3210",
+              "title": "3.21.0"
+            },
+            {
+              "id": "version-3190",
+              "url": "/kata-platform/release-notes/version#3190",
+              "title": "3.19.0"
+            },
+            {
+              "id": "version-3150",
+              "url": "/kata-platform/release-notes/version#3150",
+              "title": "3.15.0"
+            },
+            {
+              "id": "version-390",
+              "url": "/kata-platform/release-notes/version#390",
+              "title": "3.9.0"
+            },
+            {
+              "id": "version-380",
+              "url": "/kata-platform/release-notes/version#380",
+              "title": "3.8.0"
+            },
+            {
+              "id": "version-370",
+              "url": "/kata-platform/release-notes/version#370",
+              "title": "3.7.0"
+            },
+            {
+              "id": "version-363",
+              "url": "/kata-platform/release-notes/version#363",
+              "title": "3.6.3"
+            },
+            {
+              "id": "version-356",
+              "url": "/kata-platform/release-notes/version#356",
+              "title": "3.5.6"
+            },
+            {
+              "id": "version-340",
+              "url": "/kata-platform/release-notes/version#340",
+              "title": "3.4.0"
+            },
+            {
+              "id": "version-330",
+              "url": "/kata-platform/release-notes/version#330",
+              "title": "3.3.0"
+            },
+            {
+              "id": "version-322",
+              "url": "/kata-platform/release-notes/version#322",
+              "title": "3.2.2"
+            },
+            {
+              "id": "version-320",
+              "url": "/kata-platform/release-notes/version#320",
+              "title": "3.2.0"
+            },
+            {
+              "id": "version-310",
+              "url": "/kata-platform/release-notes/version#310",
+              "title": "3.1.0"
+            },
+            {
+              "id": "version-310",
+              "url": "/kata-platform/release-notes/version#310",
+              "title": "3.1.0"
+            },
+            {
+              "id": "version-300",
+              "url": "/kata-platform/release-notes/version#300",
+              "title": "3.0.0"
+            }
+          ]
         }
       ]
     }

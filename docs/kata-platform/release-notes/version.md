@@ -199,7 +199,7 @@ You can now **delete trained data** on Kata NL. Some important notes:
 
 ![Delete Training](/assets/images/products/kata-platform/release-notes/platform-3.6.3/delete-training-2.png)
 
-# 3.5.6
+## 3.5.6
 
 ### What's New
 
@@ -427,25 +427,3 @@ Previously known as kata-kit, Wicara is the implementation of Aksara Design Lang
 Go to http://aksara.kata.ai to see our Design Language System.
 
 We hope Kata Platform 3.0 will help you build smarter chatbots in shorter development time. It is our mission to democratize AI and help the community to build chatbot solution. For any inquiries, contact us at [support@kata.ai](mailto:support@kata.ai).
-
-## 2.5.0
-
-Same powerful Kata Platform, only look and feel better. Should you have any questions, feel free to email [support@kata.ai](mailto:support@kata.ai).
-
-### What's New
-
-#### Error logs
-
-The new Error Log lists any errors that appeared during bot development. What went wrong and when it went wrong.
-
-#### Bot Templates
-
-Get a head start creating your bot with our starter-pack templates:
-
--   **API Bot:** Learn how your Bot can integrate to third-party API.
--   **Button Bot:** Not only through conversation, your bot can also interact with users through buttons.
--   **Shopping Bot:** Our famous Pizza Bot is now available for anyone. Build your own Shopping Bot using our recipe.
-
-#### Documentation
-
-Getting complicated with our new Platform? Keep calm and check our documentation menu. Easiness to access our sub-menu in simple and subtle view.
