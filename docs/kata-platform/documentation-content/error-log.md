@@ -2,6 +2,7 @@
 id: error-log
 title: Error Log
 prev: analyze-your-bot-conversations
+next: how-to-deploy-your-chatbot-using-generic-channel
 ---
 
 ## Introduction
@@ -35,9 +36,9 @@ intents:
 
 ```
 
-| Error code | Explanation |
-|------------ | ----------- |
-| Error Code 1003-Cannot find action type: `${desc.type}`| This error message commonly happens if you push your bot via Kata CLI. It means the action type is not supported or has a typo on the action type description on KataML |
+| Error code                                              | Explanation                                                                                                                                                             |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Error Code 1003-Cannot find action type: `${desc.type}` | This error message commonly happens if you push your bot via Kata CLI. It means the action type is not supported or has a typo on the action type description on KataML |
 
 For example, you have the following case.
 
