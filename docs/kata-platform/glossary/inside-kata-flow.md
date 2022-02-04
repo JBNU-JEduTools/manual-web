@@ -1,6 +1,8 @@
 ---
 id: glossary-inside-kata-flow
 title: Inside Kata Flow
+prev: glossary-kata-platform
+next: glossary-coming-soon
 ---
 
 ### Conversation Flow

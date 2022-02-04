@@ -1,6 +1,8 @@
 ---
 id: glossary-general
 title: General
+prev: bot-development-faqs
+next: glossary-kata-platform
 ---
 
 ### API

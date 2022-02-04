@@ -2,6 +2,7 @@
 id: how-to-change-error-messages-in-your-chatbot
 title: How to Change Error Messages in Your Chatbot to Match Them With Chatbot Persona
 prev: using-custom-api-to-access-third-party-application
+next: general-faqs
 ---
 
 In Kata Platform, we have a default error message which will show to end-users “Maaf terjadi kesalahan pada sistem” and “Maaf pesan kamu akan diproses beberapa saat lagi yaa”, then you can check it in the Error Log feature in Kata Platform. Learn more about error messages in the Kata Platform.

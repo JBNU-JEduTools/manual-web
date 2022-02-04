@@ -1,6 +1,8 @@
 ---
 id: glossary-coming-soon
 title: Coming Soon
+prev: glossary-inside-kata-flow
+next: version
 ---
 
 -   Intent in Flow
