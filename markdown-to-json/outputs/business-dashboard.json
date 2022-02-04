@@ -6,7 +6,7 @@
     "display": true,
     "dist": "./markdown-to-json/outputs/business-dashboard.json",
     "filePattern": "**/*.md",
-    "ignore": "*(icon|input|table)*",
+    "ignore": "",
     "port": 3001,
     "server": false,
     "src": "./docs/business-dashboard",

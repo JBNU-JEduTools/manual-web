@@ -2,8 +2,7 @@
   "name": "tutorials",
   "cwd": "./",
   "src": "./docs/tutorials",
-  "filePattern": "**/*.md",
-  "ignore": "*(icon|input|table)*",
+  "filePattern": "*.md",
   "dist": "./markdown-to-json/outputs/tutorials.json",
   "metadata": true,
   "deterministicOrder": false

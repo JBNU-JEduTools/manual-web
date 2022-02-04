@@ -3,7 +3,6 @@
   "cwd": "./",
   "src": "./docs/business-dashboard",
   "filePattern": "**/*.md",
-  "ignore": "*(icon|input|table)*",
   "dist": "./markdown-to-json/outputs/business-dashboard.json",
   "metadata": true,
   "deterministicOrder": false
