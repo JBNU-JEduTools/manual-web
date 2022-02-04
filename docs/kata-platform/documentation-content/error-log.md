@@ -35,10 +35,9 @@ intents:
 
 ```
 
-| Error code                                                                                                                                                              | Explanation |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| Error Code 1003-Cannot find action type: `${desc.type}`                                                                                                                 |
-| This error message commonly happens if you push your bot via Kata CLI. It means the action type is not supported or has a typo on the action type description on KataML |
+| Error code | Explanation |
+|------------ | ----------- |
+| Error Code 1003-Cannot find action type: `${desc.type}`| This error message commonly happens if you push your bot via Kata CLI. It means the action type is not supported or has a typo on the action type description on KataML |
 
 For example, you have the following case.
 
@@ -155,8 +154,7 @@ You must check the mapping inside the transition, then fix any possible typos in
 | Error Code 1016-Error in flow `${this.id}` while updating state: `${e && e.message}` | This error message will show if you are push-ing your bot via Kata CLI or publishing via Platform. It means there is a state error inside a flow. There are several error messages inside this error code: |
 
 1. If the error message shows, for example `Error in flow greetingFlow while updating state: null, details: No next state found from state init`. It means in `greetingFlow` flow is no next state found.
-
-2.If the error message shows, for example: `Error in flow greetingFlow while updating state: null, details: Next state ‘greeting’ from ‘init’ doesn’t exist`. It means in `greetingFlow` flow, there is a state name `greeting` that is not defined yet. |
+2. If the error message shows, for example: `Error in flow greetingFlow while updating state: null, details: Next state ‘greeting’ from ‘init’ doesn’t exist`. It means in `greetingFlow` flow, there is a state name `greeting` that is not defined yet. |
 
 **Solution**
 
