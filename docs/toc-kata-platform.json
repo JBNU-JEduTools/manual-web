@@ -58,6 +58,11 @@
           "useAccordion": true,
           "items": [
             {
+              "id": "video-tutorial",
+              "url": "/kata-platform/documentation-content/start-your-first-chatbot#video-tutorial",
+              "title": "Video tutorial"
+            },
+            {
               "id": "registration-and-login",
               "url": "/kata-platform/documentation-content/start-your-first-chatbot#registration-and-login",
               "title": "Registration and Login"
