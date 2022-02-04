@@ -10,7 +10,7 @@ import Fuse from 'fuse.js';
 interface SearchPageProps {
   lng?: string;
   layout?: string;
-  searchData?: { app: any; data: any[] };
+  fuseSearch?: { fuse: any; name: string };
   onSearchClear?: () => void;
 }
 
@@ -149,23 +149,6 @@ const Root = styled('div')<SearchPageProps>`
   ${(props) => props.layout === 'mobile' && RootMobile}
 `;
 
-const options = {
-  // isCaseSensitive: false,
-  // includeScore: false,
-  shouldSort: true,
-  // includeMatches: false,
-  // findAllMatches: false,
-  // minMatchCharLength: 1,
-  // location: 0,
-  threshold: 0.6,
-  // distance: 100,
-  // useExtendedSearch: false,
-  // ignoreLocation: false,
-  // ignoreFieldNorm: false,
-  // fieldNormWeight: 1,
-  keys: ['title', 'content'],
-};
-
 export default class SearchBox extends React.Component<SearchPageProps, SearchPageState> {
   static defaultProps = {
     lng: 'en',
@@ -205,8 +188,9 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
     if (!query) {
       return [];
     }
-    const { searchData } = this.props;
-    const fuse = new Fuse(searchData.data, options);
+    const {
+      fuseSearch: { fuse },
+    } = this.props;
     return fuse.search(query, { limit: 5 });
   }
 
@@ -225,7 +209,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
   };
 
   render() {
-    const { layout, onSearchClear, searchData } = this.props;
+    const { layout, onSearchClear, fuseSearch } = this.props;
     const { query, results } = this.state;
     const ref = React.createRef<HTMLInputElement>();
 
@@ -256,14 +240,14 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
           <SearchResults layout={layout}>
             {results.map(({ item: page }) => {
               let url = page.meta.relativePath.replace('.html', '').replaceAll('\\', '/');
-              if (searchData && searchData.app.name === 'global') {
+              if (fuseSearch && fuseSearch.name === 'global') {
                 url = `/${url}`;
               } else {
                 // path for products
-                url = `/${searchData.app.name}/${url}`;
+                url = `/${fuseSearch.name}/${url}`;
               }
               return (
-                <SearchResultLink href={url}>
+                <SearchResultLink href={url} key={page.title}>
                   <SearchResult>
                     <ResultTitle>{page.title}</ResultTitle>
                     {page.excerpt && <ResultExcerpt dangerouslySetInnerHTML={{ __html: page.excerpt }}></ResultExcerpt>}
