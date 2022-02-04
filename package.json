@@ -11,7 +11,9 @@
     "md2json:kata-platform": "markdown-json -c ./markdown-to-json/settings/kata-platform.json",
     "md2json:business-dashboard": "markdown-json -c ./markdown-to-json/settings/business-dashboard.json",
     "md2json:tutorials": "markdown-json -c ./markdown-to-json/settings/tutorials.json",
-    "md2json:all": "yarn run md2json:global && yarn run md2json:qios && yarn run md2json:kata-omnichat && yarn run md2json:kata-platform && yarn run md2json:business-dashboard && yarn run md2json:tutorials"
+    "md2json:convert": "yarn run md2json:global && yarn run md2json:qios && yarn run md2json:kata-omnichat && yarn run md2json:kata-platform && yarn run md2json:business-dashboard && yarn run md2json:tutorials",
+    "md2json:sanitize": "node ./markdown-to-json/sanitize.js",
+    "md2json:all": "yarn run md2json:convert && yarn run md2json:sanitize"
   },
   "dependencies": {
     "@aksara-ui/icons": "1.0.1-canary.1",
@@ -53,6 +55,7 @@
     "markdown-json": "^1.6.1",
     "postcss": "^8.2.4",
     "prettier": "^2.5.1",
+    "sanitize-html": "^2.6.1",
     "tailwindcss": "^2.0.2",
     "typescript": "^4.5.3"
   },
