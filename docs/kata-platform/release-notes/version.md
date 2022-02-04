@@ -1,5 +1,5 @@
 ---
-id: version
+id: release-notes-version
 title: Version
 ---
 
