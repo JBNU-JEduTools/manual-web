@@ -149,19 +149,6 @@
       }
     },
     {
-      "contents": "The latest news updates and changes on Business Dashboard 156 Whats New The guidance about the WhatsApp Business Dashboard is currently at Kata Docs It is easier and simpler for you to follow a stepbystep guide to join us and explore our features Learn more about WhatsApp Business Dashboard What will you find out Start your journey in Whatsapp Business Dashboard in Get Started with WhatsApp Business Dashboard Find out more about How to Use Trial Experience Guide to topup WhatsApp Credit and Credit history in Manage Your Broadcast Credit Understand more about message templates in Manage Your WhatsApp Message Templates Know how to broadcast template messages from the WhatsApp Business Dashboard in Manage Your Broadcast Learn more about WhatsApp business dashboard insight at How to Use Analytics ",
-      "excerpt": "The latest news updates and changes on Business Dashboard",
-      "id": "release-notes-version",
-      "title": "Version",
-      "meta": {
-        "relativePath": "business-dashboard\\release-notes\\version.html",
-        "createdAt": "2022-01-28T07:15:05.877Z",
-        "lastModified": "2022-01-28T07:15:05.877Z",
-        "size": 1349,
-        "formattedSize": "1.3 KB"
-      }
-    },
-    {
       "contents": " After creating an account in Instagram go to your Profile Click the bar icon in the top right of your profile account then go to Settings gt Account Scroll down to the bottom of the Account page and click Switch to Professional Account Following the steps to switch the account by clicking Continue button Figure 1 Instagram Account Setting Choose Categories of your business account as listed You can also switch on the categories into Display on Profile Figure 2 Business Account Categories Choose the business type whether a Business or a Creator Figure 3 Choose your business type Fulfill your business contact info contains email phone number and address address is optional The next step is to connect to your Facebook Page The Instagram system will automatically show the pop up of connecting to your Facebook You can click Continue or Login to Facebook from the first step Following the instructions by clicking Continue button Click the Add your Instagram account name button to add your Instagram business account to the Account Center Finish the setup of connecting to Account Center by clicking Yes Finish setup Choose your Facebook Page that wants to be connected to your Instagram business account or click Create a new Facebook Page If you click Create a new Facebook page you have to fill in the Page Name and Page Category The last step is to click the Create button after you fill in If your chose any Facebook Page in the list then you just need to click Next to finish the process Figure 4 Connect your facebook page Following the 4 steps to set up your professional account Complete your profile get inspired by following some related accounts grow your audience by inviting your relatives share 3 new contents to view insights and click to explore professional tools to see insights and promotions Figure 5 Professional Account Set Up After setting up your business account go to Settings gt Privacy gt Messages Scroll down to the bottom of the page and find Allow access to messages Switch on this to allow the access for any messages Figure 6 Message Controls Setting Login into and choose your page or account that has been connected in the sidebar After choosing the page for the first time you will automatically see the pop up to confirm Instagram access You need to login to your Instagram business account by clicking the Login button Then confirm to allow access to Instagram messages in Inbox After successfully set up your Instagram business account you can go back to Kata Omnichat to connect Instagram messaging as your channel in the dashboard ",
       "excerpt": "After creating an account in Instagram go to your Profile",
       "id": "prepare-your-instagram-business-account",
@@ -447,17 +434,16 @@
       }
     },
     {
-      "contents": " Kata Omnichat is a centralized dashboard where you can handle messages from multiple channels For now you can integrate 2 channels Instagram Messaging and WhatsApp Business API ",
+      "contents": " What is Kata Omnichat Kata Omnichat is a centralized dashboard where you can handle messages from multiple channels For now you can integrate 2 channels Instagram Messaging and WhatsApp Business API ",
       "excerpt": "Kata Omnichat is a centralized dashboard where you can handle messages from multiple channels For now you can integrate 2 channels Instagram Messaging and WhatsApp Business API",
       "id": "what-is-kata-omnichat",
-      "title": "What is Kata Omnichat",
       "next": "benefits-with-kata-omnichat",
       "meta": {
         "relativePath": "kata-omnichat\\introduction\\what-is-kata-omnichat.html",
-        "createdAt": "2022-01-28T04:04:03.764Z",
-        "lastModified": "2022-01-28T04:04:03.764Z",
-        "size": 351,
-        "formattedSize": "351 Bytes"
+        "createdAt": "2022-02-04T03:17:33.161Z",
+        "lastModified": "2022-02-04T03:17:33.161Z",
+        "size": 405,
+        "formattedSize": "405 Bytes"
       }
     },
     {
@@ -896,19 +882,6 @@
       }
     },
     {
-      "contents": "The latest news updates and changes on Kata Omnichat 255 Whats New Are you a business owner Do you have many agents for some messaging platforms to handle customers inquiries Or even do you sometimes need a bot for your Instagram Business Messaging and WhatsApp Business API to help your agents with some repeated questions This new product is definitely suitable for you Were building Kata Omnichat 20 so it will be the replacement for the old one This centralized agent dashboard will help your agents respond to any customers inquiries rapidly without switching from one messaging app to another messaging app Also if needed an agent bot will be a savior to collaborate with your agents Learn more about Agent Bot Whats been fixed Changing the whole user experience to make it seamless and easier for you and your agents and having two most popular messaging platforms Instagram Messaging and WhatsApp Business This product will be very flexible for you you dont need to have a bot at the first time but you can add it anytime you need it Were updating some bugs in Kata Omnichat 20 Fixed users cant download reports to CSV Fixed users cant seeknow customers WA number in Contacts Fixed users cant see previous messages in WA Fixed users cant get email verification ",
-      "excerpt": "The latest news updates and changes on Kata Omnichat",
-      "id": "release-notes-version",
-      "title": "Version",
-      "meta": {
-        "relativePath": "kata-omnichat\\release-notes\\version.html",
-        "createdAt": "2022-01-28T07:15:10.788Z",
-        "lastModified": "2022-01-28T07:15:10.788Z",
-        "size": 1662,
-        "formattedSize": "1.6 KB"
-      }
-    },
-    {
       "contents": "On this page you can download the agent report by clicking the right upper corner of the page and you will see the report of the metrics group by the agents so you can have agent productivity data Figure 70 Download Report ",
       "excerpt": "On this page you can download the agent report by clicking the right upper corner of the page and you will see the report of the metrics group by the agents so you can have agent productivity data",
       "id": "download-report",
@@ -1032,12 +1005,14 @@
       "excerpt": "A flow should be volatile which means it gets closed when switching to another flow",
       "id": "bot-development-faqs",
       "title": "Bot Development FAQs",
+      "prev": "general-faqs",
+      "next": "glossary-general",
       "meta": {
         "relativePath": "kata-platform\\faqs\\bot-development-faqs.html",
-        "createdAt": "2022-01-26T04:28:47.264Z",
-        "lastModified": "2022-01-26T04:28:47.264Z",
-        "size": 8344,
-        "formattedSize": "8.1 KB"
+        "createdAt": "2022-02-04T03:22:32.200Z",
+        "lastModified": "2022-02-04T03:22:32.200Z",
+        "size": 8388,
+        "formattedSize": "8.2 KB"
       }
     },
     {
@@ -1045,12 +1020,14 @@
       "excerpt": "You may define them in NLUs Learn more about how to integrate chatbots using NLU",
       "id": "general-faqs",
       "title": "General FAQs",
+      "prev": "how-to-change-error-messages-in-your-chatbot",
+      "next": "bot-development-faqs",
       "meta": {
         "relativePath": "kata-platform\\faqs\\general-faqs.html",
-        "createdAt": "2022-01-26T04:28:47.265Z",
-        "lastModified": "2022-01-26T04:28:47.265Z",
-        "size": 3598,
-        "formattedSize": "3.5 KB"
+        "createdAt": "2022-02-04T03:19:33.182Z",
+        "lastModified": "2022-02-04T03:19:33.182Z",
+        "size": 3678,
+        "formattedSize": "3.6 KB"
       }
     },
     {
@@ -1058,12 +1035,14 @@
       "excerpt": "Intent in Flow",
       "id": "glossary-coming-soon",
       "title": "Coming Soon",
+      "prev": "glossary-inside-kata-flow",
+      "next": "release-notes-version",
       "meta": {
         "relativePath": "kata-platform\\glossary\\coming-soon.html",
-        "createdAt": "2022-01-26T04:28:47.266Z",
-        "lastModified": "2022-01-26T04:28:47.266Z",
-        "size": 981,
-        "formattedSize": "981 Bytes"
+        "createdAt": "2022-02-04T03:45:06.295Z",
+        "lastModified": "2022-02-04T03:45:06.295Z",
+        "size": 1043,
+        "formattedSize": "1.0 KB"
       }
     },
     {
@@ -1071,11 +1050,13 @@
       "excerpt": "Application Programming Interface is a type of software that connects computers to another computer program",
       "id": "glossary-general",
       "title": "General",
+      "prev": "bot-development-faqs",
+      "next": "glossary-kata-platform",
       "meta": {
         "relativePath": "kata-platform\\glossary\\general.html",
-        "createdAt": "2022-01-26T04:28:47.266Z",
-        "lastModified": "2022-01-26T04:28:47.266Z",
-        "size": 3777,
+        "createdAt": "2022-02-04T03:26:16.731Z",
+        "lastModified": "2022-02-04T03:26:16.731Z",
+        "size": 3835,
         "formattedSize": "3.7 KB"
       }
     },
@@ -1084,11 +1065,13 @@
       "excerpt": "Conversation Flows contain a collection of conversation flows and actions in a bot You can create a new flow by clicking the Create Flow button",
       "id": "glossary-inside-kata-flow",
       "title": "Inside Kata Flow",
+      "prev": "glossary-kata-platform",
+      "next": "glossary-coming-soon",
       "meta": {
         "relativePath": "kata-platform\\glossary\\inside-kata-flow.html",
-        "createdAt": "2022-01-26T04:28:47.267Z",
-        "lastModified": "2022-01-26T04:28:47.267Z",
-        "size": 3345,
+        "createdAt": "2022-02-04T03:27:42.632Z",
+        "lastModified": "2022-02-04T03:27:42.632Z",
+        "size": 3403,
         "formattedSize": "3.3 KB"
       }
     },
@@ -1097,12 +1080,14 @@
       "excerpt": "A feature to analyze endusers behavior This data analysis set can be used to enhance conversational AI product quality",
       "id": "glossary-kata-platform",
       "title": "Kata Platform",
+      "prev": "glossary-general",
+      "next": "glossary-inside-kata-flow",
       "meta": {
         "relativePath": "kata-platform\\glossary\\kata-platform.html",
-        "createdAt": "2022-01-26T04:28:47.267Z",
-        "lastModified": "2022-01-26T04:28:47.267Z",
-        "size": 1657,
-        "formattedSize": "1.6 KB"
+        "createdAt": "2022-02-04T03:26:44.610Z",
+        "lastModified": "2022-02-04T03:26:44.610Z",
+        "size": 1714,
+        "formattedSize": "1.7 KB"
       }
     },
     {
@@ -1111,11 +1096,12 @@
       "id": "how-to-change-error-messages-in-your-chatbot",
       "title": "How to Change Error Messages in Your Chatbot to Match Them With Chatbot Persona",
       "prev": "using-custom-api-to-access-third-party-application",
+      "next": "general-faqs",
       "meta": {
         "relativePath": "kata-platform\\how-to\\how-to-change-error-messages-in-your-chatbot.html",
-        "createdAt": "2022-01-27T05:49:26.400Z",
-        "lastModified": "2022-01-27T05:49:26.400Z",
-        "size": 1912,
+        "createdAt": "2022-02-04T03:16:12.937Z",
+        "lastModified": "2022-02-04T03:16:12.937Z",
+        "size": 1932,
         "formattedSize": "1.9 KB"
       }
     },
@@ -1124,12 +1110,13 @@
       "excerpt": "This documentation will teach you how to build a chatbot app using the Kata Platform and connect it to Generic Channel You can use Generic Channel for the channel not yet available in Kata Platform so that you can make a wrapper This tutorial will deploy your chatbot to a generic channel using NestJs and connect it with a chatbot",
       "id": "how-to-deploy-your-chatbot-using-generic-channel",
       "title": "How to Deploy Your Chatbot Using Generic Channel",
+      "prev": "error-log",
       "next": "how-to-improve-your-chatbot-intelligence-by-training-your-nlu",
       "meta": {
         "relativePath": "kata-platform\\how-to\\how-to-deploy-your-chatbot-using-generic-channel.html",
-        "createdAt": "2022-01-27T05:49:26.401Z",
-        "lastModified": "2022-01-27T05:49:26.401Z",
-        "size": 12160,
+        "createdAt": "2022-02-04T03:15:19.397Z",
+        "lastModified": "2022-02-04T03:15:19.397Z",
+        "size": 12177,
         "formattedSize": "11.9 KB"
       }
     },
@@ -1268,19 +1255,6 @@
       }
     },
     {
-      "contents": "3231 Whats New We develop a lot of improvements for the Kata Platform in user experience and the newest action type for your bot here is the list New action type Instagram Sticker Learn more about Instagram Sticker Updating copy for better user experience Enhance error messages when users publish bot and testing channels Whats been fixed Fixed users cannot download transcripts from Firefox and Chrome Fixed issue when using dynamic carousel action type Fixed issue in scheduler that sending repetitive messages to endusers 3230 Whats New We develop a lot of improvements for the Kata Platform in user experience and the newest action types for your bot here is the list Weve changed the captcha validation into the most powerful and secure captcha hCaptcha Please upgrade your KataCLI version to the 271 version too The wait is over You can remove team admin or remove team members if they are no longer involved in the project You may add more admin in 1 project These abilities are for team admin only Yes we heard you We launched 2 newest action types for the WhatsApp bot List Messages and Reply Button You can create a lesstyping experience through your endusers and get more engagement with it Learn more about List Messages and Reply Button Now you can add an image with a caption for your WhatsApp bot Learn more about the caption Whats been fixed Fixed users cannot access the Team feature Fixed users got an error when requesting a reset password but the email is sent Fixed users cannot scroll down when adding transition mapping more than 5 mappings Fixed several users who cannot log in after signing up 3220 Whats New The wait is over A whole new integration chatbot channel to Omnichat includes Instagram Direct Message automation Learn more about Omnichat Here are the new features As agents you can receive message context from conversations between chatbot and endusers Also takeover conversations from chatbots to handle complaints effectively Learn more about Agent Bot A new Instagram automation that provides your endusers chatbot responses such as text image quick replies ice breaker and generic template carousel Learn more about the Instagram channel and create a chatbot Instagram handover to human agents Handover API template for easier handover API to Kata Omnichat Learn more about creating a chatbot handover to agents Whats been fixed Fixed users cannot log in or sign up using a captcha Fixed users cannot download bot code yml in the Revision List 3210 Whats New If youre a user who trains natural language models with large amount of data on KataCLI but dont know where you can see the results of the data training this feature is suitable for you Were adding NL bulk training on the GUI so you can easily upload your training data up to 200 sentenceslines and directly see the results on the same GUI Learn more about NL bulk training in GUI Whats been fixed Improved training speed for shorter retraining time Wait what is retraining When doing training for the NL models you may incorrectly put a tag and prompt an automatic training for the tag In that case you can delete the incorrect sentence and the system will perform the retraining process to all your NL models using the updated training data 3190 We always listen to our customers for their pain points bug findings required fast improvements and so on So that were doing improvements and several bugfix in January until March 2021 here is the list Improvements Login improvement on add captcha login User signup improvement on input validation Image validation improvement when user do uploading image in Kata Dashboard Deployment version can be shown up to 100 latest version Bug fixes Unable to connect Kata Platform webhook in LINE channel Unable to continue to publish bot because input validation error in NLU training label project name and state name Cannot delete CMS page element in Kata CMS Cannot choose action list due to available actions are hidden User cannot save bot and create new bot draft Unable to create environment in selected projects Some environments are not listed in Deployment feature New line character n is not shown in action text Some projects unable to load chatbot flow in Kata Flow Repeatedly shown character in action type which is not expected by user Some frontend elements in user interface in emulator and prediction log were missing 3150 We are proud to announce a whole new experience with our analytics platform You can see more detailed user data namely New and Returning Users Here you can see the number of new and returning user also the total of both of them based on filtering environment channels and dates You also be able to see the total number of Active Users Sessions New Users and Messages You can get daily user activity data based on the selected date range showing in a line chart Get daily data for sessions messages active users and the newest is the number of new users The data is also available offline by downloading it first Get insights to blast messages in peak hours by looking at the total messages in the 7 days and 24 hours You can do a hover in each block to see the number of incoming messages you get every hour on the selected date range Did you know that its important to pay attention to how many users come back to chatting with the chatbot Now we have a Cohort table to display this data You can view user retention data from daily weekly and monthly In the Topics menu you can see the most topic that users are looking for You can see the Top Flows Top Intents Top States and Top Messages Now we also be able to download those insights into csv files In addition we also have a Word Cloud so we see the most common words used by user at a glance In the Transcript menu we can see the conversation history between user and chat bot Now we can sort the start date end date incoming outgoing and duration into ascending and descending sequence We also be able to search transcript by user ID 390 Features Added Transcript List which provides User ID Start Date End Date Duration Incoming and Outgoing information By clicking one of the Transcript List row project owner can see Transcript Detail which provide the chat history of user and bot Also there is eye icon on the bottom of each bubble which shows message detail Furthermore project owner can filter the Transcript List by Environment Channel and Date In the date picker when project owner choose a date more than 2 months ago there will be a popup message which inform them to contact us 380 Whats New Basic analytics which was previously available on Kata Platform 25 is now making a comeback on Kata Platform 30 You can now see the total active users total sessions and total incoming messages of your bot also available in line graph Find it on Analytics gt Users menu Gain highlevel insights of your conversations by seeing top flows top intents top states and top messages of your bot Youll see those stats on Analytics gt Conversation menu See the details of your conversations on Analytics gt Transcript menu Here youll find the chat history between the user and your bot from the duration of the conversation to the message details 370 Whats New Version 370 is all about adding new channel for you to talk to your customers Introducing new channel for Kata Platform channel integration Freshchat Freshchat provides live chat software that helps you to engage with your website visitors provide assistance and convert leads to happy customers Read more about the integration here 363 Whats New You can now delete trained data on Kata NL Some important notes You cant undo this action Deleted data cant be restored Once you delete trained data your model will be retrained You wont be able to add edit or delete other data during the process The retraining duration depends on the quantity of data you deleted Deleting more data will take a longer time 356 Whats New Version 356 is about download feature on Prediction Logs Platform Analytics and Kata Omnichat Heres whats new Kata Omnichat Now Kata Omnichat is available as a module We can create Qiscus Account and activate the module once weve already add Kata Omnichat Module to Project Automatically adding handover to Kata Flow Managing agents in Dashboard if were an admin or supervisor Showing list of messages in Inbox menu Also do chatting with customer Send subscription email to customer Download Prediction Log We can download the prediction log as CSV or JSON within the time range or all of them Analytics Brings back Analytics menu in project with new user interface Showing statistics in users and conversation under Analytics menu Analytics can show conversation log for each session 355 Whats New Version 355 is dedicated for Kata CMS Heres whats new Added CMS Image Single and Table Carousel Elements in Kata CMS and Kata Dashboard You can now use our CMS with new image management feature straight from Kata Dashboard Update image directly using Single Image amp Image Table Carousel Elements in Kata Dashboard Edit the button label and URL on CMS Image Table Carousel in Kata Dashboard Set the carousel action with three types of action URL Postback and Message on Kata CMS 340 Whats New Version 340 is all about Prediction Logs Heres whats new Prediction Logs data now shows predicted labels prediction score plus the date and time it was predicted You can now search and filter your Prediction Logs data by entities training status prediction score and date We added a new Ignore feature so you can train your NL model to well ignore sentences that dont belong to any label This allows your NL model to learn and improve its algorithm ultimately improving the accuracy of your NL model Bug Fixes Fixed FAQ table cannot show more than 10 labels Fixed error when addingdeleting questions in FAQ table Fixed bot revision history only show last 10 snapshots Fixed error when accessing NL Studio 330 In this release were highlighting our newest feature and some recent updates to Kata Platform Modules Modules are prebuilt bot features ready to be integrated into your project in just a few clicks This way you can create amazing conversational experiences even faster In this betarelease were introducing modules for two of the most common chatbot features FAQ and Location FAQ Module FAQ Module lets your chatbot answer questions your customers often ask Its excellent for anyone who wants to reduce the workload of their customer service department With this module you can build the knowledgebase to handle the repetitive questions so your live agents can focus on more complex problems Location Module Location Module lets your users find the nearest location of your business This module is ideal for any industries offering facetoface customer experiences such as banking and retail Your users can share their location and you can point them to your nearest establishments along with the Google Maps directions All of our modules are already integrated with CMS Studio It means anyone on your team can collaborate on managing the content without the need for programming or technical skills Further details and documentation about Modules can be found here Misc Fixed n causing errors in Method Emulator now lets you test each environment separately Emulator now lets you test CMS content Added emulator on client dashboard Now your client can test changes they made directly on the dashboard As always were happy to chat with you to learn more about your use cases and feedback on Kata Platform You can send us your thoughts via email to supportkataai or join our community on Slack 322 Bot Studio improvements Weve added the Quickreply and Confirm Template action templates compatible for LINE Messenger Buttons can now be used to trigger a datetime picker Added the option to add Phrase NLU output for NLU entities with type Phrase Deprecated NLU Types On the Bot Studio NLU selector we have deprecated NLU types Verstand classifier Verstand tagger and Verstand retrieval New NLUs created can no longer have these types Bug fixes Bot Studio Fixed incorrect KataML generated when creating CMS action Bot Studio Fixed issue where onEnter mapping is stringified NL Studio Fixed unable to inherit NLU NL Studio Fixed searching inherit and root NLU NL Studio Fixed various display issues with training prediction log 320 Super Model Super Model is a highly maintained prebuilt entity for Users to use without training New projects would automatically have a Kata Entity named kata for tagging common task like person name location datetime email number etc For more details click here Channel improvements Added support for WhatsApp channel You can now enter your WhatsApp channel details in the platform Bug fixes Bot Studio Fixed unable to update state in end state NL Studio Fixed missing field dictionary for entity type NL Studio NL settings now show the correct defined NLU language Bot Studio Fixed bug where some form errors were not shown correctly Bot Studio Fixed bug where the flows editor does not reflect the updates made in selftransition state 310 Bot Studio Improvements Added CMS action Now you can searchselect CMS elements when creating action on Bot Studio Bot Studio now autosaves your work as a draft CMS Studio now allows you to invite nonKata Platform users to use Kata Dashboard katacli KataCLI now shows bulk training status Information if there is any active training job Error on specific training data Bug fixes Fixed an issue that caused Add Mapping button to disappear after users click Single Mapping when creating method Fixed an issue that caused users unable to search public NL when creating entity Fixed an issue that caused display on keywords field to not expand when users add more than 1 lines Fixed some display bugs Fixed crash when creating transition amp intent katacli Fixed a bug showing incorrect bot latest revision on Bot Studio after users push bot on KataCLI katacli Fixed data training order when users use bulk training feature Now use lastinfirstout method 300 Kata Platform 30 is our biggest update yet In this version we are introducing several new features to help you build a more comprehensive solution for your needs Whats New Projects Manage your chatbot project under one roof A project consists of one bot design one NL and one CMS Each of them will have different versions you can maintain CMS Studio Build your own CMS for your chatbot Your client will have a full access to maintain the knowledge or content of your chatbot Now you can build your own CMS based on your needs Once youve done building your own dashboard you can invite users or clients to contribute to the dashboard and update your bots knowledge easily All in all your dashboard will look like this NL Prediction API Build your own Natural Language using our NL Studio and use it everywhere Now it supports Entity Recognition Intent Classification Sentiment Analysis Kata Design Language System Aksara Aksara is our very own design language system It contains foundations voice and tone guidelines component standards and other guidelines that systematically improve quality timeliness and consistency to our product Wicara Previously known as katakit Wicara is the implementation of Aksara Design Language using React framework It is designed to be flexible and reusable react components Go to to see our Design Language System We hope Kata Platform 30 will help you build smarter chatbots in shorter development time It is our mission to democratize AI and help the community to build chatbot solution For any inquiries contact us at supportkataai ",
-      "excerpt": "We develop a lot of improvements for the Kata Platform in user experience and the newest action type for your bot here is the list",
-      "id": "version",
-      "title": "Version",
-      "meta": {
-        "relativePath": "kata-platform\\release-notes\\version.html",
-        "createdAt": "2022-02-04T02:22:59.331Z",
-        "lastModified": "2022-02-04T02:22:59.331Z",
-        "size": 22865,
-        "formattedSize": "22.3 KB"
-      }
-    },
-    {
       "contents": "Chatbots For Customer Service Build 247 virtual agent service to accommodate customers needs such as answering common questions accessing specific information or assisting simple requests with seamless handoffs to human agents for complex issues Chatbots For Customer Engagement Engage and support your customers on their preferred platform at any time Whether to share the newest product information engage customers in a marketing campaign or deliver a relevant and personal conversational experience for your customers ",
       "excerpt": "Build 247 virtual agent service to accommodate customers needs such as answering common questions accessing specific information or assisting simple requests with seamless handoffs to human agents for complex issues",
       "id": "all-use-cases",
@@ -1380,19 +1354,6 @@
         "lastModified": "2022-01-21T02:17:23.071Z",
         "size": 1015,
         "formattedSize": "1015 Bytes"
-      }
-    },
-    {
-      "contents": "The latest news updates and changes on Qios 200 Whats New Having a robust online presence has never become more important for a business than today a substantial part of that is online chat transactions chat commerce For businesses who are tired of handling chat transactions manually this is for you We finally released a full fledged merchant business dashboard which allows you to conduct your business via chat faster and cater to your customers needs better Unleash the potential of your business and employee spend more time doing more meaningful things and let us take our the tedious repetitive process of selling your products on chat apps This will entirely replace the previous dashboard experience with a centralized solution We always strive to serve you better Kindly let us know if you have any questions or feedback Multistore management Manage multiple stores with one credential Inventory or product management Upload Edit Delete your products seamlessly Order management Accept and decline customer orders automatically by setting up the product availability details proceed into delivery and monitor delivery status at your fingertips Role management Manage the roles within your dashboard You can allocate a user as an admin or a store employee Notification Receive notifications on incoming orders on the dashboard Catalog generator All products added can be converted into a catalogue automatically send it to your customer via agent or automatically with a chatbot Bot setup We added a way for you to add the Bot function seamlessly through Kata Omnichat integration Payment Customers can now complete payment within the chat apps with our solution your agents can then manage it via Qios dashboard Currently we only accommodate GoPay payments kindly reach out to us if you need further payment options Shipping We also integrate shipping solutions for your customers and let you manage it via Qios dashboard Currently we accommodate the following shipping methods GoSend Instant GrabExpress Instant Lalamove and Mr Speedy Reports Qios covers basic reports such as best seller products summary of transactions etc For further details of analytics you can request access to our Qios data studio Customer database Manage and get to know your customer more by understanding their interest and needs ",
-      "excerpt": "The latest news updates and changes on Qios",
-      "id": "release-notes-version",
-      "title": "Version",
-      "meta": {
-        "relativePath": "qios\\release-notes\\version.html",
-        "createdAt": "2022-01-28T07:16:05.938Z",
-        "lastModified": "2022-01-28T07:16:05.938Z",
-        "size": 2749,
-        "formattedSize": "2.7 KB"
       }
     },
     {

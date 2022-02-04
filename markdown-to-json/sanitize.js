@@ -28,9 +28,11 @@ const sanitizeString = (sentences) => {
 Object.keys(markdownJsonOutput).forEach((product) => {
   console.log(`Begin sanitizing ${product}`);
   const output = markdownJsonOutput[product];
-  const newData = output.data.map(({ contents, excerpt, ...rest }) => {
-    return { contents: sanitizeString(contents), excerpt: sanitizeString(excerpt), ...rest };
-  });
+  const newData = output.data
+    .filter(({ id }) => id !== 'release-notes-version')
+    .map(({ contents, excerpt, id, ...rest }) => {
+      return { contents: sanitizeString(contents), excerpt: sanitizeString(excerpt), id, ...rest };
+    });
   fs.writeFile(
     `./markdown-to-json/outputs/${product}.json`,
     JSON.stringify({ app: output.app, data: newData }),

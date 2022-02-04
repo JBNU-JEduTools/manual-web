@@ -301,17 +301,16 @@
       }
     },
     {
-      "contents": " Kata Omnichat is a centralized dashboard where you can handle messages from multiple channels For now you can integrate 2 channels Instagram Messaging and WhatsApp Business API ",
+      "contents": " What is Kata Omnichat Kata Omnichat is a centralized dashboard where you can handle messages from multiple channels For now you can integrate 2 channels Instagram Messaging and WhatsApp Business API ",
       "excerpt": "Kata Omnichat is a centralized dashboard where you can handle messages from multiple channels For now you can integrate 2 channels Instagram Messaging and WhatsApp Business API",
       "id": "what-is-kata-omnichat",
-      "title": "What is Kata Omnichat",
       "next": "benefits-with-kata-omnichat",
       "meta": {
         "relativePath": "introduction\\what-is-kata-omnichat.html",
-        "createdAt": "2022-01-28T04:04:03.764Z",
-        "lastModified": "2022-01-28T04:04:03.764Z",
-        "size": 351,
-        "formattedSize": "351 Bytes"
+        "createdAt": "2022-02-04T03:17:33.161Z",
+        "lastModified": "2022-02-04T03:17:33.161Z",
+        "size": 405,
+        "formattedSize": "405 Bytes"
       }
     },
     {
@@ -747,19 +746,6 @@
         "lastModified": "2022-01-27T07:32:28.679Z",
         "size": 997,
         "formattedSize": "997 Bytes"
-      }
-    },
-    {
-      "contents": "The latest news updates and changes on Kata Omnichat 255 Whats New Are you a business owner Do you have many agents for some messaging platforms to handle customers inquiries Or even do you sometimes need a bot for your Instagram Business Messaging and WhatsApp Business API to help your agents with some repeated questions This new product is definitely suitable for you Were building Kata Omnichat 20 so it will be the replacement for the old one This centralized agent dashboard will help your agents respond to any customers inquiries rapidly without switching from one messaging app to another messaging app Also if needed an agent bot will be a savior to collaborate with your agents Learn more about Agent Bot Whats been fixed Changing the whole user experience to make it seamless and easier for you and your agents and having two most popular messaging platforms Instagram Messaging and WhatsApp Business This product will be very flexible for you you dont need to have a bot at the first time but you can add it anytime you need it Were updating some bugs in Kata Omnichat 20 Fixed users cant download reports to CSV Fixed users cant seeknow customers WA number in Contacts Fixed users cant see previous messages in WA Fixed users cant get email verification ",
-      "excerpt": "The latest news updates and changes on Kata Omnichat",
-      "id": "release-notes-version",
-      "title": "Version",
-      "meta": {
-        "relativePath": "release-notes\\version.html",
-        "createdAt": "2022-01-28T07:15:10.788Z",
-        "lastModified": "2022-01-28T07:15:10.788Z",
-        "size": 1662,
-        "formattedSize": "1.6 KB"
       }
     },
     {
