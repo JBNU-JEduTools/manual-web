@@ -11,14 +11,10 @@ const MARKDOWN_JSON_OUTPUT = {
 
 const FUSE_SEARCH_OPTIONS = {
   shouldSort: true,
-  threshold: 0.4,
-  location: 0,
-  distance: 100,
-  matchAllTokens: true,
-  includeScore: true,
-  maxPatternLength: 32,
+  threshold: 0.6,
+  ignoreLocation: true,
   minMatchCharLength: 3,
-  keys: ['title', 'content'],
+  keys: ['title', 'contents'],
 };
 export const FUSE_SEARCH = {
   tutorials: new Fuse(MARKDOWN_JSON_OUTPUT.tutorials.data, FUSE_SEARCH_OPTIONS),
