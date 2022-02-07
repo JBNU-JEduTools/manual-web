@@ -349,13 +349,13 @@ In this step, you will need an Omnichat <a href="https://kata-omnichat.kata.ai" 
 
 Follow these tutorials in Omnichat to continue:
 
-1. Register a new Omnichat account in Omnichat. Section **How to Set Up**
+1. Register a new Omnichat account in Omnichat. Section [**How to Set Up**](/kata-omnichat/getting-started/register-your-account-first)
 
 2. Create a new channel inbox.
 
-    - For IGDM chatbot: Section **How to Set Up > Connect to Instagram Messaging**
+    - For IGDM chatbot: Section [**How to Set Up > Connect to Instagram Messaging**](/kata-omnichat/getting-started/connect-your-instagram-messaging-inbox)
 
-    - For WA chatbot: Section **How to Set Up > Connect to Whatsapp Messaging**
+    - For WA chatbot: Section [**How to Set Up > Connect to Whatsapp Messaging**](/kata-omnichat/getting-started/connect-your-waba-inbox)
 
 ## Create Agent Bot in Omnichat
 

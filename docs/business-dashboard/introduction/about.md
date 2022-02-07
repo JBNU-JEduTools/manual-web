@@ -1,11 +1,12 @@
 ---
 id: introduction-about
-title: About WhatsApp Business Dashboard
 next: get-started
 section: Introduction
 ---
 
 <img className="borderless" src="/assets/images/products/business-dashboard/image-introduction-1.png" alt="Business-Dashboard Illustration" />
+
+# About WhatsApp Business Dashboard
 
 WhatsApp Business Dashboard is a business tool to make it easy for you to get in touch with your customers on your WhatsApp channel. From registering your WhatsApp number to broadcasting your Message Templates, it’s as easy as point and click.
 

@@ -7,7 +7,7 @@ title: How to use Facebook Messenger for your chatbot
 date: '2021-08-26T07:00:00+07:00'
 ---
 
-Facebook Messenger (commonly known as Messenger) is a messaging app and platform developed by Facebook. In this section, we will learn to connect our bot with Messenger. Then, you can use this [simple bot tutorial](https://docs.google.com/document/u/0/d/1_0Or96U0Ru32BBzOCcYOiNzuwxKtJdKIxW4ZJZzeceA/edit) to integrate your bot with Messenger.
+Facebook Messenger (commonly known as Messenger) is a messaging app and platform developed by Facebook. In this section, we will learn to connect our bot with Messenger. Then, you can use this [simple bot tutorial](/kata-platform/documentation-content/start-your-first-chatbot) to integrate your bot with Messenger.
 
 ## Deploy your chatbot
 

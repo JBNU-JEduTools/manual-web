@@ -11,9 +11,9 @@ date: '2018-10-10T07:00:00+07:00'
 
 Kata Platform <a href="https://platform.kata.ai" target="_blank">https://platform.kata.ai</a> is a platform to create chatbots and train them with Natural Language Processing (NLP). You can create any chatbots for any use-cases, such as FAQ, campaign, customer service, handover to human agents, and more.
 
-Currently, we’ve launched Instagram chatbot with various features, such as End-users can receive automated replies by creating an Instagram story that mentioned brand, receive automated replies by replying to brand Instagram story, receive bot responses in image, text, quick reply, ice breaker (for first-time users only) and generic template (similar with a carousel in other messaging platforms). Learn more about [Instagram DM Automation](/channels/instagram-messaging/).
+Currently, we’ve launched Instagram chatbot with various features, such as End-users can receive automated replies by creating an Instagram story that mentioned brand, receive automated replies by replying to brand Instagram story, receive bot responses in image, text, quick reply, ice breaker (for first-time users only) and generic template (similar with a carousel in other messaging platforms). Learn more about [Instagram DM Automation](/tutorials/how-to-use-instagram-messaging-automation-in-your-project).
 
-In this tutorial, we will create an Instagram chatbot that is able to send conversations to human agents, also known as "Agent Handover''. We will use the Kata Omnichat dashboard to connect chatbots with human agents. Learn more about [Omnichat](/kata-omnichat).
+In this tutorial, we will create an Instagram chatbot that is able to send conversations to human agents, also known as "Agent Handover''. We will use the Kata Omnichat dashboard to connect chatbots with human agents. Learn more about [Omnichat](/kata-omnichat/introduction/what-is-kata-omnichat).
 
 <iframe width="600" height="300" src="https://www.youtube.com/embed/dAHnoTX4BUE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
@@ -67,7 +67,7 @@ Conversation flow table details can be seen <a href="https://drive.google.com/fi
 
 ## Create Greetings State to Respond End-User’s who Greet Bot via Direct Message
 
-In this part, we are going to create a greeting flow to respond to end-users who greet the brand's bot via direct message, **but** **not** via Ice Breaker. For example, the end-user says "hi" to the bot and does not want to choose via Ice Breaker. Learn more about [Ice Breaker](/channels/instagram-messaging).
+In this part, we are going to create a greeting flow to respond to end-users who greet the brand's bot via direct message, **but** **not** via Ice Breaker. For example, the end-user says "hi" to the bot and does not want to choose via Ice Breaker. Learn more about [Ice Breaker](/kata-omnichat/manage-inbox-settings/set-up-ice-breaker).
 
 ### Objective: Create greetings state to define how to respond
 
@@ -156,7 +156,7 @@ intent == "greetingsIntent"
 
 ## Create Greetings State to Respond End-User’s who Greet Bot via Instagram Story Mention
 
-In this part, we are going to create a greeting flow to respond to end-users who mentioned the brand’s Instagram account in the end-users Instagram Stories. End-user will receive an automatic message in a direct message. Learn more about [Instagram Story Mention](/channels/instagram-messaging).
+In this part, we are going to create a greeting flow to respond to end-users who mentioned the brand’s Instagram account in the end-users Instagram Stories. End-user will receive an automatic message in a direct message. Learn more about [Instagram Story Mention](/tutorials/how-to-use-instagram-messaging-automation-in-your-project).
 
 ### Objective: Catch end-users who mentioned the brand’s in the end-users Instagram Story
 
@@ -220,7 +220,7 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 ## Create Greetings State to Respond End-User’s who Greet Bot via Instagram Story Reply
 
-In this part, we are going to create a greeting flow to respond to end-users who reply to the brand's Instagram Story. Learn more about [Instagram Story Reply](/channels/instagram-messaging).
+In this part, we are going to create a greeting flow to respond to end-users who reply to the brand's Instagram Story. Learn more about [Instagram Story Reply](/tutorials/how-to-use-instagram-messaging-automation-in-your-project).
 
 ### Objective: Catch end-users who reply to the brand’s Instagram Story
 
@@ -284,7 +284,7 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 ## Create Quick Replies
 
-In this step, we will create bot responses named quick reply. Learn more about [Quick Reply for Instagram Messaging](/channels/instagram-messaging).
+In this step, we will create bot responses named quick reply. Learn more about [Quick Reply for Instagram Messaging](/tutorials/how-to-use-instagram-messaging-automation-in-your-project).
 
 ### Objective: Show available FAQ topics to end-user
 
@@ -474,7 +474,7 @@ content == "Daftar kartu kredit"
 
 ## Create Generic Template (Carousel)
 
-In this step, we will create bot responses named generic template. Learn more about [Generic Template for Instagram Messaging](/kata-omnichat).
+In this step, we will create bot responses named generic template. Learn more about [Generic Template for Instagram Messaging](/tutorials/how-to-use-instagram-messaging-automation-in-your-project).
 
 ### Objective: Show bot response of generic template ("carousel") to end-users
 
@@ -1146,9 +1146,9 @@ In this step, you will need an Omnichat <a href="https://kata-omnichat.kata.ai" 
 
 Follow these tutorials in Omnichat to continue:
 
-1. Register a new Omnichat account in Omnichat. Learn more about how to [register account in Omnichat](/kata-omnichat/general-setup/#self-onboarding)
+1. Register a new Omnichat account in Omnichat. Learn more about how to [register account in Omnichat](/kata-omnichat/getting-started/register-your-account-first)
 
-2. Create a new channel inbox. Learn more about [create inbox in Omnichat](/kata-omnichat/general-setup)
+2. Create a new channel inbox. Learn more about [create inbox in Omnichat](/kata-omnichat/getting-started/connect-your-instagram-messaging-inbox)
 
     1. For IGDM chatbot: Section **How to Set Up > Connect to Instagram Messaging**
 
@@ -1156,7 +1156,7 @@ Follow these tutorials in Omnichat to continue:
 
 ## Create Agent Bot in Omnichat
 
-Follow the tutorial in Omnichat to continue. Continue to [create agent bot](/kata-omnichat/setup-agent-bot).
+Follow the tutorial in Omnichat to continue. Continue to [create agent bot](/kata-omnichat/configure-your-agent-chatbot/setup-agent-bot-in-kata-omnichat).
 
 ### Connect Bot to Omnichat
 
@@ -1220,7 +1220,7 @@ Before we jump to the tutorial, here is the general conversation flow for using 
 
 ### Objective: Create Ice Breaker in your Instagram inbox
 
-Follow the tutorial on [how to set up Ice Breaker in Instagram Inbox](/kata-omnichat/how-to-use/#inbox-management).
+Follow the tutorial on [how to set up Ice Breaker in Instagram Inbox](/tutorials/how-to-use-instagram-messaging-automation-in-your-project).
 
 ### Objective: Create intent to trigger bot response if end-users click all Ice Breaker
 
@@ -1337,27 +1337,3 @@ intent == "csIceBreaker"
 ```
 
 4. Click Create
-
-### Objective: Publish updated bot and deploy to Omnichat again
-
-Follow the tutorial to [finalize your bot](/tutorial/create-igdm-bot-handover-from-chatbot-to-agent/#finalize-your-new-bot).
-
-## Final Demo
-
-We provide video tutorials and interaction demo for Instagram chatbot features. Check these out:
-
--   Create Instagram bot handover video tutorial
-
-<iframe width="600" height="300" src="https://www.youtube.com/embed/dAHnoTX4BUE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-
--   Ice Breaker interaction with end-users
-
--   Instagram Story Mention interaction with end-users
-
--   Instagram Story Reply interaction with end-users
-
--   Agent bot interaction with end-users
-
--   Handover to the human agent and hand-off to bot again
-
--   Takeover conversation between bot and end-user

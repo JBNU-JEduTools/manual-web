@@ -8,7 +8,12 @@ section: Manage Your Conversation
 
 Omnichat provides a round-robin auto-assignment system for conversations. The assignment follows the logic mentioned below.
 
-_Note_: Round robin assignment is enabled by default.
+<div className="info">
+        <img className="borderless" src="/assets/images/icon-info.svg" />
+        <p>
+            Note: Round robin assignment is enabled by default.
+        </p>
+    </div>
 
 1. If there are agents online who have access to the inbox in which a conversation is created, the system would distribute the conversations equally among the online agents
 2. If all the agents are offline, the system would distribute the conversations equally to all agents

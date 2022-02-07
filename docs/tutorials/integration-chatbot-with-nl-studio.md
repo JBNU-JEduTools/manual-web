@@ -11,7 +11,7 @@ date: '2018-09-09T07:00:00+07:00'
 
 ## Introduction
 
-In this tutorial, we will create a simple conversation bot and integrated to NL studio. For pre-condition, you must create a bot by follow this tutorial in here [Bot studio tutorial](/tutorial/bot-studio/). You will create a NLModel which able to process pizza ordering orders. Further explanation for NLStudio, you may see in here [NL Studio Guideline](/tutorial/nl-studio/)
+In this tutorial, we will create a simple conversation bot and integrated to NL studio. For pre-condition, you must create a bot by follow this tutorial in here [Bot studio tutorial](/tutorials/bot-studio). You will create a NLModel which able to process pizza ordering orders. Further explanation for NLStudio, you may see in here [NL Studio Guideline](/tutorials/nl-studio)
 
 Let's start !
 
