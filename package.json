@@ -2,8 +2,9 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "yarn run md2json:all && next build",
+    "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "server": "http-server",
     "md2json:global": "markdown-json -c ./markdown-to-json/settings/global.json",
     "md2json:qios": "markdown-json -c ./markdown-to-json/settings/qios.json",
@@ -17,7 +18,7 @@
   },
   "dependencies": {
     "@aksara-ui/icons": "1.0.1-canary.1",
-    "@aksara-ui/react": "1.0.1-canary.31",
+    "@aksara-ui/react": "1.0.1-canary.33",
     "@mapbox/rehype-prism": "^0.8.0",
     "@svgr/webpack": "^6.1.2",
     "babel-preset-next": "^1.4.0",
@@ -37,6 +38,7 @@
     "sass": "^1.45.2",
     "string": "^3.3.3",
     "styled-components": "^5.3.3",
+    "tslib": "^2.3.1",
     "unified": "^10.1.1",
     "utility-types": "^3.10.0"
   },
@@ -51,6 +53,7 @@
     "autoprefixer": "^10.2.1",
     "babel-plugin-styled-components": "^2.0.2",
     "eslint": "^8.5.0",
+    "eslint-config-next": "12.0.10",
     "http-server": "^14.0.0",
     "markdown-json": "^1.6.1",
     "postcss": "^8.2.4",

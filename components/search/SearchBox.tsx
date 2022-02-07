@@ -3,9 +3,8 @@ import Link from 'next/link';
 import styled, { css } from 'styled-components';
 
 import { space } from 'utils/variables';
-import { theme } from '@aksara-ui/react';
+import { theme, InputSearchbox as InputSearchboxAksara } from '@aksara-ui/react';
 import InputText from '../InputText';
-import Fuse from 'fuse.js';
 
 interface SearchPageProps {
   lng?: string;
@@ -17,15 +16,25 @@ interface SearchPageProps {
 interface SearchPageState {
   query: string;
   results: any[];
+  isInputFocused: boolean;
 }
 
 const ResultTitle = styled('h4')`
   margin-top: 0;
+  margin-bottom: 0;
 `;
 
 const ResultExcerpt = styled('p')`
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'SF Pro Text' !important;
+  font-style: normal;
+  font-weight: normal;
+  color: ${theme.colors.greymed04};
+  font-size: 10px;
+  line-height: 16px;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 
   &:last-child {
     margin-bottom: 0;
@@ -33,7 +42,7 @@ const ResultExcerpt = styled('p')`
 `;
 
 const SearchResult = styled('div')`
-  padding: 16px;
+  padding: 12px 8px;
   border-bottom: 1px solid ${theme.colors.grey02};
 `;
 
@@ -68,14 +77,17 @@ const SearchResultLink = styled(Link)`
 
 const SearchResultsDesktop = css`
   position: absolute;
-  right: -69px;
-  width: 430px;
-  height: 315px;
+  width: 100%;
+  height: 400px;
   overflow-y: auto;
   z-index: 50;
   margin-top: 11px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+
+  input:focus {
+    width: 550px;
+  }
 `;
 
 const SearchResultsMobile = css`
@@ -99,7 +111,13 @@ const SearchResults = styled('div')<SearchPageProps>`
   ${(props) => props.layout === 'mobile' && SearchResultsMobile}
 `;
 
-const SearchInputText = styled(InputText)`
+const SearchInputTextDesktop = css`
+  input:focus {
+    width: 550px;
+  }
+`;
+
+const SearchInputText = styled(InputText)<SearchPageProps>`
   input {
     color: ${theme.colors.grey05};
     border-radius: 32px;
@@ -112,6 +130,7 @@ const SearchInputText = styled(InputText)`
     color: ${theme.colors.grey05};
     opacity: 1;
   }
+  ${(props) => props.layout === 'desktop' && SearchInputTextDesktop}
 `;
 
 const RootDesktop = css`
@@ -161,6 +180,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
     this.state = {
       query: '',
       results: [],
+      isInputFocused: false,
     };
 
     this.onEscKeypress = this.onEscKeypress.bind(this);
@@ -210,19 +230,19 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
 
   render() {
     const { layout, onSearchClear, fuseSearch } = this.props;
-    const { query, results } = this.state;
+    const { query, results, isInputFocused } = this.state;
     const ref = React.createRef<HTMLInputElement>();
 
     return (
       <Root layout={layout}>
         <div className="header">
           <SearchInputText
+            layout={layout}
             placeholder={layout === 'default' ? "Type what you're looking for..." : 'Search...'}
             value={query}
             onChange={this.search}
             ref={ref}
-            clearable={layout === 'mobile'}
-            onClearButtonClick={() => {
+            onSearchClear={() => {
               // Don't even ask.
               if (ref.current) {
                 ref.current.value = '';
@@ -233,24 +253,18 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                 onSearchClear();
               }
             }}
-            block={layout === 'default'}
+            onBlur={() => this.setState({ isInputFocused: false })}
+            onFocus={() => this.setState({ isInputFocused: true })}
           />
         </div>
-        {results && results.length !== 0 && (
+        {isInputFocused && results && results.length !== 0 && (
           <SearchResults layout={layout}>
             {results.map(({ item: page }) => {
-              let url = page.meta.relativePath.replace('.html', '').replaceAll('\\', '/');
-              if (fuseSearch && fuseSearch.name === 'global') {
-                url = `/${url}`;
-              } else {
-                // path for products
-                url = `/${fuseSearch.name}/${url}`;
-              }
               return (
-                <SearchResultLink href={url} key={page.title}>
+                <SearchResultLink href={page.absolutePath} key={page.title}>
                   <SearchResult>
                     <ResultTitle>{page.title}</ResultTitle>
-                    {page.excerpt && <ResultExcerpt dangerouslySetInnerHTML={{ __html: page.excerpt }}></ResultExcerpt>}
+                    {page.excerpt && <ResultExcerpt>{page.excerpt}</ResultExcerpt>}
                   </SearchResult>
                 </SearchResultLink>
               );

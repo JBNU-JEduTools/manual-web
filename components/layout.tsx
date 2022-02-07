@@ -8,7 +8,7 @@ import SearchBox from './search/SearchBox';
 import SearchIcon from './layout/Header/SearchIcon';
 import Head from 'next/head';
 import { NavButton } from './layout/Navigation';
-import { useRouter } from 'next/router';
+import { NextRouter, useRouter } from 'next/router';
 import { NavigationActionTypes, NavigationContext } from './layout/Navigation/NavigationContext';
 
 const StyledLayoutRoot = styled('div')`
@@ -53,9 +53,8 @@ const DesktopHeaderRight = styled('div')`
   align-items: center;
 `;
 
-const isPost = () => {
-  const route = useRouter();
-  if (route.query.slug) {
+const isPost = (router: NextRouter) => {
+  if (router.query.slug) {
     return true;
   }
   return false;
@@ -70,6 +69,7 @@ interface ILayout {
 const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
   const { dispatch } = React.useContext(NavigationContext);
   const [isSearchOpen, setIsSearchOpen] = React.useState(false);
+  const router = useRouter();
 
   return (
     <StyledLayoutRoot>
@@ -84,7 +84,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
       </Head>
       <Header fixed>
         <HeaderInner>
-          {!isPost() && (
+          {!isPost(router) && (
             <HeaderLogo>
               <Link href="/">
                 <UnstyledAnchor>
@@ -100,7 +100,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
             </HeaderLogo>
           )}
           <HeaderRight hideOnDesktop>
-            {isPost() && (
+            {isPost(router) && (
               <NavButton
                 icon="hamburger"
                 fill={theme.colors.grey05}
@@ -109,7 +109,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
                 Toggle Drawer
               </NavButton>
             )}
-            <LogoWrapper isPost={isPost()}>
+            <LogoWrapper isPost={isPost(router)}>
               <Link href="/">
                 <UnstyledAnchor>
                   <img

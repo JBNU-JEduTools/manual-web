@@ -16,6 +16,13 @@ export const styleJSX = css`
     font-weight: 700;
   }
 
+  @font-face {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'SF Pro Text';
+    src: url('assets/fonts/SF-Pro-Text.otf') format('opentype');
+    font-weight: 700;
+  }
+
   html,
   body {
     width: 100%;

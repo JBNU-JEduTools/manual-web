@@ -25,13 +25,33 @@ const sanitizeString = (sentences) => {
     .replace(/ +(?= )/g, ''); // double space
 };
 
+const convertRelativeToAbsolute = (relativePath, prefix) => {
+  if (prefix) {
+    return `/${prefix}/${relativePath}`;
+  }
+  return `/${relativePath}`;
+};
+
+const sanitizeUrl = (path) => {
+  return path.replace(/\\/g, '/').replace('.html', '');
+};
+
 Object.keys(markdownJsonOutput).forEach((product) => {
   console.log(`Begin sanitizing ${product}`);
   const output = markdownJsonOutput[product];
+  const isGlobal = product === 'global';
   const newData = output.data
     .filter(({ id }) => id !== 'release-notes-version')
-    .map(({ contents, excerpt, id, ...rest }) => {
-      return { contents: sanitizeString(contents), excerpt: sanitizeString(excerpt), id, ...rest };
+    .map(({ contents, excerpt, id, meta, ...rest }) => {
+      const { relativePath, ...restMeta } = meta;
+      let absolutePath = convertRelativeToAbsolute(sanitizeUrl(relativePath), isGlobal ? undefined : product);
+      return {
+        contents: sanitizeString(contents),
+        excerpt: sanitizeString(excerpt),
+        meta: { ...restMeta, absolutePath },
+        id,
+        ...rest,
+      };
     });
   fs.writeFile(
     `./markdown-to-json/outputs/${product}.json`,

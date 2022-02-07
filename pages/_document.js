@@ -9,6 +9,7 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="stylesheet preload" href="assets/fonts/Inter.woff" as="font" crossOrigin />
           <link rel="stylesheet preload" href="assets/fonts/Inter-Bold.woff" as="font" crossOrigin />
+          <link rel="stylesheet preload" href="assets/fonts/SF-Pro-Text.otf" as="font" crossOrigin />
         </Head>
         <body>
           <Main />
