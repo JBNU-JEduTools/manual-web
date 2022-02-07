@@ -261,7 +261,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
           <SearchResults layout={layout}>
             {results.map(({ item: page }) => {
               return (
-                <SearchResultLink href={page.absolutePath} key={page.title}>
+                <SearchResultLink href={page.meta.absolutePath} key={page.title}>
                   <SearchResult>
                     <ResultTitle>{page.title}</ResultTitle>
                     {page.excerpt && <ResultExcerpt>{page.excerpt}</ResultExcerpt>}
