@@ -5,6 +5,8 @@ prev: glossary-inside-kata-flow
 next: release-notes-version
 ---
 
+We’re currently working to provide you with more explanations for these terms. Check this section regularly 😊
+
 -   Intent in Flow
 
     -   Intent as Initial
