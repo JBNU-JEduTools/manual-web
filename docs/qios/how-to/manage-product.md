@@ -3,6 +3,7 @@ prev: general-setup
 id: manage-product
 title: How To Manage Product
 next: manage-store
+section: How To
 ---
 
 ## Add Product

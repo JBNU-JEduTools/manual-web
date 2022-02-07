@@ -3,6 +3,7 @@ id: set-up-bank-account
 prev: activate-your-chatbot
 next: manage-order
 title: How To Set Up Bank Account
+section: How To
 ---
 
 ## Set Up Bank Account Information

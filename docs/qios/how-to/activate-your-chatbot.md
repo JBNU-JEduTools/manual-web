@@ -3,6 +3,7 @@ prev: manage-store
 id: activate-your-chatbot
 title: How To Activate Your Chatbot
 next: set-up-bank-account
+section: How To
 ---
 
 ## Set Up Chatbot Preference

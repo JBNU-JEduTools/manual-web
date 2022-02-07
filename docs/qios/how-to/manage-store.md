@@ -3,6 +3,7 @@ prev: manage-product
 id: manage-store
 title: How To Manage Store
 next: activate-your-chatbot
+section: How To
 ---
 
 ## Add a New Store
