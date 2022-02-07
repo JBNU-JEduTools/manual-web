@@ -25,6 +25,7 @@ export interface FrontMatter {
   next?: string;
   prev?: string;
   date: string;
+  section: string;
 }
 
 export interface BreadcrumbContent {
