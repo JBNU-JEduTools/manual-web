@@ -1,6 +1,6 @@
 ---
 id: how-to-use-training-data-generator-to-automate-generating-training-data
-title: How to use Training Data Generator to automate generating training data when training your NLU
+title: How to Use Training Data Generator to Automate Generating Training Data
 prev: how-to-use-super-model-to-improve-your-bot-intelligence
 next: how-to-use-bulk-training-for-faster-training-process
 ---
