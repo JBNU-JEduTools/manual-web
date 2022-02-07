@@ -91,36 +91,36 @@ Next, you will define this NLU inside an intent. So, you will create an intent n
 5. **Match with** feature enables you to specify which label in supermodel that you want to use in your intent. For example, if you want your bot to identify a person's name, you will use a person label. Fill in with person.
 6. Next, click on the kebab menu to choose **Add custom option**. It will show a code block. Fill the code box as follows:
 
-```
-labels: true
-```
+    ```
+    labels: true
+    ```
 
-1. Your result when creating a classifier will be as follows:
+7. Your result when creating a classifier will be as follows:
 
-![Image 3 alt](/assets/images/products/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence/image3.png)
+    ![Image 3 alt](/assets/images/products/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence/image3.png)
 
-> **Figure 3**: Add classifier example.
+    > **Figure 3**: Add classifier example.
 
-2. Then, click the button **Add attribute**. This feature enables you to insert your NLUs inside the intent, similar to the Add Classifier feature, with differentiation that bot developers can create a condition in state or transition by using the entity’s label. It is because an attribute is a variable that has an array form. In the 5th step, you will use person label from Super Model, then fill in the field as follows:
+8. Then, click the button **Add attribute**. This feature enables you to insert your NLUs inside the intent, similar to the Add Classifier feature, with differentiation that bot developers can create a condition in state or transition by using the entity’s label. It is because an attribute is a variable that has an array form. In the 5th step, you will use person label from Super Model, then fill in the field as follows:
 
-```
-Name: name
-NLU: supermodNL
-Path: person
-```
+    ```
+    Name: name
+    NLU: supermodNL
+    Path: person
+    ```
 
-3. Your result after creating the attribute will be as follows:
+9. Your result after creating the attribute will be as follows:
 
-![Image 4 alt](/assets/images/products/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence/image3.png)
+    ![Image 4 alt](/assets/images/products/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence/image3.png)
 
-> **Figure 4**: Add attribute example.
+    > **Figure 4**: Add attribute example.
 
-4. Click **Create** to create an intent.
+10. Click **Create** to create an intent.
 
 The next step is to use the intent as a condition in transition (most common). If you want to create your chatbot, recognize a person’s name by filling in the condition as follows:
 
-```
-intent==‘supermodNL’
-```
+    ```
+    intent==‘supermodNL’
+    ```
 
 This is the end of the guidance. You can contact <a href="mailto:support@kata.ai">support@kata.ai</a> if you have any difficulties when implementing this.

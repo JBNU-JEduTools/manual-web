@@ -12,7 +12,7 @@ section: Release Notes
 
 We develop a lot of improvements for the Kata Platform in user experience and the newest action type for your bot, here is the list:
 
--   New action type: Instagram Sticker. Learn more about [Instagram Sticker](https://docs.kata.ai/channels/instagram-messaging/#instagram-sticker-like-heart).
+-   New action type: Instagram Sticker. Learn more about [Instagram Sticker](/tutorials/how-to-use-instagram-messaging-automation-in-your-project).
 -   Updating copy for better user experience.
 -   Enhance error messages when users publish bot and testing channels.
 
@@ -32,8 +32,8 @@ We develop a lot of improvements for the Kata Platform in user experience and th
 
 -   We’ve changed the **captcha validation** into the most powerful and secure captcha: hCaptcha. Please upgrade your KataCLI version to the 2.7.1 version too.
 -   The wait is over 🎉 You can **remove team admin or remove team members** if they are no longer involved in the project. You may **add more admin** in 1 project. These abilities are for team admin only.
--   Yes, we heard you. We launched 2 newest action types for the WhatsApp bot: **List Messages** and **Reply Button**. You can create a less-typing experience through your end-users and get more engagement with it. Learn more about [List Messages](https://docs.kata.ai/channels/whatsapp/#-new--list-message) and [Reply Button](https://docs.kata.ai/channels/whatsapp/#-new--reply-button).
--   Now, you can add an image with a caption for your WhatsApp bot. Learn more about [the caption](https://docs.kata.ai/channels/whatsapp/#image-and-image-with-caption).
+-   Yes, we heard you. We launched 2 newest action types for the WhatsApp bot: **List Messages** and **Reply Button**. You can create a less-typing experience through your end-users and get more engagement with it. Learn more about [List Messages](/tutorials/how-to-use-whatsapp-business-api-in-my-chatbot) and [Reply Button](/tutorials/how-to-use-whatsapp-business-api-in-my-chatbot).
+-   Now, you can add an image with a caption for your WhatsApp bot. Learn more about [the caption](/tutorials/how-to-use-whatsapp-business-api-in-my-chatbot).
 
 ### What's been fixed 🛠
 
@@ -48,13 +48,13 @@ We develop a lot of improvements for the Kata Platform in user experience and th
 
 ### What's New ⭐️
 
-The wait is over 🎉 A whole new integration chatbot channel to Omnichat, includes Instagram Direct Message automation. Learn more about Omnichat.
+The wait is over 🎉 A whole new integration chatbot channel to Omnichat, includes Instagram Direct Message automation. [Learn more about Omnichat](/kata-omnichat/introduction/what-is-kata-omnichat).
 
 Here are the new features:
 
--   As agents, you can receive message context from conversations between chatbot and end-users. Also, takeover conversations from chatbots to handle complaints effectively. Learn more about [Agent Bot](/kata-omnichat/setup-agent-bot).
--   A new Instagram automation that provides your end-users chatbot responses such as text, image, quick replies, ice breaker, and generic template (“carousel”). Learn more about [the Instagram channel](/channels/instagram-messaging/) and create a [chatbot Instagram handover to human agents](/tutorial/create-igdm-bot-handover-from-chatbot-to-agent).
--   Handover API template for easier handover API to Kata Omnichat. Learn more about creating a [chatbot handover to agents](/tutorial/create-simple-bot-handover-from-chatbot-to-agent).
+-   As agents, you can receive message context from conversations between chatbot and end-users. Also, takeover conversations from chatbots to handle complaints effectively. Learn more about [Agent Bot](/kata-omnichat/configure-your-agent-chatbot/setup-agent-bot-in-kata-omnichat).
+-   A new Instagram automation that provides your end-users chatbot responses such as text, image, quick replies, ice breaker, and generic template (“carousel”). Learn more about [the Instagram channel](/tutorials/how-to-use-instagram-messaging-automation-in-your-project) and create a [chatbot Instagram handover to human agents](/tutorials/create-igdm-bot-handover-from-chatbot-to-agent).
+-   Handover API template for easier handover API to Kata Omnichat. Learn more about creating a [chatbot handover to agents](/tutorials/create-simple-bot-handover-from-chatbot-to-agent).
 
 ### What's been fixed 🛠
 
@@ -69,7 +69,7 @@ Here are the new features:
 
 If you're a user who trains natural language models with large amount of data on KataCLI, but don't know where you can see the results of the data training, this feature is suitable for you!
 
-**We're adding NL bulk training on the GUI,** so you can easily upload your training data (up to 200 sentences/lines) and directly see the results on the same GUI. Learn more about [NL bulk training in GUI](https://docs.kata.ai/nl-studio/nl-bulk-training).
+**We're adding NL bulk training on the GUI,** so you can easily upload your training data (up to 200 sentences/lines) and directly see the results on the same GUI. Learn more about [NL bulk training in GUI](/kata-platform/how-to/how-to-use-bulk-training-for-faster-training-process).
 
 ### What's been fixed
 
