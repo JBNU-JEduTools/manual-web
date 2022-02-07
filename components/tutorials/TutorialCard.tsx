@@ -9,12 +9,13 @@ import { Anchor, Card, ProductBadge } from './components';
 
 interface TutorialCardProps {
   tutorial: MarkdownContent;
+  index?: number;
 }
 
-export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial }) => {
+export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) => {
   const frontMatter = tutorial.frontMatter;
   return (
-    <Card key={frontMatter.title}>
+    <Card key={frontMatter.title} index={index}>
       <img src={frontMatter.imgSpot} />
       <CardContent>
         <ProductBadge>
