@@ -3,6 +3,7 @@ id: benefits-with-kata-platform
 title: Benefits With Kata Platform
 prev: about
 next: kata-platform-features
+section: Introduction
 ---
 
 ## Deliver Naturally

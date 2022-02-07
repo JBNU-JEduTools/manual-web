@@ -3,6 +3,7 @@ id: how-to-use-nlu-threshold-to-enhance-customer-experience
 title: How to Use NLU Threshold to Enhance Customer Experience
 prev: how-to-improve-your-chatbot-intelligence-by-training-your-nlu
 next: how-to-use-super-model-to-improve-your-bot-intelligence
+section: How To
 ---
 
 ## Introduction

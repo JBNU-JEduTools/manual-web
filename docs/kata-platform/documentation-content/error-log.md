@@ -3,6 +3,7 @@ id: error-log
 title: Error Log
 prev: analyze-your-bot-conversations
 next: how-to-deploy-your-chatbot-using-generic-channel
+section: Documentation Content
 ---
 
 ## Introduction

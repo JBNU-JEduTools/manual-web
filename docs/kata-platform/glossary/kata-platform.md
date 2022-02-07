@@ -3,6 +3,7 @@ id: glossary-kata-platform
 title: Kata Platform
 prev: glossary-general
 next: glossary-inside-kata-flow
+section: Glossary
 ---
 
 ### Analytics

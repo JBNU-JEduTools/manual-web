@@ -3,6 +3,7 @@ id: how-to-improve-your-chatbot-intelligence-by-training-your-nlu
 title: How to Improve Your Chatbot Intelligence by Training Your NLU
 prev: how-to-deploy-your-chatbot-using-generic-channel
 next: how-to-use-nlu-threshold-to-enhance-customer-experience
+section: How To
 ---
 
 ## Introduction

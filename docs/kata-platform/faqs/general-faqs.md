@@ -3,6 +3,7 @@ id: general-faqs
 title: General FAQs
 prev: how-to-change-error-messages-in-your-chatbot
 next: bot-development-faqs
+section: FAQs
 ---
 
 ### Is it possible to use NL from different projects?

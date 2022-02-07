@@ -1,6 +1,7 @@
 ---
 id: release-notes-version
 title: Version
+section: Release Notes
 ---
 
 ## 3.23.1

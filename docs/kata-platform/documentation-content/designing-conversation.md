@@ -3,6 +3,7 @@ id: designing-conversation
 title: Designing Conversation
 next: start-your-first-chatbot
 prev: all-use-cases
+section: Documentation Content
 ---
 
 ## What is Conversation Design?

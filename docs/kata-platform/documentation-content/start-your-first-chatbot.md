@@ -3,6 +3,7 @@ id: start-your-first-chatbot
 title: Start Your First Chatbot
 next: analyze-your-bot-conversations
 prev: designing-conversation
+section: Documentation Content
 ---
 
 A chatbot is an application that allows humans to have online conversations with a computer via text or voice. This tutorial will create a simple chatbot using the Kata Platform. So, let’s get started.

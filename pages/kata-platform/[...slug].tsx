@@ -95,7 +95,7 @@ const PlatformPageTemplate: React.FC<PlatformPageTemplateProps> = ({ post, toc }
                 items={[
                   { url: '/', urlDisplay: 'Home' },
                   { url: '/kata-platform', urlDisplay: 'Kata Platform' },
-                  { urlDisplay: frontMatter.title },
+                  { urlDisplay: frontMatter.section },
                 ]}
               />
               {frontMatter.id !== 'about' && <DocsHeader title={frontMatter.title} />}

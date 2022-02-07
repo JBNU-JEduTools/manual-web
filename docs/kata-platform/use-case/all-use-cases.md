@@ -3,6 +3,7 @@ id: all-use-cases
 title: All Use Cases
 prev: kata-platform-features
 next: what-is-conversation-design
+section: Use Case
 ---
 
 ### **Chatbots For Customer Service**

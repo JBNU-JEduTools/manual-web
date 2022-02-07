@@ -3,6 +3,7 @@ id: glossary-coming-soon
 title: Coming Soon
 prev: glossary-inside-kata-flow
 next: release-notes-version
+section: Glossary
 ---
 
 We’re currently working to provide you with more explanations for these terms. Check this section regularly 😊

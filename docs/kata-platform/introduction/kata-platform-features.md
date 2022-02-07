@@ -3,6 +3,7 @@ id: kata-platform-features
 title: Kata Platform Features
 prev: benefits-with-kata-platform
 next: all-use-cases
+section: Introduction
 ---
 
 Here are the key features:

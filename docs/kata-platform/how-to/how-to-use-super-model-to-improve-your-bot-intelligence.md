@@ -3,6 +3,7 @@ id: how-to-use-super-model-to-improve-your-bot-intelligence
 title: How to Use Super Model (“Kata Entity”) to Improve Your Bot Intelligence
 prev: how-to-use-nlu-threshold-to-enhance-customer-experience
 next: how-to-use-training-data-generator-to-automate-generating-training-data
+section: How To
 ---
 
 ## Introduction

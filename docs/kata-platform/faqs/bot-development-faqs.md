@@ -3,6 +3,7 @@ id: bot-development-faqs
 title: Bot Development FAQs
 prev: general-faqs
 next: glossary-general
+section: FAQs
 ---
 
 ### What is the best practice for making a flow?

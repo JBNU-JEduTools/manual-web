@@ -3,6 +3,7 @@ id: analyze-your-bot-conversations
 title: Analyze Your Bot Conversations
 prev: start-your-first-chatbot
 next: error-log
+section: Documentation Content
 ---
 
 ## Introduction

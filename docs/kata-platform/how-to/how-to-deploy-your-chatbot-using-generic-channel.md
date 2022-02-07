@@ -3,6 +3,7 @@ id: how-to-deploy-your-chatbot-using-generic-channel
 title: How to Deploy Your Chatbot Using Generic Channel
 prev: error-log
 next: how-to-improve-your-chatbot-intelligence-by-training-your-nlu
+section: How To
 ---
 
 ## Introduction
