@@ -50,7 +50,7 @@ const reboot = css`
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color: ${theme.colors.greylight02};
   }
 
   [tabindex='-1']:focus {

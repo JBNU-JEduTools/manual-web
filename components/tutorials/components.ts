@@ -87,6 +87,7 @@ export const CardsWrapper = styled(Box)`
 export const Card = styled(CardAksara)`
   border-radius: 8px;
   border: 1px solid ${theme.colors.grey03};
+  background-color: ${theme.colors.white};
   cursor: default;
   @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     max-width: 100% !important;
