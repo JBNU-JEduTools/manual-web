@@ -27,7 +27,7 @@ You can click on this <a href="https://www.youtube.com/watch?v=qcxQqMI-Khs" targ
 
 > **Figure 3**: Video tutorial in bulk training
 
-## Why Do We Need This Feature?
+## How Bulk Training Might Help You?
 
 Training NL models is one of the most time-consuming processes in chatbot development, which could take approximately 6 weeks. On average, a complex chatbot project requires 1,000 data for their NL models. It’s not ideal to train the sentences one by one, as a typical 1,000-sentence NL model would easily take more than 4 hours to train.
 
