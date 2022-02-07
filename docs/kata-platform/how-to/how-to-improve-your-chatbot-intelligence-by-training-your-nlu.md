@@ -194,9 +194,13 @@ If an entity has too many labels (e.g., 50 labels), it will require at least 50 
 For example, you have an entity type “intent” as follows
 
 NLU name: `nl-1`
+
 Entity name: `intent`
+
 Entity type: `trait`
+
 Entity profile: `intent`
+
 Labels:
 
 -   `lupa_pin`
@@ -213,9 +217,13 @@ You can break down it into 2 differents entities as follows
 NLU name: `nl-2`
 
 **First entity**
+
 Entity name: `intent`
+
 Entity type: `trait`
+
 Entity profile: `intent`
+
 Labels:
 
 -   `lupa`
@@ -227,8 +235,11 @@ Labels:
 **Second Entity**
 
 Entity name: `topic`
+
 Entity type: `trait`
+
 Entity profile: `topic`
+
 Labels:
 
 -   `pin`
@@ -265,9 +276,13 @@ dimana kantor polisi terdekat? #ask_nearby_polisi
 And you have an NLU with the detail as follows:
 
 NLU name: `nl-v1`
+
 Entity name: `intent`
+
 Entity type: `trait`
+
 Entity profile: `intent`
+
 Labels:
 
 -   `ask_nearby_simstnk`
@@ -276,24 +291,37 @@ Labels:
 This NLU can be changed into:
 
 NLU name: `nl-v2`
+
 **First entity**
+
 Entity name: `simstnk`
+
 Entity type: `dict`
+
 Entity profile: `default`
+
 Key: `sim`
+
 Labels:
 
 -   `sim`
 -   `surat izin mengemudi`
-    Key: `stnk`
-    Labels:
+
+Key: `stnk`
+
+Labels:
+
 -   `stnk`
 -   `surat tanda kendaraan bermotor`
 
 **Second entity**
+
 Entity name: `intent`
+
 Entity type: `trait`
+
 Entity profile: `intent`
+
 Labels
 
 -   `ask_nearby_simstnk`
@@ -314,9 +342,13 @@ kasih tau dong resep pizza aas buatanmu #ask_aas_recipe
 Then, you will have an NLU.
 
 NLU name: `nl-v1`
+
 Entity name: `intent`
+
 Entity type: `trait`
+
 Entity profile: `intent`
+
 Labels:
 
 -   `ask_bbq_recipe`
@@ -326,28 +358,43 @@ Labels:
 Next, you change the NLU structure into this:
 
 NLU name: `nl-v2`
+
 **First entity**
+
 Entity name: `pizza`
+
 Entity type: `dict`
+
 Entity profile: `default`
+
 Key: `bbq`
+
 Labels:
 
 -   `bbq`
 -   `barbeque`
-    Key: `pepperoni`
-    Labels:
+-   Key: `pepperoni`
+
+Labels:
+
 -   `pepperoni`
 -   `peperoni`
-    Key: `aas`
-    Labels:
+
+Key: `aas`
+
+Labels:
+
 -   `aas`
 -   `american all star`
 
 **Second entity**
+
 Entity name: `intent`
+
 Entity type: `trait`
+
 Entity profile: `intent`
+
 Labels:
 
 -   `ask_bbq_recipe`
@@ -359,28 +406,44 @@ The `intent` entity in `nlu-v1` can recognize the differentiation between labels
 If you still want to use “dictionary” type for this second example, you can try this way.
 
 NLU name: `nl-v3`
+
 **First entity**
+
 Entity name: `pizza`
+
 Entity type: `dict`
+
 Entity profile: `default`
+
 Key: `bbq`
+
 Labels:
 
 -   `bbq`
 -   `barbeque`
-    Key: `pepperoni`
-    Labels:
+
+Key: `pepperoni`
+
+Labels:
+
 -   `pepperoni`
 -   `peperoni`
-    Key: `aas`
-    Labels:
+
+Key: `aas`
+
+Labels:
+
 -   `aas`
 -   `american all star`
 
 **Second entity**
+
 Entity name: `intent`
+
 Entity type: `trait`
+
 Entity profile: `intent`
+
 Labels:
 
 -   `ask_pizza_recipe`
@@ -434,7 +497,7 @@ The imbalanced data affect bias between labels. A small amount of imbalanced dat
 
 Counter-training means you input training data that is not classified to current labels. For example,
 
--   0You have an entity that can predict book genres into 3 categories (read: labels) `horror`, `fiction`, and `biography`. Each label has been trained and can recognize each genre.
+-   You have an entity that can predict book genres into 3 categories (read: labels) `horror`, `fiction`, and `biography`. Each label has been trained and can recognize each genre.
 -   Then, an input is entered with a new category named `history`.
 -   Because the model only distinguishes between the 3 labels and assumes that each book must be categorized into 3 labels, the model cannot answer not `all three` or `none`.
 
