@@ -3,6 +3,7 @@ prev: manage-wa-credit
 id: manage-your-whatsapp-message-templates
 title: Manage Your WhatsApp Message Templates
 next: manage-broadcast
+section: How To
 ---
 
 ## What is a Message Template?

@@ -1,6 +1,7 @@
 ---
 id: release-notes-version
 title: Version
+section: Release Notes
 ---
 
 The latest news, updates, and changes on Business Dashboard

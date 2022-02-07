@@ -3,6 +3,7 @@ id: get-started
 prev: introduction
 next: how-to-use-trial
 title: Get Started with WhatsApp Business Dashboard
+section: How To
 ---
 
 Watch the video tutorial below on how to sign up and log in to your Business Dashboard, as well as on how to register your WhatsApp Business Account.

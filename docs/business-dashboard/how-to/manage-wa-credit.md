@@ -3,6 +3,7 @@ id: manage-wa-credit
 prev: how-to-register
 next: manage-your-whatsapp-message-templates
 title: Manage Your Broadcast Credit
+section: How To
 ---
 
 To send messages to your audiences, you have to use Broadcast credit. In your dashboard you will see a credit template message balance, one (1) credit represents one (1) template message sent to your client. Cost per template message credit is determined by the different volume of credits you purchased (self-payment) or commercial agreement (for enterprise).

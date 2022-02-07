@@ -3,6 +3,7 @@ id: manage-broadcast
 prev: manage-your-whatsapp-message-templates
 next: how-to-use-analytics
 title: Manage Your Broadcast
+section: How To
 ---
 
 Once you have an approved message template, you can use it to send messages to your audience using the broadcast feature in our dashboard.

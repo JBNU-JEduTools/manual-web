@@ -3,6 +3,7 @@ id: how-to-use-trial
 prev: get-started
 next: how-to-register
 title: How to Use Trial Experience
+section: How To
 ---
 
 ### Introduction

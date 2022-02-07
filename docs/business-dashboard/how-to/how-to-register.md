@@ -3,6 +3,7 @@ id: how-to-register
 prev: how-to-use-trial
 next: manage-wa-credit
 title: How to Register a New WhatsApp Number
+section: How To
 ---
 
 ### Introduction

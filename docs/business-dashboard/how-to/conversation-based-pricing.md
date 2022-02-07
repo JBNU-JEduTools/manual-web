@@ -2,6 +2,7 @@
 prev: how-to-use-analytics
 id: conversation-based-pricing
 title: Conversation-Based Pricing
+section: How To
 ---
 
 Starting February 1, 2022, WhatsApp will switch from a notification-based pricing model to a conversation-based pricing

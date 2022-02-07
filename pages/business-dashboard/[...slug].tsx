@@ -95,7 +95,7 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
                 items={[
                   { url: '/', urlDisplay: 'Home' },
                   { url: '/business-dashboard', urlDisplay: 'Business Dashboard' },
-                  { urlDisplay: frontMatter.title },
+                  { urlDisplay: frontMatter.section },
                 ]}
               />
               <DocsHeader title={frontMatter.title} />
