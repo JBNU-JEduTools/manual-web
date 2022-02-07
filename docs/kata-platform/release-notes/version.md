@@ -48,7 +48,7 @@ We develop a lot of improvements for the Kata Platform in user experience and th
 
 ### What's New ⭐️
 
-The wait is over 🎉 A whole new integration chatbot channel to Omnichat, includes Instagram Direct Message automation. Learn more about Omnichat.
+The wait is over 🎉 A whole new integration chatbot channel to Omnichat, includes Instagram Direct Message automation. [Learn more about Omnichat](/kata-omnichat/introduction/what-is-kata-omnichat).
 
 Here are the new features:
 
