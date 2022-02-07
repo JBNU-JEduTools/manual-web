@@ -3,6 +3,7 @@ id: resolve-conversation
 title: Resolve conversation
 prev: auto-agent-assignment
 next: take-over-bot
+section: Manage Your Conversation
 ---
 
 When completing the conversation, you need to be notified that the conversation is resolved and another conversation needs to be rehandled. Both agent and administrator can resolve conversations.

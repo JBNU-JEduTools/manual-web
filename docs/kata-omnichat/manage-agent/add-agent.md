@@ -3,6 +3,7 @@ id: add-agent
 title: Add agent
 prev: set-up-ice-breaker
 next: edit-agent
+section: Manage Agent
 ---
 
 An agent is a member of your Customer Support team. Agents will be able to view and reply to messages from your users. Follow these steps to set up your agent:

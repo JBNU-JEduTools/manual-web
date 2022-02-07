@@ -3,6 +3,7 @@ id: configure-account-introduction
 title: Configure your account
 prev: dashboard-change-password
 next: configure-account-how-to-use
+section: Configure Your Account
 ---
 
 ## Introduction

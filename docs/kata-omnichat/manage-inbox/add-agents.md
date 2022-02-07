@@ -3,6 +3,7 @@ id: inbox-add-agents
 title: Add agents
 prev: inbox-add-inbox
 next: manage-agents-to-inbox
+section: Manage Inbox
 ---
 
 The last step before completing the inbox is to add your agents. You can add agents that have been invited and verified. Or, if you don’t have any agents yet, you can just add admin first and add another agent later.

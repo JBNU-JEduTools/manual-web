@@ -3,6 +3,7 @@ id: set-up-business-hours
 title: Set up business hours
 prev: set-up-quick-reply
 next: set-up-ice-breaker
+section: Manage Inbox Settings
 ---
 
 In this section, You can set your business availability that will show the available hours on the live chat widget even if all the agents are offline. Outside available hours visitors can be warned with a message and a pre-chat form. The steps to set up business hours are shown as below:

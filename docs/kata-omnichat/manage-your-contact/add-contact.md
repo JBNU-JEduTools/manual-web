@@ -3,6 +3,7 @@ id: add-contact
 title: Add contact
 prev: view-contact
 next: add-label
+section: Manage Your Contact
 ---
 
 Besides getting contact from interaction, you can add a contact by yourself.

@@ -3,6 +3,7 @@ id: agent-view-conversation
 title: Agent view conversation
 prev: admin-view-conversation
 next: whatsapp-business-conversation-using-bot
+section: Manage Your Conversation
 ---
 
 As an agent, you will see the conversations that were assigned to you, both manual assignment or auto-assignment. In the conversation box, you will see 2 options in tab: **Mine** and **Unassigned**. Learn more about these below:

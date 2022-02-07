@@ -3,6 +3,7 @@ id: whatsapp-business-conversation-in-agent-side
 title: Whatsapp Business API conversation in agent-side (with or without bot)
 prev: whatsapp-business-conversation-using-bot
 next: conversation-in-customer-side-using-bot
+section: Manage Your Conversation
 ---
 
 1. Customers started to chat to WABA number

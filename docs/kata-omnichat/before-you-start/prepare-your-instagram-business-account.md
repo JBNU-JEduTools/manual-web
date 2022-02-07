@@ -3,6 +3,7 @@ id: prepare-your-instagram-business-account
 title: Prepare your Instagram Business account
 prev: benefits-with-kata-omnichat
 next: prepare-your-waba-account
+section: Before You Start
 ---
 
 1. After creating an account in Instagram, go to your **Profile**

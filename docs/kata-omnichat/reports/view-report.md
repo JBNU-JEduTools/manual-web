@@ -3,6 +3,7 @@ id: view-report
 title: Reports
 prev: change-your-status-how-to-use
 next: download-report
+section: Reports
 ---
 
 The report shows the activity of your conversation from all channels or inboxes. The report can be accessed only by the admin. In the report, you can view the report dashboard and download agent reports.

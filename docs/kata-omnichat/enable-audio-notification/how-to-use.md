@@ -3,6 +3,7 @@ id: audio-notification-how-to-use
 title: How to use
 prev: audio-notification-introduction
 next: change-your-status-introduction
+section: Enable Audio Notification
 ---
 
 To enable audio notifications, you need to follow these steps

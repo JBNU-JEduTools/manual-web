@@ -3,6 +3,7 @@ id: register-your-account-first
 title: Register your account first
 prev: prepare-your-waba-account
 next: connect-your-instagram-messaging-inbox
+section: Getting Started
 ---
 
 <iframe width="600" height="300" src="https://youtu.be/VNgf-ciA-xA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

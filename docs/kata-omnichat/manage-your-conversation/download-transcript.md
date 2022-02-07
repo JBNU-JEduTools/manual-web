@@ -3,6 +3,7 @@ id: download-transcript
 title: Download transcript
 prev: mute-conversation
 next: view-contact
+section: Manage Your Conversation
 ---
 
 In the conversation, there is a feature that Omnichat provides where you can download transcripts of the conversation. You can see the download menu as shown below.

@@ -3,6 +3,7 @@ id: change-your-status-how-to-use
 title: How to use
 prev: change-your-status-introduction
 next: view-report
+section: Change Your Status
 ---
 
 When you’re logged in to the account, the status by default will change online. However, If you want to change the status to Offline or Busy, then you can click the **change button** on the below corner of the dashboard.

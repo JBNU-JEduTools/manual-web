@@ -3,6 +3,7 @@ id: email-notification-how-to-use
 title: How to use
 prev: email-notification-introduction
 next: access-token-introduction
+section: Setup Email Notification
 ---
 
 You can follow these steps if you want to update your email notifications.

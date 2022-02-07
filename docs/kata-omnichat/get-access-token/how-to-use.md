@@ -3,6 +3,7 @@ id: access-token-how-to-use
 title: How to use
 prev: access-token-introduction
 next: audio-notification-introduction
+section: Get Access Token
 ---
 
 1. Login account

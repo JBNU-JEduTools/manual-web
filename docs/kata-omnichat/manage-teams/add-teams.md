@@ -3,6 +3,7 @@ id: add-teams
 title: Manage Teams
 prev: add-conversation-to-a-label
 next: set-up-canned-responses
+section: Manage Teams
 ---
 
 Teams let you organize your agents into groups based on their responsibilities.

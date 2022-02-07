@@ -3,6 +3,7 @@ id: take-over-bot
 title: Take-over bot
 prev: resolve-conversation
 next: mute-conversation
+section: Manage Your Conversation
 ---
 
 As an admin or agent, you can see the conversation handled by the bot. In this case, if you see the bot not solving the problem, you can use the Take over the bot. You can see the bot here:

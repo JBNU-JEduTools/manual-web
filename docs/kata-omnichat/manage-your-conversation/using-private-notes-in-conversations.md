@@ -3,6 +3,7 @@ id: using-private-notes-in-conversations
 title: Using private notes in conversations
 prev: see-conversation-between-chatbot-and-customer
 next: manual-agent-assignment
+section: Manage Your Conversation
 ---
 
 The private note is the feature for the admin and agent to communicate with each other based on the conversation. The private note always sticks in the conversation box. Go to the conversation, then click the **Private Note** tap in the upper of the conversation box. Then write some notes about the conversation then add notes.

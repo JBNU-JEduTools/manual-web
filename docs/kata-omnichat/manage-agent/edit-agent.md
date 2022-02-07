@@ -3,6 +3,7 @@ id: edit-agent
 title: Edit agent
 prev: add-agent
 next: delete-agent
+section: Manage Agent
 ---
 
 ### As an administrator, you can edit your agents for the name and the role

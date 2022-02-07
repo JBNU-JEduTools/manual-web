@@ -3,6 +3,7 @@ id: connect-your-waba-inbox
 title: Connect your WABA inbox
 prev: connect-your-instagram-messaging-inbox
 next: setup-agent-bot-in-kata-omnichat
+section: Getting Started
 ---
 
 1. In the **Getting Started** page, you have to click the **Connect** button in **WhatsApp Business API**. Or, you can go to **Inboxes** menu, click **Add new inbox** button and click **WhatsApp Business API** channel.

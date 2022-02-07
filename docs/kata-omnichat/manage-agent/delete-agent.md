@@ -3,6 +3,7 @@ id: delete-agent
 title: Delete agent
 prev: edit-agent
 next: received-the-invitation
+section: Manage Agent
 ---
 
 In this section, you can delete the agent that is not used anymore. To delete agents, follow these steps:

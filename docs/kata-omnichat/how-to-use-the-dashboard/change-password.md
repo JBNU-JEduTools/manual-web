@@ -3,6 +3,7 @@ id: dashboard-change-password
 title: Change password
 prev: dashboard-update-profile
 next: configure-account-introduction
+section: How to Use the Dashboard
 ---
 
 Changing password is the feature where agents and administrators can change their passwords for the first time after being invited via email. Here are the steps to change the password after being invited.

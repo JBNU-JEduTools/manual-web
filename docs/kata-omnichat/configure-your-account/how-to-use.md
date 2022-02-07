@@ -3,6 +3,7 @@ id: configure-account-how-to-use
 title: How to use
 prev: configure-account-introduction
 next: inbox-add-inbox
+section: Configure Your Account
 ---
 
 To update your account setting, you can follow these steps:

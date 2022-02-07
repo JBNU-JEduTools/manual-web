@@ -1,6 +1,7 @@
 ---
 id: what-is-kata-omnichat
 next: benefits-with-kata-omnichat
+section: Introduction
 ---
 
 <img className="borderless" src="/assets/images/products/kata-omnichat/image0.png" alt="Kata-Omnichat Illustration" />

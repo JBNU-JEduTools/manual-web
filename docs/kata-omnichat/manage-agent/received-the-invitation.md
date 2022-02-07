@@ -3,6 +3,7 @@ id: received-the-invitation
 title: Received the invitation as administrator or agent
 prev: delete-agent
 next: admin-view-conversation
+section: Manage Agent
 ---
 
 If you’re the agent or administrator who gets the invitation, you need to confirm yourself in the email and get access to the dashboard you’ve been invited to.

@@ -3,6 +3,7 @@ id: see-conversation-between-chatbot-and-customer
 title: See Conversation between Chatbot and Customer
 prev: conversation-in-customer-side-without-bot
 next: using-private-notes-in-conversations
+section: Manage Your Conversation
 ---
 
 1. Go to the **Conversation** menu to see all your messages, both new and past messages

@@ -3,6 +3,7 @@ id: set-up-canned-responses
 title: Set up canned responses
 prev: add-teams
 next: email-notification-introduction
+section: Canned Response
 ---
 
 Canned Responses are saved reply templates that can be used to quickly send out a reply to a conversation. Both Agent and Administrator can add canned responses. To add a canned response, you need to follow these steps.

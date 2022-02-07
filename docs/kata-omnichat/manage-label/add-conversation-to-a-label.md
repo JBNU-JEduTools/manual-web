@@ -3,6 +3,7 @@ id: add-conversation-to-a-label
 title: Add conversation to a label
 prev: add-label
 next: add-teams
+section: Manage Label
 ---
 
 After setting up your label, then both Admin and agent can use the label to group the conversation into the label by adding the selected conversation into the label. To add the conversion to the label, you need to follow these steps.

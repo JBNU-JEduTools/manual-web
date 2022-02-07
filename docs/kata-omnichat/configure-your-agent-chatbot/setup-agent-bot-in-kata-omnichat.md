@@ -3,6 +3,7 @@ id: setup-agent-bot-in-kata-omnichat
 title: Configure your agent bot
 prev: connect-your-waba-inbox
 next: create-agent-bot-from-kata-platform
+section: Configure Your Agent Chatbot
 ---
 
 Agent bot is a feature to integrate your Kata Platform chatbot with Omnichat as “agent”. This feature will let you see the conversation stream between bot and end-users and take over conversation from bot when needed. Learn more about [creating a chatbot handover to an agent](/tutorials/create-simple-bot-handover-from-chatbot-to-agent).

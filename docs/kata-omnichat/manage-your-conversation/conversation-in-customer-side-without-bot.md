@@ -3,6 +3,7 @@ id: conversation-in-customer-side-without-bot
 title: Conversation in Customer-side for Instagram Messaging (without bot)
 prev: conversation-in-customer-side-using-bot
 next: see-conversation-between-chatbot-and-customer
+section: Manage Your Conversation
 ---
 
 1. Customers send messages to the Instagram account

@@ -3,6 +3,7 @@ id: whatsapp-business-conversation-using-bot
 title: Whatsapp Business conversation using a bot
 prev: agent-view-conversation
 next: whatsapp-business-conversation-in-agent-side
+section: Manage Your Conversation
 ---
 
 For the WABA API channel, we can use the bot as our agent. Learn about how the bot can start the conversation:

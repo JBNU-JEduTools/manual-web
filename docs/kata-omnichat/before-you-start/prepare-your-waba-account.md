@@ -3,6 +3,7 @@ id: prepare-your-waba-account
 title: Prepare your WABA account
 prev: prepare-your-instagram-business-account
 next: register-your-account-first
+section: Before You Start
 ---
 
 1. In the **Getting Started** page, you have to click the **Register** in **WhatsApp Business**
