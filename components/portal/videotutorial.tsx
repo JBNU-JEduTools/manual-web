@@ -4,6 +4,8 @@ import { MarkdownContent } from 'interfaces/next';
 import React from 'react';
 import { HeaderSegment } from './components';
 
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+
 interface TutorialsProps {
   tutorials?: MarkdownContent[];
 }
@@ -29,29 +31,13 @@ const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
       </HeaderSegment>
       <Cards>
         <Box display="flex" flexDirection="column">
-          <iframe
-            width="500"
-            height="300"
-            src="https://www.youtube.com/embed/fTMnCy9NE2w?list=PLy86Ve1I7c3g-AWeXrmbPXKl8ZEORn14M"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
+          <LiteYouTubeEmbed id="fTMnCy9NE2w" title="Self-Onboarding" />
           <Text textAlign="center" mt={12} fontWeight={700} fontSize={16}>
             Kata Omnichat 2.0
           </Text>
         </Box>
         <Box display="flex" flexDirection="column">
-          <iframe
-            width="500"
-            height="300"
-            src="https://www.youtube.com/embed/eFWbrAObOXg?list=PLy86Ve1I7c3iZrOzmqE16D0ZVIjoDFRQw"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
+          <LiteYouTubeEmbed id="eFWbrAObOXg" title="How to Set Up Qios" />
           <Text textAlign="center" mt={12} fontWeight={700} fontSize={16}>
             Qios Tutorial
           </Text>

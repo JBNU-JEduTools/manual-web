@@ -11,24 +11,30 @@ export const Cards = styled('div')`
 
   @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     flex-direction: column;
-    iframe {
+    iframe,
+    .yt-lite {
       width: 100% !important;
       height: 35vh !important;
       margin-top: 24px;
+      background-size: 100%;
     }
   }
 
   @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
-    iframe {
+    iframe,
+    .yt-lite {
       width: 39vw;
       height: 35vh;
+      background-size: 100%;
     }
   }
 
   @media only screen and (min-width: ${`${breakpoints.xl}px`}) {
-    iframe {
+    iframe,
+    .yt-lite {
       width: 29vw;
       height: 35vh;
+      background-size: 100%;
     }
   }
 `;
@@ -71,7 +77,7 @@ export const CardsWrapper = styled(Box)`
   }
 `;
 
-export const Card = styled(CardAksara)<{index?: number}>`
+export const Card = styled(CardAksara)<{ index?: number }>`
   border-radius: 8px;
   border: 1px solid ${theme.colors.grey03};
   background-color: ${theme.colors.white};
@@ -82,7 +88,7 @@ export const Card = styled(CardAksara)<{index?: number}>`
   @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
     width: 32%;
   }
-  margin-top: ${props => props.index > 2 ? '32px' : '0px'};
+  margin-top: ${(props) => (props.index > 2 ? '32px' : '0px')};
 
   &:hover {
     box-shadow: 0px 8px 16px 0px #89949f52;
