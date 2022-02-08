@@ -14,7 +14,7 @@ export const Cards = styled('div')`
     iframe,
     .yt-lite {
       width: 100% !important;
-      height: 35vh !important;
+      height: 35vh;
       background-size: 100%;
     }
   }
@@ -23,7 +23,6 @@ export const Cards = styled('div')`
     iframe,
     .yt-lite {
       width: 39vw;
-      height: 35vh;
       background-size: 100%;
     }
   }
@@ -32,7 +31,6 @@ export const Cards = styled('div')`
     iframe,
     .yt-lite {
       width: 29vw;
-      height: 35vh;
       background-size: 100%;
     }
   }
