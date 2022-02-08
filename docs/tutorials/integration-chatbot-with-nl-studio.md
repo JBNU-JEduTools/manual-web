@@ -85,7 +85,7 @@ Click Create to continue. Successfully created NLUs will be appeared as follow
 
 ## Integration with Bot
 
-Next, go to Conversation Flows and click on tab Intents. Select `orderTxt` that you've created earlier to handle user input (you may see this tutorial [Bot studio tutorial](/tutorial/bot-studio/)), then add a new classifier as below
+Next, go to Conversation Flows and click on tab Intents. Select `orderTxt` that you've created earlier to handle user input (you may see this tutorial [Bot studio tutorial](/tutorials/bot-studio/)), then add a new classifier as below
 
 ![bnl-16](/assets/images/tutorial/bot-nl/bnl-16.png)
 

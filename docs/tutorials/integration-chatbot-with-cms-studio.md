@@ -12,13 +12,13 @@ next: create-igdm-bot-handover-from-chatbot-to-agent
 
 CMS Studio allows you to build a dashboard for your chatbot. This dashboard lets your clients to add, edit, or remove certain contents of your bot.
 
-Previously, from [Bot studio tutorial](/tutorial/bot-studio/) we have learned how to create a Pizza Bot. So, in this tutorial we will learn how to set up a dashboard where your clients can edit bot response for “confirmPizza” and “Fallback” state.
+Previously, from [Bot studio tutorial](/tutorials/bot-studio/) we have learned how to create a Pizza Bot. So, in this tutorial we will learn how to set up a dashboard where your clients can edit bot response for “confirmPizza” and “Fallback” state.
 
 Before we begin, you need to read [CMS Studio](/cms-studio/about/) docs to learn the basic concepts of CMS Studio.
 
 ## Set up CMS Studio
 
-We assume at this stage you already deployed your bot. If you haven't, you can learn how to on [Bot studio tutorial](/tutorial/bot-studio/).
+We assume at this stage you already deployed your bot. If you haven't, you can learn how to on [Bot studio tutorial](/tutorials/bot-studio/).
 
 ### Create Environment
 

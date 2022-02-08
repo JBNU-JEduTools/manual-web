@@ -42,7 +42,7 @@ Whenever your customers mention your account in their Instagram Story, you can s
 Important note:
     <ul>
         <li>Because Instagram Story will be deleted every 24 hours, it is expected that the story attachments will disappear too.</li>
-        <li>Chatbots cannot “read” the Instagram Story Mention content, but human agents can see the attachment. Tips: If your customers mention your account in the complaint context and your chatbot cannot satisfy them with the solutions, the agent can take over the conversation.</li>
+        <li>Chatbots cannot “read” the Instagram Story Mention content, but human agents can see the attachment. <br/> Tips: If your customers mention your account in the complaint context and your chatbot cannot satisfy them with the solutions, the agent can take over the conversation.</li>
     </ul>
 </p>
 </div>
@@ -147,9 +147,12 @@ Finally, you’ve successfully created the Inbox. Let's jump to [creating the Ic
 
 This feature allows your bot to send a sticker heart ❤️ and it is different from inline-like.
 
-```
-Tips: To develop this feature, you should know that your bot will reply with a “heart” whatever the customers ask. It’s somehow uncomfortable if your customer complains to your bot, then it shows a heart sticker.
-```
+<div className="info">
+    <img className="borderless" src="/assets/images/icon-info.svg" />
+    <p>
+    Tips: To develop this feature, you should know that your bot will reply with a “heart” whatever the customers ask. It’s somehow uncomfortable if your customer complains to your bot, then it shows a heart sticker.
+    </p>
+</div>
 
 ##### How to Use
 
@@ -176,11 +179,11 @@ You will apply it in the **intent** feature to trigger automatic replies from In
 
 ## Deploy your chatbot
 
-Go to the tutorial for [creating a simple Instagram DM chatbot](/tutorial/create-igdm-bot-handover-from-chatbot-to-agent).
+Go to the tutorial for [creating a simple Instagram DM chatbot](/tutorials/create-igdm-bot-handover-from-chatbot-to-agent).
 
 ## FAQ
 
-### I have 2 IGDM bot actions: image type and text type. The first response will show an image, then a text. However, after I deploy the IG channel, it offers a text, then an image. Why did it happen?
+#### I have 2 IGDM bot actions: image type and text type. The first response will show an image, then a text. However, after I deploy the IG channel, it offers a text, then an image. Why did it happen?
 
 A: Because the API calls limit in Instagram (Facebook policy link) has a maximum of 5 outgoing messages in 1 second. Hence, loading the image and showing it to the end-user took a delay in between, and the impacted image action type didn’t show in the correct order. You cannot avoid it. We suggest you put a good UX conversation to display the image between text since the image will have an incorrect order than the Platform emulator.
 
