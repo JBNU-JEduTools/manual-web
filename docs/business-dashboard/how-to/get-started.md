@@ -1,6 +1,6 @@
 ---
 id: get-started
-prev: introduction
+prev: introduction-about
 next: how-to-use-trial
 title: Get Started with WhatsApp Business Dashboard
 section: How To
