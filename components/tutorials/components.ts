@@ -65,11 +65,16 @@ export const CardsWrapper = styled(Box)`
     padding-left: 10vw;
     padding-right: 10vw;
   }
+  @media only screen and (min-width: ${`${breakpoints.xl}px`}) {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
 `;
 
-export const Card = styled(CardAksara)`
+export const Card = styled(CardAksara)<{index?: number}>`
   border-radius: 8px;
   border: 1px solid ${theme.colors.grey03};
+  background-color: ${theme.colors.white};
   cursor: default;
   @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     max-width: 100% !important;
@@ -77,7 +82,7 @@ export const Card = styled(CardAksara)`
   @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
     width: 32%;
   }
-  margin-top: 12px;
+  margin-top: ${props => props.index > 2 ? '32px' : '0px'};
 
   &:hover {
     box-shadow: 0px 8px 16px 0px #89949f52;

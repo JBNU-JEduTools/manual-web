@@ -1,5 +1,6 @@
 import { breakpoints } from 'utils/variables';
 import styled from 'styled-components';
+import { theme } from '@aksara-ui/react';
 
 const DocsWrapper = styled('article')`
   font-family: 'Inter', sans-serif;
@@ -9,6 +10,7 @@ const DocsWrapper = styled('article')`
   flex: 1 1 auto;
   position: relative;
   padding: 32px;
+  background-color: ${theme.colors.white};
 
   @media (max-width: ${breakpoints.lg - 1}px) {
     overflow-x: auto;

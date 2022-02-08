@@ -34,8 +34,8 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
         </Box>
         <CardsWrapper>
           <Cards>
-            {tutorialPosts?.slice((page - 1) * limit, limit * page).map((tutorial: MarkdownContent) => {
-              return <TutorialCard key={tutorial.frontMatter.id} tutorial={tutorial} />;
+            {tutorialPosts?.slice((page - 1) * limit, limit * page).map((tutorial: MarkdownContent, idx: number) => {
+              return <TutorialCard key={tutorial.frontMatter.id} index={idx} tutorial={tutorial} />;
             })}
           </Cards>
           <PaginationWithDetails

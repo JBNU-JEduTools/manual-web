@@ -28,8 +28,8 @@ const Tutorials: React.FC<TutorialsProps> = ({ tutorials }) => {
         </UnstyledAnchor>
       </HeaderSegment>
       <Cards>
-        {tutorials?.slice(0, 6).map((tutorial) => {
-          return <TutorialCard key={tutorial.frontMatter.id} tutorial={tutorial} />;
+        {tutorials?.slice(0, 6).map((tutorial, idx) => {
+          return <TutorialCard key={tutorial.frontMatter.id} index={idx} tutorial={tutorial} />;
         })}
       </Cards>
     </Box>
