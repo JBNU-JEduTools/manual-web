@@ -1,6 +1,6 @@
 ---
 id: inbox-add-inbox
-title: Manage inbox
+title: Add Inbox
 prev: configure-account-how-to-use
 next: inbox-add-agents
 section: Manage Inbox

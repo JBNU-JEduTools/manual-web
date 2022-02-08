@@ -1,6 +1,6 @@
 ---
 id: admin-view-conversation
-title: Manage your conversation
+title: Admin View Conversation
 prev: received-the-invitation
 next: agent-view-conversation
 section: Manage Your Conversation

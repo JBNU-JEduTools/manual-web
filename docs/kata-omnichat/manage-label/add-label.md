@@ -1,6 +1,6 @@
 ---
 id: add-label
-title: Manage label
+title: Add label
 prev: add-contact
 next: add-conversation-to-a-label
 section: Manage Label

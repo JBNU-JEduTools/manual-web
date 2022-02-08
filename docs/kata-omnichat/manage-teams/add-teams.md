@@ -1,6 +1,6 @@
 ---
 id: add-teams
-title: Manage Teams
+title: Add Teams
 prev: add-conversation-to-a-label
 next: set-up-canned-responses
 section: Manage Teams

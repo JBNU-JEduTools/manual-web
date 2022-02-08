@@ -1,6 +1,6 @@
 ---
 id: view-report
-title: Reports
+title: View Reports
 prev: change-your-status-how-to-use
 next: download-report
 section: Reports

@@ -2,6 +2,7 @@
 id: download-report
 title: Download report
 prev: view-report
+next: release-notes-version
 section: Reports
 ---
 

@@ -1,12 +1,12 @@
 ---
 id: dashboard-update-profile
-title: How to use the dashboard
+title: Update profile
 prev: create-agent-bot-from-kata-platform
 next: dashboard-change-password
 section: How to Use the Dashboard
 ---
 
-**Configure your profile**
+## Configure your profile
 
 Kata Omnichat allows both admin and agents to _set up your profile_ by changing display picture, name, and changing password. It is easier to identify an account in the team.
 
