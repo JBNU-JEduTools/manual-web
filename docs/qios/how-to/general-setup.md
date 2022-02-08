@@ -1,6 +1,7 @@
 ---
 id: general-setup
 title: How To Setup
+prev: about
 next: manage-product
 section: How To
 ---
