@@ -12,7 +12,7 @@ interface TutorialsProps {
 
 const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
   return (
-    <Box>
+    <Box marginTop={96}>
       <HeaderSegment>
         <Heading scale={700} fontSize={24}>
           Video Tutorial

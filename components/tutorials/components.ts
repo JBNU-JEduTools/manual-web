@@ -15,7 +15,6 @@ export const Cards = styled('div')`
     .yt-lite {
       width: 100% !important;
       height: 35vh !important;
-      margin-top: 24px;
       background-size: 100%;
     }
   }
