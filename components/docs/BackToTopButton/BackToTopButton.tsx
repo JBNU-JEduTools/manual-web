@@ -9,12 +9,14 @@ const Wrapper = styled('a')`
   position: fixed;
   bottom: 24px;
   right: 24px;
-  padding: 0;
-  background-color: ${theme.colors.blue06};
+  height: 48px;
+  width: 48px;
+  padding: 10px;
+  background-color: ${theme.colors.blue07};
   color: ${theme.colors.white};
   cursor: pointer;
   z-index: ${layerIndexes.overlay - 1};
-  border-radius: 50%;
+  border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
 
@@ -37,8 +39,8 @@ const Inner = styled('div')`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 24px;
+  height: 24px;
 `;
 
 interface BackToTopButtonProps {
