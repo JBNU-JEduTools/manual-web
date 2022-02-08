@@ -33,6 +33,7 @@ const PaginationButton = styled('div')`
   height: 32px;
   border-radius: 4px;
   background-color: ${colors.grey02};
+  cursor: pointer;
 
   svg {
     g {
