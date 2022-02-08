@@ -16,12 +16,12 @@ const sanitizeString = (sentences) => {
     allowedAttributes: {},
   })
     .replace(/[\n\r]/g, ' ') // \n \r
-    .replace(/(?:https?|ftp):\/\/[\n\S]+/g, '') // URL
+    .replace(/(?:https?|ftp):\/\/[\n\S]+/g, ' ') // URL
     .replace(
       /([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g,
-      ''
+      ' '
     ) // Emoji
-    .replace(/[^\w\s]/gi, '') // Special Symbol;
+    .replace(/[^\w\s]/gi, ' ') // Special Symbol;
     .replace(/ +(?= )/g, ''); // double space
 };
 
@@ -44,11 +44,16 @@ Object.keys(markdownJsonOutput).forEach((product) => {
     .filter(({ id }) => id !== 'release-notes-version')
     .map(({ contents, excerpt, id, meta, ...rest }) => {
       const { relativePath, ...restMeta } = meta;
-      let absolutePath = convertRelativeToAbsolute(sanitizeUrl(relativePath), isGlobal ? undefined : product);
+      const absolutePath = convertRelativeToAbsolute(sanitizeUrl(relativePath), isGlobal ? undefined : product);
+      // For handling global json and making breadcrumb for search page
+      const [_, productKey, __] = absolutePath.split('/');
+      const isTutorial = productKey === 'tutorials';
       return {
         contents: sanitizeString(contents),
         excerpt: sanitizeString(excerpt),
         meta: { ...restMeta, absolutePath },
+        product: productKey,
+        isTutorial,
         id,
         ...rest,
       };
