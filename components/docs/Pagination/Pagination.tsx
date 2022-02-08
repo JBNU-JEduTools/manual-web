@@ -11,13 +11,11 @@ const Wrapper = styled('aside')`
   margin-bottom: ${space.xl}px;
   border-collapse: collapse;
   border-radius: 4px;
-  overflow: hidden;
 `;
 
 const WrapperInner = styled('div')`
   display: flex;
   flex-direction: column;
-  height: 128px;
 
   @media (min-width: ${breakpoints.md}px) {
     flex-direction: row;
@@ -113,6 +111,7 @@ const PaginationItem = styled('div')`
   overflow: hidden;
   background-color: ${colors.grey01};
   border-radius: 4px;
+  padding: 24px;
 
   &:first-child {
     justify-content: flex-start;
