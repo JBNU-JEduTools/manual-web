@@ -365,6 +365,10 @@ const reboot = css`
     background-color: ${theme.colors.blue01};
     p {
       margin-left: 12px;
+      overflow: auto;
+    }
+    a {
+      color: ${theme.colors.blue07}
     }
   }
 `;
