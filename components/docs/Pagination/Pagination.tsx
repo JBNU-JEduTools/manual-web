@@ -33,7 +33,6 @@ const PaginationButton = styled('div')`
   height: 32px;
   border-radius: 4px;
   background-color: ${colors.grey02};
-  cursor: pointer;
 
   svg {
     g {
@@ -161,7 +160,7 @@ const Pagination: React.FC<PaginationProps> = ({ prevPage, nextPage }) => (
       <PaginationItem>
         {prevPage && (
           <PaginationLink href={prevPage.url}>
-            <Box display="flex">
+            <Box display="flex" cursor={'pointer'}>
               <PaginationButton>
                 <svg width="24" height="24" viewBox="0 0 24 24">
                   <defs>
@@ -195,7 +194,7 @@ const Pagination: React.FC<PaginationProps> = ({ prevPage, nextPage }) => (
       <PaginationItem>
         {nextPage && (
           <PaginationLink href={nextPage.url}>
-            <Box display="flex">
+            <Box display="flex" cursor={'pointer'}>
               <PaginationBlock>
                 <PaginationHeading size={200} color="grey04" display="block">
                   Next
