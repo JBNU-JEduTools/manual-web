@@ -1,4 +1,4 @@
-import { styleJSX } from '../styles/global.ts';
+import { styleJSX } from '../styles/global';
 import Head from 'next/head';
 import { AksaraProvider, theme } from '@aksara-ui/react';
 
