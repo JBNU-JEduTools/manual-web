@@ -1,5 +1,6 @@
 ---
 prev: how-to-use-analytics
+next: release-notes-version
 id: conversation-based-pricing
 title: Conversation-Based Pricing
 section: How To
