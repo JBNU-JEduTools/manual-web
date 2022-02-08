@@ -24,6 +24,7 @@ const HeaderLogo = styled('div')<HeaderLogoProps>`
   width: ${dimensions.widths.sidebar.lg}px;
   height: 100%;
   padding: 0 24px;
+  cursor: pointer;
 
   ${(props) => (props.navHidden ? hasNoSidebar : hasSidebar)}
 
