@@ -1,7 +1,7 @@
 ---
 layout: tutorial
 id: how-to-use-whatsapp-business-api-in-my-chatbot
-imgSpot: /assets/images/tutorial/spot-ig-handover.png
+imgSpot: /assets/images/tutorial/spot-business-dashboard.png
 title: How to use WhatsApp Business API in my chatbot
 product: kata-platform
 date: '2021-10-25T07:00:00+07:00'
