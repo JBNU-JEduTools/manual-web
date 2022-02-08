@@ -71,6 +71,10 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
   const [isSearchOpen, setIsSearchOpen] = React.useState(false);
   const router = useRouter();
 
+  const onSearchMore = (product: string, query: string) => {
+    router.push(`/search?product=${product}&query=${query}`);
+  };
+
   return (
     <StyledLayoutRoot>
       <Head>
@@ -123,7 +127,12 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
               </Link>
             </LogoWrapper>
             {isSearchOpen ? (
-              <SearchBox layout="mobile" onSearchClear={() => setIsSearchOpen(false)} fuseSearch={fuseSearch} />
+              <SearchBox
+                layout="mobile"
+                onSearchClear={() => setIsSearchOpen(false)}
+                fuseSearch={fuseSearch}
+                onSearchMore={onSearchMore}
+              />
             ) : (
               <UnstyledSearchButton onClick={() => setIsSearchOpen(!isSearchOpen)}>
                 <SearchIcon />
@@ -132,7 +141,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
           </HeaderRight>
           <HeaderRight contents="flex-end" hideOnMobile>
             <DesktopHeaderRight>
-              <SearchBox layout="desktop" fuseSearch={fuseSearch} />
+              <SearchBox layout="desktop" fuseSearch={fuseSearch} onSearchMore={onSearchMore} />
             </DesktopHeaderRight>
           </HeaderRight>
         </HeaderInner>

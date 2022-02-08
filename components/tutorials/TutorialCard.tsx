@@ -5,7 +5,8 @@ import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
 import { breakpoints } from 'utils/variables';
-import { Anchor, Card, ProductBadge } from './components';
+import { Anchor, Card } from './components';
+import { ProductBadge } from '../badge';
 
 interface TutorialCardProps {
   tutorial: MarkdownContent;

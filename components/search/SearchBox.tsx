@@ -3,14 +3,18 @@ import Link from 'next/link';
 import styled, { css } from 'styled-components';
 
 import { space } from 'utils/variables';
-import { theme, InputSearchbox as InputSearchboxAksara } from '@aksara-ui/react';
+import { theme, Text, Box, PlainButton } from '@aksara-ui/react';
 import InputText from '../InputText';
+import { ProductBadge } from 'components/badge';
+import { PRODUCTS_DICT } from 'utils/constants';
+import { IconOutgoing } from '@aksara-ui/icons';
 
 interface SearchPageProps {
   lng?: string;
   layout?: string;
   fuseSearch?: { fuse: any; name: string };
   onSearchClear?: () => void;
+  onSearchMore?: (product: string, query: string) => void;
 }
 
 interface SearchPageState {
@@ -84,10 +88,6 @@ const SearchResultsDesktop = css`
   margin-top: 11px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-
-  input:focus {
-    width: 550px;
-  }
 `;
 
 const SearchResultsMobile = css`
@@ -111,12 +111,6 @@ const SearchResults = styled('div')<SearchPageProps>`
   ${(props) => props.layout === 'mobile' && SearchResultsMobile}
 `;
 
-const SearchInputTextDesktop = css`
-  input:focus {
-    width: 550px;
-  }
-`;
-
 const SearchInputText = styled(InputText)<SearchPageProps>`
   input {
     color: ${theme.colors.grey05};
@@ -130,7 +124,6 @@ const SearchInputText = styled(InputText)<SearchPageProps>`
     color: ${theme.colors.grey05};
     opacity: 1;
   }
-  ${(props) => props.layout === 'desktop' && SearchInputTextDesktop}
 `;
 
 const RootDesktop = css`
@@ -161,6 +154,11 @@ const RootMobile = css`
       margin-right: 0;
     }
   }
+`;
+
+const SearchResultButton = styled(PlainButton)`
+  padding: 8px 16px;
+  width: 100%;
 `;
 
 const Root = styled('div')<SearchPageProps>`
@@ -229,12 +227,12 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
   };
 
   render() {
-    const { layout, onSearchClear, fuseSearch } = this.props;
+    const { layout, onSearchClear, fuseSearch, onSearchMore } = this.props;
     const { query, results, isInputFocused } = this.state;
     const ref = React.createRef<HTMLInputElement>();
 
     return (
-      <Root layout={layout}>
+      <Root layout={layout} onFocus={() => this.setState({ isInputFocused: true })}>
         <div className="header">
           <SearchInputText
             layout={layout}
@@ -253,12 +251,20 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                 onSearchClear();
               }
             }}
-            onBlur={() => this.setState({ isInputFocused: false })}
-            onFocus={() => this.setState({ isInputFocused: true })}
           />
         </div>
         {isInputFocused && results && results.length !== 0 && (
           <SearchResults layout={layout}>
+            {PRODUCTS_DICT[fuseSearch.name] && (
+              <Box ml={12} my={8} width={'100%'}>
+                <ProductBadge>
+                  <img src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
+                  <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
+                    {PRODUCTS_DICT[fuseSearch.name]}
+                  </Text>
+                </ProductBadge>
+              </Box>
+            )}
             {results.map(({ item: page }) => {
               return (
                 <SearchResultLink href={page.meta.absolutePath} key={page.title}>
@@ -269,6 +275,20 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                 </SearchResultLink>
               );
             })}
+            {results && results.length === 5 && (
+              <SearchResultButton
+                icon={IconOutgoing}
+                iconPosition="left"
+                onClick={() => {
+                  onSearchMore(fuseSearch.name, query);
+                }}
+                size="sm"
+                type="button"
+                variant="primary"
+              >
+                See all “{query}” result
+              </SearchResultButton>
+            )}
           </SearchResults>
         )}
       </Root>
