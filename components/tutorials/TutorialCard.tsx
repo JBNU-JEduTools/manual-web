@@ -21,7 +21,7 @@ export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) =
       <CardContent>
         <ProductBadge>
           <img src="/assets/images/products/icon/kata-platform-icon.svg" />
-          <Text fontSize={12} fontWeight={600} color={theme.colors.blue06}>
+          <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
             Kata Platform
           </Text>
         </ProductBadge>
