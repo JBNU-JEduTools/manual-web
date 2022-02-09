@@ -14,9 +14,9 @@ interface TutorialsProps {
 
 const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
   return (
-    <Box marginTop={96}>
+    <Box marginTop={96} mb={48}>
       <HeaderSegment>
-        <Heading scale={700} fontSize={24}>
+        <Heading scale={700} fontSize={24} mb={0}>
           Video Tutorial
         </Heading>
         <UnstyledAnchor
@@ -55,6 +55,6 @@ const VideoWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
   @media only screen and (max-width: ${breakpoints.lg - 1}px) {
-    margin-bottom: 36px;
+    margin-top: 24px;
   }
 `;
