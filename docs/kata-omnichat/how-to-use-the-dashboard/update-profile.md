@@ -1,6 +1,5 @@
 ---
 id: dashboard-update-profile
-title: Update profile
 prev: create-agent-bot-from-kata-platform
 next: dashboard-change-password
 section: How to Use the Dashboard
