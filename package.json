@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@aksara-ui/icons": "1.0.1-canary.1",
-    "@aksara-ui/react": "1.0.1-canary.33",
+    "@aksara-ui/react": "1.0.1-canary.34",
     "@mapbox/rehype-prism": "^0.8.0",
     "@svgr/webpack": "^6.1.2",
     "babel-preset-next": "^1.4.0",

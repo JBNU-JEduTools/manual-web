@@ -55,15 +55,13 @@ const IndexLayout: React.FC<IndexLayoutProps> = ({ children, navHidden }) => {
 
   return (
     <NavigationContextProvider>
-      <AksaraReset>
-        <div id="#">
-          <Layout imageOrigin={imageUrl} fuseSearch={fuseSearch}>
-            <Overlay />
-            <Navigation navigation={navigation} navHidden={navHidden} />
-            {children}
-          </Layout>
-        </div>
-      </AksaraReset>
+      <div id="#">
+        <Layout imageOrigin={imageUrl} fuseSearch={fuseSearch}>
+          <Overlay />
+          <Navigation navigation={navigation} navHidden={navHidden} />
+          {children}
+        </Layout>
+      </div>
     </NavigationContextProvider>
   );
 };

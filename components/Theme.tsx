@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { breakpoints, headingSizes, textSizes, colors, space, fonts, paragraphSizes } from 'utils/variables';
-
-export const themeProps = {
+import { Theme as ThemeAksara } from '@aksara-ui/react';
+export const themeProps: ThemeAksara = {
   colors,
   space,
   fonts,
@@ -10,8 +10,8 @@ export const themeProps = {
   fontSizes: {
     heading: headingSizes,
     paragraph: paragraphSizes,
-    text: textSizes
-  }
+    text: textSizes,
+  },
 };
 
 /**
