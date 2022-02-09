@@ -6,6 +6,9 @@
     "start": "next start",
     "lint": "next lint",
     "server": "http-server",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
     "md2json:global": "markdown-json -c ./markdown-to-json/settings/global.json",
     "md2json:qios": "markdown-json -c ./markdown-to-json/settings/qios.json",
     "md2json:kata-omnichat": "markdown-json -c ./markdown-to-json/settings/kata-omnichat.json",
@@ -44,6 +47,7 @@
     "utility-types": "^3.10.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^12.0.10",
     "@styled-system/should-forward-prop": "^5.1.5",
     "@types/markdown-it": "^12.2.3",
     "@types/reach__router": "^1.3.10",
@@ -53,6 +57,7 @@
     "@types/styled-system__should-forward-prop": "^5.1.2",
     "autoprefixer": "^10.2.1",
     "babel-plugin-styled-components": "^2.0.2",
+    "cross-env": "^7.0.3",
     "eslint": "^8.5.0",
     "eslint-config-next": "12.0.10",
     "http-server": "^14.0.0",
