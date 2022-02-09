@@ -200,9 +200,9 @@ const reboot = css`
   }
 
   section img {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin: 24px auto;
     border: 1px solid ${theme.colors.greylight04};
+    max-height: 65vh;
   }
 
   section img.borderless {
@@ -368,7 +368,7 @@ const reboot = css`
       overflow: auto;
     }
     a {
-      color: ${theme.colors.blue07}
+      color: ${theme.colors.blue07};
     }
   }
 `;
