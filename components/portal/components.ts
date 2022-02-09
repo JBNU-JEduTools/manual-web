@@ -105,4 +105,5 @@ export const HeaderSegment = styled('div')`
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 32px;
+  align-items: end;
 `;

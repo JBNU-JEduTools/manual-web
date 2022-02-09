@@ -29,16 +29,16 @@ const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
           See all
         </UnstyledAnchor>
       </HeaderSegment>
-      <Cards>
-        <Box display="flex" flexDirection="column">
+      <Cards mb={'24px'}>
+        <Box display="flex" flexDirection="column" mb={24}>
           <LiteYouTubeEmbed id="fTMnCy9NE2w" title="Self-Onboarding" />
-          <Text textAlign="center" mt={12} fontWeight={700} fontSize={16}>
+          <Text textAlign="center" mb={10} mt={12} fontWeight={700} fontSize={16}>
             Kata Omnichat 2.0
           </Text>
         </Box>
         <Box display="flex" flexDirection="column">
           <LiteYouTubeEmbed id="eFWbrAObOXg" title="How to Set Up Qios" />
-          <Text textAlign="center" mt={12} fontWeight={700} fontSize={16}>
+          <Text textAlign="center" mb={10} mt={12} fontWeight={700} fontSize={16}>
             Qios Tutorial
           </Text>
         </Box>

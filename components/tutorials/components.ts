@@ -2,19 +2,19 @@ import { Box, Card as CardAksara, theme, UnstyledAnchor } from '@aksara-ui/react
 import styled from 'styled-components';
 import { breakpoints } from 'utils/variables';
 
-export const Cards = styled('div')`
+export const Cards = styled('div')<{ mb?: string }>`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: ${(prop) => (prop && prop.mb ? prop.mb : '32px')};
 
   @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     flex-direction: column;
     iframe,
     .yt-lite {
       width: 100% !important;
-      height: 35vh;
+      height: 22vh;
       background-size: 100%;
     }
   }
