@@ -16,6 +16,9 @@ export const Cards = styled('div')<{ mb?: string }>`
       width: 100% !important;
       height: 22vh;
       background-size: 100%;
+      &:before {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+      }
     }
   }
 
@@ -24,6 +27,9 @@ export const Cards = styled('div')<{ mb?: string }>`
     .yt-lite {
       width: 39vw;
       background-size: 100%;
+      &:before {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+      }
     }
   }
 
@@ -32,6 +38,9 @@ export const Cards = styled('div')<{ mb?: string }>`
     .yt-lite {
       width: 29vw;
       background-size: 100%;
+      &:before {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+      }
     }
   }
 `;
