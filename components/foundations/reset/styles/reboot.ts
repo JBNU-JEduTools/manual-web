@@ -358,11 +358,17 @@ const reboot = css`
     margin-top: 24px;
     margin-bottom: 24px;
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: start;
     align-items: center;
     padding: 14px 16px;
     border-left: 1px solid ${theme.colors.blue07};
     background-color: ${theme.colors.blue01};
+
+    img {
+      margin-left: 18px;
+      margin-right: 13px;
+    }
     p {
       margin-left: 12px;
       overflow: auto;
