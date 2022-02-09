@@ -168,6 +168,7 @@ const reboot = css`
     color: #007bff;
     text-decoration: none;
     background-color: transparent;
+    overflow-wrap: anywhere;
     -webkit-text-decoration-skip: objects;
   }
 

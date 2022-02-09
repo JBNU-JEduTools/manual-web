@@ -5,6 +5,8 @@ import React from 'react';
 import { HeaderSegment } from './components';
 
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import styled from 'styled-components';
+import { breakpoints } from 'utils/variables';
 
 interface TutorialsProps {
   tutorials?: MarkdownContent[];
@@ -29,22 +31,30 @@ const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
           See all
         </UnstyledAnchor>
       </HeaderSegment>
-      <Cards mb={'24px'}>
-        <Box display="flex" flexDirection="column" mb={24}>
+      <Cards>
+        <VideoWrapper>
           <LiteYouTubeEmbed id="fTMnCy9NE2w" title="Self-Onboarding" />
           <Text textAlign="center" mb={10} mt={12} fontWeight={700} fontSize={16}>
             Kata Omnichat 2.0
           </Text>
-        </Box>
-        <Box display="flex" flexDirection="column">
+        </VideoWrapper>
+        <VideoWrapper>
           <LiteYouTubeEmbed id="eFWbrAObOXg" title="How to Set Up Qios" />
           <Text textAlign="center" mb={10} mt={12} fontWeight={700} fontSize={16}>
             Qios Tutorial
           </Text>
-        </Box>
+        </VideoWrapper>
       </Cards>
     </Box>
   );
 };
 
 export default VideoTutorial;
+
+const VideoWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: ${breakpoints.lg - 1}px) {
+    margin-bottom: 36px;
+  }
+`;
