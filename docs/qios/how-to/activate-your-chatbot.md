@@ -20,7 +20,7 @@ section: How To
 
 <iframe width="600" height="300" src="https://www.youtube.com/embed/viq53pfMOFw?list=PLy86Ve1I7c3iZrOzmqE16D0ZVIjoDFRQw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
-1. Before opening your store, you have to create a WABA inbox, then set up and activate the agent bot through Kata Omnichat. Learn more about [Kata Omnichat](/kata-omnichat/setup-agent-bot) and [creating the agent bot](/tutorials/create-simple-bot-handover-from-chatbot-to-agent).
+1. Before opening your store, you have to create a WABA inbox, then set up and activate the agent bot through Kata Omnichat. Learn more about [Kata Omnichat](/kata-omnichat/configure-your-agent-chatbot/setup-agent-bot-in-kata-omnichat) and [creating the agent bot](/tutorials/create-simple-bot-handover-from-chatbot-to-agent).
 
 2. Copy and paste the access token from agent bot in Kata Omnichat to Qios Dashboard in **Pengaturan > WhatsApp** Business API and click **_“Aktifkan webhook URL”_** button.
 
