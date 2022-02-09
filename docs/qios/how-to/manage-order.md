@@ -1,5 +1,6 @@
 ---
 prev: set-up-bank-account
+next: release-notes-version
 id: manage-order
 title: How To Manage Order
 section: How To
