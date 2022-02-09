@@ -54,7 +54,9 @@ export default VideoTutorial;
 const VideoWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
-  &:not(:last-child) {
-    margin-bottom: 24px;
+  @media only screen and (max-width: ${breakpoints.lg - 1}px) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 `;
