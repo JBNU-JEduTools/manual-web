@@ -7,6 +7,7 @@ import VideoTutorial from 'components/portal/videotutorial';
 import { getAllNodes } from 'next-mdx/server';
 import { TutorialWrapper } from 'components/portal/components';
 import IndexLayout from 'components/layouts';
+/* INFO: This line for InputSearchbox */
 import { InputSearchbox } from '@aksara-ui/react';
 
 interface IIndex {
@@ -20,6 +21,7 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
         <title>Kata Product Documentations</title>
       </Head>
       <Container>
+        {/* INFO: This line for InputSearchbox */}
         <InputSearchbox></InputSearchbox>
         <Portal />
         <TutorialWrapper>
