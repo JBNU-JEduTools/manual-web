@@ -1,6 +1,5 @@
 ---
 id: manage-agents-to-inbox
-title: Manage Agents to Inbox
 prev: inbox-add-agents
 next: set-up-quick-reply
 section: Manage Inbox Settings
