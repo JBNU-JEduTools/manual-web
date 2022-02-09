@@ -2,6 +2,8 @@ import { styleJSX } from '../styles/global';
 import Head from 'next/head';
 import { AksaraProvider, theme } from '@aksara-ui/react';
 
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
+
 export default function MyApp({ Component, pageProps }) {
   return (
     <AksaraProvider disableInjection>

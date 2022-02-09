@@ -24,6 +24,7 @@ const SidebarLogo = styled('div')<SidebarLogoProps>`
   padding: 0 24px;
   margin: 24px 0;
   width: 100%;
+  cursor: pointer;
 
   ${(props) => (props.navHidden ? hasNoSidebar : hasSidebar)}
 

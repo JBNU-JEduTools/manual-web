@@ -21,7 +21,7 @@ To update your account setting, you can follow these steps:
 
     ![Figure 15](/assets/images/products/kata-omnichat/image15.png)
 
-    Figure 15. General Account setting
+    > **Figure 15.** General Account setting
 
 The available setting will be shown as below:
 

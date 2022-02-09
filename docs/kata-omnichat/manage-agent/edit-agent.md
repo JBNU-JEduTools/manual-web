@@ -6,7 +6,7 @@ next: delete-agent
 section: Manage Agent
 ---
 
-**As an administrator, you can edit your agents for the name and the role**
+As an administrator, you can edit your agents for the name and the role
 
 When you edit the role, your agents can access the features as their role. Follow these steps to edit your agent.
 

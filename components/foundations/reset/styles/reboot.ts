@@ -168,6 +168,7 @@ const reboot = css`
     color: #007bff;
     text-decoration: none;
     background-color: transparent;
+    overflow-wrap: anywhere;
     -webkit-text-decoration-skip: objects;
   }
 
@@ -200,9 +201,9 @@ const reboot = css`
   }
 
   section img {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin: 24px auto;
     border: 1px solid ${theme.colors.greylight04};
+    max-height: 65vh;
   }
 
   section img.borderless {
@@ -358,13 +359,23 @@ const reboot = css`
     margin-top: 24px;
     margin-bottom: 24px;
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: start;
     align-items: center;
     padding: 14px 16px;
     border-left: 1px solid ${theme.colors.blue07};
     background-color: ${theme.colors.blue01};
+
+    img {
+      margin-left: 18px;
+      margin-right: 13px;
+    }
     p {
       margin-left: 12px;
+      overflow: auto;
+    }
+    a {
+      color: ${theme.colors.blue07};
     }
   }
 `;

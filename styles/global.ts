@@ -19,7 +19,7 @@ export const styleJSX = css`
   @font-face {
     -webkit-font-smoothing: antialiased;
     font-family: 'SF Pro Text';
-    src: url('assets/fonts/SF-Pro-Text.otf') format('opentype');
+    src: url('assets/fonts/SF-Pro-Text.ttf') format('ttf');
     font-weight: 700;
   }
 

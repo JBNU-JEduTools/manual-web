@@ -104,5 +104,13 @@ export const HeaderSegment = styled('div')`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 32px;
+  align-items: end;
+
+  @media only screen and (max-width: ${breakpoints.lg - 1}px) {
+    margin-bottom: 24px;
+  }
+
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
+    margin-bottom: 32px;
+  }
 `;

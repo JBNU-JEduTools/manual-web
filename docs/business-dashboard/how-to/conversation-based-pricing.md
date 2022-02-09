@@ -66,7 +66,7 @@ business using the call-to-action button on an Ad that clicks into WhatsApp or a
 <div className="info">
     <img className="borderless" src="/assets/images/icon-info.svg" />
     <p>
-    Disclaimer: This scenario is based on The Official Facebook documentation. The complete scenario can be found [here](https://developers.facebook.com/docs/whatsapp/pricing/conversationpricing)
+    Disclaimer: This scenario is based on The Official Facebook documentation. The complete scenario can be found <a href="https://developers.facebook.com/docs/whatsapp/pricing/conversationpricing" target="_blank">here</a>
     </p>
 </div>
 
@@ -214,7 +214,7 @@ To accommodate changes in pricing schemes that occur, said the Business Dashboar
 
 #### 2. IDR, for Non-Indonesian Numbers
 
-Prices for credit deductions from and for non-Indonesian numbers can be seen on: https://developers.facebook.com/docs/whatsapp/pricing/conversationpricing#cost-per-conversation-in-idr with a small round-up to the next dollar, plus an additional BSP Fee of **+IDR 50** for both types of messages on WhatsApp, namely User-Initiated Conversation and Business-Initiated Conversation.
+Prices for credit deductions from and for non-Indonesian numbers can be seen on: <a href="https://developers.facebook.com/docs/whatsapp/pricing/conversationpricing#cost-per-conversation-in-idr" target="_blank"><span>http</span>s://developers.facebook.com/docs/whatsapp/pricing/conversationpricing#cost-per-conversation-in-idr</a> with a small round-up to the next dollar, plus an additional BSP Fee of **+IDR 50** for both types of messages on WhatsApp, namely User-Initiated Conversation and Business-Initiated Conversation.
 
 Example:
 

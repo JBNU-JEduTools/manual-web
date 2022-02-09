@@ -1337,3 +1337,7 @@ intent == "csIceBreaker"
 ```
 
 4. Click Create
+
+### Objective: Publish updated bot and deploy to Omnichat again
+
+Follow the tutorial to [finalize your bot](/tutorial/create-igdm-bot-handover-from-chatbot-to-agent/#finalize-your-new-bot).
