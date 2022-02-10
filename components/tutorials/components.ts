@@ -90,11 +90,15 @@ export const Card = styled(CardAksara)<{ index?: number }>`
   cursor: default;
   @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     max-width: 100% !important;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
   @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
     width: 32%;
+    margin-top: ${(props) => (props.index > 2 ? '32px' : '0px')};
   }
-  margin-top: ${(props) => (props.index > 2 ? '32px' : '0px')};
+
 
   &:hover {
     box-shadow: 0px 8px 16px 0px #89949f52;
