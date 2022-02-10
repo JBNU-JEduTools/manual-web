@@ -165,7 +165,9 @@ const Index: React.FC = () => {
   return (
     <IndexLayout navHidden>
       <Head>
-        <title>Search result</title>
+        <title>
+          Search result for “{query}” {PRODUCTS_DICT[product] && `in ${PRODUCTS_DICT[product]}`} 🔎
+        </title>
       </Head>
       <Container>
         <HeadingWrapper>
