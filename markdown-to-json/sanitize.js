@@ -10,8 +10,8 @@ const markdownJsonOutput = {
   global: require('./outputs/global.json'),
 };
 
-const sanitizeString = (sentences) => {
-  return sanitizeHtml(sentences, {
+const sanitizeString = (sentences, removeSymbol = true) => {
+  const cleanSentences = sanitizeHtml(sentences, {
     allowedTags: [],
     allowedAttributes: {},
   })
@@ -20,9 +20,14 @@ const sanitizeString = (sentences) => {
     .replace(
       /([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g,
       ' '
-    ) // Emoji
-    .replace(/[^\w\s]/gi, ' ') // Special Symbol;
-    .replace(/ +(?= )/g, ''); // double space
+    ); // Emoji
+
+  if (removeSymbol) {
+    return cleanSentences
+      .replace(/[^\w\s]/gi, ' ') // Special Symbol;
+      .replace(/ +(?= )/g, ''); // double space
+  }
+  return cleanSentences.replace(/ +(?= )/g, ''); // double space;
 };
 
 const convertRelativeToAbsolute = (relativePath, prefix) => {
@@ -36,35 +41,33 @@ const sanitizeUrl = (path) => {
   return path.replace(/\\/g, '/').replace('.html', '');
 };
 
-Object.keys(markdownJsonOutput).forEach((product) => {
-  console.log(`Begin sanitizing ${product}`);
-  const output = markdownJsonOutput[product];
-  const isGlobal = product === 'global';
+Object.keys(markdownJsonOutput).forEach((key) => {
+  console.log(`Begin sanitizing ${key}`);
+  const output = markdownJsonOutput[key];
+  const isGlobal = key === 'global';
   const newData = output.data
     .filter(({ id }) => id !== 'release-notes-version')
     .map(({ contents, excerpt, id, meta, ...rest }) => {
       const { relativePath, ...restMeta } = meta;
-      const absolutePath = convertRelativeToAbsolute(sanitizeUrl(relativePath), isGlobal ? undefined : product);
+      const absolutePath = convertRelativeToAbsolute(sanitizeUrl(relativePath), isGlobal ? undefined : key);
       // For handling global json and making breadcrumb for search page
       const [_, productKey, __] = absolutePath.split('/');
-      const isTutorial = productKey === 'tutorials';
       return {
         contents: sanitizeString(contents),
-        excerpt: sanitizeString(excerpt),
+        excerpt: sanitizeString(contents.split('.').slice(0, 3).join('.'), false),
         meta: { ...restMeta, absolutePath },
         product: productKey,
-        isTutorial,
         id,
         ...rest,
       };
     });
   fs.writeFile(
-    `./markdown-to-json/outputs/${product}.json`,
+    `./markdown-to-json/outputs/${key}.json`,
     JSON.stringify({ app: output.app, data: newData }),
     'utf-8',
     function (err) {
       if (err) throw err;
-      console.log(`Finish sanitizing ${product}`);
+      console.log(`Finish sanitizing ${key}`);
     }
   );
 });
