@@ -36,10 +36,10 @@
   dependencies:
     clsx "^1.1.1"
 
-"@aksara-ui/react@1.0.1-canary.34":
-  version "1.0.1-canary.34"
-  resolved "https://registry.yarnpkg.com/@aksara-ui/react/-/react-1.0.1-canary.34.tgz#d253469916250633ca16b1bbe81474291c01e835"
-  integrity sha512-EwPLpOXyMXSgaojoFGtm5IBqfJWqiR1hzDfV7KSn4J97qaWL/HDjnwp6t28pSQ3d7yi71LnZr1CAId7lDjLGDA==
+"@aksara-ui/react@1.0.1-canary.35":
+  version "1.0.1-canary.35"
+  resolved "https://registry.yarnpkg.com/@aksara-ui/react/-/react-1.0.1-canary.35.tgz#d9dca36df22e99281e3c7f051ee21b2bfaecf6eb"
+  integrity sha512-reVsZdC6tqH414xImhiJ/3HBmNmkVms7qQyuXE62mZcchFUQsJSdUM5cnP8COunpbnhYdk9mUmxz4pE94i8YMQ==
   dependencies:
     "@aksara-ui/core" "^1.0.1-canary.4"
     "@aksara-ui/helpers" "^1.0.1-canary.2"
