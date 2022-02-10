@@ -72,7 +72,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
   const router = useRouter();
 
   const onSearchMore = (product: string, query: string) => {
-    router.push(`/search?product=${product}&query=${query}`);
+    router.push(`/search/result?product=${product}&query=${query}`);
   };
 
   return (
