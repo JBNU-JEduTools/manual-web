@@ -48,7 +48,7 @@ const reboot = css`
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #0E0E2C;
     text-align: left;
     background-color: ${theme.colors.greylight02};
   }
@@ -73,6 +73,18 @@ const reboot = css`
     margin-bottom: 0.5rem;
   }
 
+  h1,
+  h2,
+  h3 {
+    color: ${theme.colors.greydark05};
+  }
+
+  h4,
+  h5,
+  h6 {
+    color: #404145;
+  }
+
   article section h1::before,
   article section h2::before,
   article section h3::before,
@@ -87,8 +99,9 @@ const reboot = css`
     margin-top: -64px;
   }
 
-  p {
+  p, ol, ul, li {
     font-family: 'Inter', sans-serif !important;
+    color: #0E0E2C;
     margin-top: 0;
     margin-bottom: 1rem;
   }
@@ -181,8 +194,11 @@ const reboot = css`
   code,
   kbd,
   samp {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-family: Roboto Mono;
     font-size: 1em;
+    font-weight: 500;
+    background: ${theme.colors.greylight03};
+    color: ${theme.colors.greydark02};
   }
 
   pre {

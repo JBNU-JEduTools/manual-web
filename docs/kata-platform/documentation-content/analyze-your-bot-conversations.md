@@ -172,7 +172,3 @@ You can also click on the transcript row to view the log of each row, for exampl
 > **Figure 11**: Transcript Detail.
 
 Here, you can view the log of conversations between your user & chatbot. We also include the state flow your user is in after each chat.
-
-```
-
-```

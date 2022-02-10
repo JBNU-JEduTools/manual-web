@@ -43,7 +43,6 @@ export const Heading: React.FC<HeadingProps> = ({ children, as, size, color, ...
 Heading.defaultProps = {
   as: 'h2',
   marginBottom: '12px',
-  color: 'grey09',
   size: 800,
 };
 

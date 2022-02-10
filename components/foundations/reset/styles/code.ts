@@ -1,6 +1,6 @@
 import { theme } from '@aksara-ui/react';
 import { css } from 'styled-components';
-import { colors, paragraphSizes, textSizes } from 'utils/variables';
+import { paragraphSizes, textSizes } from 'utils/variables';
 
 const code = css`
   /*
@@ -14,9 +14,7 @@ const code = css`
   */
   code[class*='language-'],
   pre[class*='language-'] {
-    font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter',
-      'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', 'Courier New', Courier,
-      monospace;
+    font-family: Roboto Mono, Consolas, 'monospace';
     font-size: ${textSizes[300].fontSize}px;
     line-height: ${textSizes[300].lineHeight}px;
     direction: ltr;
@@ -31,8 +29,8 @@ const code = css`
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-    background: ${colors.grey01};
-    color: ${colors.grey07};
+    background: ${theme.colors.grey01};
+    color: ${theme.colors.greydark02};
   }
 
   /* Code blocks */
@@ -47,7 +45,7 @@ const code = css`
     padding: 0.1em;
     border-radius: 0.3em;
     background: none;
-    color: ${colors.blue05};
+    color: ${theme.colors.blue05};
     font-size: ${paragraphSizes[400].fontSize}px;
     line-height: ${paragraphSizes[400].lineHeight}px;
   }

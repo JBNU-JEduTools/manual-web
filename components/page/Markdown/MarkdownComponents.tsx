@@ -2,6 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Heading, Paragraph } from 'components/foundations';
 import { space, textSizes, colors } from 'utils/variables';
+import { theme } from '@aksara-ui/react';
 
 const UnorderedList = styled('ul')`
   margin: ${space.sm}px 0;
@@ -31,7 +32,7 @@ const TableDefault = styled('table')`
       font-weight: 700;
       letter-spacing: -0.01em;
       text-align: left;
-      color: ${colors.grey09};
+      color: ${theme.colors.greydark02};
     }
   }
 
@@ -85,7 +86,7 @@ const TableBordered = styled('table')`
       letter-spacing: -0.01em;
       text-transform: uppercase;
       text-align: center;
-      color: ${colors.grey12};
+      color: ${theme.colors.greydark02};
     }
   }
 
@@ -108,25 +109,25 @@ const TableBordered = styled('table')`
 `;
 
 export const h1 = (props: JSX.IntrinsicAttributes) => (
-  <Heading fontSize={36} fontWeight={700} as="h1" color="grey09" {...props} />
+  <Heading fontSize={36} fontWeight={700} as="h1" {...props} />
 );
 export const h2 = (props: JSX.IntrinsicAttributes) => (
-  <Heading fontSize={30} fontWeight={700} as="h2" mt="xl" color="grey09" {...props} />
+  <Heading fontSize={30} fontWeight={700} as="h2" mt="xl" {...props} />
 );
 export const h3 = (props: JSX.IntrinsicAttributes) => (
-  <Heading fontSize={24} fontWeight={700} as="h3" mt="xl" color="grey09" {...props} />
+  <Heading fontSize={24} fontWeight={700} as="h3" mt="xl" {...props} />
 );
-export const h4 = (props: JSX.IntrinsicAttributes) => <Heading size={400} as="h4" mt="xl" color="grey09" {...props} />;
+export const h4 = (props: JSX.IntrinsicAttributes) => <Heading size={400} as="h4" mt="xl" {...props} />;
 export const h5 = (props: JSX.IntrinsicAttributes) => (
-  <Heading fontSize={14} fontWeight={700} as="h5" mt="xl" color="grey09" {...props} />
+  <Heading fontSize={14} fontWeight={700} as="h5" mt="xl" {...props} />
 );
-export const h6 = (props: JSX.IntrinsicAttributes) => <Heading size={400} as="h6" mt="xl" color="grey09" {...props} />;
-export const p = (props: JSX.IntrinsicAttributes) => <Paragraph size={400} mt="sm" color="grey07" {...props} />;
+export const h6 = (props: JSX.IntrinsicAttributes) => <Heading size={400} as="h6" mt="xl" {...props} />;
+export const p = (props: JSX.IntrinsicAttributes) => <Paragraph size={400} mt="sm" {...props} />;
 export const hr = (props: JSX.IntrinsicAttributes) => <HorizontalRule {...props} />;
 export const ul = (props: JSX.IntrinsicAttributes) => <UnorderedList {...props} />;
-export const ol = (props: JSX.IntrinsicAttributes) => <UnorderedList as="ol" color="grey07" {...props} />;
+export const ol = (props: JSX.IntrinsicAttributes) => <UnorderedList as="ol" {...props} />;
 export const li = (props: JSX.IntrinsicAttributes) => (
-  <Paragraph size={400} as="li" color="grey07" my="xxs" {...props} />
+  <Paragraph size={400} as="li" my="xxs" {...props} />
 );
 
 interface TableAttributes extends JSX.IntrinsicAttributes {

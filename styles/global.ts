@@ -23,6 +23,19 @@ export const styleJSX = css`
     font-weight: 700;
   }
 
+  @font-face {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto Mono';
+    src: url('assets/fonts/RobotoMono.woff') format('woff');
+  }
+
+  @font-face {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto Mono Bold';
+    src: url('assets/fonts/RobotoMono-Bold.woff') format('woff');
+    font-weight: 700;
+  }
+
   html,
   body {
     width: 100%;

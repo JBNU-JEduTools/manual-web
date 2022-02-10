@@ -15,13 +15,13 @@ const NotFoundPage: React.FC = () => (
       </Head>
       <NotFoundWrapper>
         <Inner>
-          <Heading as="h1" size={800} color="grey09" m={0}>
+          <Heading as="h1" size={800} m={0}>
             404
           </Heading>
-          <Text as="p" size={400} color="grey07">
+          <Text as="p" size={400}>
             We can&apos;t find the page you&apos;re looking for.
           </Text>
-          <Text as="p" size={400} color="grey07">
+          <Text as="p" size={400}>
             <Link href="/">Go back?</Link>
           </Text>
         </Inner>

@@ -38,7 +38,6 @@ Paragraph.defaultProps = {
   as: 'p',
   marginTop: '6px',
   marginBottom: '6px',
-  color: 'grey07',
   fontFamily: 'inter',
   size: 300,
 };
