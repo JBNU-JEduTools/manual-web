@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { getMdxNode, getMdxPaths } from 'next-mdx/server';
-import { AksaraProvider, Text, UnstyledAnchor } from '@aksara-ui/react';
+import { Text, UnstyledAnchor } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
 import { DocsWrapper } from 'components/docs/DocsWrapper';
@@ -81,17 +81,14 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
               </div>
             )}
             <DocsContainer>
-              {/* Because AksaraReset in IndexLayout broke Breadcrumb css */}
-              <AksaraProvider disableInjection>
-                <Breadcrumb
-                  items={[
-                    { url: '/', urlDisplay: 'Home' },
-                    { url: '/tutorials', urlDisplay: 'All Tutorials' },
-                    { url: `/${frontMatter.product}`, urlDisplay: PRODUCTS_DICT[frontMatter.product] },
-                    { urlDisplay: 'Tutorial' },
-                  ]}
-                />
-              </AksaraProvider>
+              <Breadcrumb
+                items={[
+                  { url: '/', urlDisplay: 'Home' },
+                  { url: '/tutorials', urlDisplay: 'All Tutorials' },
+                  { url: `/${frontMatter.product}`, urlDisplay: PRODUCTS_DICT[frontMatter.product] },
+                  { urlDisplay: 'Tutorial' },
+                ]}
+              />
               <DocsHeader title={frontMatter.title} />
               <MarkdownContent>{renderAst(post.mdx.renderedOutput)}</MarkdownContent>
               <DocsHelpful />
