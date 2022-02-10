@@ -43,9 +43,15 @@ const ResultExcerpt = styled(Text)`
 
 const SearchResult = styled('div')`
   &:not(:last-child) {
-    margin-bottom: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid ${theme.colors.greylight04};
+
+    @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
+      margin-bottom: 10px;
+    }
+    @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
+      margin-bottom: 24px;
+    }
   }
 `;
 
