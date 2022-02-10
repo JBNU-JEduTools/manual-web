@@ -33,7 +33,11 @@ const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
       </HeaderSegment>
       <Cards>
         <VideoWrapper>
-          <LiteYouTubeEmbed id="fTMnCy9NE2w" title="Self-Onboarding" />
+          <LiteYouTubeEmbed
+            id="fTMnCy9NE2w"
+            title="Self-Onboarding"
+            thumbnail="/assets/images/thumbnail/self-onboarding.png"
+          />
           <Text textAlign="center" mb={10} mt={12} fontWeight={700} fontSize={16}>
             Kata Omnichat 2.0
           </Text>
@@ -42,7 +46,7 @@ const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
           <LiteYouTubeEmbed
             id="eFWbrAObOXg"
             title="How to Set Up Qios"
-            style={{ backgroundImage: '/assets/images/thumbnail/how-to-set-up-qios.png' }}
+            thumbnail="/assets/images/thumbnail/how-to-set-up-qios.png"
           />
           <Text textAlign="center" mb={10} mt={12} fontWeight={700} fontSize={16}>
             Qios Tutorial
@@ -70,4 +74,4 @@ const VideoTutorialWrapper = styled(Box)`
   @media only screen and (min-width: ${breakpoints.lg}px) {
     margin-top: 96px;
   }
-`
+`;
