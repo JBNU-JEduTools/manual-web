@@ -165,8 +165,8 @@ const reboot = css`
   }
 
   section a {
-    color: ${theme.colors.blue06};
-    text-decoration: none;
+    color: ${theme.colors.blue07};
+    text-decoration: underline;
     background-color: transparent;
     overflow-wrap: anywhere;
     -webkit-text-decoration-skip: objects;
