@@ -3,7 +3,6 @@ import Container from 'components/container';
 import Head from 'next/head';
 import { Footer } from 'components/layout/Footer';
 import { Box, Heading, Text, theme } from '@aksara-ui/react';
-import { CardsWrapper } from 'components/tutorials/components';
 import { PaginationWithDetails } from 'components/tutorials/pagination';
 import IndexLayout from 'components/layouts';
 import { useRouter } from 'next/router';
@@ -20,9 +19,10 @@ const LIMIT = [5, 10, 15];
 const ResultTitle = styled('h3')`
   font-size: 24px;
   line-height: 32px;
-  color: ${theme.colors.greydark02}
+  color: ${theme.colors.greydark02};
   margin-top: 0;
   margin-bottom: 0;
+  cursor: pointer;
 `;
 
 const ResultExcerpt = styled(Text)`
@@ -79,7 +79,11 @@ const SearchResultLink = styled(Link)`
 `;
 
 const Wrapper = styled(Box)`
-  @media only screen and (min-width: ${`${breakpoints.xl}px`}) {
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
     margin-left: 160px;
     margin-right: 160px;
   }
@@ -87,23 +91,54 @@ const Wrapper = styled(Box)`
 
 const InnerWrapper = styled(Box)`
   background-color: ${theme.colors.greylight01};
-  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
-    padding: 16px 16px 24px 16px;
-  }
-  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
-    padding: 32px 32px 48px 32px;
-  }
-  @media only screen and (min-width: ${`${breakpoints.xl}px`}) {
-    padding: 32px 32px 48px 32px;
-    margin-bottom: 48px;
-  }
+  padding: 32px 32px 48px 32px;
+  margin-bottom: 48px;
 `;
 
 const PaginationWrapper = styled(Box)`
-  @media only screen and (min-width: ${`${breakpoints.xl}px`}) {
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
     margin-top: 48px;
     margin-bottom: 96px;
   }
+`;
+
+const HideOnMobile = css`
+  @media (max-width: ${breakpoints.lg - 1}px) {
+    display: none;
+  }
+`;
+
+const HideOnDesktop = css`
+  @media (min-width: ${breakpoints.lg}px) {
+    display: none;
+  }
+`;
+
+const BreadcrumbWrapper = styled(Box)<{ hideOnMobile?: boolean; hideOnDesktop?: boolean }>`
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  ${(props) => props.hideOnMobile && HideOnMobile}
+  ${(props) => props.hideOnDesktop && HideOnDesktop}
+`;
+
+const HeadingWrapper = styled(Box)`
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `;
 
 const Index: React.FC = () => {
@@ -114,15 +149,6 @@ const Index: React.FC = () => {
   const router = useRouter();
   const { query, product } = router.query;
 
-  console.log(
-    router,
-    query,
-    product,
-    FUSE_SEARCH[product],
-    typeof query === 'undefined',
-    typeof product === 'undefined',
-    typeof FUSE_SEARCH[product] === 'undefined'
-  );
   React.useEffect(() => {
     if (typeof query !== 'undefined' && typeof product !== 'undefined' && typeof FUSE_SEARCH[product] !== 'undefined') {
       const fuse = FUSE_SEARCH[product];
@@ -136,11 +162,11 @@ const Index: React.FC = () => {
         <title>Search result</title>
       </Head>
       <Container>
-        <Box display="flex" my={48} justifyContent="center" alignItems="center">
-          <Heading fontSize={36} mb={14}>
+        <HeadingWrapper>
+          <Heading fontSize={36} color={theme.colors.greydark02}>
             Search result for “{query}” {PRODUCTS_DICT[product] && `in ${PRODUCTS_DICT[product]}`} 🔎
           </Heading>
-        </Box>
+        </HeadingWrapper>
         <Wrapper>
           <InnerWrapper>
             {results.slice((page - 1) * limit, limit * page).map(({ item: page }) => {
@@ -171,9 +197,19 @@ const Index: React.FC = () => {
                 <SearchResultLink href={page.meta.absolutePath} key={page.title}>
                   <SearchResult>
                     <ResultTitle>{page.title}</ResultTitle>
-                    <Box my={14}>
+                    <BreadcrumbWrapper hideOnMobile>
                       <Breadcrumb items={breadcrumbItems} />
-                    </Box>
+                    </BreadcrumbWrapper>
+                    <BreadcrumbWrapper hideOnDesktop>
+                      <Breadcrumb
+                        items={breadcrumbItems.map((item, index) => {
+                          if (index === 0) {
+                            return { urlDisplay: '...' };
+                          }
+                          return { urlDisplay: item.urlDisplay };
+                        })}
+                      />
+                    </BreadcrumbWrapper>
                     {page.excerpt && <ResultExcerpt>{page.excerpt}</ResultExcerpt>}
                   </SearchResult>
                 </SearchResultLink>
