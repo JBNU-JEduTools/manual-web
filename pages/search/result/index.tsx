@@ -42,10 +42,10 @@ const ResultExcerpt = styled(Text)`
 `;
 
 const SearchResult = styled('div')`
-  border-bottom: 1px solid ${theme.colors.grey02};
-
   &:not(:last-child) {
     margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid ${theme.colors.greylight04};
   }
 `;
 
@@ -146,7 +146,7 @@ const Index: React.FC = () => {
             {results.slice((page - 1) * limit, limit * page).map(({ item: page }) => {
               let breadcrumbItems: BreadcrumbContent[] = [{ url: `/`, urlDisplay: `Home` }];
               if (product === 'global') {
-                if (page.isTutorial) {
+                if (page.product === 'tutorials') {
                   breadcrumbItems = [
                     ...breadcrumbItems,
                     { url: `/tutorials`, urlDisplay: `Tutorial` },
