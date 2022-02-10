@@ -81,12 +81,13 @@ export const HeroWrapper = styled('div')`
     width: 240px !important;
   }
 `;
+
 export const Anchor = styled(UnstyledAnchor)`
   font-weight: 700;
   color: ${theme.colors.grey08};
 
   @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   @media only screen and (min-width: ${`${breakpoints.lg + 1}px`}) {

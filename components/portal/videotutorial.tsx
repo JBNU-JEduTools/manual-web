@@ -14,7 +14,7 @@ interface TutorialsProps {
 
 const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
   return (
-    <Box marginTop={96} mb={48}>
+    <VideoTutorialWrapper>
       <HeaderSegment>
         <Heading scale={700} fontSize={24} mb={0}>
           Video Tutorial
@@ -49,7 +49,7 @@ const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
           </Text>
         </VideoWrapper>
       </Cards>
-    </Box>
+    </VideoTutorialWrapper>
   );
 };
 
@@ -64,3 +64,10 @@ const VideoWrapper = styled(Box)`
     }
   }
 `;
+
+const VideoTutorialWrapper = styled(Box)`
+  margin-bottom: 48px;
+  @media only screen and (min-width: ${breakpoints.lg}px) {
+    margin-top: 96px;
+  }
+`
