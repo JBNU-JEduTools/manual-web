@@ -39,7 +39,11 @@ const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
           </Text>
         </VideoWrapper>
         <VideoWrapper>
-          <LiteYouTubeEmbed id="eFWbrAObOXg" title="How to Set Up Qios" />
+          <LiteYouTubeEmbed
+            id="eFWbrAObOXg"
+            title="How to Set Up Qios"
+            style={{ backgroundImage: '/assets/images/thumbnail/how-to-set-up-qios.png' }}
+          />
           <Text textAlign="center" mb={10} mt={12} fontWeight={700} fontSize={16}>
             Qios Tutorial
           </Text>

@@ -12,6 +12,7 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
       flex="1 1 auto"
       position="relative"
       backgroundColor={theme.colors.greylight02}
+      width={'100%'}
     >
       {children}
     </Box>

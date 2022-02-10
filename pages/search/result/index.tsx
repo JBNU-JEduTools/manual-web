@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'components/container';
 import Head from 'next/head';
 import { Footer } from 'components/layout/Footer';
-import { Box, Heading, Text, theme } from '@aksara-ui/react';
+import { Box, Heading as HeadingAksara, Text, theme } from '@aksara-ui/react';
 import { PaginationWithDetails } from 'components/tutorials/pagination';
 import IndexLayout from 'components/layouts';
 import { useRouter } from 'next/router';
@@ -17,12 +17,19 @@ import { BreadcrumbContent } from 'interfaces/next';
 const LIMIT = [5, 10, 15];
 
 const ResultTitle = styled('h3')`
-  font-size: 24px;
   line-height: 32px;
   color: ${theme.colors.greydark02};
   margin-top: 0;
   margin-bottom: 0;
   cursor: pointer;
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 `;
 
 const ResultExcerpt = styled(Text)`
@@ -36,8 +43,13 @@ const ResultExcerpt = styled(Text)`
   display: -webkit-box;
   -webkit-box-orient: vertical;
 
-  &:last-child {
-    margin-bottom: 0;
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
+    font-size: 16px;
+    line-height: 28px;
   }
 `;
 
@@ -85,6 +97,7 @@ const SearchResultLink = styled(Link)`
 `;
 
 const Wrapper = styled(Box)`
+  border-radius: 8px;
   @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     margin-left: 16px;
     margin-right: 16px;
@@ -147,6 +160,20 @@ const HeadingWrapper = styled(Box)`
   text-align: center;
 `;
 
+const Heading = styled(HeadingAksara)`
+  color: ${theme.colors.greydark02};
+
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+`;
+
 const Index: React.FC = () => {
   const [page, setPage] = React.useState(1);
   const [limit, setLimit] = React.useState(5);
@@ -171,7 +198,7 @@ const Index: React.FC = () => {
       </Head>
       <Container>
         <HeadingWrapper>
-          <Heading fontSize={36} color={theme.colors.greydark02}>
+          <Heading>
             Search result for “{query}” {PRODUCTS_DICT[product] && `in ${PRODUCTS_DICT[product]}`} 🔎
           </Heading>
         </HeadingWrapper>
@@ -202,25 +229,26 @@ const Index: React.FC = () => {
               }
 
               return (
-                <SearchResultLink href={page.meta.absolutePath} key={page.title}>
-                  <SearchResult>
+                <SearchResult key={page.title}>
+                  <SearchResultLink href={page.meta.absolutePath}>
                     <ResultTitle>{page.title}</ResultTitle>
-                    <BreadcrumbWrapper hideOnMobile>
-                      <Breadcrumb items={breadcrumbItems} />
-                    </BreadcrumbWrapper>
-                    <BreadcrumbWrapper hideOnDesktop>
-                      <Breadcrumb
-                        items={breadcrumbItems.map((item, index) => {
-                          if (index === 0) {
-                            return { urlDisplay: '...' };
-                          }
-                          return { urlDisplay: item.urlDisplay };
-                        })}
-                      />
-                    </BreadcrumbWrapper>
-                    {page.excerpt && <ResultExcerpt>{page.excerpt}</ResultExcerpt>}
-                  </SearchResult>
-                </SearchResultLink>
+                  </SearchResultLink>
+                  <BreadcrumbWrapper hideOnMobile>
+                    <Breadcrumb items={breadcrumbItems} />
+                  </BreadcrumbWrapper>
+                  <BreadcrumbWrapper hideOnDesktop>
+                    <Breadcrumb
+                      items={breadcrumbItems.map((item, index) => {
+                        console.log({ urlDisplay: item.urlDisplay });
+                        if (index === 0) {
+                          return { urlDisplay: '...' };
+                        }
+                        return { urlDisplay: item.urlDisplay };
+                      })}
+                    />
+                  </BreadcrumbWrapper>
+                  {page.excerpt && <ResultExcerpt>{page.excerpt}</ResultExcerpt>}
+                </SearchResult>
               );
             })}
           </InnerWrapper>
