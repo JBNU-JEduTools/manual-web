@@ -164,16 +164,16 @@ const reboot = css`
     top: -0.5em;
   }
 
-  a {
-    color: #007bff;
+  section a {
+    color: ${theme.colors.blue06};
     text-decoration: none;
     background-color: transparent;
     overflow-wrap: anywhere;
     -webkit-text-decoration-skip: objects;
   }
 
-  a:hover {
-    color: #0056b3;
+  section a:hover {
+    color: ${theme.colors.blue08};
     text-decoration: underline;
   }
 
