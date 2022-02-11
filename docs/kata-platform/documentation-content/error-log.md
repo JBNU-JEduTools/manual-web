@@ -99,7 +99,7 @@ method(methodParam, methodParam2, ...)
 
 | Error code                                                    | Explanation                                                                                                                                                                                   |
 | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Error Code 1005-Cannot create methe thod `${head}: {message}` | This error message will show if you push-ing your bot via Kata CLI. It means there is an error when creating the method. In this error message, you will find a specific error in the method. |
+| Error Code 1005-Cannot create method `${head}: {message}` | This error message will show if you push-ing your bot via Kata CLI. It means there is an error when creating the method. In this error message, you will find a specific error in the method. |
 
 For example you have a case as follows.
 
