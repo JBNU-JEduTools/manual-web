@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export const TocAnchor = styled(UnstyledAnchor)`
   display: flex;
   width: inherit;
-  color: ${theme.colors.grey09};
-  font-family: Inter;
+  color: ${theme.colors.greymed05};
+  font-family: Inter, 'sans-serif';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -28,7 +28,7 @@ export const TocAnchor = styled(UnstyledAnchor)`
 
 export const TocHeader = styled(Text)`
   /* Header/Header 5 */
-  font-family: Inter;
+  font-family: Inter, 'sans-serif';
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -39,8 +39,8 @@ export const TocHeader = styled(Text)`
 `;
 
 export const TocText = styled(Text)`
-  color: ${theme.colors.grey09};
-  font-family: Inter;
+  color: ${theme.colors.greymed05};
+  font-family: Inter, 'sans-serif';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

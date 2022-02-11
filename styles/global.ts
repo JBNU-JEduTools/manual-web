@@ -6,33 +6,33 @@ export const styleJSX = css`
   @font-face {
     -webkit-font-smoothing: antialiased;
     font-family: 'Inter';
-    src: url('assets/fonts/Inter.woff') format('woff');
+    src: url('/assets/fonts/Inter.woff') format('woff');
   }
 
   @font-face {
     -webkit-font-smoothing: antialiased;
     font-family: 'Inter-bold';
-    src: url('assets/fonts/Inter-Bold.woff') format('woff');
+    src: url('/assets/fonts/Inter-Bold.woff') format('woff');
     font-weight: 700;
   }
 
   @font-face {
     -webkit-font-smoothing: antialiased;
     font-family: 'SF Pro Text';
-    src: url('assets/fonts/SF-Pro-Text.ttf') format('ttf');
+    src: url('/assets/fonts/SF-Pro-Text.ttf') format('ttf');
     font-weight: 700;
   }
 
   @font-face {
     -webkit-font-smoothing: antialiased;
     font-family: 'Roboto Mono';
-    src: url('assets/fonts/RobotoMono.woff') format('woff');
+    src: url('/assets/fonts/RobotoMono.woff') format('woff');
   }
 
   @font-face {
     -webkit-font-smoothing: antialiased;
     font-family: 'Roboto Mono Bold';
-    src: url('assets/fonts/RobotoMono-Bold.woff') format('woff');
+    src: url('/assets/fonts/RobotoMono-Bold.woff') format('woff');
     font-weight: 700;
   }
 

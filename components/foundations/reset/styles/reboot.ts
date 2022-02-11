@@ -194,7 +194,7 @@ const reboot = css`
   code,
   kbd,
   samp {
-    font-family: Roboto Mono;
+    font-family: Roboto Mono !important;
     font-size: 1em;
     font-weight: 500;
     background: ${theme.colors.greylight03};
