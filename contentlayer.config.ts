@@ -3,6 +3,7 @@ import { ComputedFields, defineDocumentType, makeSource } from 'contentlayer/sou
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrism from 'rehype-prism-plus';
+import { remarkMdxImages } from 'remark-mdx-images';
 
 const computedFields: ComputedFields = {
   slug: {
@@ -87,6 +88,21 @@ const Tutorials = defineDocumentType(() => ({
 const contentLayerConfig = makeSource({
   contentDirPath: 'docs',
   documentTypes: [BusinessDashboard, KataOmnichat, KataPlatform, Qios, Tutorials],
+  markdown: {
+    remarkPlugins: [remarkMdxImages],
+    rehypePlugins: [
+      rehypeSlug,
+      rehypePrism,
+      [
+        rehypeAutolinkHeadings,
+        {
+          properties: {
+            className: ['anchor'],
+          },
+        },
+      ],
+    ],
+  },
   mdx: {
     rehypePlugins: [
       rehypeSlug,
