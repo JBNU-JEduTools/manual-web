@@ -3,7 +3,6 @@ import { ComputedFields, defineDocumentType, makeSource } from 'contentlayer/sou
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrism from 'rehype-prism-plus';
-import { remarkMdxImages } from 'remark-mdx-images';
 
 const computedFields: ComputedFields = {
   slug: {
@@ -15,7 +14,7 @@ const computedFields: ComputedFields = {
 const BusinessDashboard = defineDocumentType(() => ({
   name: 'BusinessDashboard',
   filePathPattern: 'business-dashboard/**/*.md',
-  bodyType: 'md',
+  contentType: 'markdown',
   fields: {
     id: { type: 'string', required: true },
     section: { type: 'string', required: true },
@@ -29,7 +28,7 @@ const BusinessDashboard = defineDocumentType(() => ({
 const KataOmnichat = defineDocumentType(() => ({
   name: 'KataOmnichat',
   filePathPattern: 'kata-omnichat/**/*.md',
-  bodyType: 'md',
+  contentType: 'markdown',
   fields: {
     id: { type: 'string', required: true },
     section: { type: 'string', required: true },
@@ -43,7 +42,7 @@ const KataOmnichat = defineDocumentType(() => ({
 const KataPlatform = defineDocumentType(() => ({
   name: 'KataPlatform',
   filePathPattern: 'kata-platform/**/*.md',
-  bodyType: 'md',
+  contentType: 'markdown',
   fields: {
     id: { type: 'string', required: true },
     section: { type: 'string', required: true },
@@ -57,7 +56,7 @@ const KataPlatform = defineDocumentType(() => ({
 const Qios = defineDocumentType(() => ({
   name: 'Qios',
   filePathPattern: 'qios/**/*.md',
-  bodyType: 'md',
+  contentType: 'markdown',
   fields: {
     id: { type: 'string', required: true },
     section: { type: 'string', required: true },
@@ -71,7 +70,7 @@ const Qios = defineDocumentType(() => ({
 const Tutorials = defineDocumentType(() => ({
   name: 'Tutorials',
   filePathPattern: 'tutorials/**/*.md',
-  bodyType: 'md',
+  contentType: 'markdown',
   fields: {
     layout: { type: 'string' },
     id: { type: 'string', required: true },
@@ -89,7 +88,6 @@ const contentLayerConfig = makeSource({
   contentDirPath: 'docs',
   documentTypes: [BusinessDashboard, KataOmnichat, KataPlatform, Qios, Tutorials],
   markdown: {
-    remarkPlugins: [remarkMdxImages],
     rehypePlugins: [
       rehypeSlug,
       rehypePrism,
