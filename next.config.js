@@ -6,7 +6,7 @@ const { withContentlayer } = require('next-contentlayer');
 
 module.exports = withBundleAnalyzer(
   withContentlayer()({
-    swcMinify: true,
+    swcMinify: false,
     reactStrictMode: true,
     webpack(config, { dev, isServer }) {
       config.module.rules.push({
