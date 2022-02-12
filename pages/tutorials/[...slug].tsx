@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import { getMdxNode, getMdxPaths } from 'next-mdx/server';
 import { Text, UnstyledAnchor } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
@@ -9,8 +8,6 @@ import { DocsHeader } from 'components/docs/DocsHeader';
 
 import { FooterWrapper, Footer } from 'components/layout/Footer';
 import { TocJsonWrapper } from 'components/docs/TableOfContents';
-import remarkSlug from 'remark-slug';
-import rehypeAutolinkHeadings from 'remark-autolink-headings';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
 import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
@@ -22,6 +19,7 @@ import IndexLayout from 'components/layouts';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 import { PRODUCTS_DICT } from 'utils/constants';
+import { allTutorials } from 'contentlayer/generated';
 
 interface TutorialPageTemplateProps {
   post: any;
@@ -29,8 +27,8 @@ interface TutorialPageTemplateProps {
   listToc: string[];
 }
 
-const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, listToc }) => {
-  const frontMatter = post.frontMatter;
+const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }) => {
+  const frontMatter = post;
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
@@ -90,7 +88,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
                 ]}
               />
               <DocsHeader title={frontMatter.title} />
-              <MarkdownContent>{renderAst(post.mdx.renderedOutput)}</MarkdownContent>
+              <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
               <DocsHelpful />
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
@@ -108,25 +106,15 @@ export default TutorialPageTemplate;
 
 export async function getStaticPaths() {
   return {
-    paths: await getMdxPaths('tutorialPost'),
+    paths: await allTutorials.map((p) => ({ params: { slug: p.slug } })),
     fallback: false,
   };
 }
 
-export async function getStaticProps(context: any) {
-  const post = await getMdxNode('tutorialPost', context, {
-    mdxOptions: {
-      remarkPlugins: [remarkSlug, rehypeAutolinkHeadings],
-    },
-  });
-
-  const toc = await require(`docs/navigation/tutorials/${context.params?.slug[0]}.json`);
-
-  if (!post) {
-    return {
-      notFound: true,
-    };
-  }
+export async function getStaticProps({ params }) {
+  const slugStringify = JSON.stringify(params.slug);
+  const post = allTutorials.find((post) => JSON.stringify(post.slug) === slugStringify);
+  const toc = await require(`docs/navigation/tutorials/${params?.slug[0]}.json`);
 
   return {
     props: {

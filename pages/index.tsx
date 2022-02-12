@@ -4,9 +4,9 @@ import Head from 'next/head';
 import { Footer } from 'components/layout/Footer';
 import Tutorials from 'components/portal/tutorials';
 import VideoTutorial from 'components/portal/videotutorial';
-import { getAllNodes } from 'next-mdx/server';
 import { TutorialWrapper } from 'components/portal/components';
 import IndexLayout from 'components/layouts';
+import { allTutorials } from 'contentlayer/generated';
 
 interface IIndex {
   tutorialPosts: any;
@@ -31,17 +31,10 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
 };
 
 export async function getStaticProps() {
-  const post = await getAllNodes('tutorialPost');
-
-  if (!post) {
-    return {
-      notFound: true,
-    };
-  }
-
+  const posts = allTutorials.slice(0, 6);
   return {
     props: {
-      tutorialPosts: post,
+      tutorialPosts: posts,
     },
   };
 }

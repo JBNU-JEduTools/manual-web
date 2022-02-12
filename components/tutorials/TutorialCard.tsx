@@ -9,15 +9,15 @@ import { Anchor, Card } from './components';
 import { ProductBadge } from '../badge';
 
 interface TutorialCardProps {
-  tutorial: MarkdownContent;
+  tutorial: any;
   index?: number;
 }
 
 export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) => {
-  const frontMatter = tutorial.frontMatter;
+  const { title, imgSpot, id } = tutorial;
   return (
-    <Card key={frontMatter.title} index={index}>
-      <img src={frontMatter.imgSpot} />
+    <Card key={title} index={index}>
+      <img src={imgSpot} />
       <CardContent>
         <ProductBadge>
           <img src="/assets/images/products/icon/kata-platform-icon.svg" />
@@ -27,10 +27,10 @@ export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) =
         </ProductBadge>
         <CardTitle>
           <Heading scale={700} fontSize={20} overflow="hidden">
-            {frontMatter.title}
+            {title}
           </Heading>
         </CardTitle>
-        <Link href={`/tutorials/${frontMatter.id}`}>
+        <Link href={`/tutorials/${id}`}>
           <Anchor>
             View Article <IconArrowRight width={14} />
           </Anchor>

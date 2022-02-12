@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import { getMdxNode, getMdxPaths } from 'next-mdx/server';
 import { Text, UnstyledAnchor } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
@@ -9,8 +8,6 @@ import { DocsHeader } from 'components/docs/DocsHeader';
 
 import { FooterWrapper, Footer } from 'components/layout/Footer';
 import { TocJsonWrapper } from 'components/docs/TableOfContents';
-import remarkSlug from 'remark-slug';
-import rehypeAutolinkHeadings from 'remark-autolink-headings';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
 import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
@@ -18,24 +15,24 @@ import { MarkdownContent } from 'components/page/Markdown';
 import renderAst from 'utils/renderAst';
 import { DocsContainer } from 'components/layout/Container';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
-import { GetStaticPropsContext, PreviewData } from 'next';
 import IndexLayout from 'components/layouts';
 import { PaginationDocs } from 'components/docs/Pagination';
 import { getPageUrl } from 'utils/helpers';
 import { MarkdownContent as IMarkdownContent } from 'interfaces/next';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
+import { allKataOmnichats } from 'contentlayer/generated';
 
 interface OmnichatPageTemplateProps {
-  post: IMarkdownContent;
+  post: any;
   toc: any;
   listToc: string[];
 }
 
 const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }) => {
-  const frontMatter = post.frontMatter;
-  const prevPage = getPageUrl(post.frontMatter.prev, 'kata-omnichat');
-  const nextPage = getPageUrl(post.frontMatter.next, 'kata-omnichat');
+  const frontMatter = post;
+  const prevPage = getPageUrl(post.prev, 'kata-omnichat');
+  const nextPage = getPageUrl(post.next, 'kata-omnichat');
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
@@ -98,7 +95,7 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }
                 ]}
               />
               {frontMatter.id !== 'about' && <DocsHeader title={frontMatter.title} />}
-              <MarkdownContent>{renderAst(post.mdx.renderedOutput)}</MarkdownContent>
+              <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
               {(prevPage || nextPage) && <PaginationDocs prevPage={prevPage} nextPage={nextPage} />}
               <DocsHelpful />
               <FooterWrapper>
@@ -117,18 +114,14 @@ export default OmnichatPageTemplate;
 
 export async function getStaticPaths() {
   return {
-    paths: await getMdxPaths('kata-omnichat'),
+    paths: await allKataOmnichats.map((p) => ({ params: { slug: p.slug } })),
     fallback: false,
   };
 }
 
-export async function getStaticProps(context: string | GetStaticPropsContext<NodeJS.Dict<string[]>, PreviewData>) {
-  const post = await getMdxNode('kata-omnichat', context, {
-    mdxOptions: {
-      remarkPlugins: [remarkSlug, rehypeAutolinkHeadings],
-    },
-  });
-
+export async function getStaticProps({ params }) {
+  const slugStringify = JSON.stringify(params.slug);
+  const post = allKataOmnichats.find((post) => JSON.stringify(post.slug) === slugStringify);
   const toc = await import('docs/toc-kata-omnichat.json');
 
   if (!toc) {

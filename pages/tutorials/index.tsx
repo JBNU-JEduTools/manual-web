@@ -7,11 +7,11 @@ import { Cards, CardsWrapper } from 'components/tutorials/components';
 import { PaginationWithDetails } from 'components/tutorials/pagination';
 import { MarkdownContent } from 'interfaces/next';
 import { TutorialCard } from 'components/tutorials/TutorialCard';
-import { getAllNodes } from 'next-mdx/server';
 import IndexLayout from 'components/layouts';
+import { allTutorials } from 'contentlayer/generated';
 
 interface IIndex {
-  tutorialPosts: MarkdownContent[];
+  tutorialPosts: any[];
 }
 
 const LIMIT = [6, 9, 12];
@@ -34,8 +34,8 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
         </Box>
         <CardsWrapper>
           <Cards>
-            {tutorialPosts?.slice((page - 1) * limit, limit * page).map((tutorial: MarkdownContent, idx: number) => {
-              return <TutorialCard key={tutorial.frontMatter.id} index={idx} tutorial={tutorial} />;
+            {tutorialPosts?.slice((page - 1) * limit, limit * page).map((tutorial: any, idx: number) => {
+              return <TutorialCard key={tutorial.id} index={idx} tutorial={tutorial} />;
             })}
           </Cards>
           <PaginationWithDetails
@@ -55,17 +55,11 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
 };
 
 export async function getStaticProps() {
-  const post = await getAllNodes('tutorialPost');
-
-  if (!post) {
-    return {
-      notFound: true,
-    };
-  }
+  const posts = allTutorials;
 
   return {
     props: {
-      tutorialPosts: post,
+      tutorialPosts: posts,
     },
   };
 }

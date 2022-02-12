@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import { breakpoints } from 'utils/variables';
 
 interface TutorialsProps {
-  tutorials?: MarkdownContent[];
+  tutorials?: any[];
 }
 
 const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
