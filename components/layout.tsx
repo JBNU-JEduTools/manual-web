@@ -92,8 +92,10 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
           {!isPost(router) && (
             <HeaderLogo>
               <Link href="/" passHref>
-                <UnstyledAnchor>
+                <UnstyledAnchor display="flex">
                   <Image
+                    width={60}
+                    height={40}
                     src={
                       imageOrigin === 'docs'
                         ? '/assets/images/logo-docs.svg'
@@ -117,8 +119,10 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
             )}
             <LogoWrapper isPost={isPost(router)}>
               <Link href="/" passHref>
-                <UnstyledAnchor>
+                <UnstyledAnchor display="flex">
                   <Image
+                    width={85}
+                    height={25}
                     src={
                       imageOrigin === 'docs'
                         ? '/assets/images/logo-docs.svg'

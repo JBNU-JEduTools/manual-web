@@ -75,7 +75,12 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
                 <SidebarLogo>
                   <Link href="/" passHref>
                     <UnstyledAnchor>
-                      <Image alt="Qios Documentations" src="/assets/images/products/qios-logo-docs.svg" />
+                      <Image
+                        width={150}
+                        height={40}
+                        alt="Qios Documentations"
+                        src="/assets/images/products/qios-logo-docs.svg"
+                      />
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>

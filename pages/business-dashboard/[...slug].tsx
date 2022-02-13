@@ -76,6 +76,8 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
                   <Link href="/" passHref>
                     <UnstyledAnchor>
                       <Image
+                        width={150}
+                        height={40}
                         alt="Business Dashboard Documentations"
                         src="/assets/images/products/business-dashboard-logo-docs.svg"
                       />

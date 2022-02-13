@@ -67,7 +67,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
                 <SidebarLogo>
                   <Link href="/" passHref>
                     <UnstyledAnchor>
-                      <Image src="/assets/images/logo-docs.svg" alt="Kata Documentations" />
+                      <Image width={150} height={40} src="/assets/images/logo-docs.svg" alt="Kata Documentations" />
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>

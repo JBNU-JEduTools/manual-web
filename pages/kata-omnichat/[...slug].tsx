@@ -76,6 +76,8 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }
                   <Link href="/" passHref>
                     <UnstyledAnchor>
                       <Image
+                        width={150}
+                        height={40}
                         alt="Kata Omnichat Documentations"
                         src="/assets/images/products/kata-omnichat-logo-docs.svg"
                       />

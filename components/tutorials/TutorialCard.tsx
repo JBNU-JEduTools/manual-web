@@ -18,10 +18,17 @@ export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) =
   const { title, imgSpot, id } = tutorial;
   return (
     <Card key={title} index={index}>
-      <Image src={imgSpot} alt={title} />
+      <Image width={345} height={180} src={imgSpot} alt={title} layout="responsive" />
       <CardContent>
         <ProductBadge>
-          <Image src="/assets/images/products/icon/kata-platform-icon.svg" alt="Kata Platform" />
+          <Box mr={8} display="flex">
+            <Image
+              width={16}
+              height={16}
+              src="/assets/images/products/icon/kata-platform-icon.svg"
+              alt="Kata Platform"
+            />
+          </Box>
           <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
             Kata Platform
           </Text>
@@ -31,7 +38,7 @@ export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) =
             {title}
           </Heading>
         </CardTitle>
-        <Link href={`/tutorials/${id}`}>
+        <Link href={`/tutorials/${id}`} passHref>
           <Anchor>
             View Article <IconArrowRight width={14} />
           </Anchor>

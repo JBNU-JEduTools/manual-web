@@ -259,7 +259,12 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
             {PRODUCTS_DICT[fuseSearch.name] && (
               <Box ml={12} my={8} width={'100%'}>
                 <ProductBadge>
-                  <Image src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} alt={fuseSearch.name} />
+                  <Image
+                    width={16}
+                    height={16}
+                    src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`}
+                    alt={fuseSearch.name}
+                  />
                   <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
                     {PRODUCTS_DICT[fuseSearch.name]}
                   </Text>
