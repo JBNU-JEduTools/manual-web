@@ -94,6 +94,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
               <Link href="/" passHref>
                 <UnstyledAnchor display="flex">
                   <Image
+                    layout="fixed"
                     width={60}
                     height={40}
                     src={
@@ -121,6 +122,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
               <Link href="/" passHref>
                 <UnstyledAnchor display="flex">
                   <Image
+                    layout="fixed"
                     width={85}
                     height={25}
                     src={

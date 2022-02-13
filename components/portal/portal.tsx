@@ -8,7 +8,7 @@ export default function Portal() {
   return (
     <Box backgroundColor={theme.colors.blue07} mb={96} display="flex" paddingBottom={48}>
       <HeroWrapper>
-        <Image layout="fill" src="/assets/images/portal-hero.svg" alt="Portal Hero" />
+        <Image width={385} height={335} layout="responsive" src="/assets/images/portal-hero.svg" alt="Portal Hero" />
       </HeroWrapper>
       <Box
         display="flex"
@@ -32,7 +32,7 @@ export default function Portal() {
               <Anchor href={product.url} target={product.externalUrl ? '_blank' : ''}>
                 <Box display="flex" alignItems="center">
                   <Box display="flex" mr={24}>
-                    <Image width={32} height={32} src={product.imgPath} alt={product.name} />
+                    <Image layout="fixed" width={32} height={32} src={product.imgPath} alt={product.name} />
                   </Box>
                   {product.name}
                 </Box>

@@ -76,6 +76,7 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
                   <Link href="/" passHref>
                     <UnstyledAnchor>
                       <Image
+                        layout="fixed"
                         width={150}
                         height={40}
                         alt="Qios Documentations"

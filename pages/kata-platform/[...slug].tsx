@@ -76,6 +76,7 @@ const PlatformPageTemplate: React.FC<PlatformPageTemplateProps> = ({ post, toc }
                   <Link href="/" passHref>
                     <UnstyledAnchor>
                       <Image
+                        layout="fixed"
                         width={150}
                         height={40}
                         alt="Kata Platform Documentations"

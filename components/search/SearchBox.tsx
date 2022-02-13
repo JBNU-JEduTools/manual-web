@@ -260,6 +260,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
               <Box ml={12} my={8} width={'100%'}>
                 <ProductBadge>
                   <Image
+                    layout="fixed"
                     width={16}
                     height={16}
                     src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`}

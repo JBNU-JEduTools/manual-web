@@ -76,6 +76,7 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }
                   <Link href="/" passHref>
                     <UnstyledAnchor>
                       <Image
+                        layout="fixed"
                         width={150}
                         height={40}
                         alt="Kata Omnichat Documentations"

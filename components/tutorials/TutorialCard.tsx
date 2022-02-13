@@ -25,6 +25,7 @@ export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) =
             <Image
               width={16}
               height={16}
+              layout="fixed"
               src="/assets/images/products/icon/kata-platform-icon.svg"
               alt="Kata Platform"
             />
