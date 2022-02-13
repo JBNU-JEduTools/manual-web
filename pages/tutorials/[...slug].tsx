@@ -20,6 +20,7 @@ import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 import { PRODUCTS_DICT } from 'utils/constants';
 import { allTutorials } from 'contentlayer/generated';
+import Image from 'next/image';
 
 interface TutorialPageTemplateProps {
   post: any;
@@ -64,9 +65,9 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/">
+                  <Link href="/" passHref>
                     <UnstyledAnchor>
-                      <img src="/assets/images/logo-docs.svg" />
+                      <Image src="/assets/images/logo-docs.svg" alt="Kata Documentations" />
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>

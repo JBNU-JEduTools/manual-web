@@ -1,4 +1,5 @@
 import { Box, Heading, theme, Text } from '@aksara-ui/react';
+import Image from 'next/image';
 import { PRODUCTS as productList } from 'utils/constants';
 import { layerIndexes } from 'utils/variables';
 import { Anchor, DocsCard, DocsCardWrapper, HeaderPortal, HeroWrapper } from './components';
@@ -7,7 +8,7 @@ export default function Portal() {
   return (
     <Box backgroundColor={theme.colors.blue07} mb={96} display="flex" paddingBottom={48}>
       <HeroWrapper>
-        <img src="assets/images/portal-hero.svg" />
+        <Image src="assets/images/portal-hero.svg" alt="Portal Hero" />
       </HeroWrapper>
       <Box
         display="flex"
@@ -30,7 +31,7 @@ export default function Portal() {
             <DocsCard key={`${idx}-${product.name}`}>
               <Anchor href={product.url} target={product.externalUrl ? '_blank' : ''}>
                 <Box display="flex" alignItems="center">
-                  <img src={product.imgPath} /> {product.name}
+                  <Image src={product.imgPath} alt={product.name} /> {product.name}
                 </Box>
               </Anchor>
             </DocsCard>

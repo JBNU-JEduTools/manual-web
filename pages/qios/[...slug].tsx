@@ -21,6 +21,7 @@ import { PaginationDocs } from 'components/docs/Pagination';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 import { allQios } from 'contentlayer/generated';
+import Image from 'next/image';
 
 interface QiosPageTemplateProps {
   post: any;
@@ -72,9 +73,9 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/">
+                  <Link href="/" passHref>
                     <UnstyledAnchor>
-                      <img src="/assets/images/products/qios-logo-docs.svg" />
+                      <Image alt="Qios Documentations" src="/assets/images/products/qios-logo-docs.svg" />
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>

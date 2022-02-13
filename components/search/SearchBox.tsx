@@ -8,6 +8,7 @@ import InputText from '../InputText';
 import { ProductBadge } from 'components/badge';
 import { PRODUCTS_DICT } from 'utils/constants';
 import { IconOutgoing } from '@aksara-ui/icons';
+import Image from 'next/image';
 
 interface SearchPageProps {
   lng?: string;
@@ -258,7 +259,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
             {PRODUCTS_DICT[fuseSearch.name] && (
               <Box ml={12} my={8} width={'100%'}>
                 <ProductBadge>
-                  <img src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
+                  <Image src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} alt={fuseSearch.name} />
                   <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
                     {PRODUCTS_DICT[fuseSearch.name]}
                   </Text>

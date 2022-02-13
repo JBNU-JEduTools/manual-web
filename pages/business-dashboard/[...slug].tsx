@@ -21,6 +21,7 @@ import { getPageUrl } from 'utils/helpers';
 import Link from 'next/link';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import { allBusinessDashboards } from 'contentlayer/generated';
+import Image from 'next/image';
 
 interface BusinessDashboardPageTemplateProps {
   post: any;
@@ -72,9 +73,12 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/">
+                  <Link href="/" passHref>
                     <UnstyledAnchor>
-                      <img src="/assets/images/products/business-dashboard-logo-docs.svg" />
+                      <Image
+                        alt="Business Dashboard Documentations"
+                        src="/assets/images/products/business-dashboard-logo-docs.svg"
+                      />
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>

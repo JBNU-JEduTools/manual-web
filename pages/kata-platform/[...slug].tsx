@@ -22,6 +22,7 @@ import { MarkdownContent as IMarkdownContent } from 'interfaces/next';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 import { allKataPlatforms } from 'contentlayer/generated';
+import Image from 'next/image';
 
 interface PlatformPageTemplateProps {
   post: any;
@@ -72,9 +73,12 @@ const PlatformPageTemplate: React.FC<PlatformPageTemplateProps> = ({ post, toc }
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/">
+                  <Link href="/" passHref>
                     <UnstyledAnchor>
-                      <img src="/assets/images/products/kata-platform-logo-docs.svg" />
+                      <Image
+                        alt="Kata Platform Documentations"
+                        src="/assets/images/products/kata-platform-logo-docs.svg"
+                      />
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>

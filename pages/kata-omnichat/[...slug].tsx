@@ -22,6 +22,7 @@ import { MarkdownContent as IMarkdownContent } from 'interfaces/next';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 import { allKataOmnichats } from 'contentlayer/generated';
+import Image from 'next/image';
 
 interface OmnichatPageTemplateProps {
   post: any;
@@ -72,9 +73,12 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/">
+                  <Link href="/" passHref>
                     <UnstyledAnchor>
-                      <img src="/assets/images/products/kata-omnichat-logo-docs.svg" />
+                      <Image
+                        alt="Kata Omnichat Documentations"
+                        src="/assets/images/products/kata-omnichat-logo-docs.svg"
+                      />
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>

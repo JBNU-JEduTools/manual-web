@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import { breakpoints } from 'utils/variables';
 import { Anchor, Card } from './components';
 import { ProductBadge } from '../badge';
+import Image from 'next/image';
 
 interface TutorialCardProps {
   tutorial: any;
@@ -17,10 +18,10 @@ export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) =
   const { title, imgSpot, id } = tutorial;
   return (
     <Card key={title} index={index}>
-      <img src={imgSpot} />
+      <Image src={imgSpot} alt={title} />
       <CardContent>
         <ProductBadge>
-          <img src="/assets/images/products/icon/kata-platform-icon.svg" />
+          <Image src="/assets/images/products/icon/kata-platform-icon.svg" alt="Kata Platform" />
           <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
             Kata Platform
           </Text>
