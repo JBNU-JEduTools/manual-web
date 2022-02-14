@@ -12,7 +12,7 @@ section: How To
 
 1. Click **“Produk”** and choose **“Tambah secara manual”** or **“Upload CSV”**.
 
-![Qios illustration](/assets/images/products/qios/image6.png)
+![Qios illustration](/assets/images/products/qios/image6.webp)
 
 > Add New Product
 
@@ -22,7 +22,7 @@ section: How To
 
 ## Modify Product (Edit, Delete, Change Availability)
 
-![Qios illustration](/assets/images/products/qios/image7.png)
+![Qios illustration](/assets/images/products/qios/image7.webp)
 
 > Edit Product
 
@@ -32,7 +32,7 @@ section: How To
 
 ## Generate Catalogue for Chatbot
 
-![Qios illustration](/assets/images/products/qios/image8.png)
+![Qios illustration](/assets/images/products/qios/image8.webp)
 
 > Product Catalogue
 
