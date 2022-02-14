@@ -49,13 +49,13 @@ Each field explanation:
 
 If you want to collect API results, you just need to write `$(result)` in a variable you want to put it. For example, this is a case if the API result wants to implement an action type Command.
 
-![Image 1 Alt](/assets/images/products/kata-platform/how-to/using-custom-api-to-access-third-party-application/image1.png)
+![Image 1 Alt](/assets/images/products/kata-platform/how-to/using-custom-api-to-access-third-party-application/image1.webp)
 
 > **Figure 1**: API result in action type Command.
 
 To access the value, the API result can be stored in payload, then you can access it by writing `payload.result`. For example, this is a case if you want to access the first data from API result in action type Command.
 
-![Image 2 Alt](/assets/images/products/kata-platform/how-to/using-custom-api-to-access-third-party-application/image2.png)
+![Image 2 Alt](/assets/images/products/kata-platform/how-to/using-custom-api-to-access-third-party-application/image2.webp)
 
 > **Figure 2**: Access value from API result.
 

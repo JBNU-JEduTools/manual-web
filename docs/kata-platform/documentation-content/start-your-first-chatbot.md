@@ -21,7 +21,7 @@ You can watch the tutorial to start your first chatbot or follow the steps in th
 1. Open your browser and enter the URL <a href="https://platform.kata.ai" target="_blank"><span>http</span>s://platform.kata.ai/</a>.
 2. Register your data in the Kata Platform by filling in the required fields.
 
-![Image 1 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image1.png)
+![Image 1 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image1.webp)
 
 > **Figure 1**: Registration page in Kata Platform
 
@@ -31,7 +31,7 @@ You can watch the tutorial to start your first chatbot or follow the steps in th
 
 In this step, you will create a simple chatbot as in the image below. Let’s start.
 
-![Image 2 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image2.png)
+![Image 2 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image2.webp)
 
 > **Figure 2**: Simple chatbot example.
 
@@ -43,7 +43,7 @@ You will see all projects in the project dashboard. A project consists of bot de
 
 1. Click **Create Project** to create a new project.
 
-![Image 3 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image3.png)
+![Image 3 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image3.webp)
 
 > **Figure 3**: Dashboard project
 
@@ -60,7 +60,7 @@ Flow is a conversation chatbot flow. In this simple tutorial, you will create 1 
 1. In the Conversation Flow, click the **Create Flow**.
 2. Fill in the flow name hello, then click **Create**. If a flow is successfully created, it will show in the Conversation Flows sidebar.
 
-![Image 4 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image4.png)
+![Image 4 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image4.webp)
 
 > **Figure 4**: New flow name “hello”
 
@@ -74,13 +74,13 @@ In this tutorial, you will create 2 states in the flow “hello”, which are �
 
 1. Click the icon "+" in the **Conversation Flow** menu.
 
-![Image 5 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image5.png)
+![Image 5 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image5.webp)
 
 > **Figure 5**: Button “+” to create a new state
 
 2. In this step, you will create an initial state. Fill in the “init” state, then turn on the toggle Initial State to set it as the initial state.
 
-![Image 6 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image6.png)
+![Image 6 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image6.webp)
 
 > **Figure 6**: Create a state name “init”
 
@@ -97,23 +97,23 @@ Action is a bot response in text, images, buttons, interactive messages such as 
 1. Click in the “hello” state, then it will show a form on the right screen.
 2. To create a new action, click on the **Add action** button.
 
-![Image 7 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image7.png)
+![Image 7 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image7.webp)
 
 > **Figure 7**: Add new action
 
 3. Click on the “+” icon. Next, it will show various available actions. Choose action **Text**.
 
-![Image 8 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image8.png)
+![Image 8 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image8.webp)
 
 > **Figure 8**: Input new action
 
-![Image 9 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image9.png)
+![Image 9 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image9.webp)
 
 > **Figure 9**: Input Text action
 
 4. After choosing a Text action, it will show an interface like in the image below. Input action name, then click Add Variant button to input text response.
 
-![Image 10 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image10.png)
+![Image 10 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image10.webp)
 
 > **Figure 10**: Input text response in bot
 
@@ -130,7 +130,7 @@ This step will create an intent to catch when end-users greet the chatbot.
 
 1. In the “hello” flow, choose the **Intent** menu. Next, click **Create Intent**.
 
-![Image 11 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image11.png)
+![Image 11 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image11.webp)
 
 > **Figure 11**: The page to create a new intent
 
@@ -143,7 +143,7 @@ content == ‘Hello’ || content == “/start”
 
 4. Click the Create button to finish creating intent.
 
-![Image 12 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image12.png)
+![Image 12 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image12.webp)
 
 > **Figure 12**: Create helloIntent to recognize greetings from end-users.
 
@@ -153,7 +153,7 @@ content == ‘Hello’ || content == “/start”
 
 Transition is a procedure to move from one state to another state if a condition is fulfilled. Create transition by pulling a line from the source state to the destination state, like the image below.
 
-![Image 13 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image13.png)
+![Image 13 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image13.webp)
 
 > **Figure 13**: Transition between states.
 
@@ -174,13 +174,13 @@ This publish feature is useful to save changes in the form of revision numbers. 
 
 1. In this step, you will save the created bot design. Click the **Publish** button which is placed in the top right corner.
 
-![Image 14 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image14.png)
+![Image 14 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image14.webp)
 
 > **Figure 14**: Publish button.
 
 2. To ensure your bot is stored correctly, enter the Revision List menu. The revision list will show every new revision at the top.
 
-![Image 15 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image15.png)
+![Image 15 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image15.webp)
 
 > **Figure 15**: Revision List interface.
 
@@ -192,13 +192,13 @@ In this step, you will try a simple chatbot using the emulator feature.
 
 1. On the lower right of your screen, click on the **Test Chatbot** button. You will see a small window with a chat conversation interface if you succeed.
 
-![Image 16 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image16.png)
+![Image 16 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image16.webp)
 
 > **Figure 16**: Chatbot emulator position.
 
 2. Type “Hello” word. If your chatbot works well, then it will show the chatbot reply witn created action. This image is the correct example.
 
-![Image 2 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image2.png)
+![Image 2 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image2.webp)
 
 > **Figure 17**: Correct chatbot conversation.
 
@@ -212,7 +212,7 @@ Deployment is a step to merge all Revisions in Flow, NLU, and CMS so that bots c
 
 1. In the sidebar, choose the **Deploy** menu. Then, choose **Overview**.
 
-![Image 17 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image17.png)
+![Image 17 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image17.webp)
 
 > **Figure 18**: Deploy menu interface.
 
@@ -222,13 +222,13 @@ Deployment is a step to merge all Revisions in Flow, NLU, and CMS so that bots c
     - Minor to deploy medium changes, such as adding new features in your chatbot.
     - Patch to deploy small changes, such as change copy in action.
 
-![Image 18 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image18.png)
+![Image 18 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image18.webp)
 
 > **Figure 19**: Create a new deployment.
 
 4. Then, click the **Submit** button. If deployment is successful, then the interface will be shown like this.
 
-![Image 19 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image19.png)
+![Image 19 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image19.webp)
 
 > **Figure 20**: Deployment has been created.
 
@@ -240,14 +240,14 @@ Step after creating a deployment is to create an environment. An environment is 
 
 1. Choose the menu **Deploy**, then choose **Environment**.
 
-![Image 20 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image20.png)
+![Image 20 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image20.webp)
 
 > **Figure 21**: Environment interface.
 
 2. In this step, you will create a Development environment. Click the button **Create Environment** in the **Development** card.
 3. Fill in the environment, then click **Create**.
 
-![Image 21 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image21.png)
+![Image 21 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image21.webp)
 
 > **Figure 22**: Create an environment interface.
 
@@ -261,7 +261,7 @@ In this step, you will create a chatbot integration with the Telegram messaging 
 
 1. In the **Deploy > Environment**, click the **Create Channel** button.
 
-![Image 22 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image22.png)
+![Image 22 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image22.webp)
 
 > **Figure 23**: Create an environment interface.
 
@@ -274,7 +274,7 @@ Before you start, you need a Telegram account already registered and logged in t
 
 1. The first step is to register your bot to the BotFather account.
 
-![Image 23 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image23.png)
+![Image 23 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image23.webp)
 
 > **Figure 24**: Search BotFather account.
 
@@ -282,20 +282,20 @@ Before you start, you need a Telegram account already registered and logged in t
 3. After that, you will be asked to enter your chatbot username. Remember that your bot username has to either start or end with `bot`.
 4. Once finished, BotFather will respond with a bot token to access the Telegram Bot API.
 
-![Image 24 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image24.png)
+![Image 24 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image24.webp)
 
 > **Figure 25**: Telegram shows bot token.
 
 5. Go back to Platform, then copy the bot access token into the channel drawer.
 
-![Image 25 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image25.png)
+![Image 25 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image25.webp)
 
 > **Figure 26**: Input bot access token.
 
 6. Click **Create** to get a webhook from the Kata Platform. Then, click the copy button to copy the webhook URL.
 7. Click on the webhook link to **View Channel** detail. It will show a drawer to copy the access token and webhook URL.
 
-![Image 26 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image26.png)
+![Image 26 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image26.webp)
 
 > **Figure 27**: Input bot access token.
 
@@ -307,13 +307,13 @@ https://api.telegram.org/bot{my_bot_token}/setWebhook?url={kata_platform_webhook
 
 9. Click “Go” or press Enter on the keyboard.
 
-![Image 27 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image27.png)
+![Image 27 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image27.webp)
 
 > **Figure 28**: Telegram bot has successfully connected.
 
 10. If you see the message “Webhook was set,” you’re all set! Let’s try our chatbot. Open Telegram on the desktop or mobile, and start chatting with your bot.
 
-![Image 28 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image28.png)
+![Image 28 alt](/assets/images/products/kata-platform/start-your-first-chatbot/image28.webp)
 
 > **Figure 29**: Testing “Hello” in Telegram chatbot.
 

@@ -18,7 +18,7 @@ In general, the incoming message flow is:
 4. If NLUs condition has matched, then intent will send information to a bot that incoming message from the end-user is recognized as intent `“yesNL”` (for example).
 5. Then, the bot will check the following action if an intent condition has been fulfilled. For example, if the transition has condition `intent==‘yesNL’`, then the bot will execute the next state connected between the transition. Check the image below for more detail.
 
-![Image 1 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image1.png)
+![Image 1 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image1.webp)
 
 > **Figure 1**: Transition example which condition has intent using NLU.
 
@@ -28,7 +28,7 @@ To integrate NLU can be implemented in chatbot, these are the steps:
 
 1. First, in the Kata Platform, go to the **Flow** menu. Then, click the **NLUs** menu in the sidebar.
 
-![Image 2 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image2.png)
+![Image 2 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image2.webp)
 
 > **Figure 2**: NLUs position in sidebar.
 
@@ -65,7 +65,7 @@ Next, you will define this NLU inside an intent. So, you will create an intent n
 
 1. Go to the **Conversation Flows** menu, then click on the **Intent** tab.
 
-![Image 3 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image3.png)
+![Image 3 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image3.webp)
 
 > **Figure 3**: Intent tab position.
 
@@ -73,13 +73,13 @@ Next, you will define this NLU inside an intent. So, you will create an intent n
 3. In Intent **Type**, choose **Text** to start setup.
 4. Next, click the button **Add classifier**. This feature enables you to insert your NLUs inside the intent, so intent can match whether end-user input is understandable by the NLU or not. First, there is a dropdown to choose available NLUs, then select “topic-nl”.
 
-![Image 4 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image4.png)
+![Image 4 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image4.webp)
 
 > **Figure 4**: Add classifier feature.
 
 5. Then, click the button **Add attribute**. This feature enables you to insert your NLUs inside the intent, similar to the Add Classifier feature, with differentiation that bot developers can create a condition in the state or transition by using the entity’s label. It is because an attribute is a variable that has an array form.
 
-![Image 5 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image5.png)
+![Image 5 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image5.webp)
 
 > **Figure 5**: Add classifier feature.
 
@@ -89,7 +89,7 @@ Next, you will define this NLU inside an intent. So, you will create an intent n
 
 1. To test your chatbot, you can see it in the bottom right corner of your screen.
 
-![Image 6 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image6.png)
+![Image 6 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image6.webp)
 
 > **Figure 6**: Emulator location.
 
@@ -97,13 +97,13 @@ Next, you will define this NLU inside an intent. So, you will create an intent n
 3. Type a sentence or word.
 4. You can see incoming messages that you typed (blue color) and bot response (white color) by clicking the eye icon under the message bubble.
 
-![Image 7 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image7.png)
+![Image 7 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image7.webp)
 
 > **Figure 7**: View detail in incoming message and outgoing message.
 
 Here is how to read the incoming message:
 
-![Image 8 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image8.png)
+![Image 8 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image8.webp)
 
 > **Figure 8**: Incoming message example.
 
@@ -112,7 +112,7 @@ Here is how to read the incoming message:
 
 For outgoing messages or bot responses, here is how to read them.
 
-![Image 9 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image9.png)
+![Image 9 alt](/assets/images/products/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience/image9.webp)
 
 > **Figure 9**: Incoming message example.
 

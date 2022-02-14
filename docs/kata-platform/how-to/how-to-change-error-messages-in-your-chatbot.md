@@ -16,13 +16,13 @@ These steps are to change the default error message “Maaf terjadi kesalahan pa
 
 1. Go to your project, then click the **Flow** menu.
 
-![Image 1 Alt](/assets/images/products/kata-platform/how-to/how-to-change-error-messages-in-your-chatbot/image1.png)
+![Image 1 Alt](/assets/images/products/kata-platform/how-to/how-to-change-error-messages-in-your-chatbot/image1.webp)
 
 > **Figure 1**: Flow menu located.
 
 2. In this Flow menu, click the **Configurations** sub-menu.
 
-![Image 2 Alt](/assets/images/products/kata-platform/how-to/how-to-change-error-messages-in-your-chatbot/image2.png)
+![Image 2 Alt](/assets/images/products/kata-platform/how-to/how-to-change-error-messages-in-your-chatbot/image2.webp)
 
 > **Figure 2**: Configuration menu located.
 

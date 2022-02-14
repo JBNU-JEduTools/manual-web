@@ -24,7 +24,7 @@ The Users feature contains the data of your end-user. First is the filter option
 
 ### User Filter
 
-![Image 1 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image1.png)
+![Image 1 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image1.webp)
 
 > **Figure 1**: Filter option in Users feature.
 
@@ -36,7 +36,7 @@ You can filter the analytics based on:
 
 ### Various User Analytics
 
-![Image 2 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image2.png)
+![Image 2 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image2.webp)
 
 > **Figure 2**: Various user analytics data.
 
@@ -50,7 +50,7 @@ After selecting the filter, we can view specific data for your chatbot:
 
 ### User Activities
 
-![Image 3 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image3.png)
+![Image 3 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image3.webp)
 
 > **Figure 3**: User Activities analytics.
 
@@ -58,7 +58,7 @@ In User Activities, you can see how many sessions, active users, messages, and n
 
 ### Peak Hours
 
-![Image 4 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image4.png)
+![Image 4 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image4.webp)
 
 > **Figure 4**: Peak Hours analytics.
 
@@ -68,8 +68,8 @@ Notice on Monday at 12PM, when you hover the block, there are 28 incoming messag
 
 ### Cohort
 
-![Image 5 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image5.png)
-![Image 6 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image6.png)
+![Image 5 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image5.webp)
+![Image 6 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image6.webp)
 
 > **Figure 5**: Cohort (simple & expanded) analytics - Daily.
 
@@ -100,7 +100,7 @@ The **Topics** option within the analytics dashboard contains information regard
 
 ### Topics Filter
 
-![Image 7 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image7.png)
+![Image 7 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image7.webp)
 
 > **Figure 6**: Filter option in Topics feature.
 
@@ -112,7 +112,7 @@ You may adjust the filters based on the following parameters:
 
 ### Top Topics Analytics
 
-![Image 8 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image8.png)
+![Image 8 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image8.webp)
 
 > **Figure 7**: Top Topics analytics.
 
@@ -127,7 +127,7 @@ All those pie charts are downloadable. The output files will be CSV.
 
 ### Word Cloud
 
-![Image 9 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image9.png)
+![Image 9 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image9.webp)
 
 > **Figure 8**: Word Cloud analytics.
 
@@ -139,7 +139,7 @@ Transcripts feature provides the complete log of conversations between your user
 
 ### Transcript Filter
 
-![Image 10 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image10.png)
+![Image 10 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image10.webp)
 
 > **Figure 9**: Filter option in Transcripts feature.
 
@@ -151,7 +151,7 @@ You may adjust the filters based on the following parameters:
 
 ### Transcript Log
 
-![Image 11 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image11.png)
+![Image 11 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image11.webp)
 
 > **Figure 10**: Transcript Log.
 
@@ -167,7 +167,7 @@ After choosing the filter, you can view the transcript log, you can also search 
 
 You can also click on the transcript row to view the log of each row, for example:
 
-![Image 12 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image12.png)
+![Image 12 alt](/assets/images/products/kata-platform/analyze-your-bot-conversations/image12.webp)
 
 > **Figure 11**: Transcript Detail.
 

@@ -14,17 +14,17 @@ Previously, the bulk training process was very technical because developers need
 
 Now, you can use the new Bulk Training on the Platform GUI itself to train more than 200 sentences/training data at once. These are the screenshots of our newest feature.
 
-![Image 1 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image1.png)
+![Image 1 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image1.webp)
 
 > **Figure 1**: Upload training data file
 
-![Image 2 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image2.png)
+![Image 2 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image2.webp)
 
 > **Figure 2**: Preview from uploaded training data from file
 
 You can click on this <a href="https://www.youtube.com/watch?v=qcxQqMI-Khs" target="_blank">video tutorial</a> or go to the **NLU -> Training menu** (check the screenshot below).
 
-![Image 3 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image3.png)
+![Image 3 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image3.webp)
 
 > **Figure 3**: Video tutorial in bulk training
 
@@ -69,7 +69,7 @@ Labels: greetings, thank you
 
 6. The result goes here:
 
-![Image 4 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image4.png)
+![Image 4 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image4.webp)
 
 > **Figure 4**: Create entity type “trait”
 
@@ -97,7 +97,7 @@ Labels: person
 
 4. The result goes here:
 
-![Image 5 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image5.png)
+![Image 5 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image5.webp)
 
 > **Figure 5**: Create entity type “phrase”
 
@@ -158,7 +158,7 @@ Prerequisites: Training data has been created as a .txt extension file.
 4. Wait for the upload process.
 5. After the upload is complete, you can review the training data file in Platform GUI.
 
-![Image 6 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image6.png)
+![Image 6 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image6.webp)
 
 > **Figure 6**: Preview training data
 
@@ -167,7 +167,7 @@ Prerequisites: Training data has been created as a .txt extension file.
 8. Fill in the survey, then click **X** to close the dialog.
 9. You have successfully trained your NL model with the uploaded data.
 
-![Image 7 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image7.png)
+![Image 7 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image7.webp)
 
 > **Figure 7**: Successfully trained the training data
 
@@ -179,7 +179,7 @@ During the upload process, you might receive any of the error messages below. Le
 
 It will show if you’re trying to close the upload dialog box or click the **X** symbol during the file uploading process. Please do not click the **X** button.
 
-![Image 8 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image8.png)
+![Image 8 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image8.webp)
 
 > **Figure 8**: Showing warning message if you click “x” button.
 
@@ -187,7 +187,7 @@ It will show if you’re trying to close the upload dialog box or click the **X*
 
 This error message will be displayed if you uploaded different types of files. Bulk Training feature only accept .txt file format.
 
-![Image 9 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image9.png)
+![Image 9 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image9.webp)
 
 > **Figure 9**: Showing error message if you’re uploading not .txt format.
 
@@ -195,7 +195,7 @@ This error message will be displayed if you uploaded different types of files. B
 
 If you uploaded an empty .txt file, this error message will be shown. Please check and make sure you have written the data training content in the .txt file. For more about the data training file format, please refer to the [#guideline-to-create-a-training-data](guideline to create training data).
 
-![Image 10 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image10.png)
+![Image 10 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image10.webp)
 
 > **Figure 10**: Showing error that your file does not have any script inside it.
 
@@ -203,7 +203,7 @@ If you uploaded an empty .txt file, this error message will be shown. Please che
 
 If your internet connection was interrupted during the upload process, this error message will be shown. Please make sure that your internet connection is stable and re-upload the data training file again.
 
-![Image 11 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image11.png)
+![Image 11 Alt](/assets/images/products/kata-platform/how-to/how-to-use-bulk-training-to-the-faster-training-process/image11.webp)
 
 > **Figure 11**: Showing error message that your connection is bad and has interrupted training data uploading process.
 
