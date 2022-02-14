@@ -1,7 +1,7 @@
 ---
 layout: tutorial
 id: create-simple-bot-handover-from-chatbot-to-agent
-imgSpot: /assets/images/tutorial/spot-simple-handover.png
+imgSpot: /assets/images/tutorial/spot-simple-handover.webp
 title: Create Simple Bot Handover from Chatbot to Agent Tutorial
 product: kata-platform
 prev: create-igdm-bot-handover-from-chatbot-to-agent
@@ -112,7 +112,7 @@ Main keyword: hi
 
 5. Add a new word by pressing "enter" on your keyboard. Every time you write a new word, press “enter” on your keyboard to save the word. Add these words
 
-![image alt text](/assets/images/tutorial/simple-handover/image_1.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_1.webp)
 
 > Add more keywords for greetings
 
@@ -126,7 +126,7 @@ Main keyword: hi
 
 3. Fill in the intent as follows. The choice of "Intent type" is text, which means it will catch incoming messages with text only. On classifier, use “greetings” NLUs that we’ve created in previous step to connect the intent with create keywords for greetings
 
-![image alt text](/assets/images/tutorial/simple-handover/image_2.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_2.webp)
 
 > Create intent and create mapping with greetings keyword
 
@@ -140,7 +140,7 @@ Main keyword: hi
 
 2. Fill in the transition as follow
 
-![image alt text](/assets/images/tutorial/simple-handover/image_3.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_3.webp)
 
 > Create transition
 
@@ -171,7 +171,7 @@ Main keyword: satu
 
 5. Add a new word by pressing "enter" on your keyboard. Every time you write a new word, press “enter” on your keyboard to save the word. Add these words. “satu” and “dua” as the main keywords mean they define what your end-users will be inputted when choose menu
 
-![image alt text](/assets/images/tutorial/simple-handover/image_4.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_4.webp)
 
 > Create keywords to identify input from chatbot users when choosing menu
 
@@ -185,7 +185,7 @@ Main keyword: satu
 
 3. Fill in the intent as follows. This intent will catch the end-user's input after typing "1" or “2”. Adding a classifier with “menu” to define this intent will be executed whenever a sentence has the “menu” keyword. Add attributes and choose NLU “menu”, because we have 2 main keywords that need to be understood by the intent to execute the handover path or end conversation path.
 
-![image alt text](/assets/images/tutorial/simple-handover/image_5.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_5.webp)
 
 > Create intent for showing main menu and mapping from created keywords
 
@@ -239,7 +239,7 @@ Mohon menunggu, ya. Sedang kami hubungkan ke CS Bank ABC yang tersedia! 😊
 
 2. Fill in the transition as follows. This condition means if the end-user's keyword is identified as "menu" _and_ they are typing “1”, then it will show the “handover” state including the actions’ state.
 
-![image alt text](/assets/images/tutorial/simple-handover/image_6.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_6.webp)
 
 > Create transition and mapping if chatbot users choose "1", then execute handover state
 
@@ -273,7 +273,7 @@ Terima kasih sudah menghubungi Bank ABC 😊
 
 2. Fill in the transition as follows. This condition means if the end-user's keyword is identified as "menu" _and_ they are typing “2”, then it will execute the “end” state
 
-![image alt text](/assets/images/tutorial/simple-handover/image_7.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_7.webp)
 
 > Create transition and mapping if chatbot users choose "2", then execute end conversation
 
@@ -289,7 +289,7 @@ Terima kasih sudah menghubungi Bank ABC 😊
 
 3. Click **Publish** to save the change log. Lastly, your final chatbot flow will be like this:
 
-![image alt text](/assets/images/tutorial/simple-handover/image_8.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_8.webp)
 
 > Final conversation flow
 
@@ -299,11 +299,11 @@ Terima kasih sudah menghubungi Bank ABC 😊
 
 2. You can try to test your bot by inputting a message in the text bot. Say "hi" to your bot. If it succeeds, your bot will reply as follows
 
-![image alt text](/assets/images/tutorial/simple-handover/image_9.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_9.webp)
 
 > Testing your bot in emulator by typing "hi"
 
-![image alt text](/assets/images/tutorial/simple-handover/image_10.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_10.webp)
 
 > Testing bot by typing "1" or "2"
 
@@ -319,7 +319,7 @@ Terima kasih sudah menghubungi Bank ABC 😊
 
 3. Choose any deployment version you want to deploy and fill in the change log. Or you can simply follow this screenshot
 
-![image alt text](/assets/images/tutorial/simple-handover/image_11.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_11.webp)
 
 > Create new deployment
 
@@ -329,7 +329,7 @@ Terima kasih sudah menghubungi Bank ABC 😊
 
 1. Go to the **Environment** menu which is placed under the current menu ("Overview"). If you successfully entered the Environment menu, you will see a page like this. These 3 environments represent that your chatbot will be tested in development or staging first, before go live as in Production stage
 
-![image alt text](/assets/images/tutorial/simple-handover/image_12.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_12.webp)
 
 > Set up environment
 
@@ -365,7 +365,7 @@ Follow the tutorial below in Omnichat to continue: Section **How to Set Up Agent
 
 1. If you succeed to follow the above tutorials, you will see an access token generated in Omnichat that needs to be pasted into the Platform. The screenshot below
 
-![image alt text](/assets/images/tutorial/simple-handover/image_13.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_13.webp)
 
 > Create new agent bot
 
@@ -375,7 +375,7 @@ Follow the tutorial below in Omnichat to continue: Section **How to Set Up Agent
 
 4. Then, go to the menu: Deploy > Environment. You will see this screen.
 
-![image alt text](/assets/images/tutorial/simple-handover/image_14.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_14.webp)
 
 > Set up channel again to paste access token from Omnichat
 
@@ -397,7 +397,7 @@ Follow the tutorial below in Omnichat to continue: Section **How to Set Up Agent
 
 2. Go to menu: Settings > Integrations > Agent Bot. You will see this screen and information that you’re still in first step to finalize
 
-![image alt text](/assets/images/tutorial/simple-handover/image_15.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_15.webp)
 
 > Edit agent bot to paste webhook URL from Platform
 
@@ -409,7 +409,7 @@ Follow the tutorial below in Omnichat to continue: Section **How to Set Up Agent
 
 6. Lastly, turn on the toggle in Activate Agent Bot. Your chatbot is already connected to the Omnichat inbox and ready to use!
 
-![image alt text](/assets/images/tutorial/simple-handover/image_16.png)
+![image alt text](/assets/images/tutorial/simple-handover/image_16.webp)
 
 > Activate agent bot and final step
 
