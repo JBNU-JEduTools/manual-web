@@ -10,7 +10,7 @@ section: How To
 
 ## New Order
 
-![Qios illustration](/assets/images/products/qios/image14.png)
+![Qios illustration](/assets/images/products/qios/image14.webp)
 
 > Order Page
 
@@ -26,7 +26,7 @@ section: How To
 1. After you confirmed the order, customer will either pay or cancel it.
 2. If customer paid the order, then the order will be moved to **“Siap Diproses”** tab.
 
-![Qios illustration](/assets/images/products/qios/image15.png)
+![Qios illustration](/assets/images/products/qios/image15.webp)
 
 > Order Paid and Ready to Proceed
 
@@ -34,7 +34,7 @@ section: How To
 4. The system will automatically search for the courier.
 5. After the order moved to **“Dalam pengiriman”** tab, the system will proceed it automatically based on when the courier’s action.
 
-![Qios illustration](/assets/images/products/qios/image16.png)
+![Qios illustration](/assets/images/products/qios/image16.webp)
 
 > Order Paid
 

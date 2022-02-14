@@ -10,7 +10,7 @@ section: How To
 
 ## Self-onboarding
 
-![Qios illustration](/assets/images/products/qios/image1.png)
+![Qios illustration](/assets/images/products/qios/image1.webp)
 
 > Qios Sign Up Page
 
@@ -22,11 +22,11 @@ section: How To
 
 4. In the **Onboarding** page, you have to fill in the **Personal Information**, **Business Information**, **Create Store** and do some set up for your chatbot
 
-![Qios illustration](/assets/images/products/qios/image2.png)
+![Qios illustration](/assets/images/products/qios/image2.webp)
 
 > Qios Self-Onboarding Step: Tentang Bisnis Kamu
 
-![Qios illustration](/assets/images/products/qios/image3.png)
+![Qios illustration](/assets/images/products/qios/image3.webp)
 
 > Qios Self-Onboarding Step: Buat Toko Pertamamu
 
@@ -34,7 +34,7 @@ section: How To
 
 ## Home
 
-![Qios illustration](/assets/images/products/qios/image4.png)
+![Qios illustration](/assets/images/products/qios/image4.webp)
 
 > Qios Home Page
 
@@ -46,7 +46,7 @@ section: How To
 
 ## Login
 
-![Qios illustration](/assets/images/products/qios/image5.png)
+![Qios illustration](/assets/images/products/qios/image5.webp)
 
 > Login to Qios
 

@@ -12,7 +12,7 @@ section: How To
 
 1. You can add a store from the onboarding steps or from **“Toko”** menu.
 
-![Qios illustration](/assets/images/products/qios/image9.png)
+![Qios illustration](/assets/images/products/qios/image9.webpp)
 
 > Add a New Store
 

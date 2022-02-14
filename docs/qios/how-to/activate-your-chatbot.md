@@ -8,7 +8,7 @@ section: How To
 
 ## Set Up Chatbot Preference
 
-![Qios illustration](/assets/images/products/qios/image10.png)
+![Qios illustration](/assets/images/products/qios/image10.webp)
 
 > Chatbot Preferences
 
@@ -24,12 +24,12 @@ section: How To
 
 2. Copy and paste the access token from agent bot in Kata Omnichat to Qios Dashboard in **Pengaturan > WhatsApp** Business API and click **_“Aktifkan webhook URL”_** button.
 
-![Qios illustration](/assets/images/products/qios/image11.png)
+![Qios illustration](/assets/images/products/qios/image11.webp)
 
 > Input Access Token to Connect Chatbot to Qios
 
 3. Copy and paste the webhook URL that has been generated to Kata Omnichat in **Agent Bot configuration**.
 
-![Qios illustration](/assets/images/products/qios/image12.png)
+![Qios illustration](/assets/images/products/qios/image12.webp)
 
 > Webhook URL Generated from Access Token

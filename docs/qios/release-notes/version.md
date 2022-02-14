@@ -8,7 +8,7 @@ The latest news, updates, and changes on Qios
 
 ## 2.0.0
 
-![Qios Illustration](/assets/images/products/qios/release-notes/qios-illustration.png)
+![Qios Illustration](/assets/images/products/qios/release-notes/qios-illustration.webp)
 
 ### What’s New ⭐️
 

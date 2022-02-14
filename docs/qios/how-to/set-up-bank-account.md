@@ -8,7 +8,7 @@ section: How To
 
 ## Set Up Bank Account Information
 
-![Qios illustration](/assets/images/products/qios/image13.png)
+![Qios illustration](/assets/images/products/qios/image13.webp)
 
 > Set Up Bank Account
 
