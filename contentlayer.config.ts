@@ -5,6 +5,9 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrism from 'rehype-prism-plus';
 import remarkGfm from 'remark-gfm';
 import sanitizeHtml from 'sanitize-html';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import rehypeRaw from 'rehype-raw';
 
 const computedFields: ComputedFields = {
   slug: {
@@ -100,6 +103,8 @@ const contentLayerConfig = makeSource({
   markdown: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
+      [remarkRehype, { allowDangerousHtml: true }],
+      rehypeRaw,
       rehypeSlug,
       rehypePrism,
       [
