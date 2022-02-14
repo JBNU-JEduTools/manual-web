@@ -11,17 +11,17 @@ Canned Responses are saved reply templates that can be used to quickly send out 
 1. Go to Omnichat **Homepage**
 2. Click **Setting > Canned Responses** on the sidebar. Canned responses are used with the help of Short Codes. Agents or admin can access canned responses while on a chat by typing '/' followed by the shortcode.
 
-    ![Figure 61](/assets/images/products/kata-omnichat/image61.png)
+    ![Figure 61](/assets/images/products/kata-omnichat/image61.webp)
 
     > **Figure 61.** Canned Responses
 
 3. Click canned response on the sidebar
-   ![Figure 62](/assets/images/products/kata-omnichat/image62.png)
+   ![Figure 62](/assets/images/products/kata-omnichat/image62.webp)
 
     > **Figure 62.** Canned Responses Set Up
 
 4. For creating a Canned Response, just click on the Add Canned Response. You can also edit or delete an existing Canned Response by clicking on the Edit or Delete button
-   ![Figure 63](/assets/images/products/kata-omnichat/image63.png)
+   ![Figure 63](/assets/images/products/kata-omnichat/image63.webp)
 
     > **Figure 63.** Add Canned Response
 

@@ -11,7 +11,7 @@ For the WABA API channel, we can use the bot as our agent. Learn about how the b
 1. The customer started to chat to users’ WABA number
 2. During chatbot and customer conversation, customers can request handover to agents or agents can take over the conversation if users add an “agent bot” in the inbox. Learn more about [setup agent bot in Omnichat](/kata-omnichat/configure-your-agent-chatbot/setup-agent-bot-in-kata-omnichat)
 
-    ![Figure 38](/assets/images/products/kata-omnichat/image38.png)
+    ![Figure 38](/assets/images/products/kata-omnichat/image38.webp)
 
     > **Figure 38.** Conversation with bot
 

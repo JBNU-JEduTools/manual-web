@@ -11,10 +11,10 @@ section: Getting Started
 3. You have to open your **Business Dashboard account > WhatsApp details** and then copy username and password from API credentials. Paste the username and password to Kata Omnichat, then the system will automatically generate the webhook URL.
 4. Lastly, copy the Webhook URL that has been generated, paste it into **WhatsApp Details > Webhook URL** in Business Dashboard.
 
-    ![Figure 8](/assets/images/products/kata-omnichat/image8.png)
+    ![Figure 8](/assets/images/products/kata-omnichat/image8.webp)
 
     > **Figure 8:** Webhook URL for whatsapp business dashboard account
 
-    ![Figure 9](/assets/images/products/kata-omnichat/image9.png)
+    ![Figure 9](/assets/images/products/kata-omnichat/image9.webp)
 
     > **Figure 9:** Integrate webhook Omnichat in Business Dashboard

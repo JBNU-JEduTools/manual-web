@@ -10,6 +10,6 @@ In Kata Omnichat, both admin and agents can manage the conversation to mute the 
 
 To set up this feature, you can go to conversation, then click the **kebab icon** in the upper right corner, then choose mute conversation.
 
-![Figure 48](/assets/images/products/kata-omnichat/image48.png)
+![Figure 48](/assets/images/products/kata-omnichat/image48.webp)
 
 > **Figure 48.** Mute Conversation

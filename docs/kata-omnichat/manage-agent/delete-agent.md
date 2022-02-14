@@ -13,6 +13,6 @@ In this section, you can delete the agent that is not used anymore. To delete ag
 3. Click **confirm** to delete
 4. Then, if successful, the “Agent deleted successfully” message will be appeared
 
-    ![Figure 33](/assets/images/products/kata-omnichat/image33.png)
+    ![Figure 33](/assets/images/products/kata-omnichat/image33.webp)
 
     > **Figure 33.** Delete Agent

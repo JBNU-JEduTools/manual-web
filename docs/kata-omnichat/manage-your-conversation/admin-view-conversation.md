@@ -21,6 +21,6 @@ As admin, you will see all incoming conversations to your inboxes. In the conver
 2. **Mine**: The incoming conversation that has already been assigned to me as an agent. This will help the admin to identify which chat needs to handle
 3. **All:** All conversations will be recorded in the All tab, both assigned or unassigned
 
-    ![Figure 36](/assets/images/products/kata-omnichat/image36.png)
+    ![Figure 36](/assets/images/products/kata-omnichat/image36.webp)
 
     > **Figure 36.** Admin View Conversation

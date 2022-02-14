@@ -16,7 +16,7 @@ section: Manage Your Conversation
         </p>
     </div>
 
-    ![Figure 40](/assets/images/products/kata-omnichat/image40.png)
+    ![Figure 40](/assets/images/products/kata-omnichat/image40.webp)
 
     > **Figure 40.** Conversation in Customer-side using bot
 

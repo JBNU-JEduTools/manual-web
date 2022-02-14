@@ -18,7 +18,7 @@ Omnichat provides a round-robin auto-assignment system for conversations. The as
 1. If there are agents online who have access to the inbox in which a conversation is created, the system would distribute the conversations equally among the online agents
 2. If all the agents are offline, the system would distribute the conversations equally to all agents
 
-    ![Figure 44](/assets/images/products/kata-omnichat/image44.png)
+    ![Figure 44](/assets/images/products/kata-omnichat/image44.webp)
 
     > **Figure 44.** Auto Agent Assignment
 

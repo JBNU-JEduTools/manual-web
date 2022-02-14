@@ -12,6 +12,6 @@ To enable audio notifications, you need to follow these steps
 2. Click on **_3 kebab menu icons_** in the left under the corner of your dashboard, besides your name
 3. Click profile setting, then you will be directed to the page where you can get the setting for audio notifications
 
-    ![Figure 67](/assets/images/products/kata-omnichat/image67.png)
+    ![Figure 67](/assets/images/products/kata-omnichat/image67.webp)
 
     > **Figure 67.** Enable Audio Notifications Setting

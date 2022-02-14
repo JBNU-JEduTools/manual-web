@@ -7,7 +7,7 @@ section: Manage Label
 
 Labels help you to categorize conversations and prioritize them. You can assign a label to a conversation from the side panel. Labels are tied to the account and can be used to create custom workflows in your organization. You can assign custom colors to a label, it makes it easier to identify the label. You will be able to display the label on the sidebar to filter the conversations easily. Labels can be added by administrator only, while agents can participate in adding conversation into a label.
 
-![Figure 52](/assets/images/products/kata-omnichat/image52.png)
+![Figure 52](/assets/images/products/kata-omnichat/image52.webp)
 
 > **Figure 52.** Manage Label
 
@@ -21,7 +21,7 @@ In this section, you can add, edit, and delete your label. To add a label, you c
 4. Click add label to add the new label on the upper right corner, or you can edit and delete the label by clicking the icons beside agent description
 5. The added label pop-up will appear and you need to enter the label name, description, and the color of the tag as your label
 
-    ![Figure 53](/assets/images/products/kata-omnichat/image53.png)
+    ![Figure 53](/assets/images/products/kata-omnichat/image53.webp)
 
     > **Figure 53.** Add label
 

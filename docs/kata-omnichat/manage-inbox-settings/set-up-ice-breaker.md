@@ -13,6 +13,6 @@ Ice Breakers section provides a way for very first time end-users to start a con
 3. Click **Add New Ice Breaker**
 4. Ice breaker added to your list up to 4 messages
 
-    ![Figure 28](/assets/images/products/kata-omnichat/image28.png)
+    ![Figure 28](/assets/images/products/kata-omnichat/image28.webp)
 
     > **Figure 28.** Ice Breaker Set Up

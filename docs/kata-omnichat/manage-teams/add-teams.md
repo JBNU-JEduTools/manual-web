@@ -16,14 +16,14 @@ As Admin, you can follow these steps to create a new team.
 1. Go to the home page, then click the setting button on the sidebar
 2. Click Teams in the sidebar
 
-    ![Figure 57](/assets/images/products/kata-omnichat/image57.png)
+    ![Figure 57](/assets/images/products/kata-omnichat/image57.webp)
 
     > **Figure 57.** Manage Team
 
 3. Click Create a new team in the upper right corner.
 4. Then create a new team page will be appeared
 
-    ![Figure 58](/assets/images/products/kata-omnichat/image58.png)
+    ![Figure 58](/assets/images/products/kata-omnichat/image58.webp)
 
     > **Figure 58.** Create New Team
 
@@ -31,12 +31,12 @@ As Admin, you can follow these steps to create a new team.
 6. Enter the team name and team description, then click **create a team**
 7. Choose the agent you want to assign to the team, You can assign to more than 1 agent. Then click **add agent**
 
-    ![Figure 59](/assets/images/products/kata-omnichat/image59.png)
+    ![Figure 59](/assets/images/products/kata-omnichat/image59.webp)
 
     > **Figure 59.** Add Agent to the team
 
 8. Then if it’s successful, your team is ready to appear on the screen
 
-    ![Figure 60](/assets/images/products/kata-omnichat/image60.png)
+    ![Figure 60](/assets/images/products/kata-omnichat/image60.webp)
 
     > **Figure 60.** Team Ready

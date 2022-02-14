@@ -13,7 +13,7 @@ Every conversation in Omnichat can have an assignee. An assignee can be manually
 
 To assign an agent or admin to a conversation, an admin/agent can select the assignee from the dropdown named under "Assigned Agent" from the "Conversation Details" section in the right sidebar, as shown below.
 
-![Figure 43](/assets/images/products/kata-omnichat/image43.png)
+![Figure 43](/assets/images/products/kata-omnichat/image43.webp)
 
 > **Figure 43.** Agent Assignment
 

@@ -18,7 +18,7 @@ When completing the conversation, you need to be notified that the conversation 
         </p>
     </div>
 
-    ![Figure 45](/assets/images/products/kata-omnichat/image45.png)
+    ![Figure 45](/assets/images/products/kata-omnichat/image45.webp)
 
     > **Figure 45.** Resolve Conversation
 
