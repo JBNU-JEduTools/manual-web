@@ -12,7 +12,7 @@ You can see the remaining broadcast credit of a phone number connected to your b
 
 ### Top Up WhatsApp Credit
 
-![Credit](/assets/images/products/business-dashboard/image-top-up-credits.png)
+![Credit](/assets/images/products/business-dashboard/image-top-up-credits.webp)
 
 > Top up credit
 
@@ -31,6 +31,6 @@ You can see the remaining broadcast credit of a phone number connected to your b
 
 To view your ongoing and past WhatsApp credit purchases and their status, go to the **Credits** page. Here, you can also download the invoice for each of your purchases by clicking the view **invoice.**
 
-![Credit History](/assets/images/products/business-dashboard/image-credit-history.png)
+![Credit History](/assets/images/products/business-dashboard/image-credit-history.webp)
 
 > WhatsApp Credit History

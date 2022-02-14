@@ -79,7 +79,7 @@ answer questions or send important updates via message.
 
 #### 1. User-Initiated Conversation (UIC)
 
-![based-pricing-table-1.png](/assets/images/products/business-dashboard/based-pricing/table-1.png)
+![based-pricing-table-1.webp](/assets/images/products/business-dashboard/based-pricing/table-1.webp)
 
 > 1.a. Illustrated Scenario 1
 
@@ -99,7 +99,7 @@ answer questions or send important updates via message.
 
 Cost: **IDR 320**, for 1 UIC
 
-![based-pricing-table-2.png](/assets/images/products/business-dashboard/based-pricing/table-2.png)
+![based-pricing-table-2.webp](/assets/images/products/business-dashboard/based-pricing/table-2.webp)
 
 > 1.b. Illustrated Scenario 2
 
@@ -113,7 +113,7 @@ Cost: **IDR 320**, for 1 UIC
 
 #### 2. Business-Initiated Conversation (UIC)
 
-![based-pricing-table-3.png](/assets/images/products/business-dashboard/based-pricing/table-3.png)
+![based-pricing-table-3.webp](/assets/images/products/business-dashboard/based-pricing/table-3.webp)
 
 > 2.a. Illustrated Scenario 3
 
@@ -125,7 +125,7 @@ Cost: **IDR 320**, for 1 UIC
    Commercial Air will charge for one business-initiated conversation for sending these two message templates to Anne in a 24-hour conversation session.
    Cost: **IDR 500**, for 1 BIC
 
-![based-pricing-table-4.png](/assets/images/products/business-dashboard/based-pricing/table-4.png)
+![based-pricing-table-4.webp](/assets/images/products/business-dashboard/based-pricing/table-4.webp)
 
 > 2.b. Illustrated Scenario 4
 

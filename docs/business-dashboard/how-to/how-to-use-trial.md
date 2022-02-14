@@ -18,6 +18,6 @@ Before sending real messages to your audiences, you can send a trial message wit
 
 3. Input the recipient WhatsApp number you wish to send the message to and click **Send Sample Message**. Shortly, the recipient(s) will receive the sample message. You can send to maximum two recipients with a total up to ten messages per day.
 
-![Trial](/assets/images/products/business-dashboard/image-trial.png)
+![Trial](/assets/images/products/business-dashboard/image-trial.webp)
 
 > Trial Experience page

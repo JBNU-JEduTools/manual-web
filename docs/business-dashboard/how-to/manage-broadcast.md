@@ -28,19 +28,19 @@ You can watch our video tutorial below to learn how to broadcast a template mess
 
 Let’s take a look at how to make a CSV file for an example content below:
 
-![image-7](/assets/images/products/business-dashboard/message-template/image-7.png)
+![image-7](/assets/images/products/business-dashboard/message-template/image-7.webp)
 
 Assume this message template has a "visit a website" CTA button with a dynamic URL. In the CSV file, you have to make a column for the variable URL.
 
 To create the CSV from example above, make columns with the following names in excel:
 
-![table-1](/assets/images/products/business-dashboard/manage-broadcast/table-1.png)
+![table-1](/assets/images/products/business-dashboard/manage-broadcast/table-1.webp)
 
 The example content above has two variables in the body content. In the excel, make columns body1_type and body1_text to input the content for variable {{1}} and columns body2_type and body3_text to input the content for variable {{2}}. There will be more body#\_type and body#\_text columns following the number of variables in the body section.
 
 After making the column names, fill in the contents for each column like the example below:
 
-![table-2](/assets/images/products/business-dashboard/manage-broadcast/table-2.png)
+![table-2](/assets/images/products/business-dashboard/manage-broadcast/table-2.webp)
 
 Make sure you fill all the contents correctly to ensure the message is sent successfully. Once you are done filling the contents, **save** your excel document as a CSV and your CSV is ready for upload.
 
@@ -73,7 +73,7 @@ If your CSV upload returns a warning, you can’t proceed to send a broadcast. L
 
 After you send a broadcast, your broadcast is listed on the **Broadcast** page. Here are the things you can see or do on the **Broadcast** page:
 
-![Broadcast](/assets/images/products/business-dashboard/image-broadcast.png)
+![Broadcast](/assets/images/products/business-dashboard/image-broadcast.webp)
 
 > Broadcast page
 
