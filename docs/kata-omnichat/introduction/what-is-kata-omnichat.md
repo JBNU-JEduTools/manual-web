@@ -4,7 +4,7 @@ next: benefits-with-kata-omnichat
 section: Introduction
 ---
 
-<img className="borderless" src="/assets/images/products/kata-omnichat/image0.png" alt="Kata-Omnichat Illustration" />
+<img loading="lazy" className="borderless" src="/assets/images/products/kata-omnichat/image0.png" alt="Kata-Omnichat Illustration" />
 
 # What is Kata Omnichat
 

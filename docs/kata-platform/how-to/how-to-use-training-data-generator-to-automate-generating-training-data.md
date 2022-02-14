@@ -226,7 +226,7 @@ Let’s start to tag an entity type “trait” that you’ve created before.
 2. Next, it will show available labels in the entity. Because you only create 1 label, then select the statement label.
 
 <div className="info">
-    <img className="borderless" src="/assets/images/icon-info.svg" />
+    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
     <p><b>Important note</b>: Bulk labeling for entity type “trait” will tag all generated data.</p>
 </div>
 
@@ -243,14 +243,14 @@ Let’s start to tag an entity type “trait” that you’ve created before.
 > **Figure 16**: Tag `sinta` word in bulk labeling.
 
 <div className="info">
-    <img className="borderless" src="/assets/images/icon-info.svg" />
+    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
     <p><b>Important note</b>: Bulk labeling for entity type “phrase” and “dictionary” will tag words only.</p>
 </div>
 
 6. Then, add the entity “dictionary” type. Click **Add more Entity** to start. Then, select entity name things. Then, it will show a text area named **Words to Tag**. Words to Tag is a feature to search words you want to tag. For example, you will tag a `sekolah` word.
 
 <div className="info">
-    <img className="borderless" src="/assets/images/icon-info.svg" />
+    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
     <p><b>Important note</b>: Bulk labeling for entity type “dictionary” will not show specific labels to tag. So, it will train the entity.</p>
 </div>
 

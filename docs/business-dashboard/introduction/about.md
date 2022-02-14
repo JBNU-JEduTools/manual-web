@@ -4,7 +4,7 @@ next: get-started
 section: Introduction
 ---
 
-<img className="borderless" src="/assets/images/products/business-dashboard/image-introduction-1.png" alt="Business-Dashboard Illustration" />
+<img loading="lazy" className="borderless" src="/assets/images/products/business-dashboard/image-introduction-1.png" alt="Business-Dashboard Illustration" />
 
 # About WhatsApp Business Dashboard
 

@@ -13,7 +13,7 @@ Super Model or Kata Entity is a highly maintained entity that you can use right 
 This entity will be added automatically when you create a new project on the Entities page. Also, you can use this entity right away without adding any training data. Kata maintains the model for this entity, and all users will automatically get the updated version whenever Kata improves it.
 
 <div className="info">
-    <img className="borderless" src="/assets/images/icon-info.svg" />
+    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
     <div>
         <p>Important:
             <ul>

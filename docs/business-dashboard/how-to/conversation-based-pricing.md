@@ -64,7 +64,7 @@ business using the call-to-action button on an Ad that clicks into WhatsApp or a
 ## Scenarios
 
 <div className="info">
-    <img className="borderless" src="/assets/images/icon-info.svg" />
+    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
     <p>
     Disclaimer: This scenario is based on The Official Facebook documentation. The complete scenario can be found <a href="https://developers.facebook.com/docs/whatsapp/pricing/conversationpricing" target="_blank">here</a>
     </p>

@@ -5,7 +5,7 @@ next: benefits-with-kata-platform
 section: Introduction
 ---
 
-<img className="borderless" src="/assets/images/products/kata-platform/image0.png" alt="Kata-Platform Illustration" />
+<img loading="lazy" className="borderless" src="/assets/images/products/kata-platform/image0.png" alt="Kata-Platform Illustration" />
 
 # What is Kata Platform ?
 

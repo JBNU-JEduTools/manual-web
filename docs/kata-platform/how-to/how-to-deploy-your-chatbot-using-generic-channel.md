@@ -11,7 +11,7 @@ section: How To
 This documentation will teach you how to build a chatbot app using the Kata Platform and connect it to Generic Channel. You can use Generic Channel for the channel not yet available in Kata Platform so that you can make a “wrapper.” This tutorial will deploy your chatbot to a generic channel using NestJs and connect it with a chatbot.
 
 <div className="info">
-    <img className="borderless" src="/assets/images/icon-info.svg" />
+    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
     <p>Important: There is no limitation in programming languages or frameworks if you want to create the app.</p>
 </div>
 
