@@ -19,18 +19,16 @@ import IndexLayout from 'components/layouts';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 import { PRODUCTS_DICT } from 'utils/constants';
-import { allTutorials } from 'contentlayer/generated';
+import { allTutorials, Tutorials } from 'contentlayer/generated';
 import Image from 'next/image';
 
 interface TutorialPageTemplateProps {
-  post: any;
+  post: Tutorials;
   toc: any;
   listToc: string[];
 }
 
 const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }) => {
-  const frontMatter = post;
-
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     router.push('/404');
@@ -52,9 +50,9 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
   return (
     <Page suppressHydrationWarning={true} docsPage>
       <Head>
-        <title>{frontMatter.title} &middot; Kata Platform Documentation</title>
+        <title>{post.title} &middot; Kata Platform Documentation</title>
         <meta name="description" content={post.excerpt} />
-        <meta property="og:title" content={frontMatter.title} />
+        <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
       </Head>
       <IndexLayout navHidden>
@@ -90,11 +88,11 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
                 items={[
                   { url: '/', urlDisplay: 'Home' },
                   { url: '/tutorials', urlDisplay: 'All Tutorials' },
-                  { url: `/${frontMatter.product}`, urlDisplay: PRODUCTS_DICT[frontMatter.product] },
+                  { url: `/${post.product}`, urlDisplay: PRODUCTS_DICT[post.product] },
                   { urlDisplay: 'Tutorial' },
                 ]}
               />
-              <DocsHeader title={frontMatter.title} />
+              <DocsHeader title={post.title} />
               <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
               <DocsHelpful />
               <FooterWrapper>

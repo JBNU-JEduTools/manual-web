@@ -4,9 +4,10 @@ import { MarkdownContent } from 'interfaces/next';
 import React from 'react';
 import { HeaderSegment } from './components';
 import { TutorialCard } from 'components/tutorials/TutorialCard';
+import { Tutorials as ITutorials } from 'contentlayer/generated';
 
 interface TutorialsProps {
-  tutorials?: any[];
+  tutorials?: ITutorials[];
 }
 
 const Tutorials: React.FC<TutorialsProps> = ({ tutorials }) => {

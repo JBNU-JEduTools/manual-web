@@ -20,11 +20,11 @@ import { getPageUrl } from 'utils/helpers';
 import { PaginationDocs } from 'components/docs/Pagination';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
-import { allQios } from 'contentlayer/generated';
+import { allQios, Qios } from 'contentlayer/generated';
 import Image from 'next/image';
 
 interface QiosPageTemplateProps {
-  post: any;
+  post: Qios;
   toc: any;
   listToc: string[];
 }

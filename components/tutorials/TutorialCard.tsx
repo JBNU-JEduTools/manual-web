@@ -8,9 +8,10 @@ import { breakpoints } from 'utils/variables';
 import { Anchor, Card } from './components';
 import { ProductBadge } from '../badge';
 import Image from 'next/image';
+import { Tutorials } from 'contentlayer/generated';
 
 interface TutorialCardProps {
-  tutorial: any;
+  tutorial: Tutorials;
   index?: number;
 }
 

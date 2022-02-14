@@ -6,10 +6,11 @@ import Tutorials from 'components/portal/tutorials';
 import VideoTutorial from 'components/portal/videotutorial';
 import { TutorialWrapper } from 'components/portal/components';
 import IndexLayout from 'components/layouts';
-import { allTutorials } from 'contentlayer/generated';
+import { allTutorials, Tutorials as ITutorials } from 'contentlayer/generated';
+import { MarkdownContent } from 'interfaces/next';
 
 interface IIndex {
-  tutorialPosts: any;
+  tutorialPosts: ITutorials[];
 }
 
 const Index: React.FC<IIndex> = ({ tutorialPosts }) => {

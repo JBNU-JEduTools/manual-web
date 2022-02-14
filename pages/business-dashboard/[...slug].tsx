@@ -20,11 +20,11 @@ import { PaginationDocs } from 'components/docs/Pagination';
 import { getPageUrl } from 'utils/helpers';
 import Link from 'next/link';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
-import { allBusinessDashboards } from 'contentlayer/generated';
+import { allBusinessDashboards, BusinessDashboard } from 'contentlayer/generated';
 import Image from 'next/image';
 
 interface BusinessDashboardPageTemplateProps {
-  post: any;
+  post: BusinessDashboard;
   toc: any;
   listToc: string[];
 }

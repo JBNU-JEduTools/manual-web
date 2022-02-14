@@ -4,11 +4,20 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrism from 'rehype-prism-plus';
 import remarkGfm from 'remark-gfm';
+import sanitizeHtml from 'sanitize-html';
 
 const computedFields: ComputedFields = {
   slug: {
     type: 'string',
     resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1),
+  },
+  excerpt: {
+    type: 'string',
+    resolve: (doc) =>
+      sanitizeHtml(doc.body.html.split('.').slice(0, 2).join('.'), {
+        allowedTags: [],
+        allowedAttributes: {},
+      }),
   },
 };
 

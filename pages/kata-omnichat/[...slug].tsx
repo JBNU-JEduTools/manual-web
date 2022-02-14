@@ -21,17 +21,16 @@ import { getPageUrl } from 'utils/helpers';
 import { MarkdownContent as IMarkdownContent } from 'interfaces/next';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
-import { allKataOmnichats } from 'contentlayer/generated';
+import { allKataOmnichats, KataOmnichat } from 'contentlayer/generated';
 import Image from 'next/image';
 
 interface OmnichatPageTemplateProps {
-  post: any;
+  post: KataOmnichat;
   toc: any;
   listToc: string[];
 }
 
 const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }) => {
-  const frontMatter = post;
   const prevPage = getPageUrl(post.prev, 'kata-omnichat');
   const nextPage = getPageUrl(post.next, 'kata-omnichat');
 
@@ -62,8 +61,10 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }
   return (
     <Page docsPage>
       <Head>
-        <title>{frontMatter.title} &middot; Kata Omnichat Documentation</title>
-        <meta property="og:title" content={frontMatter.title} />
+        <title>{post.title} &middot; Kata Omnichat Documentation</title>
+        <meta name="description" content={post.excerpt} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
       </Head>
       <IndexLayout navHidden>
         {router.isFallback ? (
@@ -98,10 +99,10 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }
                 items={[
                   { url: '/', urlDisplay: 'Home' },
                   { url: '/kata-omnichat', urlDisplay: 'Kata Omnichat' },
-                  { urlDisplay: frontMatter.section },
+                  { urlDisplay: post.section },
                 ]}
               />
-              {frontMatter.id !== 'about' && <DocsHeader title={frontMatter.title} />}
+              {post.id !== 'about' && <DocsHeader title={post.title} />}
               <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
               {(prevPage || nextPage) && <PaginationDocs prevPage={prevPage} nextPage={nextPage} />}
               <DocsHelpful />

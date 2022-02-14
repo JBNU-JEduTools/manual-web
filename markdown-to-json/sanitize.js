@@ -10,7 +10,7 @@ const markdownJsonOutput = {
   global: require('./outputs/global.json'),
 };
 
-const sanitizeString = (sentences, removeSymbol = true) => {
+export const sanitizeString = (sentences, removeSymbol = true) => {
   const cleanSentences = sanitizeHtml(sentences, {
     allowedTags: [],
     allowedAttributes: {},

@@ -8,10 +8,10 @@ import { PaginationWithDetails } from 'components/tutorials/pagination';
 import { MarkdownContent } from 'interfaces/next';
 import { TutorialCard } from 'components/tutorials/TutorialCard';
 import IndexLayout from 'components/layouts';
-import { allTutorials } from 'contentlayer/generated';
+import { allTutorials, Tutorials } from 'contentlayer/generated';
 
 interface IIndex {
-  tutorialPosts: any[];
+  tutorialPosts: Tutorials[];
 }
 
 const LIMIT = [6, 9, 12];
