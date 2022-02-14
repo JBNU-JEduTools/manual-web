@@ -1,7 +1,7 @@
 ---
 layout: tutorial
 id: how-to-use-instagram-messaging-automation-in-your-project
-imgSpot: /assets/images/tutorial/spot-ig-automation.png
+imgSpot: /assets/images/tutorial/spot-ig-automation.webp
 product: kata-platform
 title: How to use Instagram Messaging automation in your project
 date: '2021-08-26T07:00:00+07:00'
