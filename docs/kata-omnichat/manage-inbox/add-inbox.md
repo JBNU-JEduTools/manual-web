@@ -12,7 +12,7 @@ Inbox is the feature where you can connect your messaging channels to your Kata 
 > **Figure 16.** Manage Inbox
 
 <div className="info">
-    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
+    <img className="borderless" src="/assets/images/icon-info.svg" />
     <p>
     Note: 1 account can connect to more than 1 Whatsapp Business API account or more than 1 Instagram Messaging.
     </p>

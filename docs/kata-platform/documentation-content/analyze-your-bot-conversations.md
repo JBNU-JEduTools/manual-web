@@ -74,7 +74,7 @@ Notice on Monday at 12PM, when you hover the block, there are 28 incoming messag
 > **Figure 5**: Cohort (simple & expanded) analytics - Daily.
 
 <div className="info">
-    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
+    <img className="borderless" src="/assets/images/icon-info.svg" />
     <p>Important note: The cohort data is standalone analytics, which means the data is shown not filtered by date range.</p>
 </div>
 

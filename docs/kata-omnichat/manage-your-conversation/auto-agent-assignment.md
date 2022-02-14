@@ -9,7 +9,7 @@ section: Manage Your Conversation
 Omnichat provides a round-robin auto-assignment system for conversations. The assignment follows the logic mentioned below.
 
 <div className="info">
-        <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
+        <img className="borderless" src="/assets/images/icon-info.svg" />
         <p>
             Note: Round robin assignment is enabled by default.
         </p>

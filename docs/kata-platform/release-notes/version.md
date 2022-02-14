@@ -6,7 +6,7 @@ section: Release Notes
 
 ## 3.23.1
 
-<img loading="lazy" className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
+<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
 
 ### What's New ⭐️
 
@@ -24,7 +24,7 @@ We develop a lot of improvements for the Kata Platform in user experience and th
 
 ## 3.23.0
 
-<img loading="lazy" className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
+<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
 
 ### What's New ⭐️
 
@@ -44,7 +44,7 @@ We develop a lot of improvements for the Kata Platform in user experience and th
 
 ## 3.22.0
 
-<img loading="lazy" className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
+<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
 
 ### What's New ⭐️
 
@@ -63,7 +63,7 @@ Here are the new features:
 
 ## 3.21.0
 
-<img loading="lazy" className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
+<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
 
 ### What's New
 
@@ -81,7 +81,7 @@ When doing training for the NL models, you may incorrectly put a tag and prompt 
 
 ## 3.19.0
 
-<img loading="lazy" className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
+<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
 
 We always listen to our customers for their pain points, bug findings, required fast improvements and so on. So that, were doing improvements and several bugfix in January until March 2021, here is the list:
 
@@ -108,7 +108,7 @@ We always listen to our customers for their pain points, bug findings, required 
 
 ## 3.15.0
 
-<img loading="lazy" className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
+<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
 
 We are proud to announce a whole new experience with our analytics platform.
 

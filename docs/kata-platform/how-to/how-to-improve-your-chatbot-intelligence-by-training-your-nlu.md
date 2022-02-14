@@ -251,7 +251,7 @@ Labels:
 This method can increase your model prediction score by dividing the score into several groups of labels. From the example above, the first NLU `nl-1` will divide the prediction score 1.00 into 8 different labels for the `intent` entity. Otherwise, the second NLU `nl-2` will divide the prediction score 1.00 into 4 labels for the intent entity and 4 labels for the `topic` entity.
 
 <div className="info">
-    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
+    <img className="borderless" src="/assets/images/icon-info.svg" />
     <p>
         Important note: This suggestion is recommended if you have limited training data. If you have a large amount of training data or there are no problems with your current training data, this suggestion is unnecessary.
     </p>
@@ -262,7 +262,7 @@ This method can increase your model prediction score by dividing the score into 
 Another tip is to use an “intent” profile which is influenced by predictions from other models (type “phrase” or type “dictionary”). This way can make the training process if training data is limited and sentences form alike.
 
 <div className="info">
-    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
+    <img className="borderless" src="/assets/images/icon-info.svg" />
     <p>Important note: This suggestion applies to entity type “trait” with “intent” profile only.</p>
 </div>
 
@@ -471,7 +471,7 @@ Few states in a bot may have similar input, but have different meanings dependin
 -   `YesNo` NLU can be used in overall flows but shall be specified in states that require end-users confirmation.
 
 <div className="info">
-    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
+    <img className="borderless" src="/assets/images/icon-info.svg" />
     <p>
         Note: You can use these methods if you have too many labels, data between labels are alike, a limited number of training data, predictions result is not optimal yet, or found other problems. But if your NLU is fine, you can create an entity with many labels.
     </p>

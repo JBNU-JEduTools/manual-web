@@ -4,7 +4,7 @@ next: general-setup
 section: Introduction
 ---
 
-<img loading="lazy" className="borderless" src="/assets/images/products/qios/image0.png" alt="Qios Illustration" />
+<img className="borderless" src="/assets/images/products/qios/image0.png" alt="Qios Illustration" />
 
 # About Qios
 

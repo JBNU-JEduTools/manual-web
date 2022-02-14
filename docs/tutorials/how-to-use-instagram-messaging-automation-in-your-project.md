@@ -37,7 +37,7 @@ You can send an automated reply to their DM whenever your customers engage you v
 Whenever your customers mention your account in their Instagram Story, you can send automated replies to their DM.
 
 <div className="info">
-    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
+    <img className="borderless" src="/assets/images/icon-info.svg" />
     <p>
 Important note:
     <ul>
@@ -125,7 +125,7 @@ This feature has an interactive way to show menus or options by adding images an
 We probably felt confused the first time using a chatbot as end-users, especially if the bot hasn’t given apparent bot features. “Ice Breaker” solves this problem by showing a _getting started_ on a few topics after the end-user adds the brand’s account.
 
 <div className="info">
-    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
+    <img className="borderless" src="/assets/images/icon-info.svg" />
     <p>
 Important: Ice Breaker is only shown for a first-time chat.
 </p>
@@ -148,7 +148,7 @@ Finally, you’ve successfully created the Inbox. Let's jump to [creating the Ic
 This feature allows your bot to send a sticker heart ❤️ and it is different from inline-like.
 
 <div className="info">
-    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
+    <img className="borderless" src="/assets/images/icon-info.svg" />
     <p>
     Tips: To develop this feature, you should know that your bot will reply with a “heart” whatever the customers ask. It’s somehow uncomfortable if your customer complains to your bot, then it shows a heart sticker.
     </p>

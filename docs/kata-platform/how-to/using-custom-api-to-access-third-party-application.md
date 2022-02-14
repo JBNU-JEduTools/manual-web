@@ -13,7 +13,7 @@ In this guidance, you will be able to implement a bot that uses an action type A
 For using an API to access third-party applications from your chatbot, you will need to create an action API. Also, a state must be created before creating an action
 
 <div className="info">
-    <img loading="lazy" className="borderless" src="/assets/images/icon-info.svg" />
+    <img className="borderless" src="/assets/images/icon-info.svg" />
     <p>
         <b>Important</b>:
         Platform has a timeout API in 10 seconds. If your API result is shows more than 10 second to chatbot, it will show a automatic message from your chatbot: <code>Maaf pesan anda sedang diproses, tunggu beberapa saat lagi yaa</code>

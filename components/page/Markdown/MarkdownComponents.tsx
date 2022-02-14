@@ -108,7 +108,9 @@ const TableBordered = styled('table')`
   }
 `;
 
-export const h1 = (props: JSX.IntrinsicAttributes) => <Heading fontSize={36} fontWeight={700} as="h1" {...props} />;
+export const h1 = (props: JSX.IntrinsicAttributes) => (
+  <Heading fontSize={36} fontWeight={700} as="h1" {...props} />
+);
 export const h2 = (props: JSX.IntrinsicAttributes) => (
   <Heading fontSize={30} fontWeight={700} as="h2" mt="xl" {...props} />
 );
@@ -124,7 +126,9 @@ export const p = (props: JSX.IntrinsicAttributes) => <Paragraph size={400} mt="s
 export const hr = (props: JSX.IntrinsicAttributes) => <HorizontalRule {...props} />;
 export const ul = (props: JSX.IntrinsicAttributes) => <UnorderedList {...props} />;
 export const ol = (props: JSX.IntrinsicAttributes) => <UnorderedList as="ol" {...props} />;
-export const li = (props: JSX.IntrinsicAttributes) => <Paragraph size={400} as="li" my="xxs" {...props} />;
+export const li = (props: JSX.IntrinsicAttributes) => (
+  <Paragraph size={400} as="li" my="xxs" {...props} />
+);
 
 interface TableAttributes extends JSX.IntrinsicAttributes {
   className?: string;
@@ -135,13 +139,4 @@ export const table = (props: TableAttributes) => {
     return <TableBordered {...rest} />;
   }
   return <TableDefault {...rest} />;
-};
-
-export const img = (props) => {
-  // eslint-disable-next-line @next/next/no-img-element
-  return <img loading="lazy" {...props} />;
-};
-
-export const iframe = (props) => {
-  return <iframe loading="lazy" {...props} />;
 };
