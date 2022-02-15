@@ -9,7 +9,6 @@ const MAX_LANDSCAPE_WIDTH = 720;
 const NextImage = (props) => {
   const { src, alt, naturalWidth, naturalHeight, ...rest } = props;
 
-  console.log(naturalWidth, naturalHeight, src);
   if (naturalHeight > naturalWidth) {
     if (naturalHeight <= MAX_PORTRAIT_HEIGHT) {
       return <Image src={src} alt={alt} {...rest} width={naturalWidth} height={naturalHeight} layout="responsive" />;
@@ -26,7 +25,6 @@ const NextImage = (props) => {
       // Resize using max width if larger than threshold
       const width = MAX_LANDSCAPE_WIDTH;
       const height = Math.floor((width / naturalWidth) * naturalHeight);
-      console.log(naturalWidth, naturalHeight, width, height);
       return <Image src={src} alt={alt} {...rest} width={width} height={height} layout="responsive" />;
     }
   }
