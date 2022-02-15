@@ -1,4 +1,5 @@
 ---
+layout: tutorial
 title: How to use Freshchat for your chatbot
 id: how-to-use-freshchat-for-your-chatbot
 imgSpot: /assets/images/tutorial/spot-freshchat.webp

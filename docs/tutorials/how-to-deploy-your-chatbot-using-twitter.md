@@ -1,4 +1,5 @@
 ---
+layout: tutorial
 title: How to deploy your chatbot using Twitter
 id: how-to-deploy-your-chatbot-using-twitter
 product: kata-platform

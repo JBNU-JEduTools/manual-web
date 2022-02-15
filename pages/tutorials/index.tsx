@@ -32,30 +32,32 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
           </Heading>
           <Text>Find the tutorials for our products</Text>
         </Box>
-        <CardsWrapper>
-          <Cards>
-            {tutorialPosts?.slice((page - 1) * limit, limit * page).map((tutorial: any, idx: number) => {
-              return <TutorialCard key={tutorial.id} index={idx} tutorial={tutorial} />;
-            })}
-          </Cards>
-          <PaginationWithDetails
-            current={page}
-            setPage={setPage}
-            totalPage={Math.floor(tutorialPosts.length / limit + 1)}
-            limit={limit}
-            setLimit={setLimit}
-            limitList={LIMIT}
-            totalItems={tutorialPosts.length}
-          />
-          <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
-        </CardsWrapper>
+        {tutorialPosts.length > 0 && (
+          <CardsWrapper>
+            <Cards>
+              {tutorialPosts.slice((page - 1) * limit, limit * page).map((tutorial: any, idx: number) => {
+                return <TutorialCard key={tutorial.id} index={idx} tutorial={tutorial} />;
+              })}
+            </Cards>
+            <PaginationWithDetails
+              current={page}
+              setPage={setPage}
+              totalPage={Math.floor(tutorialPosts.length / limit + 1)}
+              limit={limit}
+              setLimit={setLimit}
+              limitList={LIMIT}
+              totalItems={tutorialPosts.length}
+            />
+            <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
+          </CardsWrapper>
+        )}
       </Container>
     </IndexLayout>
   );
 };
 
 export async function getStaticProps() {
-  const posts = allTutorials;
+  const posts = [...allTutorials];
 
   return {
     props: {
