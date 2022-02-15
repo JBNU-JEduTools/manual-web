@@ -1,15 +1,20 @@
 import { Box, Text, theme } from '@aksara-ui/react';
+import { h1, h2, h3, h4, h5, h6, hr, p, ul, ol, li, table } from 'components/page/Markdown/MarkdownComponents';
 import Image from 'next/image';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 
 const NextImage = (props) => {
-  const { src, alt, ...rest } = props;
-  return <Image src={src} alt={alt} {...rest} />;
+  const { src, alt, width, height, ...rest } = props;
+  if (height > 720) {
+    return <Image src={src} alt={alt} width={width} height={height} {...rest} layout="intrinsic" />;
+  } else {
+    return <Image src={src} alt={alt} width={width} height={height} {...rest} />;
+  }
 };
 
 const ImageWrapper = (props) => {
   const { className, ...rest } = props;
-  return <Box className={className} marginY={24} {...rest} />;
+  return <Box className={className} marginY={24} textAlign="center" {...rest} />;
 };
 
 const CaptionWrapper = (props) => {
@@ -35,21 +40,46 @@ const YoutubeEmbedWrapper = (props) => {
 
 const YoutubeEmbed = LiteYouTubeEmbed;
 
+const FigureWrapper = (props) => {
+  const { className, ...rest } = props;
+  return <Box className={className} marginY={16} {...rest} />;
+};
+
 const FigureImage = (props) => {
-  const { src, alt, caption, ...rest } = props;
+  const { src, alt, width, height, caption, ...rest } = props;
   return (
-    <ImageWrapper>
-      <Image src={src} alt={alt} {...rest} />
+    <FigureWrapper>
+      <ImageWrapper marginY={0}>
+        <NextImage src={src} alt={alt} width={width} height={height} {...rest} />
+      </ImageWrapper>
       <CaptionWrapper>
         <Text mr={5}>
           <strong>{caption?.title}</strong>
         </Text>
         <Text>{caption?.description}</Text>
       </CaptionWrapper>
-    </ImageWrapper>
+    </FigureWrapper>
   );
 };
 
-const MDXComponents = { NextImage, ImageWrapper, FigureImage, YoutubeEmbedWrapper, YoutubeEmbed };
+const MDXComponents = {
+  NextImage,
+  ImageWrapper,
+  FigureImage,
+  YoutubeEmbedWrapper,
+  YoutubeEmbed,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  hr,
+  ul,
+  ol,
+  li,
+  table,
+};
 
 export default MDXComponents;
