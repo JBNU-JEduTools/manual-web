@@ -4,9 +4,10 @@ import { MarkdownContent } from 'interfaces/next';
 import React from 'react';
 import { HeaderSegment } from './components';
 import { TutorialCard } from 'components/tutorials/TutorialCard';
+import { Tutorials as ITutorials } from 'contentlayer/generated';
 
 interface TutorialsProps {
-  tutorials?: MarkdownContent[];
+  tutorials?: ITutorials[];
 }
 
 const Tutorials: React.FC<TutorialsProps> = ({ tutorials }) => {
@@ -28,8 +29,8 @@ const Tutorials: React.FC<TutorialsProps> = ({ tutorials }) => {
         </UnstyledAnchor>
       </HeaderSegment>
       <Cards>
-        {tutorials?.slice(0, 6).map((tutorial, idx) => {
-          return <TutorialCard key={tutorial.frontMatter.id} index={idx} tutorial={tutorial} />;
+        {tutorials.map((tutorial, idx) => {
+          return <TutorialCard key={tutorial.id} index={idx} tutorial={tutorial} />;
         })}
       </Cards>
     </Box>

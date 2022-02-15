@@ -17,6 +17,6 @@ Agent bot is a feature to integrate your Kata Platform chatbot with Omnichat as 
 5. Fill in the **agent bot name and description**, then choose **inboxes** that you’ve created before. You can add multiple inboxes in 1 agent bot setup.
 6. Finally, you’re ready to finalize the first step by clicking the **generate access token** button. You must paste the access token into Platform. Go to create [simple chatbot handover tutorial](/tutorials/create-simple-bot-handover-from-chatbot-to-agent) to continue
 
-    ![Figure 10](/assets/images/products/kata-omnichat/image10.png)
+    ![Figure 10](/assets/images/products/kata-omnichat/image10.webp)
 
     > **Figure 10:** Bot Generate Access Token

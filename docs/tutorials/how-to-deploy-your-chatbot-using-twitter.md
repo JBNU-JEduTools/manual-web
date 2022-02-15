@@ -1,8 +1,9 @@
 ---
+layout: tutorial
 title: How to deploy your chatbot using Twitter
 id: how-to-deploy-your-chatbot-using-twitter
 product: kata-platform
-imgSpot: /assets/images/tutorial/spot-twitter.png
+imgSpot: /assets/images/tutorial/spot-twitter.webp
 date: '2021-08-26T07:00:00+07:00'
 ---
 

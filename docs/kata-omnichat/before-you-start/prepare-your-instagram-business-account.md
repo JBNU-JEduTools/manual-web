@@ -10,19 +10,19 @@ section: Before You Start
 2. Click the bar icon in the top right of your profile account, then go to **Settings > Account**
 3. Scroll down to the bottom of the Account page and click **Switch to Professional Account**. Following the steps to switch the account by clicking **Continue** button
 
-    ![Figure 1](/assets/images/products/kata-omnichat/image1.png)
+    ![Figure 1](/assets/images/products/kata-omnichat/image1.webp)
 
     > **Figure 1:** Instagram Account Setting
 
 4. Choose **Categories** of your business account as listed. You can also switch on the categories into **“Display on Profile”**
 
-    ![Figure 2](/assets/images/products/kata-omnichat/image2.png)
+    ![Figure 2](/assets/images/products/kata-omnichat/image2.webp)
 
     > **Figure 2:** Business Account Categories
 
 5. Choose the business type, whether a **Business** or a **Creator**
 
-    ![Figure 3](/assets/images/products/kata-omnichat/image3.png)
+    ![Figure 3](/assets/images/products/kata-omnichat/image3.webp)
 
     > **Figure 3:** Choose your business type
 
@@ -31,19 +31,19 @@ section: Before You Start
 8. Click the Add **[your Instagram account name]** button to add your Instagram business account to the Account Center. Finish the setup of connecting to Account Center by clicking **“Yes, Finish setup”**
 9. Choose your Facebook Page that wants to be connected to your Instagram business account or click **Create a new Facebook Page**. If you click **Create a new Facebook page**, you have to fill in the **Page Name** and **Page Category**. The last step is to click the **Create** button after you fill in. If your chose any Facebook Page in the list, then you just need to click **Next** to finish the process
 
-    ![Figure 4](/assets/images/products/kata-omnichat/image4.png)
+    ![Figure 4](/assets/images/products/kata-omnichat/image4.webp)
 
     > **Figure 4:** Connect your facebook page
 
 10. Following the 4 steps to set up your professional account: Complete your profile, get inspired by following some related accounts, grow your audience by inviting your relatives, share 3 new contents to view insights and click to explore professional tools to see insights and promotions
 
-    ![Figure 5](/assets/images/products/kata-omnichat/image5.png)
+    ![Figure 5](/assets/images/products/kata-omnichat/image5.webp)
 
     > **Figure 5:** Professional Account Set Up
 
 11. After setting up your business account, go to **Settings > Privacy > Messages**. Scroll down to the bottom of the page and find **Allow access to messages**. Switch on this to allow the access for any messages
 
-    ![Figure 6](/assets/images/products/kata-omnichat/image6.png)
+    ![Figure 6](/assets/images/products/kata-omnichat/image6.webp)
 
     > **Figure 6:** Message Controls Setting
 

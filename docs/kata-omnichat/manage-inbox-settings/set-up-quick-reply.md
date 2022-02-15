@@ -15,7 +15,7 @@ The quick replies is the feature that you can manage any **Quick Reply** that th
 5. Click **Add New Quick reply**
 6. Enter the quick reply name and contents details. Remember that in 1 quick reply you can have 13 contents, so make sure you click **Enter** after inputting the content
 
-    ![Figure 24](/assets/images/products/kata-omnichat/image24.png)
+    ![Figure 24](/assets/images/products/kata-omnichat/image24.webp)
 
     > **Figure 24.** Set up quick reply
 
@@ -23,6 +23,6 @@ The quick replies is the feature that you can manage any **Quick Reply** that th
 8. Click quick reply on the text box, choose the quick reply you want to use
 9. Text something first to your customer, then the content will come after type any text
 
-    ![Figure 25](/assets/images/products/kata-omnichat/image25.png)
+    ![Figure 25](/assets/images/products/kata-omnichat/image25.webp)
 
     > **Figure 25.** Quick reply result

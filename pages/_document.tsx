@@ -7,13 +7,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Meta />
-        <Head>
-          <link rel="stylesheet preload" href="/assets/fonts/Inter.woff" as="font" crossOrigin="true" />
-          <link rel="stylesheet preload" href="/assets/fonts/Inter-Bold.woff" as="font" crossOrigin="true" />
-          <link rel="stylesheet preload" href="/assets/fonts/SF-Pro-Text.ttf" as="font" crossOrigin="true" />
-          <link rel="stylesheet preload" href="/assets/fonts/RobotoMono.woff" as="font" crossOrigin="true" />
-          <link rel="stylesheet preload" href="/assets/fonts/RobotoMono-Bold.woff" as="font" crossOrigin="true" />
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />

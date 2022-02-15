@@ -32,7 +32,7 @@ We separate the categories of the project into two: Paid Project & Free Project.
 
 -   We offer an exclusive TPS limit for each **Paid Project**. Also, all paid projects will have a verified badge in the Kata Platform.
 
-![Image 1 alt](/assets/images/products/kata-platform/faqs/general-faqs/image1.png)
+![Image 1 alt](/assets/images/products/kata-platform/faqs/general-faqs/image1.webp)
 
 > **Figure 1**: Badge for a paid project.
 

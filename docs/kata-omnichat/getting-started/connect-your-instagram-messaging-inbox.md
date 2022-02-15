@@ -10,6 +10,6 @@ section: Getting Started
 2. You will see the **Get Started** page of Instagram Messaging and follow all the steps, including answering some integration questions and mini survey.
 3. The system will automatically check the eligibility of your Instagram accounts. If it’s eligible, you will get a success message and if it’s not eligible you will be declined to use Instagram Messaging in Kata Omnichat.
 
-    ![Figure 7](/assets/images/products/kata-omnichat/image7.png)
+    ![Figure 7](/assets/images/products/kata-omnichat/image7.webp)
 
     > **Figure 7:** Connect Instagram Inbox

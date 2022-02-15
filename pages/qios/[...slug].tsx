@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import { getMdxNode, getMdxPaths } from 'next-mdx/server';
 import { Text, UnstyledAnchor } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
@@ -9,32 +8,32 @@ import { DocsHeader } from 'components/docs/DocsHeader';
 
 import { FooterWrapper, Footer } from 'components/layout/Footer';
 import { TocJsonWrapper } from 'components/docs/TableOfContents';
-import remarkSlug from 'remark-slug';
-import rehypeAutolinkHeadings from 'remark-autolink-headings';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
 import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
 import { MarkdownContent } from 'components/page/Markdown';
-import renderAst from 'utils/renderAst';
 import { DocsContainer } from 'components/layout/Container';
 import IndexLayout from 'components/layouts';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
-import { GetStaticPropsContext, PreviewData } from 'next';
 import { getPageUrl } from 'utils/helpers';
 import { PaginationDocs } from 'components/docs/Pagination';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
+import { allQios, Qios } from 'contentlayer/generated';
+import Image from 'next/image';
+import { useMDXComponent } from 'next-contentlayer/hooks';
+import MDXComponents from 'components/mdx/MDXComponents';
 
 interface QiosPageTemplateProps {
-  post: any;
+  post: Qios;
   toc: any;
   listToc: string[];
 }
 
 const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
-  const frontMatter = post.frontMatter;
-  const prevPage = getPageUrl(post.frontMatter.prev, 'qios');
-  const nextPage = getPageUrl(post.frontMatter.next, 'qios');
+  const MDXContent = useMDXComponent(post.body.code);
+  const prevPage = getPageUrl(post.prev, 'qios');
+  const nextPage = getPageUrl(post.next, 'qios');
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
@@ -63,9 +62,9 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
   return (
     <Page docsPage>
       <Head>
-        <title>{frontMatter.title} &middot; Qios Documentation</title>
+        <title>{post.title} &middot; Qios Documentation</title>
         <meta name="description" content={post.excerpt} />
-        <meta property="og:title" content={frontMatter.title} />
+        <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
       </Head>
       <IndexLayout navHidden>
@@ -76,9 +75,15 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/">
+                  <Link href="/" passHref>
                     <UnstyledAnchor>
-                      <img src="/assets/images/products/qios-logo-docs.svg" />
+                      <Image
+                        layout="fixed"
+                        width={150}
+                        height={40}
+                        alt="Qios Documentations"
+                        src="/assets/images/products/qios-logo-docs.svg"
+                      />
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>
@@ -95,11 +100,13 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
                 items={[
                   { url: '/', urlDisplay: 'Home' },
                   { url: '/qios', urlDisplay: 'Qios' },
-                  { urlDisplay: frontMatter.section },
+                  { urlDisplay: post.section },
                 ]}
               />
-              <DocsHeader title={frontMatter.title} />
-              <MarkdownContent>{renderAst(post.mdx.renderedOutput)}</MarkdownContent>
+              <DocsHeader title={post.title} />
+              <MarkdownContent>
+                <MDXContent components={MDXComponents} />
+              </MarkdownContent>
               {(prevPage || nextPage) && <PaginationDocs prevPage={prevPage} nextPage={nextPage} />}
               <DocsHelpful />
               <FooterWrapper>
@@ -118,18 +125,14 @@ export default QiosPageTemplate;
 
 export async function getStaticPaths() {
   return {
-    paths: await getMdxPaths('qios'),
+    paths: await allQios.map((p) => ({ params: { slug: p.slug } })),
     fallback: false,
   };
 }
 
-export async function getStaticProps(context: string | GetStaticPropsContext<NodeJS.Dict<string[]>, PreviewData>) {
-  const post = await getMdxNode('qios', context, {
-    mdxOptions: {
-      remarkPlugins: [remarkSlug, rehypeAutolinkHeadings],
-    },
-  });
-
+export async function getStaticProps({ params }) {
+  const slugStringify = JSON.stringify(params.slug);
+  const post = allQios.find((post) => JSON.stringify(post.slug) === slugStringify);
   const toc = await import('docs/toc-qios.json');
 
   if (!toc) {

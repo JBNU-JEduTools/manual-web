@@ -16,7 +16,7 @@ Kata Platform will show these error messages in 3 ways:
 2. When you execute a command `kata push` in Kata CLI.
 3. When end-users receive the error message **“Maaf terjadi kesalahan pada sistem”**. FYI, you can change the error copy by following this guide. Kata Platform will log it into the Error Log feature. This feature is available in the menu: **Flow > Error Log**.
 
-![Image 1 alt](/assets/images/products/kata-platform/error-log/image1.png)
+![Image 1 alt](/assets/images/products/kata-platform/error-log/image1.webp)
 
 > **Figure 1**: Error Log feature is located.
 
@@ -43,7 +43,7 @@ intents:
 
 For example, you have the following case.
 
-![Image 2 alt](/assets/images/products/kata-platform/error-log/image2.png)
+![Image 2 alt](/assets/images/products/kata-platform/error-log/image2.webp)
 
 > **Figure 2**: Error message example.
 
@@ -77,7 +77,7 @@ If the above solution still has issues, then compare the defined actions you hav
 
 For example you have a case as follows.
 
-![Image 3 alt](/assets/images/products/kata-platform/error-log/image3.png)
+![Image 3 alt](/assets/images/products/kata-platform/error-log/image3.webp)
 
 > **Figure 3**: Error message example.
 
@@ -97,13 +97,13 @@ or
 method(methodParam, methodParam2, ...)
 ```
 
-| Error code                                                    | Explanation                                                                                                                                                                                   |
-| ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Error code                                                | Explanation                                                                                                                                                                                   |
+| --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Error Code 1005-Cannot create method `${head}: {message}` | This error message will show if you push-ing your bot via Kata CLI. It means there is an error when creating the method. In this error message, you will find a specific error in the method. |
 
 For example you have a case as follows.
 
-![Image 4 alt](/assets/images/products/kata-platform/error-log/image4.png)
+![Image 4 alt](/assets/images/products/kata-platform/error-log/image4.webp)
 
 > **Figure 4**: Error message example.
 
@@ -119,7 +119,7 @@ Check the method name function syntax if there are any typos.
 
 For example you have a case as follows.
 
-![Image 5 alt](/assets/images/products/kata-platform/error-log/image5.png)
+![Image 5 alt](/assets/images/products/kata-platform/error-log/image5.webp)
 
 > **Figure 5**: Error message example.
 
@@ -143,7 +143,7 @@ You must check the method name from the error message and write code for the met
 
 For example you have a case as Figure 6. It means your key mapping named `tryTransit` has an typo or incorrectly mapped with `tryValue` value.
 
-![Image 6 alt](/assets/images/products/kata-platform/error-log/image6.png)
+![Image 6 alt](/assets/images/products/kata-platform/error-log/image6.webp)
 
 > **Figure 6**: Error message example.
 
@@ -184,7 +184,7 @@ Check definition in the method name.
 
 Here is the error example.
 
-![Image 7 alt](/assets/images/products/kata-platform/error-log/image7.png)
+![Image 7 alt](/assets/images/products/kata-platform/error-log/image7.webp)
 
 > **Figure 7**: Cannot find NLU named `misccc` in NLUs mapping.
 
@@ -198,7 +198,7 @@ Check the NLU definitions in labels.
 
 Here is the error example:
 
-![Image 8 alt](/assets/images/products/kata-platform/error-log/image8.png)
+![Image 8 alt](/assets/images/products/kata-platform/error-log/image8.webp)
 
 > **Figure 8**: Cannot execute similar NLU with different expressions and processor.
 
@@ -212,7 +212,7 @@ Check method definition on your bot code.
 
 Here is the error example:
 
-![Image 9 alt](/assets/images/products/kata-platform/error-log/image9.png)
+![Image 9 alt](/assets/images/products/kata-platform/error-log/image9.webp)
 
 > **Figure 9**: Cannot publish because no state is found.
 

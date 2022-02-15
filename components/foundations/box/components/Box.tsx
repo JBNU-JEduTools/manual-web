@@ -28,7 +28,7 @@ import {
   width,
   WidthProps,
   zIndex,
-  ZIndexProps
+  ZIndexProps,
 } from 'styled-system';
 
 import { styledWrapper } from 'utils/primitives';

@@ -26,7 +26,7 @@ invalidate: 152053926476
 
 Always use a transition to the state itself named “default” if there are any branching state.
 
-![Image 1 alt](/assets/images/products/kata-platform/faqs/bot-development-faqs/image1.png)
+![Image 1 alt](/assets/images/products/kata-platform/faqs/bot-development-faqs/image1.webp)
 
 ```yaml
 states:

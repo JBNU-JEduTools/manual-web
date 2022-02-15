@@ -12,12 +12,12 @@ As an admin or agent, you can see the conversation handled by the bot. In this c
 2. Choose **Bot**
 3. To take over the conversation, click the **Open** button which is placed next in the agents list dropdown
 
-    ![Figure 46](/assets/images/products/kata-omnichat/image46.png)
+    ![Figure 46](/assets/images/products/kata-omnichat/image46.webp)
 
     > **Figure 46.** Take-over bot
 
 4. Conversation with chatbot is paused and you can type to reply to the end-user. Your reply will be seen in the blue message.
 
-    ![Figure 47](/assets/images/products/kata-omnichat/image47.png)
+    ![Figure 47](/assets/images/products/kata-omnichat/image47.webp)
 
     > **Figure 47.** Agent Take-over conversation

@@ -12,7 +12,7 @@ When you edit the role, your agents can access the features as their role. Follo
 
 1. Go to Home, then click **Settings**
 
-    ![Figure 31](/assets/images/products/kata-omnichat/image31.png)
+    ![Figure 31](/assets/images/products/kata-omnichat/image31.webp)
 
     > **Figure 31.** Agents Setting
 
@@ -20,7 +20,7 @@ When you edit the role, your agents can access the features as their role. Follo
 3. Enter the name and the role you want to assign
 4. Click the **Edit Agent** button, then if successful, “Agent update successfully” will be appeared
 
-    ![Figure 32](/assets/images/products/kata-omnichat/image32.png)
+    ![Figure 32](/assets/images/products/kata-omnichat/image32.webp)
 
     > **Figure 32.** Edit Agents
 

@@ -48,7 +48,7 @@ const reboot = css`
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #0E0E2C;
+    color: #0e0e2c;
     text-align: left;
     background-color: ${theme.colors.greylight02};
   }
@@ -99,9 +99,12 @@ const reboot = css`
     margin-top: -64px;
   }
 
-  p, ol, ul, li {
+  p,
+  ol,
+  ul,
+  li {
     font-family: 'Inter', sans-serif !important;
-    color: #0E0E2C;
+    color: #0e0e2c;
     margin-top: 0;
     margin-bottom: 1rem;
   }

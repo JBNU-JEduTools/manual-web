@@ -38,7 +38,7 @@ const HeaderInner: React.FC<HeaderInnerProps> = ({ children, className, ...rest 
 );
 
 HeaderInner.defaultProps = {
-  className: undefined
+  className: undefined,
 };
 
 export default HeaderInner;

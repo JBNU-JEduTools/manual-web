@@ -8,6 +8,7 @@ import InputText from '../InputText';
 import { ProductBadge } from 'components/badge';
 import { PRODUCTS_DICT } from 'utils/constants';
 import { IconOutgoing } from '@aksara-ui/icons';
+import Image from 'next/image';
 
 interface SearchPageProps {
   lng?: string;
@@ -331,7 +332,8 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                 }
               }}
             />
-          </div>}
+          </div>
+        }
       </Root>
     );
   }

@@ -10,6 +10,6 @@ section: Manage Your Conversation
 2. Customers can send to and receive messages from agents using these types of messages: text, image, video, and document
 3. Agents can directly reply to customers using text, image, video and document. Or, takeover the conversation first from agent bot before replying it
 
-    ![Figure 39](/assets/images/products/kata-omnichat/image39.png)
+    ![Figure 39](/assets/images/products/kata-omnichat/image39.webp)
 
     > **Figure 39.** Whatsapp Business API conversation in agent-side

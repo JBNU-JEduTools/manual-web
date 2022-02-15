@@ -155,12 +155,12 @@ const code = css`
     align-items: flex-start;
     padding: 16px;
     background: ${theme.colors.greylight03};
-    border: 1px solid ${theme.colors.greylight04}
+    border: 1px solid ${theme.colors.greylight04};
   }
 
   blockquote > p {
     font-size: 14px !important;
-    color: #19191B !important;
+    color: #19191b !important;
   }
 
   /* overrides color-values for the Line Numbers plugin

@@ -11,7 +11,7 @@ After creating the inbox, you can configure your inbox setting as the feature pr
 2. After clicking Inboxes, you will be directed to the Inboxes Settings page
 3. Choose the inbox you want to configure, by clicking on the **Settings** button
 
-    ![Figure 22](/assets/images/products/kata-omnichat/image22.png)
+    ![Figure 22](/assets/images/products/kata-omnichat/image22.webp)
 
     > **Figure 22.** Inbox Setting
 
@@ -103,6 +103,6 @@ In the collaborator’s section, you can assign an agent to your inbox or delete
 2. Choose the agent that you want to assign, or click (X) to delete the existing agents
 3. Click update, then if successful, “_Agent updated successfully_” message will be appeared
 
-![Figure 23](/assets/images/products/kata-omnichat/image23.png)
+![Figure 23](/assets/images/products/kata-omnichat/image23.webp)
 
 > **Figure 23.** Manage agent to inbox

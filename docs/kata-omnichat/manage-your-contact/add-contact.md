@@ -13,7 +13,7 @@ Besides getting contact from interaction, you can add a contact by yourself.
 3. Click the **Add Contact** button on the upper right corner
 4. Enter the **contact details** as the form that has been provided by Omnichat
 
-    ![Figure 51](/assets/images/products/kata-omnichat/image51.png)
+    ![Figure 51](/assets/images/products/kata-omnichat/image51.webp)
 
     > **Figure 51.** Add Contact
 

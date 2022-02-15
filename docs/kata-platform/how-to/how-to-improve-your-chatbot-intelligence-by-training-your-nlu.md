@@ -16,7 +16,7 @@ This guide will teach you how to integrate NLU into your chatbot to recognize sp
 
 1. To create an entity, go to the **NLU** menu. Then, click the **Entity** menu.
 
-![Image 1 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image1.png)
+![Image 1 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image1.webp)
 
 > **Figure 1**: NLU and entity menu.
 
@@ -27,7 +27,7 @@ This guide will teach you how to integrate NLU into your chatbot to recognize sp
     - **Dictionary** is a word tagger which has keys and labels. It will form an array.
     - The **Phrase** is a word tagger.
 
-![Image 2 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image2.png)
+![Image 2 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image2.webp)
 
 > **Figure 2**: Entity type “dictionary”
 
@@ -51,7 +51,7 @@ After creating an entity and labels, you have to train them.
 
 1. Go to **NLU > Training** menu.
 
-![Image 3 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image3.png)
+![Image 3 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image3.webp)
 
 > **Figure 3**: Training model position.
 
@@ -63,17 +63,17 @@ These are steps to train your NLU using single training:
 
 1. For example, to train 1 sentence for your NLU, type a sentence, then press “enter” on the keyboard to review the training. For example `Saya ingin membeli kopi susu`.
 
-![Image 4 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image4.png)
+![Image 4 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image4.webp)
 
 > **Figure 4**: Training box.
 
 2. Next, you can preview the sentence first and tag your entities. You can block or double click in a word to tag a word. Then, it will show a dropdown to choose entities and labels in format `[entity name]:[label name]`. You can select a dropdown at the bottom of the entities list for tagging a sentence.
 
-![Image 5 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image5.png)
+![Image 5 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image5.webp)
 
 > **Figure 5**: Tag a word using an entity type dictionary or phrase.
 
-![Image 6 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image6.png)
+![Image 6 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image6.webp)
 
 > **Figure 6**: Tag a sentence using entity type trait.
 
@@ -92,7 +92,7 @@ These are steps to train your NLU using bulk training:
 7. Wait for the upload process.
 8. After the upload is complete, you can review the training data file in the Platform.
 
-![Image 7 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image7.png)
+![Image 7 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image7.webp)
 
 > **Figure 7**: Review training data
 
@@ -100,7 +100,7 @@ These are steps to train your NLU using bulk training:
 10. You will see a customer satisfaction survey after using the feature. Fill in the survey, then click **X** to close the dialog.
 11. You have successfully trained your NLU with the uploaded data.
 
-![Image 8 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image8.png)
+![Image 8 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image8.webp)
 
 > **Figure 8**: Successfully trained.
 
@@ -112,7 +112,7 @@ You can test if your NLU is good enough or wrong in the Kata Platform by using t
 
 1. Click the **Test NLU** button on the right bottom of your screen.
 
-![Image 9 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image9.png)
+![Image 9 alt](/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image9.webp)
 
 > **Figure 9**: Test NLU location.
 

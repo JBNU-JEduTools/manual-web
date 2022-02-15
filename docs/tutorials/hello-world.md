@@ -2,7 +2,7 @@
 layout: tutorial
 id: hello-world
 title: Creating a Simple Hello World Chatbot
-imgSpot: /assets/images/tutorial/spot-hello-world.png
+imgSpot: /assets/images/tutorial/spot-hello-world.webp
 product: kata-platform
 description: This is a quick start how to build a 'Hello World' chatbot
 next: bot-studio-tutorial
@@ -16,13 +16,13 @@ First login/sign up to <a href="https://platform.kata.ai/login" target="_blank">
 And click on “Create Project” and fill in the form. Each project contains one bot design, one NL, and one CMS.
 You will be directed to this page.
 
-![bhw-1](/assets/images/tutorial/bot-hw/bot-hw1.png)
+![bhw-1](/assets/images/tutorial/bot-hw/bot-hw1.webp)
 
 ### Noted
 
 You can try bot in Menu Test Chatbot (in the bottom right corner).
 
-![bhw-1test](/assets/images/tutorial/bot-hw/bot-hw1test.png)
+![bhw-1test](/assets/images/tutorial/bot-hw/bot-hw1test.webp)
 
 ## Create a Hello Flow
 
@@ -30,11 +30,11 @@ You can try bot in Menu Test Chatbot (in the bottom right corner).
 
 You may find a flow that is created automatically by the system or default flow. We will add a new flow called `helloFlow`. Set flow to active, and persistent.
 
-![bhw-2](/assets/images/tutorial/bot-hw/bot-hw2.png)
+![bhw-2](/assets/images/tutorial/bot-hw/bot-hw2.webp)
 
 It will be shown like this.
 
-![bhw-3](/assets/images/tutorial/bot-hw/bot-hw3.png)
+![bhw-3](/assets/images/tutorial/bot-hw/bot-hw3.webp)
 
 ### Create keyword NLU for helloFlow
 
@@ -42,19 +42,19 @@ In this step, we will define the NLU (Natural Language Understanding) to trigger
 
 We will name it hello_NLU
 
-![bhw-4](/assets/images/tutorial/bot-hw/bot-hw4.png)
+![bhw-4](/assets/images/tutorial/bot-hw/bot-hw4.webp)
 
 It will be shown like this.
 
-![bhw-5](/assets/images/tutorial/bot-hw/bot-hw5.png)
+![bhw-5](/assets/images/tutorial/bot-hw/bot-hw5.webp)
 
 ### Create Intent
 
 Go back to Conversation flow menu and choose intent. Click on “+” button in Conversation Flow menu. Set the Intent name to `helloIntent` and choose option as initial.
 Add a classifier and choose NLU that we create. We are gonna match it with `helloWorld` (keyword in NLU).
 
-![bhw-6](/assets/images/tutorial/bot-hw/bot-hw6.png)
-![bhw-7](/assets/images/tutorial/bot-hw/bot-hw7.png)
+![bhw-6](/assets/images/tutorial/bot-hw/bot-hw6.webp)
+![bhw-7](/assets/images/tutorial/bot-hw/bot-hw7.webp)
 
 ## Create action for showing Hello World
 
@@ -62,19 +62,19 @@ Add a classifier and choose NLU that we create. We are gonna match it with `hell
 
 Choose a states and click on "+" button. We will create a initial state. Set name to `init` and choose Initial State, and click create.
 
-![bhw-8](/assets/images/tutorial/bot-hw/bot-hw8.png)
+![bhw-8](/assets/images/tutorial/bot-hw/bot-hw8.webp)
 
 We will create another state for showing the response in our bot. Choose action to text.
 
-![bhw-9](/assets/images/tutorial/bot-hw/bot-hw9.png)
+![bhw-9](/assets/images/tutorial/bot-hw/bot-hw9.webp)
 
 Add text response to Hello World!.
 
-![bhw-10](/assets/images/tutorial/bot-hw/bot-hw10.png)
+![bhw-10](/assets/images/tutorial/bot-hw/bot-hw10.webp)
 
 Action should be shown like this.
 
-![bhw-11](/assets/images/tutorial/bot-hw/bot-hw11.png)
+![bhw-11](/assets/images/tutorial/bot-hw/bot-hw11.webp)
 
 ### Create Transation
 
@@ -82,11 +82,11 @@ Now, we will create a transition between two states that we have created before.
 
 Click the green dot on `init` state, and a connector line will appear. Connect that line to `hello` state. If you do it right, a Create Transition form will appear.
 
-![bhw-12](/assets/images/tutorial/bot-hw/bot-hw12.png)
+![bhw-12](/assets/images/tutorial/bot-hw/bot-hw12.webp)
 
 Set the condition to `intent=='helloIntent'` and click Create.
 
-![bhw-13](/assets/images/tutorial/bot-hw/bot-hw13.png)
+![bhw-13](/assets/images/tutorial/bot-hw/bot-hw13.webp)
 
 ## Testing
 
@@ -94,4 +94,4 @@ Before this step don't forget to **Publish** your change. And then try your bot 
 
 Viola! You have succeed build your first bot!
 
-![bhw-14](/assets/images/tutorial/bot-hw/bot-hw14.png)
+![bhw-14](/assets/images/tutorial/bot-hw/bot-hw14.webp)

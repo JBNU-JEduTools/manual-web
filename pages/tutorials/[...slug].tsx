@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import { getMdxNode, getMdxPaths } from 'next-mdx/server';
 import { Text, UnstyledAnchor } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
@@ -9,8 +8,6 @@ import { DocsHeader } from 'components/docs/DocsHeader';
 
 import { FooterWrapper, Footer } from 'components/layout/Footer';
 import { TocJsonWrapper } from 'components/docs/TableOfContents';
-import remarkSlug from 'remark-slug';
-import rehypeAutolinkHeadings from 'remark-autolink-headings';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
 import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
@@ -22,16 +19,16 @@ import IndexLayout from 'components/layouts';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 import { PRODUCTS_DICT } from 'utils/constants';
+import { allTutorials, Tutorials } from 'contentlayer/generated';
+import Image from 'next/image';
 
 interface TutorialPageTemplateProps {
-  post: any;
+  post: Tutorials;
   toc: any;
   listToc: string[];
 }
 
-const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, listToc }) => {
-  const frontMatter = post.frontMatter;
-
+const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }) => {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     router.push('/404');
@@ -53,9 +50,9 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
   return (
     <Page suppressHydrationWarning={true} docsPage>
       <Head>
-        <title>{frontMatter.title} &middot; Kata Platform Documentation</title>
+        <title>{post.title} &middot; Kata Platform Documentation</title>
         <meta name="description" content={post.excerpt} />
-        <meta property="og:title" content={frontMatter.title} />
+        <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
       </Head>
       <IndexLayout navHidden>
@@ -66,9 +63,15 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/">
+                  <Link href="/" passHref>
                     <UnstyledAnchor>
-                      <img src="/assets/images/logo-docs.svg" />
+                      <Image
+                        layout="fixed"
+                        width={150}
+                        height={40}
+                        src="/assets/images/logo-docs.svg"
+                        alt="Kata Documentations"
+                      />
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>
@@ -85,12 +88,12 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc, 
                 items={[
                   { url: '/', urlDisplay: 'Home' },
                   { url: '/tutorials', urlDisplay: 'All Tutorials' },
-                  { url: `/${frontMatter.product}`, urlDisplay: PRODUCTS_DICT[frontMatter.product] },
+                  { url: `/${post.product}`, urlDisplay: PRODUCTS_DICT[post.product] },
                   { urlDisplay: 'Tutorial' },
                 ]}
               />
-              <DocsHeader title={frontMatter.title} />
-              <MarkdownContent>{renderAst(post.mdx.renderedOutput)}</MarkdownContent>
+              <DocsHeader title={post.title} />
+              <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
               <DocsHelpful />
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
@@ -108,25 +111,15 @@ export default TutorialPageTemplate;
 
 export async function getStaticPaths() {
   return {
-    paths: await getMdxPaths('tutorialPost'),
+    paths: await allTutorials.map((p) => ({ params: { slug: p.slug } })),
     fallback: false,
   };
 }
 
-export async function getStaticProps(context: any) {
-  const post = await getMdxNode('tutorialPost', context, {
-    mdxOptions: {
-      remarkPlugins: [remarkSlug, rehypeAutolinkHeadings],
-    },
-  });
-
-  const toc = await require(`docs/navigation/tutorials/${context.params?.slug[0]}.json`);
-
-  if (!post) {
-    return {
-      notFound: true,
-    };
-  }
+export async function getStaticProps({ params }) {
+  const slugStringify = JSON.stringify(params.slug);
+  const post = allTutorials.find((post) => JSON.stringify(post.slug) === slugStringify);
+  const toc = await require(`docs/navigation/tutorials/${params?.slug[0]}.json`);
 
   return {
     props: {

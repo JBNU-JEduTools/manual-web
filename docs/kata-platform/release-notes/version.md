@@ -6,7 +6,7 @@ section: Release Notes
 
 ## 3.23.1
 
-<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
+<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.webp" />
 
 ### What's New ⭐️
 
@@ -24,7 +24,7 @@ We develop a lot of improvements for the Kata Platform in user experience and th
 
 ## 3.23.0
 
-<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
+<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.webp" />
 
 ### What's New ⭐️
 
@@ -44,7 +44,7 @@ We develop a lot of improvements for the Kata Platform in user experience and th
 
 ## 3.22.0
 
-<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
+<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.webp" />
 
 ### What's New ⭐️
 
@@ -63,7 +63,7 @@ Here are the new features:
 
 ## 3.21.0
 
-<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
+<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.webp" />
 
 ### What's New
 
@@ -81,7 +81,7 @@ When doing training for the NL models, you may incorrectly put a tag and prompt 
 
 ## 3.19.0
 
-<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
+<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.webp" />
 
 We always listen to our customers for their pain points, bug findings, required fast improvements and so on. So that, were doing improvements and several bugfix in January until March 2021, here is the list:
 
@@ -108,37 +108,37 @@ We always listen to our customers for their pain points, bug findings, required 
 
 ## 3.15.0
 
-<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.png" />
+<img className="borderless" alt="Kata Platform Illustration" src="/assets/images/products/kata-platform/release-notes/kata-platform-illustration.webp" />
 
 We are proud to announce a whole new experience with our analytics platform.
 
 You can see more detailed user data, namely: New and Returning Users. Here you can see the number of new and returning user, also the total of both of them, based on filtering environment, channels, and dates. You also be able to see the total number of Active Users, Sessions, New Users, and Messages.
 
-![analytics-1](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-1.png)
+![analytics-1](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-1.webp)
 
 You can get daily user activity data based on the selected date range, showing in a line chart. Get daily data for sessions, messages, active users and the newest is the number of new users. The data is also available offline by downloading it first.
 
-![analytics-2](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-2.png)
+![analytics-2](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-2.webp)
 
 Get insights to blast messages in peak hours by looking at the total messages in the 7 days and 24 hours. You can do a hover in each block to see the number of incoming messages you get every hour on the selected date range.
 
-![analytics-3](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-3.png)
+![analytics-3](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-3.webp)
 
 Did you know that it's important to pay attention to how many users come back to chatting with the chatbot? Now we have a Cohort table to display this data. You can view user retention data from daily, weekly, and monthly.
 
-![analytics-4](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-4.png)
+![analytics-4](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-4.webp)
 
 In the Topics menu, you can see the most topic that users are looking for. You can see the Top Flows, Top Intents, Top States, and Top Messages. Now, we also be able to download those insights into csv files.
 
-![analytics-5](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-5.png)
+![analytics-5](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-5.webp)
 
 In addition, we also have a Word Cloud so we see the most common words used by user at a glance.
 
-![analytics-6](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-6.png)
+![analytics-6](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-6.webp)
 
 In the Transcript menu, we can see the conversation history between user and chat bot. Now, we can sort the start date, end date, incoming, outgoing, and duration into ascending and descending sequence. We also be able to search transcript by user ID.
 
-![analytics-7](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-7.png)
+![analytics-7](/assets/images/products/kata-platform/release-notes/platform-3.15.0/analytics-7.webp)
 
 ## 3.9.0
 
@@ -146,15 +146,15 @@ In the Transcript menu, we can see the conversation history between user and cha
 
 Added **Transcript List** which provides User ID, Start Date, End Date, Duration, Incoming, and Outgoing information.
 
-![Transcript List](/assets/images/products/kata-platform/release-notes/platform-3.9.0/transcript-1.png)
+![Transcript List](/assets/images/products/kata-platform/release-notes/platform-3.9.0/transcript-1.webp)
 
 By clicking one of the Transcript List row, project owner can see **Transcript Detail** which provide the chat history of user and bot. Also, there is **eye icon** on the bottom of each bubble which shows message detail.
 
-![Transcript Detail](/assets/images/products/kata-platform/release-notes/platform-3.9.0/transcript-2.png)
+![Transcript Detail](/assets/images/products/kata-platform/release-notes/platform-3.9.0/transcript-2.webp)
 
 Furthermore, project owner can **filter** the Transcript List by Environment, Channel, and Date. In the date picker, when project owner choose a date more than 2 months ago, there will be a **pop-up message** which inform them to contact us.
 
-![Transcript Data Limit](/assets/images/products/kata-platform/release-notes/platform-3.9.0/transcript-3.png)
+![Transcript Data Limit](/assets/images/products/kata-platform/release-notes/platform-3.9.0/transcript-3.webp)
 
 ## 3.8.0
 
@@ -164,17 +164,17 @@ Basic analytics, which was previously available on Kata Platform 2.5, is now mak
 
 You can now see the total active users, total sessions, and total incoming messages of your bot (also available in line graph). Find it on **Analytics > Users** menu.
 
-![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.8.0/analytics-1.png)
+![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.8.0/analytics-1.webp)
 
 Gain high-level insights of your conversations by seeing top flows, top intents, top states, and top messages of your bot. You’ll see those stats on **Analytics > Conversation** menu.
 
-![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.8.0/analytics-2.png)
+![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.8.0/analytics-2.webp)
 
 See the details of your conversations on **Analytics > Transcript** menu. Here, you’ll find the chat history between the user and your bot, from the duration of the conversation to the message details
 
-![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.8.0/analytics-3.png)
+![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.8.0/analytics-3.webp)
 
-![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.8.0/analytics-4.png)
+![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.8.0/analytics-4.webp)
 
 ## 3.7.0
 
@@ -184,7 +184,7 @@ Version 3.7.0 is all about adding new channel for you to talk to your customers.
 
 Freshchat provides live chat software that helps you to engage with your website visitors, provide assistance, and convert leads to happy customers. [Read more about the integration here](https://docs.kata.ai/channels/freshchat/).
 
-![Freshchat](/assets/images/products/kata-platform/release-notes/platform-3.7.0/freshchat.png)
+![Freshchat](/assets/images/products/kata-platform/release-notes/platform-3.7.0/freshchat.webp)
 
 ## 3.6.3
 
@@ -196,9 +196,9 @@ You can now **delete trained data** on Kata NL. Some important notes:
 -   Once you delete trained data, your model will be retrained. You won’t be able to add, edit, or delete other data during the process.
 -   The retraining duration depends on the quantity of data you deleted. Deleting more data will take a longer time.
 
-![Delete Training](/assets/images/products/kata-platform/release-notes/platform-3.6.3/delete-training-1.png)
+![Delete Training](/assets/images/products/kata-platform/release-notes/platform-3.6.3/delete-training-1.webp)
 
-![Delete Training](/assets/images/products/kata-platform/release-notes/platform-3.6.3/delete-training-2.png)
+![Delete Training](/assets/images/products/kata-platform/release-notes/platform-3.6.3/delete-training-2.webp)
 
 ## 3.5.6
 
@@ -210,51 +210,51 @@ Version 3.5.6 is about download feature on Prediction Logs, Platform Analytics a
 
 Now Kata Omnichat is available as a module. We can create Qiscus Account and activate the module once we’ve already add Kata Omnichat Module to Project.
 
-![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-1.png)
+![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-1.webp)
 
-![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-2.png)
+![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-2.webp)
 
-![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-3.png)
+![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-3.webp)
 
 Automatically adding `handover` to Kata Flow
 
-![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-4.png)
+![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-4.webp)
 
 Managing agents in Dashboard if we’re an admin or supervisor
 
-![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-5.png)
+![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-5.webp)
 
 Showing list of messages in Inbox menu. Also, do chatting with customer.
 
-![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-6.png)
+![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-6.webp)
 
 Send subscription email to customer
 
-![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-7.png)
+![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-7.webp)
 
-![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-8.png)
+![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-8.webp)
 
-![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-9.png)
+![Omnichat](/assets/images/products/kata-platform/release-notes/platform-3.5.6/omnichat-9.webp)
 
 #### Download Prediction Log
 
 We can download the prediction log as CSV or JSON, within the time range or all of them
 
-![prediction-log](/assets/images/products/kata-platform/release-notes/platform-3.5.6/prediction-log.png)
+![prediction-log](/assets/images/products/kata-platform/release-notes/platform-3.5.6/prediction-log.webp)
 
 #### Analytics
 
 Brings back Analytics menu in project with new user interface
 
-![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.5.6/analytics-1.png)
+![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.5.6/analytics-1.webp)
 
 Showing statistics in users and conversation under Analytics menu.
 
-![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.5.6/analytics-2.png)
+![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.5.6/analytics-2.webp)
 
 Analytics can show conversation log for each session
 
-![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.5.6/analytics-3.png)
+![Analytics](/assets/images/products/kata-platform/release-notes/platform-3.5.6/analytics-3.webp)
 
 ## 3.5.5
 
@@ -265,13 +265,13 @@ Version 3.5.5 is dedicated for Kata CMS. Here’s what’s new:
 -   Added CMS Image Single and Table (Carousel) Elements in Kata CMS and Kata Dashboard.
 -   You can now use our CMS with new image management feature straight from Kata Dashboard.
 
-![CMS Images in Kata Dashboard](/assets/images/products/kata-platform/release-notes/platform-3.5.5/cms-images-dashboard.png)
+![CMS Images in Kata Dashboard](/assets/images/products/kata-platform/release-notes/platform-3.5.5/cms-images-dashboard.webp)
 
 -   Update image directly using Single Image & Image Table (Carousel) Elements in Kata Dashboard.
 -   Edit the button label and URL on CMS Image Table (Carousel) in Kata Dashboard.
 -   Set the carousel action with three types of action: URL, Postback, and Message on Kata CMS.
 
-![CMS Images in Kata CMS](/assets/images/products/kata-platform/release-notes/platform-3.5.5/cms-images-studio.png)
+![CMS Images in Kata CMS](/assets/images/products/kata-platform/release-notes/platform-3.5.5/cms-images-studio.webp)
 
 ## 3.4.0
 
@@ -283,7 +283,7 @@ Version 3.4.0 is all about Prediction Logs. Here’s what’s new:
 -   You can now search and filter your Prediction Logs data by entities, training status, prediction score, and date.
 -   We added a new **Ignore** feature, so you can train your NL model to, _well_, ignore sentences that don’t belong to any label. This allows your NL model to learn and improve its algorithm, ultimately improving the accuracy of your NL model.
 
-![NL Insight](/assets/images/products/kata-platform/release-notes/platform-3.4.0/nl-insight.png)
+![NL Insight](/assets/images/products/kata-platform/release-notes/platform-3.4.0/nl-insight.webp)
 
 ### Bug Fixes
 
@@ -296,7 +296,7 @@ Version 3.4.0 is all about Prediction Logs. Here’s what’s new:
 
 In this release, we're highlighting our newest feature and some recent updates to Kata Platform.
 
-![Module Screenshot](/assets/images/products/kata-platform/release-notes/platform-3.3.0/module.png)
+![Module Screenshot](/assets/images/products/kata-platform/release-notes/platform-3.3.0/module.webp)
 
 ### Modules
 
@@ -400,7 +400,7 @@ Manage your chatbot project under one roof. A project consists of one bot design
 
 Build your own CMS for your chatbot. Your client will have a full access to maintain the knowledge or content of your chatbot. Now you can build your own CMS based on your needs.
 
-![CMS Studio](/assets/images/products/kata-platform/release-notes/platform-3.0/cms-studio.png)
+![CMS Studio](/assets/images/products/kata-platform/release-notes/platform-3.0/cms-studio.webp)
 
 Once you've done building your own dashboard, you can invite users or clients to contribute to the dashboard and update your bot's knowledge easily. All in all, your dashboard will look like this:
 

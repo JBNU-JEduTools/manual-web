@@ -58,7 +58,7 @@ Here is how.
 
 1. In Kata Platform, go to the **Flow** menu. Then, click the **NLUs** menu in the sidebar.
 
-![Image 1 alt](/assets/images/products/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence/image1.png)
+![Image 1 alt](/assets/images/products/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence/image1.webp)
 
 > **Figure 1**: NLUs position in sidebar.
 
@@ -81,7 +81,7 @@ Next, you will define this NLU inside an intent. So, you will create an intent n
 
 1. Go to the **Conversation Flows** menu, then click on the **Intent** tab.
 
-![Image 2 alt](/assets/images/products/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence/image2.png)
+![Image 2 alt](/assets/images/products/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence/image2.webp)
 
 > **Figure 2**: Intent tab position.
 
@@ -97,7 +97,7 @@ Next, you will define this NLU inside an intent. So, you will create an intent n
 
 7. Your result when creating a classifier will be as follows:
 
-    ![Image 3 alt](/assets/images/products/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence/image3.png)
+    ![Image 3 alt](/assets/images/products/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence/image3.webp)
 
     > **Figure 3**: Add classifier example.
 
@@ -111,7 +111,7 @@ Next, you will define this NLU inside an intent. So, you will create an intent n
 
 9. Your result after creating the attribute will be as follows:
 
-    ![Image 4 alt](/assets/images/products/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence/image3.png)
+    ![Image 4 alt](/assets/images/products/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence/image3.webp)
 
     > **Figure 4**: Add attribute example.
 

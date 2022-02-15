@@ -30,7 +30,7 @@ Before you start, you will need to create at least one entity.
 
 1. To create an entity, go to the **NLU > Models** menu. Then, click the **Entity** menu.
 
-![Image 1 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image1.png)
+![Image 1 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image1.webp)
 
 > **Figure 1**: Models menu.
 
@@ -44,7 +44,7 @@ Here is the explanation of each field
     - **Dictionary** is a word tagger which has keys and labels. It will form an array.
     - The **Phrase** is a word tagger.
 
-![Image 2 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image2.png)
+![Image 2 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image2.webp)
 
 > **Figure 2**: Entity type "dictionary"
 
@@ -77,7 +77,7 @@ Label: statement
 
 Here is the screenshot:
 
-![Image 3 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image3.png)
+![Image 3 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image3.webp)
 
 > **Figure 3**: Create an entity.
 
@@ -92,7 +92,7 @@ Label: person
 
 Here is the screenshot:
 
-![Image 4 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image4.png)
+![Image 4 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image4.webp)
 
 > **Figure 4**: Create an entity.
 
@@ -107,7 +107,7 @@ Labels: suv, van, lcgc
 
 Here is the screenshot:
 
-![Image 5 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image5.png)
+![Image 5 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image5.webp)
 
 > **Figure 5**: Create an entity.
 
@@ -139,7 +139,7 @@ kenopo
 
 4. Press “Enter” on your keyboard.
 
-![Image 6 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image6.png)
+![Image 6 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image6.webp)
 
 > **Figure 6**: Create a word bank.
 
@@ -152,13 +152,13 @@ Once you’ve created a word bank, now you’re ready to make a data sample. Dat
 1. Go to **NLU > Training**.
 2. Click on **Bulk Training** dropdown, then choose **Data Generator**.
 
-![Image 7 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image7.png)
+![Image 7 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image7.webp)
 
 > **Figure 7**: Go to Data Generator feature.
 
 3. You will see a row to input a data sample. For example, to add your available word bank, type “@“ to show the word bank list.
 
-![Image 8 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image8.png)
+![Image 8 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image8.webp)
 
 > **Figure 8**: Type “@” to show word bank list.
 
@@ -168,14 +168,14 @@ Once you’ve created a word bank, now you’re ready to make a data sample. Dat
 @Kenapa kemarin Sinta tidak sekolah
 ```
 
-![Image 9 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image9.png)
+![Image 9 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image9.webp)
 
 > **Figure 9**: Type a data sample.
 
 5. Press “Add Row” to submit.
 6. You can edit or delete your data sample after it has been created.
 
-![Image 10 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image10.png)
+![Image 10 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image10.webp)
 
 > **Figure 10**: Update and delete data sample.
 
@@ -183,13 +183,13 @@ On the data sample page, there is information:
 
 -   **Total data possibilities** mean total generated data that can be created from available data samples. So for this example, you have 2 data samples multiplied with 1 word bank, then multiply again with 5 word variants. So finally, there will be 10 data possibilities.
 
-![Image 11 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image11.png)
+![Image 11 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image11.webp)
 
 > **Figure 11**: Total data possibilities from available data samples.
 
 -   **Data to Generate** is several generated data that you wanted. The number must be below or equal to the total data possibilities.
 
-![Image 12 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image12.png)
+![Image 12 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image12.webp)
 
 > **Figure 12**: Data to generate must be equal to or below than total data possibilities.
 
@@ -205,14 +205,14 @@ This step will guide you to generate training data from created data samples. Ge
 2. Let’s put 10 data to generate.
 3. Click the **Generate** button on the top right of your screen.
 
-![Image 13 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image13.png)
+![Image 13 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image13.webp)
 
 > **Figure 13**: Generate button.
 
 4. It redirects you to the Generated Data page, where you can train using the bulk labeling feature.
 5. You will see a training data list as follows.
 
-![Image 14 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image14.png)
+![Image 14 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image14.webp)
 
 > **Figure 14**: Generated data from data sample and a word bank.
 
@@ -230,7 +230,7 @@ Let’s start to tag an entity type “trait” that you’ve created before.
     <p><b>Important note</b>: Bulk labeling for entity type “trait” will tag all generated data.</p>
 </div>
 
-![Image 15 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image15.png)
+![Image 15 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image15.webp)
 
 > **Figure 15**: Tag entity type “trait”.
 
@@ -238,7 +238,7 @@ Let’s start to tag an entity type “trait” that you’ve created before.
 4. Next, select the person label. Then, it will show a text area named **Words to Tag**. Words to Tag is a feature to search words you want to tag. For example, you will tag `sinta` word.
 5. Press “Enter” on your keyboard to submit the word. It will show like this.
 
-![Image 16 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image16.png)
+![Image 16 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image16.webp)
 
 > **Figure 16**: Tag `sinta` word in bulk labeling.
 
@@ -254,24 +254,24 @@ Let’s start to tag an entity type “trait” that you’ve created before.
     <p><b>Important note</b>: Bulk labeling for entity type “dictionary” will not show specific labels to tag. So, it will train the entity.</p>
 </div>
 
-![Image 17 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image17.png)
+![Image 17 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image17.webp)
 
 > **Figure 17**: Tag `sekolah` word in bulk labeling.
 
 7. Finally, you can click the button **Train**. It will train all generated data into entity `intent` with `statement` label and entity `object` with `person` label.
 8. When successfully trained, you will redirect to the **Training** page. On this page, you can see the generated data has been trained.
 
-![Image 18 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image18.png)
+![Image 18 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image18.webp)
 
 > **Figure 18**: Data has been trained as `intent:statement`, `object:person` and `things`.
 
 9. You can click the arrow on the right of the box to open the trained data detail.
 
-![Image 19 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image19.png)
+![Image 19 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image19.webp)
 
 > **Figure 19**: How to show trained data detail.
 
-![Image 20 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image20.png)
+![Image 20 Alt](/assets/images/products/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data/image20.webp)
 
 > **Figure 20**: Trained data detail.
 

@@ -10,6 +10,7 @@ import Head from 'next/head';
 import { NavButton } from './layout/Navigation';
 import { NextRouter, useRouter } from 'next/router';
 import { NavigationActionTypes, NavigationContext } from './layout/Navigation/NavigationContext';
+import Image from 'next/image';
 
 const StyledLayoutRoot = styled('div')`
   display: flex;
@@ -90,14 +91,18 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
         <HeaderInner>
           {!isPost(router) && (
             <HeaderLogo>
-              <Link href="/">
-                <UnstyledAnchor>
-                  <img
+              <Link href="/" passHref>
+                <UnstyledAnchor display="flex">
+                  <Image
+                    layout="fixed"
+                    width={60}
+                    height={40}
                     src={
                       imageOrigin === 'docs'
                         ? '/assets/images/logo-docs.svg'
                         : `/assets/images/products/${imageOrigin}-logo-docs.svg`
                     }
+                    alt="Kata Documentations"
                   />
                 </UnstyledAnchor>
               </Link>
@@ -114,14 +119,18 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
               </NavButton>
             )}
             <LogoWrapper isPost={isPost(router)}>
-              <Link href="/">
-                <UnstyledAnchor>
-                  <img
+              <Link href="/" passHref>
+                <UnstyledAnchor display="flex">
+                  <Image
+                    layout="fixed"
+                    width={85}
+                    height={25}
                     src={
                       imageOrigin === 'docs'
                         ? '/assets/images/logo-docs.svg'
                         : `/assets/images/products/${imageOrigin}-logo-docs.svg`
                     }
+                    alt="Kata Documentations"
                   />
                 </UnstyledAnchor>
               </Link>

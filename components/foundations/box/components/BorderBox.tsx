@@ -6,7 +6,7 @@ import {
   SpaceProps,
   borderRadius,
   BorderRadiusProps,
-  WidthProps
+  WidthProps,
 } from 'styled-system';
 
 import { styledWrapper } from 'utils/primitives';

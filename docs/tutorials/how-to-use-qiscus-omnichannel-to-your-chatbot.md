@@ -1,7 +1,8 @@
 ---
+layout: tutorial
 id: how-to-use-qiscus-omnichannel-to-your-chatbot
 title: How to use Qiscus omnichannel to your chatbot
-imgSpot: /assets/images/tutorial/spot-qiscus.png
+imgSpot: /assets/images/tutorial/spot-qiscus.webp
 product: kata-platform
 date: '2021-08-26T07:00:00+07:00'
 ---

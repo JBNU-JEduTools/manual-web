@@ -65,7 +65,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ node }) => {
       <ToggleMenu>
         {node.items?.map((item) => (
           <ToggleMenuList key={item.title}>
-            <Link href={item.url}>
+            <Link href={item.url} passHref>
               <UnstyledAnchor>{item.title}</UnstyledAnchor>
             </Link>
           </ToggleMenuList>

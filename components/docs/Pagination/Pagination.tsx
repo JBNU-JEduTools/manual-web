@@ -191,38 +191,38 @@ const Pagination: React.FC<PaginationProps> = ({ prevPage, nextPage }) => (
         </PaginationItem>
       )}
 
-
-      {nextPage && (<PaginationItem>
-        <PaginationLink href={nextPage.url}>
-          <Box display="flex" cursor={'pointer'}>
-            <PaginationBlock>
-              <PaginationHeading size={200} color="grey04" display="block">
-                Next
-              </PaginationHeading>
-              <PaginationTitle size={400}>{nextPage.title}</PaginationTitle>
-            </PaginationBlock>
-            <PaginationButton>
-              <svg width="24" height="24" viewBox="0 0 24 24">
-                <defs>
-                  <path
-                    id="ic-chevron-right"
-                    d="M8.742 7.423L1.414.236a.837.837 0 0 0-1.165 0 .795.795 0 0 0 0 1.14l6.747 6.618L.25 14.61a.796.796 0 0 0 0 1.141.837.837 0 0 0 1.165 0l7.328-7.187a.803.803 0 0 0 0-1.142z"
-                  />
-                </defs>
-                <g fill="none" fillRule="evenodd" transform="translate(8 4)">
-                  <mask id="ic-chevron-right-mask" fill="#fff">
-                    <use xlinkHref="#ic-chevron-right" />
-                  </mask>
-                  <use fill="none" fillRule="nonzero" xlinkHref="#ic-chevron-right" />
-                  <g fill="none" mask="url(#ic-chevron-right-mask)">
-                    <path d="M-8-4h24v24H-8z" />
+      {nextPage && (
+        <PaginationItem>
+          <PaginationLink href={nextPage.url}>
+            <Box display="flex" cursor={'pointer'}>
+              <PaginationBlock>
+                <PaginationHeading size={200} color="grey04" display="block">
+                  Next
+                </PaginationHeading>
+                <PaginationTitle size={400}>{nextPage.title}</PaginationTitle>
+              </PaginationBlock>
+              <PaginationButton>
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <defs>
+                    <path
+                      id="ic-chevron-right"
+                      d="M8.742 7.423L1.414.236a.837.837 0 0 0-1.165 0 .795.795 0 0 0 0 1.14l6.747 6.618L.25 14.61a.796.796 0 0 0 0 1.141.837.837 0 0 0 1.165 0l7.328-7.187a.803.803 0 0 0 0-1.142z"
+                    />
+                  </defs>
+                  <g fill="none" fillRule="evenodd" transform="translate(8 4)">
+                    <mask id="ic-chevron-right-mask" fill="#fff">
+                      <use xlinkHref="#ic-chevron-right" />
+                    </mask>
+                    <use fill="none" fillRule="nonzero" xlinkHref="#ic-chevron-right" />
+                    <g fill="none" mask="url(#ic-chevron-right-mask)">
+                      <path d="M-8-4h24v24H-8z" />
+                    </g>
                   </g>
-                </g>
-              </svg>
-            </PaginationButton>
-          </Box>
-        </PaginationLink>
-      </PaginationItem>
+                </svg>
+              </PaginationButton>
+            </Box>
+          </PaginationLink>
+        </PaginationItem>
       )}
     </WrapperInner>
   </Wrapper>

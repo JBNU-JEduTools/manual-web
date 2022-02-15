@@ -13,7 +13,7 @@ You can follow these steps if you want to update your email notifications.
 3. Click profile setting
 4. You will be directed to the page where you can set up your email notification.
 
-    ![Figure 64](/assets/images/products/kata-omnichat/image64.png)
+    ![Figure 64](/assets/images/products/kata-omnichat/image64.webp)
 
     > **Figure 64.** Profile Settings
 
@@ -24,6 +24,6 @@ You can follow these steps if you want to update your email notifications.
     3. When you’re mentioned in conversation
     4. When a new message is created in an assigned conversation
 
-    ![Figure 65](/assets/images/products/kata-omnichat/image65.png)
+    ![Figure 65](/assets/images/products/kata-omnichat/image65.webp)
 
     > **Figure 65.** Email Notification Setting

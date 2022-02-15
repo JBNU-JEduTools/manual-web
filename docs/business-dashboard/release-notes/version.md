@@ -8,7 +8,7 @@ The latest news, updates, and changes on Business Dashboard
 
 ## 1.5.6
 
-![Business Dashboard Illustration](/assets/images/products/business-dashboard/release-notes/business-dashboard-illustration.png)
+![Business Dashboard Illustration](/assets/images/products/business-dashboard/release-notes/business-dashboard-illustration.webp)
 
 ### What’s New ⭐️
 

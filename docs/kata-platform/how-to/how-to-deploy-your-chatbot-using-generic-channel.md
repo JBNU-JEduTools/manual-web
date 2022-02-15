@@ -25,7 +25,7 @@ If you have already developed your chatbot, you must deploy your bot.
 2. On the Deploy page, click on the **New Deployment** button in the top right corner. It will open up the Create Deployment menu.
 3. Choose any deployment version you want to deploy and fill in the changelog.
 
-![Image 1 Alt](/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image1.png)
+![Image 1 Alt](/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image1.webp)
 
 > **Figure 1**: Create a new deployment
 
@@ -37,7 +37,7 @@ If you already have an environment created, skip these steps.
 
 1. Go to the **Deployments > Environment** menu.
 
-![Image 2 Alt](/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image2.png)
+![Image 2 Alt](/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image2.webp)
 
 > **Figure 2**: Set up the environment, then set up Generic channel
 
@@ -63,7 +63,7 @@ If you already have an environment created, skip these steps.
 
 4. Click **Save** to continue. After successfully making a channel, you will get a webhook. Copy this to be used for your app.
 
-![Image 3 Alt](/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image3.png)
+![Image 3 Alt](/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image3.webp)
 
 > **Figure 3**: Click the copy button to copy the webhook.
 
@@ -378,7 +378,7 @@ sendMessage(data) {
 
 In this section, you can use <a href="https://www.postman.com/" target="_blank">Postman</a> to test sending messages to your chatbot.
 
-![Image 4 Alt](/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image4.png)
+![Image 4 Alt](/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image4.webp)
 
 > **Figure 4**: Testing your bot
 

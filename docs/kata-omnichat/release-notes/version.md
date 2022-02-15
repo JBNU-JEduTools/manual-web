@@ -8,7 +8,7 @@ The latest news, updates, and changes on Kata Omnichat
 
 ## 2.5.5
 
-![Kata Omnichat Illustration](/assets/images/products/kata-omnichat/release-notes/kata-omnichat-illustration.png)
+![Kata Omnichat Illustration](/assets/images/products/kata-omnichat/release-notes/kata-omnichat-illustration.webp)
 
 ### What’s New ⭐️
 

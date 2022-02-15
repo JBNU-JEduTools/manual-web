@@ -15,7 +15,7 @@ function renderAst(html: string, additionalComponents: HtmrOptions['transform'] 
     ol,
     li,
     table,
-    ...additionalComponents
+    ...additionalComponents,
   };
 
   return convert(html, { transform });

@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import { getMdxNode, getMdxPaths } from 'next-mdx/server';
 import { Text, UnstyledAnchor } from '@aksara-ui/react';
 
 import { Page } from 'components/layout/Page';
@@ -9,8 +8,6 @@ import { DocsHeader } from 'components/docs/DocsHeader';
 
 import { FooterWrapper, Footer } from 'components/layout/Footer';
 import { TocJsonWrapper } from 'components/docs/TableOfContents';
-import remarkSlug from 'remark-slug';
-import rehypeAutolinkHeadings from 'remark-autolink-headings';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
 import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
@@ -19,22 +16,22 @@ import renderAst from 'utils/renderAst';
 import { DocsContainer } from 'components/layout/Container';
 import IndexLayout from 'components/layouts';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
-import { GetStaticPropsContext, PreviewData } from 'next';
 import { PaginationDocs } from 'components/docs/Pagination';
 import { getPageUrl } from 'utils/helpers';
 import Link from 'next/link';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
+import { allBusinessDashboards, BusinessDashboard } from 'contentlayer/generated';
+import Image from 'next/image';
 
 interface BusinessDashboardPageTemplateProps {
-  post: any;
+  post: BusinessDashboard;
   toc: any;
   listToc: string[];
 }
 
 const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps> = ({ post, toc }) => {
-  const frontMatter = post.frontMatter;
-  const prevPage = getPageUrl(post.frontMatter.prev, 'business-dashboard');
-  const nextPage = getPageUrl(post.frontMatter.next, 'business-dashboard');
+  const prevPage = getPageUrl(post.prev, 'business-dashboard');
+  const nextPage = getPageUrl(post.next, 'business-dashboard');
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
@@ -63,9 +60,9 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
   return (
     <Page docsPage>
       <Head>
-        <title>{frontMatter.title} &middot; Business Dashboard Documentation</title>
+        <title>{post.title} &middot; Business Dashboard Documentation</title>
         <meta name="description" content={post.excerpt} />
-        <meta property="og:title" content={frontMatter.title} />
+        <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
       </Head>
       <IndexLayout navHidden>
@@ -76,9 +73,15 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
             {toc && (
               <div className="table-of-contents">
                 <SidebarLogo>
-                  <Link href="/">
+                  <Link href="/" passHref>
                     <UnstyledAnchor>
-                      <img src="/assets/images/products/business-dashboard-logo-docs.svg" />
+                      <Image
+                        layout="fixed"
+                        width={150}
+                        height={40}
+                        alt="Business Dashboard Documentations"
+                        src="/assets/images/products/business-dashboard-logo-docs.svg"
+                      />
                     </UnstyledAnchor>
                   </Link>
                 </SidebarLogo>
@@ -95,11 +98,11 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
                 items={[
                   { url: '/', urlDisplay: 'Home' },
                   { url: '/business-dashboard', urlDisplay: 'Business Dashboard' },
-                  { urlDisplay: frontMatter.section },
+                  { urlDisplay: post.section },
                 ]}
               />
-              <DocsHeader title={frontMatter.title} />
-              <MarkdownContent>{renderAst(post.mdx.renderedOutput)}</MarkdownContent>
+              <DocsHeader title={post.title} />
+              <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
               {(prevPage || nextPage) && <PaginationDocs prevPage={prevPage} nextPage={nextPage} />}
               <DocsHelpful />
               <FooterWrapper>
@@ -118,21 +121,17 @@ export default BusinessDashboardPageTemplate;
 
 export async function getStaticPaths() {
   return {
-    paths: await getMdxPaths('business-dashboard'),
+    paths: await allBusinessDashboards.map((p) => ({ params: { slug: p.slug } })),
     fallback: false,
   };
 }
 
-export async function getStaticProps(context: string | GetStaticPropsContext<NodeJS.Dict<string[]>, PreviewData>) {
-  const post = await getMdxNode('business-dashboard', context, {
-    mdxOptions: {
-      remarkPlugins: [remarkSlug, rehypeAutolinkHeadings],
-    },
-  });
-
+export async function getStaticProps({ params }) {
+  const slugStringify = JSON.stringify(params.slug);
+  const post = allBusinessDashboards.find((post) => JSON.stringify(post.slug) === slugStringify);
   const toc = await import('docs/toc-business-dashboard.json');
 
-  if (!toc) {
+  if (!toc || !post) {
     return {
       notFound: true,
     };

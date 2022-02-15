@@ -20,10 +20,10 @@ const Icon = styled('div')<IconProps>`
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: ${props => props.left ? 'auto' : '16px'};
+  right: ${(props) => (props.left ? 'auto' : '16px')};
   top: 0;
   bottom: 0;
-  left: ${props => props.left ? '16px' : 'auto'};
+  left: ${(props) => (props.left ? '16px' : 'auto')};
 `;
 
 const CloseButton = styled('button')`

@@ -77,8 +77,12 @@ export const TutorialWrapper = styled(Box)`
 
 export const HeroWrapper = styled('div')`
   position: absolute;
+
   @media only screen and (max-width: ${breakpoints.lg - 1}px) {
     width: 240px !important;
+  }
+  @media only screen and (min-width: ${breakpoints.lg}px) {
+    width: 385px !important;
   }
 `;
 

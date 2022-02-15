@@ -12,7 +12,7 @@ TThe contacts section in Omnichat contains the details of end users/customers th
 2. Click **Contact** on the sidebar
 3. You can see the list of names and contact information of your customers that had interaction with your channel
 
-    ![Figure 50](/assets/images/products/kata-omnichat/image50.png)
+    ![Figure 50](/assets/images/products/kata-omnichat/image50.webp)
 
     > **Figure 50.** Manage Contact
 

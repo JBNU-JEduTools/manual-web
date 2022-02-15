@@ -2,17 +2,30 @@ const path = require('path');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
+const { withContentlayer } = require('next-contentlayer');
 
-module.exports = withBundleAnalyzer({
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    });
-
-    return config;
-  },
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-  },
-});
+module.exports = withBundleAnalyzer(
+  withContentlayer()({
+    swcMinify: true,
+    reactStrictMode: true,
+    webpack(config, { dev, isServer }) {
+      config.module.rules.push({
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      });
+      // Replace React with Preact only in client production build
+      // Waiting aksara-ui supports preact
+      // if (!dev && !isServer) {
+      //   Object.assign(config.resolve.alias, {
+      //     react: 'preact/compat',
+      //     'react-dom/test-utils': 'preact/test-utils',
+      //     'react-dom': 'preact/compat',
+      //   });
+      // }
+      return config;
+    },
+    sassOptions: {
+      includePaths: [path.join(__dirname, 'styles')],
+    },
+  })
+);

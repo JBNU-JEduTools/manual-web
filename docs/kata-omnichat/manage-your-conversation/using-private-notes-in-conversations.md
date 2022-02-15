@@ -10,10 +10,10 @@ The private note is the feature for the admin and agent to communicate with each
 
 Private notes will be included in the conversation but only admin and agent can see it, customers can’t see the notes.
 
-![Figure 41](/assets/images/products/kata-omnichat/image41.png)
+![Figure 41](/assets/images/products/kata-omnichat/image41.webp)
 
 > **Figure 41.** Private Note
 
-![Figure 42](/assets/images/products/kata-omnichat/image42.png)
+![Figure 42](/assets/images/products/kata-omnichat/image42.webp)
 
 > **Figure 42.** Private Note Result

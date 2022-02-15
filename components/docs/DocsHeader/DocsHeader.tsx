@@ -23,7 +23,7 @@ const DocsHeader: React.FC<DocsHeaderProps> = ({ title, subtitle, margin }) => {
 
 DocsHeader.defaultProps = {
   subtitle: undefined,
-  margin: 'xl'
+  margin: 'xl',
 };
 
 export default DocsHeader;

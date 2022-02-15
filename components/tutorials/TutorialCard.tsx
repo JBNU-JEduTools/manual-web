@@ -7,30 +7,40 @@ import styled from 'styled-components';
 import { breakpoints } from 'utils/variables';
 import { Anchor, Card } from './components';
 import { ProductBadge } from '../badge';
+import Image from 'next/image';
+import { Tutorials } from 'contentlayer/generated';
 
 interface TutorialCardProps {
-  tutorial: MarkdownContent;
+  tutorial: Tutorials;
   index?: number;
 }
 
 export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) => {
-  const frontMatter = tutorial.frontMatter;
+  const { title, imgSpot, id } = tutorial;
   return (
-    <Card key={frontMatter.title} index={index}>
-      <img src={frontMatter.imgSpot} />
+    <Card key={title} index={index}>
+      <Image width={345} height={180} src={imgSpot} alt={title} layout="responsive" />
       <CardContent>
         <ProductBadge>
-          <img src="/assets/images/products/icon/kata-platform-icon.svg" />
+          <Box mr={8} display="flex">
+            <Image
+              width={16}
+              height={16}
+              layout="fixed"
+              src="/assets/images/products/icon/kata-platform-icon.svg"
+              alt="Kata Platform"
+            />
+          </Box>
           <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
             Kata Platform
           </Text>
         </ProductBadge>
         <CardTitle>
           <Heading scale={700} fontSize={20} overflow="hidden">
-            {frontMatter.title}
+            {title}
           </Heading>
         </CardTitle>
-        <Link href={`/tutorials/${frontMatter.id}`}>
+        <Link href={`/tutorials/${id}`} passHref>
           <Anchor>
             View Article <IconArrowRight width={14} />
           </Anchor>

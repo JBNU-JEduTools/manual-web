@@ -4,7 +4,8 @@ import { format } from 'date-fns';
 
 import { breakpoints, space } from 'utils/variables';
 import { SOCIALS as socialData } from 'utils/constants';
-import { theme, Text, UnstyledAnchor} from '@aksara-ui/react';
+import { theme, Text, UnstyledAnchor } from '@aksara-ui/react';
+import Image from 'next/image';
 
 interface FooterProps {
   version: string;
@@ -99,7 +100,13 @@ const Footer: React.FC<FooterProps> = ({ version, siteLastUpdated }) => {
             {socials.map((social) => (
               <SocialMediaListItem key={social.name}>
                 <SocialMediaLink href={social.url} target="_blank" rel="noopener noreferrer">
-                  <img src={`/assets/images/${social.imgpath}`} alt={social.name} />
+                  <Image
+                    width={16}
+                    height={16}
+                    layout="fixed"
+                    src={`/assets/images/${social.imgpath}`}
+                    alt={social.name}
+                  />
                 </SocialMediaLink>
               </SocialMediaListItem>
             ))}

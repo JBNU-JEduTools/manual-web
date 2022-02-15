@@ -7,6 +7,7 @@ export const styleJSX = css`
     -webkit-font-smoothing: antialiased;
     font-family: 'Inter';
     src: url('/assets/fonts/Inter.woff') format('woff');
+    font-display: swap;
   }
 
   @font-face {
@@ -14,6 +15,7 @@ export const styleJSX = css`
     font-family: 'Inter-bold';
     src: url('/assets/fonts/Inter-Bold.woff') format('woff');
     font-weight: 700;
+    font-display: swap;
   }
 
   @font-face {
@@ -21,12 +23,14 @@ export const styleJSX = css`
     font-family: 'SF Pro Text';
     src: url('/assets/fonts/SF-Pro-Text.ttf') format('ttf');
     font-weight: 700;
+    font-display: swap;
   }
 
   @font-face {
     -webkit-font-smoothing: antialiased;
     font-family: 'Roboto Mono';
     src: url('/assets/fonts/RobotoMono.woff') format('woff');
+    font-display: swap;
   }
 
   @font-face {
@@ -34,6 +38,7 @@ export const styleJSX = css`
     font-family: 'Roboto Mono Bold';
     src: url('/assets/fonts/RobotoMono-Bold.woff') format('woff');
     font-weight: 700;
+    font-display: swap;
   }
 
   html,

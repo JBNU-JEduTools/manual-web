@@ -15,12 +15,12 @@ In this section, You can set your business availability that will show the avail
 5. Set up your business hours every day. If your business is unavailable all day, you can just untick the selected day, then you are recorded as unavailable all day
 6. Click on the update business hours button. If successful, then the “_Inbox setting updated successfully_” message will be appeared
 
-![Figure 26](/assets/images/products/kata-omnichat/image26.png)
+![Figure 26](/assets/images/products/kata-omnichat/image26.webp)
 
 > **Figure 26.** Business Hour Set Up
 
 The final result of the business hour set up is shown below
 
-![Figure 27](/assets/images/products/kata-omnichat/image27.png)
+![Figure 27](/assets/images/products/kata-omnichat/image27.webp)
 
 > **Figure 27.** Business Hour Result
