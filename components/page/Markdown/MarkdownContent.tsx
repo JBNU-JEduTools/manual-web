@@ -38,7 +38,7 @@ const Section = styled('section')`
     }
   }
 
-  iframe {
+  /* iframe {
     margin-top: 24px;
     margin-bottom: 24px;
     width: 100%;
@@ -47,7 +47,7 @@ const Section = styled('section')`
     @media only screen and (min-width: ${breakpoints.md}px) {
       height: 400px;
     }
-  }
+  } */
 
   .lead {
     font-size: 1.25rem;

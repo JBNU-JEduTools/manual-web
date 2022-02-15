@@ -5,7 +5,6 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrism from 'rehype-prism-plus';
 import remarkGfm from 'remark-gfm';
 import sanitizeHtml from 'sanitize-html';
-import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import rehypeRaw from 'rehype-raw';
 
@@ -17,7 +16,7 @@ const computedFields: ComputedFields = {
   excerpt: {
     type: 'string',
     resolve: (doc) =>
-      sanitizeHtml(doc.body.html.split('.').slice(0, 2).join('.'), {
+      sanitizeHtml(doc.body.raw.split('.').slice(0, 2).join('.'), {
         allowedTags: [],
         allowedAttributes: {},
       }),
@@ -68,8 +67,8 @@ const KataPlatform = defineDocumentType(() => ({
 
 const Qios = defineDocumentType(() => ({
   name: 'Qios',
-  filePathPattern: 'qios/**/*.md',
-  contentType: 'markdown',
+  filePathPattern: 'qios/**/*.mdx',
+  contentType: 'mdx',
   fields: {
     id: { type: 'string', required: true },
     section: { type: 'string', required: true },

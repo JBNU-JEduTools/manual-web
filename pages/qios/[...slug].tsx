@@ -12,7 +12,6 @@ import { BackToTopButton } from 'components/docs/BackToTopButton';
 import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
 import { MarkdownContent } from 'components/page/Markdown';
-import renderAst from 'utils/renderAst';
 import { DocsContainer } from 'components/layout/Container';
 import IndexLayout from 'components/layouts';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
@@ -22,6 +21,8 @@ import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 import { allQios, Qios } from 'contentlayer/generated';
 import Image from 'next/image';
+import { useMDXComponent } from 'next-contentlayer/hooks';
+import MDXComponents from 'components/mdx/MDXComponents';
 
 interface QiosPageTemplateProps {
   post: Qios;
@@ -30,6 +31,7 @@ interface QiosPageTemplateProps {
 }
 
 const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
+  const MDXContent = useMDXComponent(post.body.code);
   const prevPage = getPageUrl(post.prev, 'qios');
   const nextPage = getPageUrl(post.next, 'qios');
 
@@ -102,7 +104,9 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
                 ]}
               />
               <DocsHeader title={post.title} />
-              <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
+              <MarkdownContent>
+                <MDXContent components={MDXComponents} />
+              </MarkdownContent>
               {(prevPage || nextPage) && <PaginationDocs prevPage={prevPage} nextPage={nextPage} />}
               <DocsHelpful />
               <FooterWrapper>
