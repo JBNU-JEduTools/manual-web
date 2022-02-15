@@ -21,7 +21,7 @@ export const styleJSX = css`
   @font-face {
     -webkit-font-smoothing: antialiased;
     font-family: 'SF Pro Text';
-    src: url('/assets/fonts/SF-Pro-Text.ttf') format('ttf');
+    src: url('/assets/fonts/SF-Pro-Text.woff') format('woff');
     font-weight: 700;
     font-display: swap;
   }
