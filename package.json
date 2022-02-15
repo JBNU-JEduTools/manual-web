@@ -1,11 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "concurrently \"yarn:cl:dev\" \"next\"",
     "build": "yarn run cc && next build",
     "start": "next start",
     "lint": "next lint",
     "server": "http-server",
+    "cl:dev": "contentlayer dev",
+    "cl:build": "contentlayer build",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
@@ -56,6 +58,7 @@
     "@types/styled-system__should-forward-prop": "^5.1.2",
     "autoprefixer": "^10.2.1",
     "babel-plugin-styled-components": "^2.0.2",
+    "concurrently": "^7.0.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.5.0",
     "eslint-config-next": "12.0.10",
