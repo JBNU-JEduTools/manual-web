@@ -80,41 +80,38 @@ const SearchResultLink = styled(Link)`
 `;
 
 const SearchResultsDesktop = css`
-  position: absolute;
   width: 100%;
   height: 400px;
   overflow-y: auto;
   z-index: 50;
-  margin-top: 11px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
 `;
 
 const SearchResultsMobile = css`
-  position: absolute;
-  right: 16px;
-  width: calc(100vw - 32px);
+  position: relative;
   height: 315px;
   margin-top: 0;
   overflow-y: auto;
   z-index: 50;
+  padding-left: 24px;
+  padding-right: 24px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 `;
 
-const SearchResults = styled('div')<SearchPageProps>`
+const SearchResults = styled('div') <SearchPageProps>`
   padding: 0;
-  border: 1px solid ${theme.colors.greylight05};
   background-color: ${theme.colors.white};
 
   ${(props) => props.layout === 'desktop' && SearchResultsDesktop}
   ${(props) => props.layout === 'mobile' && SearchResultsMobile}
 `;
 
-const SearchInputText = styled(InputText)<SearchPageProps>`
+const SearchInputText = styled(InputText) <SearchPageProps>`
+  width: 100%;
   input {
     color: ${theme.colors.grey05};
     border-radius: 32px;
+    width: 100%;
     border: 1px solid ${theme.colors.greylight05};
   }
   ::-webkit-input-placeholder {
@@ -161,10 +158,27 @@ const SearchResultButton = styled(PlainButton)`
   width: 100%;
 `;
 
-const Root = styled('div')<SearchPageProps>`
+const Root = styled('div') <SearchPageProps>`
   ${(props) => props.layout === 'desktop' && RootDesktop}
   ${(props) => props.layout === 'mobile' && RootMobile}
 `;
+
+const SearchResultBoxDesktop = css`
+  position: absolute;
+  width: 500px;
+  top: -30px;
+  right: -30px;
+  left: auto;
+  padding: 16px;
+
+`
+
+const SearchResultBox = styled('div') <{ layout: string }>`
+  border-radius: 12px;
+  background-color: ${theme.colors.white};
+  box-shadow: 0px 8px 16px 0px ${theme.colors.greydark01};
+  ${(props) => props.layout === 'desktop' && SearchResultBoxDesktop}
+`
 
 export default class SearchBox extends React.Component<SearchPageProps, SearchPageState> {
   static defaultProps = {
@@ -232,65 +246,92 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
     const ref = React.createRef<HTMLInputElement>();
 
     return (
-      <Root layout={layout} onFocus={() => this.setState({ isInputFocused: true })}>
-        <div className="header">
-          <SearchInputText
-            layout={layout}
-            placeholder={layout === 'default' ? "Type what you're looking for..." : 'Search...'}
-            value={query}
-            onChange={this.search}
-            ref={ref}
-            onSearchClear={() => {
-              // Don't even ask.
-              if (ref.current) {
-                ref.current.value = '';
-              }
-              this.setState({ results: [], query: '' });
+      <Root
+        layout={layout}
+        onFocus={() => this.setState({ isInputFocused: true })}
+        onBlur={() => this.setState({ isInputFocused: false })}
+      >
+        {isInputFocused ?
+          <SearchResultBox layout={layout}>
+            <div className="header">
+              <SearchInputText
+                layout={layout}
+                placeholder={layout === 'default' ? "Type what you're looking for..." : 'Search...'}
+                value={query}
+                onChange={this.search}
+                ref={ref}
+                onSearchClear={() => {
+                  // Don't even ask.
+                  if (ref.current) {
+                    ref.current.value = '';
+                  }
+                  this.setState({ results: [], query: '' });
 
-              if (onSearchClear) {
-                onSearchClear();
-              }
-            }}
-          />
-        </div>
-        {isInputFocused && results && results.length !== 0 && (
-          <SearchResults layout={layout}>
-            {PRODUCTS_DICT[fuseSearch.name] && (
-              <Box ml={12} my={8} width={'100%'}>
-                <ProductBadge>
-                  <img src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
-                  <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
-                    {PRODUCTS_DICT[fuseSearch.name]}
-                  </Text>
-                </ProductBadge>
-              </Box>
-            )}
-            {results.map(({ item: page }) => {
-              return (
-                <SearchResultLink href={page.meta.absolutePath} key={page.title}>
-                  <SearchResult>
-                    <ResultTitle>{page.title}</ResultTitle>
-                    {page.excerpt && <ResultExcerpt>{page.excerpt}</ResultExcerpt>}
-                  </SearchResult>
-                </SearchResultLink>
-              );
-            })}
-            {results && results.length === 5 && (
-              <SearchResultButton
-                icon={IconOutgoing}
-                iconPosition="left"
-                onClick={() => {
-                  onSearchMore(fuseSearch.name, query);
+                  if (onSearchClear) {
+                    onSearchClear();
+                  }
                 }}
-                size="sm"
-                type="button"
-                variant="primary"
-              >
-                See all “{query}” result
-              </SearchResultButton>
+              />
+            </div>
+            {isInputFocused && results && results.length !== 0 && (
+              <SearchResults layout={layout}>
+                {PRODUCTS_DICT[fuseSearch.name] && (
+                  <Box ml={12} my={8} width={'100%'}>
+                    <ProductBadge>
+                      <img src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
+                      <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
+                        {PRODUCTS_DICT[fuseSearch.name]}
+                      </Text>
+                    </ProductBadge>
+                  </Box>
+                )}
+                {results.map(({ item: page }) => {
+                  return (
+                    <SearchResultLink href={page.meta.absolutePath} key={page.title}>
+                      <SearchResult>
+                        <ResultTitle>{page.title}</ResultTitle>
+                        {page.excerpt && <ResultExcerpt>{page.excerpt}</ResultExcerpt>}
+                      </SearchResult>
+                    </SearchResultLink>
+                  );
+                })}
+                {results && results.length === 5 && (
+                  <SearchResultButton
+                    icon={IconOutgoing}
+                    iconPosition="left"
+                    onClick={() => {
+                      onSearchMore(fuseSearch.name, query);
+                    }}
+                    size="sm"
+                    type="button"
+                    variant="primary"
+                  >
+                    See all “{query}” result
+                  </SearchResultButton>
+                )}
+              </SearchResults>
             )}
-          </SearchResults>
-        )}
+          </SearchResultBox> :
+          <div className="header">
+            <SearchInputText
+              layout={layout}
+              placeholder={layout === 'default' ? "Type what you're looking for..." : 'Search...'}
+              value={query}
+              onChange={this.search}
+              ref={ref}
+              onSearchClear={() => {
+                // Don't even ask.
+                if (ref.current) {
+                  ref.current.value = '';
+                }
+                this.setState({ results: [], query: '' });
+
+                if (onSearchClear) {
+                  onSearchClear();
+                }
+              }}
+            />
+          </div>}
       </Root>
     );
   }
