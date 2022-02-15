@@ -28,6 +28,7 @@ const CaptionWrapper = (props) => {
       p={16}
       fontSize={14}
       lineHeight={'20px'}
+      textAlign={'left'}
       {...rest}
     />
   );
