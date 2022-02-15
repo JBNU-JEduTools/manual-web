@@ -10,7 +10,7 @@ const markdownJsonOutput = {
   global: require('./outputs/global.json'),
 };
 
-export const sanitizeString = (sentences, removeSymbol = true) => {
+const sanitizeString = (sentences, removeSymbol = true) => {
   const cleanSentences = sanitizeHtml(sentences, {
     allowedTags: [],
     allowedAttributes: {},
@@ -54,7 +54,7 @@ Object.keys(markdownJsonOutput).forEach((key) => {
       const [_, productKey, __] = absolutePath.split('/');
       return {
         contents: sanitizeString(contents),
-        excerpt: sanitizeString(contents.split('.').slice(0, 3).join('.'), false),
+        excerpt: sanitizeString(contents).split(' ').slice(0, 32).join(' '),
         meta: { ...restMeta, absolutePath },
         product: productKey,
         id,
