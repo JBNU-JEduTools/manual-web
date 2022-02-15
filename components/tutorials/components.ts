@@ -99,7 +99,6 @@ export const Card = styled(CardAksara)<{ index?: number }>`
     margin-top: ${(props) => (props.index > 2 ? '32px' : '0px')};
   }
 
-
   &:hover {
     box-shadow: 0px 8px 16px 0px #89949f52;
   }

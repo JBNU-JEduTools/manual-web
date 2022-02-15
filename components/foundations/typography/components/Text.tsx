@@ -39,7 +39,7 @@ Text.defaultProps = {
   fontFamily: 'Inter',
   marginBottom: '6px',
   marginTop: '6px',
-  size: 300
+  size: 300,
 };
 
 Text.displayName = 'Text';

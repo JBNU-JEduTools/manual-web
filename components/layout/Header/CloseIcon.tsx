@@ -27,7 +27,7 @@ CloseIcon.defaultProps = {
   width: 16,
   height: 16,
   fill: theme.colors.grey05,
-  wrapperFill: 'none'
+  wrapperFill: 'none',
 };
 
 export default CloseIcon;

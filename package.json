@@ -8,6 +8,7 @@
     "server": "http-server",
     "cl:dev": "contentlayer dev",
     "cl:build": "contentlayer build",
+    "format": "prettier --check . --write \"*.{js,ts,tsx,jsx}\"",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
@@ -19,7 +20,7 @@
     "md2json:tutorials": "markdown-json -c ./markdown-to-json/settings/tutorials.json",
     "md2json:convert": "yarn run md2json:global && yarn run md2json:qios && yarn run md2json:kata-omnichat && yarn run md2json:kata-platform && yarn run md2json:business-dashboard && yarn run md2json:tutorials",
     "md2json:sanitize": "node ./markdown-to-json/sanitize.js",
-    "md2json:all": "yarn run md2json:convert && yarn run md2json:sanitize",
+    "md2json:all": "yarn run md2json:convert && yarn run md2json:sanitize && yarn run format",
     "cc": "rimraf .contentlayer"
   },
   "dependencies": {

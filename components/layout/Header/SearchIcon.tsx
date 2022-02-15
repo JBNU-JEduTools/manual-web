@@ -27,7 +27,7 @@ SearchIcon.defaultProps = {
   width: 24,
   height: 24,
   fill: theme.colors.grey05,
-  wrapperFill: 'none'
+  wrapperFill: 'none',
 };
 
 export default SearchIcon;

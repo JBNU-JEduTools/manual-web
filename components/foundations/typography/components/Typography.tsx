@@ -20,7 +20,7 @@ import {
   DisplayProps,
   TextAlignProps,
   VerticalAlignProps,
-  LetterSpacingProps
+  LetterSpacingProps,
 } from 'styled-system';
 
 import { styledWrapper as styled } from 'utils/primitives';
