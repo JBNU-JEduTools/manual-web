@@ -3,12 +3,32 @@ import { h1, h2, h3, h4, h5, h6, hr, p, ul, ol, li, table } from 'components/pag
 import Image from 'next/image';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 
+const MAX_PORTRAIT_HEIGHT = 720;
+const MAX_LANDSCAPE_WIDTH = 720;
+
 const NextImage = (props) => {
-  const { src, alt, width, height, ...rest } = props;
-  if (height > 720) {
-    return <Image src={src} alt={alt} width={width} height={height} {...rest} layout="intrinsic" />;
+  const { src, alt, naturalWidth, naturalHeight, ...rest } = props;
+
+  console.log(naturalWidth, naturalHeight, src);
+  if (naturalHeight > naturalWidth) {
+    if (naturalHeight <= MAX_PORTRAIT_HEIGHT) {
+      return <Image src={src} alt={alt} {...rest} width={naturalWidth} height={naturalHeight} layout="responsive" />;
+    } else {
+      // Resize using max height if larger than threshold
+      const height = MAX_PORTRAIT_HEIGHT;
+      const width = Math.floor((height / naturalHeight) * naturalWidth);
+      return <Image src={src} alt={alt} {...rest} width={width} height={height} layout="intrinsic" />;
+    }
   } else {
-    return <Image src={src} alt={alt} width={width} height={height} {...rest} />;
+    if (naturalWidth <= MAX_LANDSCAPE_WIDTH) {
+      return <Image src={src} alt={alt} {...rest} width={naturalWidth} height={naturalHeight} layout="responsive" />;
+    } else {
+      // Resize using max width if larger than threshold
+      const width = MAX_LANDSCAPE_WIDTH;
+      const height = Math.floor((width / naturalWidth) * naturalHeight);
+      console.log(naturalWidth, naturalHeight, width, height);
+      return <Image src={src} alt={alt} {...rest} width={width} height={height} layout="responsive" />;
+    }
   }
 };
 
@@ -47,11 +67,11 @@ const FigureWrapper = (props) => {
 };
 
 const FigureImage = (props) => {
-  const { src, alt, width, height, caption, ...rest } = props;
+  const { src, alt, naturalWidth, naturalHeight, caption, ...rest } = props;
   return (
     <FigureWrapper>
       <ImageWrapper marginY={0}>
-        <NextImage src={src} alt={alt} width={width} height={height} {...rest} />
+        <NextImage src={src} alt={alt} naturalWidth={naturalWidth} naturalHeight={naturalHeight} {...rest} />
       </ImageWrapper>
       <CaptionWrapper>
         <Text mr={5}>
