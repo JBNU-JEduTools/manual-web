@@ -19,7 +19,9 @@ Object.keys(TOCs).forEach((key) => {
         if (previous) {
           linking[previous.id] = { ...linking[previous.id], next: { id, url, title } };
         }
+
         if (!exceptionIds.includes(id)) {
+          if (typeof linking[id] !== 'undefined') throw `There is duplicate id in ${key}`;
           linking[id] = {
             previous,
             next: null,
