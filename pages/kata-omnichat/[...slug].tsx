@@ -17,8 +17,6 @@ import { DocsContainer } from 'components/layout/Container';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import IndexLayout from 'components/layouts';
 import { PaginationDocs } from 'components/docs/Pagination';
-import { getPageUrl } from 'utils/helpers';
-import { MarkdownContent as IMarkdownContent } from 'interfaces/next';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 import { allKataOmnichats, KataOmnichat } from 'contentlayer/generated';
@@ -33,9 +31,6 @@ interface OmnichatPageTemplateProps {
 }
 
 const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, linking }) => {
-  const prevPage = getPageUrl(post.prev, 'kata-omnichat');
-  const nextPage = getPageUrl(post.next, 'kata-omnichat');
-
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     router.push('/404');

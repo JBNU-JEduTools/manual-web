@@ -17,7 +17,6 @@ import { DocsContainer } from 'components/layout/Container';
 import IndexLayout from 'components/layouts';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import { PaginationDocs } from 'components/docs/Pagination';
-import { getPageUrl } from 'utils/helpers';
 import Link from 'next/link';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import { allBusinessDashboards, BusinessDashboard } from 'contentlayer/generated';
