@@ -23,14 +23,16 @@ import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 import { allKataOmnichats, KataOmnichat } from 'contentlayer/generated';
 import Image from 'next/image';
+import toc from 'docs/toc-kata-omnichat.json';
+import linkingToc from 'docs/linking-toc/kata-omnichat.json';
+import { MDXLinking } from 'interfaces/linking';
 
 interface OmnichatPageTemplateProps {
   post: KataOmnichat;
-  toc: any;
-  listToc: string[];
+  linking: MDXLinking;
 }
 
-const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }) => {
+const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, linking }) => {
   const prevPage = getPageUrl(post.prev, 'kata-omnichat');
   const nextPage = getPageUrl(post.next, 'kata-omnichat');
 
@@ -104,7 +106,7 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, toc }
               />
               {post.id !== 'about' && <DocsHeader title={post.title} />}
               <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
-              {(prevPage || nextPage) && <PaginationDocs prevPage={prevPage} nextPage={nextPage} />}
+              {linking && <PaginationDocs prevPage={linking.previous} nextPage={linking.next} />}
               <DocsHelpful />
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
@@ -130,18 +132,12 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const slugStringify = JSON.stringify(params.slug);
   const post = allKataOmnichats.find((post) => JSON.stringify(post.slug) === slugStringify);
-  const toc = await import('docs/toc-kata-omnichat.json');
-
-  if (!toc) {
-    return {
-      notFound: true,
-    };
-  }
+  const linking = linkingToc[post.id] || null;
 
   return {
     props: {
       post,
-      toc: toc.default,
+      linking,
     },
   };
 }

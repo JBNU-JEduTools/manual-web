@@ -15,7 +15,6 @@ import { MarkdownContent } from 'components/page/Markdown';
 import { DocsContainer } from 'components/layout/Container';
 import IndexLayout from 'components/layouts';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
-import { getPageUrl } from 'utils/helpers';
 import { PaginationDocs } from 'components/docs/Pagination';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
@@ -23,17 +22,17 @@ import { allQios, Qios } from 'contentlayer/generated';
 import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import MDXComponents from 'components/mdx/MDXComponents';
+import toc from 'docs/toc-qios.json';
+import linkingToc from 'docs/linking-toc/qios.json';
+import { MDXLinking } from 'interfaces/linking';
 
 interface QiosPageTemplateProps {
   post: Qios;
-  toc: any;
-  listToc: string[];
+  linking: MDXLinking;
 }
 
-const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
+const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, linking }) => {
   const MDXContent = useMDXComponent(post.body.code);
-  const prevPage = getPageUrl(post.prev, 'qios');
-  const nextPage = getPageUrl(post.next, 'qios');
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
@@ -107,7 +106,7 @@ const QiosPageTemplate: React.FC<QiosPageTemplateProps> = ({ post, toc }) => {
               <MarkdownContent>
                 <MDXContent components={MDXComponents} />
               </MarkdownContent>
-              {(prevPage || nextPage) && <PaginationDocs prevPage={prevPage} nextPage={nextPage} />}
+              {linking && <PaginationDocs prevPage={linking.previous} nextPage={linking.next} />}
               <DocsHelpful />
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
@@ -133,18 +132,12 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const slugStringify = JSON.stringify(params.slug);
   const post = allQios.find((post) => JSON.stringify(post.slug) === slugStringify);
-  const toc = await import('docs/toc-qios.json');
-
-  if (!toc) {
-    return {
-      notFound: true,
-    };
-  }
+  const linking = linkingToc[post.id] || null;
 
   return {
     props: {
       post,
-      toc: toc.default,
+      linking,
     },
   };
 }

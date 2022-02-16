@@ -22,17 +22,15 @@ import Link from 'next/link';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import { allBusinessDashboards, BusinessDashboard } from 'contentlayer/generated';
 import Image from 'next/image';
+import toc from 'docs/toc-business-dashboard.json';
+import linkingToc from 'docs/linking-toc/business-dashboard.json';
+import { MDXLinking } from 'interfaces/linking';
 
 interface BusinessDashboardPageTemplateProps {
   post: BusinessDashboard;
-  toc: any;
-  listToc: string[];
+  linking: MDXLinking;
 }
-
-const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps> = ({ post, toc }) => {
-  const prevPage = getPageUrl(post.prev, 'business-dashboard');
-  const nextPage = getPageUrl(post.next, 'business-dashboard');
-
+const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps> = ({ post, linking }) => {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     router.push('/404');
@@ -103,7 +101,7 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
               />
               <DocsHeader title={post.title} />
               <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
-              {(prevPage || nextPage) && <PaginationDocs prevPage={prevPage} nextPage={nextPage} />}
+              {linking && <PaginationDocs prevPage={linking.previous} nextPage={linking.next} />}
               <DocsHelpful />
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
@@ -129,18 +127,12 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const slugStringify = JSON.stringify(params.slug);
   const post = allBusinessDashboards.find((post) => JSON.stringify(post.slug) === slugStringify);
-  const toc = await import('docs/toc-business-dashboard.json');
-
-  if (!toc || !post) {
-    return {
-      notFound: true,
-    };
-  }
+  const linking = linkingToc[post.id] || null;
 
   return {
     props: {
       post,
-      toc: toc.default,
+      linking,
     },
   };
 }

@@ -17,23 +17,19 @@ import { DocsContainer } from 'components/layout/Container';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import IndexLayout from 'components/layouts';
 import { PaginationDocs } from 'components/docs/Pagination';
-import { getPageUrl } from 'utils/helpers';
-import { MarkdownContent as IMarkdownContent } from 'interfaces/next';
 import { SidebarLogo } from 'components/docs/DocsSidebar';
 import Link from 'next/link';
 import { allKataPlatforms, KataPlatform } from 'contentlayer/generated';
 import Image from 'next/image';
+import toc from 'docs/toc-kata-platform.json';
+import linkingToc from 'docs/linking-toc/kata-platform.json';
+import { MDXLinking } from 'interfaces/linking';
 
 interface PlatformPageTemplateProps {
   post: KataPlatform;
-  toc: any;
-  listToc: string[];
+  linking: MDXLinking;
 }
-
-const PlatformPageTemplate: React.FC<PlatformPageTemplateProps> = ({ post, toc }) => {
-  const prevPage = getPageUrl(post.prev, 'kata-platform');
-  const nextPage = getPageUrl(post.next, 'kata-platform');
-
+const PlatformPageTemplate: React.FC<PlatformPageTemplateProps> = ({ post, linking }) => {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     router.push('/404');
@@ -104,7 +100,7 @@ const PlatformPageTemplate: React.FC<PlatformPageTemplateProps> = ({ post, toc }
               />
               {post.id !== 'about' && <DocsHeader title={post.title} />}
               <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
-              {(prevPage || nextPage) && <PaginationDocs prevPage={prevPage} nextPage={nextPage} />}
+              {linking && <PaginationDocs prevPage={linking.previous} nextPage={linking.next} />}
               <DocsHelpful />
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
@@ -130,18 +126,12 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const slugStringify = JSON.stringify(params.slug);
   const post = allKataPlatforms.find((post) => JSON.stringify(post.slug) === slugStringify);
-  const toc = await import('docs/toc-kata-platform.json');
-
-  if (!toc) {
-    return {
-      notFound: true,
-    };
-  }
+  const linking = linkingToc[post.id] || null;
 
   return {
     props: {
       post,
-      toc: toc.default,
+      linking,
     },
   };
 }
