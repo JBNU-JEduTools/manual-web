@@ -2,12 +2,12 @@ const sanitizeHtml = require('sanitize-html');
 const fs = require('fs');
 
 const markdownJsonOutput = {
-  tutorials: require('./outputs/tutorials.json'),
-  'kata-platform': require('./outputs/kata-platform.json'),
-  'kata-omnichat': require('./outputs/kata-omnichat.json'),
-  'business-dashboard': require('./outputs/business-dashboard.json'),
-  qios: require('./outputs/qios.json'),
-  global: require('./outputs/global.json'),
+  tutorials: require('../markdown-to-json/outputs/tutorials.json'),
+  'kata-platform': require('../markdown-to-json/outputs/kata-platform.json'),
+  'kata-omnichat': require('../markdown-to-json/outputs/kata-omnichat.json'),
+  'business-dashboard': require('../markdown-to-json/outputs/business-dashboard.json'),
+  qios: require('../markdown-to-json/outputs/qios.json'),
+  global: require('../markdown-to-json/outputs/global.json'),
 };
 
 const sanitizeString = (sentences, removeSymbol = true) => {
@@ -62,7 +62,7 @@ Object.keys(markdownJsonOutput).forEach((key) => {
       };
     });
   fs.writeFile(
-    `./markdown-to-json/outputs/${key}.json`,
+    `../markdown-to-json/outputs/${key}.json`,
     JSON.stringify({ app: output.app, data: newData }),
     'utf-8',
     function (err) {
