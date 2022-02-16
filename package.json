@@ -19,8 +19,9 @@
     "md2json:business-dashboard": "markdown-json -c ./markdown-to-json/settings/business-dashboard.json",
     "md2json:tutorials": "markdown-json -c ./markdown-to-json/settings/tutorials.json",
     "md2json:convert": "yarn run md2json:global && yarn run md2json:qios && yarn run md2json:kata-omnichat && yarn run md2json:kata-platform && yarn run md2json:business-dashboard && yarn run md2json:tutorials",
-    "md2json:sanitize": "node ./markdown-to-json/sanitize.js",
+    "md2json:sanitize": "node ./scripts/sanitize.js",
     "md2json:all": "yarn run md2json:convert && yarn run md2json:sanitize && yarn run format",
+    "linking": "node ./scripts/linkingToc.js",
     "cc": "rimraf .contentlayer"
   },
   "dependencies": {
