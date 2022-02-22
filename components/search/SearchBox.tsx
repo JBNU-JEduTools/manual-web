@@ -27,6 +27,7 @@ interface SearchPageState {
 const ResultTitle = styled('h4')`
   margin-top: 0;
   margin-bottom: 0;
+  cursor: pointer;
 `;
 
 const ResultExcerpt = styled('p')`
@@ -53,6 +54,7 @@ const SearchResult = styled('div')`
 
 const SearchResultLink = styled(Link)`
   color: inherit;
+  cursor: pointer;
 
   ${SearchResult} {
     border-bottom: 1px solid ${theme.colors.grey02};
@@ -279,7 +281,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                 {PRODUCTS_DICT[fuseSearch.name] && (
                   <Box ml={12} my={8} width={'100%'}>
                     <ProductBadge>
-                      <img src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
+                      <Image alt="icon-product" src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
                       <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
                         {PRODUCTS_DICT[fuseSearch.name]}
                       </Text>

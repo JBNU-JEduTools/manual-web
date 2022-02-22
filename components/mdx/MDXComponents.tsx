@@ -71,12 +71,14 @@ const FigureImage = (props) => {
       <ImageWrapper marginY={0}>
         <NextImage src={src} alt={alt} naturalWidth={naturalWidth} naturalHeight={naturalHeight} {...rest} />
       </ImageWrapper>
-      <CaptionWrapper>
-        <Text mr={5}>
-          <strong>{caption?.title}</strong>
-        </Text>
-        <Text>{caption?.description}</Text>
-      </CaptionWrapper>
+      {caption &&
+        <CaptionWrapper>
+          <Text mr={5}>
+            <strong>{caption.title}</strong>
+          </Text>
+          <Text>{caption.description}</Text>
+        </CaptionWrapper>
+      }
     </FigureWrapper>
   );
 };
