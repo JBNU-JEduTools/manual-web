@@ -138,7 +138,6 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
             {isSearchOpen ? (
               <SearchBox
                 layout="mobile"
-                onSearchClear={() => setIsSearchOpen(false)}
                 fuseSearch={fuseSearch}
                 onSearchMore={onSearchMore}
               />

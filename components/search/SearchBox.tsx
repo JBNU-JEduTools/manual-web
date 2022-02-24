@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styled, { css } from 'styled-components';
 
 import { space } from 'utils/variables';
-import { theme, Text, Box, PlainButton } from '@aksara-ui/react';
+import { theme, Text, Box, PlainButton, InputSearchbox, Overlay } from '@aksara-ui/react';
 import InputText from '../InputText';
 import { ProductBadge } from 'components/badge';
 import { PRODUCTS_DICT } from 'utils/constants';
@@ -101,7 +101,7 @@ const SearchResultsMobile = css`
   border-bottom-right-radius: 4px;
 `;
 
-const SearchResults = styled('div') <SearchPageProps>`
+const SearchResults = styled('div')<SearchPageProps>`
   padding: 0;
   background-color: ${theme.colors.white};
 
@@ -109,28 +109,14 @@ const SearchResults = styled('div') <SearchPageProps>`
   ${(props) => props.layout === 'mobile' && SearchResultsMobile}
 `;
 
-const SearchInputText = styled(InputText) <SearchPageProps>`
-  width: 100%;
-  input {
-    color: ${theme.colors.grey05};
-    border-radius: 32px;
-    width: 100%;
-    border: 1px solid ${theme.colors.greylight05};
-  }
-  ::-webkit-input-placeholder {
-    color: ${theme.colors.grey05};
-  }
-  ::placeholder {
-    color: ${theme.colors.grey05};
-    opacity: 1;
-  }
-`;
-
 const RootDesktop = css`
   position: relative;
 
   &:not(:last-child) {
     margin-right: ${space.md}px;
+  }
+  #input-searchbox-active {
+    max-width: none !important;
   }
 `;
 
@@ -147,7 +133,11 @@ const RootMobile = css`
     height: 63px;
     padding: 16px;
     background-color: ${theme.colors.white};
+    justify-content: center;
 
+    #input-searchbox-active {
+      max-width: none !important;
+    }
     > div {
       display: block;
       width: 100%;
@@ -161,27 +151,27 @@ const SearchResultButton = styled(PlainButton)`
   width: 100%;
 `;
 
-const Root = styled('div') <SearchPageProps>`
+const Root = styled('div')<SearchPageProps>`
   ${(props) => props.layout === 'desktop' && RootDesktop}
   ${(props) => props.layout === 'mobile' && RootMobile}
 `;
 
 const SearchResultBoxDesktop = css`
   position: absolute;
-  width: 500px;
+  width: 560px;
   top: -30px;
-  right: -30px;
+  right: -45px;
   left: auto;
-  padding: 16px;
+  padding: 16px 24px;
+  z-index: 1011;
+`;
 
-`
-
-const SearchResultBox = styled('div') <{ layout: string }>`
+const SearchResultBox = styled('div')<{ layout: string }>`
   border-radius: 12px;
   background-color: ${theme.colors.white};
   box-shadow: 0px 8px 16px 0px ${theme.colors.greydark01};
   ${(props) => props.layout === 'desktop' && SearchResultBoxDesktop}
-`
+`;
 
 export default class SearchBox extends React.Component<SearchPageProps, SearchPageState> {
   static defaultProps = {
@@ -230,13 +220,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
   }
 
   search = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { onSearchClear } = this.props;
-
-    if (!event.target.value) {
-      if (onSearchClear) {
-        onSearchClear();
-      }
-    } else {
+    if (event.target.value) {
       const query = event.target.value;
       const results = this.getSearchResults(query);
       this.setState({ results, query });
@@ -244,98 +228,79 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
   };
 
   render() {
-    const { layout, onSearchClear, fuseSearch, onSearchMore } = this.props;
+    const { layout, fuseSearch, onSearchMore } = this.props;
     const { query, results, isInputFocused } = this.state;
-    const ref = React.createRef<HTMLInputElement>();
 
     return (
       <Root
         layout={layout}
-        onFocus={() => this.setState({ isInputFocused: true })}
-        onBlur={() => this.setState({ isInputFocused: false })}
+        onFocus={() => {
+          this.setState({ isInputFocused: true });
+        }}
       >
-        {isInputFocused ?
-          <SearchResultBox layout={layout}>
-            <div className="header">
-              <SearchInputText
-                layout={layout}
-                placeholder={layout === 'default' ? "Type what you're looking for..." : 'Search...'}
-                value={query}
-                onChange={this.search}
-                ref={ref}
-                onSearchClear={() => {
-                  // Don't even ask.
-                  if (ref.current) {
-                    ref.current.value = '';
-                  }
-                  this.setState({ results: [], query: '' });
-
-                  if (onSearchClear) {
-                    onSearchClear();
-                  }
-                }}
-              />
-            </div>
-            {isInputFocused && results && results.length !== 0 && (
-              <SearchResults layout={layout}>
-                {PRODUCTS_DICT[fuseSearch.name] && (
-                  <Box ml={12} my={8} width={'100%'}>
-                    <ProductBadge>
-                      <Image alt="icon-product" src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
-                      <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
-                        {PRODUCTS_DICT[fuseSearch.name]}
-                      </Text>
-                    </ProductBadge>
-                  </Box>
-                )}
-                {results.map(({ item: page }) => {
-                  return (
-                    <SearchResultLink href={page.meta.absolutePath} key={page.title}>
-                      <SearchResult>
-                        <ResultTitle>{page.title}</ResultTitle>
-                        {page.excerpt && <ResultExcerpt>{page.excerpt}</ResultExcerpt>}
-                      </SearchResult>
-                    </SearchResultLink>
-                  );
-                })}
-                {results && results.length === 5 && (
-                  <SearchResultButton
-                    icon={IconOutgoing}
-                    iconPosition="left"
-                    onClick={() => {
-                      onSearchMore(fuseSearch.name, query);
-                    }}
-                    size="sm"
-                    type="button"
-                    variant="primary"
-                  >
-                    See all “{query}” result
-                  </SearchResultButton>
-                )}
-              </SearchResults>
-            )}
-          </SearchResultBox> :
-          <div className="header">
-            <SearchInputText
-              layout={layout}
+        {isInputFocused ? (
+          <>
+            <Overlay backdropBlur={false} onClick={() => this.setState({ isInputFocused: false })} />
+            <SearchResultBox layout={layout}>
+              <Box className="header" marginBottom={12}>
+                <InputSearchbox
+                  placeholder={layout === 'default' ? "Type what you're looking for..." : 'Search...'}
+                  onChange={this.search}
+                  groupId={'input-searchbox-active'}
+                  height={40}
+                  width={'100%'}
+                  autoFocus
+                />
+              </Box>
+              {results && results.length !== 0 && (
+                <SearchResults layout={layout}>
+                  {PRODUCTS_DICT[fuseSearch.name] && (
+                    <Box ml={12} my={8} width={'100%'}>
+                      <ProductBadge>
+                        <Image alt="icon-product" src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
+                        <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
+                          {PRODUCTS_DICT[fuseSearch.name]}
+                        </Text>
+                      </ProductBadge>
+                    </Box>
+                  )}
+                  {results.map(({ item: page }) => {
+                    return (
+                      <SearchResultLink href={page.meta.absolutePath} key={page.title}>
+                        <SearchResult>
+                          <ResultTitle>{page.title}</ResultTitle>
+                          {page.excerpt && <ResultExcerpt>{page.excerpt}</ResultExcerpt>}
+                        </SearchResult>
+                      </SearchResultLink>
+                    );
+                  })}
+                  {results && results.length === 5 && (
+                    <SearchResultButton
+                      icon={IconOutgoing}
+                      iconPosition="left"
+                      onClick={() => {
+                        onSearchMore(fuseSearch.name, query);
+                      }}
+                      size="sm"
+                      type="button"
+                      variant="primary"
+                    >
+                      See all “{query}” result
+                    </SearchResultButton>
+                  )}
+                </SearchResults>
+              )}
+            </SearchResultBox>
+          </>
+        ) : (
+          <Box className="header">
+            <InputSearchbox
               placeholder={layout === 'default' ? "Type what you're looking for..." : 'Search...'}
-              value={query}
-              onChange={this.search}
-              ref={ref}
-              onSearchClear={() => {
-                // Don't even ask.
-                if (ref.current) {
-                  ref.current.value = '';
-                }
-                this.setState({ results: [], query: '' });
-
-                if (onSearchClear) {
-                  onSearchClear();
-                }
-              }}
+              height={40}
+              width={'100%'}
             />
-          </div>
-        }
+          </Box>
+        )}
       </Root>
     );
   }
