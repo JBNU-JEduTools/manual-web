@@ -2,6 +2,7 @@
 id: introduction-about
 next: get-started
 section: Introduction
+hiddenTitle: About WhatsApp Business Dashboard
 ---
 
 <img className="borderless" src="/assets/images/products/business-dashboard/image-introduction-1.webp" alt="Business-Dashboard Illustration" />
