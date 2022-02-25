@@ -26,6 +26,7 @@
         "absolutePath": "/business-dashboard/how-to/conversation-based-pricing"
       },
       "product": "business-dashboard",
+      "type": "docs",
       "id": "conversation-based-pricing",
       "title": "Conversation-Based Pricing",
       "prev": "how-to-use-analytics",
@@ -43,6 +44,7 @@
         "absolutePath": "/business-dashboard/how-to/get-started"
       },
       "product": "business-dashboard",
+      "type": "docs",
       "id": "get-started",
       "title": "Get Started with WhatsApp Business Dashboard",
       "prev": "introduction-about",
@@ -60,6 +62,7 @@
         "absolutePath": "/business-dashboard/how-to/how-to-register"
       },
       "product": "business-dashboard",
+      "type": "docs",
       "id": "how-to-register",
       "title": "How to Register a New WhatsApp Number",
       "prev": "how-to-use-trial",
@@ -77,6 +80,7 @@
         "absolutePath": "/business-dashboard/how-to/how-to-use-trial"
       },
       "product": "business-dashboard",
+      "type": "docs",
       "id": "how-to-use-trial",
       "title": "How to Use Trial Experience",
       "prev": "get-started",
@@ -94,6 +98,7 @@
         "absolutePath": "/business-dashboard/how-to/manage-broadcast"
       },
       "product": "business-dashboard",
+      "type": "docs",
       "id": "manage-broadcast",
       "title": "Manage Your Broadcast",
       "prev": "manage-your-whatsapp-message-templates",
@@ -111,6 +116,7 @@
         "absolutePath": "/business-dashboard/how-to/manage-wa-credit"
       },
       "product": "business-dashboard",
+      "type": "docs",
       "id": "manage-wa-credit",
       "title": "Manage Your Broadcast Credit",
       "prev": "how-to-register",
@@ -128,6 +134,7 @@
         "absolutePath": "/business-dashboard/how-to/use-analytics"
       },
       "product": "business-dashboard",
+      "type": "docs",
       "id": "how-to-use-analytics",
       "title": "How to Use Analytics",
       "prev": "manage-broadcast",
@@ -145,6 +152,7 @@
         "absolutePath": "/business-dashboard/how-to/whatsapp-message-templates"
       },
       "product": "business-dashboard",
+      "type": "docs",
       "id": "manage-your-whatsapp-message-templates",
       "title": "Manage Your WhatsApp Message Templates",
       "prev": "manage-wa-credit",
@@ -162,6 +170,7 @@
         "absolutePath": "/business-dashboard/introduction/about"
       },
       "product": "business-dashboard",
+      "type": "docs",
       "id": "introduction-about",
       "title": "About WhatsApp Business Dashboard",
       "next": "get-started",

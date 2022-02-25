@@ -26,6 +26,7 @@
         "absolutePath": "/kata-platform/documentation-content/analyze-your-bot-conversations"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "analyze-your-bot-conversations",
       "title": "Analyze Your Bot Conversations",
       "prev": "start-your-first-chatbot",
@@ -43,6 +44,7 @@
         "absolutePath": "/kata-platform/documentation-content/designing-conversation"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "designing-conversation",
       "title": "Designing Conversation",
       "next": "start-your-first-chatbot",
@@ -60,6 +62,7 @@
         "absolutePath": "/kata-platform/documentation-content/error-log"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "error-log",
       "title": "Error Log",
       "prev": "analyze-your-bot-conversations",
@@ -77,6 +80,7 @@
         "absolutePath": "/kata-platform/documentation-content/start-your-first-chatbot"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "start-your-first-chatbot",
       "title": "Start Your First Chatbot",
       "next": "analyze-your-bot-conversations",
@@ -94,6 +98,7 @@
         "absolutePath": "/kata-platform/faqs/bot-development-faqs"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "bot-development-faqs",
       "title": "Bot Development FAQs",
       "prev": "general-faqs",
@@ -111,6 +116,7 @@
         "absolutePath": "/kata-platform/faqs/general-faqs"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "general-faqs",
       "title": "General FAQs",
       "prev": "how-to-change-error-messages-in-your-chatbot",
@@ -128,6 +134,7 @@
         "absolutePath": "/kata-platform/glossary/coming-soon"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "glossary-coming-soon",
       "title": "Coming Soon",
       "prev": "glossary-inside-kata-flow",
@@ -145,6 +152,7 @@
         "absolutePath": "/kata-platform/glossary/general"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "glossary-general",
       "title": "General",
       "prev": "bot-development-faqs",
@@ -162,6 +170,7 @@
         "absolutePath": "/kata-platform/glossary/inside-kata-flow"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "glossary-inside-kata-flow",
       "title": "Inside Kata Flow",
       "prev": "glossary-kata-platform",
@@ -179,6 +188,7 @@
         "absolutePath": "/kata-platform/glossary/kata-platform"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "glossary-kata-platform",
       "title": "Kata Platform",
       "prev": "glossary-general",
@@ -196,6 +206,7 @@
         "absolutePath": "/kata-platform/how-to/how-to-change-error-messages-in-your-chatbot"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "how-to-change-error-messages-in-your-chatbot",
       "title": "How to Change Error Messages in Your Chatbot to Match Them With Chatbot Persona",
       "prev": "using-custom-api-to-access-third-party-application",
@@ -213,6 +224,7 @@
         "absolutePath": "/kata-platform/how-to/how-to-deploy-your-chatbot-using-generic-channel"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "how-to-deploy-your-chatbot-using-generic-channel",
       "title": "How to Deploy Your Chatbot Using Generic Channel",
       "prev": "error-log",
@@ -230,6 +242,7 @@
         "absolutePath": "/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "how-to-improve-your-chatbot-intelligence-by-training-your-nlu",
       "title": "How to Improve Your Chatbot Intelligence by Training Your NLU",
       "prev": "how-to-deploy-your-chatbot-using-generic-channel",
@@ -247,6 +260,7 @@
         "absolutePath": "/kata-platform/how-to/how-to-use-bulk-training-for-faster-training-process"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "how-to-use-bulk-training-for-faster-training-process",
       "title": "How to Use Bulk Training to the Faster Training Process",
       "prev": "how-to-use-training-data-generator-to-automate-generating-training-data",
@@ -264,6 +278,7 @@
         "absolutePath": "/kata-platform/how-to/how-to-use-nlu-threshold-to-enhance-customer-experience"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "how-to-use-nlu-threshold-to-enhance-customer-experience",
       "title": "How to Use NLU Threshold to Enhance Customer Experience",
       "prev": "how-to-improve-your-chatbot-intelligence-by-training-your-nlu",
@@ -281,6 +296,7 @@
         "absolutePath": "/kata-platform/how-to/how-to-use-super-model-to-improve-your-bot-intelligence"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "how-to-use-super-model-to-improve-your-bot-intelligence",
       "title": "How to Use Super Model (“Kata Entity”) to Improve Your Bot Intelligence",
       "prev": "how-to-use-nlu-threshold-to-enhance-customer-experience",
@@ -298,6 +314,7 @@
         "absolutePath": "/kata-platform/how-to/how-to-use-training-data-generator-to-automate-generating-training-data"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "how-to-use-training-data-generator-to-automate-generating-training-data",
       "title": "How to Use Training Data Generator to Automate Generating Training Data",
       "prev": "how-to-use-super-model-to-improve-your-bot-intelligence",
@@ -315,6 +332,7 @@
         "absolutePath": "/kata-platform/how-to/using-custom-api-to-access-third-party-application"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "using-custom-api-to-access-third-party-application",
       "title": "Using Custom API to Access Third-Party Application",
       "prev": "how-to-use-bulk-training-for-faster-training-process",
@@ -332,6 +350,7 @@
         "absolutePath": "/kata-platform/introduction/about"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "about",
       "title": "What is Kata Platform",
       "next": "benefits-with-kata-platform",
@@ -348,6 +367,7 @@
         "absolutePath": "/kata-platform/introduction/benefits-with-kata-platform"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "benefits-with-kata-platform",
       "title": "Benefits With Kata Platform",
       "prev": "about",
@@ -365,6 +385,7 @@
         "absolutePath": "/kata-platform/introduction/kata-platform-features"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "kata-platform-features",
       "title": "Kata Platform Features",
       "prev": "benefits-with-kata-platform",
@@ -382,6 +403,7 @@
         "absolutePath": "/kata-platform/use-case/all-use-cases"
       },
       "product": "kata-platform",
+      "type": "docs",
       "id": "all-use-cases",
       "title": "All Use Cases",
       "prev": "kata-platform-features",

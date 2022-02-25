@@ -26,6 +26,7 @@
         "absolutePath": "/qios/how-to/activate-your-chatbot"
       },
       "product": "qios",
+      "type": "docs",
       "id": "activate-your-chatbot",
       "title": "How To Activate Your Chatbot",
       "prev": "manage-store",
@@ -43,6 +44,7 @@
         "absolutePath": "/qios/how-to/general-setup"
       },
       "product": "qios",
+      "type": "docs",
       "id": "general-setup",
       "title": "How To Setup",
       "prev": "about",
@@ -60,6 +62,7 @@
         "absolutePath": "/qios/how-to/manage-order"
       },
       "product": "qios",
+      "type": "docs",
       "id": "manage-order",
       "title": "How To Manage Order",
       "prev": "set-up-bank-account",
@@ -77,6 +80,7 @@
         "absolutePath": "/qios/how-to/manage-product"
       },
       "product": "qios",
+      "type": "docs",
       "id": "manage-product",
       "title": "How To Manage Product",
       "prev": "general-setup",
@@ -94,6 +98,7 @@
         "absolutePath": "/qios/how-to/manage-store"
       },
       "product": "qios",
+      "type": "docs",
       "id": "manage-store",
       "title": "How To Manage Store",
       "prev": "manage-product",
@@ -111,6 +116,7 @@
         "absolutePath": "/qios/how-to/set-up-bank-account"
       },
       "product": "qios",
+      "type": "docs",
       "id": "set-up-bank-account",
       "title": "How To Set Up Bank Account",
       "prev": "activate-your-chatbot",
@@ -128,6 +134,7 @@
         "absolutePath": "/qios/introduction/about"
       },
       "product": "qios",
+      "type": "docs",
       "id": "about",
       "title": "About Qios",
       "next": "general-setup",

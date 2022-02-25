@@ -26,6 +26,7 @@
         "absolutePath": "/tutorials/bot-studio"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "bot-studio",
       "title": "Bot Studio Tutorial",
       "layout": "tutorial",
@@ -45,6 +46,7 @@
         "absolutePath": "/tutorials/create-igdm-bot-handover-from-chatbot-to-agent"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "create-igdm-bot-handover-from-chatbot-to-agent",
       "title": "Create Instagram Bot Handover from Chatbot to Agent Tutorial",
       "layout": "tutorial",
@@ -64,6 +66,7 @@
         "absolutePath": "/tutorials/create-simple-bot-handover-from-chatbot-to-agent"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "create-simple-bot-handover-from-chatbot-to-agent",
       "title": "Create Simple Bot Handover from Chatbot to Agent Tutorial",
       "layout": "tutorial",
@@ -82,6 +85,7 @@
         "absolutePath": "/tutorials/hello-world"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "hello-world",
       "title": "Creating a Simple Hello World Chatbot",
       "layout": "tutorial",
@@ -101,6 +105,7 @@
         "absolutePath": "/tutorials/how-to-deploy-your-chatbot-to-line"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "how-to-deploy-your-chatbot-to-line",
       "title": "How to deploy your chatbot to LINE",
       "layout": "tutorial",
@@ -118,6 +123,7 @@
         "absolutePath": "/tutorials/how-to-deploy-your-chatbot-using-twitter"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "how-to-deploy-your-chatbot-using-twitter",
       "title": "How to deploy your chatbot using Twitter",
       "layout": "tutorial",
@@ -135,6 +141,7 @@
         "absolutePath": "/tutorials/how-to-use-facebook-messenger-for-your-chatbot"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "how-to-use-facebook-messenger-for-your-chatbot",
       "title": "How to use Facebook Messenger for your chatbot",
       "layout": "tutorial",
@@ -152,6 +159,7 @@
         "absolutePath": "/tutorials/how-to-use-freshchat-for-your-chatbot"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "how-to-use-freshchat-for-your-chatbot",
       "title": "How to use Freshchat for your chatbot",
       "layout": "tutorial",
@@ -169,6 +177,7 @@
         "absolutePath": "/tutorials/how-to-use-instagram-messaging-automation-in-your-project"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "how-to-use-instagram-messaging-automation-in-your-project",
       "title": "How to use Instagram Messaging automation in your project",
       "layout": "tutorial",
@@ -186,6 +195,7 @@
         "absolutePath": "/tutorials/how-to-use-qiscus-omnichannel-to-your-chatbot"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "how-to-use-qiscus-omnichannel-to-your-chatbot",
       "title": "How to use Qiscus omnichannel to your chatbot",
       "layout": "tutorial",
@@ -203,6 +213,7 @@
         "absolutePath": "/tutorials/how-to-use-slack-as-your-chatbot-messaging-platform"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "how-to-use-slack-as-your-chatbot-messaging-platform",
       "title": "How to use Slack as your chatbot messaging platform",
       "layout": "tutorial",
@@ -220,6 +231,7 @@
         "absolutePath": "/tutorials/how-to-use-telegram-as-your-chatbox-messaging-platform"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "how-to-use-telegram-for-your-chatbot",
       "title": "How to use Telegram as your chatbot messaging platform",
       "layout": "tutorial",
@@ -237,6 +249,7 @@
         "absolutePath": "/tutorials/how-to-use-whatsapp-business-api-in-my-chatbot"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "how-to-use-whatsapp-business-api-in-my-chatbot",
       "title": "How to use WhatsApp Business API in my chatbot",
       "layout": "tutorial",
@@ -254,6 +267,7 @@
         "absolutePath": "/tutorials/integration-chatbot-with-cms-studio"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "integration-chatbot-with-cms-studio",
       "title": "Integration Chatbot with Kata CMS",
       "layout": "tutorial",
@@ -272,6 +286,7 @@
         "absolutePath": "/tutorials/integration-chatbot-with-nl-studio"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "integration-chatbot-with-nl-studio",
       "title": "Integration Chatbot with NL Studio Tutorial",
       "layout": "tutorial",
@@ -291,6 +306,7 @@
         "absolutePath": "/tutorials/nl-studio"
       },
       "product": "kata-platform",
+      "type": "tutorials",
       "id": "nl-studio",
       "title": "NL Studio Tutorial",
       "layout": "tutorial",

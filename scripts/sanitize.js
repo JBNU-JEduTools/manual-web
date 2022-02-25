@@ -57,6 +57,7 @@ Object.keys(markdownJsonOutput).forEach((key) => {
         excerpt: sanitizeString(contents).split(' ').slice(0, 32).join(' ').trim(),
         meta: { ...restMeta, absolutePath },
         product: productKey,
+        type: absolutePath.indexOf('tutorials') > 0 ? 'tutorials' : 'docs',
         id,
         title: title ?? hiddenTitle,
         ...rest,

@@ -26,6 +26,7 @@
         "absolutePath": "/kata-omnichat/before-you-start/prepare-your-instagram-business-account"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "prepare-your-instagram-business-account",
       "title": "Prepare your Instagram Business account",
       "prev": "benefits-with-kata-omnichat",
@@ -43,6 +44,7 @@
         "absolutePath": "/kata-omnichat/before-you-start/prepare-your-waba-account"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "prepare-your-waba-account",
       "title": "Prepare your WABA account",
       "prev": "prepare-your-instagram-business-account",
@@ -60,6 +62,7 @@
         "absolutePath": "/kata-omnichat/canned-response/set-up-canned-responses"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "set-up-canned-responses",
       "title": "Set up canned responses",
       "prev": "add-teams",
@@ -77,6 +80,7 @@
         "absolutePath": "/kata-omnichat/change-your-status/how-to-use"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "change-your-status-how-to-use",
       "title": "How to use",
       "prev": "change-your-status-introduction",
@@ -94,6 +98,7 @@
         "absolutePath": "/kata-omnichat/change-your-status/introduction"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "change-your-status-introduction",
       "title": "Introduction",
       "prev": "audio-notification-how-to-use",
@@ -111,6 +116,7 @@
         "absolutePath": "/kata-omnichat/configure-your-account/how-to-use"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "configure-account-how-to-use",
       "title": "How to use",
       "prev": "configure-account-introduction",
@@ -128,6 +134,7 @@
         "absolutePath": "/kata-omnichat/configure-your-account/introduction"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "configure-account-introduction",
       "title": "Introduction",
       "prev": "dashboard-change-password",
@@ -145,6 +152,7 @@
         "absolutePath": "/kata-omnichat/configure-your-agent-chatbot/create-agent-bot-from-kata-platform"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "create-agent-bot-from-kata-platform",
       "title": "Create Agent Bot from Kata Platform",
       "prev": "setup-agent-bot-in-kata-omnichat",
@@ -162,6 +170,7 @@
         "absolutePath": "/kata-omnichat/configure-your-agent-chatbot/setup-agent-bot-in-kata-omnichat"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "setup-agent-bot-in-kata-omnichat",
       "title": "Configure your agent bot",
       "prev": "connect-your-waba-inbox",
@@ -179,6 +188,7 @@
         "absolutePath": "/kata-omnichat/enable-audio-notification/how-to-use"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "audio-notification-how-to-use",
       "title": "How to use",
       "prev": "audio-notification-introduction",
@@ -196,6 +206,7 @@
         "absolutePath": "/kata-omnichat/enable-audio-notification/introduction"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "audio-notification-introduction",
       "title": "Introduction",
       "prev": "access-token-how-to-use",
@@ -213,6 +224,7 @@
         "absolutePath": "/kata-omnichat/get-access-token/how-to-use"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "access-token-how-to-use",
       "title": "How to use",
       "prev": "access-token-introduction",
@@ -230,6 +242,7 @@
         "absolutePath": "/kata-omnichat/get-access-token/introduction"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "access-token-introduction",
       "title": "Introduction",
       "prev": "email-notification-how-to-use",
@@ -247,6 +260,7 @@
         "absolutePath": "/kata-omnichat/getting-started/connect-your-instagram-messaging-inbox"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "connect-your-instagram-messaging-inbox",
       "title": "Connect your Instagram Messaging inbox",
       "prev": "register-your-account-first",
@@ -264,6 +278,7 @@
         "absolutePath": "/kata-omnichat/getting-started/connect-your-waba-inbox"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "connect-your-waba-inbox",
       "title": "Connect your WABA inbox",
       "prev": "connect-your-instagram-messaging-inbox",
@@ -281,6 +296,7 @@
         "absolutePath": "/kata-omnichat/getting-started/register-your-account-first"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "register-your-account-first",
       "title": "Register your account first",
       "prev": "prepare-your-waba-account",
@@ -298,6 +314,7 @@
         "absolutePath": "/kata-omnichat/how-to-use-the-dashboard/change-password"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "dashboard-change-password",
       "title": "Change password",
       "prev": "dashboard-update-profile",
@@ -315,6 +332,7 @@
         "absolutePath": "/kata-omnichat/how-to-use-the-dashboard/update-profile"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "dashboard-update-profile",
       "title": "Update Profile",
       "prev": "create-agent-bot-from-kata-platform",
@@ -332,6 +350,7 @@
         "absolutePath": "/kata-omnichat/introduction/benefits-with-kata-omnichat"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "benefits-with-kata-omnichat",
       "title": "Benefits with Kata Omnichat",
       "prev": "what-is-kata-omnichat",
@@ -349,6 +368,7 @@
         "absolutePath": "/kata-omnichat/introduction/what-is-kata-omnichat"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "what-is-kata-omnichat",
       "title": "What is Kata Omnichat",
       "next": "benefits-with-kata-omnichat",
@@ -365,6 +385,7 @@
         "absolutePath": "/kata-omnichat/manage-agent/add-agent"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "add-agent",
       "title": "Add agent",
       "prev": "set-up-ice-breaker",
@@ -382,6 +403,7 @@
         "absolutePath": "/kata-omnichat/manage-agent/delete-agent"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "delete-agent",
       "title": "Delete agent",
       "prev": "edit-agent",
@@ -399,6 +421,7 @@
         "absolutePath": "/kata-omnichat/manage-agent/edit-agent"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "edit-agent",
       "title": "Edit agent",
       "prev": "add-agent",
@@ -416,6 +439,7 @@
         "absolutePath": "/kata-omnichat/manage-agent/received-the-invitation"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "received-the-invitation",
       "title": "Received the invitation as administrator or agent",
       "prev": "delete-agent",
@@ -433,6 +457,7 @@
         "absolutePath": "/kata-omnichat/manage-inbox-settings/manage-agents-to-inbox"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "manage-agents-to-inbox",
       "title": "Manage Agents to Inbox",
       "prev": "inbox-add-agents",
@@ -450,6 +475,7 @@
         "absolutePath": "/kata-omnichat/manage-inbox-settings/set-up-business-hours"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "set-up-business-hours",
       "title": "Set up business hours",
       "prev": "set-up-quick-reply",
@@ -467,6 +493,7 @@
         "absolutePath": "/kata-omnichat/manage-inbox-settings/set-up-ice-breaker"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "set-up-ice-breaker",
       "title": "Set Up Ice Breaker",
       "prev": "set-up-business-hours",
@@ -484,6 +511,7 @@
         "absolutePath": "/kata-omnichat/manage-inbox-settings/set-up-quick-reply"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "set-up-quick-reply",
       "title": "Setup quick reply",
       "prev": "manage-agents-to-inbox",
@@ -501,6 +529,7 @@
         "absolutePath": "/kata-omnichat/manage-inbox/add-agents"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "inbox-add-agents",
       "title": "Add agents",
       "prev": "inbox-add-inbox",
@@ -518,6 +547,7 @@
         "absolutePath": "/kata-omnichat/manage-inbox/add-inbox"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "inbox-add-inbox",
       "title": "Add Inbox",
       "prev": "configure-account-how-to-use",
@@ -535,6 +565,7 @@
         "absolutePath": "/kata-omnichat/manage-label/add-conversation-to-a-label"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "add-conversation-to-a-label",
       "title": "Add conversation to a label",
       "prev": "add-label",
@@ -552,6 +583,7 @@
         "absolutePath": "/kata-omnichat/manage-label/add-label"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "add-label",
       "title": "Add Label",
       "prev": "add-contact",
@@ -569,6 +601,7 @@
         "absolutePath": "/kata-omnichat/manage-teams/add-teams"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "add-teams",
       "title": "Add Teams",
       "prev": "add-conversation-to-a-label",
@@ -586,6 +619,7 @@
         "absolutePath": "/kata-omnichat/manage-your-contact/add-contact"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "add-contact",
       "title": "Add contact",
       "prev": "view-contact",
@@ -603,6 +637,7 @@
         "absolutePath": "/kata-omnichat/manage-your-contact/view-contact"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "view-contact",
       "title": "View contact",
       "prev": "download-transcript",
@@ -620,6 +655,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/admin-view-conversation"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "admin-view-conversation",
       "title": "Admin View Conversation",
       "prev": "received-the-invitation",
@@ -637,6 +673,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/agent-view-conversation"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "agent-view-conversation",
       "title": "Agent view conversation",
       "prev": "admin-view-conversation",
@@ -654,6 +691,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/auto-agent-assignment"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "auto-agent-assignment",
       "title": "Auto agent assignment",
       "prev": "manual-agent-assignment",
@@ -671,6 +709,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/conversation-in-customer-side-using-bot"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "conversation-in-customer-side-using-bot",
       "title": "Conversation in Customer-side using bot",
       "prev": "whatsapp-business-conversation-in-agent-side",
@@ -688,6 +727,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/conversation-in-customer-side-without-bot"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "conversation-in-customer-side-without-bot",
       "title": "Conversation in Customer-side for Instagram Messaging (without bot)",
       "prev": "conversation-in-customer-side-using-bot",
@@ -705,6 +745,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/download-transcript"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "download-transcript",
       "title": "Download transcript",
       "prev": "mute-conversation",
@@ -722,6 +763,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/manual-agent-assignment"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "manual-agent-assignment",
       "title": "Manual Agent Assignment",
       "prev": "using-private-notes-in-conversations",
@@ -739,6 +781,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/mute-conversation"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "mute-conversation",
       "title": "Mute conversation",
       "prev": "take-over-bot",
@@ -756,6 +799,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/resolve-conversation"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "resolve-conversation",
       "title": "Resolve conversation",
       "prev": "auto-agent-assignment",
@@ -773,6 +817,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/see-conversation-between-chatbot-and-customer"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "see-conversation-between-chatbot-and-customer",
       "title": "See Conversation between Chatbot and Customer",
       "prev": "conversation-in-customer-side-without-bot",
@@ -790,6 +835,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/take-over-bot"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "take-over-bot",
       "title": "Take-over bot",
       "prev": "resolve-conversation",
@@ -807,6 +853,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/using-private-notes-in-conversations"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "using-private-notes-in-conversations",
       "title": "Using private notes in conversations",
       "prev": "see-conversation-between-chatbot-and-customer",
@@ -824,6 +871,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/whatsapp-business-conversation-in-agent-side"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "whatsapp-business-conversation-in-agent-side",
       "title": "Whatsapp Business API conversation in agent-side (with or without bot)",
       "prev": "whatsapp-business-conversation-using-bot",
@@ -841,6 +889,7 @@
         "absolutePath": "/kata-omnichat/manage-your-conversation/whatsapp-business-conversation-using-bot"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "whatsapp-business-conversation-using-bot",
       "title": "Whatsapp Business conversation using a bot",
       "prev": "agent-view-conversation",
@@ -858,6 +907,7 @@
         "absolutePath": "/kata-omnichat/reports/download-report"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "download-report",
       "title": "Download report",
       "prev": "view-report",
@@ -875,6 +925,7 @@
         "absolutePath": "/kata-omnichat/reports/view-report"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "view-report",
       "title": "View Report",
       "prev": "change-your-status-how-to-use",
@@ -892,6 +943,7 @@
         "absolutePath": "/kata-omnichat/setup-email-notification/how-to-use"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "email-notification-how-to-use",
       "title": "How to use",
       "prev": "email-notification-introduction",
@@ -909,6 +961,7 @@
         "absolutePath": "/kata-omnichat/setup-email-notification/introduction"
       },
       "product": "kata-omnichat",
+      "type": "docs",
       "id": "email-notification-introduction",
       "title": "Introduction",
       "prev": "set-up-canned-responses",
