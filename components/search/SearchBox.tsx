@@ -84,7 +84,7 @@ const SearchResultLink = styled(Link)`
 
 const SearchResultsDesktop = css`
   width: 100%;
-  height: 400px;
+  height: 100%;
   overflow-y: auto;
   z-index: 50;
 `;
