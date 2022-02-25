@@ -53,8 +53,8 @@ Object.keys(markdownJsonOutput).forEach((key) => {
       // For handling global json and making breadcrumb for search page
       const [_, productKey, __] = absolutePath.split('/');
       return {
-        contents: sanitizeString(contents),
-        excerpt: sanitizeString(contents).split(' ').slice(0, 32).join(' '),
+        contents: sanitizeString(contents).trim(),
+        excerpt: sanitizeString(contents).split(' ').slice(0, 32).join(' ').trim(),
         meta: { ...restMeta, absolutePath },
         product: productKey,
         id,
