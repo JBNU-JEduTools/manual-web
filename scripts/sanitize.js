@@ -38,7 +38,7 @@ const convertRelativeToAbsolute = (relativePath, prefix) => {
 };
 
 const sanitizeUrl = (path) => {
-  return path.replace(/\\/g, '/').replace('.html', '');
+  return path.replace(/\\/g, '/').replace('.html', '').replace('.mdx', '');
 };
 
 Object.keys(markdownJsonOutput).forEach((key) => {
