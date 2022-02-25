@@ -36,10 +36,13 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, linki
     router.push('/404');
   }
 
-  const onTocSidebarClick = React.useCallback((e: any, url: string) => {
-    e.preventDefault();
-    router.push(url);
-  }, []);
+  const onTocSidebarClick = React.useCallback(
+    (e: any, url: string) => {
+      e.preventDefault();
+      router.push(url);
+    },
+    [router]
+  );
 
   const isItemSelected = React.useCallback(
     (url: string): boolean => {
