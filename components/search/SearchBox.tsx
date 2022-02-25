@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 
 import { space } from 'utils/variables';
 import { theme, Text, Box, PlainButton, InputSearchbox, Overlay } from '@aksara-ui/react';
-import InputText from '../InputText';
+
 import { ProductBadge } from 'components/badge';
 import { PRODUCTS_DICT } from 'utils/constants';
 import { IconOutgoing } from '@aksara-ui/icons';
@@ -257,7 +257,15 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                   {PRODUCTS_DICT[fuseSearch.name] && (
                     <Box ml={12} my={8} width={'100%'}>
                       <ProductBadge>
-                        <Image alt="icon-product" src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
+                        <Box mr={8} display="flex">
+                          <Image
+                            width={16}
+                            height={16}
+                            layout="fixed"
+                            src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`}
+                            alt={fuseSearch.name}
+                          />
+                        </Box>
                         <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
                           {PRODUCTS_DICT[fuseSearch.name]}
                         </Text>
