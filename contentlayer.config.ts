@@ -25,8 +25,8 @@ const computedFields: ComputedFields = {
 
 const BusinessDashboard = defineDocumentType(() => ({
   name: 'BusinessDashboard',
-  filePathPattern: 'business-dashboard/**/*.md',
-  contentType: 'markdown',
+  filePathPattern: 'business-dashboard/**/*.mdx',
+  contentType: 'mdx',
   fields: {
     id: { type: 'string', required: true },
     section: { type: 'string', required: true },

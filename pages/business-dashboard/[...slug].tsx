@@ -24,21 +24,27 @@ import Image from 'next/image';
 import toc from 'docs/toc-business-dashboard.json';
 import linkingToc from 'docs/linking-toc/business-dashboard.json';
 import { MDXLinking } from 'interfaces/linking';
+import { useMDXComponent } from 'next-contentlayer/hooks';
+import MDXComponents from 'components/mdx/MDXComponents';
 
 interface BusinessDashboardPageTemplateProps {
   post: BusinessDashboard;
   linking: MDXLinking;
 }
 const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps> = ({ post, linking }) => {
+  const MDXContent = useMDXComponent(post.body.code);
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     router.push('/404');
   }
 
-  const onTocSidebarClick = React.useCallback((e: any, url: string) => {
-    e.preventDefault();
-    router.push(url);
-  }, []);
+  const onTocSidebarClick = React.useCallback(
+    (e: any, url: string) => {
+      e.preventDefault();
+      router.push(url);
+    },
+    [router]
+  );
 
   const isItemSelected = React.useCallback(
     (url: string): boolean => {
@@ -99,7 +105,9 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
                 ]}
               />
               <DocsHeader title={post.title} />
-              <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
+              <MarkdownContent>
+                <MDXContent components={MDXComponents} />
+              </MarkdownContent>
               {linking && <PaginationDocs prevPage={linking.previous} nextPage={linking.next} />}
               <DocsHelpful />
               <FooterWrapper>
