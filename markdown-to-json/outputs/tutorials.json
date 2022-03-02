@@ -30,7 +30,7 @@
       "id": "bot-studio",
       "title": "Bot Studio Tutorial",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-cms.webp",
+      "imgSpot": "/assets/images/tutorials/spot-cms.webp",
       "prev": "hello-world-tutorial",
       "next": "nl-studio-tutorial",
       "date": "2018-07-07T07:00:00+07:00"
@@ -50,7 +50,7 @@
       "id": "create-igdm-bot-handover-from-chatbot-to-agent",
       "title": "Create Instagram Bot Handover from Chatbot to Agent Tutorial",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-ig-handover.webp",
+      "imgSpot": "/assets/images/tutorials/spot-ig-handover.webp",
       "prev": "integration-chatbot-with-cms-studio",
       "next": "create-simple-bot-handover-from-chatbot-to-agent",
       "date": "2018-10-10T07:00:00+07:00"
@@ -70,7 +70,7 @@
       "id": "create-simple-bot-handover-from-chatbot-to-agent",
       "title": "Create Simple Bot Handover from Chatbot to Agent Tutorial",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-simple-handover.webp",
+      "imgSpot": "/assets/images/tutorials/spot-simple-handover.webp",
       "prev": "create-igdm-bot-handover-from-chatbot-to-agent",
       "date": "2018-11-11T07:00:00+07:00"
     },
@@ -89,7 +89,7 @@
       "id": "hello-world",
       "title": "Creating a Simple Hello World Chatbot",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-hello-world.webp",
+      "imgSpot": "/assets/images/tutorials/spot-hello-world.webp",
       "description": "This is a quick start how to build a 'Hello World' chatbot",
       "next": "bot-studio-tutorial",
       "date": "2018-06-06T07:00:00+07:00"
@@ -109,7 +109,7 @@
       "id": "how-to-deploy-your-chatbot-to-line",
       "title": "How to deploy your chatbot to LINE",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-line.webp",
+      "imgSpot": "/assets/images/tutorials/spot-line.webp",
       "date": "2022-01-17T07:00:00+07:00"
     },
     {
@@ -127,7 +127,7 @@
       "id": "how-to-deploy-your-chatbot-using-twitter",
       "title": "How to deploy your chatbot using Twitter",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-twitter.webp",
+      "imgSpot": "/assets/images/tutorials/spot-twitter.webp",
       "date": "2021-08-26T07:00:00+07:00"
     },
     {
@@ -145,7 +145,7 @@
       "id": "how-to-use-facebook-messenger-for-your-chatbot",
       "title": "How to use Facebook Messenger for your chatbot",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-facebook-messenger.webp",
+      "imgSpot": "/assets/images/tutorials/spot-facebook-messenger.webp",
       "date": "2021-08-26T07:00:00+07:00"
     },
     {
@@ -163,7 +163,7 @@
       "id": "how-to-use-freshchat-for-your-chatbot",
       "title": "How to use Freshchat for your chatbot",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-freshchat.webp",
+      "imgSpot": "/assets/images/tutorials/spot-freshchat.webp",
       "date": "2021-08-26T07:00:00+07:00"
     },
     {
@@ -181,7 +181,7 @@
       "id": "how-to-use-instagram-messaging-automation-in-your-project",
       "title": "How to use Instagram Messaging automation in your project",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-ig-automation.webp",
+      "imgSpot": "/assets/images/tutorials/spot-ig-automation.webp",
       "date": "2021-08-26T07:00:00+07:00"
     },
     {
@@ -199,7 +199,7 @@
       "id": "how-to-use-qiscus-omnichannel-to-your-chatbot",
       "title": "How to use Qiscus omnichannel to your chatbot",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-qiscus.webp",
+      "imgSpot": "/assets/images/tutorials/spot-qiscus.webp",
       "date": "2021-08-26T07:00:00+07:00"
     },
     {
@@ -217,7 +217,7 @@
       "id": "how-to-use-slack-as-your-chatbot-messaging-platform",
       "title": "How to use Slack as your chatbot messaging platform",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-slack.webp",
+      "imgSpot": "/assets/images/tutorials/spot-slack.webp",
       "date": "2021-08-26T07:00:00+07:00"
     },
     {
@@ -235,7 +235,7 @@
       "id": "how-to-use-telegram-for-your-chatbot",
       "title": "How to use Telegram as your chatbot messaging platform",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-telegram.webp",
+      "imgSpot": "/assets/images/tutorials/spot-telegram.webp",
       "date": "2021-08-26T07:00:00+07:00"
     },
     {
@@ -253,7 +253,7 @@
       "id": "how-to-use-whatsapp-business-api-in-my-chatbot",
       "title": "How to use WhatsApp Business API in my chatbot",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-business-dashboard.webp",
+      "imgSpot": "/assets/images/tutorials/spot-business-dashboard.webp",
       "date": "2021-10-25T07:00:00+07:00"
     },
     {
@@ -271,7 +271,7 @@
       "id": "integration-chatbot-with-cms-studio",
       "title": "Integration Chatbot with Kata CMS",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-cms-integration.webp",
+      "imgSpot": "/assets/images/tutorials/spot-cms-integration.webp",
       "prev": "integration-chatbot-with-nl-studio",
       "next": "create-igdm-bot-handover-from-chatbot-to-agent"
     },
@@ -290,7 +290,7 @@
       "id": "integration-chatbot-with-nl-studio",
       "title": "Integration Chatbot with NL Studio Tutorial",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-nl-studio-integration.webp",
+      "imgSpot": "/assets/images/tutorials/spot-nl-studio-integration.webp",
       "prev": "nl-studio-tutorial",
       "next": "integration-chatbot-with-cms-studio",
       "date": "2018-09-09T07:00:00+07:00"
@@ -310,7 +310,7 @@
       "id": "nl-studio",
       "title": "NL Studio Tutorial",
       "layout": "tutorial",
-      "imgSpot": "/assets/images/tutorial/spot-nl-studio.webp",
+      "imgSpot": "/assets/images/tutorials/spot-nl-studio.webp",
       "prev": "bot-studio-tutorial",
       "next": "integration-chatbot-with-nl-studio",
       "date": "2018-08-08T07:00:00+07:00"

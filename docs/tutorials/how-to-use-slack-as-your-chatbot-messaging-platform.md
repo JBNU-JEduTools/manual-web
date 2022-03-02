@@ -2,7 +2,7 @@
 layout: tutorial
 title: How to use Slack as your chatbot messaging platform
 id: how-to-use-slack-as-your-chatbot-messaging-platform
-imgSpot: /assets/images/tutorial/spot-slack.webp
+imgSpot: /assets/images/tutorials/spot-slack.webp
 product: kata-platform
 date: '2021-08-26T07:00:00+07:00'
 ---

@@ -1,7 +1,7 @@
 ---
 layout: tutorial
 id: how-to-use-facebook-messenger-for-your-chatbot
-imgSpot: /assets/images/tutorial/spot-facebook-messenger.webp
+imgSpot: /assets/images/tutorials/spot-facebook-messenger.webp
 product: kata-platform
 title: How to use Facebook Messenger for your chatbot
 date: '2021-08-26T07:00:00+07:00'

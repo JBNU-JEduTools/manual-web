@@ -1,6 +1,6 @@
 ---
 layout: tutorial
-imgSpot: /assets/images/tutorial/spot-cms-integration.webp
+imgSpot: /assets/images/tutorials/spot-cms-integration.webp
 id: integration-chatbot-with-cms-studio
 product: kata-platform
 title: Integration Chatbot with Kata CMS
@@ -24,37 +24,37 @@ We assume at this stage you already deployed your bot. If you haven't, you can l
 
 Click on Create Environment.
 
-![bcms-1](/assets/images/tutorial/bot-cms/bcms-1.webp)
+![bcms-1](/assets/images/tutorials/bot-cms/bcms-1.webp)
 
 Environment URL will be used as a web address where your client can access the dashboard. For demo purpose, we will name it “my-cms”
 
-![bcms-2](/assets/images/tutorial/bot-cms/bcms-2.webp)
+![bcms-2](/assets/images/tutorials/bot-cms/bcms-2.webp)
 
 Click on Create to submit data. Successfully created environment will be seen as follow
 
-![bcms-3](/assets/images/tutorial/bot-cms/bcms-3.webp)
+![bcms-3](/assets/images/tutorials/bot-cms/bcms-3.webp)
 
 ### Create CMS Pages and Forms
 
 Go to CMS menu and select Pages. This menu is a place for you to arrange pages, forms and elements.
 
-![bcms-4](/assets/images/tutorial/bot-cms/bcms-4.webp)
+![bcms-4](/assets/images/tutorials/bot-cms/bcms-4.webp)
 
 Click “+” button to start a new page. In this use case, we will create a page named “Text Response” with label “textResponse”. Click Create then enter the page.
 
-![bcms-5](/assets/images/tutorial/bot-cms/bcms-5.webp)
+![bcms-5](/assets/images/tutorials/bot-cms/bcms-5.webp)
 
 There is a breadcrumb on top left to indicate which page you are in. Click on “+” button to create a form
 
-![bcms-6](/assets/images/tutorial/bot-cms/bcms-6.webp)
+![bcms-6](/assets/images/tutorials/bot-cms/bcms-6.webp)
 
 Fill in the fields as follows
 
-![bcms-7](/assets/images/tutorial/bot-cms/bcms-7.webp)
+![bcms-7](/assets/images/tutorials/bot-cms/bcms-7.webp)
 
 Then, click on “Order Pizza” form you've just created
 
-![bcms-8](/assets/images/tutorial/bot-cms/bcms-8.webp)
+![bcms-8](/assets/images/tutorials/bot-cms/bcms-8.webp)
 
 ### Introduction to Text Box Element
 
@@ -62,7 +62,7 @@ For the first use case, we will use Text Box elements to change bot response in 
 
 Click on Text Box element in left sidebar to add it to your form.
 
-![bcms-9](/assets/images/tutorial/bot-cms/bcms-9.webp)
+![bcms-9](/assets/images/tutorials/bot-cms/bcms-9.webp)
 
 Added element is shown as above. Our next step is to fill in label and ID, and default value.
 
@@ -74,13 +74,13 @@ Added element is shown as above. Our next step is to fill in label and ID, and d
 
 Fill in text box element as follow
 
-![bcms-10](/assets/images/tutorial/bot-cms/bcms-10.webp)
+![bcms-10](/assets/images/tutorials/bot-cms/bcms-10.webp)
 
 ### Add Fallback Text to Form
 
 Fill in text box element as follow
 
-![bcms-11](/assets/images/tutorial/bot-cms/bcms-11.webp)
+![bcms-11](/assets/images/tutorials/bot-cms/bcms-11.webp)
 
 Then, click on Save button to save the structure.
 
@@ -88,7 +88,7 @@ Then, click on Save button to save the structure.
 
 After you saved your CMS structure, go to Pages. Afterwards, click Publish.
 
-![bcms-12](/assets/images/tutorial/bot-cms/bcms-12.webp)
+![bcms-12](/assets/images/tutorials/bot-cms/bcms-12.webp)
 
 Publish is a term that similar with commit in Git. You must publish your saved CMS before you create a deployment. Further explanation can be seen on [Deployment Guide](./deployment-guide/introduction/)
 
@@ -98,19 +98,19 @@ You can only invite Kata Platform users to Kata Dashboard. So make sure your cli
 
 Click on Users menu under CMS Studio
 
-![bcms-13](/assets/images/tutorial/bot-cms/bcms-13.webp)
+![bcms-13](/assets/images/tutorials/bot-cms/bcms-13.webp)
 
 Then, click on Add User button
 
-![bcms-14](/assets/images/tutorial/bot-cms/bcms-14.webp)
+![bcms-14](/assets/images/tutorials/bot-cms/bcms-14.webp)
 
 Next, Add User drawer will show
 
-![bcms-15](/assets/images/tutorial/bot-cms/bcms-15.webp)
+![bcms-15](/assets/images/tutorials/bot-cms/bcms-15.webp)
 
 Fill in e-mail and choose Development environment . Then click Add to send an invitation to that user's email.
 
-![bcms-16](/assets/images/tutorial/bot-cms/bcms-16.webp)
+![bcms-16](/assets/images/tutorials/bot-cms/bcms-16.webp)
 
 ## Integrate Elements to Bot
 
@@ -136,7 +136,7 @@ $(cms.textResponse.orderPizza.askingConfirmation.value)
 
 To update the action, you have to go back to Bot Studio and click on confirmPizza state.
 
-![bcms-17](/assets/images/tutorial/bot-cms/bcms-17.webp)
+![bcms-17](/assets/images/tutorials/bot-cms/bcms-17.webp)
 
 Then, click on confirmPizza state. Replace the original text which is this:
 
@@ -150,7 +150,7 @@ with this code:
 $(cms.textResponse.orderPizza.askingConfirmation.value)
 ```
 
-![bcms-18](/assets/images/tutorial/bot-cms/bcms-18.webp)
+![bcms-18](/assets/images/tutorials/bot-cms/bcms-18.webp)
 
 Click Update Action to update your action. **Then click on Update** to update state.
 
@@ -158,7 +158,7 @@ Click Update Action to update your action. **Then click on Update** to update st
 
 Click on init state in fallback flow.
 
-![bcms-19](/assets/images/tutorial/bot-cms/bcms-19.webp)
+![bcms-19](/assets/images/tutorials/bot-cms/bcms-19.webp)
 
 Click on init state to update the action's value. Fill in the value as follows
 
@@ -166,7 +166,7 @@ Click on init state to update the action's value. Fill in the value as follows
 $(cms.textResponse.orderPizza.sorryMessage.value)
 ```
 
-![bcms-20](/assets/images/tutorial/bot-cms/bcms-20.webp)
+![bcms-20](/assets/images/tutorials/bot-cms/bcms-20.webp)
 
 Click Update Action to update your action. **Then click on Update** to update state.
 
@@ -178,19 +178,19 @@ Afterward, publish your bot by clicking Publish.
 
 Go to Deploy menu to deploy the newest version of your bot. Click on New Deployment, choose any deployment version and fill in change log. Then, click on Submit.
 
-![bcms-21](/assets/images/tutorial/bot-cms/bcms-21.webp)
+![bcms-21](/assets/images/tutorials/bot-cms/bcms-21.webp)
 
 Then, go to Environment to change deployment. Click on more button to update.
 
-![bcms-22](/assets/images/tutorial/bot-cms/bcms-22.webp)
+![bcms-22](/assets/images/tutorials/bot-cms/bcms-22.webp)
 
 Next, click Update. Update environment drawer will appear.
 
-![bcms-23](/assets/images/tutorial/bot-cms/bcms-23.webp)
+![bcms-23](/assets/images/tutorials/bot-cms/bcms-23.webp)
 
 Choose latest deployment then click Update. Changes will be shown as follow
 
-![bcms-24](/assets/images/tutorial/bot-cms/bcms-24.webp)
+![bcms-24](/assets/images/tutorials/bot-cms/bcms-24.webp)
 
 ## Customize Content in CMS Client
 
@@ -206,17 +206,17 @@ Click on link for CMS client such as dashboard.kata.ai/(namespace). For this tut
 
 The front page of Kata Dashboard looks like this
 
-![bcms-25](/assets/images/tutorial/bot-cms/bcms-25.webp)
+![bcms-25](/assets/images/tutorials/bot-cms/bcms-25.webp)
 
 Click on Login after you filled in username/e-mail and password.
 
-![bcms-26](/assets/images/tutorial/bot-cms/bcms-26.webp)
+![bcms-26](/assets/images/tutorials/bot-cms/bcms-26.webp)
 
 ### Edit Content in CMS Client
 
 Click on available form which is “Order Pizza”
 
-![bcms-27](/assets/images/tutorial/bot-cms/bcms-27.webp)
+![bcms-27](/assets/images/tutorials/bot-cms/bcms-27.webp)
 
 Fill in those elements with sentences that you want. For example:
 
@@ -234,8 +234,8 @@ After you changed your deployment in environment, you can test directly in your 
 
 Testing for confirmation:
 
-![bcms-28](/assets/images/tutorial/bot-cms/bcms-28.webp)
+![bcms-28](/assets/images/tutorials/bot-cms/bcms-28.webp)
 
 Testing for fallback:
 
-![bcms-29](/assets/images/tutorial/bot-cms/bcms-29.webp)
+![bcms-29](/assets/images/tutorials/bot-cms/bcms-29.webp)
