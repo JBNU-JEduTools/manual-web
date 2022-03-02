@@ -16,9 +16,16 @@ Kata Platform will show these error messages in 3 ways:
 2. When you execute a command `kata push` in Kata CLI.
 3. When end-users receive the error message **“Maaf terjadi kesalahan pada sistem”**. FYI, you can change the error copy by following this guide. Kata Platform will log it into the Error Log feature. This feature is available in the menu: **Flow > Error Log**.
 
-![Image 1 alt](/assets/images/products/kata-platform/error-log/image1.webp)
-
-> **Figure 1**: Error Log feature is located.
+<ImageWrapper>
+  <FigureImage
+    alt="Image 1 Alt"
+    src="/assets/images/products/kata-platform/error-log/image1.webp"
+    caption={{ title: 'Figure 1', description: 'Error Log feature is located.' }}
+    layout="responsive"
+    naturalWidth={1999}
+    naturalHeight={1379}
+  />
+</ImageWrapper>
 
 ## Available Error Messages
 
@@ -43,9 +50,16 @@ intents:
 
 For example, you have the following case.
 
-![Image 2 alt](/assets/images/products/kata-platform/error-log/image2.webp)
-
-> **Figure 2**: Error message example.
+<ImageWrapper>
+  <FigureImage
+    alt="Image 2 Alt"
+    src="/assets/images/products/kata-platform/error-log/image2.webp"
+    caption={{ title: 'Figure 2', description: 'Error message example.' }}
+    layout="responsive"
+    naturalWidth={908}
+    naturalHeight={84}
+  />
+</ImageWrapper>
 
 It means your bot cannot find the action type `txt`.
 
@@ -77,9 +91,16 @@ If the above solution still has issues, then compare the defined actions you hav
 
 For example you have a case as follows.
 
-![Image 3 alt](/assets/images/products/kata-platform/error-log/image3.webp)
-
-> **Figure 3**: Error message example.
+<ImageWrapper>
+  <FigureImage
+    alt="Image 3 Alt"
+    src="/assets/images/products/kata-platform/error-log/image3.webp"
+    caption={{ title: 'Figure 3', description: 'Error message example.' }}
+    layout="responsive"
+    naturalWidth={1156}
+    naturalHeight={88}
+  />
+</ImageWrapper>
 
 It means your method named `mappingAksBrand` head is not found.
 
@@ -103,9 +124,16 @@ method(methodParam, methodParam2, ...)
 
 For example you have a case as follows.
 
-![Image 4 alt](/assets/images/products/kata-platform/error-log/image4.webp)
-
-> **Figure 4**: Error message example.
+<ImageWrapper>
+  <FigureImage
+    alt="Image 4 Alt"
+    src="/assets/images/products/kata-platform/error-log/image4.webp"
+    caption={{ title: 'Figure 4', description: 'Error message example.' }}
+    layout="responsive"
+    naturalWidth={1611}
+    naturalHeight={75}
+  />
+</ImageWrapper>
 
 It means your method named mappingTitle has an error or incomplete method where `)` symbol is located.
 
@@ -119,9 +147,16 @@ Check the method name function syntax if there are any typos.
 
 For example you have a case as follows.
 
-![Image 5 alt](/assets/images/products/kata-platform/error-log/image5.webp)
-
-> **Figure 5**: Error message example.
+<ImageWrapper>
+  <FigureImage
+    alt="Image 5 Alt"
+    src="/assets/images/products/kata-platform/error-log/image5.webp"
+    caption={{ title: 'Figure 5', description: 'Error message example.' }}
+    layout="responsive"
+    naturalWidth={1999}
+    naturalHeight={432}
+  />
+</ImageWrapper>
 
 It means there is an error when executing `deleteSoon` method.
 
@@ -143,9 +178,16 @@ You must check the method name from the error message and write code for the met
 
 For example you have a case as Figure 6. It means your key mapping named `tryTransit` has an typo or incorrectly mapped with `tryValue` value.
 
-![Image 6 alt](/assets/images/products/kata-platform/error-log/image6.webp)
-
-> **Figure 6**: Error message example.
+<ImageWrapper>
+  <FigureImage
+    alt="Image 6 Alt"
+    src="/assets/images/products/kata-platform/error-log/image6.webp"
+    caption={{ title: 'Figure 6', description: 'Error message example.' }}
+    layout="responsive"
+    naturalWidth={1202}
+    naturalHeight={72}
+  />
+</ImageWrapper>
 
 **Solution**
 
@@ -184,9 +226,16 @@ Check definition in the method name.
 
 Here is the error example.
 
-![Image 7 alt](/assets/images/products/kata-platform/error-log/image7.webp)
-
-> **Figure 7**: Cannot find NLU named `misccc` in NLUs mapping.
+<ImageWrapper>
+  <FigureImage
+    alt="Image 7 Alt"
+    src="/assets/images/products/kata-platform/error-log/image7.webp"
+    caption={{ title: 'Figure 7', description: 'Cannot find NLU named `misccc` in NLUs mapping.' }}
+    layout="responsive"
+    naturalWidth={1352}
+    naturalHeight={86}
+  />
+</ImageWrapper>
 
 **Solution**
 
@@ -198,9 +247,16 @@ Check the NLU definitions in labels.
 
 Here is the error example:
 
-![Image 8 alt](/assets/images/products/kata-platform/error-log/image8.webp)
-
-> **Figure 8**: Cannot execute similar NLU with different expressions and processor.
+<ImageWrapper>
+  <FigureImage
+    alt="Image 8 Alt"
+    src="/assets/images/products/kata-platform/error-log/image8.webp"
+    caption={{ title: 'Figure 8', description: 'Cannot execute similar NLU with different expressions and processor.' }}
+    layout="responsive"
+    naturalWidth={1999}
+    naturalHeight={1197}
+  />
+</ImageWrapper>
 
 **Solution**
 
@@ -212,9 +268,16 @@ Check method definition on your bot code.
 
 Here is the error example:
 
-![Image 9 alt](/assets/images/products/kata-platform/error-log/image9.webp)
-
-> **Figure 9**: Cannot publish because no state is found.
+<ImageWrapper>
+  <FigureImage
+    alt="Image 9 Alt"
+    src="/assets/images/products/kata-platform/error-log/image9.webp"
+    caption={{ title: 'Figure 9', description: 'Cannot publish because no state is found.' }}
+    layout="responsive"
+    naturalWidth={1999}
+    naturalHeight={1250}
+  />
+</ImageWrapper>
 
 **Solution**
 
@@ -222,7 +285,7 @@ Add the initial state at least in a flow.
 
 | Error code                                  | Explanation                                                                                                                                      |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Error Code 1029-Cannot get state '${state}' | This error message will show if you push-ing your bot via Kata CLI. It means there is no state with a certain name, or no initial state defined. |
+| Error Code 1029-Cannot get state '`${state}`' | This error message will show if you push-ing your bot via Kata CLI. It means there is no state with a certain name, or no initial state defined. |
 
 **Solution**
 
@@ -238,7 +301,7 @@ Checking action definition or possible typos in action name, inside the state na
 
 | Error code                                                              | Explanation                                                                                                  |
 | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Error Code 1031-Next state '${state}' from '${prevState}' doesn't exist | This error message will show if you push-ing your bot via Kata CLI. It means there is no next state defined. |
+| Error Code 1031-Next state '`${state}`' from '`${prevState}`' doesn't exist | This error message will show if you push-ing your bot via Kata CLI. It means there is no next state defined. |
 
 **Solution**
 

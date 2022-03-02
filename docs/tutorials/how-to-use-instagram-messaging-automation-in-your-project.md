@@ -126,9 +126,7 @@ We probably felt confused the first time using a chatbot as end-users, especiall
 
 <div className="info">
     <img className="borderless" src="/assets/images/icon-info.svg" />
-    <p>
-Important: Ice Breaker is only shown for a first-time chat.
-</p>
+    <p>Important: Ice Breaker is only shown for a first-time chat.</p>
 </div>
 
 Here is the screenshot of the feature

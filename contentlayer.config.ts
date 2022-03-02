@@ -53,8 +53,8 @@ const KataOmnichat = defineDocumentType(() => ({
 
 const KataPlatform = defineDocumentType(() => ({
   name: 'KataPlatform',
-  filePathPattern: 'kata-platform/**/*.md',
-  contentType: 'markdown',
+  filePathPattern: 'kata-platform/**/*.mdx',
+  contentType: 'mdx',
   fields: {
     id: { type: 'string', required: true },
     section: { type: 'string', required: true },

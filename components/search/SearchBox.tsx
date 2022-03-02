@@ -101,7 +101,7 @@ const SearchResultsMobile = css`
   border-bottom-right-radius: 4px;
 `;
 
-const SearchResults = styled('div')<SearchPageProps>`
+const SearchResults = styled('div') <SearchPageProps>`
   padding: 0;
   background-color: ${theme.colors.white};
 
@@ -151,7 +151,7 @@ const SearchResultButton = styled(PlainButton)`
   width: 100%;
 `;
 
-const Root = styled('div')<SearchPageProps>`
+const Root = styled('div') <SearchPageProps>`
   ${(props) => props.layout === 'desktop' && RootDesktop}
   ${(props) => props.layout === 'mobile' && RootMobile}
 `;
@@ -166,7 +166,7 @@ const SearchResultBoxDesktop = css`
   z-index: 1011;
 `;
 
-const SearchResultBox = styled('div')<{ layout: string }>`
+const SearchResultBox = styled('div') <{ layout: string }>`
   border-radius: 12px;
   background-color: ${theme.colors.white};
   box-shadow: 0px 8px 16px 0px ${theme.colors.greydark01};
@@ -255,10 +255,10 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
               {results && results.length !== 0 && (
                 <SearchResults layout={layout}>
                   {PRODUCTS_DICT[fuseSearch.name] && (
-                    <Box ml={12} my={8} width={'100%'}>
+                    <Box ml={12} my={12} width={'100%'}>
                       <ProductBadge>
-                        <Image alt="icon-product" src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
-                        <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
+                        <Image width={20} height={20} alt="icon-product" src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
+                        <Text ml={8} fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
                           {PRODUCTS_DICT[fuseSearch.name]}
                         </Text>
                       </ProductBadge>
