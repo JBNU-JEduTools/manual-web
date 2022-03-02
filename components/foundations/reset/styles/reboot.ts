@@ -390,6 +390,7 @@ const reboot = css`
       margin-right: 13px;
     }
     p {
+      margin-top: auto;
       margin-left: 12px;
       overflow: auto;
     }

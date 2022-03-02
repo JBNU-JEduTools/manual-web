@@ -22,8 +22,6 @@ Kata Platform will show these error messages in 3 ways:
     src="/assets/images/products/kata-platform/error-log/image1.webp"
     caption={{ title: 'Figure 1', description: 'Error Log feature is located.' }}
     layout="responsive"
-    naturalWidth={1999}
-    naturalHeight={1379}
   />
 </ImageWrapper>
 
@@ -56,8 +54,6 @@ For example, you have the following case.
     src="/assets/images/products/kata-platform/error-log/image2.webp"
     caption={{ title: 'Figure 2', description: 'Error message example.' }}
     layout="responsive"
-    naturalWidth={908}
-    naturalHeight={84}
   />
 </ImageWrapper>
 
@@ -97,8 +93,6 @@ For example you have a case as follows.
     src="/assets/images/products/kata-platform/error-log/image3.webp"
     caption={{ title: 'Figure 3', description: 'Error message example.' }}
     layout="responsive"
-    naturalWidth={1156}
-    naturalHeight={88}
   />
 </ImageWrapper>
 
@@ -130,8 +124,6 @@ For example you have a case as follows.
     src="/assets/images/products/kata-platform/error-log/image4.webp"
     caption={{ title: 'Figure 4', description: 'Error message example.' }}
     layout="responsive"
-    naturalWidth={1611}
-    naturalHeight={75}
   />
 </ImageWrapper>
 
@@ -153,8 +145,6 @@ For example you have a case as follows.
     src="/assets/images/products/kata-platform/error-log/image5.webp"
     caption={{ title: 'Figure 5', description: 'Error message example.' }}
     layout="responsive"
-    naturalWidth={1999}
-    naturalHeight={432}
   />
 </ImageWrapper>
 
@@ -184,8 +174,6 @@ For example you have a case as Figure 6. It means your key mapping named `tryTra
     src="/assets/images/products/kata-platform/error-log/image6.webp"
     caption={{ title: 'Figure 6', description: 'Error message example.' }}
     layout="responsive"
-    naturalWidth={1202}
-    naturalHeight={72}
   />
 </ImageWrapper>
 
@@ -232,8 +220,6 @@ Here is the error example.
     src="/assets/images/products/kata-platform/error-log/image7.webp"
     caption={{ title: 'Figure 7', description: 'Cannot find NLU named `misccc` in NLUs mapping.' }}
     layout="responsive"
-    naturalWidth={1352}
-    naturalHeight={86}
   />
 </ImageWrapper>
 
@@ -253,8 +239,6 @@ Here is the error example:
     src="/assets/images/products/kata-platform/error-log/image8.webp"
     caption={{ title: 'Figure 8', description: 'Cannot execute similar NLU with different expressions and processor.' }}
     layout="responsive"
-    naturalWidth={1999}
-    naturalHeight={1197}
   />
 </ImageWrapper>
 
@@ -274,8 +258,6 @@ Here is the error example:
     src="/assets/images/products/kata-platform/error-log/image9.webp"
     caption={{ title: 'Figure 9', description: 'Cannot publish because no state is found.' }}
     layout="responsive"
-    naturalWidth={1999}
-    naturalHeight={1250}
   />
 </ImageWrapper>
 
@@ -325,7 +307,7 @@ Check the mapping expression in `onEnter`.
 
 | Error code                                             | Explanation                                                                                                                 |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| Error Code 1036-Cannot find method ${name} for process | This error message will show if you push-ing your bot via Kata CLI. It means you cannot find methods defined as processors. |
+| Error Code 1036-Cannot find method `${name}` for process | This error message will show if you push-ing your bot via Kata CLI. It means you cannot find methods defined as processors. |
 
 **Solution**
 
@@ -341,7 +323,7 @@ Check for typos in actions, intents, and NLUs definitions.
 
 | Error code                                                                                | Explanation                                                                                                         |
 | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Error Code 1038-Cannot recognize condition with type:${ast.type} and `op:${ast.operator}` | This error message will show if you push-ing your bot via Kata CLI. It means the condition expression is not found. |
+| Error Code 1038-Cannot recognize condition with type:`${ast.type}` and `op:${ast.operator}` | This error message will show if you push-ing your bot via Kata CLI. It means the condition expression is not found. |
 
 **Solution**
 
@@ -349,7 +331,7 @@ Check your condition expression if there is any typos or incorrect syntax. Furth
 
 | Error code                                                                            | Explanation                                                                                                             |
 | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Error Code 1040-Error in flow ${this.id} while classifying, details ${e && e.message} | This error message will show if you push-ing your bot via Kata CLI. It means there is an error when classifying intent. |
+| Error Code 1040-Error in flow `${this.id}` while classifying, details `${e && e.message}` | This error message will show if you push-ing your bot via Kata CLI. It means there is an error when classifying intent. |
 
 **Solution**
 
