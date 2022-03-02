@@ -2,7 +2,7 @@
 layout: tutorial
 id: create-igdm-bot-handover-from-chatbot-to-agent
 title: Create Instagram Bot Handover from Chatbot to Agent Tutorial
-imgSpot: /assets/images/tutorial/spot-ig-handover.webp
+imgSpot: /assets/images/tutorials/spot-ig-handover.webp
 product: kata-platform
 prev: integration-chatbot-with-cms-studio
 next: create-simple-bot-handover-from-chatbot-to-agent
@@ -122,7 +122,7 @@ Main keyword: greetings
 
 5. Add a new word by pressing "enter" on your keyboard. Every time you write a new word, press “enter” on your keyboard to save words. Add these words
 
-![image alt text](/assets/images/tutorial/ig-handover/image_1.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_1.webp)
 
 > Create "greetings" keyword
 
@@ -136,7 +136,7 @@ Main keyword: greetings
 
 3. Fill in the intent as follows. The choice of "Intent type" is text, which means it will catch incoming messages with text only. We also set up the intent into “As Initial”, which means the intent will be executed for the first time. On classifier, use “greetings” NLUs that we’ve created in the previous step to connect the intent with creating keywords for greetings.
 
-![image alt text](/assets/images/tutorial/ig-handover/image_2.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_2.webp)
 
 > Create intent and create mapping with greetings keyword
 
@@ -168,7 +168,7 @@ In this part, we are going to create a greeting flow to respond to end-users who
 
 3. Fill in the intent as follows. We set up the intent into "As Initial", which means the intent will be executed for the first time. Choose intent type into data, because we will use a payload named story_mention.
 
-![image alt text](/assets/images/tutorial/ig-handover/image_3.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_3.webp)
 
 > Create intent for Instagram Story Mention feature
 
@@ -212,7 +212,7 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 2. Fill in the transition as follow
 
-![image alt text](/assets/images/tutorial/ig-handover/image_4.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_4.webp)
 
 > Create transition and define which intent to trigger the next state "igMentionedState"
 
@@ -232,7 +232,7 @@ In this part, we are going to create a greeting flow to respond to end-users who
 
 3. Fill in the intent as follows. We set up the intent into "As Initial", which means the intent will be executed for the first time. Choose intent type into data, because we will use a payload named story_reply.
 
-![image alt text](/assets/images/tutorial/ig-handover/image_5.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_5.webp)
 
 > Create intent for Instagram Story Reply
 
@@ -276,7 +276,7 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 2. Fill in the transition as follow
 
-![image alt text](/assets/images/tutorial/ig-handover/image_6.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_6.webp)
 
 > Create transition and define which intent to trigger the next state "igStoryReply"
 
@@ -312,7 +312,7 @@ Pilih topik yang kamu inginkan 😊
 
 6. Fill in the fields as follow
 
-![image alt text](/assets/images/tutorial/ig-handover/image_7.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_7.webp)
 
 > Create message in quick replies
 
@@ -900,7 +900,7 @@ The self-transition will make the actions under state will be repeatedly shown i
 
 3. Fill in the intent as follows. The choice of "Intent type" is command, which means it will catch command only. On condition, it fills in with content with “next” which is a command that is sent from bot after executed responses such as quick replies, carousel, and text.
 
-![image alt text](/assets/images/tutorial/ig-handover/image_8.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_8.webp)
 
 > Create intent to catch command for triggering next flow
 
@@ -994,7 +994,7 @@ toMenu
 
 3. Fill in the intent as follows. This intent will trigger show main menu as bot response
 
-![image alt text](/assets/images/tutorial/ig-handover/image_9.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_9.webp)
 
 > Create intent to catch command for showing main menu again
 
@@ -1070,7 +1070,7 @@ content == "2"
 
 3. Fill in the intent as follows. We set up the intent into "As Fallback", which means the intent will be executed as fallback. It becomes a new layer of fallback in Handover flow, before literally fallback-ed to fallback flow.
 
-![image alt text](/assets/images/tutorial/ig-handover/image_10.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_10.webp)
 
 > Create intent for being "guard" before fallback flow
 
@@ -1086,7 +1086,7 @@ content == "2"
 
 3. Click **Publish** to save the changelog. Lastly, your final chatbot flow will be like this:
 
-![image alt text](/assets/images/tutorial/ig-handover/image_11.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_11.webp)
 
 > Final conversation flow
 
@@ -1096,11 +1096,11 @@ content == "2"
 
 2. You can try to test your bot by inputting a message in the text bot. Say "hi" to your bot. If it succeeds, your bot will reply as follows
 
-![image alt text](/assets/images/tutorial/ig-handover/image_12.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_12.webp)
 
 > Testing your bot by typing "hai"
 
-![image alt text](/assets/images/tutorial/ig-handover/image_13.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_13.webp)
 
 > Testing another action response, this example is for text action
 
@@ -1116,7 +1116,7 @@ content == "2"
 
 3. Choose any deployment version you want to deploy and fill in the changelog. Or you can simply follow this screenshot
 
-![image alt text](/assets/images/tutorial/ig-handover/image_14.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_14.webp)
 
 > Create new deployment
 
@@ -1126,7 +1126,7 @@ content == "2"
 
 1. Go to the **Environment** menu which is placed under the current menu ("Overview"). If you successfully entered the Environment menu, you will see a page like this. These 3 environments represent that your chatbot will be tested in development or staging first before go live as in Production stage.
 
-![image alt text](/assets/images/tutorial/ig-handover/image_15.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_15.webp)
 
 > Set up environment, then set up Omnichat channel
 
@@ -1162,7 +1162,7 @@ Follow the tutorial in Omnichat to continue. Continue to [create agent bot](/kat
 
 1. If you succeed to follow the above tutorials, you will see an access token generated in Omnichat that needs to be pasted into the Platform. The screenshot below
 
-![image alt text](/assets/images/tutorial/ig-handover/image_16.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_16.webp)
 
 > Create agent bot
 
@@ -1172,7 +1172,7 @@ Follow the tutorial in Omnichat to continue. Continue to [create agent bot](/kat
 
 4. Then, go to the menu: Deploy > Environment. You will see this screen.
 
-![image alt text](/assets/images/tutorial/ig-handover/image_17.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_17.webp)
 
 > Click button "Create channel" to continue copying access token from Omnichat
 
@@ -1194,7 +1194,7 @@ Follow the tutorial in Omnichat to continue. Continue to [create agent bot](/kat
 
 2. Go to menu: Settings > Integrations > Agent Bot. You will see this screen and information that you’re still in the first step to finalize
 
-![image alt text](/assets/images/tutorial/ig-handover/image_18.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_18.webp)
 
 > Edit the agent bot to paste webhook URL from Kata Platform
 
@@ -1232,7 +1232,7 @@ Follow the tutorial on [how to set up Ice Breaker in Instagram Inbox](/tutorials
 
 3. Fill in the intent as follows. This intent will trigger the FAQ state to show FAQ response when end-user click "FAQ" in Ice Breaker feature
 
-![image alt text](/assets/images/tutorial/ig-handover/image_19.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_19.webp)
 
 > Edit the agent bot to paste webhook URL from Kata Platform
 
@@ -1246,7 +1246,7 @@ Follow the tutorial on [how to set up Ice Breaker in Instagram Inbox](/tutorials
 
 3. Fill in the intent as follows. This intent will trigger the promo state to show promo response when end-user click "Promo" in Ice Breaker feature
 
-![image alt text](/assets/images/tutorial/ig-handover/image_20.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_20.webp)
 
 > Create intent for triggering Promo state when user click Ice Breaker with Promo item
 
@@ -1260,7 +1260,7 @@ Follow the tutorial on [how to set up Ice Breaker in Instagram Inbox](/tutorials
 
 3. Fill in the intent as follows. This intent will trigger the location state to show location response when end-user click "Lokasi`" in Ice Breaker feature
 
-![image alt text](/assets/images/tutorial/ig-handover/image_21.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_21.webp)
 
 > Create intent for triggering Lokasi state when user click Ice Breaker with Location item
 
@@ -1274,7 +1274,7 @@ Follow the tutorial on [how to set up Ice Breaker in Instagram Inbox](/tutorials
 
 3. Fill in the intent as follows. This intent will trigger the handover state to handover end-user to human agent when end-user click "Berbicara dengan CS" in Ice Breaker feature
 
-![image alt text](/assets/images/tutorial/ig-handover/image_22.webp)
+![image alt text](/assets/images/tutorials/ig-handover/image_22.webp)
 
 > Create intent for triggering CS state item
 

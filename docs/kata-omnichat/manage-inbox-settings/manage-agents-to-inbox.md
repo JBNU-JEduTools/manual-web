@@ -3,6 +3,7 @@ id: manage-agents-to-inbox
 prev: inbox-add-agents
 next: set-up-quick-reply
 section: Manage Inbox Settings
+hiddenTitle: Manage Agents to Inbox
 ---
 
 After creating the inbox, you can configure your inbox setting as the feature provided in Kata Omnichat. This setting can be accessed by admin only. To access the **Inbox Setting,** you must follow the steps below:

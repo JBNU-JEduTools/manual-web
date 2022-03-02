@@ -3,6 +3,7 @@ id: admin-view-conversation
 prev: received-the-invitation
 next: agent-view-conversation
 section: Manage Your Conversation
+hiddenTitle: Admin View Conversation
 ---
 
 Every conversation in Kata Omnichat can belong to at least one assigned agent. There is a case to assign the conversation, either manually or automatically. Admin can assign to the bot, agent, another admin, or the system will assign them automatically. In another case, an agent can assign to another agent. In this documentation, you can learn how to manage your conversation, from the incoming message into the resolved message.

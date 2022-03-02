@@ -136,11 +136,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
               </Link>
             </LogoWrapper>
             {isSearchOpen ? (
-              <SearchBox
-                layout="mobile"
-                fuseSearch={fuseSearch}
-                onSearchMore={onSearchMore}
-              />
+              <SearchBox layout="mobile" fuseSearch={fuseSearch} onSearchMore={onSearchMore} />
             ) : (
               <UnstyledSearchButton onClick={() => setIsSearchOpen(!isSearchOpen)}>
                 <SearchIcon />

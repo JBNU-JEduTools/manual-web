@@ -2,7 +2,7 @@
   "name": "business-dashboard",
   "cwd": "./",
   "src": "./docs/business-dashboard",
-  "filePattern": "**/*.md",
+  "filePattern": "**/*.mdx",
   "dist": "./markdown-to-json/outputs/business-dashboard.json",
   "metadata": true,
   "deterministicOrder": false

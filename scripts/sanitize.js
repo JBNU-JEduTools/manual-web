@@ -38,7 +38,7 @@ const convertRelativeToAbsolute = (relativePath, prefix) => {
 };
 
 const sanitizeUrl = (path) => {
-  return path.replace(/\\/g, '/').replace('.html', '');
+  return path.replace(/\\/g, '/').replace('.html', '').replace('.mdx', '');
 };
 
 Object.keys(markdownJsonOutput).forEach((key) => {
@@ -47,22 +47,24 @@ Object.keys(markdownJsonOutput).forEach((key) => {
   const isGlobal = key === 'global';
   const newData = output.data
     .filter(({ id }) => id !== 'release-notes-version')
-    .map(({ contents, excerpt, id, meta, ...rest }) => {
+    .map(({ contents, excerpt, id, meta, title, hiddenTitle, ...rest }) => {
       const { relativePath, ...restMeta } = meta;
       const absolutePath = convertRelativeToAbsolute(sanitizeUrl(relativePath), isGlobal ? undefined : key);
       // For handling global json and making breadcrumb for search page
       const [_, productKey, __] = absolutePath.split('/');
       return {
-        contents: sanitizeString(contents),
-        excerpt: sanitizeString(contents).split(' ').slice(0, 32).join(' '),
+        contents: sanitizeString(contents).trim(),
+        excerpt: sanitizeString(contents).split(' ').slice(0, 32).join(' ').trim(),
         meta: { ...restMeta, absolutePath },
         product: productKey,
+        type: absolutePath.indexOf('tutorials') > 0 ? 'tutorials' : 'docs',
         id,
+        title: title ?? hiddenTitle,
         ...rest,
       };
     });
   fs.writeFile(
-    `../markdown-to-json/outputs/${key}.json`,
+    `./markdown-to-json/outputs/${key}.json`,
     JSON.stringify({ app: output.app, data: newData }),
     'utf-8',
     function (err) {

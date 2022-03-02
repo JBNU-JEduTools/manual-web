@@ -207,10 +207,10 @@ const Index: React.FC = () => {
             {results.slice((page - 1) * limit, limit * page).map(({ item: page }) => {
               let breadcrumbItems: BreadcrumbContent[] = [{ url: `/`, urlDisplay: `Home` }];
               if (product === 'global') {
-                if (page.product === 'tutorials') {
+                if (page.type === 'tutorials') {
                   breadcrumbItems = [
                     ...breadcrumbItems,
-                    { url: `/tutorials`, urlDisplay: `Tutorial` },
+                    { url: `/tutorials`, urlDisplay: `All Tutorials` },
                     { urlDisplay: `${PRODUCTS_DICT[page.product]} Tutorial` },
                   ];
                 } else {

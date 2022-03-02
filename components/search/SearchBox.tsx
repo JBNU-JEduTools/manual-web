@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 
 import { space } from 'utils/variables';
 import { theme, Text, Box, PlainButton, InputSearchbox, Overlay } from '@aksara-ui/react';
-import InputText from '../InputText';
+
 import { ProductBadge } from 'components/badge';
 import { PRODUCTS_DICT } from 'utils/constants';
 import { IconOutgoing } from '@aksara-ui/icons';
@@ -84,7 +84,7 @@ const SearchResultLink = styled(Link)`
 
 const SearchResultsDesktop = css`
   width: 100%;
-  height: 400px;
+  height: 100%;
   overflow-y: auto;
   z-index: 50;
 `;
@@ -257,8 +257,15 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                   {PRODUCTS_DICT[fuseSearch.name] && (
                     <Box ml={12} my={12} width={'100%'}>
                       <ProductBadge>
-                        <Image width={20} height={20} alt="icon-product" src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
-                        <Text ml={8} fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
+                        <Box mr={8} display="flex">
+                          <Image
+                            width={16}
+                            height={16}
+                            layout="fixed"
+                            alt={fuseSearch.name}
+                            src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
+                        </Box>
+                        <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
                           {PRODUCTS_DICT[fuseSearch.name]}
                         </Text>
                       </ProductBadge>
