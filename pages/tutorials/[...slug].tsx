@@ -11,8 +11,6 @@ import { TocJsonWrapper } from 'components/docs/TableOfContents';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
 import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
-import { MarkdownContent } from 'components/page/Markdown';
-import renderAst from 'utils/renderAst';
 import { DocsContainer } from 'components/layout/Container';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import IndexLayout from 'components/layouts';
@@ -21,14 +19,16 @@ import Link from 'next/link';
 import { PRODUCTS_DICT } from 'utils/constants';
 import { allTutorials, Tutorials } from 'contentlayer/generated';
 import Image from 'next/image';
+import { useMDXComponent } from 'next-contentlayer/hooks';
+import MDXComponents from 'components/mdx/MDXComponents';
 
 interface TutorialPageTemplateProps {
   post: Tutorials;
   toc: any;
-  listToc: string[];
 }
 
 const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }) => {
+  const MDXContent = useMDXComponent(post.body.code);
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     router.push('/404');
@@ -93,7 +93,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
                 ]}
               />
               <DocsHeader title={post.title} />
-              <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
+              <MDXContent components={MDXComponents} />
               <DocsHelpful />
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />

@@ -27,5 +27,13 @@ module.exports = withBundleAnalyzer(
     sassOptions: {
       includePaths: [path.join(__dirname, 'styles')],
     },
+    compiler: {
+      // ssr and displayName are configured by default
+      styledComponents: true,
+      reactRemoveProperties: true,
+      removeConsole: {
+        exclude: ['error'],
+      },
+    },
   })
 );

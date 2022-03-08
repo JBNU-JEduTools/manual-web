@@ -85,8 +85,8 @@ const Qios = defineDocumentType(() => ({
 
 const Tutorials = defineDocumentType(() => ({
   name: 'Tutorials',
-  filePathPattern: 'tutorials/**/*.md',
-  contentType: 'markdown',
+  filePathPattern: 'tutorials/**/*.mdx',
+  contentType: 'mdx',
   fields: {
     layout: { type: 'string' },
     id: { type: 'string', required: true },
