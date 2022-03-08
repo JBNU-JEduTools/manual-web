@@ -64,9 +64,11 @@ const calculateImageDimension = ({ naturalHeight, naturalWidth }) => {
 };
 
 export const NextImage = (props) => {
-  const { src, alt, ...rest } = props;
+  //natural Width and naturalHeight for handling old cases
+  const { src, alt, naturalWidth: _, naturalHeight: __, ...rest } = props;
   const [naturalDimension, setNaturalDimension] = React.useState({ naturalWidth: 0, naturalHeight: 0 });
   const dimension = React.useMemo(() => calculateImageDimension(naturalDimension), [naturalDimension]);
+
   return (
     <Image
       src={src}
@@ -75,7 +77,11 @@ export const NextImage = (props) => {
       width={dimension.width}
       height={dimension.height}
       layout={dimension.layout}
-      onLoadingComplete={(naturalDimension) => setNaturalDimension(naturalDimension)}
+      onLoadingComplete={({ naturalHeight, naturalWidth }) => {
+        if (naturalDimension.naturalHeight === 0 || naturalDimension.naturalWidth === 0) {
+          setNaturalDimension({ naturalHeight, naturalWidth });
+        }
+      }}
     />
   );
 };

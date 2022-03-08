@@ -1,0 +1,127 @@
+---
+layout: tutorial
+id: hello-world
+title: Creating a Simple Hello World Chatbot
+imgSpot: /assets/images/tutorials/spot-hello-world.webp
+product: kata-platform
+description: This is a quick start how to build a 'Hello World' chatbot
+next: bot-studio-tutorial
+date: '2018-06-06T07:00:00+07:00'
+---
+
+## Create a Project
+
+First login/sign up to <a href="https://platform.kata.ai/login" target="_blank">https://platform.kata.ai/login</a>
+
+And click on “Create Project” and fill in the form. Each project contains one bot design, one NL, and one CMS.
+You will be directed to this page.
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw1.webp" alt="bhw-1" />
+</ImageWrapper>
+
+### Noted
+
+You can try bot in Menu Test Chatbot (in the bottom right corner).
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw1test.webp" alt="bhw-1test" />
+</ImageWrapper>
+
+## Create a Hello Flow
+
+### Create Flow
+
+You may find a flow that is created automatically by the system or default flow. We will add a new flow called `helloFlow`. Set flow to active, and persistent.
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw2.webp" alt="bhw-2" />
+</ImageWrapper>
+
+It will be shown like this.
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw3.webp" alt="bhw-3" />
+</ImageWrapper>
+
+### Create keyword NLU for helloFlow
+
+In this step, we will define the NLU (Natural Language Understanding) to trigger order flow. NLU is used to translate user inputs into data that machine can understand. There are many types of NLU, but the type that we will use in this particular flow is called keyword. To define the NLU, go to NLUs menu and create.
+
+We will name it hello_NLU
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw4.webp" alt="bhw-4" />
+</ImageWrapper>
+
+It will be shown like this.
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw5.webp" alt="bhw-5" />
+</ImageWrapper>
+
+### Create Intent
+
+Go back to Conversation flow menu and choose intent. Click on “+” button in Conversation Flow menu. Set the Intent name to `helloIntent` and choose option as initial.
+Add a classifier and choose NLU that we create. We are gonna match it with `helloWorld` (keyword in NLU).
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw6.webp" alt="bhw-6" />
+</ImageWrapper>
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw7.webp" alt="bhw-7" />
+</ImageWrapper>
+
+## Create action for showing Hello World
+
+### Create State
+
+Choose a states and click on "+" button. We will create a initial state. Set name to `init` and choose Initial State, and click create.
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw8.webp" alt="bhw-8" />
+</ImageWrapper>
+
+We will create another state for showing the response in our bot. Choose action to text.
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw9.webp" alt="bhw-9" />
+</ImageWrapper>
+
+Add text response to Hello World!.
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw10.webp" alt="bhw-10" />
+</ImageWrapper>
+
+Action should be shown like this.
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw11.webp" alt="bhw-11" />
+</ImageWrapper>
+
+### Create Transation
+
+Now, we will create a transition between two states that we have created before.
+
+Click the green dot on `init` state, and a connector line will appear. Connect that line to `hello` state. If you do it right, a Create Transition form will appear.
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw12.webp" alt="bhw-12" />
+</ImageWrapper>
+
+Set the condition to `intent=='helloIntent'` and click Create.
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw13.webp" alt="bhw-13" />
+</ImageWrapper>
+
+## Testing
+
+Before this step don't forget to **Publish** your change. And then try your bot in Test Chatbot menu. Try to enter keyword that you define in NLU.
+
+Viola! You have succeed build your first bot!
+
+<ImageWrapper>
+  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw14.webp" alt="bhw-14" />
+</ImageWrapper>
