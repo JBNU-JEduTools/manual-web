@@ -24,7 +24,7 @@ const CaptionWrapper = (props) => {
   );
 };
 
-const MAX_PORTRAIT_HEIGHT = 720;
+const MAX_PORTRAIT_HEIGHT = 480;
 const MAX_LANDSCAPE_WIDTH = 720;
 
 const calculateImageDimension = ({ naturalHeight, naturalWidth }) => {
