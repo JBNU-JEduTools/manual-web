@@ -9,7 +9,7 @@ import { DocsHeader } from 'components/docs/DocsHeader';
 import { FooterWrapper, Footer } from 'components/layout/Footer';
 import { TocJsonWrapper } from 'components/docs/TableOfContents';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
-import { DocsHelpful } from 'components/docs/DocsHelpful';
+// import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import MDXComponents from 'components/mdx/MDXComponents';
@@ -109,7 +109,7 @@ const PlatformPageTemplate: React.FC<PlatformPageTemplateProps> = ({ post, linki
                 <MDXContent components={MDXComponents} />
               </MarkdownContent>
               {linking && <PaginationDocs prevPage={linking.previous} nextPage={linking.next} />}
-              <DocsHelpful />
+              {/* <DocsHelpful /> */}
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
               </FooterWrapper>

@@ -9,7 +9,7 @@ import { DocsHeader } from 'components/docs/DocsHeader';
 import { FooterWrapper, Footer } from 'components/layout/Footer';
 import { TocJsonWrapper } from 'components/docs/TableOfContents';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
-import { DocsHelpful } from 'components/docs/DocsHelpful';
+// import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
 import { MarkdownContent } from 'components/page/Markdown';
 import renderAst from 'utils/renderAst';
@@ -105,7 +105,7 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, linki
               {post.id !== 'about' && <DocsHeader title={post.title} />}
               <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
               {linking && <PaginationDocs prevPage={linking.previous} nextPage={linking.next} />}
-              <DocsHelpful />
+              {/* <DocsHelpful /> */}
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
               </FooterWrapper>

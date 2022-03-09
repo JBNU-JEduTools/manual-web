@@ -9,10 +9,9 @@ import { DocsHeader } from 'components/docs/DocsHeader';
 import { FooterWrapper, Footer } from 'components/layout/Footer';
 import { TocJsonWrapper } from 'components/docs/TableOfContents';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
-import { DocsHelpful } from 'components/docs/DocsHelpful';
+// import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
 import { MarkdownContent } from 'components/page/Markdown';
-import renderAst from 'utils/renderAst';
 import { DocsContainer } from 'components/layout/Container';
 import IndexLayout from 'components/layouts';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
@@ -109,7 +108,7 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
                 <MDXContent components={MDXComponents} />
               </MarkdownContent>
               {linking && <PaginationDocs prevPage={linking.previous} nextPage={linking.next} />}
-              <DocsHelpful />
+              {/* <DocsHelpful /> */}
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
               </FooterWrapper>

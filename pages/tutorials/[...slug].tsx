@@ -9,7 +9,7 @@ import { DocsHeader } from 'components/docs/DocsHeader';
 import { FooterWrapper, Footer } from 'components/layout/Footer';
 import { TocJsonWrapper } from 'components/docs/TableOfContents';
 import { BackToTopButton } from 'components/docs/BackToTopButton';
-import { DocsHelpful } from 'components/docs/DocsHelpful';
+// import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
 import { DocsContainer } from 'components/layout/Container';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
@@ -97,7 +97,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
               <MarkdownContent>
                 <MDXContent components={MDXComponents} />
               </MarkdownContent>
-              <DocsHelpful />
+              {/* <DocsHelpful /> */}
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
               </FooterWrapper>
