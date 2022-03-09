@@ -21,6 +21,7 @@ import { allTutorials, Tutorials } from 'contentlayer/generated';
 import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import MDXComponents from 'components/mdx/MDXComponents';
+import { MarkdownContent } from 'components/page/Markdown';
 
 interface TutorialPageTemplateProps {
   post: Tutorials;
@@ -93,7 +94,9 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
                 ]}
               />
               <DocsHeader title={post.title} />
-              <MDXContent components={MDXComponents} />
+              <MarkdownContent>
+                <MDXContent components={MDXComponents} />
+              </MarkdownContent>
               <DocsHelpful />
               <FooterWrapper>
                 <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
