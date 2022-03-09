@@ -13,7 +13,7 @@ const CaptionWrapper = (props) => {
     <Box
       className={className}
       backgroundColor={theme.colors.greylight03}
-      border={`1px solid ${theme.colors.greylight04}`}
+      borderTop={`1px solid ${theme.colors.greylight04}`}
       color={theme.colors.greydark02}
       p={16}
       fontSize={14}
@@ -87,7 +87,7 @@ export const NextImage = (props) => {
 };
 const FigureWrapper = (props) => {
   const { className, ...rest } = props;
-  return <Box className={className} marginY={16} {...rest} />;
+  return <Box className={className} marginY={16} border={`1px solid ${theme.colors.greylight04}`} {...rest} />;
 };
 
 export const FigureImage = (props) => {

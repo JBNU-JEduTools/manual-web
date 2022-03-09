@@ -169,7 +169,7 @@ const SearchResultBoxDesktop = css`
 const SearchResultBox = styled('div') <{ layout: string }>`
   border-radius: 12px;
   background-color: ${theme.colors.white};
-  box-shadow: 0px 8px 16px 0px ${theme.colors.greydark01};
+  box-shadow: 0px 8px 16px 0px ${theme.colors.greymed01};
   ${(props) => props.layout === 'desktop' && SearchResultBoxDesktop}
 `;
 
@@ -255,7 +255,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
               {results && results.length !== 0 && (
                 <SearchResults layout={layout}>
                   {PRODUCTS_DICT[fuseSearch.name] && (
-                    <Box ml={12} my={12} width={'100%'}>
+                    <Box ml={12} my={12}>
                       <ProductBadge>
                         <Box mr={8} display="flex">
                           <Image

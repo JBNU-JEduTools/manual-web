@@ -23,12 +23,11 @@ const StyledLayoutRoot = styled('div')`
   }
 `;
 
-const LogoWrapper = styled('div')<{ isPost?: boolean }>`
+const LogoWrapper = styled('div') <{ isPost?: boolean }>`
   display: flex;
   align-items: ${(props) => (props.isPost ? 'center' : 'flex-start')};
   justify-content: ${(props) => (props.isPost ? 'center' : 'flex-start')};
   flex: 1;
-  margin: 0 24px;
 `;
 
 const HomepageLink = styled(Link)`
