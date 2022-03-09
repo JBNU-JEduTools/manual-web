@@ -40,8 +40,8 @@ const BusinessDashboard = defineDocumentType(() => ({
 
 const KataOmnichat = defineDocumentType(() => ({
   name: 'KataOmnichat',
-  filePathPattern: 'kata-omnichat/**/*.md',
-  contentType: 'markdown',
+  filePathPattern: 'kata-omnichat/**/*.mdx',
+  contentType: 'mdx',
   fields: {
     id: { type: 'string', required: true },
     section: { type: 'string', required: true },

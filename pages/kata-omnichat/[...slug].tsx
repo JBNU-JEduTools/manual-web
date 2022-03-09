@@ -12,7 +12,6 @@ import { BackToTopButton } from 'components/docs/BackToTopButton';
 import { DocsHelpful } from 'components/docs/DocsHelpful';
 import { useRouter } from 'next/router';
 import { MarkdownContent } from 'components/page/Markdown';
-import renderAst from 'utils/renderAst';
 import { DocsContainer } from 'components/layout/Container';
 import Breadcrumb from 'components/breadcrumb/breadcrumb';
 import IndexLayout from 'components/layouts';
@@ -24,6 +23,8 @@ import Image from 'next/image';
 import toc from 'docs/toc-kata-omnichat.json';
 import linkingToc from 'docs/linking-toc/kata-omnichat.json';
 import { MDXLinking } from 'interfaces/linking';
+import { useMDXComponent } from 'next-contentlayer/hooks';
+import MDXComponents from 'components/mdx/MDXComponents';
 
 interface OmnichatPageTemplateProps {
   post: KataOmnichat;
@@ -31,6 +32,7 @@ interface OmnichatPageTemplateProps {
 }
 
 const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, linking }) => {
+  const MDXContent = useMDXComponent(post.body.code);
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     router.push('/404');
@@ -103,7 +105,10 @@ const OmnichatPageTemplate: React.FC<OmnichatPageTemplateProps> = ({ post, linki
                 ]}
               />
               {post.id !== 'about' && <DocsHeader title={post.title} />}
-              <MarkdownContent>{renderAst(post.body.html)}</MarkdownContent>
+
+              <MarkdownContent>
+                <MDXContent components={MDXComponents} />
+              </MarkdownContent>
               {linking && <PaginationDocs prevPage={linking.previous} nextPage={linking.next} />}
               <DocsHelpful />
               <FooterWrapper>
