@@ -169,7 +169,7 @@ const SearchResultBoxDesktop = css`
 const SearchResultBox = styled('div') <{ layout: string }>`
   border-radius: 12px;
   background-color: ${theme.colors.white};
-  box-shadow: 0px 8px 16px 0px ${theme.colors.greymed01};
+  box-shadow: 0px 8px 16px 0px ${theme.colors.greydark01};
   ${(props) => props.layout === 'desktop' && SearchResultBoxDesktop}
 `;
 

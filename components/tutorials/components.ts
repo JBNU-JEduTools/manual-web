@@ -100,6 +100,6 @@ export const Card = styled(CardAksara)<{ index?: number }>`
   }
 
   &:hover {
-    box-shadow: 0px 8px 16px 0px #89949f52;
+    box-shadow: 0px 8px 16px 0px ${theme.colors.greymed01};
   }
 `;
