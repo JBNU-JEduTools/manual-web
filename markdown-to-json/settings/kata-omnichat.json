@@ -2,7 +2,7 @@
   "name": "kata-omnichat",
   "cwd": "./",
   "src": "./docs/kata-omnichat",
-  "filePattern": "**/*.md",
+  "filePattern": "**/*.mdx",
   "dist": "./markdown-to-json/outputs/kata-omnichat.json",
   "metadata": true,
   "deterministicOrder": false
