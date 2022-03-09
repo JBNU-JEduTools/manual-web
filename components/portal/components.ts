@@ -88,6 +88,7 @@ export const HeroWrapper = styled('div')`
 
 export const Anchor = styled(UnstyledAnchor)`
   font-weight: 700;
+  font-family: "Inter-bold";
   color: ${theme.colors.grey08};
 
   @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
