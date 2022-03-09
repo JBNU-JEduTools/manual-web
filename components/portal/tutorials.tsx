@@ -14,7 +14,7 @@ const Tutorials: React.FC<TutorialsProps> = ({ tutorials }) => {
   return (
     <Box>
       <HeaderSegment>
-        <Heading scale={700} fontSize={24}>
+        <Heading scale={700} fontSize={24} color={theme.colors.greydark02}>
           Tutorials
         </Heading>
         <UnstyledAnchor

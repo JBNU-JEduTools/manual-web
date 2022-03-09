@@ -34,8 +34,8 @@ export const TocHeader = styled(Text)`
   font-size: 14px;
   line-height: 20px;
 
-  /* Dark Grey */
-  color: #404145;
+  /* GreyDark02 */
+  color: ${theme.colors.greydark02};
 `;
 
 export const TocText = styled(Text)`

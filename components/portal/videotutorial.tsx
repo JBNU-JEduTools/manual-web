@@ -12,11 +12,11 @@ interface TutorialsProps {
   tutorials?: MarkdownContent[];
 }
 
-const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
+const VideoTutorial: React.FC<TutorialsProps> = () => {
   return (
     <VideoTutorialWrapper>
       <HeaderSegment>
-        <Heading scale={700} fontSize={24} mb={0}>
+        <Heading scale={700} fontSize={24} mb={0} color={theme.colors.greydark02}>
           Video Tutorial
         </Heading>
         <UnstyledAnchor
@@ -38,7 +38,7 @@ const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
             title="Self-Onboarding"
             thumbnail="/assets/images/thumbnail/self-onboarding.png"
           />
-          <Text textAlign="center" mb={10} mt={12} fontWeight={700} fontSize={16}>
+          <Text textAlign="center" color={theme.colors.greydark02} mb={10} mt={12} fontWeight={700} fontSize={16}>
             Kata Omnichat 2.0
           </Text>
         </VideoWrapper>
@@ -48,7 +48,7 @@ const VideoTutorial: React.FC<TutorialsProps> = ({ tutorials }) => {
             title="How to Set Up Qios"
             thumbnail="/assets/images/thumbnail/how-to-set-up-qios.png"
           />
-          <Text textAlign="center" mb={10} mt={12} fontWeight={700} fontSize={16}>
+          <Text textAlign="center" color={theme.colors.greydark02} mb={10} mt={12} fontWeight={700} fontSize={16}>
             Qios Tutorial
           </Text>
         </VideoWrapper>

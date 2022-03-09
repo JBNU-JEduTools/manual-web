@@ -9,10 +9,10 @@ interface BreadCrumbProps {
 }
 
 const BreadcrumbItem = styled(BreadcrumbItemAksara)`
-  color: ${(props) => !props.href && theme.colors.greydark02};
+  color: ${(props) => !props.href && theme.colors.greymed05};
   &:hover {
     text-decoration: none;
-    color: ${(props) => !props.href && theme.colors.greydark02};
+    color: ${(props) => !props.href && theme.colors.greymed05};
   }
 `;
 

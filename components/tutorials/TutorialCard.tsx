@@ -36,7 +36,7 @@ export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) =
           </Text>
         </ProductBadge>
         <CardTitle>
-          <Heading scale={700} fontSize={20} overflow="hidden">
+          <Heading scale={700} fontSize={20} color={theme.colors.greydark02} overflow="hidden">
             {title}
           </Heading>
         </CardTitle>
