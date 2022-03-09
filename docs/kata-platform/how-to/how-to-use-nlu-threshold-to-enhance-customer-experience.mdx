@@ -49,11 +49,42 @@ To integrate NLU can be implemented in chatbot, these are the steps:
 6. **As Intent** is a feature to collect available labels in the NLU. The field only allows alphanumerics.
 7. **Output** has several output types, depending on the entity type you used.
 
-| Output Types | Functionals                                                                                                         |
-| ------------ | ------------------------------------------------------------------------------------------------------------------- |
-| Raw          | Use this output type if your entity type is “trait”. It will result in raw sentences.                               |
-| Dictionary   | Use this output type if your entity type is “dictionary”. It will result in an array consisting of keys and labels. |
-| Phrase       | Using supermodel “kata entity”, you must use this output type.                                                      |
+<Table>
+  <TableHead>
+    <TableHeadCell>
+      Output Types
+    </TableHeadCell>
+    <TableHeadCell>
+      Functionals
+    </TableHeadCell>
+  </TableHead>
+  <TableBody>
+    <TableBodyRow>
+      <TableBodyCell>
+        Raw
+      </TableBodyCell>
+      <TableBodyCell>
+        Use this output type if your entity type is “trait”. It will result in raw sentences.
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Dictionary
+      </TableBodyCell>
+      <TableBodyCell>
+        Use this output type if your entity type is “dictionary”. It will result in an array consisting of keys and labels.
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Phrase
+      </TableBodyCell>
+      <TableBodyCell>
+        Using supermodel “kata entity”, you must use this output type.
+      </TableBodyCell>
+    </TableBodyRow>
+  </TableBody>
+</Table>
 
 8. **Path** is a feature to support integration with Supermodel.
 9. Click **Create** to finish your NLUs.

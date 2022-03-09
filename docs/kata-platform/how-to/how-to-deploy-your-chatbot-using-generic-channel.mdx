@@ -63,13 +63,76 @@ If you already have an environment created, skip these steps.
 2. Click the **”+ Create Channel”** button in the channel table list. It will show a menu to set up the channel.
 3. Choose Generic in Channel Type. Fill the form to create your channel:
 
-| Field Name               | Functionality                                                                                          | Limitation                                                                                  |
-| ------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
-| Name                     | Channel Name                                                                                           | Max. 30 characters must contain only alphanumeric characters (A-Z, a-z, 0-9), `-`, and `_`. |
-| Token (optional)         | Access token from a third-party app.                                                                   | -                                                                                           |
-| Refresh Token (optional) | Refresh token, if any.                                                                                 | -                                                                                           |
-| Secret (optional)        | Secret key from a third-party app                                                                      | -                                                                                           |
-| URL                      | Your endpoint to retrieve data from webhook, for example, `http://your_domain/message/retrieveMessage` | Make sure your endpoint has public access to retrieve data from the webhook.                |
+<Table>
+  <TableHead>
+    <TableHeadCell>
+      Field Name
+    </TableHeadCell>
+    <TableHeadCell>
+      Functionality
+    </TableHeadCell>
+    <TableHeadCell>
+      Limitation
+    </TableHeadCell>
+  </TableHead>
+  <TableBody>
+    <TableBodyRow>
+      <TableBodyCell>
+        Name
+      </TableBodyCell>
+      <TableBodyCell>
+        Channel Name
+      </TableBodyCell>
+      <TableBodyCell>
+        Max. 30 characters must contain only alphanumeric characters (A-Z, a-z, 0-9), `-`, and `_`.
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Token (optional)
+      </TableBodyCell>
+      <TableBodyCell>
+        Access token from a third-party app.
+      </TableBodyCell>
+      <TableBodyCell>
+        -
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Refresh Token (optional)
+      </TableBodyCell>
+      <TableBodyCell>
+        Refresh token, if any.
+      </TableBodyCell>
+      <TableBodyCell>
+        -
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Secret (optional)
+      </TableBodyCell>
+      <TableBodyCell>
+        Secret key from a third-party app
+      </TableBodyCell>
+      <TableBodyCell>
+        -
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        URL
+      </TableBodyCell>
+      <TableBodyCell>
+        Your endpoint to retrieve data from webhook, for example, `http://your_domain/message/retrieveMessage`
+      </TableBodyCell>
+      <TableBodyCell>
+        Make sure your endpoint has public access to retrieve data from the webhook.
+      </TableBodyCell>
+    </TableBodyRow>
+  </TableBody>
+</Table>
 
 4. Click **Save** to continue. After successfully making a channel, you will get a webhook. Copy this to be used for your app.
 

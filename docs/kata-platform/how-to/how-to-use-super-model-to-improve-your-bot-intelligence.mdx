@@ -27,21 +27,164 @@ These are steps to access the feature:
 
 Here is the explanation of each label and examples of what the Super Model can automatically identify words.
 
-| Label       | Description                                                                       | Examples                                                                            |
-| ----------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Person      | Person’s name                                                                     | Budi, Siti, Rina Putri                                                              |
-| Location    | General location, city, country, address                                          | Jakarta, Indonesia, Jln Pangeran Antasari 18A                                       |
-| Email       | General email                                                                     | business@mail.com, jobs@company.com                                                 |
-| Phone       | General phone                                                                     | +62 80123456789, (021) 3456789, 021-5678-9012                                       |
-| Datetime    | Date and time                                                                     | hari ini, 17 Agustus 1945, tahun 2019, besok, 17/9/45, jam 3 siang, pagi ini, 19:00 |
-| Number      | Number in digit, number in word, sequence of number, mix number in digit and word | 123, 92, 9.000, satu, dua, tiga ribu, dua tiga, delapan tujuh, 9 juta, 5rb          |
-| Currency    | Currency name, money                                                              | IDR, SGD, rupiah, US dollar, Rp 5000, 5 ribu rupihah, $3, 9 USD                     |
-| Area        | Unit area                                                                         | 5 meter persegi, sepuluh m2, 200 ha                                                 |
-| Duration    | Unit duration                                                                     | 3 jam, 10 detik, 5 jam 30 menit, sehari, dua hari                                   |
-| Length      | Unit length                                                                       | 5 meter, delapan cm                                                                 |
-| Temperature | Unit temperature                                                                  | 40 derajat celcius, -5 derajat                                                      |
-| Volume      | Unit volume                                                                       | 6 liter                                                                             |
-| Weight      | Unit weight                                                                       | tujuh kilogram, 5 gr, 9kg                                                           |
+<Table>
+  <TableHead>
+    <TableHeadCell>
+      Label
+    </TableHeadCell>
+    <TableHeadCell>
+      Description
+    </TableHeadCell>
+    <TableHeadCell>
+      Examples
+    </TableHeadCell>
+  </TableHead>
+  <TableBody>
+    <TableBodyRow>
+      <TableBodyCell>
+        Person
+      </TableBodyCell>
+      <TableBodyCell>
+        Person’s name
+      </TableBodyCell>
+      <TableBodyCell>
+        Budi, Siti, Rina Putri
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Location
+      </TableBodyCell>
+      <TableBodyCell>
+        General location, city, country, address
+      </TableBodyCell>
+      <TableBodyCell>
+        Jakarta, Indonesia, Jln Pangeran Antasari 18A
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Email
+      </TableBodyCell>
+      <TableBodyCell>
+        General email
+      </TableBodyCell>
+      <TableBodyCell>
+        business@mail.com, jobs@company.com
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Phone
+      </TableBodyCell>
+      <TableBodyCell>
+        General phone
+      </TableBodyCell>
+      <TableBodyCell>
+        +62 80123456789, (021) 3456789, 021-5678-9012
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Datetime
+      </TableBodyCell>
+      <TableBodyCell>
+        Date and time
+      </TableBodyCell>
+      <TableBodyCell>
+        hari ini, 17 Agustus 1945, tahun 2019, besok, 17/9/45, jam 3 siang, pagi ini, 19:00
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Number
+      </TableBodyCell>
+      <TableBodyCell>
+        Number in digit, number in word, sequence of number, mix number in digit and word
+      </TableBodyCell>
+      <TableBodyCell>
+        123, 92, 9.000, satu, dua, tiga ribu, dua tiga, delapan tujuh, 9 juta, 5rb
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Currency
+      </TableBodyCell>
+      <TableBodyCell>
+        Currency name, money
+      </TableBodyCell>
+      <TableBodyCell>
+        IDR, SGD, rupiah, US dollar, Rp 5000, 5 ribu rupihah, $3, 9 USD
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Area
+      </TableBodyCell>
+      <TableBodyCell>
+        Unit area
+      </TableBodyCell>
+      <TableBodyCell>
+        5 meter persegi, sepuluh m2, 200 ha
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Duration
+      </TableBodyCell>
+      <TableBodyCell>
+        Unit duration
+      </TableBodyCell>
+      <TableBodyCell>
+        3 jam, 10 detik, 5 jam 30 menit, sehari, dua hari
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Length
+      </TableBodyCell>
+      <TableBodyCell>
+        Unit length
+      </TableBodyCell>
+      <TableBodyCell>
+        5 meter, delapan cm
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Temperature
+      </TableBodyCell>
+      <TableBodyCell>
+        Unit temperature
+      </TableBodyCell>
+      <TableBodyCell>
+        40 derajat celcius, -5 derajat
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Volume
+      </TableBodyCell>
+      <TableBodyCell>
+        Unit volume
+      </TableBodyCell>
+      <TableBodyCell>
+        6 liter
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Weight
+      </TableBodyCell>
+      <TableBodyCell>
+        Unit weight
+      </TableBodyCell>
+      <TableBodyCell>
+        tujuh kilogram, 5 gr, 9kg
+      </TableBodyCell>
+    </TableBodyRow>
+  </TableBody>
+</Table>
 
 ## How to Use
 
@@ -66,11 +209,42 @@ Here is how.
 5. **Threshold** can act as a confidence level, and these values range from 0.0 (completely uncertain) to 1.0 (completely confident). This confidence level is usually set between 0.7 to 0.8. So the data that falls under 0.7/0.8 will not be detected by the bot. The field only allows numbers and decimals to separate using “.” character. Fill in 0.8 in this field.
 6. **Output** has several output types, depending on the entity type you used. For example, for Super Model implementation, choose Phrase.
 
-| Output Types | Functionals                                                                                                         |
-| ------------ | ------------------------------------------------------------------------------------------------------------------- |
-| Raw          | Use this output type if your entity type is “trait”. It will result in raw sentences.                               |
-| Dictionary   | Use this output type if your entity type is “dictionary”. It will result in an array consisting of keys and labels. |
-| Phrase       | Using supermodel “kata entity”, you must use this output type.                                                      |
+<Table>
+  <TableHead>
+    <TableHeadCell>
+      Output Types
+    </TableHeadCell>
+    <TableHeadCell>
+      Functionals
+    </TableHeadCell>
+  </TableHead>
+  <TableBody>
+    <TableBodyRow>
+      <TableBodyCell>
+        Raw
+      </TableBodyCell>
+      <TableBodyCell>
+        Use this output type if your entity type is “trait”. It will result in raw sentences.
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Dictionary
+      </TableBodyCell>
+      <TableBodyCell>
+        Use this output type if your entity type is “dictionary”. It will result in an array consisting of keys and labels.
+      </TableBodyCell>
+    </TableBodyRow>
+    <TableBodyRow>
+      <TableBodyCell>
+        Phrase
+      </TableBodyCell>
+      <TableBodyCell>
+        Using supermodel “kata entity”, you must use this output type.
+      </TableBodyCell>
+    </TableBodyRow>
+  </TableBody>
+</Table>
 
 7. **Entity Name** is a feature to define the entity name when choosing a Super Model. Fill in with “kata”.
 8. Click **Create** to finish your NLUs.
