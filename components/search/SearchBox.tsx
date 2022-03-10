@@ -22,6 +22,7 @@ interface SearchPageState {
   query: string;
   results: any[];
   isInputFocused: boolean;
+  maxResults: number;
 }
 
 const ResultTitle = styled('h4')`
@@ -91,7 +92,7 @@ const SearchResultsDesktop = css`
 
 const SearchResultsMobile = css`
   position: relative;
-  height: 315px;
+  height: 100%;
   margin-top: 0;
   overflow-y: auto;
   z-index: 50;
@@ -179,6 +180,8 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
     layout: 'default',
   };
 
+  isMobile = typeof window !== 'undefined' ? /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent) : false;
+
   constructor(props: SearchPageProps) {
     super(props);
 
@@ -186,6 +189,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
       query: '',
       results: [],
       isInputFocused: false,
+      maxResults: this.isMobile ? 3 : 5,
     };
 
     this.onEscKeypress = this.onEscKeypress.bind(this);
@@ -216,7 +220,10 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
     const {
       fuseSearch: { fuse },
     } = this.props;
-    return fuse.search(query, { limit: 5 });
+
+    const { maxResults } = this.state;
+
+    return fuse.search(query, { limit: maxResults });
   }
 
   search = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -229,7 +236,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
 
   render() {
     const { layout, fuseSearch, onSearchMore } = this.props;
-    const { query, results, isInputFocused } = this.state;
+    const { query, results, isInputFocused, maxResults } = this.state;
     console.log(results);
     return (
       <Root
@@ -282,7 +289,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                       </SearchResultLink>
                     );
                   })}
-                  {results && results.length === 5 && (
+                  {results && results.length === maxResults && (
                     <SearchResultButton
                       icon={IconOutgoing}
                       iconPosition="left"
