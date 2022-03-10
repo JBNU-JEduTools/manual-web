@@ -101,7 +101,7 @@ const SearchResultsMobile = css`
   border-bottom-right-radius: 4px;
 `;
 
-const SearchResults = styled('div') <SearchPageProps>`
+const SearchResults = styled('div')<SearchPageProps>`
   padding: 0;
   background-color: ${theme.colors.white};
 
@@ -151,7 +151,7 @@ const SearchResultButton = styled(PlainButton)`
   width: 100%;
 `;
 
-const Root = styled('div') <SearchPageProps>`
+const Root = styled('div')<SearchPageProps>`
   ${(props) => props.layout === 'desktop' && RootDesktop}
   ${(props) => props.layout === 'mobile' && RootMobile}
 `;
@@ -166,7 +166,7 @@ const SearchResultBoxDesktop = css`
   z-index: 1011;
 `;
 
-const SearchResultBox = styled('div') <{ layout: string }>`
+const SearchResultBox = styled('div')<{ layout: string }>`
   border-radius: 12px;
   background-color: ${theme.colors.white};
   box-shadow: 0px 8px 16px 0px ${theme.colors.greydark01};
@@ -222,7 +222,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
   search = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.value) {
       const query = event.target.value;
-      const results = this.getSearchResults(query);
+      let results = this.getSearchResults(query);
       this.setState({ results, query });
     }
   };
@@ -230,7 +230,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
   render() {
     const { layout, fuseSearch, onSearchMore } = this.props;
     const { query, results, isInputFocused } = this.state;
-
+    console.log(results);
     return (
       <Root
         layout={layout}
@@ -263,7 +263,8 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                             height={16}
                             layout="fixed"
                             alt={fuseSearch.name}
-                            src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`} />
+                            src={`/assets/images/products/icon/${fuseSearch.name}-icon.svg`}
+                          />
                         </Box>
                         <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
                           {PRODUCTS_DICT[fuseSearch.name]}
@@ -273,7 +274,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                   )}
                   {results.map(({ item: page }) => {
                     return (
-                      <SearchResultLink href={page.meta.absolutePath} key={page.title}>
+                      <SearchResultLink href={page.meta.absolutePath} key={`${page.product}-${page.id}`}>
                         <SearchResult>
                           <ResultTitle>{page.title}</ResultTitle>
                           {page.excerpt && <ResultExcerpt>{page.excerpt}</ResultExcerpt>}
