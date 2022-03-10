@@ -127,6 +127,7 @@ const DocumentationNav = styled('div')`
   flex-direction: column;
   padding-left: 24px;
   padding-right: 24px;
+  margin-top: 24px;
 `;
 
 interface NavigationProps {
