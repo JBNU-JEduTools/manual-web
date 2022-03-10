@@ -237,7 +237,6 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
   render() {
     const { layout, fuseSearch, onSearchMore } = this.props;
     const { query, results, isInputFocused, maxResults } = this.state;
-    console.log(results);
     return (
       <Root
         layout={layout}
