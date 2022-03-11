@@ -239,7 +239,6 @@ const Index: React.FC = () => {
                   <BreadcrumbWrapper hideOnDesktop>
                     <Breadcrumb
                       items={breadcrumbItems.map((item, index) => {
-                        console.log({ urlDisplay: item.urlDisplay });
                         if (index === 0) {
                           return { urlDisplay: '...' };
                         }
