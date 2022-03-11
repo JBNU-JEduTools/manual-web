@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styled, { css } from 'styled-components';
 
 import { space } from 'utils/variables';
-import { theme, Text, Box, PlainButton, InputSearchbox, Overlay } from '@aksara-ui/react';
+import { theme, Text, Box, PlainButton, InputSearchbox, Overlay as OverlayAksara } from '@aksara-ui/react';
 
 import { ProductBadge } from 'components/badge';
 import { PRODUCTS_DICT } from 'utils/constants';
@@ -135,7 +135,6 @@ const RootMobile = css`
     padding: 16px;
     background-color: ${theme.colors.white};
     justify-content: center;
-
     #input-searchbox-active {
       max-width: none !important;
     }
@@ -164,14 +163,18 @@ const SearchResultBoxDesktop = css`
   right: -45px;
   left: auto;
   padding: 16px 24px;
-  z-index: 1011;
 `;
 
 const SearchResultBox = styled('div')<{ layout: string }>`
   border-radius: 12px;
   background-color: ${theme.colors.white};
   box-shadow: 0px 8px 16px 0px ${theme.colors.greydark01};
+  z-index: 1011;
   ${(props) => props.layout === 'desktop' && SearchResultBoxDesktop}
+`;
+
+const Overlay = styled(OverlayAksara)`
+  z-index: 1;
 `;
 
 export default class SearchBox extends React.Component<SearchPageProps, SearchPageState> {
@@ -246,7 +249,6 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
       >
         {isInputFocused ? (
           <>
-            <Overlay backdropBlur={false} onClick={() => this.setState({ isInputFocused: false })} />
             <SearchResultBox layout={layout}>
               <Box className="header" marginBottom={12}>
                 <InputSearchbox
@@ -298,6 +300,7 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                       size="sm"
                       type="button"
                       variant="primary"
+                      width="100%"
                     >
                       See all “{query}” result
                     </SearchResultButton>
@@ -305,6 +308,10 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                 </SearchResults>
               )}
             </SearchResultBox>
+            <Overlay
+              backdropBlur={false}
+              onClick={() => this.setState({ isInputFocused: false, results: [], query: '' })}
+            />
           </>
         ) : (
           <Box className="header">
