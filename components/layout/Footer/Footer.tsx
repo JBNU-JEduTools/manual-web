@@ -81,7 +81,8 @@ const FooterSection = styled('div')`
 `;
 
 const Footer: React.FC<FooterProps> = ({ version, siteLastUpdated }) => {
-  const date = new Date(siteLastUpdated);
+  const date = new Date();
+  const dateLastUpdated = new Date(siteLastUpdated);
   const socials = socialData;
 
   return (
@@ -92,7 +93,7 @@ const Footer: React.FC<FooterProps> = ({ version, siteLastUpdated }) => {
             &copy; {format(date, 'yyyy')} Kata.ai. All rights reserved.
           </Text>
           <Text as="p" scale={200} fontSize={12} color={theme.colors.greymed04}>
-            Version {version}. Last updated {format(date, 'd MMMM yyyy')}.
+            Version {version}. Last updated {format(dateLastUpdated, 'd MMMM yyyy')}.
           </Text>
         </FooterSection>
         <FooterSection>
