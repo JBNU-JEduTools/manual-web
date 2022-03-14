@@ -7,7 +7,6 @@ import VideoTutorial from 'components/portal/videotutorial';
 import { TutorialWrapper } from 'components/portal/components';
 import IndexLayout from 'components/layouts';
 import { allTutorials, Tutorials as ITutorials } from 'contentlayer/generated';
-import { MarkdownContent } from 'interfaces/next';
 
 interface IIndex {
   tutorialPosts: ITutorials[];

@@ -3,11 +3,11 @@ import { Box, Heading, theme, Text } from '@aksara-ui/react';
 import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
-import { breakpoints } from 'utils/variables';
 import { Anchor, Card } from './components';
 import { ProductBadge } from '../badge';
 import Image from 'next/image';
 import { Tutorials } from 'contentlayer/generated';
+import { NextImage } from 'components/image/NextImage';
 
 interface TutorialCardProps {
   tutorial: Tutorials;
@@ -17,30 +17,32 @@ interface TutorialCardProps {
 export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) => {
   const { title, imgSpot, id } = tutorial;
   return (
-    <Card key={title} index={index}>
-      <Image width={345} height={180} src={imgSpot} alt={title} layout="responsive" />
+    <Card key={title} index={index} display={'flex'} flexDirection={'column'}>
+      <Box position={'relative'}>
+        <NextImage src={imgSpot} alt={title} />
+      </Box>
       <CardContent>
-        <ProductBadge>
-          <Box mr={8} display="flex">
-            <Image
-              width={16}
-              height={16}
-              layout="fixed"
-              src="/assets/images/products/icon/kata-platform-icon.svg"
-              alt="Kata Platform"
-            />
-          </Box>
-          <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
-            Kata Platform
-          </Text>
-        </ProductBadge>
-        <CardTitle>
+        <Box minHeight="120px">
+          <ProductBadge>
+            <Box mr={8} display="flex">
+              <Image
+                width={16}
+                height={16}
+                layout="fixed"
+                src="/assets/images/products/icon/kata-platform-icon.svg"
+                alt="Kata Platform"
+              />
+            </Box>
+            <Text fontSize={12} fontWeight={600} color={theme.colors.greydark02}>
+              Kata Platform
+            </Text>
+          </ProductBadge>
           <Heading scale={700} fontSize={20} color={theme.colors.greydark02} overflow="hidden">
             {title}
           </Heading>
-        </CardTitle>
+        </Box>
         <Link href={`/tutorials/${id}`} passHref>
-          <Anchor>
+          <Anchor alignItems={'end'}>
             View Article <IconArrowRight width={14} />
           </Anchor>
         </Link>
@@ -50,18 +52,9 @@ export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) =
 };
 
 const CardContent = styled(Box)`
-  height: 285px;
   padding: 32px;
-  @media only screen and (max-width: ${`${breakpoints.xl}px`}) {
-    padding: 24px;
-  }
-`;
-
-const CardTitle = styled(Box)`
-  overflow: hidden;
-  max-height: 125px;
-  height: 125px;
-  @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
-    max-height: 125px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 `;
