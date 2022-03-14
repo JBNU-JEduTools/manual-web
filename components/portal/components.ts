@@ -8,11 +8,11 @@ export const DocsCard = styled(Card)`
   border: 1px solid transparent;
   background-color: #ffffff;
   height: fit-content;
-  margin-right: 12px;
   margin-top: 12px;
   max-width: auto;
   z-index: 3;
   @media only screen and (width: ${`${breakpoints.lg}px`}) {
+    margin-right: 12px;
     width: 355px;
     max-width: 255px;
   }
@@ -21,6 +21,7 @@ export const DocsCard = styled(Card)`
     max-width: 100% !important;
   }
   @media only screen and (min-width: ${`${breakpoints.lg + 1}px`}) {
+    margin-right: 12px;
     width: 30%;
   }
   img {
@@ -52,6 +53,11 @@ export const DocsCardWrapper = styled(Box)`
   font-weight: 700;
   flex-wrap: wrap;
   align-items: center;
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
   @media only screen and (width: ${`${breakpoints.lg}px`}) {
     width: 100%;
   }

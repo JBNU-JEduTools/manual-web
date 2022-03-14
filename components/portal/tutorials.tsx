@@ -1,6 +1,5 @@
 import { Box, Heading, theme, UnstyledAnchor } from '@aksara-ui/react';
 import { Cards } from 'components/tutorials/components';
-import { MarkdownContent } from 'interfaces/next';
 import React from 'react';
 import { HeaderSegment } from './components';
 import { TutorialCard } from 'components/tutorials/TutorialCard';

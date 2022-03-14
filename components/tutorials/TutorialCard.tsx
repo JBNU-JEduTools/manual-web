@@ -1,6 +1,5 @@
 import { IconArrowRight } from '@aksara-ui/icons';
 import { Box, Heading, theme, Text } from '@aksara-ui/react';
-import { MarkdownContent } from 'interfaces/next';
 import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
