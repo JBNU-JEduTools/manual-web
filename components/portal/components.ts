@@ -12,8 +12,7 @@ export const DocsCard = styled(Card)`
   max-width: auto;
   z-index: 3;
   @media only screen and (max-width: ${`${breakpoints.md - 1}px`}) {
-    width: 355px;
-    max-width: 100% !important;
+    width: 100%;
   }
   @media only screen and (width: ${`${breakpoints.md}px`}) {
     margin-right: 12px;

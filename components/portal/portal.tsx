@@ -1,12 +1,25 @@
 import { Box, Heading, theme, Text } from '@aksara-ui/react';
 import Image from 'next/image';
+import styled from 'styled-components';
 import { PRODUCTS as productList } from 'utils/constants';
-import { layerIndexes } from 'utils/variables';
+import { breakpoints, layerIndexes } from 'utils/variables';
 import { Anchor, DocsCard, DocsCardWrapper, HeaderPortal, HeroWrapper } from './components';
+
+const PortalWrapper = styled(Box)`
+  display: flex;
+  padding-bottom: 48px;
+  background-color: ${theme.colors.blue07};
+  @media only screen and (max-width: ${`${breakpoints.md - 1}px`}) {
+    margin-bottom: 48px;
+  }
+  @media only screen and (min-width: ${`${breakpoints.md}px`}) {
+    margin-bottom: 96px;
+  }
+`;
 
 export default function Portal() {
   return (
-    <Box backgroundColor={theme.colors.blue07} mb={96} display="flex" paddingBottom={48}>
+    <PortalWrapper>
       <HeroWrapper>
         <Image width={385} height={335} layout="responsive" src="/assets/images/portal-hero.svg" alt="Portal Hero" />
       </HeroWrapper>
@@ -41,6 +54,6 @@ export default function Portal() {
           ))}
         </DocsCardWrapper>
       </Box>
-    </Box>
+    </PortalWrapper>
   );
 }
