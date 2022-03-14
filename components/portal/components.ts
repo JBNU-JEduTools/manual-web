@@ -62,8 +62,8 @@ export const DocsCardWrapper = styled(Box)`
 
 export const TutorialWrapper = styled(Box)`
   @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
     padding-left: 10vw;
@@ -88,7 +88,7 @@ export const HeroWrapper = styled('div')`
 
 export const Anchor = styled(UnstyledAnchor)`
   font-weight: 700;
-  font-family: "Inter-bold";
+  font-family: 'Inter-bold';
   color: ${theme.colors.grey08};
 
   @media only screen and (max-width: ${`${breakpoints.lg}px`}) {
