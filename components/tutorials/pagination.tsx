@@ -23,7 +23,7 @@ export const PaginationWithDetails: React.FC<PaginationDetailsProps> = ({
   setPage,
 }) => {
   return (
-    <PaginationWrapper alignItems="center" justifyContent="space-between" pb={24}>
+    <PaginationWrapper alignItems="center" justifyContent="space-between">
       <PaginationDetailWrapper>
         <PaginationDetail page={current} limit={limit} length={totalItems} />
       </PaginationDetailWrapper>
@@ -46,6 +46,8 @@ const PaginationWrapper = styled(Box)`
   @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     line-height: 64px;
     flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
   } ;
 `;
 

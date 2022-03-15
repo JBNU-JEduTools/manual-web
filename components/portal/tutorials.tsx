@@ -11,7 +11,7 @@ interface TutorialsProps {
 
 const Tutorials: React.FC<TutorialsProps> = ({ tutorials }) => {
   return (
-    <Box>
+    <Box mb={48}>
       <HeaderSegment>
         <Heading scale={700} fontSize={24} color={theme.colors.greydark02}>
           Tutorials

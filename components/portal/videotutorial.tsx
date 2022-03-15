@@ -85,7 +85,4 @@ const VideoWrapper = styled(Box)`
 
 const VideoTutorialWrapper = styled(Box)`
   margin-bottom: 48px;
-  @media only screen and (min-width: ${breakpoints.lg}px) {
-    margin-top: 96px;
-  }
 `;

@@ -130,12 +130,7 @@ export const PortalWrapper = styled(Box)`
   display: flex;
   padding-bottom: 48px;
   background-color: ${theme.colors.blue07};
-  @media only screen and (max-width: ${`${breakpoints.md - 1}px`}) {
-    margin-bottom: 48px;
-  }
-  @media only screen and (min-width: ${`${breakpoints.md}px`}) {
-    margin-bottom: 96px;
-  }
+  margin-bottom: 48px;
 `;
 
 export const PortalTitle = styled(Heading)`

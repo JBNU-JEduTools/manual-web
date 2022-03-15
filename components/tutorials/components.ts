@@ -7,10 +7,11 @@ export const Cards = styled('div')<{ mb?: string }>`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: ${(prop) => (prop && prop.mb ? prop.mb : '32px')};
+  margin-bottom: ${(prop) => (prop && prop.mb ? prop.mb : '48px')};
 
   @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
     flex-direction: column;
+    margin-bottom: 24px;
     iframe,
     .yt-lite {
       width: 100% !important;
