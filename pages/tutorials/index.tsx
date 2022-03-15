@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../../components/container';
 import Head from 'next/head';
-import { Footer } from 'components/layout/Footer';
+import { Footer, FooterWrapper } from 'components/layout/Footer';
 import { Box, Heading, Text, theme } from '@aksara-ui/react';
 import { Cards, CardsWrapper } from 'components/tutorials/components';
 import { PaginationWithDetails } from 'components/tutorials/pagination';
@@ -77,7 +77,9 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
               limitList={LIMIT}
               totalItems={tutorialPosts.length}
             />
-            <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
+            <FooterWrapper>
+              <Footer version={'v4.0.0'} siteLastUpdated={'15 March 2022'} />
+            </FooterWrapper>
           </CardsWrapper>
         )}
       </Container>

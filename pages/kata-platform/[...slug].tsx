@@ -111,7 +111,7 @@ const PlatformPageTemplate: React.FC<PlatformPageTemplateProps> = ({ post, linki
               {linking && <PaginationDocs prevPage={linking.previous} nextPage={linking.next} />}
               {/* <DocsHelpful /> */}
               <FooterWrapper>
-                <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
+                <Footer version={'v4.0.0'} siteLastUpdated={'15 March 2022'} />
               </FooterWrapper>
             </DocsContainer>
             <BackToTopButton href="#" />

@@ -1,7 +1,7 @@
 import Container from '../components/container';
 import Portal from '../components/portal/portal';
 import Head from 'next/head';
-import { Footer } from 'components/layout/Footer';
+import { Footer, FooterWrapper } from 'components/layout/Footer';
 import Tutorials from 'components/portal/tutorials';
 import VideoTutorial from 'components/portal/videotutorial';
 import { TutorialWrapper } from 'components/portal/components';
@@ -23,7 +23,9 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
         <TutorialWrapper>
           <Tutorials tutorials={tutorialPosts} />
           <VideoTutorial />
-          <Footer version={'v3.1.1'} siteLastUpdated={'23 December 2021'} />
+          <FooterWrapper>
+            <Footer version={'v4.0.0'} siteLastUpdated={'15 March 2022'} />
+          </FooterWrapper>
         </TutorialWrapper>
       </Container>
     </IndexLayout>
