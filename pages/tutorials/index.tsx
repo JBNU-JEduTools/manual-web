@@ -8,10 +8,42 @@ import { PaginationWithDetails } from 'components/tutorials/pagination';
 import { TutorialCard } from 'components/tutorials/TutorialCard';
 import IndexLayout from 'components/layouts';
 import { allTutorials, Tutorials } from 'contentlayer/generated';
+import styled from 'styled-components';
+import { breakpoints } from 'utils/variables';
 
 interface IIndex {
   tutorialPosts: Tutorials[];
 }
+
+const TutorialTitle = styled(Heading)`
+  color: ${theme.colors.greydark02};
+  margin-bottom: 14px;
+
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+`;
+
+const TutorialDescription = styled(Text)`
+  color: ${theme.colors.greydark02};
+  font-weight: 400;
+
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+`;
 
 const LIMIT = [6, 9, 12];
 
@@ -26,10 +58,8 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
       </Head>
       <Container>
         <Box display="flex" py={32} mb={48} flexDirection="column" justifyContent="center" alignItems="center">
-          <Heading fontSize={36} mb={14} color={theme.colors.greydark02}>
-            Tutorials 📚
-          </Heading>
-          <Text color={theme.colors.greydark02}>Find the tutorials for our products</Text>
+          <TutorialTitle>Tutorials 📚</TutorialTitle>
+          <TutorialDescription>Find the tutorials for our products</TutorialDescription>
         </Box>
         {tutorialPosts.length > 0 && (
           <CardsWrapper>
