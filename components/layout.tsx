@@ -23,7 +23,7 @@ const StyledLayoutRoot = styled('div')`
   }
 `;
 
-const LogoWrapper = styled('div') <{ isPost?: boolean }>`
+const LogoWrapper = styled('div')<{ isPost?: boolean }>`
   display: flex;
   align-items: ${(props) => (props.isPost ? 'center' : 'flex-start')};
   justify-content: ${(props) => (props.isPost ? 'center' : 'flex-start')};
@@ -122,8 +122,8 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
                 <UnstyledAnchor display="flex">
                   <Image
                     layout="fixed"
-                    width={85}
-                    height={25}
+                    width={60}
+                    height={40}
                     src={
                       imageOrigin === 'docs'
                         ? '/assets/images/logo-docs.svg'
@@ -138,7 +138,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
               <SearchBox layout="mobile" fuseSearch={fuseSearch} onSearchMore={onSearchMore} />
             ) : (
               <UnstyledSearchButton onClick={() => setIsSearchOpen(!isSearchOpen)}>
-                <SearchIcon />
+                <SearchIcon fill={theme.colors.greydark02} />
               </UnstyledSearchButton>
             )}
           </HeaderRight>
