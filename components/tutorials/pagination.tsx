@@ -1,5 +1,5 @@
 import React from 'react';
-import { AksaraProvider, Box, Pagination, PaginationDetail, PaginationFilter } from '@aksara-ui/react';
+import { Box, Pagination, PaginationDetail, PaginationFilter } from '@aksara-ui/react';
 import styled from 'styled-components';
 import { breakpoints } from 'utils/variables';
 
@@ -23,23 +23,20 @@ export const PaginationWithDetails: React.FC<PaginationDetailsProps> = ({
   setPage,
 }) => {
   return (
-    // TODO: Remove Aksara Provider (This is quickfix for broken styling becauseof AksaraReset)
-    <AksaraProvider disableInjection>
-      <PaginationWrapper alignItems="center" justifyContent="space-between" pb={24}>
-        <PaginationDetailWrapper>
-          <PaginationDetail page={current} limit={limit} length={totalItems} />
-        </PaginationDetailWrapper>
-        <Pagination onSelect={setPage} current={current} total={totalPage} />
-        <PaginationFilter
-          selectedItem={limit}
-          items={limitList}
-          onChange={(changes) => {
-            setLimit(changes);
-            setPage(1);
-          }}
-        />
-      </PaginationWrapper>
-    </AksaraProvider>
+    <PaginationWrapper alignItems="center" justifyContent="space-between" pb={24}>
+      <PaginationDetailWrapper>
+        <PaginationDetail page={current} limit={limit} length={totalItems} />
+      </PaginationDetailWrapper>
+      <Pagination onSelect={setPage} current={current} total={totalPage} />
+      <PaginationFilter
+        selectedItem={limit}
+        items={limitList}
+        onChange={(changes) => {
+          setLimit(changes);
+          setPage(1);
+        }}
+      />
+    </PaginationWrapper>
   );
 };
 

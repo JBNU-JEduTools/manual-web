@@ -229,7 +229,7 @@ const Index: React.FC = () => {
               }
 
               return (
-                <SearchResult key={page.title}>
+                <SearchResult key={`${page.product}-${page.id}`}>
                   <SearchResultLink href={page.meta.absolutePath}>
                     <ResultTitle>{page.title}</ResultTitle>
                   </SearchResultLink>
