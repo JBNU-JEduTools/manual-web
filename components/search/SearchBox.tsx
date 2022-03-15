@@ -299,15 +299,17 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
             </Box>
           )}
         </Root>
-        <Overlay
-          backdropBlur={false}
-          onClick={() => {
-            if (onOverlayClick) {
-              onOverlayClick();
-            }
-            this.setState({ isInputFocused: false, results: [], query: '' });
-          }}
-        />
+        {isInputFocused && (
+          <Overlay
+            backdropBlur={false}
+            onClick={() => {
+              if (onOverlayClick) {
+                onOverlayClick();
+              }
+              this.setState({ isInputFocused: false, results: [], query: '' });
+            }}
+          />
+        )}
       </>
     );
   }
