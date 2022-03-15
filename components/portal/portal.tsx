@@ -1,21 +1,17 @@
 import { Box, Heading, theme, Text } from '@aksara-ui/react';
 import Image from 'next/image';
-import styled from 'styled-components';
 import { PRODUCTS as productList } from 'utils/constants';
-import { breakpoints, layerIndexes } from 'utils/variables';
-import { Anchor, DocsCard, DocsCardWrapper, HeaderPortal, HeroWrapper } from './components';
-
-const PortalWrapper = styled(Box)`
-  display: flex;
-  padding-bottom: 48px;
-  background-color: ${theme.colors.blue07};
-  @media only screen and (max-width: ${`${breakpoints.md - 1}px`}) {
-    margin-bottom: 48px;
-  }
-  @media only screen and (min-width: ${`${breakpoints.md}px`}) {
-    margin-bottom: 96px;
-  }
-`;
+import { layerIndexes } from 'utils/variables';
+import {
+  Anchor,
+  DocsCard,
+  DocsCardWrapper,
+  HeaderPortal,
+  HeroWrapper,
+  PortalDescription,
+  PortalTitle,
+  PortalWrapper,
+} from './components';
 
 export default function Portal() {
   return (
@@ -32,12 +28,8 @@ export default function Portal() {
         zIndex={layerIndexes.flat}
       >
         <HeaderPortal>
-          <Heading fontWeight={700} fontSize={36} color={theme.colors.white}>
-            Kata Product Documentations 👋
-          </Heading>
-          <Text fontWeight={400} fontSize={16} mt={12}>
-            Find the comprehensive document and tutorials for our products
-          </Text>
+          <PortalTitle>Kata Product Documentations 👋</PortalTitle>
+          <PortalDescription>Find the comprehensive document and tutorials for our products</PortalDescription>
         </HeaderPortal>
         <DocsCardWrapper>
           {productList.map((product, idx) => (

@@ -1,4 +1,4 @@
-import { Card, theme, UnstyledAnchor, Box } from '@aksara-ui/react';
+import { Card, theme, UnstyledAnchor, Box, Heading, Text } from '@aksara-ui/react';
 import styled from 'styled-components';
 import { breakpoints } from 'utils/variables';
 
@@ -123,5 +123,43 @@ export const HeaderSegment = styled('div')`
 
   @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
     margin-bottom: 32px;
+  }
+`;
+
+export const PortalWrapper = styled(Box)`
+  display: flex;
+  padding-bottom: 48px;
+  background-color: ${theme.colors.blue07};
+  @media only screen and (max-width: ${`${breakpoints.md - 1}px`}) {
+    margin-bottom: 48px;
+  }
+  @media only screen and (min-width: ${`${breakpoints.md}px`}) {
+    margin-bottom: 96px;
+  }
+`;
+
+export const PortalTitle = styled(Heading)`
+  color: ${theme.colors.greylight01};
+  font-weight: 700;
+  @media only screen and (max-width: ${`${breakpoints.md - 1}px`}) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  @media only screen and (min-width: ${`${breakpoints.md}px`}) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+`;
+
+export const PortalDescription = styled(Text)`
+  color: ${theme.colors.greylight01};
+  font-weight: 400;
+  @media only screen and (max-width: ${`${breakpoints.md - 1}px`}) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  @media only screen and (min-width: ${`${breakpoints.md}px`}) {
+    font-size: 16px;
+    line-height: 28px;
   }
 `;
