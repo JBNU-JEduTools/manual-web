@@ -111,7 +111,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
             {isPost(router) && (
               <NavButton
                 icon="hamburger"
-                fill={theme.colors.grey05}
+                fill={theme.colors.greydark02}
                 onClick={() => dispatch({ type: NavigationActionTypes.TOGGLE_DRAWER })}
               >
                 Toggle Drawer
@@ -135,9 +135,14 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
               </Link>
             </LogoWrapper>
             {isSearchOpen ? (
-              <SearchBox layout="mobile" fuseSearch={fuseSearch} onSearchMore={onSearchMore} />
+              <SearchBox
+                layout="mobile"
+                fuseSearch={fuseSearch}
+                onSearchMore={onSearchMore}
+                onOverlayClick={() => setIsSearchOpen(false)}
+              />
             ) : (
-              <UnstyledSearchButton onClick={() => setIsSearchOpen(!isSearchOpen)}>
+              <UnstyledSearchButton onClick={() => setIsSearchOpen(true)}>
                 <SearchIcon fill={theme.colors.greydark02} />
               </UnstyledSearchButton>
             )}
