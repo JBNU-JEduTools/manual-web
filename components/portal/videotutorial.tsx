@@ -12,6 +12,24 @@ interface TutorialsProps {
   tutorials?: MarkdownContent[];
 }
 
+const VideoTitle = styled(Text)`
+  color: ${theme.colors.greydark02};
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  font-weight: 700;
+
+  @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media only screen and (min-width: ${`${breakpoints.lg}px`}) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+`;
+
 const VideoTutorial: React.FC<TutorialsProps> = () => {
   return (
     <VideoTutorialWrapper>
@@ -38,9 +56,7 @@ const VideoTutorial: React.FC<TutorialsProps> = () => {
             title="Self-Onboarding"
             thumbnail="/assets/images/thumbnail/self-onboarding.png"
           />
-          <Text textAlign="center" color={theme.colors.greydark02} mb={10} mt={12} fontWeight={700} fontSize={16}>
-            Kata Omnichat 2.0
-          </Text>
+          <VideoTitle>Kata Omnichat 2.0</VideoTitle>
         </VideoWrapper>
         <VideoWrapper>
           <LiteYouTubeEmbed
@@ -48,9 +64,7 @@ const VideoTutorial: React.FC<TutorialsProps> = () => {
             title="How to Set Up Qios"
             thumbnail="/assets/images/thumbnail/how-to-set-up-qios.png"
           />
-          <Text textAlign="center" color={theme.colors.greydark02} mb={10} mt={12} fontWeight={700} fontSize={16}>
-            Qios Tutorial
-          </Text>
+          <VideoTitle>Qios Tutorial</VideoTitle>
         </VideoWrapper>
       </Cards>
     </VideoTutorialWrapper>
