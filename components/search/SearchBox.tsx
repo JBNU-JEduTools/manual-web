@@ -14,7 +14,7 @@ interface SearchPageProps {
   lng?: string;
   layout?: string;
   fuseSearch?: { fuse: any; name: string };
-  onSearchClear?: () => void;
+  onOverlayClick?: () => void;
   onSearchMore?: (product: string, query: string) => void;
 }
 
@@ -112,6 +112,7 @@ const SearchResults = styled('div')<SearchPageProps>`
 
 const RootDesktop = css`
   position: relative;
+  z-index: 9999;
 
   &:not(:last-child) {
     margin-right: ${space.md}px;
@@ -126,7 +127,7 @@ const RootMobile = css`
   top: 0;
   left: 0;
   right: 0;
-  z-index: 50;
+  z-index: 9999;
 
   .header {
     display: flex;
@@ -194,26 +195,6 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
       isInputFocused: false,
       maxResults: this.isMobile ? 3 : 5,
     };
-
-    this.onEscKeypress = this.onEscKeypress.bind(this);
-  }
-
-  componentDidMount() {
-    document.addEventListener('keydown', this.onEscKeypress, false);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('keydown', this.onEscKeypress, false);
-  }
-
-  onEscKeypress(event: KeyboardEvent) {
-    const { onSearchClear } = this.props;
-
-    if (event.keyCode === 27) {
-      if (onSearchClear) {
-        onSearchClear();
-      }
-    }
   }
 
   getSearchResults(query?: string) {
@@ -238,17 +219,17 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
   };
 
   render() {
-    const { layout, fuseSearch, onSearchMore } = this.props;
+    const { layout, fuseSearch, onSearchMore, onOverlayClick } = this.props;
     const { query, results, isInputFocused, maxResults } = this.state;
     return (
-      <Root
-        layout={layout}
-        onFocus={() => {
-          this.setState({ isInputFocused: true });
-        }}
-      >
-        {isInputFocused ? (
-          <>
+      <>
+        <Root
+          layout={layout}
+          onFocus={() => {
+            this.setState({ isInputFocused: true });
+          }}
+        >
+          {isInputFocused ? (
             <SearchResultBox layout={layout}>
               <Box className="header" marginBottom={12}>
                 <InputSearchbox
@@ -308,21 +289,26 @@ export default class SearchBox extends React.Component<SearchPageProps, SearchPa
                 </SearchResults>
               )}
             </SearchResultBox>
-            <Overlay
-              backdropBlur={false}
-              onClick={() => this.setState({ isInputFocused: false, results: [], query: '' })}
-            />
-          </>
-        ) : (
-          <Box className="header">
-            <InputSearchbox
-              placeholder={layout === 'default' ? "Type what you're looking for..." : 'Search...'}
-              height={40}
-              width={'100%'}
-            />
-          </Box>
-        )}
-      </Root>
+          ) : (
+            <Box className="header">
+              <InputSearchbox
+                placeholder={layout === 'default' ? "Type what you're looking for..." : 'Search...'}
+                height={40}
+                width={'100%'}
+              />
+            </Box>
+          )}
+        </Root>
+        <Overlay
+          backdropBlur={false}
+          onClick={() => {
+            if (onOverlayClick) {
+              onOverlayClick();
+            }
+            this.setState({ isInputFocused: false, results: [], query: '' });
+          }}
+        />
+      </>
     );
   }
 }
