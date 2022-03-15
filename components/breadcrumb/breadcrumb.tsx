@@ -19,7 +19,11 @@ const BreadcrumbItem = styled(BreadcrumbItemAksara)`
 const Breadcrumb: React.FC<BreadCrumbProps> = ({ items }) => {
   const arrTmp: React.ReactNode[] = [];
   items.map((item) => {
-    arrTmp.push(<BreadcrumbItem href={item.url ? item.url : null}>{item.urlDisplay}</BreadcrumbItem>);
+    if (item.url) {
+      arrTmp.push(<BreadcrumbItem href={item.url}>{item.urlDisplay}</BreadcrumbItem>);
+    } else {
+      arrTmp.push(<BreadcrumbItem style={{ color: theme.colors.greydark02 }}>{item.urlDisplay}</BreadcrumbItem>);
+    }
   });
 
   return <BreadcrumbAksara items={arrTmp} separator={IconChevronRight} />;
