@@ -44,6 +44,11 @@ const SocialMediaListItem = styled('li')`
   margin-left: 8px;
   margin-right: 8px;
 
+  @media only screen and (max-width: ${breakpoints.md}px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   &:first-child {
     margin-left: 0;
   }
