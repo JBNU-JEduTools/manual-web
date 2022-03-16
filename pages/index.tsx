@@ -24,7 +24,7 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
           <Tutorials tutorials={tutorialPosts} />
           <VideoTutorial />
           <FooterWrapper>
-            <Footer version={'v4.0.0'} siteLastUpdated={'15 March 2022'} />
+            <Footer />
           </FooterWrapper>
         </TutorialWrapper>
       </Container>

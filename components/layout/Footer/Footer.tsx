@@ -7,11 +7,6 @@ import { SOCIALS as socialData } from 'utils/constants';
 import { theme, Text, UnstyledAnchor } from '@aksara-ui/react';
 import Image from 'next/image';
 
-interface FooterProps {
-  version: string;
-  siteLastUpdated: string;
-}
-
 const Wrapper = styled('footer')`
   padding-top: 24px;
   padding-bottom: 24px;
@@ -85,9 +80,9 @@ const FooterSection = styled('div')`
   }
 `;
 
-const Footer: React.FC<FooterProps> = ({ version, siteLastUpdated }) => {
+const Footer: React.FC = () => {
   const date = new Date();
-  const dateLastUpdated = new Date(siteLastUpdated);
+  const dateLastUpdated = new Date('15 March 2022');
   const socials = socialData;
 
   return (
@@ -98,7 +93,7 @@ const Footer: React.FC<FooterProps> = ({ version, siteLastUpdated }) => {
             &copy; {format(date, 'yyyy')} Kata.ai. All rights reserved.
           </Text>
           <Text as="p" scale={200} fontSize={12} color={theme.colors.greymed04}>
-            Version {version}. Last updated {format(dateLastUpdated, 'd MMMM yyyy')}.
+            Version v4.0.0. Last updated {format(dateLastUpdated, 'd MMMM yyyy')}.
           </Text>
         </FooterSection>
         <FooterSection>

@@ -263,7 +263,7 @@ const Index: React.FC = () => {
             />
           </PaginationWrapper>
           <FooterWrapper>
-            <Footer version={'v4.0.0'} siteLastUpdated={'15 March 2022'} />
+            <Footer />
           </FooterWrapper>
         </Wrapper>
       </Container>

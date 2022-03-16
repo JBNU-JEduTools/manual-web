@@ -99,7 +99,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
               </MarkdownContent>
               {/* <DocsHelpful /> */}
               <FooterWrapper>
-                <Footer version={'v4.0.0'} siteLastUpdated={'15 March 2022'} />
+                <Footer />
               </FooterWrapper>
             </DocsContainer>
             <BackToTopButton href="#" />

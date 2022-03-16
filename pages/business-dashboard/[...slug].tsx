@@ -110,7 +110,7 @@ const BusinessDashboardPageTemplate: React.FC<BusinessDashboardPageTemplateProps
               {linking && <PaginationDocs prevPage={linking.previous} nextPage={linking.next} />}
               {/* <DocsHelpful /> */}
               <FooterWrapper>
-                <Footer version={'v4.0.0'} siteLastUpdated={'15 March 2022'} />
+                <Footer />
               </FooterWrapper>
             </DocsContainer>
             <BackToTopButton href="#" />
