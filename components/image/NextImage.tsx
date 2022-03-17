@@ -34,7 +34,7 @@ const calculateImageDimension = ({ naturalHeight, naturalWidth }) => {
       return {
         height: Math.floor((MAX_LANDSCAPE_WIDTH / naturalWidth) * naturalHeight),
         width: MAX_LANDSCAPE_WIDTH,
-        layout: 'responsive',
+        layout: 'intrinsic',
       };
     }
   }
@@ -42,23 +42,14 @@ const calculateImageDimension = ({ naturalHeight, naturalWidth }) => {
 
 export const NextImage = (props) => {
   //natural Width and naturalHeight for handling old cases
-  const { src, alt, naturalWidth: _, naturalHeight: __, ...rest } = props;
-  const [naturalDimension, setNaturalDimension] = React.useState({ naturalWidth: 0, naturalHeight: 0 });
-  const dimension = React.useMemo(() => calculateImageDimension(naturalDimension), [naturalDimension]);
+  const { src, alt, naturalWidth, naturalHeight, layout: _, ...rest } = props;
+  // const [naturalDimension, setNaturalDimension] = React.useState({ naturalWidth, naturalHeight });
+  const dimension = React.useMemo(
+    () => calculateImageDimension({ naturalWidth, naturalHeight }),
+    [naturalWidth, naturalHeight]
+  );
 
   return (
-    <Image
-      src={src}
-      alt={alt}
-      {...rest}
-      width={dimension.width}
-      height={dimension.height}
-      layout={dimension.layout}
-      onLoadingComplete={({ naturalHeight, naturalWidth }) => {
-        if (naturalDimension.naturalHeight === 0 || naturalDimension.naturalWidth === 0) {
-          setNaturalDimension({ naturalHeight, naturalWidth });
-        }
-      }}
-    />
+    <Image src={src} alt={alt} {...rest} width={dimension.width} height={dimension.height} layout={dimension.layout} />
   );
 };

@@ -19,7 +19,7 @@ export const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial, index }) =
   return (
     <Card key={title} index={index} display={'flex'} flexDirection={'column'}>
       <Box position={'relative'}>
-        <NextImage src={imgSpot} alt={title} />
+        <NextImage src={imgSpot} alt={title} naturalHeight={540} naturalWidth={1032} />
       </Box>
       <CardContent>
         <Box minHeight="120px">

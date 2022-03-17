@@ -108,19 +108,25 @@ const TableBordered = styled('table')`
   }
 `;
 
-export const h1 = (props: JSX.IntrinsicAttributes) => <Heading fontSize={36} fontWeight={700} color={theme.colors.greydark05} as="h1" {...props} />;
+export const h1 = (props: JSX.IntrinsicAttributes) => (
+  <Heading fontSize={36} fontWeight={700} color={theme.colors.greydark05} as="h1" {...props} />
+);
 export const h2 = (props: JSX.IntrinsicAttributes) => (
   <Heading fontSize={30} fontWeight={700} as="h2" mt="xl" color={theme.colors.greydark05} {...props} />
 );
 export const h3 = (props: JSX.IntrinsicAttributes) => (
   <Heading fontSize={24} fontWeight={700} as="h3" mt="xl" color={theme.colors.greydark05} {...props} />
 );
-export const h4 = (props: JSX.IntrinsicAttributes) => <Heading size={400} as="h4" color={theme.colors.greydark02} mt="xl" {...props} />;
+export const h4 = (props: JSX.IntrinsicAttributes) => (
+  <Heading size={400} as="h4" color={theme.colors.greydark02} mt="xl" {...props} />
+);
 export const h5 = (props: JSX.IntrinsicAttributes) => (
   <Heading fontSize={14} fontWeight={700} as="h5" mt="xl" color={theme.colors.greydark02} {...props} />
 );
 export const h6 = (props: JSX.IntrinsicAttributes) => <Heading size={400} as="h6" mt="xl" {...props} />;
-export const p = (props: JSX.IntrinsicAttributes) => <Paragraph size={400} color={theme.colors.greydark02} mt="sm" {...props} />;
+export const p = (props: JSX.IntrinsicAttributes) => (
+  <Paragraph size={400} color={theme.colors.greydark02} mt="sm" {...props} />
+);
 export const hr = (props: JSX.IntrinsicAttributes) => <HorizontalRule {...props} />;
 export const ul = (props: JSX.IntrinsicAttributes) => <UnorderedList {...props} />;
 export const ol = (props: JSX.IntrinsicAttributes) => <UnorderedList as="ol" {...props} />;
