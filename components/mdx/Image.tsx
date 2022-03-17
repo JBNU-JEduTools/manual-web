@@ -36,14 +36,16 @@ export const FigureImage = (props) => {
       <ImageWrapper marginY={0}>
         <NextImage src={src} alt={alt} {...rest} />
       </ImageWrapper>
-      {caption && (
-        <CaptionWrapper>
-          <Text mr={5}>
-            <strong>{caption.title}</strong>
-          </Text>
-          <Text>{caption.description}</Text>
-        </CaptionWrapper>
-      )}
+      <CaptionWrapper>
+        {caption && (
+          <>
+            <Text mr={5}>
+              <strong>{caption.title}</strong>
+            </Text>
+            <Text>{caption.description}</Text>
+          </>
+        )}
+      </CaptionWrapper>
     </FigureWrapper>
   );
 };

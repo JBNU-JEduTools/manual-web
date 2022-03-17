@@ -13,11 +13,12 @@ In this guidance, you will be able to implement a bot that uses an action type A
 For using an API to access third-party applications from your chatbot, you will need to create an action API. Also, a state must be created before creating an action
 
 <div className="info">
-    <img className="borderless" src="/assets/images/icon-info.svg" />
-    <p>
-        <b>Important</b>:
-        Platform has a timeout API in 10 seconds. If your API result is shows more than 10 second to chatbot, it will show a automatic message from your chatbot: <code>Maaf pesan anda sedang diproses, tunggu beberapa saat lagi yaa</code>
-    </p>
+  <img className="borderless" src="/assets/images/icon-info.svg" />
+  <p>
+    <b>Important</b>: Platform has a timeout API in 10 seconds. If your API result is shows more than 10 second to
+    chatbot, it will show a automatic message from your chatbot:
+    <code>Maaf pesan anda sedang diproses, tunggu beberapa saat lagi yaa</code>
+  </p>
 </div>
 
 ## How to Use
@@ -32,93 +33,49 @@ Each field explanation:
 
 <Table>
   <TableHead>
-    <TableHeadCell>
-      Field Name
-    </TableHeadCell>
-    <TableHeadCell>
-      Description
-    </TableHeadCell>
+    <TableHeadCell>Field Name</TableHeadCell>
+    <TableHeadCell>Description</TableHeadCell>
   </TableHead>
   <TableBody>
     <TableBodyRow>
-      <TableBodyCell>
-        Action name
-      </TableBodyCell>
-      <TableBodyCell>
-        Name of your action. Max. 30 characters with alphanumeric.
-      </TableBodyCell>
+      <TableBodyCell>Action name</TableBodyCell>
+      <TableBodyCell>Name of your action. Max. 30 characters with alphanumeric.</TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        Condition
-      </TableBodyCell>
-      <TableBodyCell>
-        Which condition can trigger this action
-      </TableBodyCell>
+      <TableBodyCell>Condition</TableBodyCell>
+      <TableBodyCell>Which condition can trigger this action</TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        URI
-      </TableBodyCell>
-      <TableBodyCell>
-        Your API URL
-      </TableBodyCell>
+      <TableBodyCell>URI</TableBodyCell>
+      <TableBodyCell>Your API URL</TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        Method
-      </TableBodyCell>
-      <TableBodyCell>
-        Choose POST or GET
-      </TableBodyCell>
+      <TableBodyCell>Method</TableBodyCell>
+      <TableBodyCell>Choose POST or GET</TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        Body
-      </TableBodyCell>
-      <TableBodyCell>
-        Input API body by creating key and value.
-      </TableBodyCell>
+      <TableBodyCell>Body</TableBodyCell>
+      <TableBodyCell>Input API body by creating key and value.</TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        Headers
-      </TableBodyCell>
-      <TableBodyCell>
-        Input API headers by creating key and value.
-      </TableBodyCell>
+      <TableBodyCell>Headers</TableBodyCell>
+      <TableBodyCell>Input API headers by creating key and value.</TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        Headers
-      </TableBodyCell>
-      <TableBodyCell>
-        Input API headers by creating key and value.
-      </TableBodyCell>
+      <TableBodyCell>Headers</TableBodyCell>
+      <TableBodyCell>Input API headers by creating key and value.</TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        Query
-      </TableBodyCell>
-      <TableBodyCell>
-        -
-      </TableBodyCell>
+      <TableBodyCell>Query</TableBodyCell>
+      <TableBodyCell>-</TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        Form Data
-      </TableBodyCell>
-      <TableBodyCell>
-        -
-      </TableBodyCell>
+      <TableBodyCell>Form Data</TableBodyCell>
+      <TableBodyCell>-</TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        Result Path
-      </TableBodyCell>
-      <TableBodyCell>
-        -
-      </TableBodyCell>
+      <TableBodyCell>Result Path</TableBodyCell>
+      <TableBodyCell>-</TableBodyCell>
     </TableBodyRow>
   </TableBody>
 </Table>
@@ -130,24 +87,20 @@ Each field explanation:
 
 If you want to collect API results, you just need to write `$(result)` in a variable you want to put it. For example, this is a case if the API result wants to implement an action type Command.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 1 Alt"
-    src="/assets/images/products/kata-platform/how-to/using-custom-api-to-access-third-party-application/image1.webp"
-    caption={{ title: 'Figure 1', description: 'API result in action type Command.' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 1 Alt"
+  src="/assets/images/products/kata-platform/how-to/using-custom-api-to-access-third-party-application/image1.webp"
+  caption={{ title: 'Figure 1', description: 'API result in action type Command.' }}
+  layout="responsive"
+/>
 
 To access the value, the API result can be stored in payload, then you can access it by writing `payload.result`. For example, this is a case if you want to access the first data from API result in action type Command.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 2 Alt"
-    src="/assets/images/products/kata-platform/how-to/using-custom-api-to-access-third-party-application/image2.webp"
-    caption={{ title: 'Figure 2', description: 'Access value from API result.' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 2 Alt"
+  src="/assets/images/products/kata-platform/how-to/using-custom-api-to-access-third-party-application/image2.webp"
+  caption={{ title: 'Figure 2', description: 'Access value from API result.' }}
+  layout="responsive"
+/>
 
 This is the end of the guidance. You can contact <a href="mailto:support@kata.ai">support@kata.ai</a> if you have any difficulties when implementing this.

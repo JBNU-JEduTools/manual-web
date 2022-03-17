@@ -16,35 +16,31 @@ This guide will teach you how to integrate NLU into your chatbot to recognize sp
 
 1. To create an entity, go to the **NLU** menu. Then, click the **Entity** menu.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 1 Alt"
-    src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image1.webp"
-    caption={{ title: 'Figure 1', description: 'NLU and entity menu.' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 1 Alt"
+  src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image1.webp"
+  caption={{ title: 'Figure 1', description: 'NLU and entity menu.' }}
+  layout="responsive"
+/>
 
 2. Click **Create Entity** to set up a new entity. It will show a form on the right screen. Fill in the entity name.
 3. **Inherit** lets you copy an entity from any public NLU on the Kata Platform. To inherit an NLU, type the NLU ID with `[username]:[project name]`. Inherited entities will sync to the original entity, including the labels and training data. For example, in the [getting started chatbot](/kata-platform/documentation-content/start-your-first-chatbot) section, your NLU ID format is `muhfadhiilkata:test_simple_bot`.
 4. **Type** is intended for the entity type. We have 3 entity types in the Kata Platform:
-    - **Trait** is a text classifier to classify a sentence into a particular labels. This type is suitable for making your bot recognize nuance in a sentence.
-    - **Dictionary** is a word tagger which has keys and labels. It will form an array.
-    - The **Phrase** is a word tagger.
+   - **Trait** is a text classifier to classify a sentence into a particular labels. This type is suitable for making your bot recognize nuance in a sentence.
+   - **Dictionary** is a word tagger which has keys and labels. It will form an array.
+   - The **Phrase** is a word tagger.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 2 Alt"
-    src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image2.webp"
-    caption={{ title: 'Figure 2', description: 'Entity type “dictionary”' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 2 Alt"
+  src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image2.webp"
+  caption={{ title: 'Figure 2', description: 'Entity type “dictionary”' }}
+  layout="responsive"
+/>
 
 5. The **Profile** is an AI model that is available to use by users. Depending on data training and your dataset, you can choose any profiles you want.
-    - The “default” profile is suitable for many data samples so that this profile is available in all entity types.
-    - “intent” profile is suitable for entity type “trait.”
-    - “default_v2” profile is our newest profile and is suitable if you have a large amount of data.
+   - The “default” profile is suitable for many data samples so that this profile is available in all entity types.
+   - “intent” profile is suitable for entity type “trait.”
+   - “default_v2” profile is our newest profile and is suitable if you have a large amount of data.
 6. **Root** enables you to create an entity using other users' NLU to copy the training data and add new labels. Therefore, it is suitable if you have a trained NLU and want to add more labels in the NLU. You can type an NLU ID which consists of username and project with format `[username]:[project name]`.
 7. **Labels** are a feature to determine classes or categories from an entity. To add a new label, you can type and press “enter” on your keyboard.
    If you choose entity type “dictionary,” it will show a dropdown name **Belongs to**. This feature enables you to define relationships () between entities. Belongs to feature can only be used for entities in the same NLU with entity type “phrase” or “dictionary.” It is suitable if your data sample is like this:
@@ -61,51 +57,43 @@ After creating an entity and labels, you have to train them.
 
 1. Go to **NLU > Training** menu.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 3 Alt"
-    src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image3.webp"
-    caption={{ title: 'Figure 3', description: 'Training model position.' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 3 Alt"
+  src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image3.webp"
+  caption={{ title: 'Figure 3', description: 'Training model position.' }}
+  layout="responsive"
+/>
 
 2. Then, you will see 2 choices to train your entities:
-    - **Single training** is a way to train sentences (training data) one by one.
-    - **Bulk training** is a way to train up to 200 sentences (training data) by uploading a .txt file with annotations inside the file.
+   - **Single training** is a way to train sentences (training data) one by one.
+   - **Bulk training** is a way to train up to 200 sentences (training data) by uploading a .txt file with annotations inside the file.
 
 These are steps to train your NLU using single training:
 
 1. For example, to train 1 sentence for your NLU, type a sentence, then press “enter” on the keyboard to review the training. For example `Saya ingin membeli kopi susu`.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 4 Alt"
-    src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image4.webp"
-    caption={{ title: 'Figure 4', description: 'Training box.' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 4 Alt"
+  src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image4.webp"
+  caption={{ title: 'Figure 4', description: 'Training box.' }}
+  layout="responsive"
+/>
 
 2. Next, you can preview the sentence first and tag your entities. You can block or double click in a word to tag a word. Then, it will show a dropdown to choose entities and labels in format `[entity name]:[label name]`. You can select a dropdown at the bottom of the entities list for tagging a sentence.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 5 Alt"
-    src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image5.webp"
-    caption={{ title: 'Figure 5', description: 'Tag a word using an entity type dictionary or phrase.' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 5 Alt"
+  src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image5.webp"
+  caption={{ title: 'Figure 5', description: 'Tag a word using an entity type dictionary or phrase.' }}
+  layout="responsive"
+/>
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 6 Alt"
-    src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image6.webp"
-    caption={{ title: 'Figure 6', description: 'Tag a sentence using entity type trait.' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 6 Alt"
+  src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image6.webp"
+  caption={{ title: 'Figure 6', description: 'Tag a sentence using entity type trait.' }}
+  layout="responsive"
+/>
 
 3. Click the **Train** button to submit training data.
 
@@ -114,35 +102,31 @@ These are steps to train your NLU using bulk training:
 1. First, open your text and source code editor (Notepad, <a href="https://notepad-plus-plus.org/downloads/" target="_blank">notepad++</a>, <a href="https://www.sublimetext.com/" target="_blank">sublime</a>)
 2. Create a new file.
 3. You will create training data using a simple syntax. ”#’ for entity type “trait” and ”@” for entity type “phrase.”
-    - Example for entity type trait: `Saya mau pesan pizza #intent:order`. It means the sentence is classified into an entity named “intent” with the label “order.”
-    - Example for entity type phrase and dictionary: `Saya mau pesan tiket ke (@destination Malang) atas nama (@ner:person Budi) #intent:order`. It means the word “Malang” is tagged for entity name “destination” and “Budi” is tagged for entity name “ner” with label “person.”
+   - Example for entity type trait: `Saya mau pesan pizza #intent:order`. It means the sentence is classified into an entity named “intent” with the label “order.”
+   - Example for entity type phrase and dictionary: `Saya mau pesan tiket ke (@destination Malang) atas nama (@ner:person Budi) #intent:order`. It means the word “Malang” is tagged for entity name “destination” and “Budi” is tagged for entity name “ner” with label “person.”
 4. Save the following training data into `training-data-example.txt`
 5. Go to **NLU > Training** in Platform. Then, click on the **Bulk Training** button.
 6. Click on the **Browse** button to open the file explorer/finder or drag and drop the file into the browse file dialog.
 7. Wait for the upload process.
 8. After the upload is complete, you can review the training data file in the Platform.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 7 Alt"
-    src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image7.webp"
-    caption={{ title: 'Figure 7', description: 'Review training data' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 7 Alt"
+  src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image7.webp"
+  caption={{ title: 'Figure 7', description: 'Review training data' }}
+  layout="responsive"
+/>
 
 9. Click on the **Train** button to train the data.
 10. You will see a customer satisfaction survey after using the feature. Fill in the survey, then click **X** to close the dialog.
 11. You have successfully trained your NLU with the uploaded data.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 8 Alt"
-    src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image8.webp"
-    caption={{ title: 'Figure 8', description: 'Successfully trained.' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 8 Alt"
+  src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image8.webp"
+  caption={{ title: 'Figure 8', description: 'Successfully trained.' }}
+  layout="responsive"
+/>
 
 Every training will make your NLU smarter, measured by a confidence score. The confidence score is how the NLU recognizes end-users input between 0 and 1.
 
@@ -152,14 +136,12 @@ You can test if your NLU is good enough or wrong in the Kata Platform by using t
 
 1. Click the **Test NLU** button on the right bottom of your screen.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 9 Alt"
-    src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image9.webp"
-    caption={{ title: 'Figure 9', description: 'Test NLU location.' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 9 Alt"
+  src="/assets/images/products/kata-platform/how-to/how-to-improve-your-chatbot-intelligence-by-training-your-nlu/image9.webp"
+  caption={{ title: 'Figure 9', description: 'Test NLU location.' }}
+  layout="responsive"
+/>
 
 2. Then, it will show a chat window.
 3. Type in the chatbox a sentence to test your NLU. The best practice is to prepare data training and data testing separately, but they must have similarities.
@@ -249,14 +231,14 @@ Entity profile: `intent`
 
 Labels:
 
--   `lupa_pin`
--   `ganti_pin`
--   `kartu_hilang`
--   `buku_tabungan_hilang`
--   `ganti_kartu`
--   `ganti_buku_tabungan`
--   `buat_kartu`
--   `cara_daftar_nasabah`
+- `lupa_pin`
+- `ganti_pin`
+- `kartu_hilang`
+- `buku_tabungan_hilang`
+- `ganti_kartu`
+- `ganti_buku_tabungan`
+- `buat_kartu`
+- `cara_daftar_nasabah`
 
 You can break down it into 2 differents entities as follows
 
@@ -272,11 +254,11 @@ Entity profile: `intent`
 
 Labels:
 
--   `lupa`
--   `ganti`
--   `ganti`
--   `buat`
--   `hilang`
+- `lupa`
+- `ganti`
+- `ganti`
+- `buat`
+- `hilang`
 
 **Second Entity**
 
@@ -288,18 +270,19 @@ Entity profile: `topic`
 
 Labels:
 
--   `pin`
--   `kartu`
--   `buku_tabungan`
--   `nasabah`
+- `pin`
+- `kartu`
+- `buku_tabungan`
+- `nasabah`
 
 This method can increase your model prediction score by dividing the score into several groups of labels. From the example above, the first NLU `nl-1` will divide the prediction score 1.00 into 8 different labels for the `intent` entity. Otherwise, the second NLU `nl-2` will divide the prediction score 1.00 into 4 labels for the intent entity and 4 labels for the `topic` entity.
 
 <div className="info">
-    <img className="borderless" src="/assets/images/icon-info.svg" />
-    <p>
-        Important note: This suggestion is recommended if you have limited training data. If you have a large amount of training data or there are no problems with your current training data, this suggestion is unnecessary.
-    </p>
+  <img className="borderless" src="/assets/images/icon-info.svg" />
+  <p>
+    Important note: This suggestion is recommended if you have limited training data. If you have a large amount of
+    training data or there are no problems with your current training data, this suggestion is unnecessary.
+  </p>
 </div>
 
 #### Second suggestion: Utilize profile “intent”
@@ -307,8 +290,8 @@ This method can increase your model prediction score by dividing the score into 
 Another tip is to use an “intent” profile which is influenced by predictions from other models (type “phrase” or type “dictionary”). This way can make the training process if training data is limited and sentences form alike.
 
 <div className="info">
-    <img className="borderless" src="/assets/images/icon-info.svg" />
-    <p>Important note: This suggestion applies to entity type “trait” with “intent” profile only.</p>
+  <img className="borderless" src="/assets/images/icon-info.svg" />
+  <p>Important note: This suggestion applies to entity type “trait” with “intent” profile only.</p>
 </div>
 
 First example, given a training data
@@ -331,8 +314,8 @@ Entity profile: `intent`
 
 Labels:
 
--   `ask_nearby_simstnk`
--   `ask_nearby_polisi`
+- `ask_nearby_simstnk`
+- `ask_nearby_polisi`
 
 This NLU can be changed into:
 
@@ -350,15 +333,15 @@ Key: `sim`
 
 Labels:
 
--   `sim`
--   `surat izin mengemudi`
+- `sim`
+- `surat izin mengemudi`
 
 Key: `stnk`
 
 Labels:
 
--   `stnk`
--   `surat tanda kendaraan bermotor`
+- `stnk`
+- `surat tanda kendaraan bermotor`
 
 **Second entity**
 
@@ -370,8 +353,8 @@ Entity profile: `intent`
 
 Labels
 
--   `ask_nearby_simstnk`
--   `ask_nearby_polisi`
+- `ask_nearby_simstnk`
+- `ask_nearby_polisi`
 
 NLU `nl-v2` will make the training process faster because the words `sim` and `stnk` are in one similar category which is `simstnk`.
 
@@ -397,9 +380,9 @@ Entity profile: `intent`
 
 Labels:
 
--   `ask_bbq_recipe`
--   `ask_pepperoni_recipe`
--   `ask_aas_recipe`
+- `ask_bbq_recipe`
+- `ask_pepperoni_recipe`
+- `ask_aas_recipe`
 
 Next, you change the NLU structure into this:
 
@@ -417,21 +400,21 @@ Key: `bbq`
 
 Labels:
 
--   `bbq`
--   `barbeque`
--   Key: `pepperoni`
+- `bbq`
+- `barbeque`
+- Key: `pepperoni`
 
 Labels:
 
--   `pepperoni`
--   `peperoni`
+- `pepperoni`
+- `peperoni`
 
 Key: `aas`
 
 Labels:
 
--   `aas`
--   `american all star`
+- `aas`
+- `american all star`
 
 **Second entity**
 
@@ -443,9 +426,9 @@ Entity profile: `intent`
 
 Labels:
 
--   `ask_bbq_recipe`
--   `ask_pepperoni_recipe`
--   `ask_aas_recipe`
+- `ask_bbq_recipe`
+- `ask_pepperoni_recipe`
+- `ask_aas_recipe`
 
 The `intent` entity in `nlu-v1` can recognize the differentiation between labels. Otherwise, `nl-v2` cannot acknowledge it because `bbq`, `pepperoni` and `aas` are set up as one category `pizza`. If users input a sentence `resep buat bbq apa ya?`, the score will show the same results from all labels.
 
@@ -465,22 +448,22 @@ Key: `bbq`
 
 Labels:
 
--   `bbq`
--   `barbeque`
+- `bbq`
+- `barbeque`
 
 Key: `pepperoni`
 
 Labels:
 
--   `pepperoni`
--   `peperoni`
+- `pepperoni`
+- `peperoni`
 
 Key: `aas`
 
 Labels:
 
--   `aas`
--   `american all star`
+- `aas`
+- `american all star`
 
 **Second entity**
 
@@ -492,7 +475,7 @@ Entity profile: `intent`
 
 Labels:
 
--   `ask_pizza_recipe`
+- `ask_pizza_recipe`
 
 The `nl-v3` can recognize a sentence has `ask_pizza_recipe` intent and can specify which pizza by using `pizza` entity.
 
@@ -506,20 +489,22 @@ A bot can have multiple NLU. Here are a few cases in which NLU can be divided.
 
 Some flows in a bot may have a particular NLU for a flow, which means input to trigger the flow is different from other flows. This way can reduce the number of listed labels in an entity and ease the prediction process. Examples:
 
--   Using `credential` NLU which is executed when the user first interacts with the bot.
--   Using `order` NLU in commerce bot will be executed when the user chooses the order menu.
+- Using `credential` NLU which is executed when the user first interacts with the bot.
+- Using `order` NLU in commerce bot will be executed when the user chooses the order menu.
 
 ##### Use specific NLU for certain states
 
 Few states in a bot may have similar input, but have different meanings depending on what states are running. You can configure the NLU in state condition. Examples:
 
--   `YesNo` NLU can be used in overall flows but shall be specified in states that require end-users confirmation.
+- `YesNo` NLU can be used in overall flows but shall be specified in states that require end-users confirmation.
 
 <div className="info">
-    <img className="borderless" src="/assets/images/icon-info.svg" />
-    <p>
-        Note: You can use these methods if you have too many labels, data between labels are alike, a limited number of training data, predictions result is not optimal yet, or found other problems. But if your NLU is fine, you can create an entity with many labels.
-    </p>
+  <img className="borderless" src="/assets/images/icon-info.svg" />
+  <p>
+    Note: You can use these methods if you have too many labels, data between labels are alike, a limited number of
+    training data, predictions result is not optimal yet, or found other problems. But if your NLU is fine, you can
+    create an entity with many labels.
+  </p>
 </div>
 
 ### Training Guideline
@@ -543,9 +528,9 @@ The imbalanced data affect bias between labels. A small amount of imbalanced dat
 
 Counter-training means you input training data that is not classified to current labels. For example,
 
--   You have an entity that can predict book genres into 3 categories (read: labels) `horror`, `fiction`, and `biography`. Each label has been trained and can recognize each genre.
--   Then, an input is entered with a new category named `history`.
--   Because the model only distinguishes between the 3 labels and assumes that each book must be categorized into 3 labels, the model cannot answer not `all three` or `none`.
+- You have an entity that can predict book genres into 3 categories (read: labels) `horror`, `fiction`, and `biography`. Each label has been trained and can recognize each genre.
+- Then, an input is entered with a new category named `history`.
+- Because the model only distinguishes between the 3 labels and assumes that each book must be categorized into 3 labels, the model cannot answer not `all three` or `none`.
 
 To make the model understand `history` input, you have to enter training data without giving any intent/tags.
 
@@ -553,26 +538,26 @@ To make the model understand `history` input, you have to enter training data wi
 
 If you want to add a new label, train the label with a similar total amount of training with current labels. For example,
 
--   You have an entity with 5 labels. Each label has 10 training data.
--   Then, you add a new label. Your next step will be to train the label equal to or more than 10 training data.
--   The final step is to train the other 5 labels with a few training data.
+- You have an entity with 5 labels. Each label has 10 training data.
+- Then, you add a new label. Your next step will be to train the label equal to or more than 10 training data.
+- The final step is to train the other 5 labels with a few training data.
 
 #### Ambiguous data
 
 Avoid preparing ambiguous training data into different labels. Ambiguous data means you input the same training data, but the context depends on what end-users asked. For example,
 
--   End-user sends the word `sudah` if your bot asks a question about `apakah sudah makan?` (Smalltalk flow) or `apakah sudah menikah?` (Credential flow).
--   Both sentences can be recognized as `intent:doneEating` (read: entity `intent` with label `doneEating`) or `intent:married` (read: entity `intent` with label `married`).
+- End-user sends the word `sudah` if your bot asks a question about `apakah sudah makan?` (Smalltalk flow) or `apakah sudah menikah?` (Credential flow).
+- Both sentences can be recognized as `intent:doneEating` (read: entity `intent` with label `doneEating`) or `intent:married` (read: entity `intent` with label `married`).
 
 To reduce this ambiguity case, you shall prepare training data as follows
 
--   Input training data such as `sudah menikah` in `intent: married`. There is an additional word `menikah` that could distinguish the labels.
--   For the word `sudah`, train it to a different label such as `intent:done`. For the bot implementation, you shall put a condition `intent == “done”` for states executed when end-users said `sudah` word.
+- Input training data such as `sudah menikah` in `intent: married`. There is an additional word `menikah` that could distinguish the labels.
+- For the word `sudah`, train it to a different label such as `intent:done`. For the bot implementation, you shall put a condition `intent == “done”` for states executed when end-users said `sudah` word.
 
 ### Relationship between bot, NL, and training process.
 
--   **Bot development**, **used NL in bot**, and **training process is influencing each other**. Bot implementation can process some limitations encountered in NL results through the bot.
--   **NL complexity is affected by bot complexity**. So, the more complex a bot, the more complex the NL will be and the more training data.
--   For NL, **it is possible to mispredict a few data**. It is a **usual** case. You can solve this by adding training data or post-processing in the bot.
+- **Bot development**, **used NL in bot**, and **training process is influencing each other**. Bot implementation can process some limitations encountered in NL results through the bot.
+- **NL complexity is affected by bot complexity**. So, the more complex a bot, the more complex the NL will be and the more training data.
+- For NL, **it is possible to mispredict a few data**. It is a **usual** case. You can solve this by adding training data or post-processing in the bot.
 
 This is the end of the guidance. You can contact support@kata.ai if you have any difficulties when implementing this.

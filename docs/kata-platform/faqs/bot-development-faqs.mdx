@@ -26,32 +26,30 @@ invalidate: 152053926476
 
 Always use a transition to the state itself named “default” if there are any branching state.
 
-<ImageWrapper>
-  <NextImage
-    alt="Image 1 Alt"
-    src="/assets/images/products/kata-platform/faqs/bot-development-faqs/image1.webp"
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 1 Alt"
+  src="/assets/images/products/kata-platform/faqs/bot-development-faqs/image1.webp"
+  layout="responsive"
+/>
 
 ```yaml
 states:
-    showPizza:
-        action: showPizza
-        transitions:
-            askQty:
-                condition: intent == "pizzaType"
-            showPizza:
-                fallback: true
+  showPizza:
+    action: showPizza
+    transitions:
+      askQty:
+        condition: intent == "pizzaType"
+      showPizza:
+        fallback: true
 ```
 
 Also, you must create `reenter` intent with `command` type. This intent will help the bot ask a question again to user. Also, it will help you to maintain the active session longer.
 
 ```yaml
 intents:
-    reenter:
-        type: command
-        condition: content == "reenter"
+  reenter:
+    type: command
+    condition: content == "reenter"
 ```
 
 ### Is it possible to let users trigger a flow by a command?
@@ -102,22 +100,22 @@ flowLogin:
 
 We may use metadata for specific channel response. Each metadata consists of:
 
--   Channel type
--   Channel access token
--   Sender ID
+- Channel type
+- Channel access token
+- Sender ID
 
 ```yaml
 states:
-    showMenu:
-        end: true
-        action:
-            - name: bridgeShowMenu
-            - name: showMenuLine
-              condition: metadata.channelType == "line"
-            - name: showMenuFb
-              condition: metadata.channelType == "fbmessenger"
-            - name: showMenuTelegram
-              condition: metadata.channelType == "telegram"
+  showMenu:
+    end: true
+    action:
+      - name: bridgeShowMenu
+      - name: showMenuLine
+        condition: metadata.channelType == "line"
+      - name: showMenuFb
+        condition: metadata.channelType == "fbmessenger"
+      - name: showMenuTelegram
+        condition: metadata.channelType == "telegram"
 ```
 
 ### I found out my bot respond incorrectly for first-time users who add the bot. How to handle this?
@@ -128,17 +126,17 @@ Intent code to handle user's input:
 
 ```yaml
 intents:
-    # LINE and FB Messenger
-    getStarted:
-        initial: true
-        type: data
-        condition: "payload.type == 'follow'"
+  # LINE and FB Messenger
+  getStarted:
+    initial: true
+    type: data
+    condition: "payload.type == 'follow'"
 
-    # Telegram
-    startTelegram:
-        initial: true
-        type: text
-        condition: "content == '/start'"
+  # Telegram
+  startTelegram:
+    initial: true
+    type: text
+    condition: "content == '/start'"
 ```
 
 cURL request to add `Get Started` button for Facebook Messenger :
@@ -199,47 +197,47 @@ flowAPI:
 
 You have to use API action in the bot to use specified API
 
--   LINE: https://developers.line.me/en/docs/messaging-api/reference/#get-profile
--   FB Messenger: https://developers.facebook.com/docs/messenger-platform/identity/user-profile
--   For Telegram: access `metadata.telegramSenderName`
+- LINE: https://developers.line.me/en/docs/messaging-api/reference/#get-profile
+- FB Messenger: https://developers.facebook.com/docs/messenger-platform/identity/user-profile
+- For Telegram: access `metadata.telegramSenderName`
 
 For example:
 
 ```yaml
 exampleFlow:
-    intents:
-        getStarted:
-            initial: true
-            type: data
-            condition: "payload.type == 'follow'"
+  intents:
+    getStarted:
+      initial: true
+      type: data
+      condition: "payload.type == 'follow'"
 
-    states:
-        addAsFriend:
-            initial: true
-            transitions:
-                greetUser:
-                    fallback: true
-                    mapping:
-                        context.userId: metadata.lineSenderId
-                        context.token: metadata.lineAccessToken
+  states:
+    addAsFriend:
+      initial: true
+      transitions:
         greetUser:
-            end: true
-            action:
-                - name: callLineAPI
-                - name: displayResult
+          fallback: true
+          mapping:
+            context.userId: metadata.lineSenderId
+            context.token: metadata.lineAccessToken
+    greetUser:
+      end: true
+      action:
+        - name: callLineAPI
+        - name: displayResult
 
-    actions:
-        callLineAPI:
-            type: api
-            options:
-                method: 'GET'
-                headers:
-                    Authorization: 'Bearer $(context.token)'
-                uri: 'https://api.line.me/v2/bot/profile/$(context.userId)'
-        displayResult:
-            type: text
-            options:
-                text: 'Halo, $(result.displayName) terima kasih sudah add kami...'
+  actions:
+    callLineAPI:
+      type: api
+      options:
+        method: 'GET'
+        headers:
+          Authorization: 'Bearer $(context.token)'
+        uri: 'https://api.line.me/v2/bot/profile/$(context.userId)'
+    displayResult:
+      type: text
+      options:
+        text: 'Halo, $(result.displayName) terima kasih sudah add kami...'
 ```
 
 ### Is there any configurable field where we can put our google map api key due to location action usage?
@@ -250,8 +248,8 @@ exampleFlow:
 
 ```yaml
 actions:
-    options:
-        text: $(config.googleApiKey)
+  options:
+    text: $(config.googleApiKey)
 ```
 
 ### If FB messenger & LINE has action button which use URL, how about Twitter? Is there any alternative way such as action text URL?

@@ -15,17 +15,13 @@ First login/sign up to <a href="https://platform.kata.ai/login" target="_blank">
 And click on “Create Project” and fill in the form. Each project contains one bot design, one NL, and one CMS.
 You will be directed to this page.
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw1.webp" alt="bhw-1" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw1.webp" alt="bhw-1" />
 
 ### Noted
 
 You can try bot in Menu Test Chatbot (in the bottom right corner).
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw1test.webp" alt="bhw-1test" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw1test.webp" alt="bhw-1test" />
 
 ## Create a Hello Flow
 
@@ -33,15 +29,11 @@ You can try bot in Menu Test Chatbot (in the bottom right corner).
 
 You may find a flow that is created automatically by the system or default flow. We will add a new flow called `helloFlow`. Set flow to active, and persistent.
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw2.webp" alt="bhw-2" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw2.webp" alt="bhw-2" />
 
 It will be shown like this.
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw3.webp" alt="bhw-3" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw3.webp" alt="bhw-3" />
 
 ### Create keyword NLU for helloFlow
 
@@ -49,27 +41,20 @@ In this step, we will define the NLU (Natural Language Understanding) to trigger
 
 We will name it hello_NLU
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw4.webp" alt="bhw-4" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw4.webp" alt="bhw-4" />
 
 It will be shown like this.
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw5.webp" alt="bhw-5" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw5.webp" alt="bhw-5" />
 
 ### Create Intent
 
 Go back to Conversation flow menu and choose intent. Click on “+” button in Conversation Flow menu. Set the Intent name to `helloIntent` and choose option as initial.
 Add a classifier and choose NLU that we create. We are gonna match it with `helloWorld` (keyword in NLU).
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw6.webp" alt="bhw-6" />
-</ImageWrapper>
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw7.webp" alt="bhw-7" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw6.webp" alt="bhw-6" />
+
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw7.webp" alt="bhw-7" />
 
 ## Create action for showing Hello World
 
@@ -77,27 +62,19 @@ Add a classifier and choose NLU that we create. We are gonna match it with `hell
 
 Choose a states and click on "+" button. We will create a initial state. Set name to `init` and choose Initial State, and click create.
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw8.webp" alt="bhw-8" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw8.webp" alt="bhw-8" />
 
 We will create another state for showing the response in our bot. Choose action to text.
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw9.webp" alt="bhw-9" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw9.webp" alt="bhw-9" />
 
 Add text response to Hello World!.
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw10.webp" alt="bhw-10" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw10.webp" alt="bhw-10" />
 
 Action should be shown like this.
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw11.webp" alt="bhw-11" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw11.webp" alt="bhw-11" />
 
 ### Create Transation
 
@@ -105,15 +82,11 @@ Now, we will create a transition between two states that we have created before.
 
 Click the green dot on `init` state, and a connector line will appear. Connect that line to `hello` state. If you do it right, a Create Transition form will appear.
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw12.webp" alt="bhw-12" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw12.webp" alt="bhw-12" />
 
 Set the condition to `intent=='helloIntent'` and click Create.
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw13.webp" alt="bhw-13" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw13.webp" alt="bhw-13" />
 
 ## Testing
 
@@ -121,6 +94,4 @@ Before this step don't forget to **Publish** your change. And then try your bot 
 
 Viola! You have succeed build your first bot!
 
-<ImageWrapper>
-  <NextImage src="/assets/images/tutorials/bot-hw/bot-hw14.webp" alt="bhw-14" />
-</ImageWrapper>
+<FigureImage src="/assets/images/tutorials/bot-hw/bot-hw14.webp" alt="bhw-14" />

@@ -11,8 +11,8 @@ section: How To
 This documentation will teach you how to build a chatbot app using the Kata Platform and connect it to Generic Channel. You can use Generic Channel for the channel not yet available in Kata Platform so that you can make a “wrapper.” This tutorial will deploy your chatbot to a generic channel using NestJs and connect it with a chatbot.
 
 <div className="info">
-    <img className="borderless" src="/assets/images/icon-info.svg" />
-    <p>Important: There is no limitation in programming languages or frameworks if you want to create the app.</p>
+  <img className="borderless" src="/assets/images/icon-info.svg" />
+  <p>Important: There is no limitation in programming languages or frameworks if you want to create the app.</p>
 </div>
 
 ## Deploy Your Chatbot in Kata Platform
@@ -25,14 +25,12 @@ If you have already developed your chatbot, you must deploy your bot.
 2. On the Deploy page, click on the **New Deployment** button in the top right corner. It will open up the Create Deployment menu.
 3. Choose any deployment version you want to deploy and fill in the changelog.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 1 Alt"
-    src="/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image1.webp"
-    caption={{ title: 'Figure 1', description: 'Create a new deployment' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 1 Alt"
+  src="/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image1.webp"
+  caption={{ title: 'Figure 1', description: 'Create a new deployment' }}
+  layout="responsive"
+/>
 
 4. Click **Submit** to finish the deployment.
 
@@ -42,14 +40,12 @@ If you already have an environment created, skip these steps.
 
 1. Go to the **Deployments > Environment** menu.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 2 Alt"
-    src="/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image2.webp"
-    caption={{ title: 'Figure 2', description: 'Set up the environment, then set up Generic channel' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 2 Alt"
+  src="/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image2.webp"
+  caption={{ title: 'Figure 2', description: 'Set up the environment, then set up Generic channel' }}
+  layout="responsive"
+/>
 
 2. Click the **Create Environment** button in any environment. You will see a drawer to create a new environment.
 3. Choose the **development version** you want (in this tutorial, we use the 1.0.0 version)
@@ -65,85 +61,51 @@ If you already have an environment created, skip these steps.
 
 <Table>
   <TableHead>
-    <TableHeadCell>
-      Field Name
-    </TableHeadCell>
-    <TableHeadCell>
-      Functionality
-    </TableHeadCell>
-    <TableHeadCell>
-      Limitation
-    </TableHeadCell>
+    <TableHeadCell>Field Name</TableHeadCell>
+    <TableHeadCell>Functionality</TableHeadCell>
+    <TableHeadCell>Limitation</TableHeadCell>
   </TableHead>
   <TableBody>
     <TableBodyRow>
-      <TableBodyCell>
-        Name
-      </TableBodyCell>
-      <TableBodyCell>
-        Channel Name
-      </TableBodyCell>
+      <TableBodyCell>Name</TableBodyCell>
+      <TableBodyCell>Channel Name</TableBodyCell>
       <TableBodyCell>
         Max. 30 characters must contain only alphanumeric characters (A-Z, a-z, 0-9), `-`, and `_`.
       </TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        Token (optional)
-      </TableBodyCell>
-      <TableBodyCell>
-        Access token from a third-party app.
-      </TableBodyCell>
-      <TableBodyCell>
-        -
-      </TableBodyCell>
+      <TableBodyCell>Token (optional)</TableBodyCell>
+      <TableBodyCell>Access token from a third-party app.</TableBodyCell>
+      <TableBodyCell>-</TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        Refresh Token (optional)
-      </TableBodyCell>
-      <TableBodyCell>
-        Refresh token, if any.
-      </TableBodyCell>
-      <TableBodyCell>
-        -
-      </TableBodyCell>
+      <TableBodyCell>Refresh Token (optional)</TableBodyCell>
+      <TableBodyCell>Refresh token, if any.</TableBodyCell>
+      <TableBodyCell>-</TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        Secret (optional)
-      </TableBodyCell>
-      <TableBodyCell>
-        Secret key from a third-party app
-      </TableBodyCell>
-      <TableBodyCell>
-        -
-      </TableBodyCell>
+      <TableBodyCell>Secret (optional)</TableBodyCell>
+      <TableBodyCell>Secret key from a third-party app</TableBodyCell>
+      <TableBodyCell>-</TableBodyCell>
     </TableBodyRow>
     <TableBodyRow>
-      <TableBodyCell>
-        URL
-      </TableBodyCell>
+      <TableBodyCell>URL</TableBodyCell>
       <TableBodyCell>
         Your endpoint to retrieve data from webhook, for example, `http://your_domain/message/retrieveMessage`
       </TableBodyCell>
-      <TableBodyCell>
-        Make sure your endpoint has public access to retrieve data from the webhook.
-      </TableBodyCell>
+      <TableBodyCell>Make sure your endpoint has public access to retrieve data from the webhook.</TableBodyCell>
     </TableBodyRow>
   </TableBody>
 </Table>
 
 4. Click **Save** to continue. After successfully making a channel, you will get a webhook. Copy this to be used for your app.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 3 Alt"
-    src="/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image3.webp"
-    caption={{ title: 'Figure 3', description: 'Click the copy button to copy the webhook.' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 3 Alt"
+  src="/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image3.webp"
+  caption={{ title: 'Figure 3', description: 'Click the copy button to copy the webhook.' }}
+  layout="responsive"
+/>
 
 ### Parameters
 
@@ -456,14 +418,12 @@ sendMessage(data) {
 
 In this section, you can use <a href="https://www.postman.com/" target="_blank">Postman</a> to test sending messages to your chatbot.
 
-<ImageWrapper>
-  <FigureImage
-    alt="Image 4 Alt"
-    src="/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image4.webp"
-    caption={{ title: 'Figure 4', description: 'Testing your bot' }}
-    layout="responsive"
-  />
-</ImageWrapper>
+<FigureImage
+  alt="Image 4 Alt"
+  src="/assets/images/products/kata-platform/how-to/deploy-your-chatbot-in-generic-channel/image4.webp"
+  caption={{ title: 'Figure 4', description: 'Testing your bot' }}
+  layout="responsive"
+/>
 
 Finally, you will get a response from the chatbot to your app.
 
