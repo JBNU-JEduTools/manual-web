@@ -78,7 +78,7 @@ const Index: React.FC<IIndex> = ({ tutorialPosts }) => {
               totalItems={tutorialPosts.length}
             />
             <FooterWrapper>
-              <Footer version={'v4.0.0'} siteLastUpdated={'15 March 2022'} />
+              <Footer />
             </FooterWrapper>
           </CardsWrapper>
         )}
