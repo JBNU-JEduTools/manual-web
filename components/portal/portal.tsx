@@ -6,6 +6,7 @@ import {
   Anchor,
   DocsCard,
   DocsCardWrapper,
+  DocsContent,
   HeaderPortal,
   HeroWrapper,
   PortalDescription,
@@ -35,12 +36,12 @@ export default function Portal() {
           {productList.map((product, idx) => (
             <DocsCard key={`${idx}-${product.name}`}>
               <Anchor href={product.url} target={product.externalUrl ? '_blank' : ''}>
-                <Box display="flex" alignItems="center">
+                <DocsContent>
                   <Box display="flex" mr={24}>
                     <Image layout="fixed" width={32} height={32} src={product.imgPath} alt={product.name} />
                   </Box>
                   {product.name}
-                </Box>
+                </DocsContent>
               </Anchor>
             </DocsCard>
           ))}

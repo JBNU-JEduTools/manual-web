@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { breakpoints } from 'utils/variables';
 
 export const DocsCard = styled(Card)`
-  padding: 37px 29px;
+  padding: 18px 36px;
   border-radius: 8px;
   border: 1px solid transparent;
   background-color: #ffffff;
@@ -28,6 +28,18 @@ export const DocsCard = styled(Card)`
   }
   &:hover {
     box-shadow: 0px 8px 16px 0px ${theme.colors.greydark01};
+  }
+`;
+
+export const DocsContent = styled(Box)`
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: ${`${breakpoints.md - 1}px`}) {
+    height: 30px;
+  }
+  @media only screen and (min-width: ${`${breakpoints.md}px`}) {
+    height: 54px;
   }
 `;
 
