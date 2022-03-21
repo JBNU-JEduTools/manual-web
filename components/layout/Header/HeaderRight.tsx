@@ -29,8 +29,13 @@ const Wrapper = styled('div')<HeaderRightProps>`
   flex: 1;
   height: 100%;
   justify-content: ${(props) => props.contents};
-  padding: 0 24px;
   border-bottom: 1px solid ${theme.colors.grey02};
+  @media (max-width: ${breakpoints.lg - 1}px) {
+    padding: 0 16px;
+  }
+  @media (min-width: ${breakpoints.lg}px) {
+    padding: 0 24px;
+  }
 
   ${(props) => props.hideOnMobile && HideOnMobile}
   ${(props) => props.hideOnDesktop && HideOnDesktop}
