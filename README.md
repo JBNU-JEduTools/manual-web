@@ -2,7 +2,7 @@
 
 > Documentation website for Kata Products
 
-Welcome to the GitHub project for the Kata Documentations (Kata Docs 2.0) using [Next.js](https://nextjs.org/).
+Welcome to the GitHub project for [Kata](https://kata.ai) Documentations (Kata Docs 2.0) using [Next.js](https://nextjs.org/).
 We've built this site from the ground-up with performance, accessibility, and fanciness in mind.
 It contains documentation from all across the Kata Products:
 
