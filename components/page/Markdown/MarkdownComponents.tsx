@@ -1,8 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { Heading, Paragraph } from 'components/foundations';
+import { Heading, Paragraph as ParagraphAksara } from 'components/foundations';
 import { space, textSizes, colors, breakpoints } from 'utils/variables';
-import { theme } from '@aksara-ui/react';
+import { ParagraphProps, theme } from '@aksara-ui/react';
 
 const UnorderedList = styled('ul')`
   margin: ${space.sm}px 0;
@@ -137,7 +137,7 @@ export const h5 = (props: JSX.IntrinsicAttributes) => (
 );
 export const h6 = (props: JSX.IntrinsicAttributes) => <Heading size={400} as="h6" my="lg" {...props} />;
 
-const P = styled(Paragraph)`
+const Paragraph = styled(ParagraphAksara)<ParagraphProps>`
   font-weight: 400;
   color: ${theme.colors.greydark02};
   @media only screen and (max-width: ${`${breakpoints.lg - 1}px`}) {
@@ -150,13 +150,11 @@ const P = styled(Paragraph)`
   }
 `;
 
-export const p = (props: JSX.IntrinsicAttributes) => <P mt="sm" {...props} />;
+export const p = (props: JSX.IntrinsicAttributes) => <Paragraph mt="sm" {...props} />;
 export const hr = (props: JSX.IntrinsicAttributes) => <HorizontalRule {...props} />;
 export const ul = (props: JSX.IntrinsicAttributes) => <UnorderedList {...props} />;
 export const ol = (props: JSX.IntrinsicAttributes) => <UnorderedList as="ol" {...props} />;
-export const li = (props: JSX.IntrinsicAttributes) => (
-  <Paragraph size={400} as="li" my="xxs" color={theme.colors.greydark02} {...props} />
-);
+export const li = (props: JSX.IntrinsicAttributes) => <Paragraph as="li" my="xxs" {...props} />;
 
 interface TableAttributes extends JSX.IntrinsicAttributes {
   className?: string;
