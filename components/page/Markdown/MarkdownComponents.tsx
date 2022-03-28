@@ -154,7 +154,9 @@ export const p = (props: JSX.IntrinsicAttributes) => <P mt="sm" {...props} />;
 export const hr = (props: JSX.IntrinsicAttributes) => <HorizontalRule {...props} />;
 export const ul = (props: JSX.IntrinsicAttributes) => <UnorderedList {...props} />;
 export const ol = (props: JSX.IntrinsicAttributes) => <UnorderedList as="ol" {...props} />;
-export const li = (props: JSX.IntrinsicAttributes) => <Paragraph size={400} as="li" my="xxs" {...props} />;
+export const li = (props: JSX.IntrinsicAttributes) => (
+  <Paragraph size={400} as="li" my="xxs" color={theme.colors.greydark02} {...props} />
+);
 
 interface TableAttributes extends JSX.IntrinsicAttributes {
   className?: string;

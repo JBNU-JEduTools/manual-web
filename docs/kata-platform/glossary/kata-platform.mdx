@@ -10,9 +10,76 @@ section: Glossary
 
 A feature to analyze end-users behavior. This data analysis set can be used to enhance conversational AI product quality.
 
+### Condition
+
+Condition is a way to control executions for bot elements (read: transitions, states, actions and intents). This condition is using Javascript code. Here is an example in KataML.
+
+<FigureImage
+  caption={{ title: 'Figure 1', description: `Condition example in action.` }}
+  src="/assets/images/products/kata-platform/glossary/kata-platform/image1.webp"
+  alt="Condition example in action."
+  naturalHeight={789}
+  naturalWidth={1600}
+/>
+
 ### Flow
 
-Flow is a feature to create bot flow, integrate bot with NLU and create data mapping for bot needs. Flow provides an Error Log to see any errors when bot development or bot has been released.
+Flow is a feature to create bot flow, integrate bot with NLU and create data mapping for bot needs. A flow corresponds to a discourse in a conversation.
+
+<FigureImage
+  caption={{ title: 'Figure 2', description: `How flow works.` }}
+  src="/assets/images/products/kata-platform/glossary/kata-platform/image2.webp"
+  alt="How flow works."
+  naturalHeight={724}
+  naturalWidth={1502}
+/>
+
+A flow consists of intents, states, and actions. In Kata Platform, the processing of end-user message is divided into three pipelined steps:
+
+1.  **Intent recognition** which converting raw message into structured information (in form of intent and attributes)
+2.  **State mapping** which determining the state of the bot and the context variables
+3.  **Choosing action** to generate response by executing defined action
+
+<FigureImage
+  caption={{ title: 'Figure 3', description: `Chatbot message flow.` }}
+  src="/assets/images/products/kata-platform/glossary/kata-platform/image3.webp"
+  alt="Chatbot message flow."
+  naturalHeight={238}
+  naturalWidth={1564}
+/>
+
+You can think the Intent - State - Action separation as an MVC model, where the intents are the controller, the states as the model and the actions as the views.
+
+A chatbot can have multiple flows and those can be active at the same time. Those information is stored in the **flow stack**.
+
+- If any new input arrive, the chatbot will search for a flow.
+- The chatbot stores which flow is the current flow (read: whenever a flow is opened, it will become the current flow). Hence, current flow will be preferred.
+- Then, the chatbot will look for a matching intent to remove a flow from the stack.
+- It will push the previously current flow to the stack.
+- Then, previous flows in the stack are on hold.
+
+Here is the illustration.
+
+<FigureImage
+  caption={{ title: 'Figure 4', description: `Flow stack.` }}
+  src="/assets/images/products/kata-platform/glossary/kata-platform/image4.webp"
+  alt="Flow stack."
+  naturalHeight={504}
+  naturalWidth={998}
+/>
+
+In Kata ML, a flow consists of following definitions:
+
+- `intents` : `Dict<Intent>` means intent definitions.
+- `states` : `Dict<State>` means state definitions.
+- `actions` : `Dict<Action>` means action definitions.
+- `methods` : `Dict<string>` means flow-specific method definitions.
+
+Additionally a flow can be set as following:
+
+- `active` : `boolean` means you can enable/disable a flow by setting the active field of a flow.
+- `volatile` : `boolean` means you can set as true to close the flow whenever it goes outside the flow.
+- `expire` : `number` means it will set flow to expire after specified number of miliseconds.
 
 ### NLU
 
@@ -20,7 +87,7 @@ Natural Language Understanding is a capability that a computer possesses to tran
 
 ### NLUs
 
-NLUs is a feature which enables you to integrate chatbot using keyword and regex. Also, NLUs enables you to add NLU model in your chatbot
+NLUs is a feature which enables you to integrate chatbot using keyword and regex. Also, NLUs enables you to add NLU model in your chatbot.
 
 ### Channels
 
@@ -46,6 +113,30 @@ Project is a feature to start your bot or NLP project. A Project can consist of 
 
 Publish is a command button to save changes in bot and NLU.
 
+### Result
+
+Few action types return result that can be used in the next action. Here is an example for API action that trigger a HTTP call.
+
+<FigureImage
+  caption={{ title: 'Figure 5', description: `result usage in API action.` }}
+  src="/assets/images/products/kata-platform/glossary/kata-platform/image5.webp"
+  alt="result usage in API action."
+  naturalHeight={633}
+  naturalWidth={1600}
+/>
+
 ### Revision List
 
-Revision List is a feature to list available revisions.
+Revision List is a feature to list available revisions. In Kata Platform, we adopt semantic versioning (semver) for the bot versioning scheme. You can have multiple versions of a bot and you will be able to revert back to any previous versions. You can also tag a version with a specific label.
+
+### Variables
+
+Variables can be accessed in action options using $() notation. Following variables are available:
+
+- `content` means message content.
+- `payload` means message payload.
+- `type` means message type.
+- `metadata` means message metadata.
+- `intent` means message intent.
+- `attributes` means message attributes.
+- `result` means result from API call.

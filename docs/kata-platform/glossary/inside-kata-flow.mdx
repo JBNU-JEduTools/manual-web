@@ -22,10 +22,48 @@ Persistent Flow is used to make the flow repeat the last state if the end-user g
 
 Default is the flow that has been provided by Kata Platform. You can find it on the Conversation Flow screen. Meanwhile, the Default toggle box on the Create Flow screen serves to activate the default mode of flow. The default mode will run when no other flow can respond to end-user input.
 
+#### Reenter Flow
+
+When a flow is closed, the flow at the top of the stack will become the current flow. The flow will be notified by the command reenter. This shall be captured by a reenter intent.
+
+<FigureImage
+  caption={{ title: 'Figure 1', description: `Reenter flow example in KataML.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image1.webp"
+  alt="Reenter flow example in KataML."
+  naturalHeight={340}
+  naturalWidth={1438}
+/>
+
+#### Volatile Flow
+
+If you want to make a flow to be immediately closed (read: when a new flow is selected), then you can set the flow as volatile. Setting a flow as volatile will omit it from being stored in flow stack.
+
+<FigureImage
+  caption={{ title: 'Figure 2', description: `Volatile flow example in KataML.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image2.webp"
+  alt="Volatile flow example in KataML."
+  naturalHeight={324}
+  naturalWidth={1518}
+/>
+
+#### Expiring Flow
+
+You can set a flow to automatically expire after some time. this is useful e.g. for short-lived flow like promotion etc.
+
+<FigureImage
+  caption={{ title: 'Figure 3', description: `Expiring flow example in KataML.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image3.webp"
+  alt="Expiring flow example in KataML."
+  naturalHeight={334}
+  naturalWidth={1128}
+/>
+
 ### Transition
 
 Transition is the process of moving between different states or the state itself (self-transition). In Kata Platform, you can use a transition to connect two states by drawing lines between them or define it through the Transition tab in Create State window.
+
 Every time you draw a line from one state to another on the Conversation Flow screen, you must create a Transition. This transition between states requires conditions to make the bot move along the path.
+
 On the Transitions tab in the Create States window, you can choose from two types of transitions: Self Transition and Floating Transition. Both of these features are optional.
 
 #### Self Transition
@@ -38,7 +76,38 @@ Floating Transition allows you to create a state that a bot can access freely fr
 
 ### Mapping
 
-Mapping is a procedure to store a value in a destined variable. For example, you want to input 0 in A variable, which is called “value”, then store it into the destined variable, which is “key”. Mapping in the Kata Platform can be found when creating or editing Transition and creating or editing a State.
+Mapping is a procedure to store a value in a destined variable. The mapping syntax is a key-value pair where the key is the context or data variables you want to be updated and the value is the value that you want to be mapped into the variable of your choice. For example, you want to input 0 in A variable, which is called “value”, then store it into the destined variable, which is “key”. Mapping in the Kata Platform can be found when creating or editing Transition and creating or editing a State.
+
+<FigureImage
+  caption={{ title: 'Figure 4', description: `Mapping example in KataML.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image4.webp"
+  alt="Mapping example in KataML."
+  naturalHeight={180}
+  naturalWidth={1600}
+/>
+
+You can use valid javascript expression in the mapping. You can also define nested fields in the key part. There are multiple lifecycle events where you can put your mappings:
+
+- `transit` means before selecting transition.
+- `transition` means mapping during transition
+
+Also, you can access following variables:
+
+- `content` means message content.
+- `payload` means message payload.
+- `type` means message type.
+- `metadata` means message metadata.
+- `intent` means message intent.
+- `attributes` means message attributes.
+- `context` means flow context.
+- `data` means session data.
+
+Additional meta context accessible in states at `context.<meta>`:
+
+- `start` : `boolean` means true if state is initial state.
+- `to` : `string` describes destination state which available during exit.
+- `from` : `string` describes origin state which available during enter.
+- `end` : `boolean` means true if state is end state.
 
 #### Simple Mapping
 
@@ -58,12 +127,444 @@ The mapping process occurs after the bot finds a transition from one state to an
 
 ### States
 
-State represents the stage of the conversation.
+State represents the stage of the conversation. Imagine you are a Customer Service agent, you will provided with an SOP that requires you to respond appropriately in every state / stage of conversation. The state concept is basically a finite state machine with initial and end states.
+
+<FigureImage
+  caption={{ title: 'Figure 5', description: `State illustration in finite state machine` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image5.webp"
+  alt="State illustration in finite state machine"
+  naturalHeight={640}
+  naturalWidth={1116}
+/>
+
+In the state mapping, the parsed message together with current state, context and data will be mapped into a new state, updated context, and data.
+
+<FigureImage
+  caption={{ title: 'Figure 6', description: `State mapping workflow.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image6.webp"
+  alt="State mapping workflow."
+  naturalHeight={532}
+  naturalWidth={1288}
+/>
+
+A state can have an action or multiple actions attached that is being triggered at the end of state mapping lifecyle. The lifecycle of a state mapping process is following:
+
+1.  It starts from the last state (or init state if no last state is found).
+2.  It will execute transit mapping, if it is defined.
+3.  It will search for available transition that meet condition, otherwise it will choose the fallback transition.
+4.  If a transition is chosen, it will execute transition mapping.
+5.  It will execute exit mapping.
+6.  It will execute enter mapping of the next state.
+7.  it will return the updated state, context and data.
+8.  The actions of the new state will be triggered.
 
 #### Initial State
 
-Initial state acts as a flow starter. Each flow has to build one initial state.
+Initial state acts as a flow starter. Each flow has to build one initial state. In state mapping, the process must start from a state. If a flow is newly created, then it will start from the initial state. There is two styles of initial state: the so called pitcher init or guardian init.
+
+<FigureImage
+  caption={{ title: 'Figure 7', description: `Pitcher init and guardian init` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image7.webp"
+  alt="Pitcher init and guardian init"
+  naturalHeight={676}
+  naturalWidth={1012}
+/>
+
+The pitcher init is an initial state that only used to start a flow and will never be revisited again. This style of init doesn’t need to have an action attached, since it will never be the destination state.
+
+<FigureImage
+  caption={{ title: 'Figure 8', description: `Pitcher init code KataML.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image8.webp"
+  alt="Pitcher init code KataML."
+  naturalHeight={330}
+  naturalWidth={1192}
+/>
+
+The second style is guardian init. This type of initial state will be revisited, until certain outcome (context change) is reached. Since this kind of init can be the destination state, it must have action attached.
+
+<FigureImage
+  caption={{ title: 'Figure 9', description: `Guardian init code KataML.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image9.webp"
+  alt="Guardian init code KataML."
+  naturalHeight={338}
+  naturalWidth={1214}
+/>
 
 #### End State
 
-End state indicates the end of one session of conversation.
+End state indicates the end of one session of conversation. A flow shall have at least one end-state. End state will cause a flow to be closed, which means that all the context associated with that flow will be erased. The flow will neither exist in the flow stack nor in the current flow anymore. A closed flow can be reopened with message that trigger its initial intent.
+
+#### Floating State
+
+Occasionally you will get into case where you need to put transition from many states to a particular state. E.g. cancel state. To simplify those cases, you can define a floating state. A floating state is a state that is reachable from all other states. When you define a state to be a floating state, the system will automatically create transitions from every other states to that state.
+
+<FigureImage
+  caption={{ title: 'Figure 10', description: `Floating state example in KataML.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image10.webp"
+  alt="Floating state example in KataML."
+  naturalHeight={248}
+  naturalWidth={1490}
+/>
+
+### Actions
+
+Action is the part which triggers responses to the user. Action can be attached to a certain state, so that it will be triggered when the flow reaches certain state. In Kata Platform, we have a lot of actions type to support your various messaging channels. In KataML, you can define the action as follows.
+
+<FigureImage
+  caption={{ title: 'Figure 11', description: `KataML for action.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image11.webp"
+  alt="KataML for action."
+  naturalHeight={298}
+  naturalWidth={1066}
+/>
+
+#### Text
+
+Text is an action which returns one or multiple text bubbles. This action is common for all messaging channels.
+
+<FigureImage
+  caption={{ title: 'Figure 12', description: `KataML for text action type.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image12.webp"
+  alt="KataML for text action type."
+  naturalHeight={218}
+  naturalWidth={570}
+/>
+
+#### Image
+
+Image is an action which show image to end-users. This action is common for all messaging channels.
+
+<FigureImage
+  caption={{ title: 'Figure 13', description: `KataML for image action type.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image13.webp"
+  alt="KataML for image action type."
+  naturalHeight={420}
+  naturalWidth={968}
+/>
+
+#### Button
+
+Button is an action which show interactive button to automate end-users to reply (without text). Most of messaging channels support this action, such as Instagram Messaging, Telegram, Messenger, etc.
+
+#### Carousel
+
+Carousel is an action which show interactive button with image and a scrollable message type. Only few messaging channels have carousel, such as Instagram Messaging and LINE.
+
+<FigureImage
+  caption={{ title: 'Figure 14', description: `KataML for carousel action type.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image14.webp"
+  alt="KataML for carousel action type."
+  naturalHeight={1158}
+  naturalWidth={1600}
+/>
+
+#### Image Map
+
+Image Map is an action with a big image with interactive button inside few part. This action type only supported in LINE.
+
+<FigureImage
+  caption={{ title: 'Figure 15', description: `KataML for image map action type.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image15.webp"
+  alt="KataML for image map action type."
+  naturalHeight={1600}
+  naturalWidth={1519}
+/>
+
+#### Quick Reply
+
+Quick Reply is an action type with group of button which end-users able to click on the buttons to send message. Most of messaging channels support quick reply in their platform, such as Instagram Messaging, Messenger, etc.
+
+<FigureImage
+  caption={{ title: 'Figure 16', description: `KataML for quick reply action type.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image16.webp"
+  alt="KataML for quick reply action type."
+  naturalHeight={404}
+  naturalWidth={1208}
+/>
+
+#### Sticker
+
+Sticker is an action type to reply end-users with a sticker. This action type is available only for LINE.
+
+<FigureImage
+  caption={{ title: 'Figure 17', description: `KataML for sticker action type.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image17.webp"
+  alt="KataML for sticker action type."
+  naturalHeight={176}
+  naturalWidth={680}
+/>
+
+#### Schedule
+
+Schedule (or so called “Scheduler”) is an action type to make an auto-idle in your bot. This action type is suitable for use-cases such as remind end-users after x minutes idle, payment reminder after y minutes and auto-cancel a payment if end-users didn’t reply in y minutes, and many more. We provide several intervals which are minute, hour and day. It can be used in all messaging channels.
+
+<FigureImage
+  caption={{ title: 'Figure 18', description: `KataML for schedule action type.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image18.webp"
+  alt="KataML for schedule action type."
+  naturalHeight={485}
+  naturalWidth={1600}
+/>
+
+Here is an example for schedule action type in KataML.
+
+<FigureImage
+  caption={{ title: 'Figure 19', description: `Example for schedule action type.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image19.webp"
+  alt="Example for schedule action type."
+  naturalHeight={750}
+  naturalWidth={1600}
+/>
+
+#### API
+
+API is an action type to call an external API when the chatbot meet with specific condition. It can be used in all messaging channels.
+
+<FigureImage
+  caption={{ title: 'Figure 20', description: `Example for API action type in KataML` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image20.webp"
+  alt="Example for API action type in KataML"
+  naturalHeight={981}
+  naturalWidth={1600}
+/>
+
+#### Command
+
+Command is an action type to create next input of the conversation. This command action will not be returned to end-users. This action type is suitable for use-cases such as jump to other flows in chatbot, trigger other flows, trigger re-converse, and many more.
+
+<FigureImage
+  caption={{ title: 'Figure 21', description: `Command use-case to trigger other flows in Kata Platform.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image21.webp"
+  alt="Command use-case to trigger other flows in Kata Platform."
+  naturalHeight={772}
+  naturalWidth={1176}
+/>
+
+Also, here is a flow for re-converse using command.
+
+<FigureImage
+  caption={{ title: 'Figure 22', description: `Command use-case to re-converse in Kata Platform.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image22.webp"
+  alt="Command use-case to re-converse in Kata Platform."
+  naturalHeight={510}
+  naturalWidth={1406}
+/>
+
+#### Method
+
+Method is an action type to call method which created in Flow > Methods menu. You must define the method first before use this action type. This action type is commonly used to show all data after collect API result in array. It supports all messaging channels.
+
+#### Confirm Template
+
+Confirm Template is an action type which has 2 button and it shown like a confirmation pop-up. This action type only supported in Messenger.
+
+#### Instagram Sticker
+
+Instagram Sticker is an action type to show “heart” sticker to Instagram end-users. It’s only supported in Instagram Messaging.
+
+#### List Messages
+
+List Messages is an action type which showing end-users a button to trigger a pop-up menu. This action type only supported in WhatsApp.
+
+#### Reply Button
+
+Reply Button is an action type to show up to 3 buttons for send message to chatbot. It similar with Quick Reply, but this action type only supported in WhatsApp.
+
+#### CMS Action
+
+CMS Action is an action type which integrate to Kata CMS feature. You must define in Kata CMS first for at least 1 element and can use this CMS action.
+
+### Intent
+
+An intent can be understood as the essence or meaning of an utterance. In a discourse we can differentiate between initial intent and follow up intent. To understand the difference, imagine in a conversation about booking a ticket, you have following intents:
+
+- `order-ticket`
+
+  - “buy me a ticket”
+  - “I want to book a ticket from jakarta to bali”
+
+- `add-info`
+
+  - “jakarta to bali”
+  - “for tomorrow night”
+
+- `yes`
+
+  - “confirm”
+  - “Yes”
+
+As you can see, `add-info` and `yes` intents doesn’t make sense if you are not yet in the conversation about buying a ticket, thats why they should be follow up intents. `order-ticket` in the other hand is an utterance that can trigger a specific conversation topic: initial intent.
+
+The intent selection process is done as following:
+
+1.  It will select the intents with **matching condition and types**.
+2.  If intent has a **classifier**, then it will execute and unselect those with non-matching classifier.
+3.  It will select one matching intent with **highest priority**.
+
+#### Intent as Fallback
+
+A fallback intent can be specified if you want the flow to match an intent at all case. Disclaimer: Keep in mind that if you set a fallback intent, it won’t be able to change to other flow.
+
+<FigureImage
+  caption={{ title: 'Figure 23', description: `Fallback intent format in KataML.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image23.webp"
+  alt="Fallback intent format in KataML."
+  naturalHeight={208}
+  naturalWidth={1600}
+/>
+
+#### Intent Types
+
+Intent shall specify the type of message it intend to match, it can be text, data or command.
+
+#### Condition
+
+Condition can be used to narrow the selection of possible intents. A condition is a javascript expression like following example:
+
+<FigureImage
+  caption={{ title: 'Figure 24', description: `Condition example in KataML.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image24.webp"
+  alt="Condition example in KataML."
+  naturalHeight={260}
+  naturalWidth={1240}
+/>
+
+You can make a condition by following variable:
+
+- `context` means flow context.
+- `data` means session data.
+- `type` means message type.
+- `content` means message content.
+- `payload` means message payload.
+- `metadata` means message metadata.
+- `config` means bot config.
+
+#### Classifier
+
+Classifier can be added to intents with type: text. With classifier, more complicated type of text parsing can be done by using NLU object. To be used as classifier, the NLU object being used need to output either string or array of string (string[]). The property match can be set to match specific label outputted by the NLU.
+
+<FigureImage
+  caption={{ title: 'Figure 25', description: `Intent using classifier format in KataML.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image25.webp"
+  alt="Intent using classifier format in KataML."
+  naturalHeight={341}
+  naturalWidth={1600}
+/>
+
+You can use multiple classifiers by defining it as an array. If using multiple classifiers, it will match if at least one of the classifiers matches.
+
+<FigureImage
+  caption={{ title: 'Figure 26', description: `Intent using multiple classifier format in KataML.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image26.webp"
+  alt="Intent using multiple classifier format in KataML."
+  naturalHeight={458}
+  naturalWidth={1600}
+/>
+
+#### Attributes
+
+Attributes are additional information that can be attached to a message. You can use attributes to extract values from your message. NLU can be used for extracting knowledge from your message that is not necessarily the intent, such as entities, sentiment, etc.
+
+<FigureImage
+  caption={{ title: 'Figure 27', description: ` Intent using attributes format in KataML.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image27.webp"
+  alt=" Intent using attributes format in KataML."
+  naturalHeight={494}
+  naturalWidth={1600}
+/>
+
+The output of the NLU will be directly mapped to the attribute. To choose specific path of the output you can use path.
+
+### Data Structure
+
+There are several data structures in Kata Platform which are meta context, message, context.
+
+#### Meta Context
+
+Meta Context is read-only system defined context fields. It is accessible at `context.<meta>`. Following are generally available meta context, accessible at any time.
+
+- `$init` : `boolean` means your chatbot entering a new flow (true) and not entering any flows (false).
+- `$flow` : `string` means current flow.
+- `$state` : `string` means current state.
+- `$lastFlow` : `string` means last flow.
+- `$lastState` : `string` means last state.
+- `$now` : `number` means current timestamp.
+- `$timestamp` : `number` means session timestamp.
+- `$dataKey` : `string` means data key for connecting multiple sessions.
+- `$sessionId` : `string` means current session ID.
+- `$channelId` : `string` means current channel ID.
+- `$deploymentId` : `string` means current deployment ID.
+- `$userId` : `string` means user / partner ID from channel.
+
+#### Message
+
+A message consists of following definitions:
+
+- `type`: `string` means message type either text or data.
+- `content`: `string` means message type is text.
+- `payload`: `JsonObject` means message type is data.
+- `metadata`: `JsonObject` means metadata for specific channel type.
+
+#### Context
+
+Context is a flow specific information that lives only during the lifetime of a flow. It will be cleared whenever the flow is closed. Every flow has a context object that can be used to store flow-specific variables. This context variables can be stored during state mapping and can be used as condition in intent, transition and action selection.
+
+<FigureImage
+  caption={{ title: 'Figure 28', description: `Storing variable example.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image28.webp"
+  alt="Storing variable example."
+  naturalHeight={272}
+  naturalWidth={1512}
+/>
+
+<FigureImage
+  caption={{ title: 'Figure 29', description: `Using variable in intent.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image29.webp"
+  alt="Using variable in intent."
+  naturalHeight={210}
+  naturalWidth={1420}
+/>
+
+<FigureImage
+  caption={{ title: 'Figure 30', description: `Using variable in transition.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image30.webp"
+  alt="Using variable in transition."
+  naturalHeight={291}
+  naturalWidth={1600}
+/>
+
+### Metadata
+
+In Kata Platform, we provide metadata for specific channel type for LINE, Messenger, Telegram and Slack. This metadata will be useful to collect end-user information such as ID, name, access token which depends on messaging channels availability.
+
+<FigureImage
+  caption={{ title: 'Figure 31', description: `LINE metadata.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image31.webp"
+  alt="LINE metadata."
+  naturalHeight={496}
+  naturalWidth={1420}
+/>
+
+<FigureImage
+  caption={{ title: 'Figure 32', description: `Messenger metadata.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image32.webp"
+  alt="Messenger metadata."
+  naturalHeight={372}
+  naturalWidth={1600}
+/>
+
+<FigureImage
+  caption={{ title: 'Figure 33', description: `Telegram metadata.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image33.webp"
+  alt="Telegram metadata."
+  naturalHeight={324}
+  naturalWidth={1192}
+/>
+
+<FigureImage
+  caption={{ title: 'Figure 34', description: `Slack metadata.` }}
+  src="/assets/images/products/kata-platform/glossary/inside-kata-flow/image34.webp"
+  alt="Slack metadata."
+  naturalHeight={448}
+  naturalWidth={1600}
+/>

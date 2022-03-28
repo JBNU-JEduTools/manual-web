@@ -6,11 +6,11 @@ Welcome to the GitHub project for [Kata](https://kata.ai) Documentations (Kata D
 We've built this site from the ground-up with performance, accessibility, and fanciness in mind.
 It contains documentation from all across the Kata Products:
 
-- [Kata Platform](https://docs.kata.ai/kata-platform)
-- [Kata CLI](https://github.com/kata-ai/kata-cli)
-- [Kata Omnichat](https://docs.kata.ai/kata-omnichat)
-- [Business Dashboard](https://docs.kata.ai/business-dashboard)
-- [Qios](https://docs.kata.ai/qios)
+-   [Kata Platform](https://docs.kata.ai/kata-platform)
+-   [Kata CLI](https://github.com/kata-ai/kata-cli)
+-   [Kata Omnichat](https://docs.kata.ai/kata-omnichat)
+-   [Business Dashboard](https://docs.kata.ai/business-dashboard)
+-   [Qios](https://docs.kata.ai/qios)
 
 Mainly, you can access the documentation website at https://docs.kata.ai
 
