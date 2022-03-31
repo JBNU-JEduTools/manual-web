@@ -383,6 +383,24 @@
               "title": "Change Default Timeout Message"
             }
           ]
+        },
+        {
+          "id": "how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app",
+          "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app",
+          "title": "How to use NL Prediction API for helping using our NLU in your app",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "how-to-use-nl-prediction-api_request-format",
+              "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app#request-format",
+              "title": "Request Format"
+            },
+            {
+              "id": "how-to-use-nl-prediction-api_example",
+              "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app#example",
+              "title": "Example"
+            }
+          ]
         }
       ]
     },
