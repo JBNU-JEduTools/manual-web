@@ -385,19 +385,19 @@
           ]
         },
         {
-          "id": "how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app",
-          "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app",
-          "title": "How to use NL Prediction API for helping using our NLU in your app",
+          "id": "how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app",
+          "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app",
+          "title": "How to Use NL Prediction API to Help You using The NLU in Your App",
           "useAccordion": true,
           "items": [
             {
               "id": "how-to-use-nl-prediction-api_request-format",
-              "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app#request-format",
+              "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app#request-format",
               "title": "Request Format"
             },
             {
               "id": "how-to-use-nl-prediction-api_example",
-              "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app#example",
+              "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app#example",
               "title": "Example"
             }
           ]

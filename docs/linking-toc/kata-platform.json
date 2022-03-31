@@ -162,12 +162,12 @@
       "title": "Using Custom API to Access Third-Party Application"
     },
     "next": {
-      "id": "how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app",
-      "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app",
-      "title": "How to use NL Prediction API for helping using our NLU in your app"
+      "id": "how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app",
+      "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app",
+      "title": "How to Use NL Prediction API to Help You using The NLU in Your App"
     }
   },
-  "how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app": {
+  "how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app": {
     "previous": {
       "id": "how-to-change-error-messages-in-your-chatbot",
       "url": "/kata-platform/how-to/how-to-change-error-messages-in-your-chatbot",
@@ -177,9 +177,9 @@
   },
   "general-faqs": {
     "previous": {
-      "id": "how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app",
-      "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-for-helping-using-our-nlu-in-your-app",
-      "title": "How to use NL Prediction API for helping using our NLU in your app"
+      "id": "how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app",
+      "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app",
+      "title": "How to Use NL Prediction API to Help You using The NLU in Your App"
     },
     "next": {
       "id": "bot-development-faqs",
