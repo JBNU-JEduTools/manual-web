@@ -97,8 +97,9 @@ Helper scripts are scripts collection that helps in kata docs development. All o
 
 1. Steven Evan - `addDimensionImage.js`
 
-   This script helps to add property `naturalHeight` and `naturalWidth` on Image component in `.mdx` files. You ask why we manually add the dimension into the component. The answer is that we use `next/image` for the image component that contains the lazy load feature to improve performance significantly. In the next documentation, we must define the dimension in the `next/image` component or the container (if using the `fill` layout). Additional note:
-   - One of the authors, Steven Evan, had tried to create a solution for not defining `naturalWidth` and `naturalHeight` using the `onLoadingComplete` function on `next/image`. But, a major bug showed up that made the author makes this script. That bug was a navigation scrolling bug. When the user clicks the accordion item on the navigation sidebar, the page will scroll into the wrong position. That could happen because the image will have zero height and zero-width initially before we define the image using the `onLoadingComplete` function.
+    This script helps to add property `naturalHeight` and `naturalWidth` on Image component in `.mdx` files. You ask why we manually add the dimension into the component. The answer is that we use `next/image` for the image component that contains the lazy load feature to improve performance significantly. In the next documentation, we must define the dimension in the `next/image` component or the container (if using the `fill` layout). Additional note:
+
+    - One of the authors, Steven Evan, had tried to create a solution for not defining `naturalWidth` and `naturalHeight` using the `onLoadingComplete` function on `next/image`. But, a major bug showed up that made the author makes this script. That bug was a navigation scrolling bug. When the user clicks the accordion item on the navigation sidebar, the page will scroll into the wrong position. That could happen because the image will have zero height and zero-width initially before we define the image using the `onLoadingComplete` function.
 
 2. Steven Evan - `linkingToc.js`
 
@@ -106,9 +107,9 @@ Helper scripts are scripts collection that helps in kata docs development. All o
 
 3. Steven Evan - `sanitize.js`
 
-   This script is related to JSON outputs from the `markdown2json` library. These outputs will be used in the searching feature using [Fusejs](https://fusejs.io/). `markdown2json` will get the content and all the frontmatter based on the settings of each kata product setting in the `markdown-to-json/settings` folder. Besides the settings folder, there is the output folder. This folder contains each output in the `markdown-to-json/outputs` folder (that will be sanitized by this script later).
+    This script is related to JSON outputs from the `markdown2json` library. These outputs will be used in the searching feature using [Fusejs](https://fusejs.io/). `markdown2json` will get the content and all the frontmatter based on the settings of each kata product setting in the `markdown-to-json/settings` folder. Besides the settings folder, there is the output folder. This folder contains each output in the `markdown-to-json/outputs` folder (that will be sanitized by this script later).
 
-   Using this script, you will get additional properties in the json output. Those properties will help for showing the data in the search result.
+    Using this script, you will get additional properties in the json output. Those properties will help for showing the data in the search result.
 
 ## Authors
 

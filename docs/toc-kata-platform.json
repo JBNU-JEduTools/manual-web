@@ -401,6 +401,99 @@
               "title": "Example"
             }
           ]
+        },
+        {
+          "id": "how-to-use-kataml-to-build-your-chatbot",
+          "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot",
+          "title": "How to Use KataML to Build Your Chatbot",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_specification",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#specification",
+              "title": "Specification"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_include-directive",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#include-directive",
+              "title": "Include Directive"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_building-a-flow",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-a-flow",
+              "title": "Building a Flow"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_building-an-intent",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-an-intent",
+              "title": "Building an Intent"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_defining-condition",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#defining-condition",
+              "title": "Defining Condition"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_building-classifier",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-classifier",
+              "title": "Building Classifier"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_defining-attributes",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#defining-attributes",
+              "title": "Defining Attributes"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_building-a-state",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-a-state",
+              "title": "Building a state"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_defining-mapping",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#defining-mapping",
+              "title": "Defining Mapping"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_building-state-actions",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-state-actions",
+              "title": "Building state actions"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_building-transition",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-transition",
+              "title": "Building transition"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_building-a-floating-state",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-a-floating-state",
+              "title": "Building a floating state"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_defining-events",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#defining-events",
+              "title": "Defining Events"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_building-meta-context",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-meta-context",
+              "title": "Building Meta Context"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_flow-switching",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#flow-switching",
+              "title": "Flow Switching"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_building-nlu",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-nlu",
+              "title": "Building NLU"
+            },
+            {
+              "id": "how-to-use-kataml-to-build-your-chatbot_method",
+              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#method",
+              "title": "Method"
+            }
+          ]
         }
       ]
     },
