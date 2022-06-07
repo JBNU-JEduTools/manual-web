@@ -344,25 +344,48 @@
           ]
         },
         {
-          "id": "using-custom-api-to-access-third-party-application",
-          "url": "/kata-platform/how-to/using-custom-api-to-access-third-party-application",
-          "title": "Using Custom API to Access Third-Party Application",
+          "id": "using-sync-api-to-access-third-party-application",
+          "url": "/kata-platform/how-to/using-sync-api-to-access-third-party-application",
+          "title": "Using Sync API to Access Third-Party Application",
           "useAccordion": true,
           "items": [
             {
               "id": "introduction",
-              "url": "/kata-platform/how-to/using-custom-api-to-access-third-party-application#introduction",
+              "url": "/kata-platform/how-to/using-sync-api-to-access-third-party-application#introduction",
               "title": "Introduction"
             },
             {
               "id": "how-to-use",
-              "url": "/kata-platform/how-to/using-custom-api-to-access-third-party-application#how-to-use",
+              "url": "/kata-platform/how-to/using-sync-api-to-access-third-party-application#how-to-use",
               "title": "How to Use"
             },
             {
-              "id": "how-to-collect-api-result",
-              "url": "/kata-platform/how-to/using-custom-api-to-access-third-party-application#how-to-collect-api-result",
-              "title": "How to Collect API Result"
+              "id": "how-to-collect-sync-api-result",
+              "url": "/kata-platform/how-to/using-sync-api-to-access-third-party-application#how-to-collect-sync-api-result",
+              "title": "How to Collect Sync API Result"
+            }
+          ]
+        },
+        {
+          "id": "using-async-api-to-access-third-party-application",
+          "url": "/kata-platform/how-to/using-async-api-to-access-third-party-application",
+          "title": "Using Async API to Access Third-Party Application",
+          "useAccordion": true,
+          "items": [
+            {
+              "id": "introduction",
+              "url": "/kata-platform/how-to/using-async-api-to-access-third-party-application#introduction",
+              "title": "Introduction"
+            },
+            {
+              "id": "how-to-use",
+              "url": "/kata-platform/how-to/using-async-api-to-access-third-party-application#how-to-use",
+              "title": "How to Use"
+            },
+            {
+              "id": "how-to-collect-async-api-result",
+              "url": "/kata-platform/how-to/using-async-api-to-access-third-party-application#how-to-collect-async-api-result",
+              "title": "How to Collect Async API Result"
             }
           ]
         },
@@ -381,117 +404,6 @@
               "id": "change-default-timeout-message",
               "url": "/kata-platform/how-to/how-to-change-error-messages-in-your-chatbot#change-default-timeout-message",
               "title": "Change Default Timeout Message"
-            }
-          ]
-        },
-        {
-          "id": "how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app",
-          "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app",
-          "title": "How to Use NL Prediction API to Help You using The NLU in Your App",
-          "useAccordion": true,
-          "items": [
-            {
-              "id": "how-to-use-nl-prediction-api_request-format",
-              "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app#request-format",
-              "title": "Request Format"
-            },
-            {
-              "id": "how-to-use-nl-prediction-api_example",
-              "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app#example",
-              "title": "Example"
-            }
-          ]
-        },
-        {
-          "id": "how-to-use-kataml-to-build-your-chatbot",
-          "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot",
-          "title": "How to Use KataML to Build Your Chatbot",
-          "useAccordion": true,
-          "items": [
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_specification",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#specification",
-              "title": "Specification"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_include-directive",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#include-directive",
-              "title": "Include Directive"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_building-a-flow",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-a-flow",
-              "title": "Building a Flow"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_building-an-intent",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-an-intent",
-              "title": "Building an Intent"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_defining-condition",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#defining-condition",
-              "title": "Defining Condition"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_building-classifier",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-classifier",
-              "title": "Building Classifier"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_defining-attributes",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#defining-attributes",
-              "title": "Defining Attributes"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_building-a-state",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-a-state",
-              "title": "Building a state"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_defining-mapping",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#defining-mapping",
-              "title": "Defining Mapping"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_building-state-actions",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-state-actions",
-              "title": "Building state actions"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_building-transition",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-transition",
-              "title": "Building transition"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_building-a-floating-state",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-a-floating-state",
-              "title": "Building a floating state"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_defining-events",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#defining-events",
-              "title": "Defining Events"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_building-meta-context",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-meta-context",
-              "title": "Building Meta Context"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_flow-switching",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#flow-switching",
-              "title": "Flow Switching"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_building-nlu",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#building-nlu",
-              "title": "Building NLU"
-            },
-            {
-              "id": "how-to-use-kataml-to-build-your-chatbot_method",
-              "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot#method",
-              "title": "Method"
             }
           ]
         }
@@ -546,6 +458,26 @@
           "title": "Version",
           "useAccordion": true,
           "items": [
+            {
+              "id": "version-3260",
+              "url": "/kata-platform/release-notes/version#3260",
+              "title": "3.26.0"
+            },
+            {
+              "id": "version-3251",
+              "url": "/kata-platform/release-notes/version#3251",
+              "title": "3.25.1"
+            },
+            {
+              "id": "version-3250",
+              "url": "/kata-platform/release-notes/version#3250",
+              "title": "3.25.0"
+            },
+            {
+              "id": "version-3242",
+              "url": "/kata-platform/release-notes/version#3242",
+              "title": "3.24.2"
+            },
             {
               "id": "version-3231",
               "url": "/kata-platform/release-notes/version#3231",

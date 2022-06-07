@@ -138,16 +138,28 @@
       "title": "How to Use Training Data Generator to Automate Generating Training Data"
     },
     "next": {
-      "id": "using-custom-api-to-access-third-party-application",
-      "url": "/kata-platform/how-to/using-custom-api-to-access-third-party-application",
-      "title": "Using Custom API to Access Third-Party Application"
+      "id": "using-sync-api-to-access-third-party-application",
+      "url": "/kata-platform/how-to/using-sync-api-to-access-third-party-application",
+      "title": "Using Sync API to Access Third-Party Application"
     }
   },
-  "using-custom-api-to-access-third-party-application": {
+  "using-sync-api-to-access-third-party-application": {
     "previous": {
       "id": "how-to-use-bulk-training-for-faster-training-process",
       "url": "/kata-platform/how-to/how-to-use-bulk-training-for-faster-training-process",
       "title": "How to Use Bulk Training to the Faster Training Process"
+    },
+    "next": {
+      "id": "using-async-api-to-access-third-party-application",
+      "url": "/kata-platform/how-to/using-async-api-to-access-third-party-application",
+      "title": "Using Async API to Access Third-Party Application"
+    }
+  },
+  "using-async-api-to-access-third-party-application": {
+    "previous": {
+      "id": "using-sync-api-to-access-third-party-application",
+      "url": "/kata-platform/how-to/using-sync-api-to-access-third-party-application",
+      "title": "Using Sync API to Access Third-Party Application"
     },
     "next": {
       "id": "how-to-change-error-messages-in-your-chatbot",
@@ -157,41 +169,17 @@
   },
   "how-to-change-error-messages-in-your-chatbot": {
     "previous": {
-      "id": "using-custom-api-to-access-third-party-application",
-      "url": "/kata-platform/how-to/using-custom-api-to-access-third-party-application",
-      "title": "Using Custom API to Access Third-Party Application"
-    },
-    "next": {
-      "id": "how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app",
-      "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app",
-      "title": "How to Use NL Prediction API to Help You using The NLU in Your App"
-    }
-  },
-  "how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app": {
-    "previous": {
-      "id": "how-to-change-error-messages-in-your-chatbot",
-      "url": "/kata-platform/how-to/how-to-change-error-messages-in-your-chatbot",
-      "title": "How to Change Error Messages in Your Chatbot to Match Them With Chatbot Persona"
-    },
-    "next": {
-      "id": "how-to-use-kataml-to-build-your-chatbot",
-      "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot",
-      "title": "How to Use KataML to Build Your Chatbot"
-    }
-  },
-  "how-to-use-kataml-to-build-your-chatbot": {
-    "previous": {
-      "id": "how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app",
-      "url": "/kata-platform/how-to/how-to-use-nl-prediction-api-to-help-you-using-the-nlu-in-your-app",
-      "title": "How to Use NL Prediction API to Help You using The NLU in Your App"
+      "id": "using-async-api-to-access-third-party-application",
+      "url": "/kata-platform/how-to/using-async-api-to-access-third-party-application",
+      "title": "Using Async API to Access Third-Party Application"
     },
     "next": { "id": "general-faqs", "url": "/kata-platform/faqs/general-faqs", "title": "General FAQs" }
   },
   "general-faqs": {
     "previous": {
-      "id": "how-to-use-kataml-to-build-your-chatbot",
-      "url": "/kata-platform/how-to/how-to-use-kataml-to-build-your-chatbot",
-      "title": "How to Use KataML to Build Your Chatbot"
+      "id": "how-to-change-error-messages-in-your-chatbot",
+      "url": "/kata-platform/how-to/how-to-change-error-messages-in-your-chatbot",
+      "title": "How to Change Error Messages in Your Chatbot to Match Them With Chatbot Persona"
     },
     "next": {
       "id": "bot-development-faqs",
