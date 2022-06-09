@@ -459,6 +459,11 @@
           "useAccordion": true,
           "items": [
             {
+              "id": "version-3261",
+              "url": "/kata-platform/release-notes/version#3261",
+              "title": "3.26.1"
+            },
+            {
               "id": "version-3260",
               "url": "/kata-platform/release-notes/version#3260",
               "title": "3.26.0"
