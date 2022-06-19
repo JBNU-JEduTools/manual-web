@@ -199,9 +199,49 @@
           "useAccordion": true,
           "items": [
             {
+              "id": "version-181",
+              "url": "/business-dashboard/release-notes/version#181",
+              "title": "1.8.1"
+            },
+            {
+              "id": "version-180",
+              "url": "/business-dashboard/release-notes/version#180",
+              "title": "1.8.0"
+            },
+            {
+              "id": "version-170",
+              "url": "/business-dashboard/release-notes/version#170",
+              "title": "1.7.0"
+            },
+            {
+              "id": "version-161",
+              "url": "/business-dashboard/release-notes/version#161",
+              "title": "1.6.1"
+            },
+            {
+              "id": "version-160",
+              "url": "/business-dashboard/release-notes/version#160",
+              "title": "1.6.0"
+            },
+            {
+              "id": "version-157",
+              "url": "/business-dashboard/release-notes/version#157",
+              "title": "1.5.7"
+            },
+            {
               "id": "version-156",
               "url": "/business-dashboard/release-notes/version#156",
               "title": "1.5.6"
+            },
+            {
+              "id": "version-155",
+              "url": "/business-dashboard/release-notes/version#155",
+              "title": "1.5.5"
+            },
+            {
+              "id": "version-154",
+              "url": "/business-dashboard/release-notes/version#154",
+              "title": "1.5.4"
             }
           ]
         }
