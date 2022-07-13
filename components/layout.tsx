@@ -25,7 +25,6 @@ const StyledLayoutRoot = styled('div')`
 
 const LogoWrapper = styled('div')<{ isPost?: boolean }>`
   display: flex;
-  margin-top: 8px;
   align-items: ${(props) => (props.isPost ? 'center' : 'flex-start')};
   justify-content: ${(props) => (props.isPost ? 'center' : 'flex-start')};
   flex: 1;
@@ -95,8 +94,8 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
                 <UnstyledAnchor display="flex">
                   <Image
                     layout="fixed"
-                    width={200}
-                    height={60}
+                    width={60}
+                    height={40}
                     src={
                       imageOrigin === 'docs'
                         ? '/assets/images/logo-docs.svg'
@@ -123,8 +122,8 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
                 <UnstyledAnchor display="flex">
                   <Image
                     layout="fixed"
-                    width={200}
-                    height={60}
+                    width={60}
+                    height={40}
                     src={
                       imageOrigin === 'docs'
                         ? '/assets/images/logo-docs.svg'
