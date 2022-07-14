@@ -123,7 +123,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
                 <UnstyledAnchor display="flex">
                   <Image
                     layout="fixed"
-                    width={160}
+                    width={imageOrigin === 'docs' ? 60 : 160}
                     height={40}
                     src={
                       imageOrigin === 'docs'
