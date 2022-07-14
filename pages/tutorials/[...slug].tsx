@@ -68,7 +68,7 @@ const TutorialPageTemplate: React.FC<TutorialPageTemplateProps> = ({ post, toc }
                     <UnstyledAnchor>
                       <Image
                         layout="fixed"
-                        width={150}
+                        width={60}
                         height={40}
                         src="/assets/images/logo-docs.svg"
                         alt="Kata Documentations"

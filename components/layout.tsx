@@ -27,6 +27,7 @@ const LogoWrapper = styled('div')<{ isPost?: boolean }>`
   display: flex;
   align-items: ${(props) => (props.isPost ? 'center' : 'flex-start')};
   justify-content: ${(props) => (props.isPost ? 'center' : 'flex-start')};
+  margin-top: 12px;
   flex: 1;
 `;
 
@@ -122,7 +123,7 @@ const Layout: React.FC<ILayout> = ({ children, imageOrigin, fuseSearch }) => {
                 <UnstyledAnchor display="flex">
                   <Image
                     layout="fixed"
-                    width={60}
+                    width={160}
                     height={40}
                     src={
                       imageOrigin === 'docs'
