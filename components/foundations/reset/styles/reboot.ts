@@ -157,6 +157,7 @@ const reboot = css`
 
   b,
   strong {
+    font-family: 'Inter-bold';
     font-weight: bolder;
   }
 
