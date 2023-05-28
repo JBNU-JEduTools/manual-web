@@ -6,6 +6,11 @@ const { withContentlayer } = require('next-contentlayer');
 
 module.exports = withBundleAnalyzer(
   withContentlayer()({
+    images: {
+      unoptimized: true,
+      loader: 'imgix',
+      path: '',
+    },
     swcMinify: true,
     reactStrictMode: true,
     webpack(config, { dev, isServer }) {

@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "page:build":"npx next export",
     "dev": "concurrently \"yarn:cl:dev\" \"next\"",
     "build": "yarn run cc && next build",
     "start": "next start",
