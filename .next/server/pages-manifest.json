@@ -1,0 +1,19 @@
+{
+  "/404": "pages/404.html",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/business-dashboard/[...slug]": "pages/business-dashboard/[...slug].js",
+  "/business-dashboard": "pages/business-dashboard.html",
+  "/": "pages/index.js",
+  "/kata-omnichat/[...slug]": "pages/kata-omnichat/[...slug].js",
+  "/kata-omnichat": "pages/kata-omnichat.html",
+  "/kata-platform/[...slug]": "pages/kata-platform/[...slug].js",
+  "/kata-platform": "pages/kata-platform.html",
+  "/qios/[...slug]": "pages/qios/[...slug].js",
+  "/qios": "pages/qios.html",
+  "/search": "pages/search.html",
+  "/search/result": "pages/search/result.html",
+  "/tutorials/[...slug]": "pages/tutorials/[...slug].js",
+  "/tutorials": "pages/tutorials.js",
+  "/_error": "pages/_error.js"
+}
